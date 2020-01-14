@@ -1,17 +1,25 @@
 # Building a "Hello World" Vessel
 
-In this tutorial, you'll walk through the steps required to set up a very simple Vessel that prints `Hello, World` 
+## Overview
+
+In this tutorial, you'll walk through the steps required to set up a very simple Vessel that prints `Hello, World`. By the end of the tutorial, you will know how to:
+
+* Set up a Vessel using a Code Blueprint
+* Write a script directly in the UI.
+* Check to verify that a Vessel ran succesfully.
 
 {% hint style="warning" %}
 **Note:** For the sake of the this tutorial, we suggest starting off by building a Vessel inside of a Project called "Playground". You can follow [**this tutorial** ](building-playground-project.md)to set that up.
 {% endhint %}
+
+## Steps
 
 1. Using the sidebar, click on "Projects" to expand the list of projects.
 2. Click on the "Playground" project. You'll be directed to the Vessels tab for the Playground project.
 3. Click on the "Build Vessel" button in the top-right corner of the screen.  
 
 
-   ![](../.gitbook/assets/image%20%2818%29.png)
+   ![](../.gitbook/assets/image%20%2819%29.png)
 
   
 
@@ -27,7 +35,7 @@ We'll now walk through the process of filling out the next 5 steps to create our
 
 ### Step 1 - Select a Blueprint
 
-![](../.gitbook/assets/image%20%2823%29.png)
+![](../.gitbook/assets/image%20%2824%29.png)
 
 {% tabs %}
 {% tab title="Python" %}
@@ -79,7 +87,7 @@ For this tutorial, we don't have any triggers to set up. Go ahead and click the 
 4. Add an additional notification email of "[helloworld@shipyardapp.com](mailto:helloworld@shipyardapp.com)". You'll notice that you can add any user or alias to the notification list, whether or not they have access to your organization.
 5. Click the **Save & Finish** button at the bottom of the screen.
 
-![](../.gitbook/assets/image%20%2821%29.png)
+![](../.gitbook/assets/image%20%2822%29.png)
 
 {% hint style="info" %}
 **Tip:** Not every step will be required. The necessary components depend entirely on the solution you build and it's complexity.
@@ -89,7 +97,7 @@ For this tutorial, we don't have any triggers to set up. Go ahead and click the 
 
 You should see the following screen:
 
-![](../.gitbook/assets/image%20%2813%29.png)
+![](../.gitbook/assets/image%20%2814%29.png)
 
 Go ahead and click **Run Your Vessel**. This will schedule your Vessel to run immediately and redirect you to the **Logs** tab which should look like this.
 
@@ -99,12 +107,12 @@ Go ahead and click **Run Your Vessel**. This will schedule your Vessel to run im
 
 Click the first Log ID in the list. You should see the following page that shows you all of the details about the specific Log you clicked. 
 
-![](../.gitbook/assets/image%20%2816%29.png)
+![](../.gitbook/assets/image%20%2817%29.png)
 
 {% hint style="warning" %}
 **Note:** If the Vessel has a Status of **Scheduled or Running** you may see sections of this page that are incomplete. 
 
-![](../.gitbook/assets/image%20%2819%29.png)![](../.gitbook/assets/image%20%281%29.png)
+![](../.gitbook/assets/image%20%2820%29.png)![](../.gitbook/assets/image%20%281%29.png)
 
 Wait a few seconds for your Vessel to run and refresh the page.
 {% endhint %}
