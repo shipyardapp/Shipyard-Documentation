@@ -1,8 +1,10 @@
 # Build a Playground Project
 
+## Overview
+
 For the sake of all of our tutorials, we suggest creating a new project called "Playground". This will serve as an area for you to freely explore the functionality of Shipyard without the fear of affecting anything else in the platform.
 
-### Creating your "Playground" Project
+## Creating your "Playground" Project
 
 1. Using the navigation on the left-side of the screen, click on "Projects". This will cause the navigation menu to expand.
 2. Click on **View All Projects**. This will take you to the "All Projects" page.  
@@ -10,12 +12,14 @@ For the sake of all of our tutorials, we suggest creating a new project called "
    If this is your first time in the platform, you'll see the following screen:  
 
 
-   ![](../.gitbook/assets/image%20%287%29.png)  
+   ![](../.gitbook/assets/image%20%2817%29.png)
+
+  
 
 3. Click the **New Project** button in the top-right corner of the screen.  
 
 
-   ![](../.gitbook/assets/image%20%286%29.png)
+   ![](../.gitbook/assets/image%20%2814%29.png)
 
 4. Give your project a name of "Playground".
 5. In the timezone field, start typing `Central` .
@@ -30,8 +34,13 @@ For the sake of all of our tutorials, we suggest creating a new project called "
 7. Click the "Create" button in the bottom-right corner of the screen.
 
 {% hint style="success" %}
-You've now successfully created your Playground project! You should see the following screen:
+You've now successfully created your Playground project!
 {% endhint %}
 
-You've now successfully created your Playground project! You should see the following screen:
+ You should see the following screen:  
+
+
+![](../.gitbook/assets/image%20%2815%29.png)
+
+
 

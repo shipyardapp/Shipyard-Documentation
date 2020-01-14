@@ -64,7 +64,9 @@
 
 ## 🚀 Tutorials
 
-* [Build a Playground Project](tutorials/untitled.md)
+* [Build a Playground Project](tutorials/building-playground-project.md)
+* [Building a "Hello World" Vessel](tutorials/building-a-hello-world-vessel.md)
+* [Building a more Advanced "Hello World" Vessel](tutorials/building-a-more-advanced-hello-world-vessel.md)
 
 ## 📝 Background
 
