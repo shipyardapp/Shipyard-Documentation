@@ -174,10 +174,11 @@ In the output, you'll see a total of 6 things.
 
 1. Shipyard creates a working directory under `/home/shipyard/{voyage_id}`
 2. Shipyard downloads the file you created under the [Code ](building-a-hello-world-vessel.md#step-2-provide-your-code)section and unzips it.
-3. Shipyard prints the text `Hello, {your name}!`
-4. Shipyard prints out a cat fact.
-5. Shipyard prints out your Vessel Name, the time it ran, and a link to that specific run.
-6. Shipyard prints out the custom text you wrote.
+3. Shipyard installs the package requested, `Requests`
+4. Shipyard prints the text `Hello, {your name}!`
+5. Shipyard prints out a cat fact.
+6. Shipyard prints out your Vessel Name, the time it ran, and a link to that specific run.
+7. Shipyard prints out the custom text you wrote.
 
 {% hint style="success" %}
 You've successfully created and verified a Vessel!

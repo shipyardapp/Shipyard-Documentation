@@ -32,6 +32,7 @@
   * [Duplication](reference/other-functions/duplication.md)
   * [Status](reference/other-functions/status.md)
   * [State](reference/other-functions/state.md)
+  * [Timestamps and Timezones](reference/other-functions/timestamps-and-timezones.md)
   * [Platform Environment Variables](reference/other-functions/platform-environment-variables.md)
   * [Platform URL Structures](reference/other-functions/platform-url-structures.md)
 
