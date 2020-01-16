@@ -38,9 +38,9 @@ All of the information on this page is optional.
 4. Optionally, edit the **guardrails** to make the system automatically retry your Vessel upon an error. These default to whatever was set at the Blueprint level.
 5. Click Save and Finish once you're done
 
-At this point, you should have successfully created a Vessel and will see the following screen.
+At this point, you should have successfully built a Vessel and will see the following screen.
 
-![](../../.gitbook/assets/image%20%286%29.png)
+![](../../.gitbook/assets/image%20%288%29.png)
 
 ### Further Reading <a id="further-reading"></a>
 

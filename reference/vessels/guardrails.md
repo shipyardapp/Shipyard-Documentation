@@ -14,7 +14,7 @@ After a failure, the amount of time before Shipyard will try to run the Vessel a
 
 ## Screenshots
 
-![](../../.gitbook/assets/image%20%285%29.png)
+![](../../.gitbook/assets/image%20%287%29.png)
 
 ## Limitations
 

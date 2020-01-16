@@ -18,5 +18,14 @@ Create templated solutions that anyone in the organization can use without needi
 
 {% page-ref page="custom-blueprints.md" %}
 
+## Learn More
 
+* [How to Search for Blueprints](../../how-tos/blueprints/how-to-search-for-blueprints.md)
+* [How to Create a New Blueprint](../../how-tos/blueprints/how-to-create-a-new-blueprint.md)
+* [How to Edit a Blueprint](../../how-tos/blueprints/how-to-edit-a-blueprint.md)
+* [How to Delete a Blueprint](../../how-tos/blueprints/how-to-delete-a-blueprint.md)
+* [How to Duplicate a Blueprint](../../how-tos/blueprints/how-to-duplicate-a-blueprint.md)
+* [How to Create Blueprint Variables](../../how-tos/blueprints/how-to-create-blueprint-variables.md)
+* [How to Reference a Blueprint Variable](../../how-tos/blueprints/how-to-reference-a-blueprint-variable.md)
+* [How to Reorder Blueprint Variables](../../how-tos/blueprints/how-to-reorder-blueprint-variables.md)
 

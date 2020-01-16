@@ -1,4 +1,4 @@
-# How to Delete a Bluepruint
+# How to Delete a Blueprint
 
 ## Overview
 
