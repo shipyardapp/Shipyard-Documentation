@@ -2,7 +2,7 @@
 
 ## Definition
 
-A Custom Blueprint is another name for the Blueprints created by users in your organization or by Shipyard staff. These Blueprints provide a way for technical users to create a reusable piece of code with organization specific logic that other business users can use to create a Vessel. These business users are only required to provide key variables needed for the the Vessel to work correctly. All code and requirements are abstracted away from the end user.
+A Custom Blueprint is a Blueprint created by users in your organization or by Shipyard staff. These Blueprints provide a way for technical users to create a reusable piece of code with organization specific logic that business users can use to build a Vessel. These business users are only required to provide key variables needed for the the Vessel to work correctly. All code and requirements are abstracted away from the end user.
 
 All Custom Blueprints are built upon Code Blueprints. You must select a supported language and provide the necessary code, requirements, and packages necessary to make the Blueprint usable. However, unlike Code Blueprints, you can create Blueprint Variables that users fill out whenever they are setting up a new Vessel. 
 

@@ -14,7 +14,7 @@ Write and run code from scratch, executed on our scaled cloud infrastructure. Cu
 
 ### **Custom Blueprints**
 
-Create templated solutions that anyone in the organization can use without needing code. A Blueprint Creator will decide what inputs a user should fill out, while a Blueprint User will provide the relevant information.
+Create templated solutions that anyone in the organization can use without needing code. A Blueprint Creator will decide what inputs a user should fill out, while a Blueprint User will provide the relevant inputs.
 
 {% page-ref page="custom-blueprints.md" %}
 

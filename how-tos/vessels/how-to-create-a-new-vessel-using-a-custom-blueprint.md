@@ -1,13 +1,13 @@
-# How to Create a New Vessel using a Custom Blueprint
+# How to Build a New Vessel using a Custom Blueprint
 
 ## Overview
 
-Every unique solution you create will require you to build a Vessel. If you're creating the solution from a pre-built blueprint, designed by other technical team members or Shipyard staff, you'll want want to create a Vessel using a Custom Blueprint.
+Every unique solution you create will require you to build a Vessel. If you're creating the solution from a pre-built blueprint, designed by other technical team members or Shipyard staff, you'll want want to build a Vessel using a Custom Blueprint.
 
 ## Steps
 
 1. Navigate to the Vessels tab underneath a project.
-2. Click the "Build Vessel" button in the top-right.
+2. Click the "[PreviousHow to Build a New Vessel using a Code Blueprint](https://app.gitbook.com/@blakeburch/s/shipyard/~/drafts/-Lyj1N_9bSs8Cslg6aGn/how-tos/vessels/how-to-build-a-new-vessel-using-a-code-blueprint/@drafts)Vessel" button in the top-right.
 3. Select "Custom Blueprint". 
 
 At this point you'll be walked through the following 4 pages of setup. If at any point in the process, you want to go to a previous step, you can either click on the step process number at the top, or click the "Back" button at the bottom. You can also completely delete your unfinished progress by clicking "Cancel".

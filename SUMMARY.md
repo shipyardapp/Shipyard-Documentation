@@ -55,7 +55,7 @@
   * [How to Download Uploaded Code](how-tos/vessels/how-to-download-uploaded-code.md)
   * [How to Edit a Vessel's Schedule Triggers](how-tos/vessels/how-to-edit-a-vessels-schedule-triggers.md)
   * [How to Build a New Vessel using a Code Blueprint](how-tos/vessels/how-to-build-a-new-vessel-using-a-code-blueprint.md)
-  * [How to Create a New Vessel using a Custom Blueprint](how-tos/vessels/how-to-create-a-new-vessel-using-a-custom-blueprint.md)
+  * [How to Build a New Vessel using a Custom Blueprint](how-tos/vessels/how-to-create-a-new-vessel-using-a-custom-blueprint.md)
   * [How to Duplicate a Vessel](how-tos/vessels/how-to-duplicate-a-vessel.md)
   * [How to Search for Vessels](how-tos/vessels/how-to-search-for-vessels.md)
   * [How to Delete a Vessel](how-tos/vessels/how-to-delete-a-vessel.md)
