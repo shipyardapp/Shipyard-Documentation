@@ -4,7 +4,7 @@
 
 If you want to start using Shipyard, you will need to reach out to us directly. There are 3 easy ways to do this:
 
-1. Send an email to [onboarding@shipyardapp.com](mailto:onboarding@shipyardapp.com)
+1. Send an email to [support@shipyardapp.com](mailto:support@shipyardapp.com)
 2. Send us a message via Intercom by clicking the chat bubble to your right.
 3. Visit [this page ](https://www.shipyardapp.com/request-access)and fill out the form with your contact information.
 

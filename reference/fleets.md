@@ -2,7 +2,11 @@
 
 ## Definition
 
-A Fleet is a collection of multiple Vessels working together to tackle one larger job. Fleets can contain any number of Vessels and contain any different type of Vessels \(including a mixture of coding languages or Blueprints\). In their current state, the Vessels in a Fleet get run sequentially.
+A Fleet is a collection of multiple Vessels working together to tackle one larger job. Fleets can contain any number of Vessels and contain any different type of Vessels \(including a mixture of coding languages or Blueprints\). Vessels in a Fleet get run sequentially.
+
+## Screenshots
+
+![](../.gitbook/assets/image%20%2860%29.png)
 
 ## **Limitations**
 
@@ -17,4 +21,9 @@ While fleets are a powerful way to automate an entire workflow, there are a few 
 4. Data cannot be shared between Vessels, because each Vessel is still running independently. If you need to reference a file that has been created earlier in the fleet, we recommend storing the file somewhere externally \(S3, SFTP, etc.\) and referencing that external file name later in the fleet.
 
 5. A Vessel cannot belong to multiple Fleets. This is to prevent confusion about start and end points in a Fleet. In most cases, this can be resolved by just duplicating the Vessel.
+
+## Learn More
+
+* [How to Delete a Fleet](../how-tos/fleets/how-to-delete-a-fleet.md)
+* [How to Create a New Fleet](../how-tos/fleets/how-to-create-a-new-fleet.md)
 

@@ -31,7 +31,7 @@ Out of the box, we offer a lot of features that help make Shipyard the easiest p
 * A streamlined UI for management
 * In-depth admin controls and permissions
 
-If you're interested in getting access to the platform, just send us a note at [onboarding@shipyardapp.com](mailto:onboarding@shipyardapp.com) or click that chat bubble in the bottom right.
+If you're interested in getting access to the platform, just send us a note at [support@shipyardapp.com ](mailto:support@shipyardapp.com)or click that chat bubble in the bottom right.
 
 ## Custom Shipyard Solutions
 

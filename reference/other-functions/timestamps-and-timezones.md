@@ -15,7 +15,7 @@ These timestamps are commonly shown on the Logs tab or within a Table. All of th
 
 In the settings of a project, you're able to set the project's timezone. This setting only effects the timezone that Vessels are scheduled in, not how those times are displayed throughout the project.
 
-## Example
+### Example
 
 * You have a project named "Test" with **Pacific Time** selected.
 * Your computer is set to **Eastern Time**.

@@ -20,9 +20,9 @@ This solution is perfect for smaller code snippets that you may need to change a
 
 ## Screenshots
 
-![File Upload](../../.gitbook/assets/image%20%286%29.png)
+![File Upload](../../.gitbook/assets/image%20%2810%29.png)
 
-![In-App Editor](../../.gitbook/assets/image%20%2834%29.png)
+![In-App Editor](../../.gitbook/assets/image%20%2846%29.png)
 
 ## Limitations
 

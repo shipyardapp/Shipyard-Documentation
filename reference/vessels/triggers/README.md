@@ -15,3 +15,8 @@ There are currently 3 types of supported triggers:
 1. There is currently no way to view the overlap between multiple types of triggers.
 2. A Vessel cannot run on both Schedule Triggers and Internal Triggers at the same time. You have to choose one or another.
 
+## Learn More
+
+* [How to Edit a Vessel's Schedule Triggers](../../../how-tos/vessels/how-to-edit-a-vessels-schedule-triggers.md)
+* [How to Create a New Fleet](../../../how-tos/fleets/how-to-create-a-new-fleet.md)
+

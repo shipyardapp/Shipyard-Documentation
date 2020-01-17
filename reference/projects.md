@@ -17,7 +17,7 @@ Projects store the following data about themselves.
 
 ## Screenshots
 
-![](../.gitbook/assets/image%20%2818%29.png)
+![](../.gitbook/assets/image%20%2823%29.png)
 
 ## Limitations
 
@@ -25,4 +25,10 @@ Projects store the following data about themselves.
 2. Vessels in one project cannot interact with a Vessel or a Fleet in another project.
 3. Vessels cannot be scheduled to run in any timezone other than the project's selected timezone. It is currently not possible to mix timezones within a single project.
 4. A project cannot be shared between two organizations. If you would like to give an external member access to Vessels within a project, you'll need to add them to your organization and give them access to that specific project.
+
+## Learn More
+
+* [How to Create a New Project](../how-tos/projects/how-to-create-a-new-project.md)
+* [How to Edit an Existing Project](../how-tos/projects/how-to-edit-an-existing-project.md)
+* [How to Delete an Existing Project](../how-tos/projects/how-to-delete-an-existing-project.md)
 

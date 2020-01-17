@@ -2,7 +2,9 @@
 
 ## Definition
 
-Guardrails help make sure that your Vessel runs successfully, no matter the situation. Use guardrails to avoid a Vessel or Fleet from failing out due to smaller, unpredictable problems like timing or connection issues. Guardrails consist of two options:
+Guardrails help make sure that your Vessel runs successfully, no matter the situation. Use guardrails to avoid a Vessel or Fleet from failing out due to smaller, unpredictable problems like timing or connection issues.   
+  
+Guardrails consist of two options:
 
 ### **Number of Retries**
 
@@ -14,7 +16,7 @@ After a failure, the amount of time before Shipyard will try to run the Vessel a
 
 ## Screenshots
 
-![](../../.gitbook/assets/image%20%2810%29.png)
+![](../../.gitbook/assets/image%20%2814%29.png)
 
 ## Limitations
 

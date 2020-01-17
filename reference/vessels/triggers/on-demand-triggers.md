@@ -2,10 +2,14 @@
 
 ## Definition
 
-On the main page for every Vessel, you are given the option to click "Run Now". Clicking this button will cause the Vessel to save changes and trigger a Vessel to schedule an immediate run.  
+On top navigation pane for every Vessel, you are given a **Run Now** button in the top-right. Clicking this button will cause the Vessel to save changes and trigger a Vessel to schedule an immediate run.
 
+## Screenshots
+
+![Running your Vessel On Demand](../../../.gitbook/assets/image%20%2852%29.png)
 
 ## Limitations
 
-1. Vessels may not run instantaneously, as there is still time associated with spinning up a server.
+1. Vessels may not run instantaneously, as there is still time associated with entering a job queue and spinning up servers.
+2. If you are currently on the Logs tab, clicking **Run Now** may schedule an On Demand run in the background, with no visibile indication. Refresh the page to see the newly created run.
 
