@@ -22,7 +22,7 @@ You may also _optionally_ provide these elements:
 
 * [Blueprint Variables](blueprint-variables.md) 
 * [External Package Dependencies](../vessels/external-package-dependencies.md)
-* [Environment Variables](../vessels/environment-variables.md)
+* [Environment Variables](../vessels/environment-variables/)
 * [Guardrails](../vessels/guardrails.md)
 
 ### Building a Vessel

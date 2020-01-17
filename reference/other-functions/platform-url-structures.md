@@ -2,7 +2,7 @@
 
 ## Definition
 
-All URLs within Shipyard follow a consistent format that's built on internal IDs and names. When used in combination with the [Platform Environment Variables](platform-environment-variables.md), this can be a useful way to link a user directly to an area of the platform that you want them to view, edit, or run manually.
+All URLs within Shipyard follow a consistent format that's built on internal IDs and names. When used in combination with the [Platform Environment Variables](../vessels/environment-variables/platform-environment-variables.md), this can be a useful way to link a user directly to an area of the platform that you want them to view, edit, or run manually.
 
 The below is a list of the most common URL structures that may be needed.
 

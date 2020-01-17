@@ -28,7 +28,7 @@ A required high level choice that helps provide validation for the user input. T
 *  **Boolean** -  Lets the user select either a `TRUE`  or `FALSE`  value in the form of a checkbox.
 *  **Date** - Lets the user provide a date, using a date selector, in the `YYYY-MM-DD`  format.
 *  **Select -**  Lets a Blueprint creator define a restricted set of valid values ****as **Select Options**. These values contain both a Display Name, shown to the user, and an Internal Value, passed to the code. Only those values that you define here will be available to the user. 
-*  **Password** - Allows the user to provide a string that gets hidden by default. This value will not be displayed upon future edits \(similar to the behavior of [Environment Variables](../vessels/environment-variables.md)\) for security purposes.
+*  **Password** - Allows the user to provide a string that gets hidden by default. This value will not be displayed upon future edits \(similar to the behavior of [Environment Variables](../vessels/environment-variables/)\) for security purposes.
 
 {% hint style="warning" %}
 **Note:** Regardless of which variable type is selected, the final user input will always passed back to your code as a string.
@@ -56,7 +56,7 @@ All of the user input provided when setting up a Vessel will be provided to your
 
 ### **Pass Variables Into Script**
 
-You can obtain the variable's value via either the [command arguments ](../vessels/command.md)or as an [environment variable value ](../vessels/environment-variables.md)by referencing the variable using `${variable_name}`. The variable name will **exactly match** the Blueprint Variable's [**Reference Name**](blueprint-variables.md#reference-name)**.** For example, if a variable's reference name is `Operator_A`, then you would reference it by typing`${Operator_A}`.
+You can obtain the variable's value via either the [command arguments ](../vessels/command.md)or as an [environment variable value ](../vessels/environment-variables/)by referencing the variable using `${variable_name}`. The variable name will **exactly match** the Blueprint Variable's [**Reference Name**](blueprint-variables.md#reference-name)**.** For example, if a variable's reference name is `Operator_A`, then you would reference it by typing`${Operator_A}`.
 
 If you reference a `${variable_name}` that does not exist, the value will be returned as `None`.
 
@@ -68,7 +68,7 @@ In your code, you can obtain the value for the variable just like you would any 
   
 View the following article for more information on accessing environment variables.
 
-{% page-ref page="../vessels/environment-variables.md" %}
+{% page-ref page="../vessels/environment-variables/" %}
 
 {% hint style="warning" %}
 **Note:** A Blueprint's environment variables and Blueprint variables **are** **both** set as environment variables that can be accessed at runtime. It's important to make sure that the naming between these two sections doesn't overlap. 
@@ -82,7 +82,7 @@ View the following article for more information on accessing environment variabl
 
 ![Viewing all variables](../../.gitbook/assets/image%20%283%29.png)
 
-![Editing a variable](../../.gitbook/assets/image%20%2838%29.png)
+![Editing a variable](../../.gitbook/assets/image%20%2844%29.png)
 
 ## Limitations
 

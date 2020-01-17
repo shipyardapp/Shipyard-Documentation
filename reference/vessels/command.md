@@ -74,7 +74,13 @@ Arguments are comprised of flags and values and are added to the command in the 
 **Note:** Command arguments are not suitable for secrets. They are available to change the behavior of your script with values that are not secret, like a file name to process or column names in a table to work with.
 {% endhint %}
 
-### Limitations of the Command <a id="limitations-of-the-command"></a>
+## Screenshots
+
+![](../../.gitbook/assets/image%20%2835%29.png)
+
+## Limitations
 
 1. Shipyard can only run a single command at a time. If multiple commands need to be run, you should create and run a single shell script that contains the code to run multiple commands successively.
+
+
 

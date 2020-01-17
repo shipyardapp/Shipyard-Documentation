@@ -10,11 +10,9 @@ Every Vessel is built with a Blueprint that contains the design specifications t
 {% tab title="Code Blueprint Steps" %}
 1. Select your [**Blueprint**](../blueprints/code-blueprints.md)\*\*\*\*
 2. Provide [**Code**](code.md)\*\*\*\*
-3. Define **Requirements** \([Environment Variables ](environment-variables.md)and [Package Dependencies](external-package-dependencies.md)\)
+3. Define Requirements \([Environment Variables](environment-variables/), [External Package Dependencies](external-package-dependencies.md)\)
 4. Set [**Triggers**](triggers/)\*\*\*\*
 5. Save **Settings** \([Information](information-card.md), [Notifications](notifications.md), and [Guardrails](guardrails.md)\)
-
-![](../../.gitbook/assets/image%20%2821%29.png)
 {% endtab %}
 
 {% tab title="Custom Blueprint Steps" %}
@@ -22,8 +20,6 @@ Every Vessel is built with a Blueprint that contains the design specifications t
 2. Provide [**Inputs**](form-input.md)\*\*\*\*
 3. Set [**Triggers**](triggers/)
 4. Save **Settings** \([Information](information-card.md), [Notifications](notifications.md), and [Guardrails](guardrails.md)\)
-
-![](../../.gitbook/assets/image.png)
 {% endtab %}
 {% endtabs %}
 

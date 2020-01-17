@@ -94,7 +94,7 @@ All of the information on this page is optional.
 
 At this point, you should have successfully created a Vessel and will see the following screen.
 
-![](../../.gitbook/assets/image%20%288%29.png)
+![](../../.gitbook/assets/image%20%2811%29.png)
 
 ## Further Reading
 

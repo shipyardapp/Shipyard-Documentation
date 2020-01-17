@@ -2,7 +2,7 @@
 
 ## Definition
 
-Automated scheduling allows a vessel to run autonomously in the background on our cloud infrastructure. To run a Vessel on an automated schedule, you must have one or more schedules listed and the Vessel must be in an "Active" state.
+Schedule Triggers allow a vessel to run autonomously in the background on our cloud infrastructure. To run a Vessel on an automated schedule, you must have one or more schedules listed and the Vessel must be in an "Active" [state](../../other-functions/state.md).
 
 There are four distinct types of schedules:  
 **Hourly** - Select the distinct minute that you want a Vessel to run every hour.  

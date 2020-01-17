@@ -19,14 +19,14 @@ When creating a Vessel from a Code Blueprint, you must **always** provide the fo
 You may also _optionally_ provide these elements:
 
 * [External Package Dependencies](../vessels/external-package-dependencies.md)
-* [Environment Variables](../vessels/environment-variables.md)
+* [Environment Variables](../vessels/environment-variables/)
 * [Triggers](../vessels/triggers/)
 * [Notifications](../vessels/notifications.md)
 * [Guardrails](../vessels/guardrails.md)
 
 ## Screenshots
 
-![](../../.gitbook/assets/image%20%2823%29.png)
+![](../../.gitbook/assets/image%20%2826%29.png)
 
 ## Limitations
 
