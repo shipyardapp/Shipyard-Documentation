@@ -18,7 +18,7 @@ If a schedule is added, removed, or changed after 12:00am UTC, the Vessel's sche
 
 ## Screenshots
 
-![](../../../.gitbook/assets/image%20%2835%29.png)
+![](../../../.gitbook/assets/image%20%2837%29.png)
 
 ## Limitations
 

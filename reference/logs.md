@@ -25,9 +25,9 @@ A log is created for a single, isolated instance of a Vessel running on Shipyard
 
 ## Screenshots
 
-![Logs Tab for a Vessel](../.gitbook/assets/image%20%2822%29.png)
+![Logs Tab for a Vessel](../.gitbook/assets/image%20%2823%29.png)
 
-![Individual Log](../.gitbook/assets/image%20%2830%29.png)
+![Individual Log](../.gitbook/assets/image%20%2832%29.png)
 
 ## Limitations
 

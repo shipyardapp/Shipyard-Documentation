@@ -6,7 +6,7 @@ On top navigation pane for every Vessel, you are given a **Run Now** button in t
 
 ## Screenshots
 
-![Running your Vessel On Demand](../../../.gitbook/assets/image%20%2852%29.png)
+![Running your Vessel On Demand](../../../.gitbook/assets/image%20%2854%29.png)
 
 ## Limitations
 

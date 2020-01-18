@@ -76,7 +76,7 @@ If you have a valid use case for needing positional arguments or a boolean flag,
 
 ## Screenshots
 
-![](../../.gitbook/assets/image%20%2847%29.png)
+![](../../.gitbook/assets/image%20%2849%29.png)
 
 ## Limitations
 

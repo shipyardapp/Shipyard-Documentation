@@ -14,9 +14,9 @@ After our conversation, we'll begin the process of creating your account. As a f
 
 ## Can I create an account on my own?
 
-No. We currently don't offer the ability to create an account on your own. We want to work closely with those that are using the platform so you can be set up for success \(and so we can also weed out potential bad actors at this stage\).
+Not at the moment. We currently don't offer the ability to create an account on your own. We want to work closely with those that are using the platform so you can be set up for success \(and so we can also weed out potential bad actors at this stage\).
 
-We promise we don't bite, so feel free to reach out if you'd like an account. 😁 
+We promise we don't bite, so feel free to reach out to support if you'd like an account. 😁 
 
 ## How do I submit feedback or a feature request?
 
@@ -44,9 +44,9 @@ If you have an idea of something you want to solve, and you're not sure if it's 
 
 We are currently not charging users to use our platform while we work to refine our product offering to be truly seamless and exceptional. Our main objective right now is to help companies scale their existing automation processes without them needing to worry about infrastructure. In return, we want these users to provide us with valuable feedback that helps shape the platform for the foreseeable future.
 
-Even though the product is currently free, we are committed to providing the highest level of service, product uptime, and availability. We acknowledge that we will be helping facilitate mission-critical jobs and will be doing
+Even though the product is currently free, we are committed to providing the highest level of service, product uptime, and availability. We acknowledge that we will be helping facilitate mission-critical jobs and will be doing doing everything in our power to keep these running without problems.
 
-We expect that we will begin charging users in Q2 or Q3 of 2020 and plan on offering the product as a monthly subscription service.
+We expect that we will begin charging users in late Q2 2020 and plan on offering the product as a monthly subscription service.
 
 ## What Technology Stack do you use?
 
