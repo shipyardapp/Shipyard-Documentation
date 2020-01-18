@@ -64,11 +64,11 @@ The File to Run should relate to the single file that you want the selected prog
 
 ### Arguments <a id="arguments"></a>
 
-Arguments are comprised of flags and values and are added to the command in the order they are entered \(although generally order should not matter\). There are 3 potential use cases for arguments:
-
-**Value Only** - Used for positional arguments. These must be placed at the top of the list.  
-**Flag Only** - Serves as a boolean value to turn a function on or off.  
-**Flag and Value** - Pass through a provided value to a specific argument name.
+Arguments are comprised of flags and values and are added to the command in the order they are entered \(although generally order should not matter\).   
+  
+We currently only accept arguments that have **both** a Flag and a Value, as these more explicit.  
+  
+If you have a valid use case for needing positional arguments or a boolean flag, please reach out to support.
 
 {% hint style="warning" %}
 **Note:** Command arguments are not suitable for secrets. They are available to change the behavior of your script with values that are not secret, like a file name to process or column names in a table to work with.
@@ -81,6 +81,8 @@ Arguments are comprised of flags and values and are added to the command in the 
 ## Limitations
 
 1. Shipyard can only run a single command at a time. If multiple commands need to be run, you should create and run a single shell script that contains the code to run multiple commands successively.
+2. Positional arguments that contain only values cannot be passed to your script.
+3. Boolean arguments that contain only flags cannot be passed to your script.
 
 
 
