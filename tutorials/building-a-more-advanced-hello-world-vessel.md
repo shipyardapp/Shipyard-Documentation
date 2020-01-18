@@ -23,7 +23,7 @@ For the sake of the this tutorial, we suggest starting off by building a Vessel 
 
 Download the following file to your computer, without changing the file name. It's a .zip containing a single python file that we'll use throughout this tutorial.
 
-{% file src="../.gitbook/assets/tutorial.zip" %}
+{% file src="../.gitbook/assets/tutorial.tar" %}
 
 Feel free to peruse this script beforehand so you understand everything that it's doing. The script is accomplishing four main things:
 
