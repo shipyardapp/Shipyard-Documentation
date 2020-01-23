@@ -32,7 +32,7 @@ All credentials provided to the application as Environment Variables are both en
 **Output**  
 All of your code's output is shown as searchable plain text in the UI and stored indefinitely as a file on S3. Because your code controls what data is output, you should verify that your script is not printing any secure data to the output.  
   
-There is currently no way to delete a Log and it's output from the UI. In the event that you accidentally sent information to the output that should not have been shared publicly, reach out to [help@shipyardapp.com](mailto:help@shipyardapp.com) to get this data removed.
+There is currently no way to delete a Log and it's output from the UI. In the event that you accidentally sent information to the output that should not have been shared publicly, reach out to [support@shipyardapp.com](mailto:support@shipyardapp.com) to get this data removed.
 
 ## Storing Data Externally
 
@@ -61,5 +61,5 @@ Data security doesn't just end with our application. In the spirit of transparen
 
 ## Questions
 
-If you have questions about any of our security practices, please reach out to [security@shipyardapp.com](http://security@shipyardapp.com/). We want to make sure that you feel confident in our ability to keep your information safe.
+If you have questions about any of our security practices, please reach out to [tech@shipyardapp.com.](mailto:tech@shipyardapp.com) We want to make sure that you feel confident in our ability to keep your information safe.
 

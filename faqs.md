@@ -64,17 +64,6 @@ Our team are big believers in OSS. We even use some of it to build out our own s
   
 By making Shipyard a platform that prioritizes payment, we're able to provide customers with a high level of service and reaction time to fixing any bugs that may arise. You'll spend less development time wrangling with setup, troubleshooting, and constant adjustments of infrastructure. If you need a feature to help support your business, we can work with you to build it. We believe that trade-off is worth it for any business serious about implementing automation and using their data for the long term.
 
-## I need to whitelist Shipyard's IP Addresses. What are those?
-
-Any requests coming from Shipyard will come from the following IPs.
-
-* 44.231.21.215
-* 44.231.83.26
-* 44.232.20.249
-* 44.232.6.231
-
-If you still have trouble with Shipyard being able to access data from internal systems or 3rd parties, reach out to [support](mailto:support@shipyardapp.com).
-
 ## **I have an infrequently asked question!**
 
 Great! We'd love to answer it. [Send us an email](mailto:support@shipyardapp.com), or chat with us by clicking the chat icon in the bottom right corner.
