@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [How to use the Documentation](how-to-use-the-documentation.md)
 * [FAQs](faqs.md)
+* [Changelog](changelog.md)
 
 ## 📚 Reference
 
