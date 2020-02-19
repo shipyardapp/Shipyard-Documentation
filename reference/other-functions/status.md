@@ -16,5 +16,5 @@
 
 ## Screenshots
 
-![From the Top: Scheduled, In Progress, Errored, Success, Canceled, Retrying](../../.gitbook/assets/image%20%2825%29.png)
+![From the Top: Scheduled, In Progress, Errored, Success, Canceled, Retrying](../../.gitbook/assets/image%20%2826%29.png)
 

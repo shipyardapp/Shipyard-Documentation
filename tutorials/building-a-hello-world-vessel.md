@@ -19,13 +19,13 @@ In this tutorial, you'll walk through the steps required to set up a very simple
 3. Click on the "Build Vessel" button in the top-right corner of the screen.  
 
 
-   ![](../.gitbook/assets/image%20%2851%29.png)
+   ![](../.gitbook/assets/image%20%2852%29.png)
 
   
 
 4. A modal will pop up asking you what type of blueprint you would like to use to build your Vessel. On the left side of the modal, you'll see an option for a **Code Blueprint**. Click "Select" for this option.
 
-![](../.gitbook/assets/image%20%2820%29.png)
+![](../.gitbook/assets/image%20%2821%29.png)
 
 {% hint style="success" %}
 You've successfully started the setup flow for building a Vessel using a Code Blueprint! 
@@ -35,7 +35,7 @@ We'll now walk through the process of filling out the next 5 steps to create our
 
 ### Step 1 - Select a Blueprint
 
-![](../.gitbook/assets/image%20%2861%29.png)
+![](../.gitbook/assets/image%20%2862%29.png)
 
 {% tabs %}
 {% tab title="Python" %}
@@ -53,14 +53,14 @@ On the left side of the screen, select the **Write** button. This will change th
 
 {% tabs %}
 {% tab title="Python" %}
-![](../.gitbook/assets/image%20%289%29.png)
+![](../.gitbook/assets/image%20%2810%29.png)
 
 1. In the field entitled **File Name** write `hello_world.py` . This is now the name of your script.
 2. In the field titled **Code** write `print('Hello, World!')` . Your script `hello_world.py`  now contains the Python code to print this famous message.
 3. On the right-hand side of the screen, there is a field entitled **File to Run**. Because we only have the single file that we created on the left-hand side that we want to run, you'll need to write `hello_world.py`  in this field.
 4. Click the "Next Step" button at the bottom of the screen.
 
-![](../.gitbook/assets/image%20%2826%29.png)
+![](../.gitbook/assets/image%20%2827%29.png)
 {% endtab %}
 
 {% tab title="Bash" %}
@@ -86,7 +86,7 @@ For this tutorial, we don't have any triggers to set up. Go ahead and click the 
 3. Add an additional notification email of "[helloworld@shipyardapp.com](mailto:helloworld@shipyardapp.com)". You'll notice that you can add any user or alias to the notification list, whether or not they have access to your organization.
 4. Click the **Save & Finish** button at the bottom of the screen.
 
-![](../.gitbook/assets/image%20%2856%29.png)
+![](../.gitbook/assets/image%20%2857%29.png)
 
 {% hint style="info" %}
 **Tip:** Not every step will be required. The necessary settings depend entirely on the solution you build and it's complexity.
@@ -96,11 +96,11 @@ For this tutorial, we don't have any triggers to set up. Go ahead and click the 
 
 You should see the following screen:
 
-![](../.gitbook/assets/image%20%2842%29.png)
+![](../.gitbook/assets/image%20%2843%29.png)
 
 Go ahead and click **Run Your Vessel**. This will schedule your Vessel to run immediately and redirect you to the **Logs** tab which should look like this.
 
-![](../.gitbook/assets/image%20%2827%29.png)
+![](../.gitbook/assets/image%20%2828%29.png)
 
 {% hint style="warning" %}
 **Note:** A Vessel does not have to be Active to be run manually. It does, however, have to be active to run on schedules.
@@ -110,12 +110,12 @@ Go ahead and click **Run Your Vessel**. This will schedule your Vessel to run im
 
 Click the first Log ID in the list. You should see the following page that shows you all of the details about the specific Log you clicked. 
 
-![](../.gitbook/assets/image%20%2847%29.png)
+![](../.gitbook/assets/image%20%2848%29.png)
 
 {% hint style="warning" %}
 **Note:** If the Vessel has a Status of **Scheduled or Running** you may see sections of this page that are incomplete. 
 
-![](../.gitbook/assets/image%20%2853%29.png)![](../.gitbook/assets/image%20%282%29.png)
+![](../.gitbook/assets/image%20%2854%29.png)![](../.gitbook/assets/image%20%282%29.png)
 
 Wait a few seconds for your Vessel to run and refresh the page.
 {% endhint %}

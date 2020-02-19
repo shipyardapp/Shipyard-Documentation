@@ -42,7 +42,7 @@ If you are writing Bash on your own machine, then you likely already know what c
 
 ## Screenshots
 
-![Python Packages](../../.gitbook/assets/image%20%2867%29.png)
+![Python Packages](../../.gitbook/assets/image%20%2868%29.png)
 
 
 
