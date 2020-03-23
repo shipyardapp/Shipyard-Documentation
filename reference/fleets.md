@@ -6,7 +6,7 @@ A Fleet is a collection of multiple Vessels working together to tackle one large
 
 ## Screenshots
 
-![](../.gitbook/assets/image%20%2863%29.png)
+![](../.gitbook/assets/image%20%2870%29.png)
 
 ## **Limitations**
 

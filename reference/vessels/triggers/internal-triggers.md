@@ -8,7 +8,7 @@ When you select to use an internal trigger, you are automatically creating a fle
 
 ## Screenshots
 
-![](../../../.gitbook/assets/image%20%2861%29.png)
+![](../../../.gitbook/assets/image%20%2868%29.png)
 
 ## Limitations
 

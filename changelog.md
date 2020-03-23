@@ -25,7 +25,7 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 * Added a page to make it more clear when Blueprints have no dependent Vessels.
 
-![](.gitbook/assets/image%20%287%29.png)
+![](.gitbook/assets/image%20%2810%29.png)
 
 ## 2/3/2020
 

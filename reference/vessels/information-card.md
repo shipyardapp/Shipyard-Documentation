@@ -46,15 +46,15 @@ A Blueprint's information card contains the following details:
 
 {% tabs %}
 {% tab title="Projects" %}
-![](../../.gitbook/assets/image%20%2845%29.png)
+![](../../.gitbook/assets/image%20%2852%29.png)
 {% endtab %}
 
 {% tab title="Vessels" %}
-![](../../.gitbook/assets/image%20%2860%29.png)
+![](../../.gitbook/assets/image%20%2867%29.png)
 {% endtab %}
 
 {% tab title="Blueprints" %}
-![](../../.gitbook/assets/image%20%289%29.png)
+![](../../.gitbook/assets/image%20%2813%29.png)
 {% endtab %}
 {% endtabs %}
 

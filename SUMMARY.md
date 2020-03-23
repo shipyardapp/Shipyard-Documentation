@@ -7,8 +7,7 @@
 
 ## 📚 Reference
 
-* [Organizations](reference/what-is-an-organization/README.md)
-  * [User Permissions](reference/what-is-an-organization/user-permissions.md)
+* [Organizations](reference/what-is-an-organization.md)
 * [Projects](reference/projects.md)
 * [Blueprints](reference/blueprints/README.md)
   * [Code Blueprints](reference/blueprints/code-blueprints.md)
@@ -30,6 +29,9 @@
   * [Notifications](reference/vessels/notifications.md)
 * [Fleets](reference/fleets.md)
 * [Logs](reference/logs.md)
+* [Admin](reference/admin/README.md)
+  * [User Management](reference/admin/user-management.md)
+  * [User Permissions](reference/admin/user-permissions.md)
 * [Other Functions](reference/other-functions/README.md)
   * [Duplication](reference/other-functions/duplication.md)
   * [Status](reference/other-functions/status.md)
@@ -71,6 +73,7 @@
 * [Build a Playground Project](tutorials/building-playground-project.md)
 * [Building a "Hello World" Vessel](tutorials/building-a-hello-world-vessel.md)
 * [Building a more Advanced "Hello World" Vessel](tutorials/building-a-more-advanced-hello-world-vessel.md)
+* [Building a Blueprint with Great Expectations](tutorials/building-a-blueprint-with-great-expectations.md)
 
 ## 📝 Background
 
