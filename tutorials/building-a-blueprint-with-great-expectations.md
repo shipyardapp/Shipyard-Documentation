@@ -104,7 +104,7 @@ We'll be creating an argument for each of the Blueprint Variables that we create
 2. In the second set of fields, type `--output_bucket_name` for the flag and `${output_bucket_name}` for the value.
 3. In the final set of fields, type `--expectation_suite` for the flag and `${expectation_suite}` for the value.
 
-Once these steps are complete, your screen should like exactly like this.
+Once these steps are complete, your screen should look exactly like this.
 
 ![](../.gitbook/assets/image%20%2822%29.png)
 
