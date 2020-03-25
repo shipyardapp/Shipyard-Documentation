@@ -10,9 +10,25 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 ## Features On Deck
 
-* Admin Panel with Permission Management
-* User Invite System
+* Share Data and Files Across Vessels in a Fleet
+* Conditional Triggers based on Vessel Status
+* Converging Paths for Fleets
 * Watch your Vessels Run - LIVE!
+
+## 3/24/2020
+
+🎉**New Features:**
+
+* [User Management](reference/admin/user-management.md) page for viewing, managing, and deleting users
+* User Invite System for growing your organization and collaborating with outside parties.
+* [User Permissions Panel](reference/admin/user-permissions.md) to set granular access settings per user.
+
+  
+  ****For more information about these features, see [our blog post](https://www.shipyardapp.com/blog/increasing-collaboration-for-organizations).
+
+🔧 **Bug Fixes:**
+
+* Fixed Google SSO issue that some users were having.
 
 ## 2/18/2020
 
