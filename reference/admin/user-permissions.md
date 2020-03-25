@@ -26,6 +26,8 @@ Choose which specific projects a user should have access to. Project names are a
 
 ## Screenshots
 
+![Edit the permissions of a user](../../.gitbook/assets/image%20%2811%29.png)
+
 ## Limitations
 
 1. Access settings are applied at the Organization level. In other words, a selected setting will apply to every project that a user has access to.

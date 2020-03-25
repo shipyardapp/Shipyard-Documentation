@@ -82,7 +82,7 @@ View the following article for more information on accessing environment variabl
 
 ![Viewing all variables](../../.gitbook/assets/image%20%286%29.png)
 
-![Editing a variable](../../.gitbook/assets/image%20%2871%29.png)
+![Editing a variable](../../.gitbook/assets/image%20%2873%29.png)
 
 ## Limitations
 
