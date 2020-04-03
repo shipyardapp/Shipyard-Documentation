@@ -15,9 +15,37 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 * Converging Paths for Fleets
 * Watch your Vessels Run - LIVE!
 
+## 4/2/2020
+
+🔧 **Bug Fixes:**
+
+* Fixed an issue where Blueprint names couldn't be duplicated across the application.
+
+## 3/31/2020
+
+🎉 **New Features:**
+
+You can now create a new organization directly through the UI! 
+
+![](.gitbook/assets/image%20%2875%29.png)
+
+While we still don't support multi-organization users, let us know if this use case would be helpful for you.
+
+🌟 **Enhancements:**
+
+* Selecting your Timezone when creating a project is now easier, with more common Timezones listed at the top.
+
+![](.gitbook/assets/image.png)
+
+🔧 **Bug Fixes:**
+
+* Guardrail values now correctly display the saved values.
+* Guardrails from Blueprints now transfer to Vessels set up with that Blueprint.
+* Removed the ability to add the current Vessel as an Internal Trigger.
+
 ## 3/24/2020
 
-🎉**New Features:**
+🎉 **New Features:**
 
 * [User Management](reference/admin/user-management.md) page for viewing, managing, and deleting users
 * User Invite System for growing your organization and collaborating with outside parties.
@@ -29,6 +57,7 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 🔧 **Bug Fixes:**
 
 * Fixed Google SSO issue that some users were having.
+* Prevented code from disappearing when you moved back during the Wizard setup.
 
 ## 2/18/2020
 
@@ -41,7 +70,7 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 * Added a page to make it more clear when Blueprints have no dependent Vessels.
 
-![](.gitbook/assets/image%20%2810%29.png)
+![](.gitbook/assets/image%20%2811%29.png)
 
 ## 2/3/2020
 

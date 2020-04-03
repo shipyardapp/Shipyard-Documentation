@@ -34,7 +34,7 @@ Staying inline with programming best practices, we recommend that all of your en
 
 ## Screenshots
 
-![](../../../.gitbook/assets/image%20%2877%29.png)
+![](../../../.gitbook/assets/image%20%2879%29.png)
 
 ## Limitations
 
