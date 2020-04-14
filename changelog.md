@@ -15,6 +15,22 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 * Converging Paths for Fleets
 * Watch your Vessels Run - LIVE!
 
+## 4/14/2020
+
+🌟 **Enhancements:**
+
+* Retries have an updated look! We've refined the design to give you better visibility into:
+  * When the next retry is going to occur
+  * What retry number Shipyard is currently on
+  * Visibly see when something is currently retrying
+* If your Vessel uses a Custom Blueprint, you'll now see a link to go directly to that Blueprint. This will make navigation throughout the application a bit easier.
+
+🔧 **Bug Fixes:**
+
+* Trying to access an organization that you don't have permissions for will result in an explicit error message and be redirected to their list of organizations. Previously, this landed you on a broken page.
+* When you refresh the page, projects on the sidebar will no longer disappear.
+* Fixed an error where the Blueprint field would just say "Blueprint".
+
 ## 4/2/2020
 
 🔧 **Bug Fixes:**
