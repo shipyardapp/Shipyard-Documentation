@@ -68,10 +68,9 @@ By making Shipyard a platform that prioritizes payment, we're able to provide cu
 
 Any requests coming from Shipyard will come from the following IPs.
 
-* 44.231.21.215
-* 44.231.83.26
-* 44.232.20.249
-* 44.232.6.231
+* 54.190.66.63
+* 52.42.73.100
+* 44.231.239.186
 
 If you still have trouble with Shipyard being able to access data from internal systems or 3rd parties, reach out to [support](mailto:support@shipyardapp.com).
 
