@@ -22,19 +22,12 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 You can now follow along with actively running Vessels - LIVE!
 
 * Clicking the "Run Vessel" button will automatically redirect you to the newly created log.
-* If a Vessel is scheduled to run soon, or is currently running, the log page will now automatically refresh to show you live details.
+* If a Vessel is scheduled to run soon, or is currently running, the log page will now automatically refresh to show you live details. Details include:
+  * Current Vessel Status ![](.gitbook/assets/status_updates.gif) 
+  * Live Updating Duration ![](.gitbook/assets/ticker.gif)
+  * Live Output Indicator
 
-**Current Vessel Status**
-
-![](.gitbook/assets/status_updates.gif)
-
-**Live Updating Duration**
-
-![](.gitbook/assets/ticker.gif)
-
-**Live Output Indicator**
-
-![](.gitbook/assets/live_loader.gif)
+    ![](.gitbook/assets/live_loader.gif)
 
 When you put all of these changes together, it looks like this:
 
