@@ -39,13 +39,13 @@ Feel free to peruse this script beforehand so you understand everything that it'
 3. Click on the "Build Vessel" button in the top-right corner of the screen.  
 
 
-   ![](../.gitbook/assets/image%20%2862%29.png)
+   ![](../.gitbook/assets/image%20%2819%29%20%281%29.png)
 
   
 
 4. A modal will pop up asking you what type of blueprint you would like to use to build your Vessel. On the left side of the modal, you'll see an option for a **Code Blueprint**. Click "Select" for this option.
 
-![](../.gitbook/assets/image%20%2828%29.png)
+![](../.gitbook/assets/image%20%287%29%20%283%29.png)
 
 {% hint style="success" %}
 You've successfully started the setup flow for building a Vessel using a Code Blueprint! 
@@ -55,7 +55,7 @@ We'll now walk through the process of filling out the next 5 steps to create our
 
 ### Step 1 - Select a Blueprint
 
-![](../.gitbook/assets/image%20%2872%29.png)
+![](../.gitbook/assets/image%20%2824%29.png)
 
 {% tabs %}
 {% tab title="Python" %}
@@ -69,7 +69,7 @@ On the left side of the screen, make sure the **Upload** button is selected. Thi
 
 {% tabs %}
 {% tab title="Python" %}
-![](../.gitbook/assets/image%20%2852%29.png)
+![](../.gitbook/assets/image%20%2813%29%20%281%29.png)
 
 1. Click the upload section of page and select the `tutorial.tar` file from you computer.
 2. On the right-hand side of the screen, there is a field entitled **File to Run**. Because the .zip contains a single python file named `hello_world_advanced.py`, you'll need use that name.
@@ -77,7 +77,7 @@ On the left side of the screen, make sure the **Upload** button is selected. Thi
 4. In the **flag** field on the left-hand side, type `--name`.
 5. In the **value** field on the right-hand side of the new argument, type your name.
 
-![](../.gitbook/assets/image%20%288%29.png)
+![](../.gitbook/assets/image%20%285%29.png)
 {% endtab %}
 {% endtabs %}
 
@@ -92,7 +92,7 @@ Once you're done, click the **Next Step** button at the bottom of the screen.
 3. In the **Value** field, type anything you want. This text will be printed at the end.
 
 {% hint style="warning" %}
-**Note:** The value field will always show `•••••••` as you type. This is because Environment Variables are commonly used for passwords and secrets. You can always reveal what you've written by clicking the eye icon. ![](../.gitbook/assets/image%20%2829%29.png) 
+**Note:** The value field will always show `•••••••` as you type. This is because Environment Variables are commonly used for passwords and secrets. You can always reveal what you've written by clicking the eye icon. ![](../.gitbook/assets/image%20%2810%29%20%281%29.png) 
 {% endhint %}
 
 #### Packages
@@ -118,7 +118,7 @@ Once you're done, go ahead and click the **Next Step** button at the bottom of t
 3. Under **How Often** select **Daily**.
 4. Select a time that's 15 minutes in the future from now.
 
-![](../.gitbook/assets/image%20%2851%29.png)
+![](../.gitbook/assets/image%20%2812%29%20%282%29.png)
 
 {% hint style="warning" %}
 **Note:** The Vessel will be scheduled according to its project's timezone. If you didn't set the Playground project to your current time zone, it will not be scheduled to run 10 minutes in the future.
@@ -135,7 +135,7 @@ Click the **Next Step** button at the bottom of the screen.
 5. Under the Guardrails section, set the **Number of Retries** to 2x and the **Time Between Retries** to 5m.
 6. Click the **Save & Finish** button at the bottom of the screen.
 
-![](../.gitbook/assets/image%20%2849%29.png)
+![](../.gitbook/assets/image%20%2816%29.png)
 
 {% hint style="info" %}
 **Tip:** We changed the default Guardrails because of the potential for the Cat Facts API to have connection issues.
@@ -143,28 +143,28 @@ Click the **Next Step** button at the bottom of the screen.
 
 ### Step 6 - Running the Vessel
 
-![](../.gitbook/assets/image%20%2853%29.png)
+![](../.gitbook/assets/image%20%2814%29.png)
 
-Go ahead and click **Run Your Vessel**. This will schedule your Vessel to run immediately and redirect you to the **Logs** tab which should look like this.
+Go ahead and click **Run Your Vessel**. This will schedule your Vessel to run immediately and redirect you to the **Individual** **Log** page.
 
-![](../.gitbook/assets/image%20%2843%29.png)
+![](../.gitbook/assets/image%20%2815%29%20%281%29.png)
 
 {% hint style="warning" %}
 **Note:** You should see two logs. One that has been triggered On Demand from you clicking the button and another that has a Schedule trigger for the time you set in [Step 4.](building-a-more-advanced-hello-world-vessel.md#step-4-triggers)
 {% endhint %}
 
-### Step 7 - Checking the Logs
+### Step 7 - Checking the Log
 
-Click the first Log ID in the list. You should see the following page that shows you all of the details about the specific Log you clicked.
+You should see the following page that shows you all of the details about the specific Log.
 
-![](../.gitbook/assets/image%20%2878%29.png)
+![](../.gitbook/assets/image%20%2864%29.png)
 
 {% hint style="warning" %}
 **Note:** If the Vessel has a Status of **Scheduled or Running** you may see sections of this page that are incomplete. 
 
-![](../.gitbook/assets/image%20%2864%29.png)![](../.gitbook/assets/image%20%285%29.png)
+![](../.gitbook/assets/image%20%2820%29.png)![](../.gitbook/assets/image%20%281%29%20%281%29.png)
 
-Wait a few seconds for your Vessel to run and refresh the page.
+Wait a few seconds for your Vessel to run. The page will automatically refresh.
 {% endhint %}
 
 In the output, you'll see a total of 6 things.
@@ -176,6 +176,12 @@ In the output, you'll see a total of 6 things.
 5. Shipyard prints out the custom text you wrote.
 6. Shipyard prints out a cat fact.
 7. Shipyard prints out your Vessel Name, the time it ran, and a link to that specific run.
+
+### Step 8 - Viewing all Logs
+
+On the current page, click the **Logs** tab at the top. This will redirect you back to all of the Logs for the Vessel you just made.
+
+You should see two longs. One that has been triggered On Demand from you clicking the button and another that has a Schedule trigger for the time you set in [Step 4.](building-a-more-advanced-hello-world-vessel.md#step-4-triggers)
 
 {% hint style="success" %}
 You've successfully created and verified an Advanced Vessel!

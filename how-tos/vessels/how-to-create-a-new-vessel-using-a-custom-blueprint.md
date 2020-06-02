@@ -40,7 +40,7 @@ All of the information on this page is optional.
 
 At this point, you should have successfully built a Vessel and will see the following screen.
 
-![](../../.gitbook/assets/image%20%2823%29.png)
+![](../../.gitbook/assets/image%20%283%29%20%283%29.png)
 
 ### Further Reading <a id="further-reading"></a>
 

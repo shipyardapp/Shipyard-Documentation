@@ -12,14 +12,14 @@ For the sake of all of our tutorials, we suggest creating a new project called "
    If this is your first time in the platform, you'll see the following screen:  
 
 
-   ![](../.gitbook/assets/image%20%2861%29.png)
+   ![](../.gitbook/assets/image%20%287%29%20%284%29.png)
 
   
 
 3. Click the **New Project** button in the top-right corner of the screen.  
 
 
-   ![](../.gitbook/assets/image%20%2856%29.png)
+   ![](../.gitbook/assets/image%20%286%29%20%281%29.png)
 
 4. Give your project a name of "Playground".
 5. In the timezone field, start typing `Central` .
@@ -29,7 +29,7 @@ For the sake of all of our tutorials, we suggest creating a new project called "
 **Note**: Feel free to search for and select your own time zone instead
 {% endhint %}
 
-![](../.gitbook/assets/image%20%284%29.png)
+![](../.gitbook/assets/image%20%2826%29.png)
 
 7. Click the "Create" button in the bottom-right corner of the screen.
 
@@ -40,7 +40,7 @@ You've now successfully created your Playground project!
  You should see the following screen:  
 
 
-![](../.gitbook/assets/image%20%2857%29.png)
+![](../.gitbook/assets/image%20%2816%29%20%281%29.png)
 
 
 

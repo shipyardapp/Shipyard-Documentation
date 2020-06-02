@@ -11,10 +11,10 @@
 | **Canceled** | This run was manually stopped by a user. |
 | **Canceling** | This run is currently happening, but has been requested to manually stop by a user.  |
 | **Retrying** | This run has previously failed and is running again based on options selected in the Guardrails. |
-| **In Progress** | This run is currently occuring. |
+| **Running** | This run is currently occuring. |
 | **Scheduled** | This run has not yet occurred, but is scheduled to occur in the next 24 hours |
 
 ## Screenshots
 
-![From the Top: Scheduled, In Progress, Errored, Success, Canceled, Retrying](../../.gitbook/assets/image%20%2834%29.png)
+![From the Top: Scheduled, Running, Errored, Success, Canceled, Retrying](../../.gitbook/assets/image%20%2825%29.png)
 

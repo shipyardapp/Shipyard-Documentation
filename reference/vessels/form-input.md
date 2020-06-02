@@ -18,7 +18,7 @@ The inputs are a direct reflection of the [Blueprint Variables ](../blueprints/b
 
 ## Screenshots
 
-![](../../.gitbook/assets/image%20%2863%29.png)
+![](../../.gitbook/assets/image%20%2852%29.png)
 
 ## Limitations
 

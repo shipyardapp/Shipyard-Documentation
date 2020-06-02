@@ -6,6 +6,14 @@ The Logs tab of a Vessel shows a list of each unique log that has been generated
 
 A log is created for a single, isolated instance of a Vessel running on Shipyard's cloud infrastructure. Every time your Vessel is [Triggered](vessels/triggers/), it produces a log. The Logs tab of a Vessel shows a list of each unique log that has been generated.
 
+If a log has a status of "Scheduled" or "Running", the individual Log page will automatically refresh every few seconds to show:
+
+* Current Vessel Status
+* Current Duration
+* Live Output
+
+Once the Vessel has finished running, the page will no longer automatically refresh.  
+
 ## Stored Data
 
 | Name | Definition |
@@ -25,11 +33,12 @@ A log is created for a single, isolated instance of a Vessel running on Shipyard
 
 ## Screenshots
 
-![Logs Tab for a Vessel](../.gitbook/assets/image%20%2832%29.png)
+![Logs Tab for a Vessel](../.gitbook/assets/image%20%2823%29.png)
 
-![Individual Log](../.gitbook/assets/image%20%2842%29.png)
+![Individual Log](../.gitbook/assets/image%20%2832%29.png)
 
 ## Limitations
 
 1. Logs cannot currently be exported from Shipyard for analysis. If you need access to this data, reach out to [support](mailto:support@shipyardapp.com).
+2. The "Live Update" feature of the Log Output only updates every time there are 256 additional bytes of data. In some instances where very little data is sent to the output, it may look like the Vessel is not actually showing any new data.
 

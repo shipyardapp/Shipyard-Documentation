@@ -26,7 +26,7 @@ You may also _optionally_ provide these elements:
 
 ## Screenshots
 
-![](../../.gitbook/assets/image%20%2850%29.png)
+![](../../.gitbook/assets/image%20%2823%29%20%281%29.png)
 
 ## Limitations
 

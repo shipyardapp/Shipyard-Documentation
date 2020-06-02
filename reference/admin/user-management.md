@@ -23,9 +23,9 @@ Clicking the delete action will permanently remove that user's access from the o
 
 ## Screenshots
 
-![View all users in the organization.](../../.gitbook/assets/image%20%2876%29.png)
+![View all users in the organization.](../../.gitbook/assets/image%20%2874%29.png)
 
-![Invite new users to your organization.](../../.gitbook/assets/image%20%2835%29.png)
+![Invite new users to your organization.](../../.gitbook/assets/image%20%2834%29.png)
 
 ## Limitations
 

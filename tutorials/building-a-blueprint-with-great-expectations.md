@@ -40,7 +40,7 @@ Feel free to peruse this script beforehand so you understand everything that it'
 
 ### Step 1 - Select A Code Blueprint
 
-![](../.gitbook/assets/image%20%2844%29.png)
+![](../.gitbook/assets/image%20%2841%29.png)
 
 Click on the Python Blueprint. You'll be immediately redirected to the next step.
 
@@ -48,7 +48,7 @@ Click on the Python Blueprint. You'll be immediately redirected to the next step
 
  Click the plus icon to create a new Blueprint variable. You should see a screen that looks like this:
 
-![](../.gitbook/assets/image%20%282%29.png)
+![](../.gitbook/assets/image%20%281%29.png)
 
 Our code for Great Expectations has 3 variables that we expect to receive. For a detailed overview of each of these fields, read more about [Blueprint Variables](../reference/blueprints/blueprint-variables.md).
 
@@ -90,7 +90,7 @@ Our code for Great Expectations has 3 variables that we expect to receive. For a
 
 At this point, your screen should look something like this. Once you've verified your Blueprint Variables, go ahead and click Next Step.
 
-![](../.gitbook/assets/image%20%2814%29.png)
+![](../.gitbook/assets/image%20%2812%29.png)
 
 ### Step 3 - Provide Your Code
 
@@ -106,7 +106,7 @@ We'll be creating an argument for each of the Blueprint Variables that we create
 
 Once these steps are complete, your screen should look exactly like this.
 
-![](../.gitbook/assets/image%20%2824%29.png)
+![](../.gitbook/assets/image%20%2822%29.png)
 
 Once you've verified that everything has been set up correctly, click "Next Step" in the bottom right.
 
@@ -119,7 +119,7 @@ Once you've verified that everything has been set up correctly, click "Next Step
 3. Set the second variable's **KEY** to `GREAT_EXPECTATIONS_AWS_SECRET_ACCESS_KEY` and **Value** to the AWS Secret of the bucket you chose during your Setup. 
 
 {% hint style="warning" %}
-**Note:** The value field will always show `•••••••` as you type. This is because Environment Variables are commonly used for passwords and secrets. You can always reveal what you've written by clicking the eye icon. ![](../.gitbook/assets/image%20%2829%29.png) 
+**Note:** The value field will always show `•••••••` as you type. This is because Environment Variables are commonly used for passwords and secrets. You can always reveal what you've written by clicking the eye icon. ![](../.gitbook/assets/image%20%2810%29%20%281%29.png) 
 {% endhint %}
 
 #### Packages
@@ -132,7 +132,7 @@ Once you've verified that everything has been set up correctly, click "Next Step
 
 Your screen should look similar to this:
 
-![](../.gitbook/assets/image%20%2830%29.png)
+![](../.gitbook/assets/image%20%2828%29.png)
 
 Once you're done, go ahead and click the **Next Step** button at the bottom of the screen.
 
@@ -159,11 +159,11 @@ Now anyone in your organization can use the Blueprint to test data against your 
 3. Select to Build a Vessel using a **Custom Blueprint**.
 4. Select the Blueprint called "Great Expectations - Demo"
 
-![](../.gitbook/assets/image%20%2810%29.png)
+![](../.gitbook/assets/image%20%289%29.png)
 
 At this point, you should be on a screen that looks like this:
 
-![](../.gitbook/assets/image%20%2877%29.png)
+![](../.gitbook/assets/image%20%2872%29.png)
 
 1. Enter  `https://s3.amazonaws.com/amazon-reviews-pds/tsv/sample_us.tsv` into the File URL field.
 2. Leave the Bucket Name as is.
@@ -182,11 +182,11 @@ Click the first Log ID that you generated. If everything was set up correctly, t
 
 Within the Log you'll be able to see all of the expectations and their output for the sample data.
 
-![](../.gitbook/assets/image%20%283%29.png)
+![](../.gitbook/assets/image%20%282%29.png)
 
 You should also be able to see the validation file in your S3 bucket of choice.
 
-![](../.gitbook/assets/image%20%2881%29.png)
+![](../.gitbook/assets/image%20%2876%29.png)
 
 Congratulations on setting up a Great Expectations Blueprint! You now have a repeatable solution that can be used again and again for all of your Expectation Suites.
 
