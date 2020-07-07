@@ -76,5 +76,6 @@ If you still have trouble with Shipyard being able to access data from internal 
 
 ## **I have an infrequently asked question!**
 
-Great! We'd love to answer it. [Send us an email](mailto:support@shipyardapp.com), or chat with us by clicking the chat icon in the bottom right corner.
+Great! We'd love to answer it. [Send us an email](mailto:support@shipyardapp.com), or chat with us by clicking on the chat icon in the bottom right corner.
 
+[//]: # "Testing if comments show up in Gitbook"
