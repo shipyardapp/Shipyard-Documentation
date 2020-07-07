@@ -54,6 +54,8 @@
   * [How to Create Blueprint Variables](how-tos/blueprints/how-to-create-blueprint-variables.md)
   * [How to Reference a Blueprint Variable](how-tos/blueprints/how-to-reference-a-blueprint-variable.md)
   * [How to Reorder Blueprint Variables](how-tos/blueprints/how-to-reorder-blueprint-variables.md)
+* [Blueprint Library](how-tos/blueprint-library/README.md)
+  * [How to Connect to your Box Account](how-tos/blueprint-library/how-to-connect-to-your-box-account.md)
 * [Vessels](how-tos/vessels/README.md)
   * [How to Download Uploaded Code](how-tos/vessels/how-to-download-uploaded-code.md)
   * [How to Edit a Vessel's Schedule Triggers](how-tos/vessels/how-to-edit-a-vessels-schedule-triggers.md)
