@@ -17,7 +17,7 @@ Projects store the following data about themselves.
 
 ## Screenshots
 
-![](../.gitbook/assets/image%20%2815%29.png)
+![View every project in your organization with highlighted data around Vessel count and job status.](../.gitbook/assets/image%20%2815%29.png)
 
 ## Limitations
 
