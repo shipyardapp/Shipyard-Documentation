@@ -81,3 +81,27 @@
 
 * [Keeping your Data Secure](background/keeping-your-data-secure.md)
 
+## 📦 Blueprint Library
+
+* [Amazon Athena](blueprint-library/amazon-athena.md)
+* [Amazon Redshift](blueprint-library/amazon-redshift.md)
+* [Amazon S3](blueprint-library/amazon-s3.md)
+* [Azure Blob Storage](blueprint-library/azure-blob-storage.md)
+* [Box](blueprint-library/box.md)
+* [Data Manipulation](blueprint-library/data-manipulation.md)
+* [Dropbox](blueprint-library/dropbox.md)
+* [File Manipulation](blueprint-library/file-manipulation.md)
+* [FTP](blueprint-library/ftp.md)
+* [SFTP](blueprint-library/sftp.md)
+* [Google BigQuery](blueprint-library/google-bigquery.md)
+* [Google Cloud Storage](blueprint-library/google-cloud-storage.md)
+* [Google Drive](blueprint-library/google-drive.md)
+* [Google Sheets](blueprint-library/google-sheets.md)
+* [Microsoft SQL Server](blueprint-library/microsoft-sql-server.md)
+* [MySQL](blueprint-library/mysql.md)
+* [PostgreSQL](blueprint-library/postgresql.md)
+* [Salesforce](blueprint-library/salesforce.md)
+* [SFTP](blueprint-library/sftp-1.md)
+* [Slack](blueprint-library/slack.md)
+* [Snowflake](blueprint-library/snowflake.md)
+
