@@ -44,5 +44,5 @@ This section is a work in progress and may be missing key details. If you need h
 
 ## Helpful Links
 
-[Google Bigquery Python Library Documentation](https://cloud.google.com/bigquery/docs/reference/libraries)
-[Pandas to_sql Method](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_sql.html)
+[Google Bigquery Python Library Documentation](https://cloud.google.com/bigquery/docs/reference/libraries) [Pandas to\_sql Method](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_sql.html)
+

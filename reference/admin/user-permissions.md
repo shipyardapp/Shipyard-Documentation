@@ -10,7 +10,7 @@ Permissions are granted in a matrix that allows you to specify permission levels
 
 * [Projects](../projects.md)
 * [Blueprints](../blueprints/)
-* [Logs](../logs.md)
+* [Logs](../logs/)
 * [Users](user-management.md)
 
 ### Permissions

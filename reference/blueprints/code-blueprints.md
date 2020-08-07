@@ -20,7 +20,7 @@ You may also _optionally_ provide these elements:
 
 * [External Package Dependencies](../vessels/external-package-dependencies.md)
 * [Environment Variables](../vessels/environment-variables/)
-* [Triggers](../vessels/triggers/)
+* [Triggers](../triggers/)
 * [Notifications](../vessels/notifications.md)
 * [Guardrails](../vessels/guardrails.md)
 

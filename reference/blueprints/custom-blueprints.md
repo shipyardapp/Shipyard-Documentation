@@ -34,7 +34,7 @@ When creating a Vessel from a Custom Blueprint, you must always provide the foll
 
 You may also _optionally_ provide these elements:
 
-1. [Triggers](../vessels/triggers/)
+1. [Triggers](../triggers/)
 2. [Notifications](../vessels/notifications.md)
 3. [Guardrails](../vessels/guardrails.md)
 

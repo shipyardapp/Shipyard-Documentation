@@ -29,3 +29,4 @@ This section is a work in progress and may be missing key details. If you need h
 ## Helpful Links
 
 [Amazon Athena Help Docs](https://docs.aws.amazon.com/athena/index.html)
+

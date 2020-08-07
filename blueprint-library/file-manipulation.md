@@ -36,5 +36,5 @@ This section is a work in progress and may be missing key details. If you need h
 
 ## Helpful Links
 
-[Python Compression Methods](https://docs.python.org/3.7/library/archiving.html)
-[Pandas to\_{format} Modules](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_csv.html)
+[Python Compression Methods](https://docs.python.org/3.7/library/archiving.html) [Pandas to\_{format} Modules](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_csv.html)
+

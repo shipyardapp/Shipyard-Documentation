@@ -10,10 +10,57 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 ## Features On Deck
 
-* Share Data and Files Across Vessels in a Fleet
-* Overhauling Fleet UI Editor
-* Converging Paths for Fleets
-* Conditional Triggers based on Vessel Status
+* Conditional Paths based on Vessel Status
+* Terminate Voyages Manually
+* Self Sign up
+* Billing Integrations
+* Github Integrations
+
+## 8/6/2020
+
+We've been hard at work over the past few months to deliver a new system for Fleets that's modular and flexible enough to meet the needs of the modern data team.
+
+🎉 **New Features:** 
+
+**Fleet Overhaul**
+
+Fleets have been redesigned from the ground up to tackle more complex problems with a greater level of flexibility and visibility.
+
+* Edit your Fleets visually. Drag and drop Vessels and paths to make a workflow that's as complex or simple as you need.
+
+![](.gitbook/assets/screen-cast-2020-08-07-at-2.08.56-pm.gif)
+
+* Fleets can now run on converging, branching, and sequential paths.
+
+![](.gitbook/assets/image%20%2878%29.png)
+
+* Vessels in a Fleet all share the same local file storage while continuing to run in independent containers. This allows upstream Vessels to pass data to downstream Vessels without the need for external storage and without the risk of package and language conflicts. 
+* Fleets now have their own logs, allowing you to assess historical status and performance.
+
+![](.gitbook/assets/image%20%2882%29.png)
+
+* Fleets now have their own notifications. Receive alerts whenever a Fleet runs into errors preventing it from running in its entirety. 
+* Vessels can now run independently AND as a part of a Fleet, allowing you to maintain overlapping triggers without having to duplicate Vessels.
+
+**Blueprint Library**
+
+* Browse through over 40 pre-made Blueprints that integrate with more than 15 external services, databases, and cloud storage vendors.
+
+![](.gitbook/assets/image%20%2880%29.png)
+
+* Add a Blueprint to your organization so you can quickly create Vessels and Fleets that download, upload, and manipulate data across your tech stack.
+
+![](.gitbook/assets/image%20%2877%29.png)
+
+![](.gitbook/assets/image%20%2879%29.png)
+
+🌟  **Enhancements:**
+
+* Vessels no longer have the option for "Internal Triggers" to create a Fleet.
+* The "Build Vessel" button has been exchanged with a "+ New" button that allows you to make a New Vessel or a New Fleet.
+* The sidebar navigation has been updated to include:
+  * A link for the Blueprint Library
+  * A divider to split options for the Organization or for the Platform.
 
 ## 6/2/2020
 

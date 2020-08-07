@@ -20,5 +20,5 @@ This section is a work in progress and may be missing key details. If you need h
 
 ## Helpful Links
 
-[Simple Salesforce Python Package](https://github.com/simple-salesforce/simple-salesforce)
-[Salesforce Object Query Language](https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm)
+[Simple Salesforce Python Package](https://github.com/simple-salesforce/simple-salesforce) [Salesforce Object Query Language](https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm)
+

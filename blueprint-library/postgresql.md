@@ -36,6 +36,5 @@ This section is a work in progress and may be missing key details. If you need h
 
 ## Helpful Links
 
-[PostgreSQL Documentation](https://www.postgresql.org/docs/12/index.html)
-[SQLAlchemy Documentation](https://docs.sqlalchemy.org/en/13/)
-[Pandas to_sql Method](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_sql.html)
+[PostgreSQL Documentation](https://www.postgresql.org/docs/12/index.html) [SQLAlchemy Documentation](https://docs.sqlalchemy.org/en/13/) [Pandas to\_sql Method](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_sql.html)
+

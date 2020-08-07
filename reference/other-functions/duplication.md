@@ -10,7 +10,7 @@ When a Vessel is duplicated, the following things occur:
 
 1. A new Vessel is immediately created, with the name of `{Old Vessel Name} (Copy) {New Vessel ID}` .
 2. The [Code](../vessels/code.md), [Command](../vessels/command.md), [Environment Variables](../vessels/environment-variables/), and [Packages ](../vessels/external-package-dependencies.md)from the old Vessel are transferred to the new Vessel.
-3. The Vessels [Triggers](../vessels/triggers/), [Guardrails](../vessels/guardrails.md), and [Notifications ](../vessels/notifications.md)are all reset.
+3. The Vessels [Triggers](../triggers/), [Guardrails](../vessels/guardrails.md), and [Notifications ](../vessels/notifications.md)are all reset.
 4. The new Vessel is set to Inactive.
 5. The new Vessel starts with 0 logs.
 {% endtab %}

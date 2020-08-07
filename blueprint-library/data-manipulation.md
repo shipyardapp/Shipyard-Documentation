@@ -20,6 +20,5 @@ This section is a work in progress and may be missing key details. If you need h
 
 ## Helpful Links
 
-[Pandas Documentation](https://pandas.pydata.org/docs/)
-[Dask Dataframe Documentation](https://docs.dask.org/en/latest/dataframe.html)
-[q - File Querying Tool Documentation](http://harelba.github.io/q/)
+[Pandas Documentation](https://pandas.pydata.org/docs/) [Dask Dataframe Documentation](https://docs.dask.org/en/latest/dataframe.html) [q - File Querying Tool Documentation](http://harelba.github.io/q/)
+

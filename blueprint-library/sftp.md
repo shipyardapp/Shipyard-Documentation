@@ -1,7 +1,7 @@
 # SFTP
 
 {% hint style="warning" %}
-This section is a work in progress and may be missing key details. If you need help using SFTP (Secure File Transfer Protocol) Blueprints, reach out to support@shipyardapp.com
+This section is a work in progress and may be missing key details. If you need help using SFTP \(Secure File Transfer Protocol\) Blueprints, reach out to support@shipyardapp.com
 {% endhint %}
 
 ## Authorization
@@ -29,3 +29,4 @@ This section is a work in progress and may be missing key details. If you need h
 ## Helpful Links
 
 [Paramiko Documentation](http://docs.paramiko.org/en/stable/)
+
