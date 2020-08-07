@@ -26,17 +26,19 @@ We love to hear what our users would like to see out of our product. Feel free t
 
 We currently natively support the creation of solutions using Python 3 and Bash. Bash allows us to theoretically support any language non-natively, where the right language packages just need to be manually installed by the user.
 
+SQL can be used natively with some Blueprints found in the [Blueprint Library](reference/blueprint-library.md).
+
 In the future, we plan to expand our native language support to R and Node.js.
 
 If you have a language that you would like to see supported, let us know!
 
 ## What skills do I need to get started with Shipyard?
 
-Shipyard is a workflow automation sandbox for technical team members. As long as you know how to write a little bit of code in Python or Bash, you can build and launch almost anything that doesn't need a UI. We've made the platform as easy as possible for you to take your existing coding skills, no matter how complex they are, and solve problems at scale.
+Shipyard is a workflow automation platform for technical team members. As long as you know how to write a little bit of code in SQL, Python, Bash, you can build and launch almost any solution that doesn't need a UI. We've made the platform as easy as possible for you to take your existing coding skills, no matter how complex they are, and solve problems at scale.
 
-As long as you have at least one technical team member that can initially build solutions for the organization, other users of Shipyard are **not** required to know code. We built the platform to allow business users the ability to easily access and take advantage of internally built solutions \([Custom Blueprints](https://intercom.help/shipyardapp/en/articles/3526186-what-is-a-custom-blueprint)\).
+If you have proprietary business logic needs, you will likely need at least one technical team member that can initially build solutions for the organization. However, other users of Shipyard are **not** required to know code. We built the platform to allow business users the ability to easily access and take advantage of internally built solutions \([Custom Blueprints](https://intercom.help/shipyardapp/en/articles/3526186-what-is-a-custom-blueprint)\).
 
-We are not comparable to no-code tools like [Zapier](http://www.zapier.com) and [Tray.io.](http://Tray.io) We don't provide any plug-and-play connections to existing 3rd party services, but do plan on providing some ready-to-use Starter Blueprints in the future.
+If you have standard needs to run QA on your data, deliver reports, and send data to external partners, you will be able to get by using only the Blueprints found in our [Blueprint Library](reference/blueprint-library.md).
 
 If you have an idea of something you want to solve, and you're not sure if it's possible with Shipyard, reach out to us!
 
