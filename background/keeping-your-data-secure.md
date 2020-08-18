@@ -12,7 +12,7 @@ Our application has been built with security in mind at every step.
 
 * All infrastructure is built on AWS, enabling us to have the highest level of [cloud security](https://aws.amazon.com/security/).
 * User passwords are stored using the industry leading Blowfish-based Bcrypt algorithm with extremely strong salts.
-* All data stored and processed in our databases is encrypted while in transit and at rest using RSAES-OAEP-SHA-256 asymmetric algorithms with AES-256-GCM. 
+* All data stored and processed in our databases is encrypted while in transit and at rest using RSAES-OAEP-SHA-256 algorithms with AES-256-GCM. 
 * All Blueprint and Vessel specific configurations are encrypted at the application level with RSA-4096 bit key types.
 * All network traffic to and from our application supports encryption with TLS v1.3 - the latest and most secure version.
 
