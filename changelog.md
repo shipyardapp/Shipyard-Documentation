@@ -11,14 +11,7 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 ## Features On Deck
 
 * Conditional Paths based on Vessel Status
-* Terminate Voyages Manually
-* Self Sign up
-* Billing Integrations
 * Github Integrations
-
-<!---
-	Testing for comments here.
--->
 
 <!--- Release 20200915.1 =================================================== -->
 ## 9/15/2020
@@ -43,15 +36,43 @@ The translation is as follows:
 	- Test > Editors. Users with Blueprint Create and Update permissions can create
 	Vessels from these Blueprints.
 	- Inactive > Hidden. No User can create Vessels from these Blueprints.
+<!--- End Release 20200915.1 =============================================== -->
+
+
+<!--- Release 20200908.1 20200908.2 ======================================== -->
+## 9/8/2020
+
+### New Features
+
+- Connection to Stripe Customer Portal in the Sider once you have a subscription.
+- New User permission for restricting access to the Billing section of Orgs.
+- Add ReCAPTCHA v3 to Sign Up page.
+
+### Enhancements
+
+- Improvements to backing infrastructure that your code runs on.
 
 ### Bug Fixes
 
-None
+- Minor bug fix with backing queue connectivity.
+<!--- End Release 20200908.1 20200908.2 ==================================== -->
 
-### Other
 
-- Improvements to backend infrastructure that your code runs on.
-<!--- End Release 20200915.1 =============================================== -->
+<!--- Release 20200819.1 =================================================== -->
+## 8/19/2020
+
+### New Features
+
+- Self Sign up and new Organization creation.
+- Allow for manually stopping a running Voyage.
+- Backend automated Org billing.
+
+### Enhancements
+
+- Improvements to backend queueing technology.
+- Improvements to internal APM technologies.
+<!--- End Release 20200819.1 =============================================== -->
+
 
 ## 8/6/2020
 
