@@ -11,10 +11,68 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 ## Features On Deck
 
 * Conditional Paths based on Vessel Status
-* Terminate Voyages Manually
-* Self Sign up
-* Billing Integrations
 * Github Integrations
+
+<!--- Release 20200915.1 =================================================== -->
+## 9/15/2020
+
+### New Features
+
+- New banner in the header indicating how many days left you have in your trial.
+There are no changes if you are already a paying, subscribed customer.
+
+### Enhancements
+
+- The entire cards in the New Vessel flow are clickable to select Code or Custom
+Blueprint.
+- The Active and Inactive Vessels tables have been merged into one.
+The notion of an Acitve or Inactive Vessel no longer exists.
+A Vessel will always run on all of its Triggers.
+- The Active, Test, and Inactive Blueprints tables have been merged.
+The meaning of an Active, Test, or Inactive Blueprint has been updated to mean
+visibility for the Users in your Org.
+The translation is as follows:
+	- Active > Visible to Everyone. Every User can create Vessels from these Blueprints.
+	- Test > Editors. Users with Blueprint Create and Update permissions can create
+	Vessels from these Blueprints.
+	- Inactive > Hidden. No User can create Vessels from these Blueprints.
+<!--- End Release 20200915.1 =============================================== -->
+
+
+<!--- Release 20200908.1 20200908.2 ======================================== -->
+## 9/8/2020
+
+### New Features
+
+- Connection to Stripe Customer Portal in the Sider once you have a subscription.
+- New User permission for restricting access to the Billing section of Orgs.
+- Add ReCAPTCHA v3 to Sign Up page.
+
+### Enhancements
+
+- Improvements to backing infrastructure that your code runs on.
+
+### Bug Fixes
+
+- Minor bug fix with backing queue connectivity.
+<!--- End Release 20200908.1 20200908.2 ==================================== -->
+
+
+<!--- Release 20200819.1 =================================================== -->
+## 8/19/2020
+
+### New Features
+
+- Self Sign up and new Organization creation.
+- Allow for manually stopping a running Voyage.
+- Backend automated Org billing.
+
+### Enhancements
+
+- Improvements to backend queueing technology.
+- Improvements to internal APM technologies.
+<!--- End Release 20200819.1 =============================================== -->
+
 
 ## 8/6/2020
 
