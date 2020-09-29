@@ -13,6 +13,36 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 * Conditional Paths based on Vessel Status
 * Github Integrations
 
+
+<!--- Release 20200929.1 =================================================== -->
+## 9/29/2020
+
+### New Features
+- Redirect user to a new confirmation URL on successful sign up request.
+- Allow building a Vessel from a Blueprint from the Blueprint's page.
+- Update password strength requirements and their display to the user.
+- Redirect users to the Projects page if they are a member of just one Organization.
+
+### Bug Fixes
+- Fix errors with a blank default value on the Select Blueprint variable type.
+<!--- End Release 20200922.1 =============================================== -->
+
+
+<!--- Release 20200922.1 =================================================== -->
+## 9/22/2020
+
+### New Features
+- Added a distinct action arrow on empty collection pages to help the user figure
+out what to do.
+
+### Bug Fixes
+- Fix configuration handling across the application.
+
+### Other
+- Removed deprecated queueing infrastructure.
+<!--- End Release 20200922.1 =============================================== -->
+
+
 <!--- Release 20200915.1 =================================================== -->
 ## 9/15/2020
 
