@@ -25,7 +25,7 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 ### Bug Fixes
 - Fix errors with a blank default value on the Select Blueprint variable type.
-<!--- End Release 20200922.1 =============================================== -->
+<!--- End Release 20200929.1 =============================================== -->
 
 
 <!--- Release 20200922.1 =================================================== -->
