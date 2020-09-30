@@ -19,7 +19,7 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 ### New Features
 - Implement new pricing tiers: Freelance, Startup, and Business.
-- Add a panel to the sign up to let users know what they are getting.
+- Add a panel to the sign up page to let users know what they are getting.
 <!--- End Release 20200930.1 =============================================== -->
 
 
