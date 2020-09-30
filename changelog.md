@@ -14,6 +14,15 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 * Github Integrations
 
 
+<!--- Release 20200930.1 =================================================== -->
+## 9/30/2020
+
+### New Features
+- Implement new pricing tiers: Freelance, Startup, and Business.
+- Add a panel to the sign up to let users know what they are getting.
+<!--- End Release 20200930.1 =============================================== -->
+
+
 <!--- Release 20200929.1 =================================================== -->
 ## 9/29/2020
 
