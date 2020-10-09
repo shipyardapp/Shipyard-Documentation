@@ -2,10 +2,10 @@
 
 Below is an ordered list of changes that we have made to Shipyard. Changes include but are not limited to: new features, feature enhancements, bug fixes, or other usability updates. Some changes may be omitted, such as changes that do not affect the user-facing experience.
 
-The purpose of this changelog is to publicly document the updates we are continuously making to improve the [Shipyard](www.shipyardapp.com) platform. We hope this is useful to our users to know that the product is being actively worked on.
+The purpose of this changelog is to publicly document the updates we are continuously making to improve the [Shipyard](https://github.com/shipyardapp/Shipyard-Documentation/tree/d0d117d3b5d85ebe1f9fa629dd1eb0f233489611/www.shipyardapp.com) platform. We hope this is useful to our users to know that the product is being actively worked on.
 
 {% hint style="info" %}
-Have a feature request, a bug report, a suggestion or an interesting use case? We'd love to hear it! Let us know at support@shipyardapp.com! 
+Have a feature request, a bug report, a suggestion or an interesting use case? We'd love to hear it! Let us know at support@shipyardapp.com!
 {% endhint %}
 
 ## Features On Deck
@@ -13,111 +13,111 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 * Conditional Paths based on Vessel Status
 * Github Integrations
 
-
-<!--- Release 20200930.1 =================================================== -->
 ## 9/30/2020
 
 ### New Features
-- Implement new pricing tiers: Freelance, Startup, and Business.
-- Add a panel to the sign up page to let users know what they are getting.
-<!--- End Release 20200930.1 =============================================== -->
 
+* Implement new pricing tiers: Freelance, Startup, and Business.
+* Add a panel to the sign up page to let users know what they are getting.
 
-<!--- Release 20200929.1 =================================================== -->
 ## 9/29/2020
 
 ### New Features
-- Redirect user to a new confirmation URL on successful sign up request.
-- Allow building a Vessel from a Blueprint from the Blueprint's page.
-- Update password strength requirements and their display to the user.
-- Redirect users to the Projects page if they are a member of just one Organization.
+
+* Redirect user to a new confirmation URL on successful sign up request.
+* Allow building a Vessel from a Blueprint from the Blueprint's page.
+* Update password strength requirements and their display to the user.
+* Redirect users to the Projects page if they are a member of just one Organization.
 
 ### Bug Fixes
-- Fix errors with a blank default value on the Select Blueprint variable type.
-<!--- End Release 20200929.1 =============================================== -->
 
+* Fix errors with a blank default value on the Select Blueprint variable type.
 
-<!--- Release 20200922.1 =================================================== -->
 ## 9/22/2020
 
 ### New Features
-- Added a distinct action arrow on empty collection pages to help the user figure
-out what to do.
+
+* Added a distinct action arrow on empty collection pages to help the user figure
+
+  out what to do.
 
 ### Bug Fixes
-- Fix configuration handling across the application.
+
+* Fix configuration handling across the application.
 
 ### Other
-- Removed deprecated queueing infrastructure.
-<!--- End Release 20200922.1 =============================================== -->
 
+* Removed deprecated queueing infrastructure.
 
-<!--- Release 20200915.1 =================================================== -->
 ## 9/15/2020
 
 ### New Features
 
-- New banner in the header indicating how many days left you have in your trial.
-There are no changes if you are already a paying, subscribed customer.
+* New banner in the header indicating how many days left you have in your trial.
+
+  There are no changes if you are already a paying, subscribed customer.
 
 ### Enhancements
 
-- The entire cards in the New Vessel flow are clickable to select Code or Custom
-Blueprint.
-- The Active and Inactive Vessels tables have been merged into one.
-The notion of an Acitve or Inactive Vessel no longer exists.
-A Vessel will always run on all of its Triggers.
-- The Active, Test, and Inactive Blueprints tables have been merged.
-The meaning of an Active, Test, or Inactive Blueprint has been updated to mean
-visibility for the Users in your Org.
-The translation is as follows:
-	- Active > Visible to Everyone. Every User can create Vessels from these Blueprints.
-	- Test > Editors. Users with Blueprint Create and Update permissions can create
-	Vessels from these Blueprints.
-	- Inactive > Hidden. No User can create Vessels from these Blueprints.
-<!--- End Release 20200915.1 =============================================== -->
+* The entire cards in the New Vessel flow are clickable to select Code or Custom
 
+  Blueprint.
 
-<!--- Release 20200908.1 20200908.2 ======================================== -->
+* The Active and Inactive Vessels tables have been merged into one.
+
+  The notion of an Acitve or Inactive Vessel no longer exists.
+
+  A Vessel will always run on all of its Triggers.
+
+* The Active, Test, and Inactive Blueprints tables have been merged.
+
+  The meaning of an Active, Test, or Inactive Blueprint has been updated to mean
+
+  visibility for the Users in your Org.
+
+  The translation is as follows:
+
+  * Active &gt; Visible to Everyone. Every User can create Vessels from these Blueprints.
+  * Test &gt; Editors. Users with Blueprint Create and Update permissions can create
+
+    Vessels from these Blueprints.
+
+  * Inactive &gt; Hidden. No User can create Vessels from these Blueprints.
+
 ## 9/8/2020
 
 ### New Features
 
-- Connection to Stripe Customer Portal in the Sider once you have a subscription.
-- New User permission for restricting access to the Billing section of Orgs.
-- Add ReCAPTCHA v3 to Sign Up page.
+* Connection to Stripe Customer Portal in the Sider once you have a subscription.
+* New User permission for restricting access to the Billing section of Orgs.
+* Add ReCAPTCHA v3 to Sign Up page.
 
 ### Enhancements
 
-- Improvements to backing infrastructure that your code runs on.
+* Improvements to backing infrastructure that your code runs on.
 
 ### Bug Fixes
 
-- Minor bug fix with backing queue connectivity.
-<!--- End Release 20200908.1 20200908.2 ==================================== -->
+* Minor bug fix with backing queue connectivity.
 
-
-<!--- Release 20200819.1 =================================================== -->
 ## 8/19/2020
 
 ### New Features
 
-- Self Sign up and new Organization creation.
-- Allow for manually stopping a running Voyage.
-- Backend automated Org billing.
+* Self Sign up and new Organization creation.
+* Allow for manually stopping a running Voyage.
+* Backend automated Org billing.
 
 ### Enhancements
 
-- Improvements to backend queueing technology.
-- Improvements to internal APM technologies.
-<!--- End Release 20200819.1 =============================================== -->
-
+* Improvements to backend queueing technology.
+* Improvements to internal APM technologies.
 
 ## 8/6/2020
 
 We've been hard at work over the past few months to deliver a new system for Fleets that's modular and flexible enough to meet the needs of the modern data team.
 
-🎉 **New Features:** 
+🎉 **New Features:**
 
 **Fleet Overhaul**
 
@@ -151,7 +151,7 @@ Fleets have been redesigned from the ground up to tackle more complex problems w
 
 ![](.gitbook/assets/image%20%2879%29.png)
 
-🌟  **Enhancements:**
+🌟 **Enhancements:**
 
 * Vessels no longer have the option for "Internal Triggers" to create a Fleet.
 * The "Build Vessel" button has been exchanged with a "+ New" button that allows you to make a New Vessel or a New Fleet.
@@ -161,7 +161,7 @@ Fleets have been redesigned from the ground up to tackle more complex problems w
 
 ## 6/2/2020
 
-🎉 **New Features:** 
+🎉 **New Features:**
 
 You can now follow along with actively running Vessels - LIVE!
 
@@ -199,8 +199,6 @@ This new feature will provide better visibility into the progress of Vessels wit
 
 ![](.gitbook/assets/image%20%2830%29.png)
 
-
-
 🔧 **Bug Fixes:**
 
 * Fixed an issue where the error message for unnamed Vessels would shift the spacing of all the fields on the Information Tab.
@@ -232,7 +230,7 @@ This new feature will provide better visibility into the progress of Vessels wit
 
 🎉 **New Features:**
 
-You can now create a new organization directly through the UI! 
+You can now create a new organization directly through the UI!
 
 ![](.gitbook/assets/image%20%2875%29.png)
 
@@ -258,8 +256,7 @@ While we still don't support multi-organization users, let us know if this use c
 * User Invite System for growing your organization and collaborating with outside parties.
 * [User Permissions Panel](reference/admin/user-permissions.md) to set granular access settings per user.
 
-  
-  ****For more information about these features, see [our blog post](https://www.shipyardapp.com/blog/increasing-collaboration-for-organizations).
+_\*\*_For more information about these features, see [our blog post](https://www.shipyardapp.com/blog/increasing-collaboration-for-organizations).
 
 🔧 **Bug Fixes:**
 
