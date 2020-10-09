@@ -18,6 +18,12 @@ In the future, we plan to expand our native language support to R and Node.js.
 
 If you have a language that you would like to see supported, let us know!
 
+## Is Shipyard a no-code tool?
+
+Shipyard is not inherently a no-code tool, although the platform allows technical teams to turn coded solutions into no-code Blueprints that can be used by anyone in the organization.
+
+Additionally, we offer a wide variety of Blueprints in our [Blueprint Library](reference/blueprint-library.md) that don't require code to use.
+
 ## What skills do I need to get started with Shipyard?
 
 Shipyard is a workflow automation platform for technical team members. As long as you know how to write a little bit of code in SQL, Python, Bash, you can build and launch almost any solution that doesn't need a UI. We've made the platform as easy as possible for you to take your existing coding skills, no matter how complex they are, and solve problems at scale.
