@@ -13,6 +13,20 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 * Conditional Paths based on Vessel Status
 * Github Integrations
 
+## 11/2/2020
+
+### Enhancements
+
+* We added `python3-dev` as a default package that is installed in the container
+that runs your code.
+
+## 10/26/2020
+
+### New Features
+
+* Add a Playground project to every new Organization upon sign up.
+	Note the the project will default to the US/Pacific timezone.
+
 ## 9/30/2020
 
 ### New Features
