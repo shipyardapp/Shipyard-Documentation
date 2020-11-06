@@ -10,22 +10,39 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 ## Features On Deck
 
-* Conditional Paths based on Vessel Status
 * Github Integrations
+* Conditional Paths based on Vessel Status
+* Webhook Triggers
+
+## 11/4/2020
+
+### Enhancements
+
+We overhauled the creation and edit flow for both Vessels and Blueprints to make the process quicker and more seamless. Noticeable improvements are:
+
+* The "Write" tab is now the default tab for providing code.
+* The "Script Name" and "File to Run" fields now mirror each other when you're on the write tab.
+* If you have unsaved changes, you'll receive a warning when navigating away.
+* You can't click "Save" if you don't have any changes - making it easier to identify when you've made updates.
+* You can only click "Run Now" or "Duplicate" after first saving your changes.
+* The "Inputs" step for Blueprints has a clearer preview section to show you what your Blueprint will look like.
+* Clicking back out of a creation flow will now take you to the last page you came from.
 
 ## 11/2/2020
 
 ### Enhancements
 
 * We added `python3-dev` as a default package that is installed in the container
-that runs your code.
+
+  that runs your code.
 
 ## 10/26/2020
 
 ### New Features
 
 * Add a Playground project to every new Organization upon sign up.
-	Note the the project will default to the US/Pacific timezone.
+
+    Note the the project will default to the US/Pacific timezone.
 
 ## 9/30/2020
 
@@ -270,7 +287,7 @@ While we still don't support multi-organization users, let us know if this use c
 * User Invite System for growing your organization and collaborating with outside parties.
 * [User Permissions Panel](reference/admin/user-permissions.md) to set granular access settings per user.
 
-_\*\*_For more information about these features, see [our blog post](https://www.shipyardapp.com/blog/increasing-collaboration-for-organizations).
+\_\*\*\_For more information about these features, see [our blog post](https://www.shipyardapp.com/blog/increasing-collaboration-for-organizations).
 
 🔧 **Bug Fixes:**
 
