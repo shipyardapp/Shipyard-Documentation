@@ -10,9 +10,26 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 ## Features On Deck
 
-* Github Integrations
 * Conditional Paths based on Vessel Status
 * Webhook Triggers
+
+## 12/3/2020
+
+### New Features
+
+* Added the ability to use GitHub repositories as the source of your code in Blueprints
+and Vessels.
+You can find the option to use this under the Git radio button on the Code tabs.
+
+### Enhancements
+
+* Updated our backend to better log web based errors.
+* Add a new error boundary and error page to our frontend.
+
+### Bug Fixes
+
+* Fixed Organization billing Uploaded Data values.
+* Fixed non active Organizations from scheduling Voyages.
 
 ## 11/4/2020
 
