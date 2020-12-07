@@ -18,8 +18,10 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 ### New Features
 
 * Added the ability to use GitHub repositories as the source of your code in Blueprints
-and Vessels.
-You can find the option to use this under the Git radio button on the Code tabs.
+
+  and Vessels.
+
+  You can find the option to use this under the Git radio button on the Code tabs.
 
 ### Enhancements
 
@@ -59,7 +61,7 @@ We overhauled the creation and edit flow for both Vessels and Blueprints to make
 
 * Add a Playground project to every new Organization upon sign up.
 
-    Note the the project will default to the US/Pacific timezone.
+  Note the the project will default to the US/Pacific timezone.
 
 ## 9/30/2020
 

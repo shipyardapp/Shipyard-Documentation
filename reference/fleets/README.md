@@ -26,7 +26,7 @@ Once every Vessel in the Fleet has finished running, all files are immediately w
 
 ![](../../.gitbook/assets/image%20%2862%29.png)
 
-![Editing Vessels in a Fleet](../../.gitbook/assets/image%20%2883%29.png)
+![Editing Vessels in a Fleet](../../.gitbook/assets/image%20%2884%29.png)
 
 ## **Limitations**
 

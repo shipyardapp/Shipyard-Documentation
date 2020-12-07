@@ -14,10 +14,6 @@ Step-by-step guides for accomplishing key tasks within Shipyard.
 
 Get started with a hands-on introduction to using Shipyard. Follow along with projects that help you learn the ins-and-outs of the platform.
 
-## 📝 Background
-
-Long-form explanations and discussion of key topics for those who want to know the why and how of what we're building.
-
 ## 📦 Blueprint Library
 
 Detailed overviews of every Blueprint that exists in the Blueprint Library. Includes instructions for getting the proper authorization, as well as explanations of how to run the blueprints locally or on Shipyard.

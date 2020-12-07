@@ -50,7 +50,7 @@ A Blueprint's information card contains the following details:
 {% endtab %}
 
 {% tab title="Vessels" %}
-![](../../.gitbook/assets/image%20%2859%29.png)
+![](../../.gitbook/assets/image%20%2859%29%20%281%29.png)
 {% endtab %}
 
 {% tab title="Blueprints" %}

@@ -83,8 +83,6 @@
 
 ## 📝 Background
 
-* [Keeping your Data Secure](background/keeping-your-data-secure.md)
-
 ## 📦 Blueprint Library
 
 * [Amazon Athena](blueprint-library/amazon-athena.md)

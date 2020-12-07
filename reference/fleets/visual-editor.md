@@ -16,7 +16,7 @@ For information about how to use the visual editor, hover over the question mark
 
 ## Screenshots
 
-![](../../.gitbook/assets/image%20%2884%29.png)
+![](../../.gitbook/assets/image%20%2884%29%20%281%29.png)
 
 ![](../../.gitbook/assets/screen-cast-2020-08-07-at-2.08.56-pm.gif)
 
