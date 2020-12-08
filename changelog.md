@@ -13,6 +13,23 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 * Conditional Paths based on Vessel Status
 * Webhook Triggers
 
+## 12/8/2020
+
+### New Features
+
+* Add the ability for self service password resets.
+* For Git connected Voyages, the git commit hash is now printed to output.
+
+### Enhancements
+
+* Update Blueprint Variable previewing mechanics.
+* Update Schedules forms to be explicit about empty Schedules.
+
+### Bug Fixes
+
+* Fixed bug to throw "unsaved changes" dialog when clicking Logs or Vessels tab.
+* Fixed bug where removed Blueprint Variables would error in a Voyage.
+
 ## 12/3/2020
 
 ### New Features
