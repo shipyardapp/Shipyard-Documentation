@@ -13,6 +13,14 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 * Conditional Paths based on Vessel Status
 * Webhook Triggers
 
+## 12/16/2020
+
+### Bug Fixes
+
+* Fixed bug that allowed for invalid Blueprint Variable reference names.
+* Fixed backend issue where Fleet run infrastructure was not being correctly cleaned up.
+* Fixed idempotency issues with an external backend service.
+
 ## 12/8/2020
 
 ### New Features
