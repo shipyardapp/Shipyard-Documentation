@@ -10,8 +10,19 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 ## Features On Deck
 
-* Conditional Paths based on Vessel Status
 * Webhook Triggers
+
+## 1/12/2021
+
+### New Features
+
+* Fleets now have conditional paths between Vessels.
+There are three options for a path to be followed:
+	* Success - The upstream Voyage was successful.
+	* Errored - The upstream Voyage was not successful.
+	* Completed - Either Success or Errored.
+For a downstream Voyage to run, all upstream Voyages and the path conditions
+must be met.
 
 ## 12/16/2020
 
