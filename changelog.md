@@ -12,6 +12,25 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 * Webhook Triggers
 
+## 1/13/2021
+
+### Bug Fixes
+* Fixed broken link for "Manage Git Integrations".
+
+### Enhancements
+
+* Added functionality to know what Vessel you are editing in the dropdown
+for a Vessel node on the Fleet edit DAG page.
+* Updated error messages for non-unique entity names.
+* Updated the messages in empty tables due to filtering.
+* Updated Project name in breadcrumbs where it was showing a generic 'Project' text.
+* Updated backend formatting of notification emails.
+* Added two environment variables when the Vessel is built using a Git connection:
+	* SHIPYARD_REPO_NAME indicates the name of the Git repository defined in the Code section.
+	* SHIPYARD_CLONE_LOCATION indicates the local directory of where the root of
+	the Git repository was cloned to.
+* Make consistent wording around "Use this Blueprint".
+
 ## 1/12/2021
 
 ### New Features
