@@ -15,5 +15,7 @@ By default, every Vessel that runs in Shipyard generates a series of environment
 | `SHIPYARD_VESSEL_ID` | `20e347ff-fe74-43dc-8f38-6a31910c0533` | Set to the UUIDv4 of the Vessel that the Log belongs to. |
 | `SHIPYARD_VESSEL_NAME` | `Hello, World` | Set to the name of the Vessel that the Log belongs to. |
 | `SHIPYARD_LOG_ID` | `c81a050c-5caf-445c-90d0-dc3b761979b0` | Set to the UUIDv4 of the current Log that is running. |
-| `SHIPYARD_LOG_WORKDIR` | ``/home/shipyard/c81a050c-5caf-445c-90d0-dc3b761979b0``` | Set to the working directory that your Vessel is set to do its work in. |
+| `SHIPYARD_LOG_WORKDIR` | `/home/shipyard` | Set to the working directory that your Vessel is set to do its work in. |
+| `SHIPYARD_REPO_NAME` | `example-repo` | Set to the name of the Git repository selected for Code. **Only set when the Vessel is connected to Git**. |
+| `SHIPYARD_CLONE_LOCATION` | `/home/shipyard/example-repo` | Set to the directory where the Git repository root was cloned. **Only set when the Vessel is connected to Git**. |
 
