@@ -4,11 +4,13 @@
 
 The Blueprint Library is a location for pre-made Custom Blueprints developed by Shipyard staff. These Blueprints provide an easy way to avoid monotonous development work associated with integrations. We designed these Blueprints to:
 
-* Accomplish a single common action with with a single vendor
+* Accomplish a single common action with a single vendor
 * Require no coding
 * Require minimal details and credentials
+* Allow moving credentials from a user-facing entry to an always-set environment variable
+* Be editable for your organization's custom needs
 
-Adding a Blueprint to your organization creates a copy of the original Blueprint in your organization. At that point, you can manipulation the code and environment variables as you see fit. 
+Adding a Blueprint to your organization creates a copy of the original Blueprint in your organization. At that point, you can manipulate the code and environment variables as you see fit. 
 
 In an effort to be transparent about how our Blueprints work, we open-source the code and make it  available on our [Github](https://github.com/shipyardapp). The repositories are broken up by vendor and all end in `-blueprints`. If some functionality isn't working appropriately, you can open an issue in Github or submit a pull request with the proposed changes. 
 
@@ -49,15 +51,15 @@ Blueprints are broken down into a few categories with core functionality that sh
 
 * Run SQL against a CSV
 
+**Data Package**
 
-
-
+* Run package
 
 ## Screenshots
 
-![Over 40+ Blueprints to take action on modern data platforms](../.gitbook/assets/image%20%2880%29.png)
+![Over 50+ Blueprints to take action on modern data platforms](../.gitbook/assets/image%20%2880%29.png)
 
 ## Learn More
 
-[List of all Blueprints in the Blueprint Library](../how-tos/blueprint-library/)
+[Explore the Blueprints in the Blueprint Library](https://www.shipyardapp.com/blueprint-library)
 

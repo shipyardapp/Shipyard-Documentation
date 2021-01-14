@@ -1,17 +1,14 @@
-# State
+# Visibility
 
 ## Definition
 
-**State** refers to a constant indicator that shows how an element is currently being used. 
+A Blueprint's **Visibility** refers to who in the organization can actively see the Blueprint.
 
-### **Vessels**
+*  **Everyone** - All users can view and use this Blueprint.
+*  **Blueprint Editors** - Only those with permissions to create and edit Blueprints can use this Blueprint to build a Vessel.
+*  **Hidden** - New Vessels cannot be created from this Blueprint.
 
-*  **Active** - The Vessel is currently in use and running on all Schedule Triggers.
-*  **Inactive** - The Vessel is not currently running on any of the Schedule Triggers. It can, however, still be run On Demand and with an Internal Trigger.
+## Screenshots
 
-### **Blueprints**
-
-*  **Active** - All users can view and use this Blueprint.
-*  **Test** - Only those with permissions to create and edit Blueprints can use this Blueprint to build a Vessel.
-*  **Inactive** - New Vessels cannot be created from this Blueprint. In addition, when setting a Blueprint to inactive, all previously dependent Vessels will no longer be run on their Schedule Triggers.
+![](../../.gitbook/assets/image%20%2821%29.png)
 

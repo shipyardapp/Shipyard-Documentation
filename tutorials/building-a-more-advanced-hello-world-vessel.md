@@ -55,7 +55,7 @@ We'll now walk through the process of filling out the next 5 steps to create our
 
 ### Step 1 - Select a Blueprint
 
-![](../.gitbook/assets/image%20%2824%29%20%281%29.png)
+![](../.gitbook/assets/image%20%2824%29%20%281%29%20%281%29.png)
 
 {% tabs %}
 {% tab title="Python" %}

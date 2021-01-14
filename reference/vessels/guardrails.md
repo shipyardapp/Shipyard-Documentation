@@ -8,7 +8,7 @@ Guardrails consist of two options:
 
 ### **Number of Retries**
 
-Indicates the number of times that Vessels should be retried if they error out. By default, Vessels are set to "Retry Once" with the option to retry up to 3 times. 
+Indicates the number of times that Vessels should be retried if they error out. By default, Vessels are set to "Never Retry" with the option to retry up to 3 times. 
 
 ### **Time Between Retries**
 

@@ -12,9 +12,9 @@
 * [Projects](reference/projects.md)
 * [Blueprint Library](reference/blueprint-library.md)
 * [Blueprints](reference/blueprints/README.md)
-  * [Code Blueprints](reference/blueprints/code-blueprints.md)
-  * [Custom Blueprints](reference/blueprints/custom-blueprints.md)
+  * [Blueprint Description](reference/blueprints/blueprint-description.md)
   * [Blueprint Variables](reference/blueprints/blueprint-variables.md)
+  * [Blueprint Preview](reference/blueprints/blueprint-preview.md)
 * [Vessels](reference/vessels/README.md)
   * [Code](reference/vessels/code.md)
   * [Command](reference/vessels/command.md)
@@ -36,10 +36,11 @@
 * [Admin](reference/admin/README.md)
   * [User Management](reference/admin/user-management.md)
   * [User Permissions](reference/admin/user-permissions.md)
+  * [Billing](reference/admin/billing.md)
 * [Other Functions](reference/other-functions/README.md)
   * [Duplication](reference/other-functions/duplication.md)
   * [Status](reference/other-functions/status.md)
-  * [State](reference/other-functions/state.md)
+  * [Visibility](reference/other-functions/state.md)
   * [Timestamps and Timezones](reference/other-functions/timestamps-and-timezones.md)
   * [Platform URL Structures](reference/other-functions/platform-url-structures.md)
 
@@ -80,8 +81,6 @@
 * [Building a "Hello World" Vessel](tutorials/building-a-hello-world-vessel.md)
 * [Building a more Advanced "Hello World" Vessel](tutorials/building-a-more-advanced-hello-world-vessel.md)
 * [Building a Blueprint with Great Expectations](tutorials/building-a-blueprint-with-great-expectations.md)
-
-## 📝 Background
 
 ## 📦 Blueprint Library
 

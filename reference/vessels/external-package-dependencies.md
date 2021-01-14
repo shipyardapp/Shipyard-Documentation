@@ -12,13 +12,11 @@ The Python Code Blueprint comes with `pip version 19.0.3` pre-installed, allowin
 
 ### **Packages Module**
 
-On the Requirements tab of every Vessel, the right hand side contains a module for installing packages. Packages should be formatted with the Package Name field filled out. Optionally, you can include a version for each package name that you've listed. Versions must be formatted in according to [Python standards](https://www.python.org/dev/peps/pep-0440/#version-specifiers).
-
-
+On the Requirements tab of every Vessel, the right-hand side contains a module for installing packages. Packages should be formatted with the Package Name field filled out. Optionally, you can include a version for each package name that you've listed. Versions must be formatted according to [Python standards](https://www.python.org/dev/peps/pep-0440/#version-specifiers).
 
 ### **Uploading requirements.txt**
 
-You can also install package dependencies by including a `requirements.txt` file in the root directory of the file you upload, or by making the file in the in-app editor. For more information on how `requirements.txt` should be formatted, [read this guide](https://pip.pypa.io/en/stable/user_guide/#requirements-files).
+You can also install package dependencies by including a `requirements.txt` file in the root directory of the code you upload. For more information on how `requirements.txt` should be formatted, [read this guide](https://pip.pypa.io/en/stable/user_guide/#requirements-files).
 
 In order to install public packages from GitHub \(that are not available on PyPA, or for different versions\) you will need to use the git+git scheme with the GitHub URL.
 
@@ -27,7 +25,9 @@ git+git://github.com/Apache/Airflow@master#egg=airflow
 ```
 
 {% hint style="info" %}
-**Tips**: We recommend installing packages using the Packages Module so that team members can quickly view and change the version.
+**Tips**: If you're uploading code directly to Shipyard, we recommend installing packages using the Packages Module so that team members can quickly view and change the version.
+
+If you're using a Git connection, we recommend including a `requirements.txt` file in the root directory. Shipyard will automatically find this file and install dependencies.
 {% endhint %}
 {% endtab %}
 

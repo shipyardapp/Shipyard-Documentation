@@ -2,7 +2,7 @@
 
 ## Definition
 
-Schedule Triggers allow a Vessel or a Fleet to run autonomously in the background on our cloud infrastructure. To use an automated schedule, you must have one or more schedules listed. Fleets will always use the automated schedule, while Vessels must be in an [**Active state**](../other-functions/state.md).
+Schedule Triggers allow a Vessel or a Fleet to run autonomously in the background on our cloud infrastructure. To use an automated schedule, you must have one or more schedules listed. Fleets and Vessels will always use schedules that are visible.
 
 ### Types of Schedules
 
@@ -13,7 +13,7 @@ Schedule Triggers allow a Vessel or a Fleet to run autonomously in the backgroun
 
 ### Timing of Schedules <a id="timing-of-scheduling"></a>
 
-At 12:00am UTC, all runs for the next 24 hour cycle get added as empty logs with a [status ](../other-functions/status.md)of **Scheduled**.
+At 12:00am UTC, all runs for the next 24-hour cycle get added as empty logs with a [status ](../other-functions/status.md)of **Scheduled**.
 
 If a schedule is added, removed, or changed after 12:00am UTC, the Vessel's scheduled runs will be updated to reflect the new schedule up until 11:59pm UTC of the current day.
 

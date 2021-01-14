@@ -4,9 +4,9 @@
 
 Blueprint Variables are the variables that code relies on user input for. They don't exist directly in your code. Instead, they become present in the system as environment variables that your Blueprint can use while running.
 
-A Custom Blueprint can contain as many variables as you want. Blueprint variables can also be re-ordered to make it easier for users to understand the data input.  
+A Blueprint can contain as many variables as you want. Blueprint variables can also be re-ordered to make it easier for users to understand the data input.  
   
-A user who creates a Vessel from your Custom Blueprint is going to provide the their own values on the [Input ](../vessels/form-input.md)tab for Blueprint Variables that you define. Those values then become available each time that the Vessel runs.
+A user who creates a Vessel from your Blueprint is going to provide their own values on the [Input ](../vessels/form-input.md)tab for Blueprint Variables that you define. Those values then become available each time that the Vessel runs.
 
 ## Components
 
@@ -20,7 +20,7 @@ A required string of letters and digits with no whitespace or special characters
 
 ### **Variable** **Type**
 
-A required high level choice that helps provide validation for the user input. The following are the currently available variable types:
+A required high-level choice that helps provide validation for the user input. The following are the currently available variable types:
 
 *  **Alphanumeric -** Lets the user provide a string of text.
 *  **Integer -** Lets the user provide a number, rounded down.
@@ -44,7 +44,7 @@ Indicates whether or not the user will have to provide this value for the Vessel
 
 ### **Placeholder Text**
 
-An option field to show greyed out text in an input box before the user provides an input. Helpful for providing example values.
+An option field to show greyed out text in an input box before the user provides input. Helpful for providing example values.
 
 ### **Description**
 
@@ -80,7 +80,7 @@ View the following article for more information on accessing environment variabl
 
 ## Screenshots
 
-![Viewing all variables](../../.gitbook/assets/image%20%283%29%20%281%29.png)
+![](../../.gitbook/assets/image%20%2881%29.png)
 
 ![Editing a variable](../../.gitbook/assets/image%20%2838%29.png)
 
@@ -88,7 +88,7 @@ View the following article for more information on accessing environment variabl
 
 1. A Blueprint cannot have two variables with the same name.
 2. A Blueprint variable cannot be conditionally shown or hidden based on a user's selection.
-3. There is no built-in system to ensure that `${variable_name}` exactly matches a reference name.
+3. There is no built-in system to ensure that `${variable_name}` exactly matches a reference name. Make sure you don't have typos!
 
 ## Learn More
 

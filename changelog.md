@@ -15,20 +15,24 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 ## 1/13/2021
 
 ### Bug Fixes
+
 * Fixed broken link for "Manage Git Integrations".
 
 ### Enhancements
 
 * Added functionality to know what Vessel you are editing in the dropdown
-for a Vessel node on the Fleet edit DAG page.
+
+  for a Vessel node on the Fleet edit DAG page.
+
 * Updated error messages for non-unique entity names.
 * Updated the messages in empty tables due to filtering.
 * Updated Project name in breadcrumbs where it was showing a generic 'Project' text.
 * Updated backend formatting of notification emails.
 * Added two environment variables when the Vessel is built using a Git connection:
-	* SHIPYARD_REPO_NAME indicates the name of the Git repository defined in the Code section.
-	* SHIPYARD_CLONE_LOCATION indicates the local directory of where the root of
-	the Git repository was cloned to.
+  * SHIPYARD\_REPO\_NAME indicates the name of the Git repository defined in the Code section.
+  * SHIPYARD\_CLONE\_LOCATION indicates the local directory of where the root of
+
+    the Git repository was cloned to.
 * Make consistent wording around "Use this Blueprint".
 
 ## 1/12/2021
@@ -36,12 +40,16 @@ for a Vessel node on the Fleet edit DAG page.
 ### New Features
 
 * Fleets now have conditional paths between Vessels.
-There are three options for a path to be followed:
-	* Success - The upstream Voyage was successful.
-	* Errored - The upstream Voyage was not successful.
-	* Completed - Either Success or Errored.
-For a downstream Voyage to run, all upstream Voyages and the path conditions
-must be met.
+
+  There are three options for a path to be followed:
+
+  * Success - The upstream Voyage was successful.
+  * Errored - The upstream Voyage was not successful.
+  * Completed - Either Success or Errored.
+
+    For a downstream Voyage to run, all upstream Voyages and the path conditions
+
+    must be met.
 
 ## 12/16/2020
 

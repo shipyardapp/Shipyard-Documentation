@@ -2,7 +2,7 @@
 
 ## Definition
 
-The User Permissions page is contains all the knobs and levers to determine the level of access that a user has to your Organization's instance of Shipyardd. To view this page, a user must have the Edit permission for the Users element.
+The User Permissions page contains all the knobs and levers to determine the level of access that a user has to your Organization's instance of Shipyardd. To view this page, a user must have the Edit permission for the Users element.
 
 Permissions are granted in a matrix that allows you to specify permission levels for each element. 
 
@@ -12,6 +12,8 @@ Permissions are granted in a matrix that allows you to specify permission levels
 * [Blueprints](../blueprints/)
 * [Logs](../logs/)
 * [Users](user-management.md)
+* Billing
+* Integrations
 
 ### Permissions
 
@@ -26,7 +28,7 @@ Choose which specific projects a user should have access to. Project names are a
 
 ## Screenshots
 
-![Edit the permissions of a user](../../.gitbook/assets/image%20%2811%29.png)
+![](../../.gitbook/assets/image%20%2891%29.png)
 
 ## Limitations
 
@@ -35,6 +37,4 @@ Choose which specific projects a user should have access to. Project names are a
 3. A user has access to all Vessels and all Fleets contained within a Project that they have access to.
 4. The User Permissions page is the only way to view all projects that exist.
 5. There is no way to guarantee that a user has access to all current and future projects. If a user has Create permissions for Projects, it is possible for "Rogue Projects" to exist.
-
-## Learn More
 

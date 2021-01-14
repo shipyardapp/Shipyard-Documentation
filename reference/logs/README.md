@@ -8,7 +8,7 @@ A log is created as soon as the **Run Now** button is clicked or as soon as the 
 
 ### Log Retention
 
-While Log data is routinely deleted from our system to decrease storage costs. The amount of time we'll hold onto your logs is determined by the pricing tier that you're currently subscribed to. Currently, we keep logs around for a minimum of 72 hours and a maximum of 90 days.
+Log data is routinely deleted from our system to decrease storage costs. The amount of time we'll hold onto your logs is determined by the pricing tier that you're currently subscribed to. Currently, we keep logs around for a minimum of 72 hours and a maximum of 90 days.
 
 ### Data Stored
 

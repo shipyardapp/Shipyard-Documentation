@@ -4,19 +4,31 @@
 
 A Vessel is the "unit of work" in Shipyard, or an individual script that has been designed and built to accomplish a very specific job. Just like the real world equivalent, Vessels can be built for any purpose and come in any size, shape, or speed. 
 
-Every Vessel is built with a Blueprint that contains the design specifications that determine what that Vessel will do. Building a new Vessel will walk you through a multi-step setup wizard. The steps required for creating a New Vessel differ based on the type of Blueprint that you select:
+Every Vessel is either built with code or a Blueprint that contains the design specifications that determine what that Vessel will do. Building a new Vessel will walk you through a multi-step setup wizard. The steps required for creating a New Vessel differ based on the creation method that you select.
 
 {% tabs %}
-{% tab title="Code Blueprint Steps" %}
-1. Select your [**Blueprint**](../blueprints/code-blueprints.md)\*\*\*\*
+{% tab title="With Code" %}
+Building a Vessel with code allows you to write and run scripts from scratch with no changes to your existing code or additional configuration files.  The code is executed on Shipyard's cloud infrastructure in isolation.
+
+When building a Vessel with code, your script should return an exit code of 0 to indicate a successful run. Any other exit code indicates failure.
+
+Additionally, your script should stop its work if it receives a SIGTERM \(15\) signal.
+
+## Setup Steps
+
+1. Select "With Code"
 2. Provide [**Code**](code.md)\*\*\*\*
 3. Define Requirements \([Environment Variables](environment-variables/), [External Package Dependencies](external-package-dependencies.md)\)
 4. Set [**Triggers**](../triggers/)\*\*\*\*
 5. Save **Settings** \([Information](information-card.md), [Notifications](notifications.md), and [Guardrails](guardrails.md)\)
 {% endtab %}
 
-{% tab title="Custom Blueprint Steps" %}
-1. Select your [**Blueprint**](../blueprints/custom-blueprints.md)\*\*\*\*
+{% tab title="With Blueprint" %}
+Building a Vessel with a Blueprint allows you to run scripts without needing to touch code. Instead, you're only required to fill out a few key form inputs. This user input then gets passed to a script in the backend.
+
+## Setup Steps
+
+1. Select your [**Blueprint**]()\*\*\*\*
 2. Provide [**Inputs**](form-input.md)\*\*\*\*
 3. Set [**Triggers**](../triggers/)
 4. Save **Settings** \([Information](information-card.md), [Notifications](notifications.md), and [Guardrails](guardrails.md)\)

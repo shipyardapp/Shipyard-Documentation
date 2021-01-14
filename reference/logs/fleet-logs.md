@@ -6,7 +6,7 @@ The graph on the Fleet Logs tab shows historical run durations trended out for a
 
 ### Individual Fleet Log
 
-The graph on the individual Fleet Log page shows a gantganttt chart view of the order and length of time that each Vessel in the fleet ran for. 
+The graph on the individual Fleet Log page shows a Gantt chart view of the order and length of time that each Vessel in the fleet ran for. 
 
 The table below shows all of the [Vessel Logs](vessel-logs.md) that were created and run as a part of the current Fleet.
 
@@ -34,6 +34,6 @@ You can view more information about the individual [Vessel Log](vessel-logs.md) 
 
 ## Limitations
 
-1. If a Fleet runs into an error and can't finish, any Vessel Logs that were scheduled but not run are removed. 
+1. If a Fleet runs into an error and can't finish, any Vessel Logs that were scheduled but not run are marked as incomplete with links disabled. 
 2. The table of Vessel Logs isn't guaranteed to show the Vessels in the order that they ran.
 

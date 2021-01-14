@@ -35,10 +35,17 @@ A Blueprint's information card contains the following details:
 
 | Name | Definition |
 | :--- | :--- |
-| **Blueprint Name** | An editable field for determining the name of a Custom Blueprint. Be descriptive and avoid the use of jargon, as this will be what users search for and see while setting up new Vessels. |
+| **Blueprint Name** | An editable field for determining the name of a Blueprint. Be descriptive and avoid the use of jargon, as this will be what users search for and see while setting up new Vessels. |
 | **Blueprint ID** | A disabled field showing the Blueprint's automatically generated  UUIDv4 ID. |
 | **Synopsis** | An editable field containing a short description of the Blueprint, shown when selecting a Blueprint while building a new Vessel. |
-| **Description** | An editable field containing a longer description of the Blueprint, shown on the [Input tab](form-input.md) while building a new Vessel with a Custom Blueprint. This is shown on the left-hand side of the screen and should be used as a guide or series of instructions for users. |
+{% endtab %}
+
+{% tab title="Fleets" %}
+A Fleet's information card contains the following details:
+
+| Name | Definition |
+| :--- | :--- |
+| **Fleet Name** | An editable field for determining the name of a Fleet. |
 {% endtab %}
 {% endtabs %}
 
@@ -54,9 +61,11 @@ A Blueprint's information card contains the following details:
 {% endtab %}
 
 {% tab title="Blueprints" %}
-![](../../.gitbook/assets/image%20%288%29.png)
+![](../../.gitbook/assets/image%20%2824%29.png)
+{% endtab %}
+
+{% tab title="Fleets" %}
+![](../../.gitbook/assets/image%20%286%29.png)
 {% endtab %}
 {% endtabs %}
-
-
 

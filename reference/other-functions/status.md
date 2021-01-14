@@ -13,6 +13,7 @@
 | **Retrying** | This run has previously failed and is running again based on options selected in the Guardrails. |
 | **Running** | This run is currently occuring. |
 | **Scheduled** | This run has not yet occurred, but is scheduled to occur in the next 24 hours |
+| **Incomplete** | This run will never occur. This status can only be seen on Fleet logs, when upstream Vessels failed to take a branching path. |
 
 ## Screenshots
 

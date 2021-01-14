@@ -26,11 +26,13 @@ Additionally, we offer a wide variety of Blueprints in our [Blueprint Library](r
 
 ## What skills do I need to get started with Shipyard?
 
-Shipyard is a workflow automation platform for technical team members. As long as you know how to write a little bit of code in SQL, Python, Bash, you can build and launch almost any solution that doesn't need a UI. We've made the platform as easy as possible for you to take your existing coding skills, no matter how complex they are, and solve problems at scale.
+If you have standard needs to run QA on your data, deliver reports, and send data to external partners, you will be able to get by using only the Blueprints found in our [Blueprint Library](reference/blueprint-library.md).
 
 If you have proprietary business logic needs, you will likely need at least one technical team member that can initially build solutions for the organization. However, other users of Shipyard are **not** required to know code. We built the platform to allow business users the ability to easily access and take advantage of internally built solutions \([Custom Blueprints](https://intercom.help/shipyardapp/en/articles/3526186-what-is-a-custom-blueprint)\).
 
-If you have standard needs to run QA on your data, deliver reports, and send data to external partners, you will be able to get by using only the Blueprints found in our [Blueprint Library](reference/blueprint-library.md).
+Shipyard is a workflow automation platform built for semi-technical team members. As long as you know how to write a little bit of code in SQL, Python, Bash, you can build and launch almost any solution that doesn't need a UI. We've made the platform as easy as possible for you to take your existing coding skills, no matter how advanced they are, and solve problems at scale.
+
+
 
 If you have an idea of something you want to solve, and you're not sure if it's possible with Shipyard, reach out to us!
 
@@ -46,7 +48,7 @@ For a more detailed view at the technology we use across the company, see our [S
 
 ## Why should I use Shipyard over Open-Source Software solutions?
 
-Our team are big believers in OSS. We even use some of it to build out our own services \(and contribute to some projects in this way\)! However, relying on OSS can present it's own challenges when something isn't working. To fix the problem, you'll either have to wait for someone else to prioritize the bug, or develop workarounds on your own.
+Our team believes in the power of OSS. We even use some of it to build out our own services \(and contribute to some projects in this way\)! However, relying on OSS can present its own challenges when something isn't working. To fix the problem, you'll either have to wait for someone else to prioritize the bug, or develop workarounds on your own.
 
 By making Shipyard a platform that prioritizes payment, we're able to provide customers with a high level of service and reaction time to fixing any bugs that may arise. You'll spend less development time wrangling with setup, troubleshooting, and constant adjustments of infrastructure. If you need a feature to help support your business, we can work with you to build it. We believe that trade-off is worth it for any business serious about implementing automation and using their data pipelines for the long term.
 

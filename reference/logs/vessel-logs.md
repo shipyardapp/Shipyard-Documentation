@@ -4,7 +4,7 @@
 
 The Logs tab of a Vessel shows a list of each unique log of every Voyage or run that has occurred, alongside additional metadata and graphs around performance. By clicking on an ID or the Open action, you can view more information.
 
-The graph on the Vessel Logs tab shows historical run durations trended out for all logs shown on the current page. The scorecards at the top give a high level insight into how successfully your Vessel has been running historically.
+The graph on the Vessel Logs tab shows historical run durations trended out for all logs shown on the current page. The scorecards at the top give a high-level insight into how successfully your Vessel has been running historically.
 
 ### Individual Vessel Log
 
@@ -13,6 +13,7 @@ The graph on the Vessel Logs tab shows historical run durations trended out for 
 The output section of an individual Vessel Log will show you:
 
 * Any [environment variables](../vessels/environment-variables/) that were set via the Requirements tab or via [Blueprint Variable](../blueprints/blueprint-variables.md) inputs.
+* If using a [Git Connection](../vessels/code.md#git-connection), the commit hash of the code that was cloned. 
 * Shipyard functionality, such as downloading your script and changing the current working directory.
 * Any data that your script printed to \`stdout\`. 
 
@@ -49,7 +50,7 @@ Once the Vessel has finished running, the page will no longer automatically refr
 
 ![Logs Tab for a Vessel](../../.gitbook/assets/image%20%2823%29.png)
 
-![Individual Log](../../.gitbook/assets/image%20%2832%29.png)
+![Individual Log for a Vessel](../../.gitbook/assets/image%20%2890%29.png)
 
 ## Limitations
 
