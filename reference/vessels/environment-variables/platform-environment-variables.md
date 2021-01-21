@@ -29,6 +29,7 @@ When a Vessel is run as part of a Fleet, the following Environment Variables wil
 | :--- | :--- | :--- |
 | `SHIPYARD_FLEET_ID` | `32f0f12f-8f68-46fd-b3ab-eeddce439f49` | Set to the UUIDv4 of the Fleet that the Vessel belongs to. |
 | `SHIPYARD_FLEET_NAME` | `ETL Workflow` | Set to the name of the Fleet that the Vessel belongs to. |
+| `SHIPYARD_FLEET_LOG_ID` | `ac0332d3-2420-4e8e-a58c-dfe78ae5bdf0` | Set to the UUIDv4 of the current Fleet Log that is running. This ID will be constant for all Vessels in the current run. |
 | `SHIPYARD_FLEET_CURRENTSTREAM_INDEX` | `0` | The position of the current Vessel in the currentstream. This value is 0 based. Useful for splitting tasks into chunks dynamically and consistently. |
 | `SHIPYARD_FLEET_UPSTREAM_COUNT` | `2` | The number of Vessels that ran upstream. |
 | `SHIPYARD_FLEET_CURRENTSTREAM_COUNT` | `2` | The number of Vessels running in the currentstream. |
