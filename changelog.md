@@ -23,7 +23,8 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 * Fixed styling issue on the Blueprint Library discover page.
 * Fixed bug surrounding correct form data on Code steps.
 * Fixed bug where and Organization after their trial period could not sign up
-for a subscription.
+
+  for a subscription.
 
 ## 1/13/2021
 

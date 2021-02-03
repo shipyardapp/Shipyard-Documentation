@@ -53,7 +53,7 @@ On the left side of the screen, select the **Write** button. This will change th
 
 {% tabs %}
 {% tab title="Python" %}
-![](../.gitbook/assets/image%20%288%29%20%281%29%20%281%29.png)
+![](../.gitbook/assets/image%20%288%29%20%281%29%20%281%29%20%281%29.png)
 
 1. In the field entitled **File Name** write `hello_world.py` . This is now the name of your script.
 2. In the field titled **Code** write `print('Hello, World!')` . Your script `hello_world.py`  now contains the Python code to print this famous message.

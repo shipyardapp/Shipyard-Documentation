@@ -28,7 +28,7 @@ A required high-level choice that helps provide validation for the user input. T
 *  **Boolean** -  Lets the user select either a `TRUE`  or `FALSE`  value in the form of a checkbox.
 *  **Date** - Lets the user provide a date, using a date selector, in the `YYYY-MM-DD`  format.
 *  **Select -**  Lets a Blueprint creator define a restricted set of valid values ****as **Select Options**. These values contain both a Display Name, shown to the user, and an Internal Value, passed to the code. Only those values that you define here will be available to the user. 
-*  **Password** - Allows the user to provide a string that gets hidden by default. This value will not be displayed upon future edits \(similar to the behavior of [Environment Variables](../vessels/environment-variables/)\) for security purposes.
+*  **Password** - Allows the user to provide a string that gets hidden by default.
 
 {% hint style="warning" %}
 **Note:** Regardless of which variable type is selected, the final user input will always passed back to your code as a string.
