@@ -90,6 +90,7 @@
 * [Azure Blob Storage](blueprint-library/azure-blob-storage.md)
 * [Box](blueprint-library/box.md)
 * [Data Manipulation](blueprint-library/data-manipulation.md)
+* [dbt](blueprint-library/dbt.md)
 * [Dropbox](blueprint-library/dropbox.md)
 * [File Manipulation](blueprint-library/file-manipulation.md)
 * [FTP](blueprint-library/ftp.md)
