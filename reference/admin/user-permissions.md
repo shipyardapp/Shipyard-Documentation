@@ -28,7 +28,7 @@ Choose which specific projects a user should have access to. Project names are a
 
 ## Screenshots
 
-![](../../.gitbook/assets/image%20%2885%29%20%281%29.png)
+![](../../.gitbook/assets/image%20%2885%29.png)
 
 ## Limitations
 

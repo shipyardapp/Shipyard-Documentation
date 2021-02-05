@@ -17,20 +17,30 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 ### New Features
 
 * Added a new Usage Dashboard that shows progress within a billing period and
-estimated cost for paying customers.
-You can access this dashboard from the Admin section of the Org, if available.
+
+  estimated cost for paying customers.
+
+  You can access this dashboard from the Admin section of the Org, if available.
 
 ### Enhancements
 
 * Updated our frontend build scripts to be more efficient and decrease load times
-for frontend resources.
+
+  for frontend resources.
+
 * Removed Triggers steps from the Vessel create flows.
-You can now add Triggers once the Vessel has been created.
-This is in preparation for adding Webhook Triggers.
+
+  You can now add Triggers once the Vessel has been created.
+
+  This is in preparation for adding Webhook Triggers.
+
 * When creating a custom Vessel, you will be shown directions to the Blueprint
-Library if your Org does not have any Blueprints to choose from.
+
+  Library if your Org does not have any Blueprints to choose from.
+
 * When your Org's trial or subscription has lapsed, you are shown a splash screen
-indicating such instead of just error message notifications.
+
+  indicating such instead of just error message notifications.
 
 ### Bug Fixes
 

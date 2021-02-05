@@ -37,6 +37,7 @@
   * [User Management](reference/admin/user-management.md)
   * [User Permissions](reference/admin/user-permissions.md)
   * [Billing](reference/admin/billing.md)
+  * [Usage Dashboard](reference/admin/usage-dashboard.md)
 * [Other Functions](reference/other-functions/README.md)
   * [Duplication](reference/other-functions/duplication.md)
   * [Status](reference/other-functions/status.md)
