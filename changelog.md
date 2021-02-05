@@ -16,10 +16,10 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 ### New Features
 
-* Added a new Usage Dashboard that shows progress within a billing period and
+* Added a new [Usage Dashboard](reference/admin/usage-dashboard.md) that shows progress within a billing period and
 
-  estimated cost for paying customers.
-
+  estimated cost for paying customers.  
+  
   You can access this dashboard from the Admin section of the Org, if available.
 
 ### Enhancements
