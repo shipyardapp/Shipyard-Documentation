@@ -2,7 +2,7 @@
 
 Below is an ordered list of changes that we have made to Shipyard. Changes include but are not limited to: new features, feature enhancements, bug fixes, or other usability updates. Some changes may be omitted, such as changes that do not affect the user-facing experience.
 
-The purpose of this changelog is to publicly document the updates we are continuously making to improve the [Shipyard](https://github.com/shipyardapp/Shipyard-Documentation/tree/d0d117d3b5d85ebe1f9fa629dd1eb0f233489611/www.shipyardapp.com) platform. We hope this is useful to our users to know that the product is being actively worked on.
+The purpose of this changelog is to publicly document the updates we are continuously making to improve the [Shipyard](https://github.com/shipyardapp/Shipyard-Documentation/tree/d0d117d3b5d85ebe1f9fa629dd1eb0f233489611/www.shipyardapp.com) platform. We hope this is useful to our users to know exactly what parts of the product are being actively worked on.
 
 {% hint style="info" %}
 Have a feature request, a bug report, a suggestion or an interesting use case? We'd love to hear it! Let us know at support@shipyardapp.com!
@@ -11,6 +11,8 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 ## Features On Deck
 
 * Webhook Triggers
+* Native Node Support
+* New User Flow Improvements
 
 ## 2/4/2021
 
@@ -23,10 +25,6 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
   You can access this dashboard from the Admin section of the Org, if available.
 
 ### Enhancements
-
-* Updated our frontend build scripts to be more efficient and decrease load times
-
-  for frontend resources.
 
 * Removed Triggers steps from the Vessel create flows.
 
