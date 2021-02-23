@@ -30,6 +30,7 @@
 * [Triggers](reference/triggers/README.md)
   * [Schedule Triggers](reference/triggers/schedule-triggers.md)
   * [On Demand Triggers](reference/triggers/on-demand-triggers.md)
+  * [Webhook Triggers](reference/triggers/webhook-triggers.md)
 * [Logs](reference/logs/README.md)
   * [Fleet Logs](reference/logs/fleet-logs.md)
   * [Vessel Logs](reference/logs/vessel-logs.md)

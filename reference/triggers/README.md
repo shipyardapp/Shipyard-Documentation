@@ -2,16 +2,13 @@
 
 ## Definition
 
-Triggers are the logic that determines when either a [Vessel](../vessels/) or a [Fleet](../fleets/) begins running. They are set on the "Triggers" tab.  
+Triggers are the logic that determines when either a [Vessel](../vessels/) or a [Fleet](../fleets/) begins running. They are set on the "Triggers" tab and can only be set up after the Vessel or Fleet has been created.  
   
-There are currently 2 types of supported triggers:
+There are currently 3 types of supported triggers:
 
 * [Schedule Triggers](schedule-triggers.md)
 * [On Demand Triggers](on-demand-triggers.md)
-
-## Limitations
-
-1. There is currently no way to view the overlap between different triggers at different levels.
+* [Webhook Triggers](webhook-triggers.md)
 
 ## Learn More
 

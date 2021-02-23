@@ -19,7 +19,9 @@ If a schedule is added, removed, or changed after 12:00am UTC, the Vessel's sche
 
 ## Screenshots
 
-![](../../.gitbook/assets/image%20%2837%29.png)
+![View on the Triggers tab when there are no schedules.](../../.gitbook/assets/image%20%2896%29.png)
+
+![View on the Triggers tab when there are schedules.](../../.gitbook/assets/image%20%2899%29.png)
 
 ## Limitations
 
