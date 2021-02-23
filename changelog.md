@@ -10,9 +10,16 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 ## Features On Deck
 
-* Webhook Triggers
 * Native Node Support
 * New User Flow Improvements
+
+## 2/23/2021
+
+### New Features
+
+* Added new Webhook triggers to Vessels and Fleets.
+In addition to Schedules, you can now trigger a Voyage or Fleet Run by POSTing
+to a webhook URL generated from the UI.
 
 ## 2/4/2021
 
