@@ -17,7 +17,7 @@ Additionally, your script should stop its work if it receives a SIGTERM \(15\) s
 ## Setup Steps
 
 1. Select "With Code"
-2. Provide [**Code**](code.md)\*\*\*\*
+2. Provide [**Code**](code/)\*\*\*\*
 3. Define Requirements \([Environment Variables](environment-variables/), [External Package Dependencies](external-package-dependencies.md)\)
 4. Set [**Triggers**](../triggers/)\*\*\*\*
 5. Save **Settings** \([Information](information-card.md), [Notifications](notifications.md), and [Guardrails](guardrails.md)\)

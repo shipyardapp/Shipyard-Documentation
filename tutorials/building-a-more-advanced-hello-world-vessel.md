@@ -73,7 +73,7 @@ On the left side of the screen, make sure the **Upload** button is selected. Thi
 
 1. Click the upload section of page and select the `tutorial.tar` file from you computer.
 2. On the right-hand side of the screen, there is a field entitled **File to Run**. Because the .zip contains a single python file named `hello_world_advanced.py`, you'll need use that name.
-3. Click the "plus" icon next to arguments to create a new [command argument](../reference/vessels/command.md#arguments).
+3. Click the "plus" icon next to arguments to create a new [command argument](../reference/vessels/code/command.md#arguments).
 4. In the **flag** field on the left-hand side, type `--name`.
 5. In the **value** field on the right-hand side of the new argument, type your name.
 

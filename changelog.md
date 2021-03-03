@@ -18,8 +18,10 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 ### New Features
 
 * Added new Webhook triggers to Vessels and Fleets.
-In addition to Schedules, you can now trigger a Voyage or Fleet Run by POSTing
-to a webhook URL generated from the UI.
+
+  In addition to Schedules, you can now trigger a Voyage or Fleet Run by POSTing
+
+  to a webhook URL generated from the UI.
 
 ## 2/4/2021
 
@@ -27,8 +29,8 @@ to a webhook URL generated from the UI.
 
 * Added a new [Usage Dashboard](reference/admin/usage-dashboard.md) that shows progress within a billing period and
 
-  estimated cost for paying customers.  
-  
+  estimated cost for paying customers.
+
   You can access this dashboard from the Admin section of the Org, if available.
 
 ### Enhancements

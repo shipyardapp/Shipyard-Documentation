@@ -10,11 +10,13 @@ We love to hear what our users would like to see out of our product. Feel free t
 
 ## What programming languages do you support?
 
-We currently natively support the creation of solutions using Python 3.7 and Bash. Bash allows us to support any language non-natively, where the right language packages just need to be manually installed by the user.
+We currently natively support the creation of solutions using Python 3.7, Node 14.15 and Bash. 
+
+Bash allows us to support any language non-natively, where the right language packages just need to be manually installed by the user.
 
 SQL can be used natively with some Blueprints found in the [Blueprint Library](reference/blueprint-library.md).
 
-In the future, we plan to expand our native language support to R and Node.js.
+In the future, we plan to expand our native language support to R.
 
 If you have a language that you would like to see supported, let us know!
 
@@ -31,8 +33,6 @@ If you have standard needs to run QA on your data, deliver reports, and send dat
 If you have proprietary business logic needs, you will likely need at least one technical team member that can initially build solutions for the organization. However, other users of Shipyard are **not** required to know code. We built the platform to allow business users the ability to easily access and take advantage of internally built solutions \([Custom Blueprints](https://intercom.help/shipyardapp/en/articles/3526186-what-is-a-custom-blueprint)\).
 
 Shipyard is a workflow automation platform built for semi-technical team members. As long as you know how to write a little bit of code in SQL, Python, Bash, you can build and launch almost any solution that doesn't need a UI. We've made the platform as easy as possible for you to take your existing coding skills, no matter how advanced they are, and solve problems at scale.
-
-
 
 If you have an idea of something you want to solve, and you're not sure if it's possible with Shipyard, reach out to us!
 
@@ -52,9 +52,9 @@ Our team believes in the power of OSS. We even use some of it to build out our o
 
 By making Shipyard a platform that prioritizes payment, we're able to provide customers with a high level of service and reaction time to fixing any bugs that may arise. You'll spend less development time wrangling with setup, troubleshooting, and constant adjustments of infrastructure. If you need a feature to help support your business, we can work with you to build it. We believe that trade-off is worth it for any business serious about implementing automation and using their data pipelines for the long term.
 
-## I need to whitelist Shipyard's IP Addresses. What are those?
+## How can Shipyard access my secure database?
 
-Any requests coming from Shipyard will come from the following IPs.
+If you need Shipyard to connect to your database which is locked down behind layers of security, a common solution is to whitelist the IP addresses which Shipyard will attempt to access your data from. Any requests coming from Shipyard will come from the following static IPs.
 
 * 54.190.66.63
 * 52.42.73.100

@@ -16,8 +16,8 @@ As a Blueprint author or editor, you are in charge of writing the code that runs
 
 When creating a Blueprint, you must **always** provide the following elements:
 
-* [Code](../vessels/code.md)
-* [Command ](../vessels/command.md)to execute the code
+* [Code](../vessels/code/)
+* [Command ](../vessels/code/command.md)to execute the code
 * [Blueprint Information](../vessels/information-card.md)
 
 You may also _optionally_ provide these elements:

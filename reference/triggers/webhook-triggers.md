@@ -40,6 +40,28 @@ Open up your terminal window and run the following command.
 curl -X POST <WEBHOOK_URL> | json_p
 ```
 {% endtab %}
+
+{% tab title="Node.js" %}
+First, install the axios library by running `npm install axios`
+
+Next, open up Node in your terminal window by typing `node`
+
+Finally, run the following node code:
+
+```javascript
+const axios = require('axios')
+
+axios
+  .post('<WEBHOOK_URL>')
+  .then(res => {
+    console.log(`statusCode: ${res.statusCode}`)
+    console.log(res)
+  })
+  .catch(error => {
+    console.error(error)
+  })
+```
+{% endtab %}
 {% endtabs %}
 
 ## Webhook Status Codes

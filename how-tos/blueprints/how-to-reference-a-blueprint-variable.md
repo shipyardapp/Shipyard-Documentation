@@ -10,7 +10,7 @@ For the examples below, say we have an example where the Variable's Reference Na
 
 {% tabs %}
 {% tab title="Shipyard UI" %}
-1. Locate the field where you want user data to flow into. Common locations are in the [Argument Value ](../../reference/vessels/command.md#arguments)or the [Environment Variable Value ](../../reference/vessels/environment-variables/)field.
+1. Locate the field where you want user data to flow into. Common locations are in the [Argument Value ](../../reference/vessels/code/command.md#arguments)or the [Environment Variable Value ](../../reference/vessels/environment-variables/)field.
 2. Use the format of `${VAR_NAME}` , replacing `VAR_NAME`  with your Reference Name. For our example, this would be `${cool_var_name}`
 3. Save the Vessel.
 

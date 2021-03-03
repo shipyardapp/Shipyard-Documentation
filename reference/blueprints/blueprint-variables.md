@@ -56,7 +56,7 @@ All of the user input provided when setting up a Vessel will be provided to your
 
 ### **Pass Variables Into Script**
 
-You can obtain the variable's value via either the [command arguments ](../vessels/command.md)or as an [environment variable value ](../vessels/environment-variables/)by referencing the variable using `${variable_name}`. The variable name will **exactly match** the Blueprint Variable's [**Reference Name**](blueprint-variables.md#reference-name)**.** For example, if a variable's reference name is `Operator_A`, then you would reference it by typing`${Operator_A}`.
+You can obtain the variable's value via either the [command arguments ](../vessels/code/command.md)or as an [environment variable value ](../vessels/environment-variables/)by referencing the variable using `${variable_name}`. The variable name will **exactly match** the Blueprint Variable's [**Reference Name**](blueprint-variables.md#reference-name)**.** For example, if a variable's reference name is `Operator_A`, then you would reference it by typing`${Operator_A}`.
 
 If you reference a `${variable_name}` that does not exist, the value will be returned as `None`.
 

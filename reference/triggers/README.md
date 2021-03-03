@@ -10,6 +10,12 @@ There are currently 3 types of supported triggers:
 * [On Demand Triggers](on-demand-triggers.md)
 * [Webhook Triggers](webhook-triggers.md)
 
+## Screenshots
+
+![](../../.gitbook/assets/image%20%28101%29.png)
+
+![](../../.gitbook/assets/image%20%28105%29.png)
+
 ## Learn More
 
 * [How to Edit a Vessel's Schedule Triggers](../../how-tos/vessels/how-to-edit-a-vessels-schedule-triggers.md)

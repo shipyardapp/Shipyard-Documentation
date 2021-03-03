@@ -13,7 +13,7 @@ The graph on the Vessel Logs tab shows historical run durations trended out for 
 The output section of an individual Vessel Log will show you:
 
 * Any [environment variables](../vessels/environment-variables/) that were set via the Requirements tab or via [Blueprint Variable](../blueprints/blueprint-variables.md) inputs.
-* If using a [Git Connection](../vessels/code.md#git-connection), the commit hash of the code that was cloned. 
+* If using a [Git Connection](../vessels/code/#git-connection), the commit hash of the code that was cloned. 
 * Shipyard functionality, such as downloading your script and changing the current working directory.
 * Any data that your script printed to \`stdout\`. 
 
