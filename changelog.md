@@ -11,7 +11,9 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 ## Features On Deck
 
 * Native Node Support
-* New User Flow Improvements
+* Enhanced Blueprint Library Integrations
+* User Flow Improvements
+* Enhanced Fleet Creation
 
 ## 2/23/2021
 
@@ -21,7 +23,9 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
   In addition to Schedules, you can now trigger a Voyage or Fleet Run by POSTing
 
-  to a webhook URL generated from the UI.
+  to a webhook URL generated from the UI.  
+  
+  Read more about this update [here](https://www.shipyardapp.com/blog/webhook-triggers-event-driven-automation/).
 
 ## 2/4/2021
 
