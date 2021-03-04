@@ -10,10 +10,27 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 ## Features On Deck
 
-* Native Node Support
 * Enhanced Blueprint Library Integrations
 * User Flow Improvements
 * Enhanced Fleet Creation
+
+## 3/3/2021
+
+### New Features
+
+* Native Node Vessels. You can now run Node Vessel with dependencies isntalled for you.
+
+### Enhancements
+
+* Added six environment variables available to your Voyage at runtime:
+  * SHIPYARD\_VESSEL\_START\_TIME indicates the time at which the Vessel started running.
+  * SHIPYARD\_FLEET\_START\_TIME indicates the time at which the Fleet started running. It will be empty if the Voyage is not part of a Fleet.
+  * SHIPYARD\_VESSEL\_SCHEDULED\_TIME indicates the time at which the Vessel was scheduled to run.
+  * SHIPYARD\_FLEET\_SCHEDULED\_TIME indicates the time at which the Fleet was scheduled to run. It will be empty if the Voyage is not part of a Fleet.
+  * SHIPYARD\_BLUEPRINT\_ID indicates the ID of the Blueprint of the Vessel. It will reflect the Code type if the Vessel is not build from a Blueprint.
+  * SHIPYARD\_BLUEPRINT\_NAME indicates the name of the Blueprint of the Vessel. It will reflect the Code type if the Vessel is not build from a Blueprint.
+
+* Updated the maximum number of allowed retries to 24.
 
 ## 2/23/2021
 
