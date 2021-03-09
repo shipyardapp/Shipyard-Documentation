@@ -1,0 +1,76 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #3d57cc;
+  --ifm-color-primary-dark: #324bbd;
+  --ifm-color-primary-darker: #2f47b2;
+  --ifm-color-primary-darkest: #273a93;
+  --ifm-color-primary-light: #5269d2;
+  --ifm-color-primary-lighter: #5c72d4;
+  --ifm-color-primary-lightest: #7c8edd;
+  --ifm-code-font-size: 95%;
+}
+
+html[data-theme="dark"] {
+  --ifm-color-primary: #4e89e8;
+  --ifm-color-primary-dark: #3377e4;
+  --ifm-color-primary-darker: #256ee3;
+  --ifm-color-primary-darkest: #1959c0;
+  --ifm-color-primary-light: #699bec;
+  --ifm-color-primary-lighter: #77a4ed;
+  --ifm-color-primary-lightest: #a0c0f3;
+  /* any other colors you wish to overwrite */
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+.admonition-content {
+  color: white;
+}
+
+.admonition-content a {
+  color: white;
+}
+
+.admonition-heading {
+  color: white;
+}
+
+.admonition-icon path {
+  fill: white;
+}
+.admonition-info {
+  background-color: #1282a2;
+  border-color: #1282a2;
+}
+
+.admonition-caution {
+  background-color: #f0a205;
+  border-color: #f0a205;
+}
+
+.admonition-tip {
+  background-color: #0eaa54;
+  border-color: #0eaa54;
+}
+
+.admonition-note {
+  background-color: #8c8c8c;
+  border-color: #8c8c8c;
+}
+
+.admonition-danger {
+  background-color: #f73b3b;
+  border-color: #f73b3b;
+}
