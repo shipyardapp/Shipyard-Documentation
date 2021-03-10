@@ -1,9 +1,10 @@
 module.exports = {
   docs: {
-    '🚢 Overview': ['introduction','documentation-usage','glossary','faqs','changelog'],
+    'Overview': ['introduction','documentation-usage','glossary','faqs','changelog'],
     '📚 Reference': [
       'reference/organizations',
       'reference/projects',
+      'reference/blueprint-library',
       {
         Admin: [
           'reference/admin/billing',

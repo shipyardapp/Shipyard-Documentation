@@ -14,27 +14,27 @@ keywords:
 
 ## Definitions
 
-\*\*\*\*[**Blueprint Library**](blueprint-library.md) is a location for pre-made Custom Blueprints developed by Shipyard staff.
+[**Blueprint Library**](reference/blueprint-library) is a location for pre-made Custom Blueprints developed by Shipyard staff.
 
-[**Blueprints**](blueprints/) \*\*\*\*are the foundation of the application. They contain the design specifications for a repeatable task. In other applications, these may be referenced as templates, macros, or operators.
+[**Blueprints**](/reference/blueprints/blueprints-overview) are the foundation of the application. They contain the design specifications for a repeatable task. In other applications, these may be referenced as templates, macros, or operators.
 
-\*\*\*\*[**Vessels**](vessels/) are built using either Blueprints or Code. In other applications, these may be referenced as tasks or jobs.
+[**Vessels**](/reference/vessels/vessels-overview) are built using either [Blueprints](/reference/blueprints/blueprints-overview) or [Code](/reference/code/code-overview). In other applications, these may be referenced as tasks, jobs, or steps.
 
-\*\*\*\*[**Fleets**](fleets/) are built by connecting multiple Vessels together. In other applications, these may be referenced as workflows or DAGs.
+[**Fleets**](/reference/fleets/fleets-overview) are built by connecting multiple Vessels together. In other applications, these may be referenced as flows, workflows, or DAGs.
 
 **Paths** are the lines that connect Vessels together in a Fleet, evaluating the status of the connected Vessel.
 
-**Voyages** are a single run of a Vessel or Fleet. Data about a Voyage is stored as a Log.
+**Voyages** are a single run of a Vessel or Fleet. In other applications, these may be referenced as an execution. Metadata about a Voyage is stored as a [Log](reference/logs/logs-overview).
 
-\*\*\*\*[**Logs**](logs/) are a historical record of how a Fleet or Vessel ran at a specific point in time. A Fleet's log will contain multiple Vessel Logs.
+[**Logs**](reference/logs/logs-overview) are a historical record of how a Fleet or Vessel ran at a specific point in time. A [Fleet Log](reference/logs/fleet-logs) will consist of one or more [Vessel Logs](reference/logs/vessel-logs).
 
-[**Triggers**](triggers/) \*\*\*\*are the logic that determines when a Vessel or Fleet should begin running.
+[**Triggers**](reference/triggers/triggers-overview) are the logic that determines when a Vessel or Fleet should begin running.
 
-\*\*\*\*[**Projects**](projects.md) house Vessels and Fleets that you have created under them. Each project is associated with its own timezone.
+[**Projects**](reference/projects) are used to categorize Vessels and Fleets pertaining to specific teams, functions, or use cases. Each project is associated with its own [timezone](reference/other-functions/timestamps-and-timezones) used for [Schedule Triggers](reference/triggers/schedule-triggers).
 
-\*\*\*\*[**Organizations**](what-is-an-organization.md) house all of your Projects and Blueprints. This is the highest grouping structure in the platform that users can control.
+[**Organizations**](reference/organizations) contain all of your Projects and Blueprints. This is the highest grouping structure in the platform that users can control.
 
-**Element** refers to any of the above bolded words.
+**Element** is a generic term used to refer to any of the above bolded words.
 
 **Platform** refers to the Shipyard application as a whole. Elements that live under the Platform level are controlled and managed by Shipyard staff.
 
@@ -52,8 +52,14 @@ keywords:
 
 ### Fleet Stream Examples
 
-![](.gitbook/assets/image_66.png)
+#### No Upstream Vessels
 
-![](.gitbook/assets/image_92.png)
+![Example with no upstream Vessels](.gitbook/assets/no_upstream_example.png)
 
-![](.gitbook/assets/image_57.png)
+#### No Downstream Vessels
+
+![Example with no downstream Vessels](.gitbook/assets/no_downstream_example.png)
+
+#### Vessels at Every Level
+
+![Example with Vessels at every stream level](.gitbook/assets/every_stream_example.png)

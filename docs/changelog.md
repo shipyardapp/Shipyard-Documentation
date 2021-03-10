@@ -12,7 +12,7 @@ keywords:
 
 Below is an ordered list of changes that we have made to Shipyard. Changes include but are not limited to: new features, feature enhancements, bug fixes, or other usability updates. Some changes may be omitted, such as changes that do not affect the user-facing experience.
 
-The purpose of this changelog is to publicly document the updates we are continuously making to improve the [Shipyard](https://github.com/shipyardapp/Shipyard-Documentation/tree/d0d117d3b5d85ebe1f9fa629dd1eb0f233489611/www.shipyardapp.com) platform. We hope this is useful to our users to know exactly what parts of the product are being actively worked on.
+The purpose of this changelog is to publicly document the updates we are continuously making to improve the [Shipyard](https://www.shipyardapp.com) platform. We hope this is useful to our users to know exactly what parts of the product are being actively worked on.
 
 :::info
 Have a feature request, a bug report, a suggestion or an interesting use case? We'd love to hear it! Let us know at support@shipyardapp.com!
@@ -20,10 +20,34 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 ## Features On Deck
 
-- Native Node Support
 - Enhanced Blueprint Library Integrations
 - User Flow Improvements
 - Enhanced Fleet Creation
+
+## 3/10/2021
+
+### Enhancements
+
+- A new simplified pricing structure with a pricing calculator.
+
+## 3/3/2021
+
+### New Features
+
+- Native Node Vessels. You can now run Node Vessel with dependencies isntalled for you.
+
+### Enhancements
+
+- Added six environment variables available to your Voyage at runtime:
+
+  - `SHIPYARD_VESSEL_START_TIME` indicates the time at which the Vessel started running.
+  - `SHIPYARD_FLEET_START_TIME` indicates the time at which the Fleet started running. It will be empty if the Voyage is not part of a Fleet.
+  - `SHIPYARD_VESSEL_SCHEDULED_TIME` indicates the time at which the Vessel was scheduled to run.
+  - `SHIPYARD_FLEET_SCHEDULED_TIME` indicates the time at which the Fleet was scheduled to run. It will be empty if the Voyage is not part of a Fleet.
+  - `SHIPYARD_BLUEPRINT_ID` indicates the ID of the Blueprint of the Vessel. It will reflect the Code type if the Vessel is not build from a Blueprint.
+  - `SHIPYARD_BLUEPRINT_NAME` indicates the name of the Blueprint of the Vessel. It will reflect the Code type if the Vessel is not build from a Blueprint.
+
+- Updated the maximum number of allowed retries to 24.
 
 ## 2/23/2021
 
