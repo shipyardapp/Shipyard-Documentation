@@ -14,6 +14,12 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 * User Flow Improvements
 * Enhanced Fleet Creation
 
+## 3/10/2021
+
+### Enhancements
+
+* A new simplified pricing structure with a pricing calculator.
+
 ## 3/3/2021
 
 ### New Features
