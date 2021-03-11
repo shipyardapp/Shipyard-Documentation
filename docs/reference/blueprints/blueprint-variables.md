@@ -97,7 +97,7 @@ View the following article for more information on accessing environment variabl
 
 ![Editing a variable](../../.gitbook/assets/image_38.png)
 
-## Limitations
+## Additional Notes
 
 1. A Blueprint cannot have two variables with the same name.
 2. A Blueprint variable cannot be conditionally shown or hidden based on a user's selection.

@@ -28,6 +28,6 @@ Below is a list of the most common URL structures that may be needed.
 | **View Logs for a Single Vessel**    | https://app.shipyardapp.com/{org\_name}/projects/{project\_id}/vessels/{vessel\_id}/logs           |
 | **View Individual Log for a Vessel** | https://app.shipyardapp.com/{org\_name}/projects/{project\_id}/vessels/{vessel\_id}/logs/{log\_id} |
 
-## Limitations
+## Additional Notes
 
 1. Shipyard first checks to verify that the user visiting the page has access to the underlying content. If not, they will be redirected to the login screen.

@@ -51,7 +51,7 @@ You may also _optionally_ provide these elements:
 2. [Notifications](../vessels/notifications.md)
 3. [Guardrails](../vessels/guardrails.md)
 
-## Limitations
+## Additional Notes
 
 1. Code for a Blueprint must have an adequate level of error handling and validation because it relies on user input.
 2. Notifications cannot be set for all Vessels that are built from a Blueprint.

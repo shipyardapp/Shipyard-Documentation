@@ -21,4 +21,4 @@ For a list of services we enable you to build solutions with using a no-code tem
 
 ## Screenshots
 
-![](../../../.gitbook/assets/image_109.png)
+![Integration Tab](../../../.gitbook/assets/image_109.png)

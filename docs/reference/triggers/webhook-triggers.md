@@ -162,7 +162,7 @@ When your POST request returns a status code of 400, your request has failed. Th
 
 ![View on the Triggers tab when a webhook has been created.](../../.gitbook/assets/active_webhook_trigger.png)
 
-## Limitations
+## Additional Notes
 
 1. Webhooks only allow you to immediately run a Vessel or a Fleet in a programmatic manner. They do not currently support the passing of variables.
 2. Each Vessel or Fleet can only have one webhook associated to it.

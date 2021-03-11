@@ -150,7 +150,7 @@ If you have a valid use case for needing positional arguments or a boolean flag,
 
 ![](../../.gitbook/assets/command.png)
 
-## Limitations
+## Additional Notes
 
 1. Shipyard can only run a single command at a time. If multiple commands need to be run \(with the use of `&&`\), you should create and run a single shell script that contains the code to run multiple commands successively.
 2. Positional arguments that contain only values cannot be passed to your script.

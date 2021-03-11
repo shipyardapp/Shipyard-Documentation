@@ -41,7 +41,7 @@ In addition, the usage dashboard will show you:
 
 ![](../../.gitbook/assets/image_91.png)
 
-## Limitations
+## Additional Notes
 
 1. The dashboard only shows usage data for the current billing period.
 2. The usage data will only update every 24 hours.

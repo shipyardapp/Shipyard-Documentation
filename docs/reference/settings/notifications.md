@@ -28,7 +28,7 @@ When initially creating a Vessel, the owner's email will be added automatically.
 
 ![](../../.gitbook/assets/image_7_1.png)
 
-## Limitations
+## Additional Notes
 
 1. Notifications can only be sent via email. No other messaging platforms are supported at this time.
 2. Notification settings are the same for every user that is listed.

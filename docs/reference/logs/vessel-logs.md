@@ -17,9 +17,7 @@ The Logs tab of a Vessel shows a list of each unique log of every Voyage or run 
 
 The graph on the Vessel Logs tab shows historical run durations trended out for all logs shown on the current page. The scorecards at the top give a high-level insight into how successfully your Vessel has been running historically.
 
-### Individual Vessel Log
-
-#### Output
+### Output
 
 The output section of an individual Vessel Log will show you:
 
@@ -28,7 +26,7 @@ The output section of an individual Vessel Log will show you:
 - Shipyard functionality, such as downloading your script and changing the current working directory.
 - Any data that your script printed to \`stdout\`.
 
-#### Live Update
+### Live Update
 
 If a log has a status of "Scheduled" or "Running", the individual Log page will automatically refresh every few seconds to show:
 
@@ -40,7 +38,7 @@ While the Vessel is actively running, you can click "Stop Voyage" to immediately
 
 Once the Vessel has finished running, the page will no longer automatically refresh.
 
-## Stored Data
+### Metadata
 
 | Name                                                       | Definition                                                              |
 | :--------------------------------------------------------- | :---------------------------------------------------------------------- |
@@ -63,7 +61,7 @@ Once the Vessel has finished running, the page will no longer automatically refr
 
 ![Individual Log for a Vessel](../../.gitbook/assets/image_90.png)
 
-## Limitations
+## Additional Notes
 
 1. Logs cannot currently be exported from Shipyard for analysis. If you need access to this data, reach out to [support](mailto:support@shipyardapp.com).
 2. The Log Output does not contain any information pertaining to the package installation process.

@@ -53,7 +53,7 @@ Alternatively, you can use the [platform environment variable](../environment-va
 
 ![](../../.gitbook/assets/github_code_sync.png)
 
-## Limitations
+## Additional Notes
 
 1. The git connection only supports Github at the moment.
 2. If you have multiple organizations synced with the [Github Integration](../../admin/integrations/github-integration.md), the organization source will not be listed as part of the repo. As a result, there is a potential to display multiple repos with the same name.

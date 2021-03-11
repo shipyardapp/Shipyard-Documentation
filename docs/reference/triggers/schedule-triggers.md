@@ -35,7 +35,7 @@ If a schedule is added, removed, or changed after 12:00am UTC, the Vessel's sche
 
 ![View on the Triggers tab when there are schedules.](../../.gitbook/assets/multiple_schedule_triggers.png)
 
-## Limitations
+## Additional Notes
 
 1. A schedule's maximum frequency is every 5 minutes. If you need to run a Vessel more frequently, please reach out to support.
 2. If a schedule is duplicated, the Vessel or Fleet will be run multiple times concurrently at the scheduled time.

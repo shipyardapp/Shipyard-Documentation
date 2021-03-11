@@ -15,7 +15,7 @@ keywords:
 
 The User Management page gives Admins the ability to see and interact with all of the users that exist in their organization.
 
-From this page, there are three main actions that can be performed:
+## Actions
 
 ### Inviting Users
 
@@ -26,11 +26,11 @@ Multiple users can be invited to the organization at the same time. Invitations 
 
 ### Manage User Permissions
 
-Clicking the manage action will lead to the [Permissions Panel](user-permissions.md) for that user.
+Clicking the **manage** action will lead to the [Permissions Panel](user-permissions.md) for that user.
 
 ### Deleting Users
 
-Clicking the delete action will permanently remove that user's access from the organization.
+Clicking the **delete** action will permanently remove that user's access from the organization.
 
 ## Screenshots
 
@@ -38,11 +38,9 @@ Clicking the delete action will permanently remove that user's access from the o
 
 ![Invite new users to your organization.](../../.gitbook/assets/image_34.png)
 
-## Limitations
+## Additional Notes
 
 1. A user cannot delete themselves. That action must be performed by another Admin.
 2. Users cannot be set to inactive, only deleted.
 3. New user invites expire after 72 hours.
 4. Newly invited users will not be displayed as members of your organization until they confirm their account.
-
-## Learn More

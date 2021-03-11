@@ -10,7 +10,7 @@ keywords:
 
 # How to Use the Documentation
 
-All of our documentation is organized into 5 core sections that help you find exactly what you're looking for whether you're just starting out, have been using the platform for a while, or are interested in diving deeper before making the decision to use Shipyard.
+All of our documentation is organized into 4 core sections that help you find exactly what you're looking for whether you're just starting out, have been using the platform for a while, or are interested in diving deeper before making the decision to use Shipyard.
 
 ## 📚 Reference
 

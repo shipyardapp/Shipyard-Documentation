@@ -67,7 +67,7 @@ Staying inline with programming best practices, we recommend that all of your en
 
 ![](../../.gitbook/assets/image_65.png)
 
-## Limitations
+## Additional Notes
 
 1. Previously stored environment variables can never be viewed.
 2. Leaving a value as blank will result in the value not updating. If you need to set a value to be blank, you will need to delete it, save the Vessel, then recreate the environment variable with a blank value.

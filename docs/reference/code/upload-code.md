@@ -23,7 +23,7 @@ Shipyard only supports uploading and storing a single file per Vessel. If you ha
 
 ![](../../.gitbook/assets/upload_code.png)
 
-## Limitations
+## Additional Notes
 
 1. Every time you upload a file using the upload method, the new upload **replaces everything** that has previously been uploaded, **including** any text in the in-app editor.
 2. You can only have one file uploaded at a time.

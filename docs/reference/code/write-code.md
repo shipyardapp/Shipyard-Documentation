@@ -23,7 +23,7 @@ This solution is perfect for smaller code snippets that you may need to change a
 
 ![](../../.gitbook/assets/write_code.png)
 
-## Limitations
+## Additional Notes
 
 1. The in-app editor only supports editing one file per Vessel.
 2. You cannot include folder names in the File Name field. The file will always be created in the current working directory.

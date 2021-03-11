@@ -29,7 +29,7 @@ After a failure, the amount of time before Shipyard will try to run the Vessel a
 
 ![](../../.gitbook/assets/image_2_2.png)
 
-## Limitations
+## Additional Notes
 
 1. Retries only occur after the current Vessel has run into an error. You cannot retry a Vessel based on another condition or output of another Vessel.
 2. Retries only happen using a time interval.

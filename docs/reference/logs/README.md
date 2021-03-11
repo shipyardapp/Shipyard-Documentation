@@ -31,7 +31,7 @@ The data contained within a Log differs slightly for Vessels and Fleets differ s
 
 {% page-ref page="vessel-logs.md" %}
 
-## Limitations
+## Additional Notes
 
 1. Logs cannot be manually removed from Shipyard by users. If you need a log deleted because sensitive information was accidentally printed, contact [support](mailto:support@shipyardapp.com).
 2. Logs cannot currently be exported from Shipyard for analysis. If you need access to this data, reach out to [support](mailto:support@shipyardapp.com).

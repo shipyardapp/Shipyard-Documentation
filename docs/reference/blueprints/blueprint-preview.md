@@ -25,7 +25,7 @@ The preview consists of two parts:
 
 ![Full preview window, showing the Markdown description and the Blueprint Variables as inputs.](../../.gitbook/assets/image_89.png)
 
-## Limitations
+## Additional Notes
 
 1. When you navigate away from the preview, all data entered will be removed.
 2. The preview does not check for required fields, but it does show the red asterisk next to required fields.

@@ -56,7 +56,7 @@ Building a Vessel with a Blueprint allows you to run scripts without needing to 
 </TabItem>
 </Tabs>
 
-## Limitations
+## Additional Notes
 
 1. A Vessel can only be tied to one Blueprint, one Project, and one Organization.
 2. A Vessel's Blueprint cannot be changed once it is built.

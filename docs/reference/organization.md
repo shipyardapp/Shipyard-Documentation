@@ -17,8 +17,8 @@ An organization is the highest level structure that exists within Shipyard. It h
 
 ## Screenshots
 
-![](../.gitbook/assets/image_19.png)
+![Organization Level View](../.gitbook/assets/image_19.png)
 
-## **Limitations**
+## Additional Notes
 
 1. An email cannot belong to multiple organizations. You must use a different email for each organization that you need to access.

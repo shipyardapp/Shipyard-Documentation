@@ -49,6 +49,6 @@ When a Blueprint is duplicated, the following things occur:
 **Note:** Pressing duplicate will immediately create a duplicate without you needing to save anything. You will, however, likely want to change a few settings or create a more readable name.
 :::
 
-## Limitations
+## Additional Notes
 
 1. You can't duplicate an instance of a Vessel or a Blueprint that has been changed since the last save. You must first click save.

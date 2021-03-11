@@ -23,6 +23,6 @@ On the top navigation pane for every Vessel and Fleet, you are given a **Run Now
 
 ![Running your Vessel On Demand](../../.gitbook/assets/on_demand_trigger.png)
 
-## Limitations
+## Additional Notes
 
 1. Vessels may not run instantaneously, as there is still time associated with entering a job queue, spinning up servers, and installing any packages provided in Requirements.
