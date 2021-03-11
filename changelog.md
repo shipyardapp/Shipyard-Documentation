@@ -35,7 +35,6 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
   * SHIPYARD\_FLEET\_SCHEDULED\_TIME indicates the time at which the Fleet was scheduled to run. It will be empty if the Voyage is not part of a Fleet.
   * SHIPYARD\_BLUEPRINT\_ID indicates the ID of the Blueprint of the Vessel. It will reflect the Code type if the Vessel is not build from a Blueprint.
   * SHIPYARD\_BLUEPRINT\_NAME indicates the name of the Blueprint of the Vessel. It will reflect the Code type if the Vessel is not build from a Blueprint.
-
 * Updated the maximum number of allowed retries to 24.
 
 ## 2/23/2021
@@ -46,8 +45,8 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
   In addition to Schedules, you can now trigger a Voyage or Fleet Run by POSTing
 
-  to a webhook URL generated from the UI.  
-  
+  to a webhook URL generated from the UI.
+
   Read more about this update [here](https://www.shipyardapp.com/blog/webhook-triggers-event-driven-automation/).
 
 ## 2/4/2021

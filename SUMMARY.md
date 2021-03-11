@@ -85,6 +85,7 @@
 ## 🚀 Tutorials
 
 * [Build a Playground Project](tutorials/building-playground-project.md)
+* [Building a Fleet that Shares Files](tutorials/building-a-fleet.md)
 * [Building a "Hello World" Vessel](tutorials/building-a-hello-world-vessel.md)
 * [Building a more Advanced "Hello World" Vessel](tutorials/building-a-more-advanced-hello-world-vessel.md)
 * [Building a Blueprint with Great Expectations](tutorials/building-a-blueprint-with-great-expectations.md)
