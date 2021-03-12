@@ -11,7 +11,7 @@ keywords:
 
 ## Definition
 
-The Code tab contains all of the details necessary to run your scripts as Vessels. Contents of this tab may differ slightly based on the language selected. Shipyard currently supports executing code written in Python, Node, or Bash \(which can effectively run any language\).
+The Code tab contains all of the details necessary to run your scripts as Vessels. Contents of this tab may differ slightly based on the language selected. Shipyard currently supports executing code written in Python, Node, or Bash \(which can effectively install and run any language\).
 
 The left pane contains a section to provide Shipyard with your code. There are 3 different methods:
 

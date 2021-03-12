@@ -38,6 +38,8 @@ keywords:
 
 **Platform** refers to the Shipyard application as a whole. Elements that live under the Platform level are controlled and managed by Shipyard staff.
 
+**Home Directory** refers to the default location where scripts and files are saved. By default, this location is `/home/shipyard/` and can be accessed using the environment variable `HOME`.
+
 **Upstream** refers to connected Vessels that ran immediately preceding the current Vessel.
 
 **Currentstream** refers to Vessels that are running at the same time, due to being branched off of the immediately preceding Vessels. If two or more Vessels are running simultaneously, but were not attached to the same upstream Vessel, they are not considered to be in the same currentstream.

@@ -54,9 +54,9 @@ Within the Shipyard platform, a Command is broken into distinct sections of the 
 </TabItem>
 </Tabs>
 
-### Program <a id="program"></a>
+### Program
 
-This option defines which installed package on Shipyard's operating system should be used to execute your code. The available options under program are based on the language that you select.
+The program field defines which installed package on Shipyard's operating system should be used to execute your code. The available options under program are based on the language that you select. This field is currently disabled with plans to support multiple language versions in the future.
 
 <Tabs
 groupId="languages"
@@ -80,9 +80,9 @@ values={[
 </TabItem>
 </Tabs>
 
-### File to Run <a id="file-to-run"></a>
+### File to Run
 
-The File to Run should relate to the single file that you want the selected program to execute. This field can include a directories, if the file is located under a series of folders. Examples of common formatting:
+The File to Run field should relate to the single file that you want the selected program to execute. This field can include a directory structure if the file is located under a series of folders. Examples of common formatting:
 
 <Tabs
 groupId="languages"
@@ -112,9 +112,9 @@ OR
 </TabItem>
 </Tabs>
 
-### Arguments <a id="arguments"></a>
+### Arguments
 
-Arguments are comprised of flags and values and are added to the command in the order they are entered \(although generally, the order should not matter\).
+Arguments are comprised of flags and values. The are added to the command in the order they are entered \(although generally, the order should not matter\).
 
 <Tabs
 groupId="languages"
@@ -138,12 +138,12 @@ values={[
 </TabItem>
 </Tabs>
 
-We currently only accept arguments that have **both** a Flag and a Value, as these more explicit.
+We currently only accept arguments that have **both** a Flag and a single Value, as these more explicit.
 
 If you have a valid use case for needing positional arguments or a boolean flag, please reach out to support.
 
 :::caution
-**Note:** Command arguments are not suitable for secrets. They are available to change the behavior of your script with values that are not secret, like a file name to process or column names in a table to work with. For secrets, use [environment variables](../environment-variables/).
+Command arguments are not suitable for secrets. They are available to change the behavior of your script with values that are not secret, like a file name to process or column names in a table to work with. For secrets, use [environment variables](../requirements/environment-variables).
 :::
 
 ## Screenshots

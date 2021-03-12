@@ -27,7 +27,7 @@ module.exports = {
           'reference/code/code-overview',
           'reference/code/write-code',
           'reference/code/upload-code',
-          'reference/code/github-code-sync',
+          'reference/code/git-connection',
           'reference/code/command',
         ],
         'Inputs Tab': [

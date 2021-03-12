@@ -17,7 +17,7 @@ import TabItem from '@theme/TabItem';
 
 ## Overview
 
-When a user provides input via [Blueprint Variables](../reference/blueprints/blueprint-variables), or you pass values to your script using [environment variables](../reference/requirements/environment-variables), you'll want to make sure that you can access these values in your code.
+When a user provides input via [Blueprint Variables](../reference/inputs/blueprint-variables), or you pass values to your script using [environment variables](../reference/requirements/environment-variables), you'll want to make sure that you can access these values in your code.
 
 ## Steps
 
