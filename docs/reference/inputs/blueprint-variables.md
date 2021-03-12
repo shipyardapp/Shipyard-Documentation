@@ -19,7 +19,7 @@ Blueprint Variables allow your code to accept user input through the Shipyard UI
 
 A Blueprint can contain as many variables as you want. Blueprint variables can also be re-ordered to make it easier for users to understand.
 
-A user who creates a Vessel from your Blueprint will provide their own values on the [Input](../vessels/inputs) tab for Blueprint Variables that you define. Those user entered values then become available at runtime.
+A user who creates a Vessel from your Blueprint will provide their own values on the [Input](vessel-inputs) tab for Blueprint Variables that you define. Those user entered values then become available at runtime.
 
 ## Components
 

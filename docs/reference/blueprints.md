@@ -1,6 +1,6 @@
 ---
-id: blueprints-overview
-title: Blueprints Overview
+id: blueprints
+title: Blueprints
 hide_title: true
 description: All you need to know about Blueprints.
 keywords:
@@ -16,7 +16,7 @@ Blueprints are the foundation for most Vessels. They contain the design specific
 
 Blueprints provide a way for technical users to create a reusable piece of code with organization-specific logic. When using a Blueprint, users are only required to provide key inputs needed for the Vessel to work correctly. All code and requirements are abstracted away from the end user.
 
-All Blueprints are built using Code. You must select a supported language and provide the necessary code, arguments, environment variables, and packages necessary to make the Blueprint usable. Additionally, you can create [Blueprint Variables](blueprint-variables.md) that users fill out on the [Inputs ](../vessels/inputs.md)tab when they are setting up a new Vessel.
+All Blueprints are built using Code. You must select a supported language and provide the necessary code, arguments, environment variables, and packages necessary to make the Blueprint usable. Additionally, you can create [Blueprint Variables](inputs/blueprint-variables.md) that users fill out on the [Inputs](inputs/inputs-overview.md) tab when they are setting up a new Vessel.
 
 As a Blueprint author or editor, you are in charge of writing the code that runs for the users of your Blueprint. You can update and manage the underlying code, making updates in bulk that can affect 100s of scripts.
 

@@ -18,32 +18,31 @@ module.exports = {
             ]
           },
         ],
-        Blueprints: [
-          'reference/blueprints/blueprints-overview',
-          'reference/blueprints/blueprint-variables',
-          'reference/blueprints/blueprint-description',
-          'reference/blueprints/blueprint-preview'
-        ],
-        Vessels: [
-          'reference/vessels/vessels-overview',
-          'reference/vessels/inputs',
-        ]
       },
+        'reference/blueprints',
+        'reference/vessels',
         'reference/fleets',
         {
-          Code: [
+          'Code Tab': [
           'reference/code/code-overview',
           'reference/code/write-code',
           'reference/code/upload-code',
           'reference/code/github-code-sync',
           'reference/code/command',
         ],
-        'Requirements': [
+        'Inputs Tab': [
+          'reference/inputs/inputs-overview',
+          'reference/inputs/vessel-inputs',
+          'reference/inputs/blueprint-variables',
+          'reference/inputs/blueprint-description',
+          'reference/inputs/blueprint-preview',
+        ],
+        'Requirements Tab': [
           'reference/requirements/environment-variables',
           'reference/requirements/platform-environment-variables',
           'reference/requirements/external-package-dependencies'
         ],
-        'Settings': [
+        'Settings Tab': [
           'reference/settings/information',
           'reference/settings/notifications',
           'reference/settings/guardrails',

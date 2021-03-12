@@ -61,7 +61,7 @@ Click the plus icon to create a new Blueprint variable. You should see a screen 
 
 ![](../.gitbook/assets/add_blueprint_variables.png)
 
-Our code for Great Expectations has 3 variables that we expect to receive. For a detailed overview of each of these fields, read more about [Blueprint Variables](../reference/blueprints/blueprint-variables.md).
+Our code for Great Expectations has 3 variables that we expect to receive. For a detailed overview of each of these fields, read more about [Blueprint Variables](../reference/inputs/blueprint-variables.md).
 
 #### File URL
 

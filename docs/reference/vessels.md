@@ -1,6 +1,6 @@
 ---
-id: vessels-overview
-title: Vessels Overview
+id: vessels
+title: Vessels
 hide_title: true
 description: Information about how to build and edit Vessels.
 keywords:

@@ -16,9 +16,9 @@ keywords:
 
 [**Blueprint Library**](reference/blueprint-library) is a location for pre-made Custom Blueprints developed by Shipyard staff.
 
-[**Blueprints**](/reference/blueprints/blueprints-overview) are the foundation of the application. They contain the design specifications for a repeatable task. In other applications, these may be referenced as templates, macros, or operators.
+[**Blueprints**](/reference/blueprints) are the foundation of the application. They contain the design specifications for a repeatable task. In other applications, these may be referenced as templates, macros, or operators.
 
-[**Vessels**](/reference/vessels/vessels-overview) are built using either [Blueprints](/reference/blueprints/blueprints-overview) or [Code](/reference/code/code-overview). In other applications, these may be referenced as tasks, jobs, or steps.
+[**Vessels**](/reference/vessels) are built using either [Blueprints](/reference/blueprints) or [Code](/reference/code/code-overview). In other applications, these may be referenced as tasks, jobs, or steps.
 
 [**Fleets**](/reference/fleets) are built by connecting multiple Vessels together. In other applications, these may be referenced as flows, workflows, or DAGs.
 
