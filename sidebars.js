@@ -39,7 +39,6 @@ module.exports = {
         ],
         'Requirements Tab': [
           'reference/requirements/environment-variables',
-          'reference/requirements/platform-environment-variables',
           'reference/requirements/external-package-dependencies'
         ],
         'Settings Tab': [
@@ -62,10 +61,11 @@ module.exports = {
           'reference/other-functions/duplication',
           'reference/other-functions/status',
           'reference/other-functions/timestamps-and-timezones',
-          'reference/other-functions/url-structures',
           'reference/other-functions/visibility',
-        ]
+        ],
       },
+      'reference/shipyard-environment-variables',
+      'reference/shipyard-url-structures',
     ],
     '💡 How-Tos': [
       {

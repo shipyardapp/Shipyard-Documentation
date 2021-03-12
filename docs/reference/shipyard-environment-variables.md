@@ -1,6 +1,6 @@
 ---
-id: platform-environment-variables
-title: Platform Environment Variables Available at Runtime
+id: shipyard-environment-variables
+title: Shipyard Environment Variables
 hide_title: true
 description: Information about environment variables created by the Shipyard platform at runtime and how to access them.
 keywords:
@@ -12,7 +12,7 @@ keywords:
   - env_var
 ---
 
-# Platform Environment Variables Available at Runtime
+# Shipyard Environment Variables
 
 ## Definition
 

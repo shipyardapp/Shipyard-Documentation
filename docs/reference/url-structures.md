@@ -1,6 +1,6 @@
 ---
-id: url-structures
-title: URL Structures
+id: shipyard-url-structures
+title: Shipyard URL Structures
 hide_title: true
 description: Information about how URLs in the Shipyard platform are automatically generated with IDs.
 keywords:
@@ -8,7 +8,7 @@ keywords:
   - structure
 ---
 
-# URL Structures
+# Shipyard URL Structures
 
 ## Definition
 
