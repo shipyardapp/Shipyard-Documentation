@@ -19,6 +19,10 @@ The preview consists of two parts:
 - On the left-hand side, you'll see what your Blueprint Description will look like with Markdown formatting.
 - On the right-hand side, you'll see what your Blueprint Variables will look like as inputs.
 
+:::caution
+The preview will show all unsaved, staged changes. If you like the way the Blueprint looks, you'll need to remember to save it.
+:::
+
 ## Screenshots
 
 ![Every Blueprint has the ability to preview what it will look like to users.](../../.gitbook/assets/image_88.png)
@@ -29,4 +33,3 @@ The preview consists of two parts:
 
 1. When you navigate away from the preview, all data entered will be removed.
 2. The preview does not check for required fields, but it does show the red asterisk next to required fields.
-3. The preview will show all unsaved, staged changes. If you like the way the Blueprint looks, you'll need to remember to save.

@@ -18,40 +18,7 @@ import TabItem from '@theme/TabItem';
 
 Environment Variables are set at the beginning of a run for the current Vessel. These types of variables are the preferred way to pass secrets \(password, API tokens, etc.\) to scripts. Secrets required by your programs should **never** be hard-coded into the script. Instead, use Environment Variables to pass them to your script.
 
-Environment Variables all have a **KEY** and a **Value**. By referencing the variable's **KEY**, or name, in your program, you can retrieve the value. There are usually special manners with which to retrieve Environment Variables as opposed to "normal" variables in a programming language. Here's how you can access these Environment Variables in your code.
-
-<Tabs
-groupId="languages"
-defaultValue="python"
-values={[
-{label: 'Python', value: 'python'},
-{label: 'Bash', value: 'bash'},
-{label: 'Node', value: 'node'},
-]}>
-<TabItem value="python">
-
-```text
-import os
-
-var = os.environ.get('OPERATOR_A','default value')
-```
-
-</TabItem>
-<TabItem value='bash'>
-
-```text
-${OPERATOR_A}
-```
-
-</TabItem>
-<TabItem value='node'>
-
-```text
-process.env.OPERATOR_A
-```
-
-</TabItem>
-</Tabs>
+Environment Variables all have a **KEY** and a **Value**. By referencing the variable's **KEY**, or name, in your program, you can retrieve the value. There are usually special manners with which to retrieve Environment Variables as opposed to "normal" variables in a programming language.
 
 Environment Variables set in Shipyard are not visible in the UI and are encrypted on the backend. There are 3 distinct ways that your environment variable values can show up.
 

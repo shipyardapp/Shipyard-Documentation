@@ -20,8 +20,8 @@ module.exports = {
         ],
         Blueprints: [
           'reference/blueprints/blueprints-overview',
-          'reference/blueprints/blueprint-description',
           'reference/blueprints/blueprint-variables',
+          'reference/blueprints/blueprint-description',
           'reference/blueprints/blueprint-preview'
         ],
         Vessels: [
@@ -103,8 +103,9 @@ module.exports = {
           'how-tos/vessels/search-for-vessel',
           'how-tos/vessels/assess-vessel-performance',
           'how-tos/vessels/download-code',
-        ]
+        ],
       },
+      'how-tos/access-environment-variables',
     ],
     '🚀 Tutorials':[
       'tutorials/test-project',

@@ -13,7 +13,7 @@ keywords:
 
 ## Definition
 
-The User Permissions page contains all the options that determine the level of access that a user has to your Organization's instance of Shipyard. To view this page, a user must have the Edit permission for the Users element.
+The User Permissions page contains all the options that determine the level of access that a user has to your Organization's instance of Shipyard. To view this page, a user must have the _Edit_ permission for the Users element.
 
 Permissions are granted in a matrix that allows you to specify permission levels for each element of the platform.
 

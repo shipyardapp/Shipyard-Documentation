@@ -15,16 +15,16 @@ keywords:
 
 The User Management page gives Admins the ability to see and interact with all of the users that exist in their organization.
 
-## Actions
-
 ### Inviting Users
 
 Multiple users can be invited to the organization at the same time. Invitations require a valid email address and the selection of what their initial role should be.
 
+#### Roles
+
 - **User** - Create, View, and Edit access to all elements except for users.
 - **Admin** - Full access to everything within your organization, as soon as they log in.
 
-### Manage User Permissions
+### Managing User Permissions
 
 Clicking the **manage** action will lead to the [Permissions Panel](user-permissions.md) for that user.
 
