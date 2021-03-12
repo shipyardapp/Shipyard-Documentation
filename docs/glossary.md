@@ -20,7 +20,7 @@ keywords:
 
 [**Vessels**](/reference/vessels/vessels-overview) are built using either [Blueprints](/reference/blueprints/blueprints-overview) or [Code](/reference/code/code-overview). In other applications, these may be referenced as tasks, jobs, or steps.
 
-[**Fleets**](/reference/fleets/fleets-overview) are built by connecting multiple Vessels together. In other applications, these may be referenced as flows, workflows, or DAGs.
+[**Fleets**](/reference/fleets) are built by connecting multiple Vessels together. In other applications, these may be referenced as flows, workflows, or DAGs.
 
 **Paths** are the lines that connect Vessels together in a Fleet, evaluating the status of the connected Vessel.
 

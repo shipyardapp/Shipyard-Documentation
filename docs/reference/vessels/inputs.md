@@ -11,15 +11,17 @@ keywords:
 
 ## Definition
 
-The Inputs tab contains both the full description of a Custom Blueprint \(left\) and all of the Inputs \(right\) that need to be filled out in order to build a Vessel.
+The Inputs tab contains both the full description of a Blueprint \(left\) and all of the Inputs \(right\) that need to be filled out in order to build a Vessel.
 
 ### Description
 
-The description is a long-form explanation of what a Blueprint does. This will often include instructions for users to ensure that they can use the Blueprint with no issues. This information is set in a [Blueprints' ](../blueprints/)settings on the [Information Card](information-card.md).
+The [description](../blueprints/blueprint-description) is a long-form explanation of what a Blueprint does. This will often include instructions for users to ensure that they can use the Blueprint with no issues.
 
 ### Inputs
 
-The inputs are a direct reflection of the [Blueprint Variables ](../blueprints/blueprint-variables.md)that are set up for the selected [Blueprint](../blueprints/).
+The inputs are a direct reflection of the [Blueprint Variables ](../blueprints/blueprint-variables) that are set up for the selected [Blueprint](../blueprints/blueprints-overview).
+
+These fields allow a user to input data that a script uses, without the need to code.
 
 ## Screenshots
 

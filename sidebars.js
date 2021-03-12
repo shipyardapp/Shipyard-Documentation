@@ -27,12 +27,11 @@ module.exports = {
         Vessels: [
           'reference/vessels/vessels-overview',
           'reference/vessels/inputs',
-        ],
-        Fleets: [
-          'reference/fleets/fleets-overview',
-          'reference/fleets/visual-editor',
-        ],
-        Code: [
+        ]
+      },
+        'reference/fleets',
+        {
+          Code: [
           'reference/code/code-overview',
           'reference/code/write-code',
           'reference/code/upload-code',
@@ -85,6 +84,7 @@ module.exports = {
         Fleets: [
           'how-tos/fleets/create-fleet',
           'how-tos/fleets/delete-fleet',
+          'how-tos/fleets/see-all-files'
         ],
         Projects: [
           'how-tos/projects/create-project',
