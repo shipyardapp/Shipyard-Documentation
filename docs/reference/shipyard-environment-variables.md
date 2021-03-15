@@ -34,6 +34,8 @@ These environment variables can help your scripts be context-aware as they run, 
 | `SHIPYARD_LOG_WORKDIR`    | `/home/shipyard`                       | Set to the working directory that your Vessel is set to do its work in.                                                    |
 | `SHIPYARD_REPO_NAME`      | `example-repo`                         | Set to the name of the Git repository selected for Code. **Only set when the Vessel is connected to Git**.                 |
 | `SHIPYARD_CLONE_LOCATION` | `/home/shipyard/example-repo`          | Set to the directory where the Git repository root was cloned. **Only set when the Vessel is connected to Git**.           |
+| `SHIPYARD_VESSEL_START_TIME` | `2021-03-12T21:22:47Z` | The time at which the Vessel started running. Formatted using the [RFC3339](https://tools.ietf.org/html/rfc3339) standard.
+| `SHIPYARD_VESSEL_SCHEDULED_TIME` | `2021-03-12T21:22:00Z` | The time at which the Vessel started running. Formatted using the [RFC3339](https://tools.ietf.org/html/rfc3339) standard.
 
 ### Fleet Environment Variables
 
@@ -54,3 +56,5 @@ When a Vessel is run as part of a Fleet, the following Environment Variables wil
 | `SHIPYARD_FLEET_UPSTREAM_VESSEL_IDS`      | `38621a35-8c94-4e41-817a-8ff2587a871d,7700aea1-599a-486d-be32-09fcb200cdce` | A comma-separated list of Vessel IDs from Vessels that ran upstream. The order of the IDs will match the corresponding upstream environment variables, but may change with every run.                          |
 | `SHIPYARD_FLEET_CURRENTSTREAM_VESSEL_IDS` | `02ce1830-14a1-4d6b-ada1-ea39e8add14f,83ca8dcb-b2b7-4456-bbe0-ab550db98bb5` | A comma-separated list of Vessel IDs from Vessels that are running in the currentstream. The order of the IDs will match the corresponding currentstream environment variables, but may change with every run. |
 | `SHIPYARD_FLEET_DOWNSTREAM_VESSEL_IDS`    | `8934f43f-413a-4bc9-b267-0924035e3459,aa0c6a42-c61d-4f15-b54a-75247c4281da` | A comma-separated list of Vessel IDs from Vessels that will run downstream. The order of the IDs will match the corresponding downstream environment variables, but may change with every run.                 |
+| `SHIPYARD_FLEET_START_TIME` | `2021-03-12T21:22:47Z` | The time at which the Vessel started running. Formatted using the [RFC3339](https://tools.ietf.org/html/rfc3339) standard.
+| `SHIPYARD_FLEET_SCHEDULED_TIME` | `2021-03-12T21:22:00Z` | The time at which the Vessel started running. Formatted using the [RFC3339](https://tools.ietf.org/html/rfc3339) standard.

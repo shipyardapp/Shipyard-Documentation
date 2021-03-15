@@ -28,8 +28,8 @@ values={[
 When a Vessel is duplicated, the following things occur:
 
 1. A new Vessel is immediately created, with the name of `{Old Vessel Name} (Copy) {New Vessel ID}` .
-2. The [Code](../vessels/code/), [Command](../vessels/code/command.md), [Environment Variables](../vessels/environment-variables/), and [Packages ](../vessels/external-package-dependencies.md)from the old Vessel are transferred to the new Vessel.
-3. The Vessels [Triggers](../triggers/), [Guardrails](../vessels/guardrails.md), and [Notifications ](../vessels/notifications.md)are all reset.
+2. The [Code](../code/README.md), [Command](../code/command.md), [Environment Variables](../requirements/environment-variables.md), and [Packages](../requirements/external-package-dependencies.md) from the old Vessel are transferred to the new Vessel.
+3. The Vessel's [Triggers](../triggers/triggers-overview), [Guardrails](../settings/guardrails.md), and [Notifications](../settings/notifications.md) are all reset.
 4. The new Vessel starts with 0 logs.
 
 </TabItem>
@@ -38,15 +38,15 @@ When a Vessel is duplicated, the following things occur:
 When a Blueprint is duplicated, the following things occur:
 
 1. A new Blueprint is immediately created, with the name of `{Old Blueprint Name} (Copy) {New Blueprint ID}` .
-2. The [Blueprint Variables](../blueprints/blueprint-variables.md), [Code](../vessels/code/), [Command](../vessels/code/command.md), [Environment Variables](../vessels/environment-variables/), and [Packages ](../vessels/external-package-dependencies.md)from the old Vessel are transferred to the new Vessel.
-3. The Vessel's [Guardrails ](../vessels/guardrails.md)are reset.
-4. The new Blueprint is set to the Hidden [visibility](state.md).
+2. The [Blueprint Variables](../inputs/blueprint-variables.md), [Blueprint Description](../inputs/blueprint-description.md), [Code](../code/README.md), [Command](../code/command.md), [Environment Variables](../requirements/environment-variables.md), and [Packages](../requirements/external-package-dependencies.md) from the old Blueprint are transferred to the new Blueprint.
+3. The Blueprint's [Guardrails](../vessels/guardrails.md) are reset.
+4. The new Blueprint is set to the Hidden [visibility](visibility.md).
 
 </TabItem>
 </Tabs>
 
 :::caution
-**Note:** Pressing duplicate will immediately create a duplicate without you needing to save anything. You will, however, likely want to change a few settings or create a more readable name.
+Pressing duplicate will immediately create a duplicate without you needing to save anything. You will, however, likely want to change a few settings or create a more readable name.
 :::
 
 ## Additional Notes
