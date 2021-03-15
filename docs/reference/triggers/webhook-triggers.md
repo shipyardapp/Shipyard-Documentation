@@ -18,77 +18,15 @@ import TabItem from '@theme/TabItem';
 
 ## Definition
 
-On the trigger tab for every Vessel and Fleet, you are provided with a section for creating and managing Webhook triggers.
+On the Trigger tab for every Vessel and Fleet, you are provided with a section for creating and managing Webhook Triggers.
 
-Webhook triggers enable you to programmatically execute a Vessel or Fleet in Shipyard by running a POST request from any service. When you run the POST request, your Vessel or Fleet will be scheduled to run immediately.
+Webhook Triggers enable you to programmatically execute a Vessel or Fleet in Shipyard by running a POST request from any service. When you run the POST request, your Vessel or Fleet will be scheduled to run immediately.
 
 When a webhook has been created, you will be given 3 options:
 
 - Copy the entire webhook to your clipboard
 - Replace the current webhook URL with a new webhook URL
 - Remove the webhook URL from existence
-
-## Executing a Webhook
-
-Webhooks can be used by running a POST request against the provided webhook URL. For the examples below, substitute `<WEBHOOK_URL>` with your own URL.
-
-<Tabs
-groupId="languages"
-defaultValue="python"
-values={[
-{label: 'Python', value: 'python'},
-{label: 'Bash', value: 'bash'},
-{label: 'Node', value: 'node'},
-]}>
-<TabItem value="python">
-
-First, install the Requests library by running `pip install requests`
-
-Next, open up Python in your terminal window by typing `python` or `python3`
-
-Finally, run the following python code:
-
-```python
-import requests
-
-r = requests.post('<WEBHOOK_URL>')
-r.status_code
-r.json()
-```
-
-</TabItem>
-<TabItem value='bash'>
-Open up your terminal window and run the following command.
-
-```bash
-curl -X POST <WEBHOOK_URL> | json_p
-```
-
-</TabItem>
-<TabItem value='node'>
-
-First, install the axios library by running `npm install axios`
-
-Next, open up Node in your terminal window by typing `node`
-
-Finally, run the following node code:
-
-```javascript
-const axios = require("axios");
-
-axios
-  .post("<WEBHOOK_URL>")
-  .then((res) => {
-    console.log(`statusCode: ${res.statusCode}`);
-    console.log(res);
-  })
-  .catch((error) => {
-    console.error(error);
-  });
-```
-
-</TabItem>
-</Tabs>
 
 ## Webhook Status Codes
 
@@ -166,4 +104,7 @@ When your POST request returns a status code of 400, your request has failed. Th
 
 1. Webhooks only allow you to immediately run a Vessel or a Fleet in a programmatic manner. They do not currently support the passing of variables.
 2. Each Vessel or Fleet can only have one webhook associated to it.
-3. Vessels may not run instantaneously, as there is still time associated with entering a job queue, spinning up servers, and installing any packages provided in Requirements.
+3. Vessels or Fleets may not run instantaneously, as there is still time associated with entering a job queue, spinning up servers, and installing any [external package dependencies](../requirements/external-package-dependencies.md).
+
+## Learn More
+- [How to Execute a Webhook Trigger](../../how-tos/triggers/execute-webhook-trigger.md)

@@ -14,10 +14,7 @@ keywords:
 
 ## Definition
 
-On the top navigation pane for every Vessel and Fleet, you are given a **Run Now** button in the top-right. Clicking this button will cause the Vessel or Fleet to schedule a voyage immediately. You will then be re-directed to the newly created log.
-
-- For Vessel logs, live data and output will be shown without you needing to refresh.
-- For Fleet logs, you'll need to manually refresh the page to see updates.
+On the top navigation pane for every Vessel and Fleet, you are given a **Run Now** button in the top-right. Clicking this button will cause the Vessel or Fleet to schedule a voyage immediately. You will then be re-directed to the newly created log. Live data and output will be shown without you needing to refresh.
 
 ## Screenshots
 
@@ -25,4 +22,4 @@ On the top navigation pane for every Vessel and Fleet, you are given a **Run Now
 
 ## Additional Notes
 
-1. Vessels may not run instantaneously, as there is still time associated with entering a job queue, spinning up servers, and installing any packages provided in Requirements.
+1. Vessels or Fleets may not run instantaneously, as there is still time associated with entering a job queue, spinning up servers, and installing any [external package dependencies](../requirements/external-package-dependencies.md).

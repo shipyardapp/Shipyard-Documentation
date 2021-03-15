@@ -12,7 +12,7 @@ keywords:
 
 ## Definition
 
-Triggers are the logic that determines when either a [Vessel](../vessels/) or a [Fleet](../fleets/) begins running. They are set on the "Triggers" tab and can only be set up after the Vessel or Fleet has been created.
+Triggers are the logic that determines when either a [Vessel](../vessels/) or a [Fleet](../fleets/) begins running. They are set on the Triggers tab and can only be set up after the Vessel or Fleet has been created.
 
 There are currently 3 types of supported triggers:
 
@@ -22,11 +22,6 @@ There are currently 3 types of supported triggers:
 
 ## Screenshots
 
-![](../../.gitbook/assets/triggers_tab.png)
+![Triggers tab with Triggers](../../.gitbook/assets/triggers_tab.png)
 
-![](../../.gitbook/assets/triggers_tab_empty.png)
-
-## Learn More
-
-- [How to Edit a Vessel's Schedule Triggers](../../how-tos/vessels/how-to-edit-a-vessels-schedule-triggers.md)
-- [How to Create a New Fleet](../../how-tos/fleets/how-to-create-a-new-fleet.md)
+![Triggers tab without Triggers](../../.gitbook/assets/triggers_tab_empty.png)

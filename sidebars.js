@@ -92,6 +92,7 @@ module.exports = {
         ],
         Triggers: [
           'how-tos/triggers/edit-schedule-trigger',
+          'how-tos/triggers/execute-webhook-trigger',
         ],
         Vessels: [
           'how-tos/vessels/build-vessel-code',
