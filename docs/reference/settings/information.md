@@ -10,11 +10,11 @@ keywords:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Information Card
+# Information
 
 ## Definition
 
-The information card lives within the settings tab for almost every element in Shipyard. It usually contains IDs and descriptors for the current element.
+The information section lives within the settings tab for almost every element in Shipyard. It usually contains IDs, names, and descriptors for the current element. For Projects, it also contains a field for timezone.
 
 ## Screenshots
 
