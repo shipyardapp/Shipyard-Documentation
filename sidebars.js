@@ -48,8 +48,8 @@ module.exports = {
         ],
         Logs: [
           'reference/logs/logs-overview',
-          'reference/logs/fleet-logs',
           'reference/logs/vessel-logs',
+          'reference/logs/fleet-logs',
         ],
         Triggers: [
           'reference/triggers/triggers-overview',

@@ -15,21 +15,23 @@ keywords:
 
 ## Definition
 
-Logs are a historical record of how something ran in Shipyard at a specific point in time. They can be referenced by their UUIDv4 and contain metadata pertaining to one individual voyage or run.
+Logs are a historical record of how a Vessel or Fleet ran in Shipyard at a specific point in time. They can be referenced by their UUIDv4 and contain metadata pertaining to one individual voyage or run.
 
-A log is created as soon as the **Run Now** button is clicked or as soon as the [scheduler](../triggers/schedule-triggers.md#timing-of-scheduling) is run.
+A log is created under the following conditions:
+-  As soon as the **Run Now** button is clicked, resulting in an [On-Demand Trigger](../triggers/on-demand-triggers.md)
+-  As soon as the [scheduler](../triggers/schedule-triggers.md#timing-of-scheduling) runs
+-  As soon an external service calls a [Webhook](../triggers/webhook-triggers.md)
 
 ### Log Retention
 
-Log data is routinely deleted from our system to decrease storage costs. The amount of time we'll hold onto your logs is determined by the pricing tier that you're currently subscribed to. Currently, we keep logs around for a minimum of 72 hours and a maximum of 90 days.
+Log data is routinely deleted from our system to decrease storage costs. The amount of time we'll hold onto your logs is determined by the pricing tier that you're currently subscribed to. Currently, we keep logs around for a minimum of 7 days.
 
-### Data Stored
+### Log Data
 
 The data contained within a Log differs slightly for Vessels and Fleets differ slightly. Explore them in depth below.
 
-{% page-ref page="fleet-logs.md" %}
-
-{% page-ref page="vessel-logs.md" %}
+- [Vessel Logs](vessel-logs.md)
+- [Fleet Logs](fleet-logs.md)
 
 ## Additional Notes
 
