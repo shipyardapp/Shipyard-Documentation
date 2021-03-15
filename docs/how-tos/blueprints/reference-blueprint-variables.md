@@ -14,15 +14,21 @@ keywords:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# How to Reference a Blueprint Variable
+# How to Reference User Input from a Blueprint Variable
 
 ## Overivew
 
-As part of creating a Blueprint, you'll no doubt have multiple Blueprint Variables that users can fill out. To access the data that users enter, you'll want to use the Variable's Reference Name.
+As part of creating a Blueprint, you'll no doubt have multiple [Blueprint Variables](../../reference/inputs/blueprint-variables.md) that users can fill out. To access the user input, you'll want to use the Variable's Reference Name. This how to guide will walk you through the steps to reference those Blueprint Variables in your code.
+
+
+
+## Steps
 
 For the examples below, say we have an example where the Variable's Reference Name is `cool_var_name` .
 
-## Steps
+:::caution
+Your Reference Name is case sensitive. Make sure you type it exactly the same.
+:::
 
 <Tabs
 defaultValue="ui"
@@ -36,30 +42,22 @@ values={[
 2. Use the format of `${VAR_NAME}` , replacing `VAR_NAME` with your Reference Name. For our example, this would be `${cool_var_name}`
 3. Save the Vessel.
 
-:::caution
-**Important**: Your Reference Name is case sensitive.
-:::
-
 Now, when the Vessel runs, the reference of `${cool_var_name}` will be replaced by whatever the user enters for that variable.
 </TabItem>
 <TabItem value='env'>
 
-1. In your code, set a variable to pull data from an Environment Variable whose name matches the Reference name. E.g. In python, you would run `os.environ.get('cool_var_name')`
-2. Save and/or upload your code.
+1. In your code, set a variable to [access data from an Environment Variable](../access-environment-variables.md) whose name matches the Reference Name. 
+2. Save and/or re-upload your code depending on your setup.
 
-:::caution
-**Important**: Your Reference Name is case sensitive.
-:::
 
 Now, when the Vessel runs in Shipyard, your Environment Variable value for `cool_var_name` will be replaced by whatever the user enters for that variable.
 
-:::info
-**Note:** This way of referencing a Blueprint Variable is less ideal because it will not work the same locally as it does in Shipyard unless you add the necessary environment variables to your local machine.  
+:::note
+This way of referencing a Blueprint Variable is less ideal because it will not work the same locally as it does in Shipyard unless you add the necessary environment variables to your local machine.  
 :::
 </TabItem>
 </Tabs>
 
-## Further Reading
-
-Learn how **Blueprint Variables** are created and stored.  
-Learn how to access **Environment Variables**.
+:::success
+You've now successfully referenced user input in your code.
+:::

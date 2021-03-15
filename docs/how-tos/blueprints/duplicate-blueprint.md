@@ -12,23 +12,26 @@ keywords:
 
 # How to Duplicate a Blueprint
 
-## Overivew
+## Overview
 
-Sometimes, you'll want to re-use the existing components of a Blueprint with only a few slight changes. In these cases, duplication will allow you to avoid the hassle of manually repeating an existing configuration.
+Sometimes, you'll want to re-use the existing components of a Blueprint with only a few slight changes. In these cases, [duplication](../../reference/other-functions/duplication.md) will allow you to avoid the hassle of manually repeating an existing configuration. This how to guide will walk you through the steps to duplicate a Blueprint.
 
 ## Steps
 
-Here's the steps you'll need to take to duplicate a Blueprint:
+### Step 1 - Navigate to the Blueprint
+1. Click the **Blueprints** navigation button on the side navigation.
+2. Find the Blueprint that you want to edit.
+3. Click either the **Edit** action or the **Blueprint Name**.
+4. Click the **Duplicate** button at the bottom.
 
-1. Select the name of the Blueprint that you want to duplicate, or click the edit button.
-2. Select the duplicate button in the bottom-right hand corner.
+:::success
+You've now successfully duplicated a Blueprint and are viewing the copy.
+:::
 
-At this point, your Blueprint has been successfully duplicated with a name that indicates the Blueprint it was originally a copy of. However, we recommend making a few adjustments.
+### Step 2 - Edit the Duplicate
+While the Blueprint has been successfully duplicated, it contains a less readible name that indicates the Blueprint it was originally a copy of. We recommend making a few adjustments before moving on.
 
 1. Decide on a new Blueprint name.
 2. Set your Blueprint's state to Active.
-3. Save your newly Duplicated Blueprint.
-
-## Further Reading
-
-The **Duplication** reference article details out exactly what happens when you press the duplication button.
+3. Edit the Blueprint to make any other minor tweaks you want. 
+4. Click **Save**.

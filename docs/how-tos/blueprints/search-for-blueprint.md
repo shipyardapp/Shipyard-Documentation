@@ -14,18 +14,17 @@ keywords:
 
 ## Overview
 
-Sometimes you can end up with hundreds of Blueprints across your organization, making it harder to find the exact Blueprint that you're looking for. We recommend going through the following steps to find a Vessel that you may be looking for.
+Sometimes you can end up with hundreds of Blueprints across your organization, making it harder to find the exact Blueprint that you're looking for. This how to guide will walk you through the steps to find a Blueprint that you're looking for.
 
 ## Steps
 
-1. Navigate to the Blueprints Page.
-2. On the Active Blueprints table, click the "Magnifying Glass" icon right next to "Blueprint Name".
+1. Click the **Blueprints** navigation button on the side navigation.
+2. Click the magnifying glass icon (![Magnifying Glass Icon](../../.gitbook/assets/magnifying-glass.png)) right next to Blueprint Name.
 3. Type the words you want to find. All of Shipyard's search fields are case insensitive.
-4. Click the "Search" button.
-5. If a matching Blueprint was found, you'll see the table filter to these Blueprint.
+4. Click the **Search** button.
+   1. If a matching Blueprint was found, you'll see the table filter to these Blueprint.
+   2. If no matching Vessel was found, you'll see a screen that says "No Blueprints Found". You can try a different search term, or try filtering other fields
 
-If no matching Vessel was found, you'll see a screen that says "No Blueprints Found". You can try the following options:
-
-1. Try a different search term.
-2. Search for the owner, if you know who created it.
-3. Search for the Blueprint on the "Test Blueprints" or "Inactive Blueprints" table.
+:::success
+You've now successfully searched for a Blueprint.
+:::
