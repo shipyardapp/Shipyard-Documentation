@@ -15,7 +15,7 @@ keywords:
 
 ## Overview
 
-If you want multiple Vessels to work together for a larger goal, then you want to set up a Fleet. This how to guide will walk you through the steps to create a Fleet.
+If you want multiple [Vessels](../../reference/vessels.md) to work together for a larger goal, then you want to set up a [Fleet](../../reference/fleets.md). This how to guide will walk you through the steps to create a Fleet.
 
 ## Steps
 

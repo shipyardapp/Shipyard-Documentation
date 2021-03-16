@@ -13,7 +13,7 @@ keywords:
 # How to Delete a Fleet
 
 ## Overview
-Sometimes, you no longer need to access a Fleet and don't want it cluttering up space. This how to guide will walk you through the steps to delete a Fleet.
+Sometimes, you no longer need to access a [Fleet](../../reference/fleets.md) and don't want it cluttering up space. This how to guide will walk you through the steps to delete a Fleet.
 
 ## Steps
 1. Navigate to the project where your Fleet lives.

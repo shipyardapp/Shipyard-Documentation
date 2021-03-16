@@ -12,7 +12,7 @@ keywords:
 
 ## Overview
 
-When running a Fleet,  . Sometimes it can be difficult to remember all of the files that are available.
+When running a [Fleet](../../reference/fleets.md), every Vessel that either generates or downloads files can share the contents with other Vessels in the Fleet. Sometimes it can be difficult to remember the names and locations of the files that are available. This how to guide will walk you through the steps to easily show all available files in a Fleet.
 
 ## Steps
 
