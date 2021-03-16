@@ -12,4 +12,15 @@ keywords:
 
 # How to Delete a Fleet
 
-At this time, a fleet cannot be outright deleted. To remove a fleet from existence, you'll need to go to every Vessel within a fleet and remove their **Internal Triggers**. Once no more dependencies exist, the Fleet will also cease to exist.
+## Overview
+Sometimes, you no longer need to access a Fleet and don't want it cluttering up space. This how to guide will walk you through the steps to delete a Fleet.
+
+## Steps
+1. Navigate to the project where your Fleet lives.
+2. Click the **Edit** action.
+3. At the bottom, click the red **Delete** text.
+4. Confirm that you want to delete the Fleet.
+
+:::success
+You've now successfully deleted a Fleet.
+:::
