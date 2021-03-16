@@ -23,12 +23,12 @@ By the end of the tutorial, you'll be able to:
 - Run multiple instances of Great Expectations simultaneously
 - Integrate an Expectation Suite into your Fleets
 
-For more information, read our blog post that covers Getting Started with Great Expectations. You can also visit [www.greatexpectations.io](www.greatexpectations.io) for additional information.
+For more information, read our blog post that covers Getting Started with Great Expectations. You can also visit [www.greatexpectations.io](https://www.greatexpectations.io) for additional information.
 
 ## Setup
 
 :::caution
-For the sake of the this tutorial, we suggest starting off by building a Vessel inside of a Project called "Playground". You can follow [**this tutorial** ](building-playground-project.md)to set that up.
+For the sake of the this tutorial, we suggest starting off by building a Vessel inside of a Project called "Playground". You can follow [**this tutorial** ](building-test-project.md)to set that up.
 :::
 
 Download the following file to your computer, without changing the file name. It's a .zip containing a single python file and a Great Expectations directory structure with JSON expectation suites and a YML setup file. We'll use this throughout the tutorial.
@@ -40,7 +40,7 @@ Feel free to peruse this script beforehand so you understand everything that it'
 1. Downloading a file from a public URL.
 2. Decompressing the file if it is a`.gz` file and converting the file into a CSV if it is not one already.
 3. Running Great Expectations against the downloaded file, using the included sample expectation suites.
-4. Uploading the validation output to S3, using a file name structure that reference's Shipyard's [Platform Environment Variables](../reference/vessels/environment-variables/platform-environment-variables.md).
+4. Uploading the validation output to S3, using a file name structure that reference's Shipyard's [Platform Environment Variables](../reference/shipyard-environment-variables.md).
 5. Printing the validation results to the standard output.
 6. Returning the appropriate exit code based on expectation results.
 
@@ -165,7 +165,7 @@ Now anyone in your organization can use the Blueprint to test data against your 
 
 ### Step 6 - Setting Up a Vessel
 
-1. Navigate to any project. We recommend the Playground project set up in [previous tutorials](building-playground-project.md).
+1. Navigate to any project. We recommend the Playground project set up in [previous tutorials](building-test-project.md).
 2. Click the "Build Vessel" button in the top right corner.
 3. Select to Build a Vessel using a **Custom Blueprint**.
 4. Select the Blueprint called "Great Expectations - Demo"

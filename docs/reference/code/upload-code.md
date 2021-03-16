@@ -31,4 +31,4 @@ Shipyard only supports uploading and storing a single file per Vessel. If you ha
 
 ## Learn More
 
-- [How to Download Uploaded Code](../../how-tos/vessels/download-code.md)
+- [How to Download Uploaded Code](../../how-tos/code/download-code.md)

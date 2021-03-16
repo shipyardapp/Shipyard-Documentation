@@ -12,7 +12,7 @@ keywords:
 
 ## Definition
 
-Blueprints are the foundation for most Vessels. They contain the design specifications needed to start building solutions for your organization. As such, they live at the organization level and can be used in any Project. They can either be built by Shipyard staff \(as part of the [Blueprint Library](../blueprint-library.md)\) or created by users in your organization.
+Blueprints are the foundation for most Vessels. They contain the design specifications needed to start building solutions for your organization. As such, they live at the organization level and can be used in any Project. They can either be built by Shipyard staff \(as part of the [Blueprint Library](blueprint-library.md)\) or created by users in your organization.
 
 Blueprints provide a way for technical users to create a reusable piece of code with organization-specific logic. When using a Blueprint, users are only required to provide key inputs needed for the Vessel to work correctly. All code and requirements are abstracted away from the end user.
 
@@ -26,30 +26,30 @@ As a Blueprint author or editor, you are in charge of writing the code that runs
 
 When creating a Blueprint, you must **always** provide the following elements:
 
-- [Code](../code/code-overview)
-- [Command ](../code/command.md)to execute the code
-- [Blueprint Information](../settings/information.md)
+- [Code](code/code-overview)
+- [Command ](code/command.md)to execute the code
+- [Blueprint Information](settings/information.md)
 
 You may also _optionally_ provide these elements:
 
-- [Blueprint Variables](blueprint-variables.md)
-- [Blueprint Description](blueprint-description.md)
-- [External Package Dependencies](../requirements/external-package-dependencies.md)
-- [Environment Variables](../requirements/environment-variables/)
-- [Guardrails](../settings/guardrails.md)
+- [Blueprint Variables](inputs/blueprint-variables.md)
+- [Blueprint Description](inputs/blueprint-description.md)
+- [External Package Dependencies](requirements/external-package-dependencies.md)
+- [Environment Variables](requirements/environment-variables/)
+- [Guardrails](settings/guardrails.md)
 
 ### Building a Vessel
 
 When creating a Vessel with a Blueprint, you must always provide the following elements:
 
-1. [Inputs](../vessels/inputs) \(if any are required\)
-2. [Vessel Information](../settings/information)
+1. [Inputs](vessels/inputs) \(if any are required\)
+2. [Vessel Information](settings/information)
 
 You may also _optionally_ provide these elements:
 
-1. [Triggers](../triggers/triggers-overview)
-2. [Notifications](../settings/notifications)
-3. [Guardrails](../settings/guardrails)
+1. [Triggers](triggers/triggers-overview)
+2. [Notifications](settings/notifications)
+3. [Guardrails](settings/guardrails)
 
 ## Additional Notes
 
@@ -58,11 +58,11 @@ You may also _optionally_ provide these elements:
 
 ## Learn More
 
-- [How to Search for Blueprints](../../how-tos/blueprints/search-for-blueprint)
-- [How to Create a New Blueprint](../../how-tos/blueprints/create-blueprint)
-- [How to Edit a Blueprint](../../how-tos/blueprints/edit-blueprint)
-- [How to Delete a Blueprint](../../how-tos/blueprints/delete-blueprint)
-- [How to Duplicate a Blueprint](../../how-tos/blueprints/duplicate-blueprint)
-- [How to Create Blueprint Variables](../../how-tos/blueprints/create-blueprint-variables)
-- [How to Reference a Blueprint Variable](../../how-tos/blueprints/reference-blueprint-variables)
-- [How to Reorder Blueprint Variables](../../how-tos/blueprints/reorder-blueprint-variables)
+- [How to Search for Blueprints](../how-tos/blueprints/search-for-blueprint)
+- [How to Create a New Blueprint](../how-tos/blueprints/create-blueprint)
+- [How to Edit a Blueprint](../how-tos/blueprints/edit-blueprint)
+- [How to Delete a Blueprint](../how-tos/blueprints/delete-blueprint)
+- [How to Duplicate a Blueprint](../how-tos/blueprints/duplicate-blueprint)
+- [How to Create Blueprint Variables](../how-tos/blueprints/create-blueprint-variables)
+- [How to Reference a Blueprint Variable](../how-tos/blueprints/reference-blueprint-variables)
+- [How to Reorder Blueprint Variables](../how-tos/blueprints/reorder-blueprint-variables)

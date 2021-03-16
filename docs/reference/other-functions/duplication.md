@@ -39,7 +39,7 @@ When a Blueprint is duplicated, the following things occur:
 
 1. A new Blueprint is immediately created, with the name of `{Old Blueprint Name} (Copy) {New Blueprint ID}` .
 2. The [Blueprint Variables](../inputs/blueprint-variables.md), [Blueprint Description](../inputs/blueprint-description.md), [Code](../code/code-overview.md), [Command](../code/command.md), [Environment Variables](../requirements/environment-variables.md), and [Packages](../requirements/external-package-dependencies.md) from the old Blueprint are transferred to the new Blueprint.
-3. The Blueprint's [Guardrails](../vessels/guardrails.md) are reset.
+3. The Blueprint's [Guardrails](../settings/guardrails.md) are reset.
 4. The new Blueprint is set to the Hidden [visibility](visibility.md).
 
 </TabItem>

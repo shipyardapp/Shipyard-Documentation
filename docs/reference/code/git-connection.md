@@ -23,7 +23,7 @@ At runtime, the contents of this repository and branch/tag will be cloned, ensur
 
 `git clone --branch branch-name repo-url`
 
-The Git connection is only available after setting up a [Github Integration](../../admin/integrations/github-integration.md).
+The Git connection is only available after setting up a [Github Integration](../admin/integrations/github-integration.md).
 
 ## Accessing Code from Git
 
@@ -45,7 +45,7 @@ While this option is convenient, due to the nature of file sharing within Fleets
 
 ### Either Option
 
-You can use the [platform environment variable](../requirements/platform-environment-variables.md) of `SHIPYARD_CLONE_LOCATION` in your **file to run** to dynamically reference the clone location. This environment variable will resolve with `home/shipyard/` or `home/shipyard/<repo-name>` depending on the git clone location that you select.
+You can use the [platform environment variable](../shipyard-environment-variables.md) of `SHIPYARD_CLONE_LOCATION` in your **file to run** to dynamically reference the clone location. This environment variable will resolve with `home/shipyard/` or `home/shipyard/<repo-name>` depending on the git clone location that you select.
 
 ![](../../.gitbook/assets/dynamic_clone_location_folder.png)
 

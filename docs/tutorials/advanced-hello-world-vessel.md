@@ -44,7 +44,7 @@ Feel free to peruse this script beforehand so you understand everything that it'
 1. Prints `Hello` and `{your_name}` by referencing the command argument of `--name`.
 2. Prints custom text that is stored as an environment variable called `CUSTOM_TEXT`.
 3. Connects to an [external API](https://alexwohlbruck.github.io/cat-facts/), using the requests library, to find and print a random Cat Fact.
-4. Prints information about the current run, including a timestamp and a link to the current log by using [Platform Environment Variables](../reference/vessels/environment-variables/platform-environment-variables.md).
+4. Prints information about the current run, including a timestamp and a link to the current log by using [Platform Environment Variables](../reference/shipyard-environment-variables.md).
 
 ## Steps
 
