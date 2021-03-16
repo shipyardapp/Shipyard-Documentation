@@ -14,107 +14,43 @@ keywords:
 
 ## Overview
 
-Every unique solution you create will require you to build a Vessel. If you're creating the solution from scratch, you'll want want to create a Vessel using a Code Blueprint.
+Every unique solution you create will require you to build a [Vessel](../../reference/vessels.md). If you're creating the solution from scratch, you'll want want to create a Vessel with [Code](../../reference/code/README.md). This how to guide will walk you through the steps to build a Vessel with Code.
 
 ## Steps
 
-1. Navigate to the Vessels tab underneath a project.
-2. Click the "Build Vessel" button in the top-right.
-3. Select "Code Blueprint".
-
-At this point you'll be walked through the following 5 pages of setup. If at any point in the process, you want to go to a previous step, you can either click on the step process number at the top, or click the "Back" button at the bottom. You can also completely delete your unfinished progress by clicking "Cancel".
-
-### **Select Blueprint**
-
-1. Select the language that you want to use to build your Vessel. The language you select will determine how options are presented to you on future pages.
-
-### **Provide Code**
-
-All of the information on this page is required.
-
-1. Provide the **code** for your solution, either by uploading a file or writing your code directly in the UI. This is required.
-2. Provide the **command** details necessary for your code to run properly. This is also required.
-3. Click Next Step once you're done.
-
-### **Define Requirements**
-
-All of the information on this page is optional.
-
-1. Provide any **environment variables** that your script uses.
-2. Provide any **external packages** that your script needs to use.
-3. Click Next Step once you're done.
-
-### **Set Schedule**
-
-All of the information on this page is optional.
-
-1. Provide any of the **triggers** that you want to cause your Vessel to run. You're able to set a Schedule and/or an Internal Trigger.
-2. Click Next Step once you're done.
-
-### **Save Settings**
-
-1. If you want to test your Vessel out before letting it run live, keep the State as "Inactive". Otherwise, set to "Active".
-2. Give your Vessel a unique, descriptive name.
-3. Optionally, edit the **notifications** to send users emails about the Vessel.
-4. Optionally, edit the **guardrails** to make the system automatically retry your Vessel upon an error.
-5. Click Save and Finish once you're done
-
-At this point, you should have successfully created a Vessel and will see the following screen.
-
-Every unique solution you create will require you to build a Vessel. If you're creating the solution from scratch, you'll want want to create a Vessel using a Code Blueprint.
+### Step 1 - Initial Setup
 
 1. Navigate to the Vessels tab underneath a project.
-2. Click the "Build Vessel" button in the top-right.
-3. Select "Code Blueprint".
+2. Hover over the **+ New** button in the top-right and click **New Vessel**.
+3. Select **With Code**.
+4. Select the language that you want to use to build your Vessel.
 
-At this point you'll be walked through the following 5 pages of setup. If at any point in the process, you want to go to a previous step, you can either click on the step process number at the top, or click the "Back" button at the bottom. You can also completely delete your unfinished progress by clicking "Cancel".
+At this point you'll be walked through the Vessel setup wizard. If at any point in the process, you want to go to a previous step, you can either click on the step process number at the top, or click the **Back** button at the bottom. You can also completely delete your unfinished progress by clicking **Cancel**.
 
-**Select Blueprint**
+### Step 2 - Provide Code
 
-1. Select the language that you want to use to build your Vessel. The language you select will determine how options are presented to you on future pages.
+All of the information on this tab is required.
 
-**Provide Code**
+1. Provide the code for your solution, using any of the [available methods](../../reference/code/README.md).
+2. Provide the [command](../../reference/code/command.md) details necessary for your code to run properly.
+3. Click **Next Step** once you're done.
 
-All of the information on this page is required.
+### Step 3 - Define Requirements
 
-1. Provide the **code** for your solution, either by uploading a file or writing your code directly in the UI. This is required.
-2. Provide the **command** details necessary for your code to run properly. This is also required.
-3. Click Next Step once you're done.
+All of the information on this tab is optional.
 
-**Define Requirements**
+1. Provide any [environment variables](../access-environment-variables.md) that your script uses.
+2. Provide any [external packages](../../reference/requirements/external-package-dependencies.md) that your script needs to use.
+3. Click **Next Step** once you're done.
 
-All of the information on this page is optional.
+### Step 4 - Save Settings
 
-1. Provide any **environment variables** that your script uses.
-2. Provide any **external packages** that your script needs to use.
-3. Click Next Step once you're done.
+1. Give your Vessel a unique, descriptive name.
+2. Optionally, change the project. By default, the project you navigated to in (Step 1)[#step-1----initial-setup] will be selected.
+3. Optionally, edit the [notifcations](../../reference/settings/notifications.md) to send users emails about the Vessel.
+4. Optionally, edit the [guardrails](../../reference/settings/guardrails.md) to make the system automatically retry your Vessel upon an error.
+5. Click **Save and Finish** once you're done
 
-**Set Schedule**
-
-All of the information on this page is optional.
-
-1. Provide any of the **triggers** that you want to cause your Vessel to run. You're able to set a Schedule and/or an Internal Trigger.
-2. Click Next Step once you're done.
-
-**Save Settings**
-
-1. If you want to test your Vessel out before letting it run live, keep the State as "Inactive". Otherwise, set to "Active".
-2. Give your Vessel a unique, descriptive name.
-3. Optionally, edit the **notifications** to send users emails about the Vessel.
-4. Optionally, edit the **guardrails** to make the system automatically retry your Vessel upon an error.
-5. Click Save and Finish once you're done
-
-At this point, you should have successfully created a Vessel and will see the following screen.
-
-![](../../.gitbook/assets/image_3_3.png)
-
-## Further Reading
-
-**How-to**
-
-How to Edit an Existing Vessel
-
-**Reference**
-
-Learn what **Vessels** are, how they work, and when they should be used.  
-Understand how **Code Blueprints** and their core components work.
+:::success
+You've now successfully built a Vessel with code.
+:::

@@ -1,10 +1,10 @@
 ---
 id: add-schedule-trigger
-title: How to Edit a Schedule Trigger
+title: How to Add a Schedule Trigger
 hide_title: true
-description: Quick how-to guide to edit a Schedule Trigger.
+description: Quick how-to guide to add a Schedule Trigger.
 keywords:
-  - edit
+  - add
   - schedule
   - trigger
 ---

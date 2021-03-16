@@ -14,53 +14,34 @@ keywords:
 
 ## Overview
 
-Every unique solution you create will require you to build a Vessel. If you're creating the solution from a pre-built blueprint, designed by other technical team members or Shipyard staff, you'll want want to build a Vessel using a Custom Blueprint.
+Every unique solution you create will require you to build a Vessel. Some solutions can be built with no-code [Blueprints](../../reference/blueprints.md), designed by other team members or Shipyard staff. This how to guide will walk you through the steps to build a Vessel with a Blueprint.
 
 ## Steps
 
+### Step 1 - Initial Setup
+
 1. Navigate to the Vessels tab underneath a project.
-2. Click the "[PreviousHow to Build a New Vessel using a Code Blueprint](https://app.gitbook.com/@blakeburch/s/shipyard/~/drafts/-Lyj1N_9bSs8Cslg6aGn/how-tos/vessels/how-to-build-a-new-vessel-using-a-code-blueprint/@drafts)Vessel" button in the top-right.
-3. Select "Custom Blueprint".
+2. Hover over the **+ New** button in the top-right and click **New Vessel**.
+3. Select **With a Blueprint**.
+4. Select the Blueprint that you want to use to build your Vessel.
 
-At this point you'll be walked through the following 4 pages of setup. If at any point in the process, you want to go to a previous step, you can either click on the step process number at the top, or click the "Back" button at the bottom. You can also completely delete your unfinished progress by clicking "Cancel".
+At this point you'll be walked through the Vessel setup wizard. If at any point in the process, you want to go to a previous step, you can either click on the step process number at the top, or click the **Back** button at the bottom. You can also completely delete your unfinished progress by clicking **Cancel**.
 
-### **Select Blueprint**
-
-1. Select the Custom Blueprint that you want to use to build your Vessel. The Blueprint you select will determine how options are presented to you on future pages.
-
-### **Form Inputs**
+### Step 2 - Inputs
 
 This page will look different for every Blueprint. The left hand side will contain a description of the Blueprint, how you should use it, and how you should set it up. If you have questions about the functionality, reach out to the blueprint creator.
 
-1. Fill out input fields on the right-hand side of the screen. Those with a red star will be required.
-2. Click Next Step once you're done.
+1. Fill out all of the input fields on the right-hand side of the screen. Those with a red star will be required.
+2. Click **Next Step** once you're done.
 
-### **Set Schedule**
+### Step 3 - Save Settings
 
-All of the information on this page is optional.
+1. Give your Vessel a unique, descriptive name.
+2. Optionally, change the project. By default, the project you navigated to in (Step 1)[#step-1----initial-setup] will be selected.
+3. Optionally, edit the [notifcations](../../reference/settings/notifications.md) to send users emails about the Vessel.
+4. Optionally, edit the [guardrails](../../reference/settings/guardrails.md) to make the system automatically retry your Vessel upon an error.
+5. Click **Save and Finish** once you're done
 
-1. Provide any of the **triggers** that you want to cause your Vessel to run. You're able to set a Schedule and/or an Internal Trigger.
-2. Click Next Step once you're done.
-
-### **Save Settings**
-
-1. If you want to test your Vessel out before letting it run live, keep the State as "Inactive". Otherwise, set to "Active".
-2. Give your Vessel a unique, descriptive name.
-3. Optionally, edit the **notifications** to send users emails about the Vessel.
-4. Optionally, edit the **guardrails** to make the system automatically retry your Vessel upon an error. These default to whatever was set at the Blueprint level.
-5. Click Save and Finish once you're done
-
-At this point, you should have successfully built a Vessel and will see the following screen.
-
-![](../../.gitbook/assets/image_3_3.png)
-
-### Further Reading <a id="further-reading"></a>
-
-**How-to**
-
-How to Edit an Existing Vessel
-
-**Reference**
-
-Learn what **Vessels** are, how they work, and when they should be used.  
-Understand how **Custom Blueprints** and their core components work.
+:::success
+You've now successfully built a Vessel with a Blueprint.
+:::

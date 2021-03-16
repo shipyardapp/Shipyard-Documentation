@@ -14,19 +14,24 @@ keywords:
 
 ## Overview
 
-You may have an old Vessel that should no longer be used, or maybe you just set something up the wrong way. You can follow these steps to easily delete the Vessel.
+You may have an old Vessel that should no longer be used, or maybe you just set something up the wrong way. This how to guide will walk you through the steps to delete a Vessel.
+
+:::note
+You can't delete a Vessel if it's currently being used in a Fleet. If you try to, you'll receive an error message of `You cannot delete this Vessel because it is currently connected to ## Fleet(s). Remove the Vessel from these Fleets and try again.`
+:::
+
+:::warning
+You can't recover a Vessel once it's deleted. Make sure you have any data you need saved.
+:::
 
 ## Steps
 
-1. From the "All Projects" page, navigate to the project where your Vessel lives.
-2. Next to the Vessel you want to delete, click on the "Delete" link, located on the right-hand side of the table under the column for "Action".
-3. Confirm that you really want to delete the Vessel.
+1. Navigate to the Project where your Vessel lives.
+2. Click on the **Vessel Name** or the **Edit** action.
+3. Navigate to the **Settings** tab.
+4. At the bottom of the screen, click the red **Delete** text.
+5. Confirm that you really want to delete the Vessel.
 
-Alternatively, if you are currently editing an existing Vessel:
-
-1. Click the red "Delete" text at the bottom of the page.
-2. Confirm that you really want to delete the Vessel.
-
-## Further Reading
-
-The **Vessel** reference article contains details about the data that is stored in each Vessel.
+:::success
+You've now successfully deleted a Vessel.
+:::

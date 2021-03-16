@@ -17,13 +17,17 @@ import TabItem from '@theme/TabItem';
 
 ## Overview
 
-When a user provides input via [Blueprint Variables](../reference/inputs/blueprint-variables), or you pass values to your script using [environment variables](../reference/requirements/environment-variables), you'll want to make sure that you can access these values in your code.
+When a user provides input via [Blueprint Variables](../reference/inputs/blueprint-variables), or you pass values to your script using [environment variables](../reference/requirements/environment-variables), you'll want to make sure that you can access these values in your code. This how to guide will walk you through the steps to access environment variables.
+
+:::note
+When accessing the contents of an environment variable in your code, we recommend storing it as a variable so it can be continuously used.
+:::
 
 ## Steps
 
 For this example, our environment variable will be named `OPERATOR_A`.
 
-1. Navigate to the location of your code.
+1. Navigate to the location of your code (local, Github, etc.)
 2. Select the language your code is written in from the tabs below.
 
 <Tabs
@@ -61,4 +65,8 @@ process.env.OPERATOR_A;
 
 3. Add the above snippet to your code.
 
-When accessing the contents of an environment variable in your code, we recommend storing it as a variable so it can be continuously used.
+
+
+:::success
+You've now successfully written code to access an environment variable.
+:::

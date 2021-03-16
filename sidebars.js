@@ -91,7 +91,7 @@ module.exports = {
           'how-tos/projects/edit-project',
         ],
         Triggers: [
-          'how-tos/triggers/edit-schedule-trigger',
+          'how-tos/triggers/add-schedule-trigger',
           'how-tos/triggers/execute-webhook-trigger',
         ],
         Vessels: [
@@ -102,8 +102,10 @@ module.exports = {
           'how-tos/vessels/duplicate-vessel',
           'how-tos/vessels/search-for-vessel',
           'how-tos/vessels/assess-vessel-performance',
-          'how-tos/vessels/download-code',
         ],
+        Code: [
+          'how-tos/code/download-code',
+        ]
       },
       'how-tos/access-environment-variables',
     ],

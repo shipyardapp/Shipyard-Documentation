@@ -12,15 +12,22 @@ keywords:
 
 ## Overview
 
-If you find yourself needing to update existing code, change a Trigger, or even update external package versions, you'll likely want to edit an existing Vessel. Follow these steps for editing a Vessel.
+If you find yourself needing to update existing [code](../../reference/code/README.md), change a [Trigger](../../reference/triggers/README.md), or even update [external package versions](../../reference/requirements/external-package-dependencies.md), you'll likely want to edit an existing [Vessel](../../reference/vessels.md). This how to guide will walk you through the steps to edit a Vessel.
 
 ## Steps
 
-1. From the "All Projects" page, navigate to the project where your Vessel lives.
-2. Next to the Vessel you want to edit, click on the "Edit" link, located on the right-hand side of the table under the column for "Action". By default, you'll land on the settings tab for the Vessel. Every tab, except for Logs, has fields that can be added or edited. These fields will look extremely similar to what you see when initially creating a Vessel.
-3. Edit any and all fields that need updating. You can make multiple updates across multiple tabs.
-4. Once finished, click the "Save button at the bottom of the page.
+### Step 1 - Find the Vessel
 
-## Further Reading
+1. Navigate to the Project where your Vessel lives.
+2. Find the Vessel that you want to edit.
+   1. Click on the **Edit** action to land on the Settings tab.
+   2. Click on the **Vessel Name** to land on the [Logs](../../reference/logs/README.md) tab.
 
-The **Vessel** reference article contains details about the data that is stored in each Vessel.
+### Step 2 - Make Edits
+Every tab, except for Logs, has fields that can be added or edited. These fields will look extremely similar to what you see when initially building a Vessel [with Code](build-vessel-code.md) or [with a Blueprint](build-vessel-blueprint.md).
+
+1. Edit any and all fields that need updating. You can make multiple updates across multiple tabs.
+2. Once all of your changes have been made, click the **Save** button at the bottom of the page.
+
+:::success
+You've now successfully edited a Vessel.
