@@ -44,7 +44,7 @@ Once the Vessel has finished running, the page will no longer automatically refr
 | :--------------------------------------------------------- | :---------------------------------------------------------------------- |
 | [**Status**](../other-functions/status.md) | The last known information about a run.                                 |
 | **Log ID**                                                 | UUIDv4 associated with the individual run.                              |
-| [**Trigger**](../triggers/README.md)                | What type of Trigger generated this log.                                |
+| [**Trigger**](../triggers/triggers-overview.md)                | What type of Trigger generated this log.                                |
 | [**Blueprint** ](../blueprints.md)                                             | The Blueprint that the Vessel is built from.                            |
 | **Created At**                                             | The timestamp of when the run was originally scheduled within Shipyard. |
 | **Expected Start**                                         | The timestamp of when the run was scheduled to start.                   |

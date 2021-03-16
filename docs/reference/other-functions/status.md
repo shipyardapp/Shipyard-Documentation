@@ -14,7 +14,7 @@ keywords:
 
 ## Definition
 
-**Status** refers to the final outcome of a single run for a Vessel, tied to an individual [log](../logs/README.md). The following statuses are currently possible:
+**Status** refers to the final outcome of a single run for a Vessel, tied to an individual [log](../logs/logs-overview.md). The following statuses are currently possible:
 
 | Name           | Icon |Definition                                                                                                                    |
 | :------------- |:----- |:---------------------------------------------------------------------------------------------------------------------------- |

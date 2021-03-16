@@ -44,13 +44,13 @@ Every email sent by Shipyard will contain links to the organizational structure 
 
 
 ### Success Notification
-In a success notification, a button will appear to **View Results**. This will direct you to the [Log](../logs/README.md) of the Vessel or Fleet that ran successfully.
+In a success notification, a button will appear to **View Results**. This will direct you to the [Log](../logs/logs-overview.md) of the Vessel or Fleet that ran successfully.
 
 Currently, you will only receive success notifications when a Vessel or Fleet was triggered [On-Demand](../triggers/on-demand-triggers.md).
 
 ### Errors Notification
 
-In an error notification, a button will appear to **Investigate Issue**. This will take you directly to the [Log](../logs/README.md) where the error occured so that you can troubleshoot effectively.
+In an error notification, a button will appear to **Investigate Issue**. This will take you directly to the [Log](../logs/logs-overview.md) where the error occured so that you can troubleshoot effectively.
 
 If a Fleet errors out, you will only receive a notification for the Fleet, not every Vessel in the Fleet that errors out or doesn't run. This setup helps reduce notification overload in the event that something goes wrong.
 
