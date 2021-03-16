@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-Every unique solution you create will require you to build a [Vessel](../../reference/vessels.md). If you're creating the solution from scratch, you'll want want to create a Vessel with [Code](../../reference/code/README.md). This how to guide will walk you through the steps to build a Vessel with Code.
+Every unique solution you create will require you to build a [Vessel](../../reference/vessels.md). If you're creating the solution from scratch, you'll want want to create a Vessel with [Code](../../reference/code/code-overview.md). This how to guide will walk you through the steps to build a Vessel with Code.
 
 ## Steps
 
@@ -31,7 +31,7 @@ At this point you'll be walked through the Vessel setup wizard. If at any point 
 
 All of the information on this tab is required.
 
-1. Provide the code for your solution, using any of the [available methods](../../reference/code/README.md).
+1. Provide the code for your solution, using any of the [available methods](../../reference/code/code-overview.md).
 2. Provide the [command](../../reference/code/command.md) details necessary for your code to run properly.
 3. Click **Next Step** once you're done.
 

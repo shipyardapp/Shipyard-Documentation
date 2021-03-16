@@ -40,7 +40,7 @@ All of the information on this tab is optional, but strongly recommended.
 
 All of the information on this tab is required.
 
-1. Provide the code for your solution, using any of the [available methods](../../reference/code/README.md).
+1. Provide the code for your solution, using any of the [available methods](../../reference/code/code-overview.md).
 2. Provide the [command](../../reference/code/command.md) details necessary for your code to run properly.
 3. Click **Next Step** once you're done.
 
