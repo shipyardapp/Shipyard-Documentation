@@ -15,6 +15,18 @@ module.exports = {
         alt: 'Shipyard Logo',
         src: 'img/logo.svg',
       },
+      // algolia: {
+      //   apiKey: 'YOUR_API_KEY',
+      //   indexName: 'YOUR_INDEX_NAME',
+  
+      //   // Optional: see doc section bellow
+      //   contextualSearch: true,
+  
+      //   // Optional: Algolia search parameters
+      //   searchParameters: {},
+  
+      //   //... other Algolia params
+      // },
       items: [
         {
           to: '/',
@@ -103,16 +115,25 @@ module.exports = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          trailingSlash: false,
+        },
       },
     ],
   ],
-  // plugins: [
-  //   'plugin-image-zoom',['@docusaurus/plugin-sitemap',
-  //   {
-  //     changefreq: 'weekly',
-  //     priority: 0.5,
-  //     trailingSlash: false,
-  //   }
-  // ]
-  // ],
+  plugins: [
+    'plugin-image-zoom',
+  ['@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            to: '/glossary', // string
+            from: ['/reference/glossary-of-terms'], // string | string[]
+          },
+        ],
+      },
+  ],
+],
 };
