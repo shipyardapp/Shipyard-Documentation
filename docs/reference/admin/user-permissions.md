@@ -20,7 +20,7 @@ Permissions are granted in a matrix that allows you to specify permission levels
 ### Elements
 
 - [Projects](../projects)
-- [Blueprints](../blueprints/blueprints-overview)
+- [Blueprints](../blueprints.md)
 - [Logs](../logs/logs-overview)
 - [Users](user-management)
 - [Billing](billing)

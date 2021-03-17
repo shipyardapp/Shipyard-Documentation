@@ -33,9 +33,9 @@ To create an effective Blueprint, you'll need to add multiple [Blueprint Variabl
 The following steps are optional, but strongly recommended to increase usability.
 
 1. Set a [default value](../../reference/inputs/blueprint-variables#default-value) for the variable to use.
-2. Select if the field should be [required](reference/inputs/blueprint-variables#required) or not.
-3. Give the variable [placeholder](reference/inputs/blueprint-variables#placeholder) text as an example of what should be entered.
-4. Give the variable a [tooltip](reference/inputs/blueprint-variables#tooltip) explanation.
+2. Select if the field should be [required](../../reference/other-functions/duplication.md#required) or not.
+3. Give the variable [placeholder](../../reference/inputs/blueprint-variables.md#placeholder) text as an example of what should be entered.
+4. Give the variable a [tooltip](../../reference/inputs/blueprint-variables.md#tooltip) explanation.
 
 ### Step 3 - Create the Variable
 1. Click the **Add Variable** Button at the bottom.

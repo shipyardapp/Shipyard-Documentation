@@ -15,7 +15,7 @@ keywords:
 
 ## Definition
 
-The Blueprint Library is a location for pre-made [Blueprints](./blueprints/blueprints-overview) developed by Shipyard staff. These Blueprints provide an easy way to avoid monotonous development work associated with integrations.
+The Blueprint Library is a location for pre-made [Blueprints](./blueprints.md) developed by Shipyard staff. These Blueprints provide an easy way to avoid monotonous development work associated with integrations.
 
 Library Blueprints are designed to:
 

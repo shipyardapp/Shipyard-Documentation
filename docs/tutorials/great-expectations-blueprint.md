@@ -28,7 +28,7 @@ For more information, read [our blog post](https://www.shipyardapp.com/blog/gett
 ## Setup
 
 :::caution
-For the sake of the this tutorial, we suggest starting off by building a Vessel inside of a Project called "Playground". You can follow [**this tutorial** ](building-test-project.md)to set that up.
+For the sake of the this tutorial, we suggest starting off by building a Vessel inside of a Project called "Playground". You can follow [**this tutorial** ](first-project.md)to set that up.
 :::
 
 Download the [following file](../.gitbook/assets/great_expectations_demo.zip) to your computer, without changing the file name. It's a .zip containing a single python file and a Great Expectations directory structure with JSON expectation suites and a YML setup file. We'll use this throughout the tutorial.
@@ -220,7 +220,7 @@ Set up additional Vessels using the **Great Expectations - Demo** Blueprint and 
 4. Use the Sample expectation suite.
 
 :::info
-Tip: You can easily make multiple Vessels with slightly different Inputs by [duplicating this tutorial Vessel](../how-tos/vessels/how-to-duplicate-a-vessel.md).
+Tip: You can easily make multiple Vessels with slightly different Inputs by [duplicating this tutorial Vessel](../how-tos/vessels/duplicate-vessel.md).
 :::
 
 ### Create New Variables

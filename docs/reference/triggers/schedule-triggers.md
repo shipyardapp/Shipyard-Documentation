@@ -50,4 +50,4 @@ If a schedule is added, removed, or changed after 12:00am UTC, the Vessel's sche
 
 ## Learn More
 
-- [How to Edit a Schedule Trigger](../../how-tos/triggers/edit-schedule-trigger.md)
+- [How to Add a Schedule Trigger](../../how-tos/triggers/add-schedule-trigger.md)

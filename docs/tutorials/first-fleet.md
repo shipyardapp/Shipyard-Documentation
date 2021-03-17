@@ -27,7 +27,7 @@ By the end of the tutorial, you will know how to:
 * Use a Fleet to access files created upstream
 
 :::caution
-For the sake of this tutorial, we suggest starting off by building a Vessel inside of the Project called *Playground* or *Testing*. You can follow [this tutorial](building-playground-project.md) to set that up.
+For the sake of this tutorial, we suggest starting off by building a Vessel inside of the Project called *Playground* or *Testing*. You can follow [this tutorial](first-project.md) to set that up.
 :::
 
 ## Steps

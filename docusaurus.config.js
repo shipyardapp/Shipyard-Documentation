@@ -3,8 +3,8 @@ module.exports = {
   tagline: 'Detailed documentation and guides to help data teams use Shipyard for their data operations.',
   url: 'https://www.shipyardapp.com',
   baseUrl: '/',
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'throw',
   favicon: 'img/favicon.ico',
   organizationName: 'Shipyard', // Usually your GitHub org/user name.
   projectName: 'Shipyard-Documentation', // Usually your repo name.

@@ -33,9 +33,9 @@ Additionally, your script should stop its work if it receives a SIGTERM \(15\) s
 
 1. Select **With Code**
 2. Select a **Language**
-3. Provide [**Code**](../code/code-overview)
-4. Define **Requirements** \([Environment Variables](../requirements/environment-variables), [External Package Dependencies](../requirements/external-package-dependencies)\)
-5. Save **Settings** \([Information](../settings/information), [Notifications](../settings/notifications), and [Guardrails](../settings/guardrails)\)
+3. Provide [**Code**](code/code-overview.md)
+4. Define **Requirements** \([Environment Variables](requirements/environment-variables), [External Package Dependencies](requirements/external-package-dependencies)\)
+5. Save **Settings** \([Information](settings/information), [Notifications](settings/notifications), and [Guardrails](settings/guardrails)\)
 
 ### With Blueprint
 
@@ -44,9 +44,9 @@ Building a Vessel with a Blueprint allows you to run scripts without needing to 
 #### Setup Steps
 
 1. Select **With a Blueprint**
-1. Select your [**Blueprint**](../blueprints/blueprints-overview)
-1. Provide [**Inputs**](inputs)
-1. Save **Settings** \([Information](../settings/information), [Notifications](../settings/notifications), and [Guardrails](../settings/guardrails)\)
+2. Select your [**Blueprint**](blueprints.md)
+3. Provide [**Inputs**](inputs/inputs-overview.md)
+4. Save **Settings** \([Information](settings/information), [Notifications](settings/notifications), and [Guardrails](settings/guardrails)\)
 
 ## Additional Notes
 
@@ -57,10 +57,10 @@ Building a Vessel with a Blueprint allows you to run scripts without needing to 
 
 ## Learn More
 
-- [How to Build a New Vessel using a Code Blueprint](../../how-tos/vessels/build-vessel-code)
-- [How to Build a New Vessel using a Custom Blueprint](../../how-tos/vessels/build-vessel-blueprint)
-- [How to Duplicate a Vessel](../../how-tos/vessels/duplicate-vessel)
-- [How to Search for Vessels](../../how-tos/vessels/search-for-vessel)
-- [How to Delete a Vessel](../../how-tos/vessels/delete-vessel)
-- [How to Edit a Vessel](../../how-tos/vessels/edit-vessel)
-- [How to Assess Vessel Performance](../../how-tos/vessels/assess-vessel-performance)
+- [How to Build a New Vessel using a Code Blueprint](../how-tos/vessels/build-vessel-code)
+- [How to Build a New Vessel using a Custom Blueprint](../how-tos/vessels/build-vessel-blueprint)
+- [How to Duplicate a Vessel](../how-tos/vessels/duplicate-vessel)
+- [How to Search for Vessels](../how-tos/vessels/search-for-vessel)
+- [How to Delete a Vessel](../how-tos/vessels/delete-vessel)
+- [How to Edit a Vessel](../how-tos/vessels/edit-vessel)
+- [How to Assess Vessel Performance](../how-tos/vessels/assess-vessel-performance)

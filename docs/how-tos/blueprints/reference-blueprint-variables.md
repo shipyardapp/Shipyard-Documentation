@@ -38,7 +38,7 @@ values={[
 ]}>
 <TabItem value="ui">
 
-1. Locate the field where you want user data to flow into. Common locations are in the [Argument Value ](../../reference/code/command.md#arguments)or the [Environment Variable Value ](../../reference/vessels/environment-variables/)field.
+1. Locate the field where you want user data to flow into. Common locations are in the [Argument Value ](../../reference/code/command.md#arguments)or the [Environment Variable Value](../../reference/requirements/environment-variables.md) field.
 2. Use the format of `${VAR_NAME}` , replacing `VAR_NAME` with your Reference Name. For our example, this would be `${cool_var_name}`
 3. Save the Vessel.
 

@@ -32,7 +32,7 @@ By the end of the tutorial, you'll be able to:
 ## Setup
 
 :::caution
-For the sake of the this tutorial, we suggest starting off by building a Vessel inside either the *Playground* Project or a *Testing* Project. You can follow [this tutorial](building-first-project.md) to set that up.
+For the sake of the this tutorial, we suggest starting off by building a Vessel inside either the *Playground* Project or a *Testing* Project. You can follow [this tutorial](first-project.md) to set that up.
 :::
 
 First, [download this code](../.gitbook/assets/advanced_tutorial.zip), named `hello_world_advanced.tar` to your computer without making any changes.
@@ -94,7 +94,7 @@ values={[
 1. On the left side of the screen, select the **Upload** option. 
 2. Click the upload section icon and select the `hello_world_advanced.tar` file from you computer.
 3. On the right-hand side of the screen, there is a field entitled **File to Run**. Because the .zip contains a single python file named `hello_world_advanced.py`, you'll need use that name.
-4. Click the **+** icon next to Arguments to create a new [command argument](../reference/vessels/code/command.md#arguments).
+4. Click the **+** icon next to Arguments to create a new [command argument](../reference/code/command.md#arguments).
 5. In the **flag** field on the left-hand side, type `--name`.
 6. In the **value** field on the right-hand side of the new argument, type your name.
 
@@ -187,7 +187,7 @@ Wait a few seconds for your Vessel to run. The page will automatically refresh.
 In the output, you'll see a total of 6 things.
 
 1. Shipyard creates a working directory under `/home/shipyard/`
-2. Shipyard downloads the file you created under the [Code](building-a-hello-world-vessel.md#step-2-provide-your-code) section, decompresses it, and begins to run `hello_world_advanced.py`
+2. Shipyard downloads the file you created under the Code section, decompresses it, and begins to run `hello_world_advanced.py`
 3. Shipyard prints the text `Hello, {your name}!`
 4. Shipyard prints out the custom text you wrote, stored under the environment variable `CUSTOM_TEXT`.
 5. Shipyard prints out a cat fact.

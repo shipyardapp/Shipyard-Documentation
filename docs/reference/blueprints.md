@@ -42,7 +42,7 @@ You may also _optionally_ provide these elements:
 
 When creating a Vessel with a Blueprint, you must always provide the following elements:
 
-1. [Inputs](vessels/inputs) \(if any are required\)
+1. [Inputs](inputs/inputs-overview.md) \(if any are required\)
 2. [Vessel Information](settings/information)
 
 You may also _optionally_ provide these elements:
