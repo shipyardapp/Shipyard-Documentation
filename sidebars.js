@@ -110,10 +110,11 @@ module.exports = {
       'how-tos/access-environment-variables',
     ],
     '🚀 Tutorials':[
-      'tutorials/test-project',
-      'tutorials/hello-world-vessel',
-      'tutorials/advanced-hello-world-vessel',
+      'tutorials/first-project',
+      'tutorials/first-vessel-hello-world',
+      'tutorials/advanced-code-vessel',
       'tutorials/great-expectations-blueprint',
+      'tutorials/first-fleet',
     ],
     '📦 Blueprint Library': [
       'blueprint-library/amazon-athena',

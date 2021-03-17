@@ -23,7 +23,7 @@ By the end of the tutorial, you'll be able to:
 - Run multiple instances of Great Expectations simultaneously
 - Integrate an Expectation Suite into your Fleets
 
-For more information, read our blog post that covers Getting Started with Great Expectations. You can also visit [www.greatexpectations.io](https://www.greatexpectations.io) for additional information.
+For more information, read [our blog post](https://www.shipyardapp.com/blog/getting-started-with-great-expectations/) that covers Getting Started with Great Expectations. You can also visit [www.greatexpectations.io](https://www.greatexpectations.io) for additional information.
 
 ## Setup
 
@@ -31,9 +31,7 @@ For more information, read our blog post that covers Getting Started with Great 
 For the sake of the this tutorial, we suggest starting off by building a Vessel inside of a Project called "Playground". You can follow [**this tutorial** ](building-test-project.md)to set that up.
 :::
 
-Download the following file to your computer, without changing the file name. It's a .zip containing a single python file and a Great Expectations directory structure with JSON expectation suites and a YML setup file. We'll use this throughout the tutorial.
-
-{% file src="../.gitbook/assets/great\_expectations\_demo.zip" %}
+Download the [following file](../.gitbook/assets/great_expectations_demo.zip) to your computer, without changing the file name. It's a .zip containing a single python file and a Great Expectations directory structure with JSON expectation suites and a YML setup file. We'll use this throughout the tutorial.
 
 Feel free to peruse this script beforehand so you understand everything that it's doing. The main script is accomplishing the following things:
 
@@ -46,18 +44,18 @@ Feel free to peruse this script beforehand so you understand everything that it'
 
 ## Steps
 
-1. Click "Blueprints" on the side navigation bar.
-2. Click the "Add Blueprint" button in the top right.
+1. Click **Blueprints** on the side navigation bar.
+2. Click the **Add Blueprint** button in the top right.
 
-### Step 1 - Select A Code Blueprint
+### Step 1 - Select A Language
 
-![](../.gitbook/assets/select_language.png)
+![](../.gitbook/assets/shipyard_2021_03_17_11_16_38.png)
 
-Click on the Python Blueprint. You'll be immediately redirected to the next step.
+Click on **Python**. You'll be immediately redirected to the next step.
 
 ### Step 2 - Create Blueprint Variables
 
-Click the plus icon to create a new Blueprint variable. You should see a screen that looks like this:
+Click the **+** icon to create a new Blueprint variable. You should see a screen that looks like this:
 
 ![](../.gitbook/assets/add_blueprint_variables.png)
 
@@ -65,49 +63,57 @@ Our code for Great Expectations has 3 variables that we expect to receive. For a
 
 #### File URL
 
-1. Set the Display Name to **File URL**
+1. Set the Display Name to `File URL`
 2. Set the Reference Name to `input_url`
-3. Leave the Variable Type alone.
+3. Leave the Variable Type set to Alphanumeric.
 4. Leave the Default Value empty.
-5. Check the box for "Required?"
-6. Set the Placeholder to "https://s3.region.amazonaws.com/bucket-name/key-name.csv"
-7. Set the Tooltip to "URL to download the file from. Must be publicly accessible."
-8. Click Add Variable.
+5. Check the box for Required?
+6. Set the Placeholder to `https://s3.region.amazonaws.com/bucket-name/key-name.csv`
+7. Set the Tooltip to `URL to download the file from. Must be publicly accessible.`
+8. Click **Add Variable**.
 
 #### Bucket Name
 
-1. Set the Display Name to **Bucket Name**
+1. Set the Display Name to `Bucket Name`
 2. Set the Reference Name to `output_bucket_name`
-3. Leave the Variable Type alone.
-4. Set the Default Value to the bucket name you set up during the Setup phase.
-5. Leave the "Required?" field alone.
-6. Leave the "Placeholder" empty.
-7. Set the Tooltip to "Bucket Name to store the validation JSON files."
-8. Click Add Variable.
+3. Leave the Variable Type set to Alphanumeric.
+4. Set the Default Value to the bucket name you set up during the setup phase.
+5. Leave the Required field alone.
+6. Leave the Placeholder empty.
+7. Set the Tooltip to `Bucket Name to store the validation JSON files.`
+8. Click **Add Variable**.
 
 #### Expectation Suite
 
-1. Set the Display Name to **Expectation Suite**
+1. Set the Display Name to `Expectation Suite`
 2. Set the Reference Name to `expectation_suite`
 3. Change the Variable Type to **Select**
-4. Under the new section of "Selection Options" click the plus button twice.
-   1. Set the first Display Name box to "Amazon Reviews" and set the Internal Value to "amazon-product-reviews".
-   2. Set the second Display Name box to "Sample" and set the Internal Value to "sample-suite"
-5. Set the Default Value to Amazon Reviews
-6. Leave the "Required?" field alone.
-7. Leave the "Placeholder" empty.
-8. Set the Tooltip to "Select which of our Expectation Suites to use against the provided file."
-9. Click Add Variable.
+4. Under the new section of *Selection Options* click the **+** button twice.
+   1. Set the first Display Name box to `Amazon Reviews` and set the Internal Value to `amazon-product-reviews`.
+   2. Set the second Display Name box to `Sample` and set the Internal Value to `sample-suite`
+5. Set the Default Value to `Amazon Reviews`.
+6. Leave the Required? field alone.
+7. Leave the Placeholder empty.
+8. Set the Tooltip to `Select which of our Expectation Suites to use against the provided file.`
+9. Click **Add Variable**.
 
-At this point, your screen should look something like this. Once you've verified your Blueprint Variables, go ahead and click Next Step.
+Give your Blueprint a Description of `Provide a Link to a publicly available file in the File URL field. This file will be run against the Expectation Suite selected, with the final validation file sent directly to the S3 Bucket listed under "Bucket Name", nested under a folder called great-expectations/{expectation-suite}/`
 
-![](../.gitbook/assets/great_expectations_blueprint_variables.png)
+At this point, your screen should look something like this. 
+
+![](../.gitbook/assets/shipyard_2021_03_17_11_26_15.png)
+
+Click **Preview this Blueprint** to verify how everything will look and feel to a user. 
+
+![](../.gitbook/assets/shipyard_2021_03_17_11_27_38.png)
+
+Once you've verified that everything is set up correctly, go ahead and click **Next Step**.
 
 ### Step 3 - Provide Your Code
 
 1. Click the upload section of the page and select the `great_expectations_demo.zip` file from your computer.
-2. On the right-hand side of the screen, enter `run_great_expectations.py` into the File to run field.
-3. Click the "plus" icon next to arguments 3 times.
+2. On the right-hand side of the screen, enter `run_great_expectations.py` into the File to Run field.
+3. Click the **+** icon next to arguments 3 times.
 
 We'll be creating an argument for each of the Blueprint Variables that we created in the last step, passing through the user input as `${reference_name}`.
 
@@ -117,25 +123,25 @@ We'll be creating an argument for each of the Blueprint Variables that we create
 
 Once these steps are complete, your screen should look exactly like this.
 
-![](../.gitbook/assets/great_expectations_code_tab.png)
+![](../.gitbook/assets/shipyard_2021_03_17_11_30_51.png)
 
-Once you've verified that everything has been set up correctly, click "Next Step" in the bottom right.
+Once you've verified that everything has been set up correctly, click **Next Step** in the bottom right.
 
 ### Step 4 - Requirements
 
 #### Environment Variables
 
-1. Click the "plus" icon next to Environment Variables twice to add two new variables.
-2. Set the first variable's **KEY** to `GREAT_EXPECTATIONS_AWS_ACCESS_KEY_ID` and **Value** to the Access Key ID of the bucket you chose during your Setup.
-3. Set the second variable's **KEY** to `GREAT_EXPECTATIONS_AWS_SECRET_ACCESS_KEY` and **Value** to the AWS Secret of the bucket you chose during your Setup.
+1. Click the **+** icon next to Environment Variables twice to add two new variables.
+2. Set the first variable's Name to `GREAT_EXPECTATIONS_AWS_ACCESS_KEY_ID` and Value to the Access Key ID of the bucket you chose during your Setup.
+3. Set the second variable's Name to `GREAT_EXPECTATIONS_AWS_SECRET_ACCESS_KEY` and Value to the AWS Secret of the bucket you chose during your Setup.
 
-:::caution
-**Note:** The value field will always show `•••••••` as you type. This is because Environment Variables are commonly used for passwords and secrets. You can always reveal what you've written by clicking the eye icon. ![](../.gitbook/assets/not_visible_icon.png)
+:::note
+The value field will always show `•••••••` as you type. This is because Environment Variables are commonly used for passwords and secrets. You can always reveal what you've written by clicking the eye icon. ![](../.gitbook/assets/not_visible_icon.png)
 :::
 
 #### Packages
 
-1. Click the "plus" icon next to Packages 4 times to add four new packages.
+1. Click the **+** icon next to Packages 4 times to add four new packages.
 2. Set the first Package Name to `boto3` and the version to `==1.12.16`
 3. Set the second Package Name to `great-expectations` and the version to `==0.9.5`
 4. Set the third Package Name to `pandas` and the version to `==1.0.1`
@@ -149,49 +155,48 @@ Once you're done, go ahead and click the **Next Step** button at the bottom of t
 
 ### Step 5 - Settings
 
-1. Under the State section, select **Active**.
+1. Under the State section, select **Everyone**.
 2. Under the Information section:
    1. Give your Blueprint the name of `Great Expectations - Demo`.
    2. Give your Blueprint the Synopsis of `Run a file against an existing Expectation Suite.`
-   3. Give your Blueprint a Description of `Provide a Link to a publicly available file in the File URL field. This file will be run against the Expectation Suite selected, with the final validation file sent directly to the S3 Bucket listed under "Bucket Name", nested under a folder called great-expectations/{expectation-suite}/`
-3. Leave the Guardrails section defaults of 1x and ASAP.
+3. Leave the Guardrails section defaults of 0x and ASAP.
+
+Your Blueprint should look like this:
+![](../.gitbook/assets/shipyard_2021_03_17_11_34_35.png)
+
 4. Click the **Save & Finish** button at the bottom of the screen.
 
-:::tip Success
-You've successfully set up Great Expectations as a Blueprint!
+
+
+:::success
+You've successfully set up Great Expectations as a Blueprint.
 :::
 
 Now anyone in your organization can use the Blueprint to test data against your Expectation Suites. We're going to test our Blueprint to validate that everything runs correctly.
 
 ### Step 6 - Setting Up a Vessel
 
-1. Navigate to any project. We recommend the Playground project set up in [previous tutorials](building-test-project.md).
-2. Click the "Build Vessel" button in the top right corner.
-3. Select to Build a Vessel using a **Custom Blueprint**.
-4. Select the Blueprint called "Great Expectations - Demo"
+![](../.gitbook/assets/shipyard_2021_03_17_11_35_16.png)
 
-![](../.gitbook/assets/great_expectations_demo_blueprint.png)
+1. Click **Use this Blueprint** on the success screen.
 
 At this point, you should be on a screen that looks like this:
-
 ![](../.gitbook/assets/great_expectations_demo_blueprint_inputs.png)
 
-1. Enter `https://s3.amazonaws.com/amazon-reviews-pds/tsv/sample_us.tsv` into the File URL field.
+
+2. Enter `https://s3.amazonaws.com/amazon-reviews-pds/tsv/sample_us.tsv` into the File URL field.
 2. Leave the Bucket Name as is.
 3. Leave the Expectation Suite as is.
-4. Click Next Step.
-5. On the Triggers step, immediately click Next Step. We don't need to have any schedules for this tutorial.
-6. On the Settings step:
-   1. Change the State to Active.
-   2. Name your Vessel `GE - Sample Data - Amazon Reviews`
-   3. Click Save & Finish
-7. Immediately Click "Run Your Vessel"
+4. Click **Next Step**.
+5. On the Settings step:
+   1. Name your Vessel `GE - Sample Data - Amazon Reviews`
+   2. Select either *Playground* or *Testing* for the Project
+   3. Click **Save & Finish**
+6. Immediately Click **Run Your Vessel**
 
 ### Step 7 - Review the Results
 
-Click the first Log ID that you generated. If everything was set up correctly, the run should be a Success!
-
-Within the Log you'll be able to see all of the expectations and their output for the sample data.
+You should be immediately redirected to the actively running Vessel Log. Within the Log you'll be able to see all of the expectations and their output for the sample data.
 
 ![](../.gitbook/assets/great_expectations_success_log.png)
 
