@@ -1,8 +1,8 @@
 module.exports = {
   title: 'Shipyard Documentation',
   tagline: 'Detailed documentation and guides to help data teams use Shipyard for their data operations.',
-  url: 'https://www.shipyardapp.com',
-  baseUrl: '/',
+  url: 'https://www.shipyardapp.com/docs/',
+  baseUrl: '/docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   favicon: 'img/favicon.ico',
