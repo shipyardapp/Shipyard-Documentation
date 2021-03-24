@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Shipyard Documentation',
   tagline: 'Detailed documentation and guides to help data teams use Shipyard for their data operations.',
-  url: 'https://www.shipyardapp.com/docs/',
+  url: process.env.SHIPYARD__DOCUSAURUS_URL || 'https://www.shipyardapp.com/',
   baseUrl: '/docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
