@@ -159,7 +159,7 @@ Once you're done, go ahead and click the **Next Step** button at the bottom of t
 2. Under the Information section:
    1. Give your Blueprint the name of `Great Expectations - Demo`.
    2. Give your Blueprint the Synopsis of `Run a file against an existing Expectation Suite.`
-3. Leave the Guardrails section defaults of 0x and ASAP.
+3. Leave the Guardrails section defaults of None and ASAP.
 
 Your Blueprint should look like this:
 ![](../.gitbook/assets/shipyard_2021_03_17_11_34_35.png)
