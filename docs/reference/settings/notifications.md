@@ -71,4 +71,4 @@ If a Fleet errors out, you will only receive a notification for the Fleet, not e
 4. Notifications are only sent for 2 different event types. These event types cannot be changed at the moment.
 5. Notifications are only applied at the Vessel and Fleet level. You cannot subscribe to notifications for a Blueprint \(and therefore all dependent Vessels\).
 6. When a Fleet errors out, we will never designate which Vessel specifically errored out, as there could be multiple possibilities.
-7. Mark the Shipyard email address `notifications@shipyardapp.com` as "not spam" to ensure proper alerting.
+7. We recommend adding the the Shipyard email address `notifications@shipyardapp.com` to your address book to ensure that alerts are never sent to spam.
