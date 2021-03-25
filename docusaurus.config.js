@@ -104,7 +104,7 @@ module.exports = {
           routeBasePath: '/',
           // Please change this to your repo.
           editUrl:
-            'https://github.com/shipyardapp/Shipyard-Documentation/edit/master/',
+            'https://github.com/shipyardapp/Shipyard-Documentation/edit/main/',
         },
         blog: {
           showReadingTime: true,
