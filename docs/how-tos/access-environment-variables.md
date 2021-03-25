@@ -27,7 +27,7 @@ When accessing the contents of an environment variable in your code, we recommen
 
 For this example, our environment variable will be named `OPERATOR_A`.
 
-1. Navigate to the location of your code (local, Github, etc.)
+1. Navigate to the location of your code (local, GitHub, etc.)
 2. Select the language your code is written in from the tabs below.
 
 <Tabs

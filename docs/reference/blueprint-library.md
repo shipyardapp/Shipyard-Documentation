@@ -25,7 +25,7 @@ Library Blueprints are designed to:
 
 Library Blueprints are immediately available to every user in an organization. These Blueprints are constantly updated and monitored by our team. If you run into connection issues or general errors, contact [support@shipyardapp.com](mailto:support@shipyardapp.com)
 
-In an effort to be transparent about how our Blueprints work, we open-source the code and make it available on our [Github](https://github.com/shipyardapp). The repositories are broken up by vendor and all end in `-blueprints`. If some functionality isn't working appropriately, you can open an issue in Github or submit a pull request with the proposed changes.
+In an effort to be transparent about how our Blueprints work, we open-source the code and make it available on our [GitHub](https://github.com/shipyardapp). The repositories are broken up by vendor and all end in `-blueprints`. If some functionality isn't working appropriately, you can open an issue in GitHub or submit a pull request with the proposed changes.
 
 ### Categories and Actions
 
