@@ -14,6 +14,7 @@ module.exports = {
       logo: {
         alt: 'Shipyard Logo',
         src: 'img/logo.svg',
+        href: 'https://www.shipyardapp.com/'
       },
       // algolia: {
       //   apiKey: 'YOUR_API_KEY',
@@ -38,11 +39,12 @@ module.exports = {
         {to: 'https://www.shipyardapp.com/blog', label: 'Blog', position: 'left'},
         {to: 'https://www.shipyardapp.com/demo', label: 'Watch a Demo', position: 'left'},
         {to: 'https://app.shipyardapp.com/auth/signup?ref=documentation', label: 'Start Free Trial', position: 'left'},
-        // {
-        //   href: 'https://github.com/shipyardapp/Shipyard-Documentation',
-        //   label: 'GitHub',
-        //   position: 'right',
-        // },
+        {
+          href: 'https://github.com/shipyardapp/Shipyard-Documentation',
+          position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
+        },
       ],
     },
     footer: {
