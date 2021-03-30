@@ -15,7 +15,7 @@ The integrations tab shows a list of all the external services you can integrate
 
 Current integrations include:
 
-- [Github](github-integration.md)
+- [GitHub](github-integration.md)
 
 For a list of services we enable you to build solutions with using a no-code template, see the [Blueprint Library](../../blueprint-library.md).
 

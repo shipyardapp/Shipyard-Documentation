@@ -17,7 +17,7 @@ The left pane contains a section to provide Shipyard with your code. There are 3
 
 - [Write Code](write-code.md)
 - [Upload Code](upload-code.md)
-- [Github Code Sync](git-connection.md)
+- [GitHub Code Sync](git-connection.md)
 
 The right pane contains a section to provide the [Command](command.md) of which file to execute and which arguments to pass to the file.
 

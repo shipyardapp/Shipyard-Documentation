@@ -21,7 +21,7 @@ If you want multiple [Vessels](../../reference/vessels.md) to work together for 
 
 1. Follow our how to guide to build at least two Vessels, either [with code](../vessels/build-vessel-code.md) or [with a blueprint](../vessels/build-vessel-blueprint.md), that you want to be run as part of your Fleet.
 2. Within the project where you created these two Vessels, navigate to the Fleets tab.
-3. Click the **+ New** button at the top.
+3. Hover over the **+ New** button in the top-right and click New Fleet.
 4. On the blank canvas below, click to add a Vessel and select your Vessel name from the dropdown.
 5. Repeat the previous step for your other Vessels.
 6. Hover over your Vessels until purple dots appear. Click and drag from the purple dots of one Vessel to another Vessel to create a path. Continue until all Vessels are connected together in the order you want.

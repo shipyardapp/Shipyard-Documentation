@@ -37,7 +37,7 @@ This page will look different for every Blueprint. The left hand side will conta
 ### Step 3 - Save Settings
 
 1. Give your Vessel a unique, descriptive name.
-2. Optionally, change the project. By default, the project you navigated to in (Step 1)[#step-1----initial-setup] will be selected.
+2. Optionally, change the project. By default, the project you navigated to in [Step 1](#step-1---initial-setup) will be selected.
 3. Optionally, edit the [notifcations](../../reference/settings/notifications.md) to send users emails about the Vessel.
 4. Optionally, edit the [guardrails](../../reference/settings/guardrails.md) to make the system automatically retry your Vessel upon an error.
 5. Click **Save and Finish** once you're done

@@ -20,7 +20,7 @@ All Blueprints are built using Code. You must select a supported language and pr
 
 When a Vessel is built with a Blueprint, it is considered to be a Dependendent Vessel for that Blueprint because it depends on the underlying structure and code. All dependent Vessels for a Blueprint, across all projects, can be viewed on the Dependent Vessels tab, giving a high level of visibility into status and usage of reusable solutions.
 
-As a Blueprint author or editor, you are in charge of writing the code that runs for the users of your Blueprint. You can update and manage the underlying code, making updates in bulk that will affect 100s of dependent Vessels.
+As a Blueprint author or editor, you are in charge of writing the code that runs for the users of your Blueprint. You can update and manage the underlying code, making updates in bulk that will affect hundreds of dependent Vessels.
 
 ## Components
 
