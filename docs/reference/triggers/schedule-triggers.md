@@ -31,6 +31,8 @@ At 12:00am UTC, all runs for the next 24-hour cycle get added as empty logs with
 
 If a schedule is added, removed, or changed after 12:00am UTC, the Vessel's scheduled runs will be updated to reflect the new schedule up until 11:59pm UTC of the current day.
 
+All schedules will be created for the [Timezone](../other-functions/timestamps-and-timezones.md) set in the [Project](../projects.md) settings.
+
 ## Screenshots
 
 ![View on the Triggers tab when there are no schedules.](../../.gitbook/assets/no_schedule_triggers.png)
