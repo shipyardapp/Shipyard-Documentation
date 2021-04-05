@@ -12,11 +12,7 @@ keywords:
 
 # Slack Blueprints
 
-:::caution
-This section is a work in progress and may be missing key details. If you need help using Slack Blueprints, reach out to support@shipyardapp.com
-:::
-
-## Authorization
+## Authorization and Setup
 
 ### Overview
 Slack Blueprints rely on users to have the Slack token of a working Slack app that's install to their organization's Workspace with the right permissions. The app must be invited to all channels the user wants to send a message to. Below are the steps of how to accomplish each of these individually.
@@ -87,26 +83,75 @@ In every private channel that you want send messages to, you'll need to invite y
 :::note
 If the channel is public, the bot should be able to find it without being added. If not, try adding the bot to the channel.
 :::
+## Blueprints
+### Send Message
 
-## Download Files Blueprint
+#### Overview
+Send a Slack message to any channel or DM, alerting any user in your company. 
 
-### Overview
+A Vessel built with this Blueprint should never fail and will send a message every time it is run.
 
-### Variables
+#### Variables
 
-### Screenshots
+|Variable Name|Description|
+|:--------------|:---------------|
+|**Destination Type**| The type of location where you want your message to be sent. <br></br><br></br>If **Channel** is selected, a message can be sent directly to a channel. <br></br><br></br>If **DM** is selected, users can be sent messages directly from your app.
+|**Channel Name**| The name of the channel where you want your message to be sent, without the `#` prefix. This field will be ignored if the destination type is DM.|
+|**User Lookup Method**|Used to determine what data point to look at to find a User's ID for notification tagging.<br></br><br></br>**Email** - the email address of the user in your Slack workspace. We recommend using this field when possible, as it cannot be changed by a user.<br></br><br></br>**Real Name** - Full Name that a user has set for themselves in Slack. This value may be inconsistent if your organization doesn't enforce naming standards, and it can be changed by a user.<br></br><br></br>**Display Name** - the `@username` that you use to reference someone directly in slack. For more important notifications, it's inadvisable to use this method because users can easily change this name on their own and multiple users can share the same display name.|
+|**Users To Notify**|A comma separated list of case insensitive user information, used to look up user IDs. The user information needs to match the selected User Lookup Method. This field is only required if the Destination Type is DM.|
+|**Message**|The message that you want sent to a user. You can use all of the same markdown syntax that you would typically use in a Slack message. If you want to create a link in your message, you can use the format of `<www.website.com`&vert;`text to link>`|
+|**Slack Token**|The Bot User Oauth Token that is used to programmatically send messages by your specific application.|
 
-## Upload Files Blueprint
+### Send Message Conditionally
 
-### Overview
+#### Overview
+Send a message to Slack conditionally by determining if a file exists or not. 
 
-### Variables
+Vessels built with this Blueprint should never fail, as the prescence or lack or prescence of the file only indicates whether or not the message should be sent. 
 
-### Screenshots
+Works primarily when used as part of a Fleet, where a File can be generated or downloaded by an upstream Vessel.
 
-## Helpful Links
+#### Variables
+|Variable Name|Description|
+|:--------------|:---------------|
+|**Destination Type**| The type of location where you want your message to be sent. <br></br><br></br>If **Channel** is selected, a message can be sent directly to a channel. <br></br><br></br>If **DM** is selected, users can be sent messages directly from your app.
+|**Channel Name**| The name of the channel where you want your message to be sent, without the `#` prefix. This field will be ignored if the destination type is DM.|
+|**User Lookup Method**|Used to determine what data point to look at to find a User's ID for notification tagging.<br></br><br></br>**Email** - the email address of the user in your Slack workspace. We recommend using this field when possible, as it cannot be changed by a user.<br></br><br></br>**Real Name** - Full Name that a user has set for themselves in Slack. This value may be inconsistent if your organization doesn't enforce naming standards, and it can be changed by a user.<br></br><br></br>**Display Name** - the `@username` that you use to reference someone directly in slack. For more important notifications, it's inadvisable to use this method because users can easily change this name on their own and multiple users can share the same display name.|
+|**Users To Notify**|A comma separated list of case insensitive user information, used to look up user IDs. The user information needs to match the selected User Lookup Method. This field is only required if the Destination Type is DM.|
+|**Message**|The message that you want sent to a user. You can use all of the same markdown syntax that you would typically use in a Slack message. If you want to create a link in your message, you can use the format of `<www.website.com`&vert;`text to link>`|
+|**Send Message Only When**|Determines what condition needs to be met for a message to send.<br></br><br></br>**File(s) Exist**  - Send the message only if a file can be found using the provided `folder/filename.ext` combination.<br></br><br></br>**File(s) Don't Exist**  - Send the message only if a file **cannot** found using the provided `folder/filename.ext` combination.|
+|**File Name**|The name of the file you want to search for. If File Name Match Type|
+|**Folder Name**|The folder that the file can be found in. Unless specified elsewhere, starts by looking in the current working directory. Can contain leading, trailing, or no slashes (if only looking for the file in a single folder).<br></br><br></br>This field is not required and the folder name can technically be provided as part of the File Name.If left blank, will look for the file in the current working directory.|
+|**File Name Match Type**|The way you want the text in the File Name field to be treated.<br></br><br></br>**Exact** - Looks for the exact text that was typed in the File Name field, case sensitive.<br></br><br></br>**Regex** - Treats the text as that was typed in the File Name field as regex. Will look for any files, in all subdirectories of the provided Folder Name, that match the regex.|
+|**Upload File to Slack?**|Determines whether or not the file(s) you're looking for to conditionally send the message should get uploaded to Slack. Defaults to no.|
+|**Slack Token**|The Bot User Oauth Token that is used to programmatically send messages by your specific application.|
 
-[Slack Python Documentation](https://slack.dev/python-slackclient/)
+### Send Message with File
+
+#### Overview
+
+Send a Slack message with a message attachment to any channel or DM, alerting any user in your company.
+If multiple files are found, the files will be compressed and zipped together.
+
+Works primarily when used as part of a Fleet, where a File can be generated or downloaded by an upstream Vessel.
+
+This Blueprint is similar to **Send Message Conditionally** except that it returns an error if a file cannot be found, since the entire objective is to send the file.
+
+#### Variables
+|Variable Name|Description|
+|:--------------|:---------------|
+|**Destination Type**| The type of location where you want your message to be sent. <br></br><br></br>If **Channel** is selected, a message can be sent directly to a channel. <br></br><br></br>If **DM** is selected, users can be sent messages directly from your app.
+|**Channel Name**| The name of the channel where you want your message to be sent, without the `#` prefix. This field will be ignored if the destination type is DM.|
+|**User Lookup Method**|Used to determine what data point to look at to find a User's ID for notification tagging.<br></br><br></br>**Email** - the email address of the user in your Slack workspace. We recommend using this field when possible, as it cannot be changed by a user.<br></br><br></br>**Real Name** - Full Name that a user has set for themselves in Slack. This value may be inconsistent if your organization doesn't enforce naming standards, and it can be changed by a user.<br></br><br></br>**Display Name** - the `@username` that you use to reference someone directly in slack. For more important notifications, it's inadvisable to use this method because users can easily change this name on their own and multiple users can share the same display name.|
+|**Users To Notify**|A comma separated list of case insensitive user information, used to look up user IDs. The user information needs to match the selected User Lookup Method. This field is only required if the Destination Type is DM.|
+|**Message**|The message that you want sent to a user. You can use all of the same markdown syntax that you would typically use in a Slack message. If you want to create a link in your message, you can use the format of `<www.website.com`&vert;`text to link>`|
+|**Send Message Only When**|Determines what condition needs to be met for a message to send.<br></br><br></br>**File(s) Exist**  - Send the message only if a file can be found using the provided `folder/filename.ext` combination.<br></br><br></br>**File(s) Don't Exist**  - Send the message only if a file **cannot** found using the provided `folder/filename.ext` combination.|
+|**File Name**|The name of the file you want to search for. If File Name Match Type|
+|**Folder Name**|The folder that the file can be found in. Unless specified elsewhere, starts by looking in the current working directory. Can contain leading, trailing, or no slashes (if only looking for the file in a single folder).<br></br><br></br>This field is not required and the folder name can technically be provided as part of the File Name.If left blank, will look for the file in the current working directory.|
+|**File Name Match Type**|The way you want the text in the File Name field to be treated.<br></br><br></br>**Exact** - Looks for the exact text that was typed in the File Name field, case sensitive.<br></br><br></br>**Regex** - Treats the text as that was typed in the File Name field as regex. Will look for any files, in all subdirectories of the provided Folder Name, that match the regex.|
+|**Upload File to Slack?**|Determines whether or not the file(s) you're looking for to conditionally send the message should get uploaded to Slack. Defaults to no.|
+|**Slack Token**|The Bot User Oauth Token that is used to programmatically send messages by your specific application.|
+
 
 ## Troubleshooting
 Having problems with the Slack Blueprints? If these don't resolve your issues, reach out to support!
@@ -137,6 +182,9 @@ When this error occurs, users listed under Users to Notify will show up as `<@>`
 `The server responded with: {'ok': False, 'error': 'invalid_auth'}`
 
 The Slack Token that was provided is incorrect. Follow the steps [above](#accessing-the-slack-bot-token) to resolve.
+## Helpful Links
+
+[Slack Python Documentation](https://slack.dev/python-slackclient/)
 
 ## Additional Notes
 1. The Slack Blueprints have not been tested to work with shared channels or guest user accounts in your Slack workspace.
