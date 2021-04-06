@@ -76,9 +76,30 @@ If you still have trouble with Shipyard being able to access data from internal 
 
 ## How much does Shipyard cost?
 
-Our plans start at $50/month. Each plan is fully featured and capable of automating the most complex workflows. These plans scale based on the number of users in your organization, the overall runtime across all your Vessels, and the overall quantity of data that you upload.
+Our team plan starts at $50/month and scales based on the number of users in your organization, the overall runtime across all your Vessels/Fleets, and the overall quantity of data that you upload.
+
+The goal with our pricing is to more advantageous for you than running and maintaining your own servers 24/7, even though you might only end up using those servers <10% of the time.
 
 For a more detailed overview, you can look at the [latest plans](https://www.shipyardapp.com/pricing).
+
+To see your organization's usage for the current billing period, you can view the [Usage Dashboard](reference/admin/usage-dashboard.md).
+
+## How do you calculate runtime?
+
+Shipyard charges for the cumulative time that your scripts take to run on our infrastructure, regardless of the final status of the job. You are not charged for any time delays between [automatic retries](reference/settings/guardrails.md), but each retry will have it's own runtime associated to it. On your invoice, we bill per second, with each Vessels runtime rounded to the nearest second. Below are a few examples to demonstrate this calculation.
+
+Assumptions:
+- Process A always takes 1hr
+- Process B always takes 10m
+- Process C always takes 1m
+
+Examples:
+- You have Process A scheduled to run at 2:00pm and Process B scheduled to run at 4:00pm. Everything will finish running at 4:10pm. Total runtime is 1h 10m.
+- Shipyard allows you to link together Process A and Process B as a Fleet, so that as soon as Process A completes, Process B will immediately run. If you ran Process A at 2:00pm, Process B will start running at 3:00pm and finish at 3:10pm. Total runtime is 1h 10m.
+- You run three instances of Process A, in parallel, but still only need to run Process B once after both Process A jobs have completed. If you run Process A three times at 2:00pm, all instances would complete at 3:00pm and kick off Process B which would finish at 3:10pm. Total runtime is calculated as 3h 10m, even though the Fleet only ran over the course of 1h 10m.
+- You run Process C with guardrails to retry itself 10x upon failure, with 5m between each retry. Process C starts running at 8:00am and fails every time. Process C finishes running at 8:55am, with a total runtime of 10m.
+- You run Process C with guardrails to retry itself 10x upon failure, with 5m between each retry. Process C starts running at 8:00am and succeeds after the 3rd time. Process C finishes running at 8:13am, with a total runtime of 3m.
+
 
 ## I have another question!
 
