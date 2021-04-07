@@ -13,7 +13,7 @@ keywords:
 
 ## Definition
 
-The Git connection allows you to sync with code that lives in an external git version control platform \(e.g. Github\). This connection consists of 3 components:
+The Git connection allows you to sync with code that lives in an external git version control platform \(e.g. GitHub\). This connection consists of 3 components:
 
 - **Repo** - Select the repository where your code lives.
 - **Code Source** - Select the branch or tag that contains the code you want to use.
@@ -23,7 +23,7 @@ At runtime, the contents of this repository and branch/tag will be cloned, ensur
 
 `git clone --branch branch-name repo-url`
 
-The Git connection is only available after setting up a [Github Integration](../admin/integrations/github-integration.md).
+The Git connection is only available after setting up a [GitHub Integration](../admin/integrations/github-integration.md).
 
 ## Accessing Code from Git
 
@@ -35,7 +35,7 @@ By default, your code is cloned into a new folder with the repo name. This mirro
 
 ### Unpack into Current Working Directory
 
-If you select the option to "Unpack into Current Working Directory", your Github repository contents will be available in the home directory. Your **file to run** _will not_ need to include a folder name, unless the file exists in a nested folder structure.
+If you select the option to "Unpack into Current Working Directory", your GitHub repository contents will be available in the home directory. Your **file to run** _will not_ need to include a folder name, unless the file exists in a nested folder structure.
 
 ![](../../.gitbook/assets/no_folder_file_to_run.png)
 
@@ -55,10 +55,10 @@ You can use the [platform environment variable](../shipyard-environment-variable
 
 ## Additional Notes
 
-1. The git connection only supports Github at the moment.
-2. The organization source will not be listed as part of the repo. If you have multiple organizations synced with the [Github Integration](../admin/integrations/github-integration.md), there is a potential to display multiple repos with the same name.
+1. The git connection only supports GitHub at the moment.
+2. The organization source will not be listed as part of the repo. If you have multiple organizations synced with the [GitHub Integration](../admin/integrations/github-integration.md), there is a potential to display multiple repos with the same name.
 
 ## Learn More
 
-- [Github Code Sync Announcement](https://www.shipyardapp.com/blog/automating-github-code-sync/)
-- [Getting Started with Github Code Sync](https://www.shipyardapp.com/blog/automate-deployment-github-code/)
+- [GitHub Code Sync Announcement](https://www.shipyardapp.com/blog/automating-github-code-sync/)
+- [Getting Started with GitHub Code Sync](https://www.shipyardapp.com/blog/automate-deployment-github-code/)

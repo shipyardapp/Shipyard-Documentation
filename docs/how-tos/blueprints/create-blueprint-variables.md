@@ -18,7 +18,7 @@ keywords:
 
 ## Overview
 
-To create an effective Blueprint, you'll need to add multiple [Blueprint Variables](../../reference/inputs/blueprint-variables.md) that a user can fill out on the [Inputs tab](../../reference/inputs/vessel-inputs.md) while building a Vessel. The data from these Blueprint Variables will then pass directly to the code every time the Vessel runs. This how to guide will walk you through the steps to create these Blueprint Variables.
+To create an effective Blueprint, you'll need to add multiple [Blueprint Variables](../../reference/inputs/blueprint-variables.md) that a user can fill out on the [Inputs tab](../../reference/inputs/vessel-inputs.md) while building a Vessel. The data from these Blueprint Variables will then pass directly to the code as environment variables every time the Vessel runs. This how to guide will walk you through the steps to create these Blueprint Variables.
 
 ## Steps
 
