@@ -110,14 +110,12 @@ module.exports = {
 					sidebarPath: require.resolve('./sidebars.js'),
 					routeBasePath: '/',
 					// Please change this to your repo.
-					editUrl:
-					'https://github.com/shipyardapp/Shipyard-Documentation/edit/master/',
+					editUrl: 'https://github.com/shipyardapp/Shipyard-Documentation/edit/master/',
 				},
 				blog: {
 					showReadingTime: true,
 					// Please change this to your repo.
-					editUrl:
-					'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+					editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/blog/',
 				},
 				theme: {
 					customCss: require.resolve('./src/css/custom.css'),
