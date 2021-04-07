@@ -41,7 +41,7 @@ A required high-level choice that helps provide validation for the user input. T
 - **Boolean** - Lets the user select either a `TRUE` or `FALSE` value in the form of a checkbox.
 - **Date** - Lets the user provide a date, using a date selector, in the `YYYY-MM-DD` format.
 - **Select -** Lets a Blueprint creator define a restricted set of valid values as Select Options. These values contain both a Display Name, shown to the user, and an Internal Value, passed to the code. Requires at least one option.
-- **Password** - Allows the user to provide a string that gets hidden by default.
+- **Password** - Allows the user to provide a string that gets hidden by default. Upon saving, this data will not be sent to the UI and will show as `(hidden)`. This behavior is similar to how [environment variables](../requirements/environment-variables.md) are handled.
 
 :::caution
 Regardless of which variable type is selected, the user input will always passed back to your code as a string. Your code will need to appropriately translate the input into the required data type.

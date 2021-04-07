@@ -1,6 +1,6 @@
 module.exports = {
   docs: {
-    'Overview': ['introduction','documentation-usage','glossary','faqs','changelog'],
+    'Overview': ['introduction','documentation-usage','glossary','faqs','troubleshooting','changelog'],
     '📚 Reference': [
       'reference/organizations',
       'reference/projects',

@@ -18,7 +18,7 @@ keywords:
 If you find yourself needing to update existing code, add new variables, or even update external package versions, you'll likely want to edit an existing Blueprint. This how to guide will walk you through the steps to edit a Blueprint.
 
 :::note
-Any edits made to a Blueprint will apply to every Vessel built with that Blueprint. Make sure that your changes won't cause any issues.
+Any edits made to a Blueprint will apply to every Dependent Vessel for a Blueprint. Make sure that your changes won't cause any issues.
 :::
 
 ## Steps

@@ -18,7 +18,9 @@ Blueprints provide a way for technical users to create a reusable piece of code 
 
 All Blueprints are built using Code. You must select a supported language and provide the necessary code, arguments, environment variables, and packages necessary to make the Blueprint usable. Additionally, you can create [Blueprint Variables](inputs/blueprint-variables.md) that users fill out on the [Inputs](inputs/inputs-overview.md) tab when they are setting up a new Vessel.
 
-As a Blueprint author or editor, you are in charge of writing the code that runs for the users of your Blueprint. You can update and manage the underlying code, making updates in bulk that can affect hundreds of scripts.
+When a Vessel is built with a Blueprint, it is considered to be a Dependendent Vessel for that Blueprint because it depends on the underlying structure and code. All dependent Vessels for a Blueprint, across all projects, can be viewed on the Dependent Vessels tab, giving a high level of visibility into status and usage of reusable solutions.
+
+As a Blueprint author or editor, you are in charge of writing the code that runs for the users of your Blueprint. You can update and manage the underlying code, making updates in bulk that will affect hundreds of dependent Vessels.
 
 ## Components
 

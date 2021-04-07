@@ -23,6 +23,18 @@ The graph on the individual Fleet Log page shows a Gantt chart view of the order
 
 The table below shows all of the [Vessel Logs](vessel-logs.md) that were created and run as a part of the current Fleet. You can view more information about the individual Vessel Log by clicking on the ID or the Open action.
 
+### Live Update
+
+If a log has a status of *Scheduled* or *Running*, the individual Log page will automatically refresh every few seconds to show:
+
+- Current Fleet Status
+- Current Duration
+- Live Gantt Chart Updates
+
+While the Fleet is actively running, you can click into an Indivudal [Vessel Log](vessel-logs.md) that's currently running and click **Stop Voyage** to terminate the voyage, thus terminating all downstream Vessels in the Fleet.
+
+Once the Fleet has finished running, the page will no longer automatically refresh.
+
 ## Screenshots
 
 ![Fleet Logs Page](../../.gitbook/assets/image_73.png)

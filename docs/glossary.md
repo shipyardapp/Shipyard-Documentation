@@ -20,6 +20,8 @@ keywords:
 
 [**Vessels**](/reference/vessels) are built using either [Blueprints](/reference/blueprints) or [Code](/reference/code/code-overview). In other applications, these may be referenced as tasks, jobs, or steps.
 
+**Dependent Vessels** - Vessels that are built on a specific Blueprint. They depend on the underlying code and structure of the Blueprint.
+
 [**Fleets**](/reference/fleets) are built by connecting multiple Vessels together. In other applications, these may be referenced as flows, workflows, or DAGs.
 
 **Paths** are the lines that connect Vessels together in a Fleet, evaluating the status of the connected Vessel.
