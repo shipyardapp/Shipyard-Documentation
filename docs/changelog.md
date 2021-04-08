@@ -20,9 +20,34 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 ## Features On Deck
 
-- Enhanced Blueprint Library Integrations
 - User Flow Improvements
 - Enhanced Fleet Creation
+
+## 4/8/2021
+
+### Enhancements
+
+- Added in Blueprint Library usage read only ability to all Organizations.
+- Blueprint Password input values are no longer sent to the frontend.
+
+## 3/30/2021
+
+### Enhancements
+
+- Added auto refreshing to the Fleet Run page.
+- Added Timezone information to the Triggers tab for Vessels and Fleets.
+
+## 3/29/2021
+
+### Bug Fixes
+
+- Fixed bug where writing to subdirectories of a Git clone would fail with invalid permissions.
+
+## 3/16/2021
+
+### New Features
+
+- Added `gpg` binary available to all Voyages.
 
 ## 3/10/2021
 
