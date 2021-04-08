@@ -7,7 +7,7 @@ module.exports = {
 	baseUrl: baseURL,
 	onBrokenLinks: 'throw',
 	onBrokenMarkdownLinks: 'throw',
-	favicon: 'img/favicon.ico',
+	favicon: baseURL + 'img/favicon.ico',
 	organizationName: 'Shipyard', // Usually your GitHub org/user name.
 	projectName: 'Shipyard-Documentation', // Usually your repo name.
 	scripts: [
