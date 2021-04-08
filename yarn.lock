@@ -1364,7 +1364,7 @@
     joi "^17.4.0"
     sitemap "^6.3.6"
 
-"@docusaurus/preset-classic@2.0.0-alpha.72":
+"@docusaurus/preset-classic@^2.0.0-alpha.72":
   version "2.0.0-alpha.72"
   resolved "https://registry.yarnpkg.com/@docusaurus/preset-classic/-/preset-classic-2.0.0-alpha.72.tgz#8f20437207d53718387676cddccdb8d6f2eaf055"
   integrity sha512-Z5XKcgyrZWyUvqQZ7cAJ+E3rHkXZPRo8/23vOV5f/5sM7HeW871e+FU37RXIEFu8E8fhpCgQQ6FPEVMyiVS7Uw==
