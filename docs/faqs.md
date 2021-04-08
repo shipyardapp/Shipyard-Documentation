@@ -71,6 +71,7 @@ If you need Shipyard to connect to your database which is locked down behind lay
 - 54.190.66.63
 - 52.42.73.100
 - 44.231.239.186
+- 44.225.245.149
 
 If you still have trouble with Shipyard being able to access data from internal systems or 3rd parties, reach out to [support](mailto:support@shipyardapp.com).
 
