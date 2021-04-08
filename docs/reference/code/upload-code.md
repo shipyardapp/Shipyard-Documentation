@@ -21,7 +21,7 @@ Shipyard only supports uploading and storing a single file per Vessel. If you ha
 
 ## Screenshots
 
-![](../../.gitbook/assets/upload_code.png)
+![](../../.gitbook/assets/image_1061.png)
 
 ## Additional Notes
 
