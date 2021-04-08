@@ -125,6 +125,7 @@ module.exports = {
       'blueprint-library/data-manipulation',
       'blueprint-library/dbt',
       'blueprint-library/dropbox',
+      'blueprint-library/email',
       'blueprint-library/file-manipulation',
       'blueprint-library/ftp',
       'blueprint-library/google-bigquery',
