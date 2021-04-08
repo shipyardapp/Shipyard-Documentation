@@ -1,26 +1,38 @@
-var baseURL = '/docs/';
+var BASE_URL = '/docs/';
 
 module.exports = {
 	title: 'Shipyard Documentation',
 	tagline: 'Detailed documentation and guides to help data teams use Shipyard for their data operations.',
 	url: process.env.SHIPYARD__DOCUSAURUS_URL || 'https://www.shipyardapp.com/',
-	baseUrl: baseURL,
+	baseUrl: BASE_URL,
 	onBrokenLinks: 'throw',
 	onBrokenMarkdownLinks: 'throw',
-	favicon: baseURL + 'img/favicon.ico',
+	favicon: BASE_URL + 'img/favicon.ico',
 	organizationName: 'Shipyard', // Usually your GitHub org/user name.
 	projectName: 'Shipyard-Documentation', // Usually your repo name.
 	scripts: [
 		{
-			src: baseURL + 'js/segment.js',
+			src: BASE_URL + 'js/segment.js',
 		},
 	],
 	themeConfig: {
+		algolia: {
+			apiKey: '2030b32cbbe6b44fceed15711cd0ed4c',
+			indexName: 'shipyardapp',
+
+			// Optional: see doc section bellow
+			// contextualSearch: true,
+
+			// Optional: Algolia search parameters
+			searchParameters: {},
+
+			//... other Algolia params
+		},
 		navbar: {
 			title: 'Shipyard',
 			logo: {
 				alt: 'Shipyard Logo',
-				src: 'img/logo.svg',
+				src: BASE_URL + 'img/logo.svg',
 			},
 			items: [
 				{
@@ -39,18 +51,6 @@ module.exports = {
 				//   position: 'right',
 				// },
 			],
-		},
-		algolia: {
-			apiKey: '2030b32cbbe6b44fceed15711cd0ed4c',
-			indexName: 'shipyardapp',
-
-			// Optional: see doc section bellow
-			contextualSearch: true,
-
-			// Optional: Algolia search parameters
-			searchParameters: {},
-
-			//... other Algolia params
 		},
 		footer: {
 			style: 'dark',
@@ -130,7 +130,9 @@ module.exports = {
 	],
 	plugins: [
 		'plugin-image-zoom',
-		['@docusaurus/plugin-client-redirects',
+
+		[
+			'@docusaurus/plugin-client-redirects',
 			{
 				redirects: [
 					{
