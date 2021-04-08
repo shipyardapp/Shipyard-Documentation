@@ -1,0 +1,33 @@
+---
+id: shipyard-url-structures
+title: Shipyard URL Structures
+hide_title: true
+description: Information about how URLs in the Shipyard platform are automatically generated with IDs.
+keywords:
+  - urls
+  - structure
+---
+
+# Shipyard URL Structures
+
+## Definition
+
+All URLs within Shipyard follow a consistent format that's built on internal IDs and names. When used in combination with the [Shipyard Environment Variables](shipyard-environment-variables.md), this can be a useful way to link a user directly to an area of the platform that you want them to view, edit, or run manually.
+
+Below is a list of the most common URL structures that may be needed.
+
+| Purpose                              | URL Structure                                                                                      |
+| :----------------------------------- | :------------------------------------------------------------------------------------------------- |
+| **View All Projects**                | https://app.shipyardapp.com/{org_name}/projects                                                   |
+| **View all Blueprints**              | https://app.shipyardapp.com/{org_name}/blueprints                                                 |
+| **View a Single Blueprint**          | https://app.shipyardapp.com/{org_name}/blueprints/{blueprint_id}                                 |
+| **View Vessels in Single Project**   | https://app.shipyardapp.com/{org_name}/projects/{project_id}/vessels                             |
+| **View Fleets for a Single Project** | https://app.shipyardapp.com/{org_name}/projects/{project_id}/fleets                              |
+| **View Logs for a Single Fleet**     | https://app.shipyardapp.com/{org_name}/projects/{project_id}/fleets/{fleet_id}/logs             |
+| **View Individual Log for a Fleet**  | https://app.shipyardapp.com/{org_name}/projects/{project_id}/fleets/{fleet_id}/logs/{log_id}   |
+| **View Logs for a Single Vessel**    | https://app.shipyardapp.com/{org_name}/projects/{project_id}/vessels/{vessel_id}/logs           |
+| **View Individual Log for a Vessel** | https://app.shipyardapp.com/{org_name}/projects/{project_id}/vessels/{vessel_id}/logs/{log_id} |
+
+## Additional Notes
+
+1. Shipyard first checks to verify that the user visiting the page has access to the underlying content. If not, they will be redirected to the login screen.
