@@ -22,18 +22,6 @@ module.exports = {
 				alt: 'Shipyard Logo',
 				src: 'img/logo.svg',
 			},
-			// algolia: {
-			//   apiKey: 'YOUR_API_KEY',
-			//   indexName: 'YOUR_INDEX_NAME',
-
-			//   // Optional: see doc section bellow
-			//   contextualSearch: true,
-
-			//   // Optional: Algolia search parameters
-			//   searchParameters: {},
-
-			//   //... other Algolia params
-			// },
 			items: [
 				{
 					to: '/',
@@ -51,6 +39,18 @@ module.exports = {
 				//   position: 'right',
 				// },
 			],
+		},
+		algolia: {
+			apiKey: '2030b32cbbe6b44fceed15711cd0ed4c',
+			indexName: 'shipyardapp',
+
+			// Optional: see doc section bellow
+			contextualSearch: true,
+
+			// Optional: Algolia search parameters
+			searchParameters: {},
+
+			//... other Algolia params
 		},
 		footer: {
 			style: 'dark',
