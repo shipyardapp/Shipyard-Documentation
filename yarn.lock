@@ -76,7 +76,7 @@
     "@algolia/requester-common" "4.8.6"
     "@algolia/transporter" "4.8.6"
 
-"@algolia/client-search@4.8.6":
+"@algolia/client-search@4.8.6", "@algolia/client-search@^4.5.1":
   version "4.8.6"
   resolved "https://registry.yarnpkg.com/@algolia/client-search/-/client-search-4.8.6.tgz#1ca3f28c04ef4120b0563a293b30fcfe1b3fd1d0"
   integrity sha512-vXLS6umL/9G3bwqc6pkrS9K5/s8coq55mpfRARL+bs0NsToOf77WSTdwzlxv/KdbVF7dHjXgUpBvJ6RyR4ZdAw==
@@ -1364,7 +1364,7 @@
     joi "^17.4.0"
     sitemap "^6.3.6"
 
-"@docusaurus/preset-classic@2.0.0-alpha.72":
+"@docusaurus/preset-classic@^2.0.0-alpha.72":
   version "2.0.0-alpha.72"
   resolved "https://registry.yarnpkg.com/@docusaurus/preset-classic/-/preset-classic-2.0.0-alpha.72.tgz#8f20437207d53718387676cddccdb8d6f2eaf055"
   integrity sha512-Z5XKcgyrZWyUvqQZ7cAJ+E3rHkXZPRo8/23vOV5f/5sM7HeW871e+FU37RXIEFu8E8fhpCgQQ6FPEVMyiVS7Uw==
@@ -1794,7 +1794,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*":
+"@types/react@*", "@types/react@>= 16.8.0 < 18.0.0":
   version "17.0.3"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.3.tgz#ba6e215368501ac3826951eef2904574c262cc79"
   integrity sha512-wYOUxIgs2HZZ0ACNiIayItyluADNbONl7kt8lkLjVK8IitMH5QMyAh75Fwhmo37r1m7L2JaFj03sIfxBVDvRAg==
