@@ -32,9 +32,7 @@ values={[
 <TabItem value="project">
 
 1. Navigate to the project of your choice.
-2. On the main screen, you'll be able to visually see all of the Vessels that have been built under that project. The left-most column will show the last status for each given Vessel.
-3. Filter by status by clicking the filter icon (![Filter Icon](../../.gitbook/assets/filter-icon.png)) to the right of the column header.
-4. Select the status\(es\) you want to view and click **OK**. This will allow you to see all Vessels whose last run matched the status\(es\) you selected.
+2. On the main screen, you'll be able to visually see all of the Vessels that have been built under that project. The left-most column will show the last 8 statuses for each given Vessel.
 
 If you want to assess the performance of a single Vessel, you'll need to dive into the **Vessel Level** tab.
 </TabItem>

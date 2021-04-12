@@ -48,7 +48,7 @@ In a success notification, a button will appear to **View Results**. This will d
 
 Currently, you will only receive success notifications when a Vessel or Fleet was triggered [On-Demand](../triggers/on-demand-triggers.md).
 
-### Errors Notification
+### Error Notification
 
 In an error notification, a button will appear to **Investigate Issue**. This will take you directly to the [Log](../logs/logs-overview.md) where the error occured so that you can troubleshoot effectively.
 
