@@ -14,7 +14,16 @@ keywords:
 
 ## Definition
 
-**Status** refers to the final outcome of a single run for a Vessel or Fleet, tied to an individual [log](../logs/logs-overview.md). 
+**Status** refers to the final outcome of a single run for a Vessel or Fleet, tied to an individual [log](../logs/logs-overview.md).
+
+### Status Column
+The Status column for Vessels and Fleets will show the last 8 completed statuses so you can assess performance at a glance. This column will never show scheduled, running, or retrying statuses. The last 8 statuses should be read from left-to-right, with the right-most circle indicating the most recent status.
+
+![Last 8 Statuses](../../.gitbook/assets/shipyard_2021_04_12_16_55_12.png)
+
+- A green circle indicates a status of Success.
+- A red circle indicates a status of Errored or Terminated.
+- A white circle with a grey border indicates a lack of data. This only occurs when the Vessel or Fleet has less than 8 runs in total.
 
 ### Vessel Statuses
 The following statuses are possible for Vessels:
