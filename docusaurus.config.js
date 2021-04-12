@@ -28,6 +28,10 @@ module.exports = {
 
 			//... other Algolia params
 		},
+    googleAnalytics: {
+      trackingID: 'UA-142749850-1',
+      anonymizeIP: true,
+    },
 		navbar: {
 			title: 'Shipyard',
 			logo: {
@@ -130,7 +134,6 @@ module.exports = {
 	],
 	plugins: [
 		'plugin-image-zoom',
-
 		[
 			'@docusaurus/plugin-client-redirects',
 			{
