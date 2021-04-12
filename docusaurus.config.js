@@ -134,7 +134,6 @@ module.exports = {
 	],
 	plugins: [
 		'plugin-image-zoom',
-    '@docusaurus/plugin-google-analytics',
 		[
 			'@docusaurus/plugin-client-redirects',
 			{
