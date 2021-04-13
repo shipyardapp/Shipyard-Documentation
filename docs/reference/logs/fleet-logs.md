@@ -35,11 +35,26 @@ While the Fleet is actively running, you can click into an Indivudal [Vessel Log
 
 Once the Fleet has finished running, the page will no longer automatically refresh.
 
+### Metadata
+
+| Name                                                       | Definition                                                              |
+| :--------------------------------------------------------- | :---------------------------------------------------------------------- |
+| **Fleet Log ID**                                                 | UUIDv4 associated with the individual Fleet run.                              |
+| [**Status**](../other-functions/status.md) | The last known information about a run.                                 |
+| [**Trigger**](../triggers/triggers-overview.md)                | What type of Trigger generated this log.                                |
+| **Vessels**                                                | The number of Vessels connected in the current run of the Fleet.                                |
+| **Duration**                                               | The total length of time that the Fleet ran for.                       |
+| **Start Time**                                             | The timestamp of when the run started.                         |
+| **End Time**                                               | The timestamp of when the run ended.                                    |
+
+
 ## Screenshots
 
 ![Fleet Logs Page](../../.gitbook/assets/image_73.png)
 
-![Individual Fleet Log](../../.gitbook/assets/image_82.png)
+![Individual Fleet Log](../../.gitbook/assets/shipyard_2021_04_12_16_24_21.png)
+
+![Table of Vessel Logs](../../.gitbook/assets/shipyard_2021_04_12_16_28_47.png)
 
 ## Additional Notes
 

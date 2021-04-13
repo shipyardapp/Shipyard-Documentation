@@ -23,6 +23,14 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - User Flow Improvements
 - Enhanced Fleet Creation
 
+## 4/13/2021
+
+### Enhancements
+
+- Added the most recent eight status on the Vessels and Fleet Runs tables.
+- Moved the Fleet Run Voyages under the Fleet Run in routing.
+- Removed Shipyard support users from billing in the Usage Dashboard and in Stripe.
+
 ## 4/8/2021
 
 ### Enhancements

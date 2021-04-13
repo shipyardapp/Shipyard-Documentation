@@ -83,7 +83,8 @@ module.exports = {
         Fleets: [
           'how-tos/fleets/create-fleet',
           'how-tos/fleets/delete-fleet',
-          'how-tos/fleets/see-all-files'
+          'how-tos/fleets/see-all-files',
+          'how-tos/fleets/assess-fleet-performance'
         ],
         Projects: [
           'how-tos/projects/create-project',

@@ -42,24 +42,22 @@ Once the Vessel has finished running, the page will no longer automatically refr
 
 | Name                                                       | Definition                                                              |
 | :--------------------------------------------------------- | :---------------------------------------------------------------------- |
+| **Vessel Log ID**                                                 | UUIDv4 associated with the individual Vessel run.                              |
 | [**Status**](../other-functions/status.md) | The last known information about a run.                                 |
-| **Log ID**                                                 | UUIDv4 associated with the individual run.                              |
 | [**Trigger**](../triggers/triggers-overview.md)                | What type of Trigger generated this log.                                |
-| [**Blueprint** ](../blueprints.md)                                             | The Blueprint that the Vessel is built from.                            |
-| **Created At**                                             | The timestamp of when the run was originally scheduled within Shipyard. |
-| **Expected Start**                                         | The timestamp of when the run was scheduled to start.                   |
-| **Start Time**                                             | The timestamp of when the run actually started.                         |
-| **End Time**                                               | The timestamp of when the run ended.                                    |
-| **Time to Start**                                          | The duration between the Expected Start and the Start Time              |
-| **Duration**                                               | The total length of time that the Vessel ran for.                       |
 | **Retries**                                                | The number of times the run was retried.                                |
 | **Exit Code**                                              | The exit code that the script returned upon completion.                 |
+| **Duration**                                               | The total length of time that the Vessel ran for.                       |
+| **Start Time**                                             | The timestamp of when the run started.                         |
+| **End Time**                                               | The timestamp of when the run ended.                                    |
+
+
 
 ## Screenshots
 
 ![Logs Tab for a Vessel](../../.gitbook/assets/image_23.png)
 
-![Individual Log for a Vessel](../../.gitbook/assets/image_90.png)
+![Individual Log for a Vessel](../../.gitbook/assets/shipyard_2021_04_12_16_21_44.png)
 
 ## Additional Notes
 
