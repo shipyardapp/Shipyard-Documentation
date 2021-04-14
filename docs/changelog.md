@@ -23,6 +23,18 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - User Flow Improvements
 - Enhanced Fleet Creation
 
+## 4/14/2021
+
+### Enhancements
+
+- Updated the Logs table to show explicit "Scheduled" indicators.
+
+### Bug Fixes
+
+- Fixed issue where update Select variable default option would not save.
+- Fixed issue where Blueprint Library Blueprints were not available to use when
+building a custom Vessel.
+
 ## 4/13/2021
 
 ### Enhancements
