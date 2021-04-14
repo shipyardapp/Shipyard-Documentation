@@ -33,7 +33,7 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 - Fixed issue where update Select variable default option would not save.
 - Fixed issue where Blueprint Library Blueprints were not available to use when
-build a custom Vessel.
+building a custom Vessel.
 
 ## 4/13/2021
 
