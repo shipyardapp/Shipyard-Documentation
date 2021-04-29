@@ -23,6 +23,13 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - User Flow Improvements
 - Enhanced Fleet Creation
 
+## 4/28/2021
+
+### Enhancements
+
+- Added the ability to add image URLs to Blueprints that will render during the selection stage when building a Vessel.
+- Added a restriction where a user cannot create a Fleet unless there are at least two (minimum required) Vessels in a Project.
+
 ## 4/14/2021
 
 ### Enhancements
