@@ -23,6 +23,24 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - User Flow Improvements
 - Enhanced Fleet Creation
 
+## 5/5/2021
+
+### New Feature
+
+- Update the Fleet Log Gantt chart to be interactive.
+
+### Enhancements
+
+- Updated the Save and Next Step button bars to be sticky.
+- Update Projects dropdown on sider to be just a single Projects link.
+- Update Blueprint Library card names from truncating.
+- Rename "Vessels" tab on Fleets to "Fleet Builder".
+- Switched order of tabs on the Blueprints page.
+
+### Bug Fixes
+
+- Fixed Edit Vessel button not showing up on log page.
+
 ## 4/28/2021
 
 ### Enhancements
