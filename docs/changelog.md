@@ -27,6 +27,12 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 ### New Feature
 
+- Added Userflow widget for feature walkthroughs in the app.
+
+## 5/5/2021
+
+### New Feature
+
 - Update the Fleet Log Gantt chart to be interactive.
 
 ### Enhancements
