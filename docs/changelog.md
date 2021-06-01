@@ -21,7 +21,17 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 ## Features On Deck
 
 - User Flow Improvements
-- Enhanced Fleet Creation
+- Enhanced Permissions Updates
+
+## 6/1/2021
+
+### Enhancements
+
+- Update the Fleet Builder to use a new library to enable new enhancements coming
+soon.
+
+- Update Trigger permissions with access for each of On Demand (run now), Schedules,
+and webhooks.
 
 ## 5/11/2021
 
