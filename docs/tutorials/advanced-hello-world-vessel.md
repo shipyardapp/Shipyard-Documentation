@@ -16,7 +16,7 @@ import TabItem from '@theme/TabItem';
 
 ## Overview
 
-In this tutorial, you'll walk through the steps required to set up a more advanced Vessel that prints `Hello, World`. This contains many of the same steps as our [original Hello World tutorial](first-vessel-hello-world.md), with added steps to teach more features of the platform. This tutorial is only in Python \(for now\).
+In this tutorial, you'll walk through the steps required to set up a more advanced Vessel that prints `Hello, World`. This contains many of the same steps as our [original Hello World tutorial](first-vessel-with-code.md), with added steps to teach more features of the platform. This tutorial is only in Python \(for now\).
 
 By the end of the tutorial, you'll be able to:
 
