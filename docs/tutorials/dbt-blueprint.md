@@ -28,13 +28,11 @@ With this tutorial, it is assumed that:
 - You have already set up an integration with Github.
 - You are running this tutorial for the first time using the contents of the [jaffle-shop tutorial](https://docs.getdbt.com/tutorial/setting-up) or a repository with your own model definitions.
 
+If you need to reference an example dbt setup, you can view the code at our [dbt-tutorial repository](https://github.com/shipyardapp/dbt-tutorial).
+
 For more information, read [our blog post](https://www.shipyardapp.com/blog/deploying-dbt-in-the-cloud/) that covers Getting Started with dbt. You can also visit [www.getdbt.com](https://www.getdbt.com) for additional information.
 
 ## Setup
-
-:::caution
-For the sake of the this tutorial, we suggest starting off by building a Vessel inside of a Project called "Playground". You can follow [**this tutorial** ](first-project.md)to set that up.
-:::
 
 1. Add [this script](https://github.com/shipyardapp/dbt-tutorial/blob/main/execute_dbt.py) to the root directory of the GitHub repository where your dbt models live, with the file name of `execute_dbt.py`.
 2. Move your `profiles.yml` file to the root directory of the GitHub repository where your dbt models live.
