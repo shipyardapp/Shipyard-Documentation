@@ -4,7 +4,8 @@ title: Building a Blueprint with dbt (Data Build Tool)
 hide_title: true
 description: In-depth tutorial to create a Blueprint for dbt (Data Build Tool)
 keywords:
-  - great expectations
+  - dbt
+  - data build tool
   - blueprint
   - tutorial
 ---
@@ -24,9 +25,8 @@ By the end of the tutorial, you'll be able to:
 - Integrate a data model into your Fleets
 
 With this tutorial, it is assumed that:
-- You are already familiar with dbt and have an existing repository available with all of your model definitions.
 - You have already set up an integration with Github.
-- You are running this tutorial for the first time using the contents of the [jaffle-shop tutorial](https://docs.getdbt.com/tutorial/setting-up).
+- You are running this tutorial for the first time using the contents of the [jaffle-shop tutorial](https://docs.getdbt.com/tutorial/setting-up) or a repository with your own model definitions.
 
 For more information, read [our blog post](https://www.shipyardapp.com/blog/deploying-dbt-in-the-cloud/) that covers Getting Started with dbt. You can also visit [www.getdbt.com](https://www.getdbt.com) for additional information.
 
