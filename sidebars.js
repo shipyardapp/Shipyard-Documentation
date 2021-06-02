@@ -112,7 +112,7 @@ module.exports = {
     ],
     '🚀 Tutorials':[
       'tutorials/first-project',
-      'tutorials/first-vessel-hello-world',
+      'tutorials/first-vessel-with-code',
       'tutorials/advanced-code-vessel',
       'tutorials/great-expectations-blueprint',
       'tutorials/first-fleet',
