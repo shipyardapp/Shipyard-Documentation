@@ -162,8 +162,8 @@ module.exports = {
             from: ["/reference/glossary-of-terms"],
           },
           {
-            to: "tutorials/dbt-blueprint",
-            from: ["blueprint-library/dbt"], // string | string[]
+            to: "/tutorials/dbt-blueprint",
+            from: ["/blueprint-library/dbt"], // string | string[]
           },
         ],
       },
