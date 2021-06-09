@@ -21,7 +21,17 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 ## Features On Deck
 
 - User Flow Improvements
-- Enhanced Permissions Updates
+
+## 6/9/2021
+
+### Enhancements
+
+- The admin permission panel has been updated to include new permissions.
+The application throughout has been updated to more correctly reflect a User's permissions. 
+
+### Bug Fixes
+
+- Fixed bug where the Fleet's Last Statuses were not the most recent runs.
 
 ## 6/1/2021
 
