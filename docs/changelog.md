@@ -22,6 +22,20 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 - User Flow Improvements
 
+## 6/15/2021
+
+### New Feature
+
+### Enhancements
+
+- Add all newly invited users to a "Shipyard Demos" Organziation with read only
+access.
+
+### Bug Fixes
+
+- Fixed issue where you could not remove Vessels that were a part of prior Fleet Runs
+and the Vessel is no longer part of the Fleet.
+
 ## 6/9/2021
 
 ### Enhancements

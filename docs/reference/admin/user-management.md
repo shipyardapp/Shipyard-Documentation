@@ -28,19 +28,19 @@ Multiple users can be invited to the organization at the same time. Invitations 
 
 Clicking the **manage** action will lead to the [Permissions Panel](user-permissions.md) for that user.
 
-### Deleting Users
+### Removing Users
 
-Clicking the **delete** action will permanently remove that user's access from the organization.
+Clicking the **Remove** action will permanently remove that user's access from the organization.
 
 ## Screenshots
 
-![View all users in the organization.](../../.gitbook/assets/image_74.png)
+![View all users in the organization.](./UserManagementScreenshot.png)
 
 ![Invite new users to your organization.](../../.gitbook/assets/image_34.png)
 
 ## Additional Notes
 
-1. A user cannot delete themselves. That action must be performed by another Admin.
+1. A user cannot remove themselves. That action must be performed by another Admin.
 2. Users cannot be set to inactive, only deleted.
 3. New user invites expire after 72 hours.
 4. Newly invited users will not be displayed as members of your organization until they confirm their account.
