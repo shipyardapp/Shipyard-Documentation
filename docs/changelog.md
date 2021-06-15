@@ -36,6 +36,9 @@ access.
 - Fixed issue where you could not remove Vessels that were a part of prior Fleet Runs
 and the Vessel is no longer part of the Fleet.
 
+- Fixed issue where creating a new Project would not allow for Project access
+for the requesting user.
+
 ## 6/9/2021
 
 ### Enhancements
