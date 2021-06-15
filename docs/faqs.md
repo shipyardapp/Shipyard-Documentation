@@ -101,6 +101,14 @@ Examples:
 - You run Process C with guardrails to retry itself 10x upon failure, with 5m between each retry. Process C starts running at 8:00am and fails every time. Process C finishes running at 8:55am, with a total runtime of 10m.
 - You run Process C with guardrails to retry itself 10x upon failure, with 5m between each retry. Process C starts running at 8:00am and succeeds after the 3rd time. Process C finishes running at 8:13am, with a total runtime of 3m.
 
+## How does Shipyard calculate network egress?
+
+Shiyard charges $0.09 per GB of network egress data over the first 50 GB each month.
+
+## What bandwidth is provided by Shipyard?
+
+Shipyard provides network performance up to 25 Gbps.
+
 ## Can I use Shipyard to orchestrate external systems?
 Yes - absolutely! There are two options to have Shipyard orchestrate work between multiple external systems like Lambda, Cloud Functions, DBT Cloud, and Zapier.
 
