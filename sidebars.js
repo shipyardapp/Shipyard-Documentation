@@ -119,7 +119,7 @@ module.exports = {
       "tutorials/first-vessel-with-code",
       "tutorials/advanced-code-vessel",
       "tutorials/great-expectations-blueprint",
-      "tutorials/dbt-blueprint",
+      "tutorials/dbt-core-blueprint",
       "tutorials/first-fleet",
     ],
     "📦 Blueprint Library": [
@@ -129,6 +129,7 @@ module.exports = {
       "blueprint-library/azure-blob-storage",
       "blueprint-library/box",
       "blueprint-library/data-manipulation",
+      "blueprint-library/dbt-cloud",
       "blueprint-library/dropbox",
       "blueprint-library/email",
       "blueprint-library/file-manipulation",
