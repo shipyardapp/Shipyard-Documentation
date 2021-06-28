@@ -22,6 +22,13 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 - User Flow Improvements
 
+## 6/23/2021
+
+### Enhancements
+
+- Updated the Blueprint cards grids to be more responsive.
+- Updated the historical runtime charts for Fleets and Vessels.
+
 ## 6/15/2021
 
 ### New Feature

@@ -55,7 +55,7 @@ Once the Vessel has finished running, the page will no longer automatically refr
 
 ## Screenshots
 
-![Logs Tab for a Vessel](../../.gitbook/assets/image_23.png)
+![Logs Tab for a Vessel](./VesselLogs.png)
 
 ![Individual Log for a Vessel](../../.gitbook/assets/shipyard_2021_04_12_16_21_44.png)
 

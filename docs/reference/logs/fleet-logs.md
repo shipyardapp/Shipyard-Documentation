@@ -50,7 +50,7 @@ Once the Fleet has finished running, the page will no longer automatically refre
 
 ## Screenshots
 
-![Fleet Logs Page](../../.gitbook/assets/image_73.png)
+![Fleet Logs Page](./FleetLogs.png)
 
 ![Individual Fleet Log](../../.gitbook/assets/shipyard_2021_04_12_16_24_21.png)
 
