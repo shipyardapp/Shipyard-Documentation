@@ -1,8 +1,8 @@
 ---
-id: dbt-blueprint
-title: Building a Blueprint with dbt (Data Build Tool)
+id: dbt-core-blueprint
+title: Building a Blueprint with dbt Core (Data Build Tool)
 hide_title: true
-description: In-depth tutorial to create a Blueprint for dbt (Data Build Tool)
+description: In-depth tutorial to create a Blueprint for dbt Core (Data Build Tool)
 keywords:
   - dbt
   - data build tool
@@ -10,7 +10,7 @@ keywords:
   - tutorial
 ---
 
-# Building a Blueprint with dbt (Data Build Tool)
+# Building a Blueprint with dbt Core (Data Build Tool)
 
 ## Overview
 
