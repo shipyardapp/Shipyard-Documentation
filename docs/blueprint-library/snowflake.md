@@ -10,6 +10,8 @@ keywords:
   - template
   - blueprint
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # Snowflake Blueprints
 
@@ -21,15 +23,15 @@ This section is a work in progress and may be missing key details. If you need h
 
 ### Overview
 Connecting Snowflake to Shipyard requires you to have:
-1. A Snowflake account with read/write access to the data you wish to access. We recommend setting up an account specifically for Shipyard access.
-2. A warehouse to . We recommend setting up a warehouse specifically for Shipyard queries.
+1. A Snowflake account with read/write access to the database and all associated tables/views you wish to access. We recommend setting up an account specifically for Shipyard access.
+2. A warehouse that the account has access to. We recommend setting up a warehouse specifically for Shipyard queries.
 3. Shipyard IP Addresses whitelisted
-4. 
 
-### Creating a Snowflake Account for Shipyard
-This guide will walk you through the process required to create a unique account for Shipyard to access your Snowflake Database.
 
-:::note
+### Creating a Snowflake Role and User for Shipyard
+This guide will walk you through the process required to create a unique role and user account for Shipyard to access your Snowflake Database.
+
+:::caution
 You can always use your own credentials, but this gives you less control over security logging and data access.
 :::
 
@@ -37,59 +39,53 @@ You can always use your own credentials, but this gives you less control over se
 2. Open a new worksheet. Select the checkbox to run "All Queries".
 3. Paste the following script in the worksheet, changing the variables at the top as needed.
 
-```
-begin;
+```sql
+BEGIN;
  
-   -- create variables for user / password / role / warehouse / database (needs to be uppercase for objects)
-   set role_name = 'SHIPYARD_ROLE';
-   set user_name = 'SHIPYARD_USER';
-   set user_password = 'randompassword789';
-   set warehouse_name = 'SHIPYARD_WAREHOUSE';
-   set database_name = 'SHIPYARD_DATABASE';
+   -- create variables for role, user, and password (values must be in ALL_CAPS)
+   SET ROLE_NAME = 'SHIPYARD_ROLE';
+   SET USER_NAME = 'SHIPYARD_USER';
+   SET USER_PASSWORD = 'randompassword789';
 
-   -- change role to securityadmin for user / role steps
-   use role securityadmin;
+   -- change role to securityadmin for set role and user
+   USE ROLE securityadmin;
  
    -- create role for shipyard
-   create role if not exists identifier($role_name);
-   grant role identifier($role_name) to role SYSADMIN;
+   CREATE ROLE IF NOT EXISTS identifier($role_name);
+   GRANT ROLE identifier($role_name) TO ROLE SYSADMIN;
  
    -- create a user for shipyard
-   create user if not exists identifier($user_name)
-   password = $user_password
-   default_role = $role_name
+   CREATE USER IF NOT EXISTS identifier($user_name)
+   PASSWORD = $user_password
+   DEFAULT_ROLE = $role_name;
+   
+   GRANT ROLE identifier($role_name) TO USER identifier($user_name);
  
-   grant role identifier($role_name) to user identifier($user_name);
- 
-   -- change role to sysadmin for database steps
-   use role sysadmin;
- 
-   -- grant shipyard access to database
-   grant ALL
-   on database identifier($database_name)
-   to role identifier($role_name);
- 
- commit; 
+ COMMIT;
 ```
 
-### Creating a Snowflake Warehouse for Shipyard
-This guide will walk you through the process required to create a unique warehouse for Shipyard to run queries against your Snowflake Database.
+### Giving the Shipyard Role Warehouse Access
+This guide will walk you through the process required to either create a unique warehouse for Shipyard to run queries against your Snowflake Database, or give the newly created Shipyard Role access to an existing warehouse.
 
-:::note
-You can always use an existing warehouse, but this may result in Shipyard contendending for resources.
-:::
+<Tabs
+defaultValue="new"
+values={[
+{label: 'Creating a New Warehouse', value: 'new'},
+{label: 'Giving Access to an Existing Warehouse', value: 'existing'},
+]}>
+<TabItem value="new">
+
+
 1. Log into your Snowflake Account.
-2. Open a new worksheet.
+2. Open a new worksheet. Select the checkbox to run "All Queries".
 3. Paste the following script in the worksheet, changing the variables at the top as needed.
-```
+```sql
 begin;
 
  -- create variables for user / password / role / warehouse / database (needs to be uppercase for objects)
    set role_name = 'SHIPYARD_ROLE';
    set user_name = 'SHIPYARD_USER';
-   set user_password = 'randompassword789';
    set warehouse_name = 'SHIPYARD_WAREHOUSE';
-   set database_name = 'SHIPYARD_DATABASE';
 
  -- change role to sysadmin for warehouse steps
    use role sysadmin;
@@ -107,10 +103,141 @@ begin;
    on warehouse identifier($warehouse_name)
    to role identifier($role_name);
 
+ -- change role to securityadmin for user updates
+   use role securityadmin;
+   
 -- set default warehouse for shipyard user
    ALTER USER IF EXISTS identifier($user_name)
-   default_warehouse = $warehouse_name;
+   SET DEFAULT_WAREHOUSE = $warehouse_name;
 
+commit;
+```
+4. Click Run.
+
+</TabItem>
+<TabItem value="existing">
+
+:::caution
+Using an existing Warehouse may result in Shipyard processes contendending for resources.
+:::
+1. Log into your Snowflake Account.
+2. Open a new worksheet. Select the checkbox to run "All Queries".
+3. Paste the following script in the worksheet, changing the variables at the top as needed.
+```sql
+begin;
+
+ -- create variables for role, user, and warehouse (values must be in ALL_CAPS)
+   set role_name = 'SHIPYARD_ROLE';
+   set user_name = 'SHIPYARD_USER';
+   set warehouse_name = 'SHIPYARD_WAREHOUSE';
+
+ -- change role to sysadmin for warehouse steps
+   use role sysadmin;
+
+-- grant shipyard role access to warehouse
+   grant USAGE
+   on warehouse identifier($warehouse_name)
+   to role identifier($role_name);
+
+ -- change role to securityadmin for user updates
+   use role securityadmin;
+   
+-- set default warehouse for shipyard user
+   ALTER USER IF EXISTS identifier($user_name)
+   SET DEFAULT_WAREHOUSE = $warehouse_name;
+
+commit;
+```
+
+4. Click Run.
+
+
+</TabItem>
+</Tabs>
+
+### Giving Snowflake Database Access to Shipyard User
+This guide will walk you through the process required to give database access to a Shipyard account so you can run queries against it.
+
+1. Log into your Snowflake Account.
+2. Open a new worksheet.
+3. Paste the following script in the worksheet, changing the variables at the top as needed. This script will grant all privledges to all the current and future tables/views that exist within the specified database. 
+
+```sql
+begin;
+
+ -- create variables for role and database (values must be in ALL_CAPS)
+   set role_name = 'SHIPYARD_ROLE';
+   set database_name = 'DEMO_DB';
+
+-- grant shipyard access to database
+   grant ALL
+   on database identifier($database_name)
+   to role identifier($role_name);
+
+   grant all
+   on all tables
+   in database identifier($database_name)
+   to role identifier($role_name);
+   
+   grant all
+   on all views
+   in database identifier($database_name)
+   to role identifier($role_name);
+   
+   grant all
+   on future tables
+   in database identifier($database_name)
+   to role identifier($role_name);
+   
+   grant all
+   on future views
+   in database identifier($database_name)
+   to role identifier($role_name);
+   
+commit;
+```
+
+:::note
+You can adjust this script as needed if you want Shipyard to have stricter access to your database.
+:::
+
+### Whitelisting Shipyard IP Addresses
+
+
+<Tabs
+defaultValue="new"
+values={[
+{label: 'Creating a New Network Policy', value: 'new'},
+{label: 'Updating an Existing Network Policy', value: 'existing'},
+]}>
+<TabItem value="new">
+
+1. Log into your Snowflake Account.
+2. Open a new worksheet.
+3. Paste the following script in the worksheet
+
+```sql
+CREATE NETWORK POLICY SHIPYARD_ACCESS
+ALLOWED_IP_LIST = ('54.190.66.63', '52.42.73.100', '44.231.239.186', '44.225.245.149');
+```
+4. Click Run
+
+</TabItem>
+
+<TabItem value="existing">
+
+1. Log into your Snowflake Account.
+2. Open a new worksheet.
+3. Paste the following script in the worksheet, updating <code>{policy_name}</code> with the correct value.
+
+```sql
+ALTER NETWORK POLICY {policy_name}
+SET ALLOWED_IP_LIST = ('54.190.66.63', '52.42.73.100', '44.231.239.186', '44.225.245.149');
+```
+4. Click Run
+
+</TabItem>
+</Tabs>
 
 ## Execute Query Blueprint
 
