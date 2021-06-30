@@ -128,6 +128,7 @@ module.exports = {
       "blueprint-library/amazon-s3",
       "blueprint-library/azure-blob-storage",
       "blueprint-library/box",
+      "blueprint-library/census",
       "blueprint-library/data-manipulation",
       "blueprint-library/dbt-cloud",
       "blueprint-library/dropbox",
