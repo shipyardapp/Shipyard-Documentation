@@ -22,6 +22,16 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 - User Flow Improvements
 
+## 7/6/2021
+
+### Enhancements
+
+- Updated the Markdown styling for Blueprint previews.
+
+### Bug Fixes
+
+- Fix issue where users could not navigate away from "Something went wrong." page.
+
 ## 6/23/2021
 
 ### Enhancements
@@ -30,8 +40,6 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - Updated the historical runtime charts for Fleets and Vessels.
 
 ## 6/15/2021
-
-### New Feature
 
 ### Enhancements
 
