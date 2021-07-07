@@ -242,6 +242,7 @@ SET ALLOWED_IP_LIST = ('54.190.66.63', '52.42.73.100', '44.231.239.186', '44.225
 ## Execute Query Blueprint
 
 ### Overview
+
 Execute a query against Snowflake, without returning any of the resulting data. This Blueprint should primarily be used for queries that perform functionality other than SELECT, like  multi-step SQL jobs, or DML statements.
 
 This Blueprint is limited to executing a single query. You cannot run multiple queries separated by `;` (this is prohibited by the Snowflake Python connector). Instead, you'll have to set up multiple Vessels with this Blueprint to run one after the other.
@@ -262,9 +263,24 @@ This Blueprint is limited to executing a single query. You cannot run multiple q
 
 ## Store Query Results as CSV Blueprint
 
+Turn the results of your SQL SELECT statement into a CSV file. Extract your Snowflake data into files for easier delivery to clients and partners.
+
 ### Overview
 
 ### Variables
+
+| Variable Name     | Description                                                                                                                                                        |
+| :---------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Username**    | The Snowflake Username that has access to the table/schema/warehouse that you want to execute a query against.                     |
+| **Password**        | The password associated with your Username.|
+| **Account Name** | Typically found in the URL you use to access Snowflake, before `.snowflakecomputing.com`. If your URL was `xy12345.snowflakecomputing.com` your Account Name would be `xy12345`. For more information, read the (Snowflake Documentation)[https://docs.snowflake.com/en/user-guide/admin-account-identifier.html#label-account-name-in-your-org]               |
+| **Warehouse** |The name of the Warehouse you want your query to run in. If left blank, will use the default Warehouse associated with the Username.|
+|**Database**|The name of the Database that you want to run a query against.|
+|**Schema**|The name of the Schema you want to run a query against. If left blank, it's expected that your query will include the schema in it.|
+|**Query**|A SQL query with a SELECT statement that returns data. |
+|**Local File Name**|The file name that you want your generated CSV to have.|
+|**Local Folder Name**|The folder structure that you want your CSV to be created in. If left blank, the file will be created in the home directory.|
+|**Include Column Names as Header?**|If checked, your CSV file will include a header row with column names.|
 
 ### Screenshots
 
