@@ -242,8 +242,21 @@ SET ALLOWED_IP_LIST = ('54.190.66.63', '52.42.73.100', '44.231.239.186', '44.225
 ## Execute Query Blueprint
 
 ### Overview
+Execute a query against Snowflake, without returning any of the resulting data. This Blueprint should primarily be used for queries that perform functionality other than SELECT, like  multi-step SQL jobs, or DML statements.
+
+This Blueprint is limited to executing a single query. You cannot run multiple queries separated by `;` (this is prohibited by the Snowflake Python connector). Instead, you'll have to set up multiple Vessels with this Blueprint to run one after the other.
+
 
 ### Variables
+| Variable Name     | Description                                                                                                                                                        |
+| :---------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Username**    | The Snowflake Username that has access to the table/schema/warehouse that you want to execute a query against.                     |
+| **Password**        | The password associated with your Username.|
+| **Account Name** | Typically found in the URL you use to access Snowflake, before `.snowflakecomputing.com`. If your URL was `xy12345.snowflakecomputing.com` your Account Name would be `xy12345`. For more information, read the (Snowflake Documentation)[https://docs.snowflake.com/en/user-guide/admin-account-identifier.html#label-account-name-in-your-org]               |
+| **Warehouse** |The name of the Warehouse you want your query to run in. If left blank, will use the default Warehouse associated with the Username.|
+|**Database**|The name of the Database that you want to run a query against.|
+|**Schema**|The name of the Schema you want to run a query against. If left blank, it's expected that your query will include the schema in it.|
+|**Query**|The contents of the SQL query that you want to run. Does not support running multiple queries separated by `;`|
 
 ### Screenshots
 
@@ -262,6 +275,15 @@ SET ALLOWED_IP_LIST = ('54.190.66.63', '52.42.73.100', '44.231.239.186', '44.225
 ### Variables
 
 ### Screenshots
+
+## Troubleshooting and Debugging
+
+### Multiple SQL Statements
+`snowflake.connector.errors.ProgrammingError: 000006 (0A000): Multiple SQL statements in a single API call are not supported; use one API call per statement instead.`
+
+If your Vessel runs into this issue, you were likely trying to run a SQL query with multiple statements separated by `;`. This is not supported by the Snowflake Python connector that our Blueprint uses.
+
+To solve this issue, split out the queries you're trying to run into multiple Vessels.
 
 ## Helpful Links
 
