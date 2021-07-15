@@ -31,7 +31,7 @@ If a log has a status of *Scheduled* or *Running*, the individual Log page will 
 - Current Duration
 - Live Gantt Chart Updates
 
-While the Fleet is actively running, you can click into an Indivudal [Vessel Log](vessel-logs.md) that's currently running and click **Stop Voyage** to terminate the voyage, thus terminating all downstream Vessels in the Fleet.
+While the Fleet is actively running, you can click into an Individual [Vessel Log](vessel-logs.md) that's currently running and click **Stop Voyage** to terminate the voyage, thus terminating all downstream Vessels in the Fleet.
 
 Once the Fleet has finished running, the page will no longer automatically refresh.
 

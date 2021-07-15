@@ -43,7 +43,7 @@ All schedules will be created for the [Timezone](../other-functions/timestamps-a
 
 1. A schedule's maximum frequency is every 5 minutes. If you need to run something more frequently, please reach out to [support](mailto:support@shipyardapp.com).
 2. If a schedule is duplicated, the Vessel or Fleet will be run multiple times concurrently at the scheduled time.
-3. Selecting a schedule of `Monthly` on the 31st will only result in a run being scheduled when the month has 31 days. If you want a schedule to run at the end of every month, we suggested instead scheduling it for the 1st.
+3. Selecting a schedule of `Monthly` on the 31st will only result in a run being scheduled when the month has 31 days. If you want a schedule to run at the end of every month, we suggest instead scheduling it for the 1st.
 4. There is currently no way to create a schedule that is tied to an irregular mix of dates and times. Some examples of schedules we don't natively support, but are still possible to create within Shipyard:
    1. A schedule that only runs on specific dates, like holidays.
    2. A schedule that runs every hour except on specific days.

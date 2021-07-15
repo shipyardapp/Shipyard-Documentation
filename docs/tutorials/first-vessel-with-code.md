@@ -20,7 +20,7 @@ In this tutorial, you'll walk through the steps required to set up a very simple
 
 - Set up a Vessel with Code.
 - Write a script directly in the UI.
-- Check to verify that a Vessel ran succesfully.
+- Check to verify that a Vessel ran successfully.
 
 :::caution
 For the sake of the this tutorial, we suggest starting off by building a Vessel inside of the *Playground* Project or a project for *Testing*. You can follow [**this tutorial** ](first-project.md)to set that up.

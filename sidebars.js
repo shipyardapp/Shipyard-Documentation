@@ -19,7 +19,7 @@ module.exports = {
           "reference/admin/user-management",
           "reference/admin/user-permissions",
           {
-            Intergrations: [
+            Integrations: [
               "reference/admin/integrations/integrations-overview",
               "reference/admin/integrations/github-integration",
             ],
