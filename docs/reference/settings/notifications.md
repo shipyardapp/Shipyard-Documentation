@@ -23,7 +23,7 @@ Notifications are only sent after the final [status](../other-functions/status.m
 
 When initially creating a Vessel or Fleet, the owner's email will be added automatically. You can always add additional user emails to be notified about the Vessel, or remove your own email in place of another. Notifications are always a required field because _someone_ should always be aware if your scripts fail.
 
-:::info
+:::tip Pro Tip
 You can paste a comma-separated list of emails into the field and it will automatically separate them all.
 :::
 
@@ -71,4 +71,7 @@ If a Fleet errors out, you will only receive a notification for the Fleet, not e
 4. Notifications are only sent for 2 different event types. These event types cannot be changed at the moment.
 5. Notifications are only applied at the Vessel and Fleet level. You cannot subscribe to notifications for a Blueprint \(and therefore all dependent Vessels\).
 6. When a Fleet errors out, we will never designate which Vessel specifically errored out, as there could be multiple possibilities.
-7. We recommend adding the Shipyard email address `notifications@shipyardapp.com` to your address book to ensure that alerts are never sent to spam.
+
+:::tip Pro Tip
+We recommend adding the Shipyard email address `notifications@shipyardapp.com` to your address book to ensure that alerts are never sent to spam.
+:::

@@ -57,6 +57,14 @@ If you're uploading code directly to Shipyard, we recommend installing packages 
 
 If you're using a Git connection, we recommend including a `requirements.txt` file in the root directory of your repository. Shipyard will automatically find this file and install dependencies.
 :::
+
+:::caution
+Providing an inaccurate list of package dependencies will result in the following error when you run your script:
+
+`ModuleNotFoundError: No module named 'xxxx'`
+
+If this occurs, please checkout our [troubleshooting guide](../docs/troubleshooting.md) for help listing dependencies.
+:::
 </TabItem>
 <TabItem value='bash'>
 
