@@ -22,6 +22,21 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 - User Flow Improvements
 
+## 7/19/2021
+
+### New Feature
+
+- Added new Guardrail for Runtime Cutoff that limits the amount of time a Voyage can run.
+
+### Enhancements
+
+- Added a warning alert on mobile indicating the site is not meant for use on mobile devices.
+
+### Bug Fixes
+
+- Fixed an issue where duplicating a Vessel then immediately duplicating it again
+would cause an error.
+
 ## 7/6/2021
 
 ### Enhancements
