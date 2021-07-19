@@ -287,8 +287,32 @@ Turn the results of your SQL SELECT statement into a CSV file. Extract your Snow
 ## Upload CSV to Table Blueprint
 
 ### Overview
+Upload one or more CSV files to any table in Snowflake. With the file data, you can:
+- **Append Data** - Add the contents of your file to the end of the table.
+- **Replace Data** - Write over the entire contents of table with the contents of your file.
+- **Add Data Only if Table is Empty** - Add data to the table if no data exists.
+
+Column names are inferred from the header row of your CSV file. If the table already exists, the header values are matched to the table column names. The header names must match the existing column names in your table, otherwise the Vessel will error.
+
+Data is inserted into the table by using multiple INSERT statements. For larger datasets, we recommend building an "Execute Query"
+
+In all instances, if the table name does not already exist, a new table will be created with datatypes inferred from the CSV contents.
 
 ### Variables
+
+| Variable Name     | Description                                                                                                                                                        |
+| :---------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Username**    | The Snowflake Username that has access to the table/schema/warehouse that you want to execute a query against.                     |
+| **Password**        | The password associated with your Username.|
+| **Account Name** | Typically found in the URL you use to access Snowflake, before `.snowflakecomputing.com`. If your URL was `xy12345.snowflakecomputing.com` your Account Name would be `xy12345`. For more information, read the (Snowflake Documentation)[https://docs.snowflake.com/en/user-guide/admin-account-identifier.html#label-account-name-in-your-org]               |
+| **Warehouse** |The name of the Warehouse you want your data upload to run in. If left blank, will use the default Warehouse associated with the Username.|
+|**Database**|The name of the Database that you want to upload your data to.|
+|**Schema**|The name of the Schema you want to upload data to. If left blank, it's expected that your table name will include the schema in it.|
+|**Folder Name**|The folder structure where your CSV file lives. If left blank, it will look for a file in the home directory.|
+|**File Name Match Type**|Determines if the text in "File Name" will match exactly to a single file, or use regex to match to multiple files.|
+|**File Name**|The file name that contains the data you want uploaded.|
+|**Table Name**|Name of the table where you want data inserted. If the table doesn't already exist, it will be created.|
+|**Insertion Method**|Determines how the data in your file will be added to the table.|
 
 ### Screenshots
 
