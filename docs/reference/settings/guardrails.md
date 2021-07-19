@@ -14,9 +14,10 @@ keywords:
 ## Definition
 
 Guardrails help make sure that your Vessel runs successfully, no matter the situation. Guardrails are helpful for the following situations:
--  Avoiding a Vessel or Fleet from failing out due to smaller, unpredictable problems like timing or connection issues
--  Continuously checking for a file to be delivered
--  Polling an API until the expected status is seen
+-  Avoiding a Vessel or Fleet from failing out due to smaller, unpredictable problems like timing or connection issues.
+-  Continuously checking for a file to be delivered.
+-  Polling an API until the expected status is seen.
+-  Ensuring a Vessels runs for at most a specified amount of time.
 
 Guardrails are made up of two options:
 
@@ -28,9 +29,16 @@ Indicates the number of times that Vessels should be retried if they error out. 
 
 After a failure, the amount of time before Shipyard will try to run the Vessel again. By default, the platform will try "As Soon As Possible", but the delay can be set in increments of 5 minutes, with up to a 60 minute delay.
 
+#### Runtime Cutoff
+
+Indicates the maximum amount of time that a Vessel can run in a single attempt.
+If runtime for a single Voyage exceeds this value, the Voyage will automatically
+be terminated.
+If retries remain, the Vessel will be retried.
+
 ## Screenshots
 
-![Guardrail Settings](../../.gitbook/assets/image_2_2.png)
+![Guardrail Settings](./GuardrailsRuntimeCutoff.png)
 
 ## Additional Notes
 
