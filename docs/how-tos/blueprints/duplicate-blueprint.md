@@ -29,7 +29,7 @@ You've now successfully duplicated a Blueprint and are viewing the copy.
 :::
 
 ### Step 2 - Edit the Duplicate
-While the Blueprint has been successfully duplicated, it contains a less readible name that indicates the Blueprint it was originally a copy of. We recommend making a few adjustments before moving on.
+While the Blueprint has been successfully duplicated, it contains a less readable name that indicates the Blueprint it was originally a copy of. We recommend making a few adjustments before moving on.
 
 1. Decide on a new Blueprint name.
 2. Set your Blueprint's state to Active.

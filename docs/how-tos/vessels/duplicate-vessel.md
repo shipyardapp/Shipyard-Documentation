@@ -1,6 +1,6 @@
 ---
 id: duplicate-vessel
-title: How to Duplciate a Vessel
+title: How to Duplicate a Vessel
 hide_title: true
 description: Quick how-to guide to duplciate a Vessel.
 keywords:
@@ -27,7 +27,7 @@ You've now successfully duplicated the Vessel and are viewing the copy.
 :::
 
 ### Step 2 - Edit the Duplicate
-While the Vessel has been successfully duplicated, it contains a less readible name that indicates the Vessel it was originally a copy of. We recommend making a few adjustments before moving on.
+While the Vessel has been successfully duplicated, it contains a less readable name that indicates the Vessel it was originally a copy of. We recommend making a few adjustments before moving on.
 
 1. Decide on a new Vessel name.
 2. [Edit the Vessel](edit-vessel.md) to make any other minor tweaks you want. 

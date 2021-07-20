@@ -29,7 +29,11 @@ A required string of letters and digits. This name will be shown to a user on th
 
 ### Reference Name
 
-A required string of letters and digits with no whitespace or special characters other than `_`. This name will be translated into an environment variable with the same name, used to reference the input data in your script. Reference names must be unique \(case sensitive\) within a Blueprint.
+- A required string of letters and digits
+- Must be unique \(case sensitive\) within a Blueprint
+- Must not contain whitespace or special characters other than `_`
+
+This name will be translated into an environment variable with the same name, used to reference the input data in your script. 
 
 ### Variable Type
 

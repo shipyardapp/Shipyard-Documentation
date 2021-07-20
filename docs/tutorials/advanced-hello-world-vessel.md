@@ -92,8 +92,8 @@ values={[
 ![](../.gitbook/assets/image_13_1.png)
 
 1. On the left side of the screen, select the **Upload** option. 
-2. Click the upload section icon and select the `hello_world_advanced.tar` file from you computer.
-3. On the right-hand side of the screen, there is a field entitled **File to Run**. Because the .zip contains a single python file named `hello_world_advanced.py`, you'll need use that name.
+2. Click the upload section icon and select the `hello_world_advanced.tar` file from your computer.
+3. On the right-hand side of the screen, there is a field entitled **File to Run**. Because the .zip contains a single python file named `hello_world_advanced.py`, you'll need to use that name.
 4. Click the **+** icon next to Arguments to create a new [command argument](../reference/code/command.md#arguments).
 5. In the **flag** field on the left-hand side, type `--name`.
 6. In the **value** field on the right-hand side of the new argument, type your name.

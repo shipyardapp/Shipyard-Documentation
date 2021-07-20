@@ -101,7 +101,7 @@ Once you've verified that everything has been set up correctly, click **Next Ste
 1. Click the **+** icon next to Environment Variables 3x to add three new variables.
 2. Set the first variable's Name to `BIGQUERY_CREDS` and Value to your json credentials.
 3. Set the second variable's Name to `BIGQUERY_KEYFILE` and Value to `bigquery_creds.json`.
-4. Set the thrid variable's Name to `DBT_PROFILES_DIR`  and Value to `.`
+4. Set the third variable's Name to `DBT_PROFILES_DIR`  and Value to `.`
 
 :::note
 The value field will always show `•••••••` as you type. This is because Environment Variables are commonly used for passwords and secrets. You can always reveal what you've written by clicking the eye icon. ![](../.gitbook/assets/not_visible_icon.png)
