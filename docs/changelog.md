@@ -20,7 +20,19 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 ## Features On Deck
 
-- User Flow Improvements
+- Edit Vessels from the Fleet Builder
+- Add/Create Vessels from the Fleet Builder
+- Fleet as Code Editor
+- Version Control
+- Bulk Edit/Create Fleets
+- Fleet Templates
+
+## Blueprints on Deck
+- Fivetran
+- Census
+- Hightouch
+- Slack (Embed Data into Message)
+- Email (Embed Data into Message)
 
 ## 7/19/2021
 
