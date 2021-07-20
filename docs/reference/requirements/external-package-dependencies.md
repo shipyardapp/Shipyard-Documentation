@@ -63,7 +63,7 @@ Providing an inaccurate list of package dependencies will result in the followin
 
 `ModuleNotFoundError: No module named 'xxxx'`
 
-If this occurs, please checkout our [troubleshooting guide](../docs/troubleshooting.md) for help listing dependencies.
+If this occurs, please check out our [troubleshooting guide](../docs/troubleshooting.md) for help listing dependencies.
 :::
 </TabItem>
 <TabItem value='bash'>
