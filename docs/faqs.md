@@ -117,6 +117,8 @@ Yes - absolutely! There are two options to have Shipyard orchestrate work betwee
    1. When the Vessel doesn't find the expected response, it errors out. Upon erroring out, the Vessel is retried with a [guardrail](reference/settings/guardrails.md) that retries the job up to 24x, with anywhere from 0-60m between each try.
    2. When the Vessel does find the expected response, it registers as a success. The Vessel then kicks off downstream Vessels in the Fleet.
 
+## How do I change my password?
+You can always change your password by filling out the [Forgot My Password](https://app.shipyardapp.com/auth/forgotpassword) form. This will send you a link to a page that lets you set a brand new password for your account.
 
 ## I have another question!
 
