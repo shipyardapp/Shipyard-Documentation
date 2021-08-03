@@ -34,6 +34,20 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - Slack (Embed Data into Message)
 - Email (Embed Data into Message)
 
+## 8/3/2021
+
+### Enhancements
+
+- Expanded the clickable area for small + and - buttons.
+- Removed "Time to Start" from the UI and replaced with Billable Runtime.
+- Prevent native Python package from being entered in the Python requirements section.
+
+### Bug Fixes
+
+- Fixed incorrectly set Org in dropdown in header.
+- Fixed generic error message for a duplicated Vessel name.
+- Fixed incorrectly disabled "Stop Voyage" button for Voyages in a Fleet Run.
+
 ## 7/19/2021
 
 ### New Feature
