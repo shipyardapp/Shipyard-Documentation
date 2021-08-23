@@ -14,6 +14,16 @@ keywords:
 
 If you want to start using Shipyard, you can [sign up here](https://app.shipyardapp.com/auth/signup?ref=docs-faq). Once you sign up, you'll start your free 14-day trial.
 
+## How does the trial work?
+During your first 14 days of using Shipyard, you'll be able to test drive every feature on our platform available as if you were subscribed to our paid Team plan. After 14 days, if you have not subscribed to the platform, you will be downgraded to our free Developer plan. When your organization is downgraded, the following changes will occur:
+
+- Every month, you will have a total of 1 hour runtime that you can use. If you go over this amount, your organization will be unable to run any Vessels or Fleets until the next month cycle. You will, however, still have the ability to edit and create Vessels and Fleets.
+- Your organization will no longer have access to use [Webhooks](reference/triggers/webhook-triggers.md).
+- The default [runtime cutoff](reference/settings/guardrails.md#runtime-cutoff) state for every Vessel will be lowered from 4 hours to 1 hour.
+- Any existing users invited to your organization will have read-only access. Additionally, you will be unable to manage user permissions or invite new users to your organization.
+
+Your month cycle is determined based on the time when your organization first gets downgraded to the Developer Plan. You will receive emails to notify you of your organizations change to developer plan, when you've used too much runtime, and when your runtime is reset for the month.
+
 ## How do I submit feedback or a feature request?
 
 We love to hear what our users would like to see out of our product. Feel free to reach us at any time through intercom (the chat bubble on the right) or by sending an email directly to [support@shipyardapp.com](mailto:support@shipyardapp.com)
