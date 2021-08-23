@@ -38,15 +38,15 @@ SQL can be used natively with some Blueprints found in the [Blueprint Library](r
 
 In the future, we plan to expand our native language support to R. If you have a language that you would like to see supported, let us know!
 
-## Is Shipyard a no-code tool?
+## Is Shipyard a low-code tool?
 
-Yes and no.
+Yes, partially.
 
-Shipyard is not inherently a no-code tool, as it's custom-designed for data teams and developers to launch their scripted solutions.
+Shipyard is not inherently a low-code tool, as it's custom-designed for data teams and developers to launch their custom scripted solutions.
 
-However, the platform allows technical teams to turn coded solutions into no-code Blueprints that can be used by anyone in the organization.
+However, the platform allows technical teams to turn coded solutions into low-code Blueprints that can be used by anyone in the organization.
 
-Additionally, we offer a wide variety of Blueprints in our [Blueprint Library](reference/blueprint-library.md) that don't require code to use.
+Additionally, we offer a wide variety of Blueprints in our [Blueprint Library](reference/blueprint-library.md) that don't require minimal code to use.
 
 ## What skills do I need to get started with Shipyard?
 
