@@ -34,6 +34,15 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - Slack (Embed Data into Message)
 - Email (Embed Data into Message)
 
+## 8/24/2021
+
+### New Features
+
+- Added free developer plan to the application to allow continued, limited usage of the platform after the trial.
+
+### Enhancements
+- Users can now be invited to belong to multiple organizations.
+
 ## 8/3/2021
 
 ### Enhancements
