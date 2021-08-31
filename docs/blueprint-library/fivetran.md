@@ -76,6 +76,8 @@ The response for this request will always be stored at `shipyard-artifacts/fivet
 | **Connector ID**    | The unique ID associated with a connector. Typically two words separated by an underscore. e.x. (`lively_planted`). Instructions for how to find this ID can be found under the [authorization](#authorization) section.                     |
 
 ### Screenshots
+![Fivetran Execute Sync Blueprint](../.gitbook/assets/shipyard_2021_08_31_14_01_50.png)
+![Fivetran Execute Sync Blueprint Output](../.gitbook/assets/shipyard_2021_08_31_14_06_18.png)
 
 ## Check Sync Status
 
@@ -110,12 +112,13 @@ The response for this request will always be stored at `shipyard-artifacts/fivet
 ### Variables
 | Variable Name     | Description                                                                                                                                                                                                                                                    |
 | :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Connector ID**    | The unique ID associated with a connector. Typically two words separated by an underscore. e.x. (`lively_planted`). Instructions for how to find this ID can be found under the [authorization](#authorization) section. This can be left blank if connected to an Execute Sync Blueprint.                    |
 | **API Key** | Your account's unique API Key for Fivetran. Instructions for how to get this token can be found under the [authorization](#authorization) section.                    |
 | **API Secret** | Your account's unique API Secret for Fivetran. Instructions for how to get this token can be found under the [authorization](#authorization) section.                    |
-| **Connector ID**    | The unique ID associated with a connector. Typically two words separated by an underscore. e.x. (`lively_planted`). Instructions for how to find this ID can be found under the [authorization](#authorization) section. This can be left blank if connected to an Execute Sync Blueprint.                    |
 
 ### Screenshots
-
+![Fivetran Check Sync Status Blueprint](../.gitbook/assets/shipyard_2021_08_31_14_07_57.png)
+![Fivetran Check Sync Status Blueprint Output](../.gitbook/assets/shipyard_2021_08_31_14_11_59.png)
 
 
 ## Execute Sync and Check Status
@@ -140,7 +143,8 @@ Before using this Blueprint on a connector, we strongly recommend first setting 
 | **Connector ID**    | The unique ID associated with a connector. Typically two words separated by an underscore. e.x. (`lively_planted`). Instructions for how to find this ID can be found under the [authorization](#authorization) section.                     |
 
 ### Screenshots
-
+![Fivetran Execute Sync and Check Status Blueprint](../.gitbook/assets/shipyard_2021_08_31_14_13_02.png)
+![Fivetran Execute Sync and Check Status Blueprint Outpu](../.gitbook/assets/shipyard_2021_08_31_14_25_43.png)
 
 ## Update Connector
 
@@ -170,6 +174,8 @@ The full list of settings that can be changed can be found [here](https://fivetr
 | **Custom Update**    | Additional connector parameters you would like to update, provided in a JSON format. These can be found [here](https://fivetran.com/docs/rest-api/connectors#modifyaconnector)                    |
 
 ### Screenshots
+![Fivetran Update Connector Blueprint](../.gitbook/assets/shipyard_2021_08_31_12_13_51.png)
+![Fivetran Update Connector Blueprint Output](../.gitbook/assets/shipyard_2021_08_31_13_57_52.png)
 
 ## Helpful Links
 
