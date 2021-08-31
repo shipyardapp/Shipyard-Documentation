@@ -3,7 +3,7 @@ var BASE_URL = "/docs/";
 module.exports = {
 	title: "Shipyard Documentation",
 	tagline:
-		"Detailed documentation and guides to help data teams use Shipyard for their data operations.",
+		"Detailed documentation, how-to guides, and tutorials to help data teams use Shipyard for their data orchestration and data operations needs.",
 	url: process.env.SHIPYARD__DOCUSAURUS_URL || "https://www.shipyardapp.com/",
 	baseUrl: BASE_URL,
 	onBrokenLinks: "throw",
