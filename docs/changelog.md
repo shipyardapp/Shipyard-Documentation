@@ -34,6 +34,13 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - Slack (Embed Data into Message)
 - Email (Embed Data into Message)
 
+## 8/31/2021
+
+### Bug Fixes
+
+- Fixed Duration ticker not running while viewing a log.
+- Fixed leaving the Triggers tab warning for Fleets.
+
 ## 8/24/2021
 
 ### New Features
@@ -41,6 +48,7 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - Added free developer plan to the application to allow continued, limited usage of the platform after the trial.
 
 ### Enhancements
+
 - Users can now be invited to belong to multiple organizations.
 
 ## 8/3/2021
