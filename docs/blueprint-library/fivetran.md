@@ -12,7 +12,7 @@ keywords:
 ---
 
 # Fivetran Blueprints
-Fivetran Blueprints help data teams orchestrate their Fivetran connectors with other tools in their data stack. Our Fivetran Blueprints make it easy to execute a sync, check for the status of the sync, or update the settings for a specific connector. We've included an all-in-one Blueprint, as well as each step in a modular fashion so you can flexibly determine how you would like to interact with Fivetran.
+Fivetran Blueprints help data teams orchestrate their Fivetran connectors with other tools in their data stack. Our modular Fivetran Blueprints make it easy to execute a sync, check the status of a sync, or update the settings for a specific connector. We've also included an all-in-one Blueprint so you can flexibly determine how you would like to interact with Fivetran.
 
 Beyond making it easier to connect Fivetran syncs to your other data tools, these Blueprints also give you finer-tuned control over how often your data syncs and can prevent downstream processes from running if Fivetran runs into issues.
 
@@ -32,7 +32,7 @@ These Blueprints will only work for Fivetran customers that have API access (Sta
 ## Authorization
 
 ### Overview
-To get started with any Fivetran Blueprints, you will need to generate an API Key and know how to find a connector ID. This API Key is a secure way for Shipyard to access Fivetran and the Connector ID is a unique generated ID attached to each connector. These two piece of information will be required for **every** Fivetran Blueprint.
+To get started with any Fivetran Blueprints, you will need to generate an API Key and know how to find a connector ID. The API Key is a secure way for Shipyard to access Fivetran. The Connector ID is a unique generated ID attached to each connector. These two pieces of information will be required for **every** Fivetran Blueprint.
 
 ### Generate an API Key
 
@@ -71,8 +71,8 @@ The response for this request will always be stored at `shipyard-artifacts/fivet
 
 | Variable Name     | Description                                                                                                                                                        |
 | :---------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **API Key** | Your unique API Key for Fivetran. Instructions for how to get this token can be found under the [authorization](#authorization) section.                    |
-| **API Secret** | Your unique API Secret for Fivetran. Instructions for how to get this token can be found under the [authorization](#authorization) section.                    |
+| **API Key** | Your account's unique API Key for Fivetran. Instructions for how to get this token can be found under the [authorization](#authorization) section.                    |
+| **API Secret** | Your account's unique API Secret for Fivetran. Instructions for how to get this token can be found under the [authorization](#authorization) section.                    |
 | **Connector ID**    | The unique ID associated with a connector. Typically two words separated by an underscore. e.x. (`lively_planted`). Instructions for how to find this ID can be found under the [authorization](#authorization) section.                     |
 
 ### Screenshots
@@ -110,8 +110,8 @@ The response for this request will always be stored at `shipyard-artifacts/fivet
 ### Variables
 | Variable Name     | Description                                                                                                                                                                                                                                                    |
 | :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **API Key** | Your unique API Key for Fivetran. Instructions for how to get this token can be found under the [authorization](#authorization) section.                    |
-| **API Secret** | Your unique API Secret for Fivetran. Instructions for how to get this token can be found under the [authorization](#authorization) section.                    |
+| **API Key** | Your account's unique API Key for Fivetran. Instructions for how to get this token can be found under the [authorization](#authorization) section.                    |
+| **API Secret** | Your account's unique API Secret for Fivetran. Instructions for how to get this token can be found under the [authorization](#authorization) section.                    |
 | **Connector ID**    | The unique ID associated with a connector. Typically two words separated by an underscore. e.x. (`lively_planted`). Instructions for how to find this ID can be found under the [authorization](#authorization) section. This can be left blank if connected to an Execute Sync Blueprint.                    |
 
 ### Screenshots
@@ -123,7 +123,7 @@ The response for this request will always be stored at `shipyard-artifacts/fivet
 ### Overview
 This is considered an "all-in-one" Blueprint for the other 2 Blueprints listed above. By using this Blueprint, you will accumulate runtime as the Vessel continuously waits for the job to be completed. The tradeoff is that results may be quicker and the setup/complexity is less.
 
-If you want to reduce the overall runtime you're billed for, you will need to instead set up a Fleet with Vessels built with these blueprints in this order:
+If you want to reduce the overall runtime you're billed for, you will need to instead set up a Fleet with Vessels built with these Blueprints in this order:
 `Execute Sync` -> `Check Sync Status`
 
 A Vessel built with this Blueprint will sync a connector in Fivetran and check for the status every 30 seconds. Once the status is confirmed to be completed, the script will stop. The final status of this Vessel in Shipyard will reflect the status of the run in Fivetran.
@@ -135,8 +135,8 @@ Before using this Blueprint on a connector, we strongly recommend first setting 
 ### Variables
 | Variable Name           | Description                                                                                                                                                        |
 | :---------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **API Key** | Your unique API Key for Fivetran. Instructions for how to get this token can be found under the [authorization](#authorization) section.                    |
-| **API Secret** | Your unique API Secret for Fivetran. Instructions for how to get this token can be found under the [authorization](#authorization) section.                    |
+| **API Key** | Your account's unique API Key for Fivetran. Instructions for how to get this token can be found under the [authorization](#authorization) section.                    |
+| **API Secret** | Your account's unique API Secret for Fivetran. Instructions for how to get this token can be found under the [authorization](#authorization) section.                    |
 | **Connector ID**    | The unique ID associated with a connector. Typically two words separated by an underscore. e.x. (`lively_planted`). Instructions for how to find this ID can be found under the [authorization](#authorization) section.                     |
 
 ### Screenshots
@@ -146,8 +146,6 @@ Before using this Blueprint on a connector, we strongly recommend first setting 
 
 ### Overview
 Update the settings of a connector in Fivetran. The connector must already exist in the Fivetran interface.
-
-
 
 By default, every option is set to `No Change`. This ensures that existing settings will not be overwritten by running this Blueprint. However, this Blueprint requires that at least one setting be changed, otherwise it will result in an error.
 
@@ -163,12 +161,13 @@ The full list of settings that can be changed can be found [here](https://fivetr
 ### Variables
 | Variable Name           | Description                                                                                                                                                        |
 | :---------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **API Key** | Your unique API Key for Fivetran. Instructions for how to get this token can be found under the [authorization](#authorization) section.                    |
-| **API Secret** | Your unique API Secret for Fivetran. Instructions for how to get this token can be found under the [authorization](#authorization) section.                    |
+| **API Key** | Your account's unique API Key for Fivetran. Instructions for how to get this token can be found under the [authorization](#authorization) section.                    |
+| **API Secret** | Your account's unique API Secret for Fivetran. Instructions for how to get this token can be found under the [authorization](#authorization) section.                    |
 | **Connector ID**    | The unique ID associated with a connector. Typically two words separated by an underscore. e.x. (`lively_planted`). Instructions for how to find this ID can be found under the [authorization](#authorization) section.                     |
 | **Set Schedule Type** | Set your connector's schedule to sync automatically, manually, or make no change.                    |
 | **Set Connector State** | Set your connector to paused, enabled, or make no change.                   |
 | **Trigger Historical Sync?**    | Set your connector to start a historical sync, or make no change.                     |
+| **Custom Update**    | Additional connector parameters you would like to update, provided in a JSON format. These can be found [here](https://fivetran.com/docs/rest-api/connectors#modifyaconnector)                    |
 
 ### Screenshots
 
