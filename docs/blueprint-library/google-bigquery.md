@@ -21,52 +21,38 @@ In order to get started with the Google BigQuery Blueprints, a service account w
 
 ### Steps
 
-- iam & admin in sidebar
-- click "service accounts" in sidebar
-- click "+ create service account" header
-- add "service account name" value
-	- id generated (don't change)
-- optionally add description
-- click "create and continue"
-- "select a role" dropdown
-- find "bigquery"
-- select "bigquery user"
-- click "+ add another role"
-- find "cloud storage"
-- select "storage object creator"
-- click "continue"
-- skip "grant users access to this service account"
-- click "done"
-- find new service account in table
-- under "actions" column select "manage keys"
-- under "add key" dropdown
-- click "create new key"
-- for "key type" select "json"
-- click "create"
-- copy downloaded json file contents
-- add to "service account" inputs field on all bigquery blueprints
-
-<!-- 
-1. Login to your [AWS Management Console](https://aws.amazon.com/console/)  
-2. Search for and go to the IAM service page  
-	![IAM service search](../.gitbook/assets/iam-service-search.png)  
-3. Select "Policies" on the left sidebar  
-	![Policies left sidebar](../.gitbook/assets/policies-left-sidebar.png)  
-4. Click the blue "Create policy" button  
-5. Select the "Visual editor" tab  
-6. Add required Athena permissions  
-	a. On the "Service" dropdown, search for and select "Athena"  
-		![Search select athena](../.gitbook/assets/search-select-athena.png)  
-	b. On the "Actions" dropdown  
-		i. Under "Read" select "GetQueryExecution"  
-		ii. Under "Write" select "StartQueryExecution"  
-		![Athena read write actions selections](../.gitbook/assets/athena-read-write-actions-selections.png)  
-	c. On the "Resources" dropdown, click "Add ARN"  
-		i. Add your region ID and workgroup name or select "Any" for both options - this example, the region has been set to `"*"` and the workgroup set to `"primary"`  
-		![Add Athena ARN](../.gitbook/assets/add-athena-arn.png)  
-	d. Skip the "Request Conditions" dropdown  
-	e. Click "Add additional permissions" to add the next set of permissions  
- -->
+1. Login to your [GCP console](https://console.cloud.google.com/)  
+2. Hover over "IAM & Admin" in the sidebar  
+	![IAM Service Accounts sidebar](../.gitbook/assets/iam-service-accounts-sidebar-selection.png)  
+3. Click "Service Accounts" in the options  
+4. Click "+ CREATE SERVICE ACCOUNT"  
+	![Create service account button](../.gitbook/assets/create-service-account-button.png)  
+5. Add a service account name  
+	a. Do not edit the ID field which will auto-populate  
+	b. Optionally add a description to the service account  
+	![Add service account name](../.gitbook/assets/bigquery-service-account-name.png)  
+6. Click "CREATE AND CONTINUE"  
+7. Click "Select a role" dropdown  
+	a. Scroll down the options and hover over "BigQUery"  
+	b. Select "BigQuery Data Editor"  
+	![Add BigQuery role](../.gitbook/assets/bigquery-role-bigquery-data-editor-selection.png)  
+8. Click "+ ADD ANOTHER ROLE"  
+	a. Scroll down the options and hover over "Cloud Storage"  
+	b. Select "Storage Object Creator"  
+	![Add Cloud Storage role](../.gitbook/assets/bigquery-role-cloud-storage-object-creator-selection.png)  
+9. Click "CONTINUE"  
+	![Roles](../.gitbook/assets/bigquery-roles-selections.png)  
+10. Click "DONE"  
+11. Find the new service on the service accounts table  
+	a. Click the menu dots under the "Actions" column  
+	b. Click "Manage keys"  
+	![Service accounts table](../.gitbook/assets/bigquery-service-accounts-table-manage-keys-dropdown.png)  
+12. On the Keys page click the "ADD KEY" dropdown  
+13. Click "CREATE NEW KEY"  
+	![Create key dropdown button](../.gitbook/assets/service-account-add-key-button.png)  
+14. In the popup modal select "JSON"  
+15. Click "CREATE"  
+16. Copy the downloaded file JSON contents and use in the "Service Account" variable input in the Blueprints (see **Variables** sections below)  
 
 ### Notes
 
