@@ -17,7 +17,7 @@ keywords:
 
 ### Overview
 
-In order to get started with the BigQuery Blueprints, a service account with the necessary GCP permissions is required.
+In order to get started with the Google BigQuery Blueprints, a service account with the necessary GCP permissions is required.
 
 ### Steps
 
@@ -113,7 +113,7 @@ The **Google BigQuery - Store Query Results in Google Cloud Storage** Blueprint 
 |:---|:---|
 | **Query** | [REQUIRED] The query to run against the BigQuery database |
 | **Bucket Name** | [REQUIRED] Name of the GCS bucket to store the results file in |
-| **Bucket File Name** | [REQUIRED] Name of file to be generated with the results which should be a `.csv` extension. |
+| **Bucket File Name** | [REQUIRED] Name of file to be generated with the results which should be a `.csv` extension |
 | **Bucket Folder Name** | The optional folder name to store the results file in |
 | **Service Account** | [REQUIRED] The JSON from a Google Cloud Service account key - see **Authorization** above for more information |
 
