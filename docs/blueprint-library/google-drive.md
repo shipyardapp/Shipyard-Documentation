@@ -23,7 +23,7 @@ In order to get started with the Google Drive Blueprints, a service account with
 
 - search "google drive api"
 - click "enable"
-- click "create credentials"
+- click "+ create credentials"
 - "select an api" dropdown
 - select "google drive api"
 - for "what data will you be accessing?" select "application data"
@@ -55,12 +55,12 @@ The **Google Drive - Download Files** Blueprint allows users to retrieve files s
 
 | Variable Name | Description |
 |:---|:---|
-| **Google Drive Folder Name** | The optional folder in Google Drive to fetch the file from |
-| **Google Drive File Name** | [REQUIRED] Name for the file stored in Google Drive |
+| **Google Drive Folder Name** | The folder in Google Drive to fetch the file from |
+| **Google Drive File Name** | [REQUIRED] The name for the file stored in Google Drive |
 | **Google Drive File Name Match Type** | [REQUIRED] A dropdown selection of how to match the file name |
-| **Local Folder Name** | The optional folder name to store the fetched file in |
-| **Local File Name** | The optional name for the file when fetched locally into the Shipyard Vessel |
-| **Shared Drive Name** | The optional shared Drive name - should only be provided if the file exists in a shared Drive |
+| **Local Folder Name** | The folder name to store the fetched file in |
+| **Local File Name** | The name for the file when fetched locally into the Shipyard Vessel |
+| **Shared Drive Name** | The shared Drive name - should only be provided if the file exists in a shared Drive |
 | **Service Account** | [REQUIRED] The JSON from a Google Cloud Service account key - see **Authorization** above for more information |
 
 ## Upload Files Blueprint
