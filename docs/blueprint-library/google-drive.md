@@ -47,7 +47,7 @@ In order to get started with the Google Drive Blueprints, a service account with
 15. Click "KEYS" tab  
 	![Service account keys tab](../.gitbook/assets/google-drive-service-account-tabs.png)  
 16. On the Keys page click the "ADD KEY" dropdown  
-17. Click "CREATE NEW KEY"  
+17. Click "Create new key"  
 	![Create key dropdown button](../.gitbook/assets/service-account-add-key-button.png)  
 18. In the popup modal select "JSON"  
 19. Click "CREATE"  
@@ -57,37 +57,37 @@ In order to get started with the Google Drive Blueprints, a service account with
 
 ### Overview
 
-The **Google Drive - Download Files** Blueprint allows users to retrieve files stored in Google Drive.
+The **Google Drive - Download Files** Blueprint allows users to quickly export one or more files from their Google Drive account.
 
 ### Variables
 
 | Variable Name | Description |
 |:---|:---|
-| **Google Drive Folder Name** | The folder in Google Drive to fetch the file from |
-| **Google Drive File Name** | [REQUIRED] The name for the file stored in Google Drive |
-| **Google Drive File Name Match Type** | [REQUIRED] A dropdown selection of how to match the file name |
-| **Local Folder Name** | The folder name to store the fetched file in |
-| **Local File Name** | The name for the file when fetched locally into the Shipyard Vessel |
-| **Shared Drive Name** | The shared Drive name - should only be provided if the file exists in a shared Drive |
-| **Service Account** | [REQUIRED] The JSON from a Google Cloud Service account key - see **Authorization** above for more information |
+| **Google Drive Folder Name** | Folder in Google Drive to fetch the file from |
+| **Google Drive File Name** | [REQUIRED] Name of the file stored in Google Drive |
+| **Google Drive File Name Match Type** | [REQUIRED] Dropdown selection of how to match the file name |
+| **Local Folder Name** | Folder name to store the fetched file in |
+| **Local File Name** | Name for the file when fetched locally into the Shipyard Vessel |
+| **Shared Drive Name** | Shared Drive name - should only be provided if the file exists in a shared Drive |
+| **Service Account Credentials** | [REQUIRED] JSON from a Google Cloud Service account key - see **Authorization** above for more information |
 
 ## Upload Files Blueprint
 
 ### Overview
 
-The **Google Drive - Upload Files** Blueprint allows users to put files into Google Drive.
+The **Google Drive - Upload Files** Blueprint allows users to easily import one or more files directly into their Google Drive account.
 
 ### Variables
 
 | Variable Name | Description |
 |:---|:---|
 | **Local File Name** | [REQUIRED] Name for the local file in the Shipyard Vessel to upload to Google Drive |
-| **Local File Name Match Type** | [REQUIRED] A dropdown selection of how to match the file name |
-| **Local Folder Name** | The optional folder name the file to upload is stored in |
-| **Shared Drive Name** | The optional shared Drive name - should only be provided if the file will be uploaded to a shared Drive |
-| **Google Drive Folder Name** | The optional folder in Google Drive to store the file in |
-| **Google Drive File Name** | The optional name for the file stored in Google Drive |
-| **Service Account** | [REQUIRED] The JSON from a Google Cloud Service account key - see **Authorization** above for more information |
+| **Local File Name Match Type** | [REQUIRED] Dropdown selection of how to match the file name |
+| **Local Folder Name** | Folder name the file to upload is stored in |
+| **Shared Drive Name** | Shared Drive name - should only be provided if the file will be uploaded to a shared Drive |
+| **Google Drive Folder Name** | Folder in Google Drive to store the file in |
+| **Google Drive File Name** | Name for the file stored in Google Drive |
+| **Service Account Credentials** | [REQUIRED] JSON from a Google Cloud Service account key - see **Authorization** above for more information |
 
 ## Helpful Links
 
