@@ -21,29 +21,36 @@ In order to get started with the Google Drive Blueprints, a service account with
 
 ### Steps
 
-- search "google drive api"
-- click "enable"
-- click "+ create credentials"
-- "select an api" dropdown
-- select "google drive api"
-- for "what data will you be accessing?" select "application data"
-- for "Are you planning to use this API with Compute Engine, Kubernetes Engine, App Engine, or Cloud Functions?" select "No, I'm not using them"
-- click "next"
-- add "service account name" value
-	- id generated (don't change)
-- optionally add description
-- click "create and continue"
-- click "continue"
-- skip "grant users access to this service account"
-- click "done"
-- under "service accounts" table click new service account
-- click "keys" tabe
-- under "add key" dropdown
-- click "create new key"
-- for "key type" select "json"
-- click "create"
-- copy downloaded json file contents
-- add to "service account" inputs field on all bigquery blueprints
+1. Login to your [GCP console](https://console.cloud.google.com/)  
+2. Search for "Google Drive API" in the search bar  
+3. Click "ENABLE"  
+4. Click "CREATE CREDENTIALS"  
+5. For "Which API are you using?" in the "Select an API" dropdown select "Google Drive API"  
+6. For "What data will you be accessing?" select the "Application data" radio button  
+7. For "Are you planning to use this API with Compute Engine, Kubernetes Engine, App Engine, or Cloud Functions?" select the "No, I'm not using them" radio button  
+8. Click "NEXT"  
+9. Add a service account name  
+	a. Do not edit the ID field which will auto-populate  
+	b. Optionally add a description to the service account  
+	![Add service account name](../.gitbook/assets/google-drive-service-account-name.png)  
+10. Click "CREATE AND CONTINUE"  
+11. Click "Select a role" dropdown  
+	a. Scroll down the options and hover over "Basic"  
+	b. Select "Editor"  
+	![Add Editor role](../.gitbook/assets/google-drive-basic-editor-role-selection.png)  
+12. Click "CONTINUE"
+13. Click "DONE"
+14. Find the new service on the service accounts table  
+	a. Click the edit icon under the "Actions" column  
+	![Service accounts table](../.gitbook/assets/google-drive-service-accounts-table-edit.png)  
+15. Click "KEYS" tab
+	![Service account keys tab](../.gitbook/assets/google-drive-service-account-tabs.png)  
+16. On the Keys page click the "ADD KEY" dropdown  
+17. Click "CREATE NEW KEY"  
+	![Create key dropdown button](../.gitbook/assets/service-account-add-key-button.png)  
+18. In the popup modal select "JSON"  
+19. Click "CREATE"  
+20. Copy the downloaded file JSON contents and use in the "Service Account" variable input in the Blueprints (see **Variables** sections below)  
 
 ## Download Files Blueprint
 
