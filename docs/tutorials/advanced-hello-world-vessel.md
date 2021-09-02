@@ -73,7 +73,7 @@ values={[
 ]}>
 <TabItem value="python">
 
-Click on the **Python** Blueprint. You'll be immediately redirected to the next step.
+Click on the **Python** option. You'll be immediately redirected to the next step.
 </TabItem>
 </Tabs>
 
