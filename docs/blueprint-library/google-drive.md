@@ -23,6 +23,7 @@ In order to get started with the Google Drive Blueprints, a service account with
 
 1. Login to your [GCP console](https://console.cloud.google.com/)  
 2. Search for "Google Drive API" in the search bar  
+	![Search bar Google Drive API](../.gitbook/assets/google-drive-search-bar.png)  
 3. Click "ENABLE"  
 4. Click "CREATE CREDENTIALS"  
 5. For "Which API are you using?" in the "Select an API" dropdown select "Google Drive API"  
@@ -38,12 +39,12 @@ In order to get started with the Google Drive Blueprints, a service account with
 	a. Scroll down the options and hover over "Basic"  
 	b. Select "Editor"  
 	![Add Editor role](../.gitbook/assets/google-drive-basic-editor-role-selection.png)  
-12. Click "CONTINUE"
-13. Click "DONE"
+12. Click "CONTINUE"  
+13. Click "DONE"  
 14. Find the new service on the service accounts table  
 	a. Click the edit icon under the "Actions" column  
 	![Service accounts table](../.gitbook/assets/google-drive-service-accounts-table-edit.png)  
-15. Click "KEYS" tab
+15. Click "KEYS" tab  
 	![Service account keys tab](../.gitbook/assets/google-drive-service-account-tabs.png)  
 16. On the Keys page click the "ADD KEY" dropdown  
 17. Click "CREATE NEW KEY"  

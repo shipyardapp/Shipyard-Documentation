@@ -20,29 +20,36 @@ In order to get started with the Google Sheets Blueprints, a service account wit
 
 ### Steps
 
-- search "google sheets api"
-- click "enable"
-- click "credentials" in sidebar
-- click "+ create credentials"
-- click "service account" from options
-- add "service account name" value
-	- id generated (don't change)
-- optionally add description
-- click "create and continue"
-- "select a role" dropdown
-- find "basic"
-- select "editor"
-- click "continue"
-- skip "grant users access to this service account"
-- click "done"
-- under "service accounts" table click new service account
-- click "keys" table
-- under "add key" dropdown
-- click "create new key"
-- for "key type" select "json"
-- click "create"
-- copy downloaded json file contents
-- add to "service account" inputs field on all bigquery blueprints
+1. Login to your [GCP console](https://console.cloud.google.com/)  
+2. Search for "Google Sheets API" in the search bar  
+	![Search bar Google Sheets API](../.gitbook/assets/google-sheets-search-bar.png)  
+3. Click "ENABLE"  
+4. Click "Credentials" in the sidebar
+	![Credentials sidebar](../.gitbook/assets/google-sheets-credentials-sidebar.png)  
+5. Click "+ CREATE CREDENTIALS" and select "Service account" from the options
+	![Credentials options](../.gitbook/assets/google-sheets-create-credentials-options.png)  
+6. Add a service account name  
+	a. Do not edit the ID field which will auto-populate  
+	b. Optionally add a description to the service account  
+	![Add service account name](../.gitbook/assets/google-sheets-service-account-name.png)  
+7. Click "CREATE AND CONTINUE"  
+8. Click "Select a role" dropdown  
+	a. Scroll down the options and hover over "Basic"  
+	b. Select "Editor"  
+	![Add Editor role](../.gitbook/assets/google-sheets-basic-editor-role-selection.png)  
+9. Click "CONTINUE"
+10. Click "DONE"
+11. Find the new service on the service accounts table  
+	a. Click the edit icon under the "Actions" column  
+	![Service accounts table](../.gitbook/assets/google-sheets-service-accounts-table-edit.png)  
+12. Click "KEYS" tab  
+	![Service account keys tab](../.gitbook/assets/google-sheets-service-account-tabs.png)  
+13. On the Keys page click the "ADD KEY" dropdown  
+14. Click "CREATE NEW KEY"  
+	![Create key dropdown button](../.gitbook/assets/service-account-add-key-button.png)  
+15. In the popup modal select "JSON"  
+16. Click "CREATE"  
+17. Copy the downloaded file JSON contents and use in the "Service Account" variable input in the Blueprints (see **Variables** sections below)  
 
 ## Download Sheet to CSV Blueprint
 
