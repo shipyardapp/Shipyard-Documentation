@@ -83,7 +83,7 @@ The **Google BigQuery - Store Query Results as CSV** Blueprint allows users to t
 | Variable Name | Description |
 |:---|:---|
 | **Query** | [REQUIRED] Query to run against the BigQuery database |
-| **Local File Name** | [REQUIRED] Name of file to be generated with the results which should be a `.csv` extension. |
+| **Local File Name** | [REQUIRED] Name of file to be generated with the results which should be a CSV file. |
 | **Local Folder Name** | Folder name to store the results file in |
 | **Service Account** | [REQUIRED] JSON from a Google Cloud Service account key - see **Authorization** above for more information |
 
@@ -99,7 +99,7 @@ The **Google BigQuery - Store Query Results in Google Cloud Storage** Blueprint 
 |:---|:---|
 | **Query** | [REQUIRED] Query to run against the BigQuery database |
 | **Bucket Name** | [REQUIRED] Name of the GCS bucket to store the results file in |
-| **Bucket File Name** | [REQUIRED] Name of file to be generated with the results which should be a `.csv` extension |
+| **Bucket File Name** | [REQUIRED] Name of file to be generated with the results which should be a CSV file. |
 | **Bucket Folder Name** | Folder name to store the results file in |
 | **Service Account** | [REQUIRED] JSON from a Google Cloud Service account key - see **Authorization** above for more information |
 
