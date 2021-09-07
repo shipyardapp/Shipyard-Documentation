@@ -1,8 +1,8 @@
 ---
-id: non-supported-language-vessels
-title: Building Non-Supported Language Vessels
+id: non-native-language-vessels
+title: Building Non-Native Language Vessels
 hide_title: true
-description: In-depth tutorial on building Vessels with languages other than the supported Bash, Python, and Node.
+description: In-depth tutorial on building Vessels with languages other than the native Bash, Python, and Node.
 keywords:
   - code
   - advanced
@@ -12,7 +12,7 @@ keywords:
 <!-- import Tabs from '@theme/Tabs'; -->
 <!-- import TabItem from '@theme/TabItem'; -->
 
-# Building Non-Supported Language Vessels
+# Building Non-Native Language Vessels
 
 ## Overview
 
@@ -24,7 +24,7 @@ By the end of the tutorial, you'll be able to:
 - Use a non-natively supported language for the code
 - Install third-party packages in that language
 - Fetch data from an external API
-- See outupt in the [Logs](../reference/logs/logs-overview.md)
+- See output in the [Logs](../reference/logs/logs-overview.md)
 
 ## Setup
 
@@ -34,7 +34,7 @@ For the sake of the this tutorial, we suggest starting off by building a Vessel 
 
 Getting started with this walkthrough is fairly straight-forward.
 
-First, [download this code](../.gitbook/assets/non_supported_language.zip), named `non_supported_language.zip` to your computer without making any changes.
+First, [download this code](../.gitbook/assets/non_native_language.zip), named `non_native_language.zip` to your computer without making any changes.
 
 Feel free to review the code in both `run.sh` and `script.rb` to see what each is doing. Here's a brief overview:
 
@@ -73,7 +73,7 @@ You've successfully started the setup flow for building a Vessel with code.
 ### Step 3 - Code
 
 1. In the radio button options, select **Upload**.
-2. Click on the grey square with the text **"Click or drag file to this area to upload"** and upload the previously downloaded `non_supported_language.zip` file.
+2. Click on the grey square with the text **"Click or drag file to this area to upload"** and upload the previously downloaded `non_native_language.zip` file.
 3. Type `run.sh` into the **File to Run** field.
 4. Click **Next Step**.
 
@@ -91,14 +91,16 @@ You've successfully started the setup flow for building a Vessel with code.
 
 ### Step 5 - Settings
 
-1. Under the Information section, give your Vessel the name of `Non-Supported Language - Ruby`.
+1. Under the Information section, give your Vessel the name of `Non-Native Language - Ruby`.
 2. Under the notifications section, make sure that your email is listed. It should be added by default.
 3. Under the Guardrails section, set the **Number of Retries** to 2x and the **Time Between Retries** to 5m.
 4. Click the **Save & Finish** button at the bottom of the screen.
 
 ### Step 6 - Running the Vessel On-Demand
 
-1. Click **Run Now** at the top right of the page. This will schedule your Vessel to run immediately and redirect you to the [Vessel Log](../reference/logs/vessel-logs.md) page.
+1. Click the blue **Run your Vessel** button. This will schedule your Vessel to run immediately and redirect you to the [Vessel Log](../reference/logs/vessel-logs.md) page.
+
+![](../.gitbook/assets/vessel-built-successfully.png)
 
 You should see the following page that shows you all of the details about the specific Log.
 
@@ -108,8 +110,8 @@ In the output, you'll see several things.
 2. Shipyard downloads the file you created under the Code section, decompresses it, and begins to run `run.sh`
 3. Shipyard prints out the text `Top story on Hacker News stats` followed by the `title`, `score`, and `link` values
 
-![](../.gitbook/assets/non-supported-language-log.png)
+![](../.gitbook/assets/non-native-language-log.png)
 
-:::tip Success
-You've successfully created and verified a Vessel using a non-supported language - Ruby.
+:::success
+You've successfully created and verified a Vessel using a non-native language - Ruby.
 :::
