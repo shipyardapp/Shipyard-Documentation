@@ -16,6 +16,10 @@ keywords:
 
 ## Overview
 
+**Shipyard** provides indirect support for languages outside of those natively supported (Bash, Python, and Node). This is done by using Bash Vessels to install the given language and any external packages before running the specified command to execute the script. With this approach, the user can effectively use whatever language they choose in Vessel construction.
+
+Note that this approach will likely add in some additional execution time for the Vessel due to the installation and setup going into each Vessel run.
+
 In this walk through, you'll construct a Vessel using a [language not natively supported](../reference/code/code-overview.md) in the platform - in our example, [Ruby](https://www.ruby-lang.org/en/).
 
 By the end of the tutorial, you'll be able to:
