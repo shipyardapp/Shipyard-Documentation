@@ -62,7 +62,7 @@ Feel free to review the code in both `run.sh` and `script.rb` to see what each i
 	d. Prints information using the `yell` package  
 
 </TabItem>
-<TabItem value='go'>
+<TabItem value="go">
 
 First, [download this zipped Go code](../.gitbook/assets/non_native_language_go.zip), named `non_native_language_go.zip` to your computer without making any changes.
 
@@ -152,7 +152,7 @@ values={[
 3. Click **Next Step**.
 
 </TabItem>
-<TabItem value="go>
+<TabItem value="go">
 
 1. Click the **+** icon next to Packages to add a new package.
 2. In the **Package Name** field on the left-hand side, type `golang`.
@@ -178,7 +178,7 @@ values={[
 4. Click the **Save & Finish** button at the bottom of the screen.
 
 </TabItem>
-<TabItem value="go>
+<TabItem value="go">
 
 1. Under the Information section, give your Vessel the name of `Non-Native Language - Go`.
 2. Under the notifications section, make sure that your email is listed. It should be added by default.
@@ -186,7 +186,7 @@ values={[
 4. Click the **Save & Finish** button at the bottom of the screen.
 
 </TabItem>
-<Tabs>
+</Tabs>
 
 ### Step 6 - Running the Vessel On-Demand
 
