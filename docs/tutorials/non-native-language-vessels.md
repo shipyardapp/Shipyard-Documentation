@@ -9,8 +9,8 @@ keywords:
   - tutorial
 ---
 
-<!-- import Tabs from '@theme/Tabs'; -->
-<!-- import TabItem from '@theme/TabItem'; -->
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # Building Non-Native Language Vessels
 
@@ -20,7 +20,7 @@ keywords:
 
 Note that this approach will likely add in some additional execution time for the Vessel due to the installation and setup going into each Vessel run.
 
-In this walk through, you'll construct a Vessel using a [language not natively supported](../reference/code/code-overview.md) in the platform - in our example, [Ruby](https://www.ruby-lang.org/en/).
+In this walk through, you'll construct a Vessel using a [language not natively supported](../reference/code/code-overview.md) in the platform.
 
 By the end of the tutorial, you'll be able to:
 
@@ -38,7 +38,16 @@ For the sake of the this tutorial, we suggest starting off by building a Vessel 
 
 Getting started with this walkthrough is fairly straight-forward.
 
-First, [download this code](../.gitbook/assets/non_native_language.zip), named `non_native_language.zip` to your computer without making any changes.
+<Tabs
+groupId="languages"
+defaultValue="ruby"
+values={[
+{label: 'Ruby', value: 'ruby'},
+{label: 'Go', value: 'go'},
+]}>
+<TabItem value="ruby">
+
+First, [download this zipped Ruby code](../.gitbook/assets/non_native_language_ruby.zip), named `non_native_language_ruby.zip` to your computer without making any changes.
 
 Feel free to review the code in both `run.sh` and `script.rb` to see what each is doing. Here's a brief overview:
 
@@ -51,6 +60,26 @@ Feel free to review the code in both `run.sh` and `script.rb` to see what each i
 	b. Gets an ID from the top stories response data  
 	c. Fetches the story by the ID  
 	d. Prints information using the `yell` package  
+
+</TabItem>
+<TabItem value='go'>
+
+First, [download this zipped Go code](../.gitbook/assets/non_native_language_go.zip), named `non_native_language_go.zip` to your computer without making any changes.
+
+Feel free to review the code in both `run.sh` and `script.go` to see what each is doing. Here's a brief overview:
+
+1. `run.sh`: this is the "entrypoint" for our Vessel code since Bash, not Go, is natively supported in Shipyard  
+	a. Initializes Go modules for third-party packages  
+	b. Installs the third-party package `logrus`  
+	c. Runs the Go script  
+2. `script.go`: this is the core of the code and is written entirely in Go  
+	a. Fetches the top stories from the Hacker News API  
+	b. Gets an ID from the top stories response data  
+	c. Fetches the story by the ID  
+	d. Prints information using the `logrus` package  
+
+</TabItem>
+</Tabs>
 
 ## Steps
 
@@ -76,10 +105,30 @@ You've successfully started the setup flow for building a Vessel with code.
 
 ### Step 3 - Code
 
+<Tabs
+groupId="languages"
+defaultValue="ruby"
+values={[
+{label: 'Ruby', value: 'ruby'},
+{label: 'Go', value: 'go'},
+]}>
+<TabItem value="ruby">
+
 1. In the radio button options, select **Upload**.
-2. Click on the grey square with the text **"Click or drag file to this area to upload"** and upload the previously downloaded `non_native_language.zip` file.
+2. Click on the grey square with the text **"Click or drag file to this area to upload"** and upload the previously downloaded `non_native_language_ruby.zip` file.
 3. Type `run.sh` into the **File to Run** field.
 4. Click **Next Step**.
+
+</TabItem>
+<TabItem value="go">
+
+1. In the radio button options, select **Upload**.
+2. Click on the grey square with the text **"Click or drag file to this area to upload"** and upload the previously downloaded `non_native_language_go.zip` file.
+3. Type `run.sh` into the **File to Run** field.
+4. Click **Next Step**.
+
+</TabItem>
+</Tabs>
 
 ### Step 4 - Requirements
 
@@ -89,16 +138,55 @@ You've successfully started the setup flow for building a Vessel with code.
 
 #### Packages
 
+<Tabs
+groupId="languages"
+defaultValue="ruby"
+values={[
+{label: 'Ruby', value: 'ruby'},
+{label: 'Go', value: 'go'},
+]}>
+<TabItem value="ruby">
+
 1. Click the **+** icon next to Packages to add a new package.
 2. In the **Package Name** field on the left-hand side, type `ruby-full`.
 3. Click **Next Step**.
 
+</TabItem>
+<TabItem value="go>
+
+1. Click the **+** icon next to Packages to add a new package.
+2. In the **Package Name** field on the left-hand side, type `golang`.
+3. Click **Next Step**.
+
+</TabItem>
+</Tabs>
+
 ### Step 5 - Settings
+
+<Tabs
+groupId="languages"
+defaultValue="ruby"
+values={[
+{label: 'Ruby', value: 'ruby'},
+{label: 'Go', value: 'go'},
+]}>
+<TabItem value="ruby">
 
 1. Under the Information section, give your Vessel the name of `Non-Native Language - Ruby`.
 2. Under the notifications section, make sure that your email is listed. It should be added by default.
 3. Under the Guardrails section, set the **Number of Retries** to 2x and the **Time Between Retries** to 5m.
 4. Click the **Save & Finish** button at the bottom of the screen.
+
+</TabItem>
+<TabItem value="go>
+
+1. Under the Information section, give your Vessel the name of `Non-Native Language - Go`.
+2. Under the notifications section, make sure that your email is listed. It should be added by default.
+3. Under the Guardrails section, set the **Number of Retries** to 2x and the **Time Between Retries** to 5m.
+4. Click the **Save & Finish** button at the bottom of the screen.
+
+</TabItem>
+<Tabs>
 
 ### Step 6 - Running the Vessel On-Demand
 
@@ -114,8 +202,25 @@ In the output, you'll see several things.
 2. Shipyard downloads the file you created under the Code section, decompresses it, and begins to run `run.sh`
 3. Shipyard prints out the text `Top story on Hacker News stats` followed by the `title`, `score`, and `link` values
 
-![](../.gitbook/assets/non-native-language-log.png)
+<Tabs
+groupId="languages"
+defaultValue="ruby"
+values={[
+{label: 'Ruby', value: 'ruby'},
+{label: 'Go', value: 'go'},
+]}>
+<TabItem value="ruby">
+
+![](../.gitbook/assets/non-native-language-log-ruby.png)
+
+</TabItem>
+<TabItem value="go">
+
+![](../.gitbook/assets/non-native-language-log-go.png)
+
+</TabItem>
+</Tabs>
 
 :::success
-You've successfully created and verified a Vessel using a non-native language - Ruby.
+You've successfully created and verified a Vessel using a non-native language.
 :::
