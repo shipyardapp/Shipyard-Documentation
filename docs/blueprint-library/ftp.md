@@ -33,7 +33,7 @@ The **FTP - Download Files** Blueprint allows users to quickly export one or mor
 
 | Variable Name | Description |
 |:---|:---|
-| **Host** | [REQUIRED] Domain or IP address of the FTP Server to connect to |
+| **Host** | [REQUIRED] Domain or IP address of the FTP server to connect to |
 | **Port** | Number for the port to connect to - `21` is used for FTP |
 | **Username** | Value of the configured username in the FTP server - see **Authorization** |
 | **Password** | Value of the configured password in the FTP server - see **Authorization** |
@@ -41,7 +41,7 @@ The **FTP - Download Files** Blueprint allows users to quickly export one or mor
 | **FTP File Name Match Type** | [REQUIRED] Method used by Shipyard to look for the file name in the FTP server |
 | **FTP File Name** | [REQUIRED] Name of the target file in the FTP server |
 | **Local Folder Name** | Name for the folder to store the file in the Shipyard Vessel |
-| **Local File Name** | Name for file to store in the Shipyard Vessel |
+| **Local File Name** | Name for the file to store in the Shipyard Vessel |
 
 ## Upload Files Blueprint
 
@@ -53,13 +53,13 @@ The **FTP - Upload Files** Blueprint allows users to easily import one or more f
 
 | Variable Name | Description |
 |:---|:---|
-| **Host** | [REQUIRED] Domain or IP address of the FTP Server to connect to |
+| **Host** | [REQUIRED] Domain or IP address of the FTP server to connect to |
 | **Port** | Number for the port to connect to - `21` is used for FTP |
 | **Username** | Value of the configured username in the FTP server - see **Authorization** |
 | **Password** | Value of the configured password in the FTP server - see **Authorization** |
 | **Local Folder Name** | Name for the local folder in the Shipyard Vessel to upload the target file from |
 | **Local File Name Match Type** | [REQUIRED] Method used by Shipyard to look for the local file name in the Vessel |
-| **Local File Name** | [REQUIRED] Name for file in the Shipyard Vessel to upload |
+| **Local File Name** | [REQUIRED] Name for the file in the Shipyard Vessel to upload |
 | **FTP Folder Name** | Name of the folder where the file is uploaded to in the FTP server |
 | **FTP File Name** | Name of the file uploaded in the FTP server |
 
