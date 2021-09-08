@@ -82,8 +82,8 @@ The **Amazon S3 - Download Files** Blueprint allows users to fetch files from S3
 | **S3 File Name** | [REQUIRED] The name for the target file stored in S3 |
 | **Local Folder Name** | Where Shipyard should store the downloaded file |
 | **Local File Name** | [REQUIRED] What the downloaded file should be named in Shipyard |
-| **Access Key ID** | [REQUIRED] The access key ID for programmatic IAM user used to download the file - see **Authorization** above for more information |
-| **Secret Access Key** | [REQUIRED] The secret access key for programmatic IAM user used to download the file - see **Authorization** above for more information |
+| **Access Key ID** | [REQUIRED] The access key ID for programmatic IAM user used to download the file - see [**Authorization**](#authorization) above for more information |
+| **Secret Access Key** | [REQUIRED] The secret access key for programmatic IAM user used to download the file - see [**Authorization**](#authorization) above for more information |
 | **Region** | [REQUIRED] The AWS region for the S3 bucket and IAM user |
 
 ## Upload Files Blueprint
@@ -102,8 +102,8 @@ The **Amazon S3 - Upload Files** Blueprint allows users to send files Shipyard i
 | **Local File Name** | [REQUIRED] The name for the target file stored in Shipyard |
 | **S3 Folder Name** | Where Shipyard should store the uploaded file in S3 |
 | **S3 File Name** | [REQUIRED] What the uploaded file should be named in S3 |
-| **Access Key ID** | [REQUIRED] The access key ID for programmatic IAM user used to upload the file - see **Authorization** above for more information |
-| **Secret Access Key** | [REQUIRED] The secret access key for programmatic IAM user used to upload the file - see **Authorization** above for more information |
+| **Access Key ID** | [REQUIRED] The access key ID for programmatic IAM user used to upload the file - see [**Authorization**](#authorization) above for more information |
+| **Secret Access Key** | [REQUIRED] The secret access key for programmatic IAM user used to upload the file - see [**Authorization**](#authorization) above for more information |
 | **Region** | [REQUIRED] The AWS region for the S3 bucket and IAM user |
 | **Extra Variables** | Extra arguments that may be passed to the S3 operation |
 

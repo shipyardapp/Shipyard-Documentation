@@ -158,7 +158,7 @@ The **Amazon Athena - Execute Query** Blueprint allows users to run arbitrary qu
 | **S3 Log Bucket Name** | [REQUIRED] The S3 bucket to output the query logs into |
 | **S3 Log Folder Name** | The optional subdirectory within the S3 bucket to store query logs |
 | **Access Key ID** | [REQUIRED] The access key ID for programmatic IAM user used to download the file - see **Authorization** above for more information |
-| **Secret Access Key** | [REQUIRED] The secret access key for programmatic IAM user used to download the file - see **Authorization** above for more information |
+| **Secret Access Key** | [REQUIRED] The secret access key for programmatic IAM user used to download the file - see [**Authorization**](#authorization) above for more information |
 | **Region** | [REQUIRED] The AWS region for the S3 bucket and IAM user |
 
 ## Store Query Results as CSV Blueprint
@@ -178,7 +178,7 @@ The **Amazon Athena - Store Query Results as CSV** Blueprint allows users to run
 | **Local File Name** | [REQUIRED] The name of the log file is stored under in Shipyard |
 | **Local Folder Name** | The optional subdirectory the log file output is stored under in Shipyard |
 | **Access Key ID** | [REQUIRED] The access key ID for programmatic IAM user used to download the file - see **Authorization** above for more information |
-| **Secret Access Key** | [REQUIRED] The secret access key for programmatic IAM user used to download the file - see **Authorization** above for more information |
+| **Secret Access Key** | [REQUIRED] The secret access key for programmatic IAM user used to download the file - see [**Authorization**](#authorization) above for more information |
 | **Region** | [REQUIRED] The AWS region for the S3 bucket and IAM user |
 
 ## Helpful Links

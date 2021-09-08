@@ -50,7 +50,7 @@ The **Azure Blob Storage - Download Files** Blueprint allows users to quickly ex
 | **Azure Storage File Name** | [REQUIRED] Name for the target file to download to the Shipyard Vessel |
 | **Local Folder Name** | Name for the folder to download into in the Shipyard Vessel |
 | **Local File Name** | Name to give the downloaded file in the Shipyard Vessel |
-| **Connection String** | Connection string for programmatic access to download the file - see **Authorization** above for more information |
+| **Connection String** | Connection string for programmatic access to download the file - see [**Authorization**](#authorization) above for more information |
 
 ## Upload Files Blueprint
 
@@ -68,7 +68,7 @@ The **Azure Blob Storage - Upload Files** Blueprint allows users to easily impor
 | **Container Name** | [REQUIRED] Name for the target Azure storage container |
 | **Azure Storage Folder Name** | Name for the target file folder |
 | **Azure Storage File Name** | Name for the target file to uploaded to Azure storage |
-| **Connection String** | Connection string for programmatic access to download the file - see **Authorization** above for more information |
+| **Connection String** | Connection string for programmatic access to download the file - see [**Authorization**](#authorization) above for more information |
 
 ## Helpful Links
 
