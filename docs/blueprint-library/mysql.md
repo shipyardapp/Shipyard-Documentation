@@ -17,7 +17,7 @@ keywords:
 
 ### Overview
 
-In order to get started with the MySQL Blueprints, the a database user is required.
+In order to get started with the MySQL Blueprints, a database user is required.
 
 ### Steps
 

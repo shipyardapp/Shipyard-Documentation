@@ -19,7 +19,7 @@ keywords:
 
 ### Overview
 
-In order to get started with the PostgreSQL Blueprints, the a database user is required.
+In order to get started with the PostgreSQL Blueprints, a database user is required.
 
 ### Steps
 
