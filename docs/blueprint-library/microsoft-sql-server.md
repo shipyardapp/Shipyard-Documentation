@@ -18,7 +18,7 @@ keywords:
 
 ### Overview
 
-In order to get started with the Microsoft SQL Server Blueprints, a database user is required.
+In order to get started with the Microsoft SQL Server Blueprints, a database user is required. You can use an existing user with their credentials or create a new user using the steps below.
 
 ### Steps
 
