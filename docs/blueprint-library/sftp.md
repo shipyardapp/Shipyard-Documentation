@@ -29,6 +29,8 @@ The username and password values that are [created when adding a user](https://w
 
 The **SFTP - Download Files** Blueprint allows users to quickly export one or more files from an SFTP Server.
 
+This Blueprint requires _read_ permissions in order to download from the SFTP server.  
+
 ### Variables
 
 | Variable Name | Description |
@@ -48,6 +50,8 @@ The **SFTP - Download Files** Blueprint allows users to quickly export one or mo
 ### Overview
 
 The **SFTP - Upload Files** Blueprint allows users to easily import one or more files directly into an SFTP Server, no matter how big they are.
+
+This Blueprint requires _write_ permissions in order to upload to the SFTP server.  
 
 ### Variables
 
