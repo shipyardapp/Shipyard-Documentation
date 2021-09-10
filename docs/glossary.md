@@ -50,7 +50,7 @@ keywords:
 
 **Duration** refers to the total length of real time that a Vessel or Fleet took to be completed.
 
-**Billable Runtime** refers to the cumulative length of execution time that a Vessel or Fleet took while running. For Fleets, it is possible for the billable runtime to exceed duration.
+[**Billable Runtime**](faqs.md#how-do-you-calculate-billable-runtime) refers to the cumulative length of execution time that a Vessel or Fleet took while running. For Fleets with high concurrency, it is possible for the billable runtime to exceed duration. For Vessels with retries, it is possible for the billable runtime to be less than duration.
 
 ## Visuals
 
