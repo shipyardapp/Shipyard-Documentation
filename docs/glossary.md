@@ -48,6 +48,10 @@ keywords:
 
 **Downstream** refers to connected Vessels that will run immediately after the current Vessel.
 
+**Duration** refers to the total length of real time that a Vessel or Fleet took to be completed.
+
+**Billable Runtime** refers to the cumulative length of execution time that a Vessel or Fleet took while running. For Fleets, it is possible for the billable runtime to exceed duration.
+
 ## Visuals
 
 ### Shipyard Platform Diagram
