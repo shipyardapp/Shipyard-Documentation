@@ -23,8 +23,12 @@ In order to get started with the Microsoft SQL Server Blueprints, a database use
 ### Steps
 
 1. Login to your Microsoft SQL Server    
-2. If using the command line, create a login by running `CREATE LOGIN <login value> WITH PASSWORD = '<new password>';`  
-3. If using the command line, create a user by running `CREATE USER <user name> FOR LOGIN '<login value>';`  
+2. Create a login either:  
+	a. On the command line by running `CREATE LOGIN <login value> WITH PASSWORD = '<new password>';`  
+	b. In the Object Explorer following [these instructions](https://docs.microsoft.com/en-us/sql/relational-databases/security/authentication-access/create-a-login?view=sql-server-ver15)  
+3. Create a user either:  
+	a. On the command line by running `CREATE USER <user name> FOR LOGIN '<login value>';`  
+	b. In the Object Explorer following [these instructions](https://docs.microsoft.com/en-us/sql/relational-databases/security/authentication-access/create-a-database-user?view=sql-server-ver15)  
 3. The server URL, the username, and password are all used in the Blueprints below  
 
 ## Execute Query Blueprint

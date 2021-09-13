@@ -24,7 +24,7 @@ In order to get started with the PostgreSQL Blueprints, a database user is requi
 ### Steps
 
 1. Login to your PostgreSQL server  
-2. If using the command line, create a user by running `CREATE USER <user name> WITH PASSWORD '<new password>';`  
+2. In the command line, create a user by running `CREATE USER <user name> WITH PASSWORD '<new password>';`  
 3. The PostgreSQL server URL, the username, and password are all used in the Blueprints below  
 
 ## Execute Query Blueprint

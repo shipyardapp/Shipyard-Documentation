@@ -22,8 +22,8 @@ In order to get started with the MySQL Blueprints, a database user is required. 
 ### Steps
 
 1. Login to your MySQL server  
-2. If using the command line, connect to a database by running `USE <database name>`  
-3. If using the command line, create a user by running `CREATE USER <user name> WITH PASSWORD '<new password>';`  
+2. In the command line, connect to a database by running `USE <database name>`  
+3. In the command line, create a user by running `CREATE USER <user name> WITH PASSWORD '<new password>';`  
 4. The MySQL server URL, the username, and password are all used in the Blueprints below  
 
 ## Execute Query Blueprint
