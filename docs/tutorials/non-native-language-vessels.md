@@ -95,7 +95,7 @@ Feel free to review the code in both `run.sh` and `script.go` to see what each i
 
 ![](../.gitbook/assets/shipyard_2021_03_16_16_24_01.png)
 
-:::success
+:::tip success
 You've successfully started the setup flow for building a Vessel with code.
 :::
 
@@ -221,6 +221,6 @@ values={[
 </TabItem>
 </Tabs>
 
-:::success
+:::tip success
 You've successfully created and verified a Vessel using a non-native language.
 :::
