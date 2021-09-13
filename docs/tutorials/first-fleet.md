@@ -163,7 +163,7 @@ Once you've connected the Vessels together, click **Next Step**.
 
 ![](../.gitbook/assets/stock_log.png)
 
-:::success
+:::tip success
 You've successfully created and verified a Fleet that shares files!
 :::
 

@@ -42,7 +42,7 @@ Your setup should look like this:
 
 7. Click the **Create** button in the bottom-right corner of the screen.
 
-:::success
+:::tip success
 You've now successfully created your first project named Testing.
 :::
 

@@ -168,7 +168,7 @@ Your Blueprint should look like this:
 
 
 
-:::success
+:::tip success
 You've successfully set up Great Expectations as a Blueprint.
 :::
 

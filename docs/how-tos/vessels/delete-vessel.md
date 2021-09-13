@@ -32,6 +32,6 @@ You can't recover a Vessel once it's deleted. Make sure you have any data you ne
 4. At the bottom of the screen, click the red **Delete** text.
 5. Confirm that you really want to delete the Vessel.
 
-:::success
+:::tip success
 You've now successfully deleted a Vessel.
 :::

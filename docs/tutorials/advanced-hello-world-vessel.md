@@ -57,7 +57,7 @@ Feel free to peruse this script beforehand so you understand everything that it'
 
 ![](../.gitbook/assets/shipyard_2021_03_16_16_24_01.png)
 
-:::success
+:::tip success
 You've successfully started the setup flow for building a Vessel with code.
 :::
 
@@ -73,7 +73,7 @@ values={[
 ]}>
 <TabItem value="python">
 
-Click on the **Python** Blueprint. You'll be immediately redirected to the next step.
+Click on the **Python** option. You'll be immediately redirected to the next step.
 </TabItem>
 </Tabs>
 

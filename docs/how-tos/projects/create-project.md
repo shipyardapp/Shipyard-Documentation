@@ -23,5 +23,5 @@ If you find yourself needing to create additional Vessels or Fleets that have a 
 4. Set your project's [timezone](../../reference/other-functions/timestamps-and-timezones.md). All Vessels created under this project will use this timezone for [Triggers](../../reference/triggers/triggers-overview.md).
 5. Click the **Create** button at the bottom of the page.
 
-:::success
+:::tip success
 You've now successfully created a new project.

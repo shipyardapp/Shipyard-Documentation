@@ -27,6 +27,6 @@ Deleting a project will permanently remove all Vessels in the project as well as
 4. Click the red **Delete** text at the bottom of the page.
 5. Confirm that you really want to delete the project.
 
-:::success
+:::tip success
 You've now successfully deleted a project.
 :::

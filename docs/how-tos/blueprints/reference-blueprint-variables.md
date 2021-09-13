@@ -58,6 +58,6 @@ This way of referencing a Blueprint Variable is less ideal because it will not w
 </TabItem>
 </Tabs>
 
-:::success
+:::tip success
 You've now successfully referenced user input in your code.
 :::
