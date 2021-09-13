@@ -57,7 +57,7 @@ Feel free to peruse this script beforehand so you understand everything that it'
 
 ![](../.gitbook/assets/shipyard_2021_03_16_16_24_01.png)
 
-:::success
+:::tip success
 You've successfully started the setup flow for building a Vessel with code.
 :::
 

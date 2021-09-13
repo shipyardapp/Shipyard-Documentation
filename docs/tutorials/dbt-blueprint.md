@@ -133,7 +133,7 @@ Your Blueprint should look like this:
 5. Click the **Save & Finish** button at the bottom of the screen.
 
 
-:::success
+:::tip success
 You've successfully set up dbt as a Blueprint.
 :::
 

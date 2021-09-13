@@ -52,6 +52,6 @@ At this point, you may want to understand more about why a Fleet failed or ran i
 </TabItem>
 </Tabs>
 
-:::success
+:::tip success
 You've now successfully assessed the performance of a Fleet.
 :::

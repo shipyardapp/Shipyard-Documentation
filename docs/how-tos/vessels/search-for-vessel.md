@@ -23,6 +23,6 @@ Sometimes you can end up with hundreds of Vessels across your projects, making i
    1. If a matching Vessel was found, you'll see the table filter to these Vessels.
    2. If no matching Vessel was found, you'll see a screen that says "No Vessels match your filters.". You can try a different search term, try filtering other fields, or try a different Project.
 
-:::success
+:::tip success
 You've now successfully searched for a Vessel.
 :::
