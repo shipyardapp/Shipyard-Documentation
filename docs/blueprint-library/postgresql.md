@@ -79,7 +79,9 @@ Upload one or more CSV files to any table in PostgreSQL. With the file data, you
 - **Replace Data** - Write over the entire contents of table with the contents of your file.
 - **Add Data Only if Table is Empty** - Add data to the table if no data exists.
 
-Column names are inferred from the header row of your CSV file. If the table already exists, the header values are matched to the table column names. The header names must match the existing column names in your table, otherwise the Vessel will error.
+Column names are inferred from the header row of your CSV file. Column names must not be null or be duplicate values.
+
+If the table already exists, the header values are matched to the table column names. The header names must match the existing column names in your table, otherwise the Vessel will error.
 
 Data is inserted into the table by using multiple INSERT statements.
 
