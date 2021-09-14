@@ -25,7 +25,7 @@ A large number of Library Blueprints have a **Match Type** field that allows you
 
 - **Regex Match** - Matches to multiple files, using regular expressions.
 
-The Match Type selected differently affects the Source fields and the Destination fields. These names will differ based on the Blueprint you've selected and the functionality of that Blueprint.
+The Match Type selected affects the Source fields and the Destination fields differently. The names of these fields will differ based on the Blueprint you've selected and the functionality of that Blueprint.
 
 - **Source** - If you're downloading files, this will be the vendor/tool. If you're uploading files, this will be Shipyard's local file system.
 
@@ -37,7 +37,7 @@ The Match Type selected differently affects the Source fields and the Destinatio
 
 When using Exact Match, the Blueprint will look for a file that exactly matches (case sensitive) the combination of the provided Source Folder Name and Source File Name. When the folder name and file name are combined, we correctly format the `/` characters, so you don't need to worry about the difference between providing a folder as `folder/structure`, `/folder/structure` or `folder/structure/`.
 
-Leaving the Folder Name blank assumes that the file you want to match to lives in the home directory.
+When the Source is Shipyard, leaving the Folder Name blank assumes that the file you want to match to lives in the home directory. When the Source is a vendor/tool, leaving the Folder Name blank assumes that the file you want to match to lives in the root directory.
 
 ### Effects on Destination
 
@@ -94,7 +94,7 @@ The Blueprint combines the folder and file name to create `reports/monthly/jan_d
 
 |Element| Names|
 |:---|:---|
-|**Matched Files**|jan_data.csv|
+|**Matched Files**|reports/monthly/jan_data.csv|
 |**Downloaded Files**|jan_data.csv|
 
 
@@ -117,7 +117,7 @@ The Blueprint combines the folder and file name to create `reports/monthly/jan_d
 
 |Element| Names|
 |:---|:---|
-|**Matched Files**|jan_data.csv|
+|**Matched Files**|reports/monthly/jan_data.csv|
 |**Downloaded Files**|january/january_2022.csv|
 
 
@@ -154,6 +154,8 @@ The Blueprint does not find a file to match to, because no file named `jan_data.
 ### Effects on Source
 
 When using Regex Match, the Blueprint will first filter down to the folder provided under Source Folder Name. Next, it will then pull in every file that exists under your filter and its subfolders. Then, it will compare the names of these files to the regex provided under Source File Name. All matching file names are then looped through for downloading/uploading.
+
+When the Source is Shipyard, leaving the Folder Name blank will cause Shipyard to search for all matches in the home directory and its subdirectories. When the Source is a vendor/tool, leaving the Folder Name blank will cause Shipyard to search for all the matches in the root directory and its subdirectories.
 
 :::note
 Technically, all files names are a combination of their folder name and file name. So a file named `data.csv` in a folder named `reports` is seen as `reports/data.csv` for the sake matching with regex. This can result in your regex matching to a file because of its folder name.
@@ -214,7 +216,7 @@ The Blueprint filters down to the folder of `reports/monthly`. In this folder, i
 
 |Element| Names|
 |:---|:---|
-|**Matched Files**|jan_data.csv<br/>feb_data.csv<br/>mar_data.csv|
+|**Matched Files**|reports/monthly/jan_data.csv<br/>reports/monthly/feb_data.csv<br/>reports/monthly/mar_data.csv|
 |**Downloaded Files**|jan_data.csv<br/>feb_data.csv<br/>mar_data.csv|
 
 
@@ -228,15 +230,15 @@ The Blueprint filters down to the folder of `reports/monthly`. In this folder, i
 |**Source File Name Match Type**| `Regex Match`|
 |**Source File Name**| `monthly`|
 |**Source Folder Name**| `reports`|
-|**Destination File Name**| `data.csv`|
+|**Destination File Name**| `<empty>`|
 
 **Result**
 
-The Blueprint filters down to the folder of `reports`. In this folder, it finds a folder, `monthly` that matches the regex - so it includes all of its files. Additionally, it finds a file in the subfolder `aggregated`.
+The Blueprint filters down to the folder of `reports`. In this folder, it finds a folder, `monthly` that matches the regex - so it includes all of its files. Additionally, it finds a file in the subfolder `aggregated`. Because the Destination File Name is empty, the files retain their original names.
 
 |Element| Names|
 |:---|:---|
-|**Matched Files**|data_monthly.csv<br/>jan_data.csv<br/>feb_data.csv<br/>mar_data.csv|
+|**Matched Files**|reports/aggregated/data_monthly.csv<br/>reports/monthly/jan_data.csv<br/>reports/monthly/feb_data.csv<br/>reports/monthly/mar_data.csv|
 |**Downloaded Files**|data_monthly.csv<br/>jan_data.csv<br/>feb_data.csv<br/>mar_data.csv|
 
 
@@ -255,11 +257,11 @@ The Blueprint filters down to the folder of `reports`. In this folder, it finds 
 
 **Result**
 
-The Blueprint does not filter down at all. Across all folders and subfolders, it finds 6 files that match the regex. It then proceeds to name all of them `data_#.csv`
+The Blueprint does not filter down at all. Across all folders and subfolders, it finds 6 files that match the regex. It then proceeds to name all of them `data_#.csv`, due to enumeration logic.
 
 |Element| Names|
 |:---|:---|
-|**Matched Files**| customer_data.csv<br/>geo_data.csv<br/>jan_data.csv<br/>feb_data.csv<br/>mar_data.csv<br/>company_data.csv|
+|**Matched Files**| reports/customer_data.csv<br/>reports/external/geo_data.csv<br/>reports/monthly/jan_data.csv<br/>reports/monthly/feb_data.csv<br/>reports/monthly/mar_data.csv<br/>company_data.csv|
 |**Downloaded Files**| data_1.csv<br/>data_2.csv<br/>data_3.csv<br/>data_4.csv<br/>data_5.csv<br/>data_6.csv|
 
 </TabItem>
@@ -281,7 +283,7 @@ The Blueprint does not filter down at all. Across all folders and subfolders, it
 
 |Element| Names|
 |:---|:---|
-|**Matched Files**| jan_data.csv|
+|**Matched Files**| reports/monthly/jan_data.csv|
 |**Downloaded Files**| data.csv|
 
 </TabItem>
