@@ -34,7 +34,7 @@ We currently natively support the creation of solutions using Python 3.7, Node 1
 
 Bash allows us to support any language non-natively, where the right language packages just need to be manually installed by the user as an [external package](reference/requirements/external-package-dependencies)
 
-SQL can be used natively with some Blueprints found in the [Blueprint Library](reference/blueprint-library.md).
+SQL can be used natively with some Blueprints found in the [Blueprint Library](reference/blueprint-library/blueprint-library.md).
 
 In the future, we plan to expand our native language support to R. If you have a language that you would like to see supported, let us know!
 
@@ -46,11 +46,11 @@ Shipyard is not inherently a low-code tool, as it's custom-designed for data tea
 
 However, the platform allows technical teams to turn coded solutions into low-code Blueprints that can be used by anyone in the organization.
 
-Additionally, we offer a wide variety of Blueprints in our [Blueprint Library](reference/blueprint-library.md) that don't require minimal code to use.
+Additionally, we offer a wide variety of Blueprints in our [Blueprint Library](reference/blueprint-library/blueprint-library.md) that don't require minimal code to use.
 
 ## What skills do I need to get started with Shipyard?
 
-If you have standard needs to run QA on your data, deliver reports, and send data to external partners, you will be able to get by using only the Blueprints found in our [Blueprint Library](reference/blueprint-library.md).
+If you have standard needs to run QA on your data, deliver reports, and send data to external partners, you will be able to get by using only the Blueprints found in our [Blueprint Library](reference/blueprint-library/blueprint-library.md).
 
 If you have proprietary business logic needs, you will likely need at least one technical team member that can initially build solutions for the organization. However, other users of Shipyard are **not** required to know code. We built the platform to allow business users the ability to easily access and take advantage of internally built solutions as [Blueprints](reference/blueprints).
 

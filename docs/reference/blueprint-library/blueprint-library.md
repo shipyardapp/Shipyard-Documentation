@@ -1,6 +1,6 @@
 ---
 id: blueprint-library
-title: Blueprint Library
+title: Blueprint Library Overview
 hide_title: true
 description: Information about the Blueprint Library.
 keywords:
@@ -15,7 +15,7 @@ keywords:
 
 ## Definition
 
-The Blueprint Library is a location for pre-made [Blueprints](./blueprints.md) developed by Shipyard staff. These Blueprints provide an easy way to avoid monotonous development work associated with integrations.
+The Blueprint Library is a location for pre-made [Blueprints](../blueprints.md) developed by Shipyard staff. These Blueprints provide an easy way to avoid monotonous development work associated with integrations.
 
 Library Blueprints are designed to:
 
@@ -64,7 +64,7 @@ Blueprints are broken down into a few categories with core functionality that sh
 
 ## Screenshots
 
-![Over 50+ Blueprints to take action on modern data platforms](../.gitbook/assets/image_80.png)
+![Over 50+ Blueprints to take action on modern data platforms](../../.gitbook/assets/image_80.png)
 
 ## Learn More
 
