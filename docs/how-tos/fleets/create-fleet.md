@@ -30,5 +30,5 @@ If you want multiple [Vessels](../../reference/vessels.md) to work together for 
 9. Give your Fleet a Name.
 10. Click **Save & Finish**.
 
-:::success
+:::tip success
 You've now successfully created a Fleet.

@@ -53,6 +53,6 @@ At this point, you may want to understand more about why a Vessel failed or ran 
 </TabItem>
 </Tabs>
 
-:::success
+:::tip success
 You've now successfully assessed the performance of a Vessel.
 :::

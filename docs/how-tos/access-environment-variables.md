@@ -67,6 +67,6 @@ process.env.OPERATOR_A;
 
 
 
-:::success
+:::tip success
 You've now successfully written code to access an environment variable.
 :::

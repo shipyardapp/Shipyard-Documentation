@@ -51,6 +51,6 @@ All of the information on this tab is optional.
 4. Optionally, edit the [guardrails](../../reference/settings/guardrails.md) to make the system automatically retry your Vessel upon an error.
 5. Click **Save and Finish** once you're done
 
-:::success
+:::tip success
 You've now successfully built a Vessel with code.
 :::

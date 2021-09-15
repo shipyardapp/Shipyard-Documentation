@@ -34,6 +34,17 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - Slack (Embed Data into Message)
 - Email (Embed Data into Message)
 
+## 9/14/2021
+
+### Enhancements
+
+- Added Usage Dashboard data for Trialing and Developer Tier Organizations.
+
+### Bug Fixes
+
+- Fixed an issue where Voyages in a Fleet Run could incorrectly be removed.
+- Fixed an issue where the Usage Dashboard would sometimes show no data.
+
 ## 8/31/2021
 
 ### Bug Fixes

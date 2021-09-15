@@ -28,7 +28,7 @@ Log data is routinely deleted from our system to decrease storage costs. The amo
 
 ### Log Data
 
-The data contained within a Log differs slightly for Vessels and Fleets differ slightly. Explore them in depth below.
+The data contained within a Log differs slightly for Vessels and Fleetsv. Explore them in depth below.
 
 - [Vessel Logs](vessel-logs.md)
 - [Fleet Logs](fleet-logs.md)

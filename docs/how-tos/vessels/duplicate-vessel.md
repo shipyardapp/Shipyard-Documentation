@@ -22,7 +22,7 @@ Sometimes, you'll want to re-use the existing components of a Vessel with only a
 2. Click either the **Edit** action or the **Vessel Name**.
 3. Click the **Duplicate** button at the bottom.
 
-:::success
+:::tip success
 You've now successfully duplicated the Vessel and are viewing the copy.
 :::
 

@@ -25,6 +25,6 @@ Sometimes you can end up with hundreds of Blueprints across your organization, m
    1. If a matching Blueprint was found, you'll see the table filter to these Blueprints.
    2. If no matching Vessel was found, you'll see a screen that says "No Vessels match your filters". You can try a different search term, or try filtering other fields.
 
-:::success
+:::tip success
 You've now successfully searched for a Blueprint.
 :::

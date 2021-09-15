@@ -40,6 +40,6 @@ The following steps are optional, but strongly recommended to increase usability
 ### Step 3 - Create the Variable
 1. Click the **Add Variable** Button at the bottom.
 
-:::success
+:::tip success
 You've successfully made a new Blueprint Variable.
 :::

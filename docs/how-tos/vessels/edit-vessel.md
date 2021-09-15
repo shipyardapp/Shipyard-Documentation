@@ -29,5 +29,5 @@ Every tab, except for Logs, has fields that can be added or edited. These fields
 1. Edit any and all fields that need updating. You can make multiple updates across multiple tabs.
 2. Once all of your changes have been made, click the **Save** button at the bottom of the page.
 
-:::success
+:::tip success
 You've now successfully edited a Vessel.

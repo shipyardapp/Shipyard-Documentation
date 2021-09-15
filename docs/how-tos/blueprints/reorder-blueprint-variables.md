@@ -25,6 +25,6 @@ Sometimes, you may want your variables to be shown to a user in a specific order
 4. Continue moving variables until you're satisfied with the new order. Use the **Preview this Blueprint** button on the right-hand side of the screen to verify that it looks like you intended.
 5. Click either **Save** or **Next Step** in the bottom right corner.
 
-:::success
+:::tip success
 You've now successfully reordered Blueprint Variables.
 :::

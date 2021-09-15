@@ -22,6 +22,6 @@ If you find yourself needing to change [timezones](../../reference/other-functio
 4. Edit your Project name or change your project's timeone.
 5. Click the **Save** button at the bottom of the page.
 
-:::success
+:::tip success
 You've now successfully edited a project.
 :::

@@ -34,7 +34,7 @@ We currently natively support the creation of solutions using Python 3.7, Node 1
 
 Bash allows us to support any language non-natively, where the right language packages just need to be manually installed by the user as an [external package](reference/requirements/external-package-dependencies)
 
-SQL can be used natively with some Blueprints found in the [Blueprint Library](reference/blueprint-library.md).
+SQL can be used natively with some Blueprints found in the [Blueprint Library](reference/blueprint-library/blueprint-library.md).
 
 In the future, we plan to expand our native language support to R. If you have a language that you would like to see supported, let us know!
 
@@ -46,11 +46,11 @@ Shipyard is not inherently a low-code tool, as it's custom-designed for data tea
 
 However, the platform allows technical teams to turn coded solutions into low-code Blueprints that can be used by anyone in the organization.
 
-Additionally, we offer a wide variety of Blueprints in our [Blueprint Library](reference/blueprint-library.md) that don't require minimal code to use.
+Additionally, we offer a wide variety of Blueprints in our [Blueprint Library](reference/blueprint-library/blueprint-library.md) that don't require minimal code to use.
 
 ## What skills do I need to get started with Shipyard?
 
-If you have standard needs to run QA on your data, deliver reports, and send data to external partners, you will be able to get by using only the Blueprints found in our [Blueprint Library](reference/blueprint-library.md).
+If you have standard needs to run QA on your data, deliver reports, and send data to external partners, you will be able to get by using only the Blueprints found in our [Blueprint Library](reference/blueprint-library/blueprint-library.md).
 
 If you have proprietary business logic needs, you will likely need at least one technical team member that can initially build solutions for the organization. However, other users of Shipyard are **not** required to know code. We built the platform to allow business users the ability to easily access and take advantage of internally built solutions as [Blueprints](reference/blueprints).
 
@@ -95,9 +95,11 @@ For a more detailed overview, you can look at the [latest plans](https://www.shi
 
 To see your organization's usage for the current billing period, you can view the [Usage Dashboard](reference/admin/usage-dashboard.md).
 
-## How do you calculate runtime?
+## How do you calculate billable runtime?
 
-Shipyard charges for the cumulative time that your scripts take to run on our infrastructure, regardless of the final status of the job. You are not charged for any time delays between [automatic retries](reference/settings/guardrails.md), but each retry will have its own runtime associated to it. On your invoice, we bill per second, with each Vessels runtime rounded to the nearest second. Below are a few examples to demonstrate this calculation.
+Shipyard charges for the cumulative time that your scripts take to run on our infrastructure, regardless of the final status of the job. This is distinct from the duration.
+
+You are not charged for any time delays between [automatic retries](reference/settings/guardrails.md), but each retry will have its own billable runtime associated to it. You are not charged for any time delay between two Vessels in a Fleet. On your invoice, we bill per second, with each Vessel's billable runtime rounded up to the nearest second. Below are a few examples to demonstrate this calculation.
 
 Assumptions:
 - Process A always takes 1hr
@@ -105,10 +107,10 @@ Assumptions:
 - Process C always takes 1m
 
 Examples:
-- You have Process A scheduled to run at 2:00pm and Process B scheduled to run at 4:00pm. Everything will finish running at 4:10pm. Total runtime is 1h 10m.
-- Shipyard allows you to link together Process A and Process B as a Fleet, so that as soon as Process A completes, Process B will immediately run. If you ran Process A at 2:00pm, Process B will start running at 3:00pm and finish at 3:10pm. Total runtime is 1h 10m.
-- You run three instances of Process A, in parallel, but still only need to run Process B once after both Process A jobs have completed. If you run Process A three times at 2:00pm, all instances would complete at 3:00pm and kick off Process B which would finish at 3:10pm. Total runtime is calculated as 3h 10m, even though the Fleet only ran over the course of 1h 10m.
-- You run Process C with guardrails to retry itself 10x upon failure, with 5m between each retry. Process C starts running at 8:00am and fails every time. Process C finishes running at 8:55am, with a total runtime of 10m.
+- You have Process A scheduled to run at 2:00pm and Process B scheduled to run at 4:00pm. Everything will finish running at 4:10pm. Total billable runtime is 1h 10m.
+- Shipyard allows you to link together Process A and Process B as a Fleet, so that as soon as Process A completes, Process B will immediately run. If you ran Process A at 2:00pm, Process B will start running at 3:00pm and finish at 3:10pm. Total billable runtime is 1h 10m.
+- You run three instances of Process A, in parallel, but still only need to run Process B once after both Process A jobs have completed. If you run Process A three times at 2:00pm, all instances would complete at 3:00pm and kick off Process B which would finish at 3:10pm. Total billable runtime is calculated as 3h 10m, even though the Fleet only had a duration of 1h 10m.
+- You run Process C with guardrails to retry itself 10x upon failure, with 5m between each retry. Process C starts running at 8:00am and fails every time. Process C finishes running at 8:55am, with a total billable runtime of 10m.
 - You run Process C with guardrails to retry itself 10x upon failure, with 5m between each retry. Process C starts running at 8:00am and succeeds after the 3rd time. Process C finishes running at 8:13am, with a total runtime of 3m.
 
 ## How does Shipyard calculate network egress?

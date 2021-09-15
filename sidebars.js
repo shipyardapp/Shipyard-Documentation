@@ -11,8 +11,12 @@ module.exports = {
 		"📚 Reference": [
 			"reference/organizations",
 			"reference/projects",
-			"reference/blueprint-library",
+
 			{
+				"Blueprint Library": [
+					"reference/blueprint-library/blueprint-library",
+					"reference/blueprint-library/match-type",
+				],
 				Admin: [
 					"reference/admin/billing",
 					"reference/admin/usage-dashboard",
@@ -121,6 +125,7 @@ module.exports = {
 			"tutorials/great-expectations-blueprint",
 			"tutorials/dbt-core-blueprint",
 			"tutorials/first-fleet",
+			"tutorials/non-native-language-vessels"
 		],
 		"📦 Blueprint Library": [
 			"blueprint-library/amazon-athena",
