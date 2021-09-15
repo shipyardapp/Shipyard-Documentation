@@ -47,8 +47,8 @@ Execute any SQL query against your Redshift database. Perfect for creating multi
 |:---|:---|
 | **Host** | [REQUIRED] Domain or the IP address of the database to connect to |
 | **Port** | [REQUIRED] Port number where the database accepts inbound connections |
-| **Username** | [REQUIRED] Username configured as part of the database credentials - see **Authorization** above for more information |
-| **Password** | Optional password for database security credentials - see **Authorization** above for more information |
+| **Username** | [REQUIRED] Username configured as part of the database credentials - see [**Authorization**](#authorization) above for more information |
+| **Password** | Optional password for database security credentials - see [**Authorization**](#authorization) above for more information |
 | **Database** | Name of the database to connect to |
 | **Extra URL Parameters** | Extra parameters that will be placed at the end of the connection string, after the "?". Must be separated by "&" |
 | **Query** | [REQUIRED] SQL query to run against the target database |
@@ -65,8 +65,8 @@ Turn the results of your SQL SELECT statement into a CSV file. Extract your Amaz
 |:---|:---|
 | **Host** | [REQUIRED] Domain or the IP address of the database to connect to |
 | **Port** | [REQUIRED] Port number where the database accepts inbound connections |
-| **Username** | [REQUIRED] Username configured as part of the database credentials - see **Authorization** above for more information |
-| **Password** | Optional password for database security credentials - see **Authorization** above for more information |
+| **Username** | [REQUIRED] Username configured as part of the database credentials - see [**Authorization**](#authorization) above for more information |
+| **Password** | Optional password for database security credentials - see [**Authorization**](#authorization) above for more information |
 | **Database** | Name of the database to connect to |
 | **Extra URL Parameters** | Extra parameters that will be placed at the end of the connection string, after the "?". Must be separated by "&" |
 | **Query** | [REQUIRED] SQL query to run against the target database |
@@ -85,8 +85,8 @@ Upload a CSV file to any table in Amazon Redshift. With the file data, you can c
 |:---|:---|
 | **Host** | [REQUIRED] Domain or the IP address of the database to connect to |
 | **Port** | [REQUIRED] Port number where the database accepts inbound connections |
-| **Username** | [REQUIRED] Username configured as part of the database credentials - see **Authorization** above for more information |
-| **Password** | Optional password for database security credentials - see **Authorization** above for more information |
+| **Username** | [REQUIRED] Username configured as part of the database credentials - see [**Authorization**](#authorization) above for more information |
+| **Password** | Optional password for database security credentials - see [**Authorization**](#authorization) above for more information |
 | **Database** | Name of the database to connect to |
 | **Extra URL Parameters** | Extra parameters that will be placed at the end of the connection string, after the "?". Must be separated by "&" |
 | **Query** | [REQUIRED] SQL query to run against the target database |
