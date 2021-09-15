@@ -11,8 +11,12 @@ module.exports = {
 		"📚 Reference": [
 			"reference/organizations",
 			"reference/projects",
-			"reference/blueprint-library",
+
 			{
+				"Blueprint Library": [
+					"reference/blueprint-library/blueprint-library",
+					"reference/blueprint-library/match-type",
+				],
 				Admin: [
 					"reference/admin/billing",
 					"reference/admin/usage-dashboard",
