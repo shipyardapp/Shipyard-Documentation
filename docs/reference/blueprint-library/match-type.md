@@ -35,7 +35,7 @@ The Match Type selected affects the Source fields and the Destination fields dif
 
 ### Effects on Source
 
-When using Exact Match, the Blueprint will look for a file that exactly matches (case sensitive) the combination of the provided Source Folder Name and Source File Name. When the folder name and file name are combined, we correctly format the `/` characters, so you don't need to worry about the difference between providing a folder as `folder/structure`, `/folder/structure` or `folder/structure/`.
+When using Exact Match, the Blueprint will look for a file that exactly matches (case sensitive) the combination of the provided **Source Folder Name** and **Source File Name**. When the folder name and file name are combined, we correctly format the `/` characters, so you don't need to worry about the difference between providing a folder as `folder/structure`, `/folder/structure` or `folder/structure/`.
 
 When the Source is Shipyard, leaving the Folder Name blank assumes that the file you want to match to lives in the home directory. When the Source is a vendor/tool, leaving the Folder Name blank assumes that the file you want to match to lives in the root directory.
 
@@ -90,7 +90,7 @@ values={[
 
 **Result**
 
-The Blueprint combines the folder and file name to create `reports/monthly/jan_data.csv`. One file is found that matches. Because the Destination File Name is empty, the original file name is kept in tact.
+The Blueprint combines the folder and file name to interpret the source file as `reports/monthly/jan_data.csv`. One file is found that matches. Because the Destination File Name is empty, the original file name is kept in tact.
 
 |Element| Names|
 |:---|:---|
@@ -113,7 +113,7 @@ The Blueprint combines the folder and file name to create `reports/monthly/jan_d
 
 **Result**
 
-The Blueprint combines the folder and file name to create `reports/monthly/jan_data.csv`. One file is found that matches. Because the Destination Folder Name has a value, a folder named `january` is created. Because the Destination File Name has a value, the file is renamed to `january_2022.csv` upon download.
+The Blueprint combines the folder and file name to interpret the source file as `reports/monthly/jan_data.csv`. One file is found that matches. Because the Destination Folder Name has a value, a folder named `january` is created. Because the Destination File Name has a value, the file is renamed to `january_2022.csv` upon download.
 
 |Element| Names|
 |:---|:---|
@@ -153,7 +153,7 @@ The Blueprint does not find a file to match to, because no file named `jan_data.
 
 ### Effects on Source
 
-When using Regex Match, the Blueprint will first filter down to the folder provided under Source Folder Name. Next, it will then pull in every file that exists under your filter and its subfolders. Then, it will compare the names of these files to the regex provided under Source File Name. All matching file names are then looped through for downloading/uploading.
+When using Regex Match, the Blueprint will first filter down to the folder provided under Source Folder Name. Next, it will then pull in every file that exists under your filter and its subfolders. Then, it will compare the names of these files to the regex provided under **Source File Name**. All matching file names are then looped through for downloading/uploading.
 
 When the Source is Shipyard, leaving the Folder Name blank will cause Shipyard to search for all matches in the home directory and its subdirectories. When the Source is a vendor/tool, leaving the Folder Name blank will cause Shipyard to search for all the matches in the root directory and its subdirectories.
 
