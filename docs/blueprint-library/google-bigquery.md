@@ -19,10 +19,12 @@ keywords:
 
 In order to get started with the Google BigQuery Blueprints, a service account with the necessary GCP permissions is required.
 
-### Creating a Bigquery Service Account
+### Creating a BigQuery Service Account
 
-1. Login to your [GCP console](https://console.cloud.google.com/)  
-2. Open the sidebar and select "**IAM & Admin**"  
+1. Login to your [GCP console](https://console.cloud.google.com/)
+2. Using the top selector, choose the Project where your BigQuery Instance lives.  
+![Select Project](../.gitbook/assets/shipyard_2021_09_15_17_36_07.png)
+3. Open the sidebar and select "**IAM & Admin**"  
 	![IAM Service Accounts sidebar](../.gitbook/assets/iam-service-accounts-sidebar-selection.png)  
 3. Click "**Service Accounts**" in the options  
 4. Click "**+ CREATE SERVICE ACCOUNT**"  
@@ -33,21 +35,22 @@ In order to get started with the Google BigQuery Blueprints, a service account w
 	![Add service account name](../.gitbook/assets/bigquery-service-account-name.png)  
 6. Click "**CREATE AND CONTINUE**"  
 7. Click "**Select a role**" dropdown  
-	a. Scroll down the options and hover over "BigQuery"  
-	b. Select "**BigQuery Data Editor**"  
-	![Add BigQuery role](../.gitbook/assets/bigquery-role-bigquery-data-editor-selection.png)
 	
+	a. Search for and select "**BigQuery Data Editor**"  
+	![](../.gitbook/assets/shipyard_2021_09_15_17_27_59.png)
+	b. "Click "+ ADD ANOTHER ROLE"  
+	c. Search for and select "**BigQuery Job User**"  
+	![](../.gitbook/assets/shipyard_2021_09_15_17_28_31.png)
 	:::info
-	If you want to use our "Store Query Results in Google Cloud Storage" Blueprint, you can optionally:
+	If you want to use our "Store Query Results in Google Cloud Storage" Blueprint, you will also need to:
 	
 	a. "Click "+ ADD ANOTHER ROLE"  
-	b. Scroll down the options and hover over "Cloud Storage"  
-	c. Select "Storage Object Creator"  
+	b. Click the "**Select a role**" dropdown  
+	c. Search for and select **Storage Object Admin**  
 	![Add Cloud Storage role](../.gitbook/assets/bigquery-role-cloud-storage-object-creator-selection.png)
 	:::  
 
 8. Click "**CONTINUE**"  
-	![Roles](../.gitbook/assets/bigquery-roles-selections.png)  
 9. Click "**DONE**"  
 10. Find the new service on the service accounts table  
 	a. Click the menu dots under the "Actions" column  
@@ -58,7 +61,7 @@ In order to get started with the Google BigQuery Blueprints, a service account w
 	![Create key dropdown button](../.gitbook/assets/service-account-add-key-button.png)  
 13. In the popup modal select the "**JSON**" radio button  
 14. Click "**CREATE**"  
-15. Copy the downloaded file JSON contents and save for safe keeping. The contents of this file can be pasted into the in the "**Service Account**" variable input of all Bigquery Blueprints.
+15. Copy the downloaded file JSON contents and save for safe keeping. The contents of this file can be pasted into the "**Service Account**" input for all Bigquery Blueprints.
 
 ## Execute Query Blueprint
 
