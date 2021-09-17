@@ -17,7 +17,7 @@ keywords:
 
 ### Overview
 
-In order to get started with the Google BigQuery Blueprints, a service account with the necessary GCP permissions is required.
+In order to get started with the Google BigQuery Blueprints, a service account with the necessary GCP permissions is required. All BigQuery Blueprints are still subject to [BigQuery quotas and limits](https://cloud.google.com/bigquery/quotas#queries).
 
 ### Creating a BigQuery Service Account
 
@@ -67,65 +67,79 @@ In order to get started with the Google BigQuery Blueprints, a service account w
 
 ### Overview
 
-The **Google BigQuery - Execute Query** Blueprint allows users to execute any Standard SQL query against a Google BigQuery database.
+Execute any Standard SQL query against a Google BigQuery database. Perfect for creating multi-step SQL jobs, executing DML statements, or running scheduled queries.
 
 ### Variables
 
-| Variable Name | Description |
-|:---|:---|
-| **Query** | [REQUIRED] Query to run against the BigQuery database |
-| **Service Account** | [REQUIRED] JSON from a Google Cloud Service account key - see **Authorization** above for more information |
+| Variable Name | Required? |Description |
+|:---|:---|:---|
+| **Query** | ✔️ | Standard SQL query to be executed against BigQuery. Does not support Legacy SQL. |
+| **Service Account** | ✔️ | JSON from a Google Cloud Service account key. |
 
 ## Store Query Results as CSV Blueprint
 
 ### Overview
 
-The **Google BigQuery - Store Query Results as CSV** Blueprint allows users to turn the results of their SQL SELECT statement into a CSV file.
+Turn the results of your Standard SQL SELECT statement into a CSV file. 
+
+Larger datasets may run into file size limitations set by BigQuery. In these instances, we recommend using the **Google BigQuery - Store Query Results in Google Cloud Storage** Blueprint.
 
 ### Variables
 
-| Variable Name | Description |
-|:---|:---|
-| **Query** | [REQUIRED] Query to run against the BigQuery database |
-| **Local File Name** | [REQUIRED] Name of file to be generated with the results which should be a CSV file. |
-| **Local Folder Name** | Folder name to store the results file in |
-| **Service Account** | [REQUIRED] JSON from a Google Cloud Service account key - see **Authorization** above for more information |
+| Variable Name | Required? |Description |
+|:---|:---|:---|
+| **Query** | ✔️ | Standard SQL query to be executed against BigQuery. Does not support Legacy SQL. |
+| **Local File Name** | ✔️ | Name of file to be generated with the results. Should be `.csv` extension. |
+| **Local Folder Name** | ➖ | Folder where the file should be downloaded. Leaving blank will place the file in the home directory. |
+| **Service Account** | ✔️ | JSON from a Google Cloud Service account key. |
 
 ## Store Query Results in Google Cloud Storage Blueprint
 
 ### Overview
 
-The **Google BigQuery - Store Query Results in Google Cloud Storage** Blueprint allows users to turn the results of their SQL SELECT statement into CSV files that get stored in Google Cloud Storage (GCS).
+Turn the results of your SQL SELECT statement into CSV files that get stored in Google Cloud Storage (GCS).
+
+When exporting data from Bigquery, a [file cannot contain more than 1GB of data](https://cloud.google.com/bigquery/docs/exporting-data). As a result, this Blueprint automatically splits up data that is >1GB in size into multiple files. The name of these files will be the Bucket File Name provided, with `_#` base 0 enumeration appended to the file name, before the file extension. This is the [default behavior provided by Google](https://cloud.google.com/bigquery/docs/exporting-data#exporting_data_into_one_or_more_files).
+
+Ex. If you provide a file name of `data.csv` and your data is 2.4GB in total, 3 files would need to be generated. The names of these files will be `data_0.csv`, `data_1.csv`, and `data_2.csv`.
 
 ### Variables
 
-| Variable Name | Description |
-|:---|:---|
-| **Query** | [REQUIRED] Query to run against the BigQuery database |
-| **Bucket Name** | [REQUIRED] Name of the GCS bucket to store the results file in |
-| **Bucket File Name** | [REQUIRED] Name of file to be generated with the results which should be a CSV file. |
-| **Bucket Folder Name** | Folder name to store the results file in |
-| **Service Account** | [REQUIRED] JSON from a Google Cloud Service account key - see **Authorization** above for more information |
+| Variable Name | Required? | Description |
+|:---|:---|:---|
+| **Query** | ✔️ | Standard SQL query to be executed against BigQuery. Does not support Legacy SQL. |
+| **Bucket Name** | ✔️ | Name of the GCS bucket to store the results file(s) in. |
+| **Bucket File Name** | ✔️ | Name of file to be generated with the results. Should be `.csv` extension. If the file size is >1GB, file name will be enumerated with `_#` before the extension.|
+| **Bucket Folder Name** | ➖ | Folder where the file(s) should be uploaded. Leaving blank will place the file in the root directory. |
+| **Service Account** | ✔️ | JSON from a Google Cloud Service account key. |
 
 ## Upload CSV to Table Blueprint
 
 ### Overview
 
-The **Google BigQuery - Upload CSV to Table** Blueprint allows users to upload a CSV file to any table in Google BigQuery.
+Upload one or more CSV files to any table in BigQuery. The [match type](../reference/blueprint-library/match-type.md) selected greatly affects how this Blueprint works. With the file data, you can:
+- **Append Data** - Add the contents of your file to the end of the table.
+- **Replace Data** - Write over the entire contents of table with the contents of your file.
+
+Column names are inferred from the header row of your CSV file. If the table already exists, the header values are matched to the table column names. The header names must match the existing column names in your table, otherwise the Vessel will error.
+
+Data is inserted into the table by using multiple INSERT statements. For larger datasets, we recommend running a [batch loading process](https://cloud.google.com/bigquery/docs/batch-loading-data#python).
+
+In all instances, if the table name does not already exist, a new table will be created with datatypes inferred from the CSV contents.
 
 ### Variables
 
-| Variable Name | Description |
-|:---|:---|
-| **Dataset Name** | [REQUIRED] Name of the dataset to be uploaded to BigQuery |
-| **Table Name** | [REQUIRED] Name of the BigQuery table to upload the dataset to |
-| **Local File Name Match Type** | [REQUIRED] Dropdown selection of how to match the file name |
-| **Local File Name** | [REQUIRED] Name of the CSV file containing data to upload to BigQuery |
-| **Local Folder Name** | Local folder name where the CSV file to upload is stored |
-| **Upload Method** | [REQUIRED] Dropdown selection for how to upload the data to BigQuery |
-| **Service Account** | [REQUIRED] JSON from a Google Cloud Service account key - see **Authorization** above for more information |
-| **Schema** | Schema for the uploaded dataset - if not provided it will be auto-detected |
-| **Header Rows to Skip** | Number of header rows to skip when inserting data - only required if provided custom schema |
+| Variable Name | Required? | Description |
+|:---|:---|:---|
+| **Dataset Name** | ✔️ | Name of the dataset where the BigQuery table lives. |
+| **Table Name** | ✔️ | Name of the BigQuery table to upload the dataset to. |
+| **Local File Name Match Type** | ✔️ | Determines if the text in "Local File Name" will look for one file with exact match, or multiple files using regex. |
+| **Local File Name** | ✔️ | Name of the target CSV file on Shipyard. Can be regex if "Match Type" is set accordingly. |
+| **Local Folder Name** | ➖ | Name of the local folder on Shipyard to upload the target file from. If left blank, will look in the home directory. |
+| **Upload Method** | ✔️ | Determines how the data in your file(s) will be added to the table. |
+| **Service Account** | ✔️ | JSON from a Google Cloud Service account key. |
+| **Schema** | ➖ | Schema for the uploaded dataset, formatted as a double-nested list. If left blank, it will be auto-detected. |
+| **Header Rows to Skip** | ➖ | Number of header rows to skip when inserting data. Only necessary if a custom schema is provided. |
 
 ## Helpful Links
 - [Creating Google Cloud Platform Service Accounts](https://cloud.google.com/iam/docs/creating-managing-service-accounts)
