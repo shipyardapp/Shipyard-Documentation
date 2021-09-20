@@ -75,7 +75,7 @@ html[data-theme="dark"] {
 	border-color: #f73b3b;
 } */
 
-*/ .header-github-link:before {
+.header-github-link:before {
 	content: "";
 	width: 24px;
 	height: 24px;
