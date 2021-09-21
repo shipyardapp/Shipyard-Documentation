@@ -19,7 +19,7 @@ keywords:
 
 To get started with any Dropbox Blueprints, you will need to create have a Dropbox app and a Service Token for that app. This Service Token is a secure way for Shipyard to access Dropbox and will be required for **every** Dropbox Blueprint.
 
-It should be noted that this service token will usually be tied directly to your user account, giving our Dropbox Blueprints access to any file you have access to.
+This service token will usually be tied directly to your user account, giving our Dropbox Blueprints access to any file you have access to.
 
 ### Creating a Dropbox App
 
@@ -91,7 +91,7 @@ If the folder name provided doesn't already exist, it will be created.
 | **Local File Name Match Type** | ✔️ | Determines if the text in "Local File Name" will look for one file with exact match, or multiple files using regex. |
 | **Local File Name** | ✔️ | Name of the target file on Shipyard. Can be regex if "Match Type" is set accordingly. |
 | **Dropbox Folder Name** | ➖ |Folder where the file(s) should be uploaded. Leaving blank will place the file in the root directory of Dropbox. |
-| **Dropbox File Name** | ➖ | What to name the file(s) being uploaded. If left blank, defaults to the original file name(s). |
+| **Dropbox File Name** | ➖ | What to name the file(s) being uploaded to Dropbox. If left blank, defaults to the original file name(s). |
 | **Access Token** | ✔️ | Access token, with no expiration, to access your Dropbox files. |
 
 ## Helpful Links
