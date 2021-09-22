@@ -52,7 +52,7 @@ To get started with any dbt Cloud Blueprints, you will need to create an Service
 
 ![dbt Cloud Successful Token Creation](../.gitbook/assets/shipyard_2021_06_24_12_07_21.png)
 
-## Execute Job
+## Execute Job Blueprint
 
 ### Overview
 
@@ -80,7 +80,7 @@ The response for this request will always be stored at `shipyard-artifacts/dbtcl
 ![dbt Cloud Execute Job Output](../.gitbook/assets/shipyard_2021_06_24_11_33_05.png)
 ![dbt Cloud Run Cause](../.gitbook/assets/shipyard_2021_06_22_12_16_37.png)
 
-## Check Run Status
+## Check Run Status Blueprint
 
 
 ### Overview
@@ -109,7 +109,7 @@ The response for this request will always be stored at `shipyard-artifacts/dbtcl
 ![dbt Cloud Check Run Status Blueprint](../.gitbook/assets/shipyard_2021_06_24_11_45_07.png)
 ![dbt Cloud Check Run Status Output](../.gitbook/assets/shipyard_2021_06_24_11_44_19.png)
 
-## Download Logs and Artifacts
+## Download Logs and Artifacts Blueprint
 
 ### Overview
 Download all of the Logs and Artifacts created by a single run on dbt Cloud.
@@ -138,7 +138,7 @@ This Vessel should run immediately after a Vessel built with the _dbt Cloud - Ch
 ![dbt Cloud Download Logs & Artifacts Blueprint](../.gitbook/assets/shipyard_2021_06_24_11_48_30.png)
 ![dbt Cloud Download Logs & Artifacts Output](../.gitbook/assets/shipyard_2021_06_24_11_47_50.png)
 
-## Execute Job & Download Results
+## Execute Job & Download Results Blueprint
 
 ### Overview
 This is considered an "all-in-one" Blueprint for the other 3 Blueprints listed above. By using this Blueprint, you will accumulate runtime as the Vessel continuously waits for the job to be completed. The tradeoff is that results may be quicker and the setup/complexity is less.
