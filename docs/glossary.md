@@ -14,7 +14,7 @@ keywords:
 
 ## Definitions
 
-[**Blueprint Library**](reference/blueprint-library) is a location for pre-made Custom Blueprints developed by Shipyard staff.
+[**Blueprint Library**](reference/blueprint-library/blueprint-library) is a location for pre-made Custom Blueprints developed by Shipyard staff.
 
 [**Blueprints**](/reference/blueprints) are the foundation of the application. They contain the design specifications for a repeatable task. In other applications, these may be referenced as templates, macros, or operators.
 
@@ -47,6 +47,10 @@ keywords:
 **Currentstream** refers to Vessels that are running at the same time, due to being branched off of the immediately preceding Vessels. If two or more Vessels are running simultaneously, but were not attached to the same upstream Vessel, they are not considered to be in the same currentstream.
 
 **Downstream** refers to connected Vessels that will run immediately after the current Vessel.
+
+**Duration** refers to the total length of real time that a Vessel or Fleet took to be completed.
+
+[**Billable Runtime**](faqs.md#how-do-you-calculate-billable-runtime) refers to the cumulative length of execution time that a Vessel or Fleet took while running. For Fleets with high concurrency, it is possible for the billable runtime to exceed duration. For Vessels with retries, it is possible for the billable runtime to be less than duration.
 
 ## Visuals
 

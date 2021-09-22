@@ -28,6 +28,6 @@ You can't download code if [Write](../../reference/code/write-code.md) or [Git](
 3. On the left-hand side, click the **Upload** tab if it's not already selected.
 4. Towards the bottom, you should see a file name, highlighted. Click this file name to download the code.
 
-:::success
+:::tip success
 You've now successfully downloaded code from a Vessel or Blueprint.
 :::

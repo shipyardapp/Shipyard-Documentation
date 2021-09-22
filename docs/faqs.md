@@ -14,6 +14,16 @@ keywords:
 
 If you want to start using Shipyard, you can [sign up here](https://app.shipyardapp.com/auth/signup?ref=docs-faq). Once you sign up, you'll start your free 14-day trial.
 
+## How does the trial work?
+During your first 14 days of using Shipyard, you'll be able to test drive every feature on our platform available as if you were subscribed to our paid Team plan. After 14 days, if you have not subscribed to the platform, you will be downgraded to our free Developer plan. When your organization is downgraded, the following changes will occur:
+
+- Every month, you will have a total of 1 hour runtime that you can use. If you go over this amount, your organization will be unable to run any Vessels or Fleets until the next month cycle. You will, however, still have the ability to edit and create Vessels and Fleets.
+- Your organization will no longer have access to use [Webhooks](reference/triggers/webhook-triggers.md).
+- The default [runtime cutoff](reference/settings/guardrails.md#runtime-cutoff) state for every Vessel will be lowered from 4 hours to 1 hour.
+- Any existing users invited to your organization will have read-only access. Additionally, you will be unable to manage user permissions or invite new users to your organization.
+
+Your month cycle is determined based on the time when your organization first gets downgraded to the Developer Plan. You will receive emails to notify you of your organizations change to developer plan, when you've used too much runtime, and when your runtime is reset for the month.
+
 ## How do I submit feedback or a feature request?
 
 We love to hear what our users would like to see out of our product. Feel free to reach us at any time through intercom (the chat bubble on the right) or by sending an email directly to [support@shipyardapp.com](mailto:support@shipyardapp.com)
@@ -24,23 +34,23 @@ We currently natively support the creation of solutions using Python 3.7, Node 1
 
 Bash allows us to support any language non-natively, where the right language packages just need to be manually installed by the user as an [external package](reference/requirements/external-package-dependencies)
 
-SQL can be used natively with some Blueprints found in the [Blueprint Library](reference/blueprint-library.md).
+SQL can be used natively with some Blueprints found in the [Blueprint Library](reference/blueprint-library/blueprint-library.md).
 
 In the future, we plan to expand our native language support to R. If you have a language that you would like to see supported, let us know!
 
-## Is Shipyard a no-code tool?
+## Is Shipyard a low-code tool?
 
-Yes and no.
+Yes, partially.
 
-Shipyard is not inherently a no-code tool, as it's custom-designed for data teams and developers to launch their scripted solutions.
+Shipyard is not inherently a low-code tool, as it's custom-designed for data teams and developers to launch their custom scripted solutions.
 
-However, the platform allows technical teams to turn coded solutions into no-code Blueprints that can be used by anyone in the organization.
+However, the platform allows technical teams to turn coded solutions into low-code Blueprints that can be used by anyone in the organization.
 
-Additionally, we offer a wide variety of Blueprints in our [Blueprint Library](reference/blueprint-library.md) that don't require code to use.
+Additionally, we offer a wide variety of Blueprints in our [Blueprint Library](reference/blueprint-library/blueprint-library.md) that don't require minimal code to use.
 
 ## What skills do I need to get started with Shipyard?
 
-If you have standard needs to run QA on your data, deliver reports, and send data to external partners, you will be able to get by using only the Blueprints found in our [Blueprint Library](reference/blueprint-library.md).
+If you have standard needs to run QA on your data, deliver reports, and send data to external partners, you will be able to get by using only the Blueprints found in our [Blueprint Library](reference/blueprint-library/blueprint-library.md).
 
 If you have proprietary business logic needs, you will likely need at least one technical team member that can initially build solutions for the organization. However, other users of Shipyard are **not** required to know code. We built the platform to allow business users the ability to easily access and take advantage of internally built solutions as [Blueprints](reference/blueprints).
 
@@ -85,9 +95,11 @@ For a more detailed overview, you can look at the [latest plans](https://www.shi
 
 To see your organization's usage for the current billing period, you can view the [Usage Dashboard](reference/admin/usage-dashboard.md).
 
-## How do you calculate runtime?
+## How do you calculate billable runtime?
 
-Shipyard charges for the cumulative time that your scripts take to run on our infrastructure, regardless of the final status of the job. You are not charged for any time delays between [automatic retries](reference/settings/guardrails.md), but each retry will have its own runtime associated to it. On your invoice, we bill per second, with each Vessels runtime rounded to the nearest second. Below are a few examples to demonstrate this calculation.
+Shipyard charges for the cumulative time that your scripts take to run on our infrastructure, regardless of the final status of the job. This is distinct from the duration.
+
+You are not charged for any time delays between [automatic retries](reference/settings/guardrails.md), but each retry will have its own billable runtime associated to it. You are not charged for any time delay between two Vessels in a Fleet. On your invoice, we bill per second, with each Vessel's billable runtime rounded up to the nearest second. Below are a few examples to demonstrate this calculation.
 
 Assumptions:
 - Process A always takes 1hr
@@ -95,10 +107,10 @@ Assumptions:
 - Process C always takes 1m
 
 Examples:
-- You have Process A scheduled to run at 2:00pm and Process B scheduled to run at 4:00pm. Everything will finish running at 4:10pm. Total runtime is 1h 10m.
-- Shipyard allows you to link together Process A and Process B as a Fleet, so that as soon as Process A completes, Process B will immediately run. If you ran Process A at 2:00pm, Process B will start running at 3:00pm and finish at 3:10pm. Total runtime is 1h 10m.
-- You run three instances of Process A, in parallel, but still only need to run Process B once after both Process A jobs have completed. If you run Process A three times at 2:00pm, all instances would complete at 3:00pm and kick off Process B which would finish at 3:10pm. Total runtime is calculated as 3h 10m, even though the Fleet only ran over the course of 1h 10m.
-- You run Process C with guardrails to retry itself 10x upon failure, with 5m between each retry. Process C starts running at 8:00am and fails every time. Process C finishes running at 8:55am, with a total runtime of 10m.
+- You have Process A scheduled to run at 2:00pm and Process B scheduled to run at 4:00pm. Everything will finish running at 4:10pm. Total billable runtime is 1h 10m.
+- Shipyard allows you to link together Process A and Process B as a Fleet, so that as soon as Process A completes, Process B will immediately run. If you ran Process A at 2:00pm, Process B will start running at 3:00pm and finish at 3:10pm. Total billable runtime is 1h 10m.
+- You run three instances of Process A, in parallel, but still only need to run Process B once after both Process A jobs have completed. If you run Process A three times at 2:00pm, all instances would complete at 3:00pm and kick off Process B which would finish at 3:10pm. Total billable runtime is calculated as 3h 10m, even though the Fleet only had a duration of 1h 10m.
+- You run Process C with guardrails to retry itself 10x upon failure, with 5m between each retry. Process C starts running at 8:00am and fails every time. Process C finishes running at 8:55am, with a total billable runtime of 10m.
 - You run Process C with guardrails to retry itself 10x upon failure, with 5m between each retry. Process C starts running at 8:00am and succeeds after the 3rd time. Process C finishes running at 8:13am, with a total runtime of 3m.
 
 ## How does Shipyard calculate network egress?
@@ -117,6 +129,8 @@ Yes - absolutely! There are two options to have Shipyard orchestrate work betwee
    1. When the Vessel doesn't find the expected response, it errors out. Upon erroring out, the Vessel is retried with a [guardrail](reference/settings/guardrails.md) that retries the job up to 24x, with anywhere from 0-60m between each try.
    2. When the Vessel does find the expected response, it registers as a success. The Vessel then kicks off downstream Vessels in the Fleet.
 
+## How do I change my password?
+You can always change your password by filling out the [Forgot My Password](https://app.shipyardapp.com/auth/forgotpassword) form. This will send you a link to a page that lets you set a brand new password for your account.
 
 ## I have another question!
 

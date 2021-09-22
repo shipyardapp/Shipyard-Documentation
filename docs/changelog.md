@@ -20,7 +20,86 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 ## Features On Deck
 
-- User Flow Improvements
+- Edit Vessels from the Fleet Builder
+- Add/Create Vessels from the Fleet Builder
+- Fleet as Code Editor
+- Version Control
+- Bulk Edit/Create Fleets
+- Fleet Templates
+
+## Blueprints on Deck
+- Fivetran
+- Census
+- Hightouch
+- Slack (Embed Data into Message)
+- Email (Embed Data into Message)
+
+## 9/14/2021
+
+### Enhancements
+
+- Added Usage Dashboard data for Trialing and Developer Tier Organizations.
+
+### Bug Fixes
+
+- Fixed an issue where Voyages in a Fleet Run could incorrectly be removed.
+- Fixed an issue where the Usage Dashboard would sometimes show no data.
+
+## 8/31/2021
+
+### Bug Fixes
+
+- Fixed Duration ticker not running while viewing a log.
+- Fixed leaving the Triggers tab warning for Fleets.
+
+## 8/24/2021
+
+### New Features
+
+- Added free developer plan to the application to allow continued, limited usage of the platform after the trial.
+
+### Enhancements
+
+- Users can now be invited to belong to multiple organizations.
+
+## 8/3/2021
+
+### Enhancements
+
+- Expanded the clickable area for small + and - buttons.
+- Removed "Time to Start" from the UI and replaced with Billable Runtime.
+- Prevent native Python package from being entered in the Python requirements section.
+
+### Bug Fixes
+
+- Fixed incorrectly set Org in dropdown in header.
+- Fixed generic error message for a duplicated Vessel name.
+- Fixed incorrectly disabled "Stop Voyage" button for Voyages in a Fleet Run.
+
+## 7/19/2021
+
+### New Feature
+
+- Added new Guardrail for Runtime Cutoff that limits the amount of time a Voyage can run.
+
+### Enhancements
+
+- Added a warning alert on mobile indicating the site is not meant for use on mobile devices.
+
+### Bug Fixes
+
+- Fixed an issue where duplicating a Vessel then immediately duplicating it again
+would cause an error.
+
+## 7/6/2021
+
+### Enhancements
+
+- Updated the Markdown styling for Blueprint previews.
+
+### Bug Fixes
+
+- Fix issue where users could not navigate away from "Something went wrong." page.
 
 ## 6/23/2021
 
@@ -30,8 +109,6 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - Updated the historical runtime charts for Fleets and Vessels.
 
 ## 6/15/2021
-
-### New Feature
 
 ### Enhancements
 

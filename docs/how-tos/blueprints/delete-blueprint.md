@@ -41,6 +41,6 @@ You can't recover a Blueprint once it's deleted. Make sure you have any data you
 1. Click the red **Delete** text at the bottom of the page.
 2. Confirm that you really want to delete the Blueprint.
 
-:::success
+:::tip success
 You've now successfully deleted a Blueprint.
 :::

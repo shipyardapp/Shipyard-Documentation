@@ -80,6 +80,6 @@ axios
 1. Check to see if the [Webhook Status Code](../../reference/triggers/webhook-triggers.md#webhook-status-codes) is 201. If so, your Vessel or Fleet was scheduled to run successfully.
 2. Navigate to the [Logs Tab](../../reference/logs/logs-overview.md) for your Vessel or Fleet to verify that it ran correctly.
 
-:::success
+:::tip success
 You've now successfully executed a Webhook Trigger.
 :::

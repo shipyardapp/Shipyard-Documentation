@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-Every unique solution you create will require you to build a [Vessel](../../reference/vessels.md). If you're creating the solution from scratch, you'll want want to create a Vessel with [Code](../../reference/code/code-overview.md). This how to guide will walk you through the steps to build a Vessel with Code.
+Every unique solution you create will require you to build a [Vessel](../../reference/vessels.md). If you're creating the solution from scratch, you'll want to create a Vessel with [Code](../../reference/code/code-overview.md). This how to guide will walk you through the steps to build a Vessel with Code.
 
 ## Steps
 
@@ -51,6 +51,6 @@ All of the information on this tab is optional.
 4. Optionally, edit the [guardrails](../../reference/settings/guardrails.md) to make the system automatically retry your Vessel upon an error.
 5. Click **Save and Finish** once you're done
 
-:::success
+:::tip success
 You've now successfully built a Vessel with code.
 :::

@@ -16,7 +16,7 @@ import TabItem from '@theme/TabItem';
 
 # How to Reference User Input from a Blueprint Variable
 
-## Overivew
+## Overview
 
 As part of creating a Blueprint, you'll no doubt have multiple [Blueprint Variables](../../reference/inputs/blueprint-variables.md) that users can fill out. To access the user input, you'll want to use the Variable's Reference Name. This how to guide will walk you through the steps to reference those Blueprint Variables in your code.
 
@@ -58,6 +58,6 @@ This way of referencing a Blueprint Variable is less ideal because it will not w
 </TabItem>
 </Tabs>
 
-:::success
+:::tip success
 You've now successfully referenced user input in your code.
 :::

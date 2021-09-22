@@ -30,7 +30,9 @@ When you first create Environment Variables, both the **Name** and **Value** fie
 
 When editing environment variables in the future that show `(hidden)`, leaving the **Value** field blank will result in Shipyard continuing to use the previously set value for that **Name**.
 
+:::tip Pro Tip
 Staying inline with programming best practices, we recommend that all of your environment variable names be in ALL CAPS, but Shipyard does not require it.
+:::
 
 ## Screenshots
 

@@ -29,6 +29,6 @@ When running a [Fleet](../../reference/fleets.md), every Vessel that either gene
 7. Click **Run Now**
 8. Once the Fleet has finished running, navigate to the Log for the Bash Vessel you just added. You should see an output that shows all of the available files in the Fleet.
 
-:::success
+:::tip success
 You've successfully created a Vessel that lists all the files in your Fleet.
 :::

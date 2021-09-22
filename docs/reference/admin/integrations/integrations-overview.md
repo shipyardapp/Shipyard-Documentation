@@ -17,7 +17,7 @@ Current integrations include:
 
 - [GitHub](github-integration.md)
 
-For a list of services we enable you to build solutions with using a no-code template, see the [Blueprint Library](../../blueprint-library.md).
+For a list of services for which you can build a solution using a low-code template, see [Blueprint Library](../../blueprint-library/blueprint-library.md).
 
 ## Screenshots
 

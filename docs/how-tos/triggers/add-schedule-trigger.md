@@ -37,5 +37,5 @@ These 3 questions together define one distinct schedule. This how to guide will 
 7. Repeat steps 3-6 for any additional schedules that you want to add.
 8. Click **Save** at the bottom.
 
-:::success
+:::tip success
 You've now successfully added Schedule Triggers!

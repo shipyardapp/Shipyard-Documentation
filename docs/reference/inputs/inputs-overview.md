@@ -7,7 +7,7 @@ keywords:
   - input
 ---
 
-# Vessel Inputs
+# Inputs Overview
 
 ## Definition
 

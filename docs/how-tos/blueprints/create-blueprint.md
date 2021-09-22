@@ -59,6 +59,6 @@ All of the information on this tab is optional.
 3. If desired, update the [visibility](../../reference/other-functions/visibility.md) or the [guardrails](../../reference/settings/guardrails.md).
 4. Click **Save and Finish** once you're done
 
-:::success
+:::tip success
 You've now successfully created a Blueprint.
 :::

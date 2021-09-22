@@ -20,7 +20,7 @@ In this tutorial, you'll walk through the steps required to set up a very simple
 
 - Set up a Vessel with Code.
 - Write a script directly in the UI.
-- Check to verify that a Vessel ran succesfully.
+- Check to verify that a Vessel ran successfully.
 
 :::caution
 For the sake of the this tutorial, we suggest starting off by building a Vessel inside of the *Playground* Project or a project for *Testing*. You can follow [**this tutorial** ](first-project.md)to set that up.
@@ -40,7 +40,7 @@ For the sake of the this tutorial, we suggest starting off by building a Vessel 
 
 ![](../.gitbook/assets/shipyard_2021_03_16_16_24_01.png)
 
-:::success
+:::tip success
 You've successfully started the setup flow for building a Vessel with Code!
 :::
 
@@ -163,7 +163,7 @@ In the output, you'll see a total of 3 things.
 2. Shipyard downloads the file you created under the [Code](../reference/code/code-overview.md) section.
 3. Shipyard prints the text `Hello, World!`
 
-:::success
+:::tip success
 You've successfully created and run a Vessel!
 :::
 

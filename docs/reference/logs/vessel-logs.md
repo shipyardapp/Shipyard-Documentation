@@ -47,6 +47,7 @@ Once the Vessel has finished running, the page will no longer automatically refr
 | [**Trigger**](../triggers/triggers-overview.md)                | What type of Trigger generated this log.                                |
 | **Retries**                                                | The number of times the run was retried.                                |
 | **Exit Code**                                              | The exit code that the script returned upon completion.                 |
+| **Billable Runtime**                                               | The cumulative runtime of the Vessel that is billable.                      |
 | **Duration**                                               | The total length of time that the Vessel ran for.                       |
 | **Start Time**                                             | The timestamp of when the run started.                         |
 | **End Time**                                               | The timestamp of when the run ended.                                    |
@@ -55,7 +56,7 @@ Once the Vessel has finished running, the page will no longer automatically refr
 
 ## Screenshots
 
-![Logs Tab for a Vessel](./VesselLogs.png)
+![Logs Tab for a Vessel](../../.gitbook/assets/shipyard_2021_09_10_12_01_56.png)
 
 ![Individual Log for a Vessel](../../.gitbook/assets/shipyard_2021_04_12_16_21_44.png)
 

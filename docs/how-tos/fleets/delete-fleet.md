@@ -21,6 +21,6 @@ Sometimes, you no longer need to access a [Fleet](../../reference/fleets.md) and
 3. At the bottom, click the red **Delete** text.
 4. Confirm that you want to delete the Fleet.
 
-:::success
+:::tip success
 You've now successfully deleted a Fleet.
 :::
