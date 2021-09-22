@@ -15,10 +15,6 @@ import TabItem from '@theme/TabItem';
 
 # Snowflake Blueprints
 
-:::caution
-This section is a work in progress and may be missing key details. If you need help using Snowflake Blueprints, reach out to support@shipyardapp.com
-:::
-
 ## Authorization
 
 ### Overview
@@ -259,8 +255,6 @@ This Blueprint is limited to executing a single query. You cannot run multiple q
 |**Schema**|The name of the Schema you want to run a query against. If left blank, it's expected that your query will include the schema in it.|
 |**Query**|The contents of the SQL query that you want to run. Does not support running multiple queries separated by `;`|
 
-### Screenshots
-
 ## Store Query Results as CSV Blueprint
 
 Turn the results of your SQL SELECT statement into a CSV file. Extract your Snowflake data into files for easier delivery to clients and partners.
@@ -281,8 +275,6 @@ Turn the results of your SQL SELECT statement into a CSV file. Extract your Snow
 |**Local File Name**|The file name that you want your generated CSV to have.|
 |**Local Folder Name**|The folder structure that you want your CSV to be created in. If left blank, the file will be created in the home directory.|
 |**Include Column Names as Header?**|If checked, your CSV file will include a header row with column names.|
-
-### Screenshots
 
 ## Upload CSV to Table Blueprint
 
@@ -313,8 +305,6 @@ In all instances, if the table name does not already exist, a new table will be 
 |**File Name**|The file name that contains the data you want uploaded.|
 |**Table Name**|Name of the table where you want data inserted. If the table doesn't already exist, it will be created.|
 |**Insertion Method**|Determines how the data in your file will be added to the table.|
-
-### Screenshots
 
 ## Troubleshooting and Debugging
 
