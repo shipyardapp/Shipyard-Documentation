@@ -34,6 +34,14 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - Slack (Embed Data into Message)
 - Email (Embed Data into Message)
 
+## 9/22/2021
+
+### Enhancements
+
+- Add multiline support for Alphanumeric and Password Blueprint Variable types.
+This will allow for easier support for multiline Alphanumeric inputs like JSON
+or SQL and for multiline password inputs like SSH keys.
+
 ## 9/14/2021
 
 ### Enhancements
