@@ -34,6 +34,13 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - Slack (Embed Data into Message)
 - Email (Embed Data into Message)
 
+## 9/29/2021
+
+### Bug Fixes
+
+- Fixed issue where refreshing on the Fleet's Triggers tab would not show saved
+schedules.
+
 ## 9/22/2021
 
 ### Enhancements
