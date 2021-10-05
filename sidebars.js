@@ -125,7 +125,7 @@ module.exports = {
 			"tutorials/great-expectations-blueprint",
 			"tutorials/dbt-core-blueprint",
 			"tutorials/first-fleet",
-			"tutorials/non-native-language-vessels"
+			"tutorials/non-native-language-vessels",
 		],
 		"📦 Blueprint Library": [
 			"blueprint-library/amazon-athena",
@@ -147,7 +147,6 @@ module.exports = {
 			"blueprint-library/microsoft-sql-server",
 			"blueprint-library/mysql",
 			"blueprint-library/postgresql",
-			"blueprint-library/salesforce",
 			"blueprint-library/sftp",
 			"blueprint-library/slack",
 			"blueprint-library/snowflake",
