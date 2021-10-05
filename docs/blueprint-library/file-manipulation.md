@@ -18,19 +18,24 @@ keywords:
 This section is a work in progress and may be missing key details. If you need help using File Manipulation Blueprints, reach out to support@shipyardapp.com
 :::
 
-## Authorization
-
-### Overview
-
-### Steps
-
 ## Compress Files Blueprint
+
+Compress one or multiples files into a single archive using ZIP, TAR, TAR.GZIP, or TAR.BZ2 compression methods.
+
+The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
 
 ### Overview
 
 ### Variables
 
-### Screenshots
+| Variable Name |Required?| Description |
+|:---|:---|:--|
+| **Compression Type** | ✔️ | Type of compression to use on the provided files. |
+| **Local Folder Name** | ➖ |Name of the local folder on Shipyard where the target file lives. If left blank, will look in the home directory. |
+| **Local File Name Match Type** | ✔️ | Determines if the text in "Local File Name" will look for one file with exact match, or multiple files using regex. |
+| **Local File Name** | ✔️ | Name of the target file on Shipyard. Can be regex if "Match Type" is set accordingly. |
+| **New Folder Name** | ➖ | Folder where the newly compressed file should be created on Shipyard. Leaving blank will place the file in the home directory. If the folder does not already exist, it will be created. |
+| **New File Name** | ✔️ | What to name the newly compressed file on Shipyard. It is recommended to end this name with the same extension as the compression type chosen. |
 
 ## Decompress Files Blueprint
 
