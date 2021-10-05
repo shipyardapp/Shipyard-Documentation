@@ -26,8 +26,4 @@ Get started with a hands-on introduction to using Shipyard. Follow along with pr
 
 ## 📦 Blueprint Library
 
-Detailed overviews of every Blueprint that exists in the Blueprint Library. Includes instructions for getting the proper authorization, as well as explanations of how to run the blueprints locally or on Shipyard.
-
-:::caution
-This section is a work in progress and may be missing key details. If you need help using something in the Blueprint Library, reach out to support@shipyardapp.com
-:::
+Detailed overviews of every Blueprint that exists in the Blueprint Library. Includes instructions for getting the proper authorization, as well as explanations of how to run the blueprints on Shipyard.
