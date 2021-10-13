@@ -27,7 +27,7 @@ If taking this step was easy, everyone would be doing it. There are multiple hur
 
 We designed Shipyard as a first-class workflow automation platform that tackles these problems head-on, helping data teams get to production faster than ever. Teams can launch, monitor, scale, and share business solutions in less than 5 minutes without ever touching infrastructure.
 
-In essecence, we're helping Data Engineers, Data Scientists, and Data Analysts focus on the parts of the job that they're best at. **Solving problems with data.**
+In essence, we're helping Data Engineers, Data Scientists, and Data Analysts focus on the parts of the job that they're best at. **Solving problems with data.**
 
 ## The Shipyard Platform
 
