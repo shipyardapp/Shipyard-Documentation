@@ -56,13 +56,16 @@ The Visual editor for Fleets, located on the Vessels tab of a Fleet, allows you 
 For information about how to use the visual editor, hover over the question mark icon in the top-left corner.
 
 - **Click** on the canvas to add a Vessel.
-- **Click** on the Vessel name to edit it.
+- **Click** on a Vessel name to change the underlying Vessel.
 - **Click & Drag** on a Vessel to move it.
-- **Click & Drag** on the Canvas to re-position your view of Vessels.
 - **Hover** over a Vessel to reveal the delete button and the new path button.
-- **Hover** over a path to reveal the delete button.
 - **Click & Drag** from the new path button to another Vessel to create a path.
+- **Hover** over a path to reveal the delete button.
 - **Click** on a path to change the condition to Success, Errored, or Completed.
+- **Click & Drag** on the Canvas to re-position your view of Vessels.
+- **Ctrl & Scroll** on the Canvas to zoom in and out.
+- **Click** on a Vessel shape to edit.
+- **Click** on the cog icon to edit Fleet settings.
 
 ## Screenshots
 
