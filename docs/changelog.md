@@ -28,11 +28,18 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - Fleet Templates
 
 ## Blueprints on Deck
-- Fivetran
 - Census
 - Hightouch
 - Slack (Embed Data into Message)
 - Email (Embed Data into Message)
+
+## 10/19/2021
+
+### New Features
+- Updated the Fleet Builder tab to allow editing of multiple Vessels all from one location. See more about these changes [here](reference/fleets.md#editing-vessels)
+
+### Enhancements
+- Made changes to the Fleet Builder tab to improve performance when a Fleet has more than 20 Vessels. Things should be much snappier now!
 
 ## 9/29/2021
 
