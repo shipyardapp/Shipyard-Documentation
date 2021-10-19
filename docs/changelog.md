@@ -37,9 +37,15 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 ### New Features
 - Updated the Fleet Builder tab to allow editing of multiple Vessels all from one location. See more about these changes [here](reference/fleets.md#editing-vessels)
+- There's a new feature for Guardrails to exclude specific exit codes. This was custom-built to help situations when working with asynchronous APIs where you may not need to keep retrying because a final result of an error is returned and that will never change. See more about these changes [here].
 
 ### Enhancements
-- Made changes to the Fleet Builder tab to improve performance when a Fleet has more than 20 Vessels. Things should be much snappier now!
+- Arguments are now more flexible. You can provide only a flag, a flag and a value, or just a value. 
+
+## 10/5/2021
+### Enhancements
+- Github connections now show the organization name as part of the repository name, like `org_name/repository`. This makes it easier to discern which org a repository belongs to if there is a shared repository name.
+
 
 ## 9/29/2021
 
