@@ -19,7 +19,7 @@ Guardrails help make sure that your Vessel runs successfully, no matter the situ
 -  Polling an API until the expected status is seen.
 -  Ensuring a Vessels runs for at most a specified amount of time.
 
-Guardrails are made up of two options:
+Guardrails are made up of four options:
 
 #### Number of Retries
 
@@ -36,9 +36,16 @@ If runtime for a single Voyage exceeds this value, the Voyage will automatically
 be terminated.
 If retries remain, the Vessel will be retried.
 
+#### Exclude Exit Code Ranges
+By default, Guardrails get applied to any Exit Code between 1-255. This option allows you to specify Exit Codes that should be excluded from Guardrail retries if encountered during a voyage. This is beneficial for users that are creating custom exit codes for specific issues where the end result may not be resolvable by a retry.
+
+Exclusions can be provided in two ways:
+- Individual Numbers - `1,2,3,4,5`
+- Number Ranges - `1-5`
+
 ## Screenshots
 
-![Guardrail Settings](./GuardrailsRuntimeCutoff.png)
+![Guardrail Settings](../../.gitbook/assets/shipyard_2021_10_19_11_38_32.png)
 
 ## Additional Notes
 

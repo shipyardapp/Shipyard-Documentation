@@ -51,26 +51,62 @@ This setup allows Vessels to be built to run independent, modular tasks off of n
 
 ### Visual Editor
 
-The Visual editor for Fleets, located on the Vessels tab of a Fleet, allows you to add and remove Vessels and Paths. This editor was designed to be an intuitive drag-and-drop mechanism to visualize and create complex solutions all in the same location.
+The Visual editor for Fleets, located on the Fleet Builder tab, allows you to add, edit, and remove Vessels and Paths. This editor was designed to be an intuitive drag-and-drop mechanism to visualize and create complex solutions all in the same location.
 
-For information about how to use the visual editor, hover over the question mark icon in the top-left corner.
+For information about how to use the visual editor, click the the question mark icon on the left sidebar.
+
+#### Usage Instructions
 
 - **Click** on the canvas to add a Vessel.
-- **Click** on the Vessel name to edit it.
+- **Click** on a Vessel name to change the underlying Vessel.
 - **Click & Drag** on a Vessel to move it.
-- **Click & Drag** on the Canvas to re-position your view of Vessels.
 - **Hover** over a Vessel to reveal the delete button and the new path button.
-- **Hover** over a path to reveal the delete button.
 - **Click & Drag** from the new path button to another Vessel to create a path.
+- **Hover** over a path to reveal the delete button.
 - **Click** on a path to change the condition to Success, Errored, or Completed.
+- **Click & Drag** on the Canvas to re-position your view of Vessels.
+- **Ctrl & Scroll** on the Canvas to zoom in and out.
+- **Click** on a Vessel shape to edit.
+- **Click** on the cog icon to edit Fleet settings.
+
+#### Editing Vessels
+
+When you click on a Vessel, the left pane will update to show the contents of that Vessel. 
+
+If your Vessel is built with a Blueprint, you will see the following panels:
+
+- [Information](settings/information.md)
+- [Inputs](inputs/vessel-inputs.md)
+- [Notifications](settings/notifications.md)
+- [Guardrails](settings/guardrails.md)
+
+If your Vessel is built with Code, you will see the following panels:
+
+- [Information](settings/information.md)
+- [Code](code/code-overview.md)
+- [Arguments](code/command.md#arguments)
+- [Environment Variables](requirements/environment-variables.md)
+- [Packages](requirements/external-package-dependencies.md)
+- [Notifications](settings/notifications.md)
+- [Guardrails](settings/guardrails.md)
+
+Clicking on a panel will either expand or collapse its contents. Each panel can be edited independently and you can switch between multiple panels or multiple Vessels.
+
+During the process of making edits, if any panel's contents are invalid, you will receive an error notification specifying what panel needs to be updated. This error will need to be immediately resolved in order to continue editing. While a panel has errors:
+- You will not be able to collapse the affected panel 
+- You will not be able to switch tabs on the sidebar
+- You will not be able to select another Vessel to edit
+- You will not be able to add another Vessel to the Fleet
+- You will not be able to change any underlying Vessels
+
+All changes are "soft-saved" as you work in the Fleet Builder. You can make as many edits as you'd like and these changes will be continue to be shown in the UI as long as you don't leave the Fleet Builder tab or refresh the page. Once you're finished making all of your edits, you **must** click the Save button at the bottom to officially save all of your changes.
+
 
 ## Screenshots
 
-![](../.gitbook/assets/image_62.png)
+![Fleets Overview](../.gitbook/assets/shipyard_2021_10_19_11_43_30.png)
 
-![Editing Vessels in a Fleet](../.gitbook/assets/image_84_1.png)
-
-![Visualization of Editing](../.gitbook/assets/screen-cast-2020-08-07-at-2.08.56-pm.gif)
+![Editing a Fleet](../.gitbook/assets/shipyard_2021_10_19_11_41_42.png)
 
 ## Additional Notes
 

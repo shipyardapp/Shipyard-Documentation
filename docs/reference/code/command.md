@@ -138,9 +138,10 @@ values={[
 </TabItem>
 </Tabs>
 
-We currently only accept arguments that have **both** a Flag and a single Value, as these more explicit.
-
-If you have a valid use case for needing positional arguments or a boolean flag, please reach out to support.
+Arguments can be passed in 3 different ways:
+- With a Flag and a Value
+- With only a Flag
+- With only a Value (must be placed in the first column)
 
 :::caution
 Command arguments are not suitable for secrets. They are available to change the behavior of your script with values that are not secret, like a file name to process or column names in a table to work with. For secrets, use [environment variables](../requirements/environment-variables).
@@ -153,5 +154,3 @@ Command arguments are not suitable for secrets. They are available to change the
 ## Additional Notes
 
 1. Shipyard can only run a single command at a time. If multiple commands need to be run \(with the use of `&&`\), you should create and run a single shell script that contains the code to run multiple commands successively.
-2. Positional arguments that contain only values cannot be passed to your script.
-3. Boolean arguments that contain only flags cannot be passed to your script.
