@@ -20,7 +20,6 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 ## Features On Deck
 
-- Edit Vessels from the Fleet Builder
 - Add/Create Vessels from the Fleet Builder
 - Fleet as Code Editor
 - Version Control
@@ -28,6 +27,7 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - Fleet Templates
 
 ## Blueprints on Deck
+- Firebolt
 - Census
 - Hightouch
 - Slack (Embed Data into Message)
