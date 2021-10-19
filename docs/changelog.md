@@ -37,7 +37,7 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 ### New Features
 - Updated the Fleet Builder tab to allow editing of multiple Vessels all from one location. See more about these changes [here](reference/fleets.md#editing-vessels)
-- There's a new feature for Guardrails to exclude specific exit codes. This was custom-built to help situations when working with asynchronous APIs where you may not need to keep retrying because a final result of an error is returned and that will never change. See more about these changes [here].
+- There's a new feature for Guardrails to exclude specific exit codes. This was custom-built to help situations when working with asynchronous APIs where you may not need to keep retrying because a final result of an error is returned and that will never change. See more about these changes [here](reference/settings/guardrails.md#exclude-exit-code-ranges).
 
 ### Enhancements
 - Arguments are now more flexible. You can provide only a flag, a flag and a value, or just a value. 
