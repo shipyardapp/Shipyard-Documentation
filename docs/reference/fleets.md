@@ -104,11 +104,9 @@ All changes are "soft-saved" as you work in the Fleet Builder. You can make as m
 
 ## Screenshots
 
-![](../.gitbook/assets/image_62.png)
+![Fleets Overview](../.gitbook/assets/shipyard_2021_10_19_11_43_30.png)
 
-![Editing Vessels in a Fleet](../.gitbook/assets/image_84_1.png)
-
-![Visualization of Editing](../.gitbook/assets/screen-cast-2020-08-07-at-2.08.56-pm.gif)
+![Editing a Fleet](../.gitbook/assets/shipyard_2021_10_19_11_41_42.png)
 
 ## Additional Notes
 
