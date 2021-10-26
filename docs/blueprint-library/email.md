@@ -174,97 +174,101 @@ We recommend the following settings for successfully sending an email with Amazo
 If your SES instance is running in a region other than `us-west-2`, you'll want to use that region in the SMTP Host.
 :::note
 
-## Blueprints
 
-### Send Message
+## Send Message Blueprint
 
-#### Overview
+### Overview
 
 Send an email message to anyone in the world. 
 
 A Vessel built with this Blueprint should never fail and will send a message every time it is run.
 
-#### Variables
+### Variables
 
-|Variable Name|Description|
-|:---|:---|
-|**Send Method**|Determines how you want to send the email. Options are **TLS** and **SSL**. We generally suggest using **TLS** when possible.|
-|**SMTP Host**| The server where your email will be sent from. Usually formatted as `smtp.domain.com`|
-|**SMTP Port**| The port from which your email will be sent. Commonly used ports are **25**, **465**, and **587**. We generally suggest using **587** with **TLS**.|
-|**Username**| The username that your email provider uses to identify your access to send email.|
-|**Password**| The password associated with your username.|
-|**Sender Address**| The email address you want recipients to see when you send an email. We generally suggest keeping the sender address as your own email to ensure that you can appropriately receive replies. |
-|**Sender Name**| The name you want users to see that the email is from. If left blank, the Sender Address will be used.|
-|**To**| The email(s) that you want to send a message to. Can be comma-separated to include multiple email addresses.|
-|**CC**| The email(s) that you want your message to be carbon copied (CCed) to. Can be comma-separated to include multiple email addresses.|
-|**BCC**| The email(s) that you want to be blind carbon copied (BCCed) to. Can be comma-separated to include multiple email addresses. Emails in this field will receive the email, but will not have their email exposed to all other receipients. |
-|**Subject**| The subject of the email that you want to send. |
-|**Message**| The body of the email, containing your main message. This field supports plain text as well as HTML.|
+|Variable Name|Required?|Description|
+|:---|:---|:---|
+|**Send Method**|✔️ | Determines how you want to send the email. Options are **TLS** and **SSL**. We generally suggest using **TLS** when possible.|
+|**SMTP Host**|✔️ | The server where your email will be sent from. Usually formatted as `smtp.domain.com`|
+|**SMTP Port**|✔️ |  The port from which your email will be sent. Commonly used ports are **25**, **465**, and **587**. We generally suggest using **587** with **TLS**.|
+|**Username**| ✔️ | The username that your email provider uses to identify your access to send email.|
+|**Password**|✔️ |  The password associated with your username.|
+|**Sender Address**| ✔️ | The email address you want recipients to see when you send an email. We generally suggest keeping the sender address as your own email to ensure that you can appropriately receive replies. |
+|**Sender Name**|➖ | The name you want users to see that the email is from. If left blank, the Sender Address will be used.|
+|**To**|➖ | The email(s) that you want to send a message to. Can be comma-separated to include multiple email addresses.|
+|**CC**|➖ | The email(s) that you want your message to be carbon copied (CCed) to. Can be comma-separated to include multiple email addresses.|
+|**BCC**| ➖ |The email(s) that you want to be blind carbon copied (BCCed) to. Can be comma-separated to include multiple email addresses. Emails in this field will receive the email, but will not have their email exposed to all other recipients. |
+|**Subject**|➖ | The subject of the email that you want to send. |
+|**Message**| ✔️ |The body of the email, containing your main message. This field supports plain text as well as HTML.|
+|**Include Shipyard Footer?**|➖ | Determines if a footer should be sent with the email that links back to the originating Vessel or Fleet.|
 
 
-### Send Message Conditionally
+## Send Message Conditionally Blueprint
 
-#### Overview
+### Overview
 Send a message via email conditionally by determining if a file exists or not. 
 
-Vessels built with this Blueprint should never fail, as the prescence or lack or prescence of the file only indicates whether or not the message should be sent. 
+The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type) selected greatly affects how this Blueprint works. If multiple files are found, the files will be compressed and zipped together.
+
+Vessels built with this Blueprint should never fail, as the presence or lack or presence of the file only indicates whether or not the message should be sent. 
 
 Works primarily when used as part of a Fleet, where a File can be generated or downloaded by an upstream Vessel.
 
-#### Variables
-|Variable Name|Description|
-|:---|:---|
-|**Send Method**|Determines how you want to send the email. Options are **TLS** and **SSL**. We generally suggest using **TLS** when possible.|
-|**SMTP Host**| The server where your email will be sent from. Usually formatted as `smtp.domain.com`|
-|**SMTP Port**| The port from which your email will be sent. Commonly used ports are **25**, **465**, and **587**. We generally suggest using **587** with **TLS**.|
-|**Username**| The username that your email provider uses to identify your access to send email.|
-|**Password**| The password associated with your username.|
-|**Sender Address**| The email address you want recipients to see when you send an email. We generally suggest keeping the sender address as your own email to ensure that you can appropriately receive replies. |
-|**Sender Name**| The name you want users to see that the email is from. If left blank, the Sender Address will be used.|
-|**To**| The email(s) that you want to send a message to. Can be comma-separated to include multiple email addresses.|
-|**CC**| The email(s) that you want your message to be carbon copied (CCed) to. Can be comma-separated to include multiple email addresses.|
-|**BCC**| The email(s) that you want to be blind carbon copied (BCCed) to. Can be comma-separated to include multiple email addresses. Emails in this field will receive the email, but will not have their email exposed to all other receipients. |
-|**Subject**| The subject of the email that you want to send. |
-|**Message**| The body of the email, containing your main message. This field supports plain text as well as HTML.|
-|**Send Message Only When**|Determines what condition needs to be met for a message to send.<br></br><br></br>**File(s) Exist**  - Send the message only if a file can be found using the provided `folder/filename.ext` combination.<br></br><br></br>**File(s) Don't Exist**  - Send the message only if a file **cannot** found using the provided `folder/filename.ext` combination.|
-|**File Name**|The name of the file you want to search for.|
-|**Folder Name**|The folder that the file can be found in. Unless specified elsewhere, starts by looking in the current working directory. Can contain leading, trailing, or no slashes (if only looking for the file in a single folder).<br></br><br></br>This field is not required and the folder name can technically be provided as part of the File Name.If left blank, will look for the file in the current working directory.|
-|**File Name Match Type**|The way you want the text in the File Name field to be treated.<br></br><br></br>**Exact** - Looks for the exact text that was typed in the File Name field, case sensitive.<br></br><br></br>**Regex** - Treats the text as that was typed in the File Name field as regex. Will look for any files, in all subdirectories of the provided Folder Name, that match the regex.|
+### Variables
+|Variable Name|Required?|Description|
+|:---|:---|:---|
+|**Send Method**|✔️ | Determines how you want to send the email. Options are **TLS** and **SSL**. We generally suggest using **TLS** when possible.|
+|**SMTP Host**|✔️ | The server where your email will be sent from. Usually formatted as `smtp.domain.com`|
+|**SMTP Port**|✔️ |  The port from which your email will be sent. Commonly used ports are **25**, **465**, and **587**. We generally suggest using **587** with **TLS**.|
+|**Username**| ✔️ | The username that your email provider uses to identify your access to send email.|
+|**Password**|✔️ |  The password associated with your username.|
+|**Sender Address**| ✔️ | The email address you want recipients to see when you send an email. We generally suggest keeping the sender address as your own email to ensure that you can appropriately receive replies. |
+|**Sender Name**|➖ | The name you want users to see that the email is from. If left blank, the Sender Address will be used.|
+|**To**|➖ | The email(s) that you want to send a message to. Can be comma-separated to include multiple email addresses.|
+|**CC**|➖ | The email(s) that you want your message to be carbon copied (CCed) to. Can be comma-separated to include multiple email addresses.|
+|**BCC**| ➖ |The email(s) that you want to be blind carbon copied (BCCed) to. Can be comma-separated to include multiple email addresses. Emails in this field will receive the email, but will not have their email exposed to all other recipients. |
+|**Subject**|➖ | The subject of the email that you want to send. |
+|**Message**| ✔️ |The body of the email, containing your main message. This field supports plain text as well as HTML.|
+|**Send Message Only When**| ✔️ |Determines what condition needs to be met for a message to send.<br></br><br></br>**File(s) Exist**  - Send the message only if a file can be found using the provided `folder/filename.ext` combination.<br></br><br></br>**File(s) Don't Exist**  - Send the message only if a file **cannot** found using the provided `folder/filename.ext` combination.|
+|**File Name**|✔️ | Name of the target file on Shipyard. Can be regex if "Match Type" is set accordingly|
+|**Folder Name**|➖ |Name of the local folder on Shipyard to upload the target file from. If left blank, will look in the home directory.|
+|**File Name Match Type**|✔️ |Determines if the text in "File Name" will look for one file with exact match, or multiple files using regex.|
+|**Include Shipyard Footer?**|➖ | Determines if a footer should be sent with the email that links back to the originating Vessel or Fleet.|
 
-### Send Message with File
 
-#### Overview
+## Send Message with File Blueprint
+
+### Overview
 Send a message with a file attachment to anyone in the world.
 
-If multiple files are found, the files will be compressed and zipped together.
+The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type) selected greatly affects how this Blueprint works. If multiple files are found, the files will be compressed and zipped together.
 
 Works primarily when used as part of a Fleet, where a File can be generated or downloaded by an upstream Vessel.
 
 This Blueprint is similar to **Send Message Conditionally** except that it returns an error if a file cannot be found, since the entire objective is to send the file.
 
-#### Variables
-|Variable Name|Description|
-|:---|:---|
-|**Send Method**|Determines how you want to send the email. Options are **TLS** and **SSL**. We generally suggest using **TLS** when possible.|
-|**SMTP Host**| The server where your email will be sent from. Usually formatted as `smtp.domain.com`|
-|**SMTP Port**| The port from which your email will be sent. Commonly used ports are **25**, **465**, and **587**. We generally suggest using **587** with **TLS**.|
-|**Username**| The username that your email provider uses to identify your access to send email.|
-|**Password**| The password associated with your username.|
-|**Sender Address**| The email address you want recipients to see when you send an email. We generally suggest keeping the sender address as your own email to ensure that you can appropriately receive replies. |
-|**Sender Name**| The name you want users to see that the email is from. If left blank, the Sender Address will be used.|
-|**To**| The email(s) that you want to send a message to. Can be comma-separated to include multiple email addresses.|
-|**CC**| The email(s) that you want your message to be carbon copied (CCed) to. Can be comma-separated to include multiple email addresses.|
-|**BCC**| The email(s) that you want to be blind carbon copied (BCCed) to. Can be comma-separated to include multiple email addresses. Emails in this field will receive the email, but will not have their email exposed to all other receipients. |
-|**Subject**| The subject of the email that you want to send. |
-|**Message**| The body of the email, containing your main message. This field supports plain text as well as HTML.|
-|**Send Message Only When**|Determines what condition needs to be met for a message to send.<br></br><br></br>**File(s) Exist**  - Send the message only if a file can be found using the provided `folder/filename.ext` combination.<br></br><br></br>**File(s) Don't Exist**  - Send the message only if a file **cannot** found using the provided `folder/filename.ext` combination.|
-|**File Name**|The name of the file you want to search for.|
-|**Folder Name**|The folder that the file can be found in. Unless specified elsewhere, starts by looking in the current working directory. Can contain leading, trailing, or no slashes (if only looking for the file in a single folder).<br></br><br></br>This field is not required and the folder name can technically be provided as part of the File Name.If left blank, will look for the file in the current working directory.|
-|**File Name Match Type**|The way you want the text in the File Name field to be treated.<br></br><br></br>**Exact** - Looks for the exact text that was typed in the File Name field, case sensitive.<br></br><br></br>**Regex** - Treats the text as that was typed in the File Name field as regex. Will look for any files, in all subdirectories of the provided Folder Name, that match the regex.|
+### Variables
+|Variable Name|Required?|Description|
+|:---|:---|:---|
+|**Send Method**|✔️ | Determines how you want to send the email. Options are **TLS** and **SSL**. We generally suggest using **TLS** when possible.|
+|**SMTP Host**|✔️ | The server where your email will be sent from. Usually formatted as `smtp.domain.com`|
+|**SMTP Port**|✔️ |  The port from which your email will be sent. Commonly used ports are **25**, **465**, and **587**. We generally suggest using **587** with **TLS**.|
+|**Username**| ✔️ | The username that your email provider uses to identify your access to send email.|
+|**Password**|✔️ |  The password associated with your username.|
+|**Sender Address**| ✔️ | The email address you want recipients to see when you send an email. We generally suggest keeping the sender address as your own email to ensure that you can appropriately receive replies. |
+|**Sender Name**|➖ | The name you want users to see that the email is from. If left blank, the Sender Address will be used.|
+|**To**|➖ | The email(s) that you want to send a message to. Can be comma-separated to include multiple email addresses.|
+|**CC**|➖ | The email(s) that you want your message to be carbon copied (CCed) to. Can be comma-separated to include multiple email addresses.|
+|**BCC**| ➖ |The email(s) that you want to be blind carbon copied (BCCed) to. Can be comma-separated to include multiple email addresses. Emails in this field will receive the email, but will not have their email exposed to all other recipients. |
+|**Subject**|➖ | The subject of the email that you want to send. |
+|**Message**| ✔️ |The body of the email, containing your main message. This field supports plain text as well as HTML.|
+|**File Name**|✔️ | Name of the target file on Shipyard. Can be regex if "Match Type" is set accordingly|
+|**Folder Name**|➖ |Name of the local folder on Shipyard to upload the target file from. If left blank, will look in the home directory.|
+|**File Name Match Type**|✔️ |Determines if the text in "File Name" will look for one file with exact match, or multiple files using regex.|
+|**Include Shipyard Footer?**|➖ | Determines if a footer should be sent with the email that links back to the originating Vessel or Fleet.|
 
 ## Troubleshooting
 
-#### Authentication Error
+### Authentication Error
 
 `smtplib.SMTPAuthenticationError`
 
