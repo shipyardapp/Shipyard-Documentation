@@ -69,7 +69,7 @@ For information about how to use the visual editor, click the the question mark 
 - **Click** on a Vessel shape to edit.
 - **Click** on the cog icon to edit Fleet settings.
 
-#### Adding/Creating Vessels
+#### Adding Vessels
 
 When you click on the canvas, or on the sidebar with the `+` icon, the left pane will update to show Blueprints and Languages that you can add/create Vessels with.
 
@@ -81,6 +81,8 @@ This section is split into 3 parts:
 Clicking the Blueprint/Language you want to use will result in a new Vessel being added to the canvas. Hovering over a Blueprint/Language will give you more information about how it can be used.
 
 You can always search for a specific Blueprint using the search bar at the top. This will pre-filter the list to what you're looking for.
+
+You can also duplicate existing Vessels by hovering over the Vessel and clicking the copy icon in the top right corner. This option requires that the original Vessel first be saved.
 
 :::note
 With our new updated Fleet Builder, you are no longer able to use pre-existing Vessels in a Fleet. We recommend creating all of your new Vessels from the Fleet Builder view.
