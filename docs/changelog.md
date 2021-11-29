@@ -35,7 +35,7 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 ## 11/29/2021
 
 ### New Features
-- Updated the Fleet Builder tab to allow the creation of multiple Vessels all from one location. See more about these changes [here](reference/fleets.md#visual-editor)
+- Updated the Fleet Builder tab to allow the creation of multiple Vessels all from one location. You will no longer need to create individual Vessels first then string them together. In fact - you can't! If you're wanting to connect Vessels, you'll need to build them as part of your Fleet initially. See more about these changes [here](reference/fleets.md#visual-editor)
 - Added the ability to Duplicate a Fleet. See more about these changes [here](how-tos/fleets/duplicate-fleet.md)
 - Added the ability to Duplicate a Vessel directly from the Fleet Builder screen.
 
