@@ -21,7 +21,7 @@ In order to get started with the Airtable Blueprints, you will need an API Key w
 
 #### Generating an Airtable API Key
 
-1. Login to your [Airtable](https://aws.amazon.com/console/)  
+1. Login to your [Airtable](https://airtable.com/login) 
 2. Navigate to your [account overview](https://airtable.com/account) page.
 3. Select Generate API Key
 ![Generate API Key](../.gitbook/assets/shipyard_2021_11_23_17_42_47.png)
@@ -67,5 +67,5 @@ Content of the downloaded file can be further refined by providing a view. Other
 
 ## Helpful Links
 
-[Airtable Python Client](https://pyairtable.readthedocs.io/en/latest/)
+[Airtable Python Client](https://pyairtable.readthedocs.io/en/latest/)  
 [Airtable API](https://www.airtable.com/api)
