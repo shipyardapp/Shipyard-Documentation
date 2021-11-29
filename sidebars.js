@@ -93,6 +93,8 @@ module.exports = {
 				Fleets: [
 					"how-tos/fleets/create-fleet",
 					"how-tos/fleets/delete-fleet",
+					"how-tos/fleets/edit-fleet",
+					"how-tos/fleets/duplicate-fleet",
 					"how-tos/fleets/see-all-files",
 					"how-tos/fleets/assess-fleet-performance",
 				],

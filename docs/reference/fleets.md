@@ -57,7 +57,7 @@ For information about how to use the visual editor, click the the question mark 
 
 #### Usage Instructions
 
-- **Click** on the canvas to add a Vessel.
+- **Click** on the plus icon then select a language or Blueprint option to add a Vessel to the canvas.
 - **Click** on a Vessel name to change the underlying Vessel.
 - **Click & Drag** on a Vessel to move it.
 - **Hover** over a Vessel to reveal the delete button and the new path button.
@@ -68,6 +68,25 @@ For information about how to use the visual editor, click the the question mark 
 - **Ctrl & Scroll** on the Canvas to zoom in and out.
 - **Click** on a Vessel shape to edit.
 - **Click** on the cog icon to edit Fleet settings.
+
+#### Adding Vessels
+
+When you click on the canvas, or on the sidebar with the `+` icon, the left pane will update to show Blueprints and Languages that you can add/create Vessels with.
+
+This section is split into 3 parts:
+- [Code](code/code-overview.md)
+- [Library Blueprints](blueprint-library/blueprint-library.md)
+- [Organization Blueprints](blueprints.md)
+
+Clicking the Blueprint/Language you want to use will result in a new Vessel being added to the canvas. Hovering over a Blueprint/Language will give you more information about how it can be used.
+
+You can always search for a specific Blueprint using the search bar at the top. This will pre-filter the list to what you're looking for.
+
+You can also duplicate existing Vessels by hovering over the Vessel and clicking the copy icon in the top right corner. This option requires that the original Vessel first be saved.
+
+:::note
+With our new updated Fleet Builder, you are no longer able to use pre-existing Vessels in a Fleet. We recommend creating all of your new Vessels from the Fleet Builder view.
+:::
 
 #### Editing Vessels
 
@@ -114,10 +133,12 @@ All changes are "soft-saved" as you work in the Fleet Builder. You can make as m
 2. A Fleet cannot contain any paths that would create a loop.
 3. A Fleet must contain two or more Vessels that are all connected together by a path. If you want to have a set of Vessels that aren't connected to the larger group, you will need to create a different Fleet.
 4. You are currently unable to kick off a Fleet starting anywhere in the middle, although you can kick off individual Vessels at will. This prevention is in place because we delete data as soon as a Fleet has finished running, whether it was successful or not. If you ran a Vessel starting from the middle and it relied on data created upstream, it would be unable to find that data and immediately fail.
-5. A Fleet can only be created with Vessels that already exist. We currently don't support creating a Vessel _while_ creating a Fleet.
-6. A Fleet cannot have two or more copies of the same Vessel. Once you select a Vessel, it becomes unavailable in the dropdown.
 
 ## Learn More
 
 - [How to Delete a Fleet](../how-tos/fleets/delete-fleet.md)
 - [How to Create a New Fleet](../how-tos/fleets/create-fleet.md)
+- [How to Edit a Fleet](../how-tos/fleets/edit-fleet.md)
+- [How to Duplicate a Fleet](../how-tos/fleets/duplicate-fleet.md)
+- [How to Assess Fleet Performance](../how-tos/fleets/assess-fleet-performance.md)
+- [How to See All Available Files in a Fleet](../how-tos/fleets/see-all-files.md)
