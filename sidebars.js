@@ -128,6 +128,7 @@ module.exports = {
 			"tutorials/non-native-language-vessels",
 		],
 		"📦 Blueprint Library": [
+			"blueprint-library/airtable",
 			"blueprint-library/amazon-athena",
 			"blueprint-library/amazon-redshift",
 			"blueprint-library/amazon-s3",
