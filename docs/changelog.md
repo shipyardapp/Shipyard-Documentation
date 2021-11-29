@@ -20,7 +20,6 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 ## Features On Deck
 
-- Add/Create Vessels from the Fleet Builder
 - Fleet as Code Editor
 - Version Control
 - Bulk Edit/Create Fleets
@@ -32,6 +31,32 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - Hightouch
 - Slack (Embed Data into Message)
 - Email (Embed Data into Message)
+
+## 11/29/2021
+
+### New Features
+- Updated the Fleet Builder tab to allow the creation of multiple Vessels all from one location. See more about these changes [here](reference/fleets.md#visual-editor)
+- Added the ability to Duplicate a Fleet. See more about these changes [here](how-tos/fleets/duplicate-fleet.md)
+- Added the ability to Duplicate a Vessel directly from the Fleet Builder screen.
+
+### New Blueprints
+- Added an Airtable Blueprint to download data from a base/table/view as a CSV.
+
+### Enhancements
+- Split the functionality of saving a Fleet from scheduling a Fleet. This update will make large Fleets save quicker, while the scheduling happens in the background.
+- Improved the Snowflake Blueprints to have specific error codes and better messaging for common problems.
+
+### Bug Fixes
+- Fixed an issue where Blueprints in the Library Blueprint organization could not be duplicated.
+
+## 11/08/2021
+
+### Enhancements
+- Improved internal logging to better track every notification email sent by our platform.
+
+### Bug Fixes
+- Prevent Vessel changes from being saved if the Vessel was removed from the Fleet.
+- Fixed an issue that sometimes prevented error emails from sending for larger Fleets.
 
 ## 10/19/2021
 
