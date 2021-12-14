@@ -23,6 +23,8 @@ Once you have paid for a plan, clicking the billing button will take you to a bi
 
 ## Screenshots
 
-![Billing tab in the Shipyard UI](../../.gitbook/assets/billing_tab.png)
+![Billing tab Calculator in the Shipyard UI](../../.gitbook/assets/billing_tab_calculator.png)
+
+![Billing tab Payment Info in the Shipyard UI](../../.gitbook/assets/billing_tab_payment_info.png)
 
 ![Billing portal once you are a subscriber](../../.gitbook/assets/image_95.png)
