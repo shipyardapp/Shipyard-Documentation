@@ -174,7 +174,12 @@ module.exports = {
 					"blueprint-library/amazon-redshift/amazon-redshift-store-query-results-as-csv",
 					"blueprint-library/amazon-redshift/amazon-redshift-upload-csv-to-table",
 				],
-				"Amazon S3": [],
+				"Amazon S3": [
+					"blueprint-library/amazon-s3/amazon-s3-overview",
+					"blueprint-library/amazon-s3/amazon-s3-authorization",
+					"blueprint-library/amazon-s3/amazon-s3-download-files",
+					"blueprint-library/amazon-s3/amazon-s3-upload-files",
+				],
 			},
 		],
 	},
