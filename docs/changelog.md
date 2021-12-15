@@ -32,6 +32,11 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - Slack (Embed Data into Message)
 - Email (Embed Data into Message)
 
+## 12/14/2021
+
+### New Features
+- Added the ability for international payments from select countries.
+
 ## 11/29/2021
 
 ### New Features
