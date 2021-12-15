@@ -154,5 +154,22 @@ module.exports = {
 			"blueprint-library/slack",
 			"blueprint-library/snowflake",
 		],
+		"📦 Library Blueprints": [
+			{
+				Airtable: [
+					"blueprint-library/airtable/airtable-overview",
+					"blueprint-library/airtable/airtable-authorization",
+					"blueprint-library/airtable/airtable-download-table-or-view-to-csv",
+				],
+				"Amazon Athena": [
+					"blueprint-library/amazon-athena/amazon-athena-overview",
+					"blueprint-library/amazon-athena/amazon-athena-authorization",
+					"blueprint-library/amazon-athena/amazon-athena-execute-query",
+					"blueprint-library/amazon-athena/amazon-athena-store-query-results-as-csv",
+				],
+				"Amazon Redshift": [],
+				"Amazon S3": [],
+			},
+		],
 	},
 };

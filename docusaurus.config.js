@@ -161,6 +161,10 @@ module.exports = {
 						from: ["/reference/glossary-of-terms"],
 					},
 					{
+						to: "/reference/blueprint-library/blueprint-library/",
+						from: ["/reference/blueprint-library"],
+					},
+					{
 						to: "/tutorials/dbt-core-blueprint",
 						from: [
 							"/blueprint-library/dbt",
