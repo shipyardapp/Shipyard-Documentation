@@ -11,6 +11,6 @@ keywords:
   - authorization
 ---
 
-# Airtable Authorization
+# VENDOR Authorization
 
 ## Action
