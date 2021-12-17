@@ -199,6 +199,10 @@ module.exports = {
 					"blueprint-library/dropbox/dropbox-overview",
 					"blueprint-library/dropbox/dropbox-authorization",
 				],
+				Email: [
+					"blueprint-library/email/email-overview",
+					"blueprint-library/email/email-authorization",
+				],
 			},
 		],
 	},
