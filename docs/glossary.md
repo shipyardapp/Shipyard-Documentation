@@ -14,7 +14,7 @@ keywords:
 
 ## Definitions
 
-[**Blueprint Library**](reference/blueprint-library/blueprint-library) is a location for pre-made Custom Blueprints developed by Shipyard staff.
+[**Blueprint Library**](/reference/blueprint-library/blueprint-library) is a location for pre-made Custom Blueprints developed by Shipyard staff.
 
 [**Blueprints**](/reference/blueprints) are the foundation of the application. They contain the design specifications for a repeatable task. In other applications, these may be referenced as templates, macros, or operators.
 
