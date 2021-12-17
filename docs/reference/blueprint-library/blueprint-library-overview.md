@@ -1,5 +1,5 @@
 ---
-id: blueprint-library
+id: blueprint-library-overview
 title: Blueprint Library Overview
 hide_title: true
 description: Information about the Blueprint Library.

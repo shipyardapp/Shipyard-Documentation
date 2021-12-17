@@ -14,7 +14,7 @@ module.exports = {
 
 			{
 				"Blueprint Library": [
-					"reference/blueprint-library/blueprint-library",
+					"reference/blueprint-library/blueprint-library-overview",
 					"reference/blueprint-library/match-type",
 				],
 				Admin: [
