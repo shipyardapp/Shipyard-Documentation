@@ -195,6 +195,10 @@ module.exports = {
 					"blueprint-library/dbt-cloud/dbt-cloud-overview",
 					"blueprint-library/dbt-cloud/dbt-cloud-authorization",
 				],
+				Dropbox: [
+					"blueprint-library/dropbox/dropbox-overview",
+					"blueprint-library/dropbox/dropbox-authorization",
+				],
 			},
 		],
 	},
