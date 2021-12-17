@@ -184,6 +184,10 @@ module.exports = {
 					"blueprint-library/azure-blob-storage/azure-blob-storage-overview",
 					"blueprint-library/azure-blob-storage/azure-blob-storage-authorization",
 				],
+				Box: [
+					"blueprint-library/box/box-overview",
+					"blueprint-library/box/box-authorization",
+				],
 			},
 		],
 	},
