@@ -180,6 +180,10 @@ module.exports = {
 					"blueprint-library/amazon-s3/amazon-s3-download-files",
 					"blueprint-library/amazon-s3/amazon-s3-upload-files",
 				],
+				"Azure Blob Storage": [
+					"blueprint-library/azure-blob-storage/azure-blob-storage-overview",
+					"blueprint-library/azure-blob-storage/azure-blob-storage-authorization",
+				],
 			},
 		],
 	},
