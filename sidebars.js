@@ -203,6 +203,9 @@ module.exports = {
 					"blueprint-library/email/email-overview",
 					"blueprint-library/email/email-authorization",
 				],
+				"File Manipulation": [
+					"blueprint-library/file-manipulation/file-manipulation-overview",
+				],
 			},
 		],
 	},
