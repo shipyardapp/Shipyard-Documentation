@@ -188,6 +188,9 @@ module.exports = {
 					"blueprint-library/box/box-overview",
 					"blueprint-library/box/box-authorization",
 				],
+				"Data Manipulation": [
+					"blueprint-library/data-manipulation/data-manipulation-overview",
+				],
 			},
 		],
 	},
