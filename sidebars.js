@@ -191,6 +191,10 @@ module.exports = {
 				"Data Manipulation": [
 					"blueprint-library/data-manipulation/data-manipulation-overview",
 				],
+				"dbt Cloud": [
+					"blueprint-library/dbt-cloud/dbt-cloud-overview",
+					"blueprint-library/dbt-cloud/dbt-cloud-authorization",
+				],
 			},
 		],
 	},
