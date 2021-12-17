@@ -206,6 +206,10 @@ module.exports = {
 				"File Manipulation": [
 					"blueprint-library/file-manipulation/file-manipulation-overview",
 				],
+				Fivetran: [
+					"blueprint-library/fivetran/fivetran-overview",
+					"blueprint-library/fivetran/fivetran-authorization",
+				],
 			},
 		],
 	},
