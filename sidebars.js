@@ -214,6 +214,10 @@ module.exports = {
 					"blueprint-library/ftp/ftp-overview",
 					"blueprint-library/ftp/ftp-authorization",
 				],
+				"Google BigQuery": [
+					"blueprint-library/google-bigquery/google-bigquery-overview",
+					"blueprint-library/google-bigquery/google-bigquery-authorization",
+				],
 			},
 		],
 	},
