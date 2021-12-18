@@ -226,6 +226,10 @@ module.exports = {
 					"blueprint-library/google-drive/google-drive-overview",
 					"blueprint-library/google-drive/google-drive-authorization",
 				],
+				"Google Sheets": [
+					"blueprint-library/google-sheets/google-sheets-overview",
+					"blueprint-library/google-sheets/google-sheets-authorization",
+				],
 			},
 		],
 	},
