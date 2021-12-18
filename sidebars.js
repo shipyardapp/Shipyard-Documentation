@@ -218,6 +218,10 @@ module.exports = {
 					"blueprint-library/google-bigquery/google-bigquery-overview",
 					"blueprint-library/google-bigquery/google-bigquery-authorization",
 				],
+				"Google Cloud Storage": [
+					"blueprint-library/google-cloud-storage/google-cloud-storage-overview",
+					"blueprint-library/google-cloud-storage/google-cloud-storage-authorization",
+				],
 			},
 		],
 	},
