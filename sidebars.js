@@ -222,6 +222,10 @@ module.exports = {
 					"blueprint-library/google-cloud-storage/google-cloud-storage-overview",
 					"blueprint-library/google-cloud-storage/google-cloud-storage-authorization",
 				],
+				"Google Drive": [
+					"blueprint-library/google-drive/google-drive-overview",
+					"blueprint-library/google-drive/google-drive-authorization",
+				],
 			},
 		],
 	},

@@ -15,7 +15,7 @@ keywords:
 
 In order to get started with the Google BigQuery Blueprints, a service account with the necessary GCP permissions is required. All BigQuery Blueprints are still subject to [BigQuery quotas and limits](https://cloud.google.com/bigquery/quotas#queries).
 
-### Creating a BigQuery Service Account
+## Creating a BigQuery Service Account
 
 1. Login to your [GCP console](https://console.cloud.google.com/)
 2. Using the top selector, choose the Project where your BigQuery Instance lives.  
