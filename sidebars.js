@@ -210,6 +210,10 @@ module.exports = {
 					"blueprint-library/fivetran/fivetran-overview",
 					"blueprint-library/fivetran/fivetran-authorization",
 				],
+				FTP: [
+					"blueprint-library/ftp/ftp-overview",
+					"blueprint-library/ftp/ftp-authorization",
+				],
 			},
 		],
 	},
