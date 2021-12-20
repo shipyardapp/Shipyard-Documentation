@@ -242,6 +242,10 @@ module.exports = {
 					"blueprint-library/postgresql/postgresql-overview",
 					"blueprint-library/postgresql/postgresql-authorization",
 				],
+				SFTP: [
+					"blueprint-library/sftp/sftp-overview",
+					"blueprint-library/sftp/sftp-authorization",
+				],
 			},
 		],
 	},
