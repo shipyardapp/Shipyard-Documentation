@@ -15,12 +15,17 @@ keywords:
 
 Shipyard's low-code email blueprints allow users to connect their data to their email.
 
+## Available Blueprints
 Shipyard currently has the following Blueprints readily available:
 - [Send Message](email-send-message)
 - [Send Message Conditionally](email-send-message-conditionally)
 - [Send Message with File](email-send-message-with-file)
 
+## How to Use
 For information on how to set up these Blueprints successfully, please read through the [Email Authorization guide](email-authorization).
+
+## Open Source Code
+The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/email-blueprints), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.
 
 ## Helpful Email Links
 - [Google SMTP Support](https://support.google.com/a/answer/176600?hl=en)

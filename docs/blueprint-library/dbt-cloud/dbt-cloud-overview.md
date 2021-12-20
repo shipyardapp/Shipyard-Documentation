@@ -26,13 +26,18 @@ Sub-folders can be any of the following:
 
 If you would like to run **dbt Core** directly from Shipyard, rather than executing dbt on a separate platform, follow our [dbt Core Blueprint tutorial](../../tutorials/dbt-blueprint.md).
 
+## Available Blueprints
 Shipyard currently has the following Blueprints readily available:
 - [Execute Job](dbt-cloud-execute-job)
 - [Check Run Status](dbt-cloud-check-run-status)
 - [Download Logs and Artifacts](dbt-cloud-download-logs-and-artifacts)
 - [Execute Job & Download Results](dbt-cloud-execute-job-&-download-results)
 
+## How to Use
 For information on how to set up these Blueprints successfully, please read through the [dbt Cloud Authorization guide](dbt-cloud-authorization).
+
+## Open Source Code
+The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/dbtcloud-blueprints), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.
 
 ## Helpful dbt Cloud Links
 - [dbt Cloud API Documentation](https://docs.getdbt.com/dbt-cloud/api)

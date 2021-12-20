@@ -15,12 +15,17 @@ keywords:
 
 Shipyard's low-code Slack blueprints allow users to connect their data to Slack. You can send messages to public channels, private channels, or DMs.  
 
+## Available Blueprints
 Shipyard currently has the following Blueprints readily available:
 - [Send Message](slack-send-message)
 - [Send Message Conditionally](slack-send-message-conditionally)
 - [Send Message with File](slack-send-message-with-file)
 
+## How to Use
 For information on how to set up these Blueprints successfully, please read through the [Slack Authorization guide](slack-authorization).
+
+## Open Source Code
+The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/slack-blueprints), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.
 
 ## Helpful Slack Links
 - [Slack Python Documentation](https://slack.dev/python-slackclient/)
