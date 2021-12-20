@@ -230,6 +230,10 @@ module.exports = {
 					"blueprint-library/google-sheets/google-sheets-overview",
 					"blueprint-library/google-sheets/google-sheets-authorization",
 				],
+				"Microsoft SQL Server": [
+					"blueprint-library/microsoft-sql-server/microsoft-sql-server-overview",
+					"blueprint-library/microsoft-sql-server/microsoft-sql-server-authorization",
+				],
 			},
 		],
 	},
