@@ -11,7 +11,7 @@ keywords:
   - overview
 ---
 
-# VENDOR Blueprints Overview
+# Data Manipulation Blueprints Overview
 
 Shipyard's low-code Data Manipulation blueprints allow users to quickly transform or assess their data.
 

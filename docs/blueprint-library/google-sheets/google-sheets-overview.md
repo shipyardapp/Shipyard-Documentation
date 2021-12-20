@@ -13,7 +13,7 @@ keywords:
 
 # Google Sheets Blueprints Overview
 
-Shipyard's low-code VENDOR blueprints allow users to connect their data in Google Sheets to the rest of their modern data stack.
+Shipyard's low-code Google Sheets blueprints allow users to connect their data in Google Sheets to the rest of their modern data stack.
 
 Shipyard currently has the following Blueprints readily available:
 - [Download Sheet to CSV](google-sheets-download-sheet-to-csv)

@@ -21,7 +21,7 @@ Shipyard currently has the following Blueprints readily available:
 
 For information on how to set up these Blueprints successfully, please read through the [Microsoft SQL Server Authorization guide](microsoft-sql-server-authorization).
 
-## Helpful VENDOR Links
+## Helpful Microsoft SQL Server Links
 - [Microsoft SQL Server Documentation](https://docs.microsoft.com/en-us/sql/sql-server/)  
 - [SQLAlchemy Documentation](https://docs.sqlalchemy.org/en/13/)  
 - [Pandas to_sql Method](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_sql.html)  

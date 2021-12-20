@@ -11,7 +11,7 @@ keywords:
   - overview
 ---
 
-# VENDOR Blueprints Overview
+# Fivetran Blueprints Overview
 
 Fivetran Blueprints help data teams orchestrate their Fivetran connectors with other tools in their data stack. Our modular Fivetran Blueprints make it easy to execute a sync, check the status of a sync, or update the settings for a specific connector. We've also included an all-in-one Blueprint so you can flexibly determine how you would like to interact with Fivetran.
 
