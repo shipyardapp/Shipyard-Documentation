@@ -234,6 +234,10 @@ module.exports = {
 					"blueprint-library/microsoft-sql-server/microsoft-sql-server-overview",
 					"blueprint-library/microsoft-sql-server/microsoft-sql-server-authorization",
 				],
+				MySQL: [
+					"blueprint-library/mysql/mysql-overview",
+					"blueprint-library/mysql/mysql-authorization",
+				],
 			},
 		],
 	},
