@@ -238,6 +238,10 @@ module.exports = {
 					"blueprint-library/mysql/mysql-overview",
 					"blueprint-library/mysql/mysql-authorization",
 				],
+				PostgreSQL: [
+					"blueprint-library/postgresql/postgresql-overview",
+					"blueprint-library/postgresql/postgresql-authorization",
+				],
 			},
 		],
 	},

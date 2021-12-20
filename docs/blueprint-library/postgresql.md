@@ -19,7 +19,6 @@ keywords:
 
 ### Overview
 
-
 Connecting PostgreSQL to Shipyard requires you to have:
 1. A PostgreSQL user with read/write access to the database and all associated tables/views you wish to access. We recommend setting up an account specifically for Shipyard access, although you can use an existing user.
 2. Shipyard [IP Addresses whitelisted](../faqs.md#how-can-shipyard-access-my-secure-database)
