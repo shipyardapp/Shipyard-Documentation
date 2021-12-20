@@ -246,6 +246,10 @@ module.exports = {
 					"blueprint-library/sftp/sftp-overview",
 					"blueprint-library/sftp/sftp-authorization",
 				],
+				Slack: [
+					"blueprint-library/slack/slack-overview",
+					"blueprint-library/slack/slack-authorization",
+				],
 			},
 		],
 	},
