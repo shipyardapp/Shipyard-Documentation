@@ -250,6 +250,10 @@ module.exports = {
 					"blueprint-library/slack/slack-overview",
 					"blueprint-library/slack/slack-authorization",
 				],
+				Snowflake: [
+					"blueprint-library/snowflake/snowflake-overview",
+					"blueprint-library/snowflake/snowflake-authorization",
+				],
 			},
 		],
 	},
