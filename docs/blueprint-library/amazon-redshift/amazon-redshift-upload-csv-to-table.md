@@ -3,7 +3,7 @@ id: amazon-redshift-upload-csv-to-table
 title: Amazon Redshift Template - Upload CSV to Table
 hide_title: true
 sidebar_label: Upload CSV to Table
-description: Information about Shipyard's low-code Amazon Redshift Upload CSV to Table blueprint. 
+description: Information about Shipyard's low-code Amazon Redshift Upload CSV to Table blueprint. Upload a CSV file to any table in Amazon Redshift. With the file data, you can create a new table, overwrite the existing table, or append to the end of the table.
 keywords:
     - amazon redshift
     - blueprint
@@ -16,18 +16,22 @@ keywords:
 
 Upload a CSV file to any table in Amazon Redshift. With the file data, you can create a new table, overwrite the existing table, or append to the end of the table.
 
+For more information on how to use this Blueprint, [read the documentation](https://www.shipyardapp.com/docs/blueprint-library/amazon-redshift). You can also dig into the open-source code [on Github](https://github.com/shipyardapp/amazonredshift-blueprints).
+
 ## Variables
 
-| Variable Name | Description |
-|:---|:---|
-| **Host** | [REQUIRED] Domain or the IP address of the database to connect to |
-| **Port** | [REQUIRED] Port number where the database accepts inbound connections |
-| **Username** | [REQUIRED] Username configured as part of the database credentials - see [**Authorization**](#authorization) above for more information |
-| **Password** | Optional password for database security credentials - see [**Authorization**](#authorization) above for more information |
-| **Database** | Name of the database to connect to |
-| **Extra URL Parameters** | Extra parameters that will be placed at the end of the connection string, after the "?". Must be separated by "&" |
-| **Query** | [REQUIRED] SQL query to run against the target database |
-| **Folder Name** | Optional subdirectory to store results in Shipyard |
-| **File Name** | [REQUIRED] Name for CSV query output file |
-| **Table Name** | [REQUIRED] Redshift table name to insert data into |
-| **Insertion Method** | [REQUIRED] Dropdown with options for determining how data is inserted into the table |
+| Name | Reference | Type | Required | Default | Options | Description |
+|:---|:---|:---|:---|:---|:---|:---|
+| Host | REDSHIFT_HOST | Alphanumeric | :white_check_mark: | - | - | The domain or the IP address of the database you want to connect to. |
+| Port | REDSHIFT_PORT | Integer | :white_check_mark: | 5439 | - | - |
+| Username | REDSHIFT_USERNAME | Alphanumeric | :white_check_mark: | - | - | - |
+| Password | REDSHIFT_PASSWORD | Password | :heavy_minus_sign: | - | - | Password for the provided username |
+| Database | REDSHIFT_DATABASE | Alphanumeric | :white_check_mark: | - | - | - |
+| Extra URL Parameters | REDSHIFT_URL_PARAMETERS | Alphanumeric | :heavy_minus_sign: | - | - | Extra parameters that will be placed at the end of the connection string, after the &#34;?&#34;. Must be separated by &#34;&amp;&#34; |
+| Folder Name | REDSHIFT_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the file to upload can be found. Leaving blank will search in the current working directory. |
+| File Name Match Type | REDSHIFT_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | exact_match | `Exact Match`, `Regex Match` | Determines if the text in &#34;File Name&#34; will match to one or multiple files. |
+| File Name | REDSHIFT_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the file to upload to the specified table |
+| Table Name | REDSHIFT_TABLE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the table where you want data inserted |
+| Insertion Method | REDSHIFT_INSERT_METHOD | Select | :white_check_mark: | append | `Append Data`, `Replace Data`, `Add Data Only if Table is Empty` | Determines how the data in your file will be added to the table |
+
+
