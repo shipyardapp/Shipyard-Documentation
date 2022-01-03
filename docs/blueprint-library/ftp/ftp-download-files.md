@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-Quickly export one or more files from an FTP Server. The [match type](../reference/blueprint-library/match-type.md) selected greatly affects how this Blueprint works.
+Quickly export one or more files from an FTP Server. The [match type](../../reference/blueprint-library/match-type.md) selected greatly affects how this Blueprint works.
 
 This Blueprint requires _read_ permissions in order to download from the FTP server.
 

@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-Quickly export one or more files from your Google Drive account. The [match type](../reference/blueprint-library/match-type.md) selected greatly affects how this Blueprint works.
+Quickly export one or more files from your Google Drive account. The [match type](../../reference/blueprint-library/match-type.md) selected greatly affects how this Blueprint works.
 
 
 

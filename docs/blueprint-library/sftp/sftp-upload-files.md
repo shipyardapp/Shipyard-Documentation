@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-Easily import one or more files directly into an SFTP Server, no matter how big they are. The [match type](../reference/blueprint-library/match-type.md) selected greatly affects how this Blueprint works.
+Easily import one or more files directly into an SFTP Server, no matter how big they are. The [match type](../../reference/blueprint-library/match-type.md) selected greatly affects how this Blueprint works.
 
 This Blueprint requires _write_ permissions in order to upload to the SFTP server. 
 

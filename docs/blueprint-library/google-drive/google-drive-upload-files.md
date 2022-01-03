@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-Easily import one or more files directly into a Google Drive account. The [match type](../reference/blueprint-library/match-type.md) selected greatly affects how this Blueprint works.
+Easily import one or more files directly into a Google Drive account. The [match type](../../reference/blueprint-library/match-type.md) selected greatly affects how this Blueprint works.
 
 
 

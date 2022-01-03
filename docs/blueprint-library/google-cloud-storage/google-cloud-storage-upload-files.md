@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-Import one or more files directly into a Google Cloud Storage (GCS) bucket. The [match type](../reference/blueprint-library/match-type.md) selected greatly affects how this Blueprint works.
+Import one or more files directly into a Google Cloud Storage (GCS) bucket. The [match type](../../reference/blueprint-library/match-type.md) selected greatly affects how this Blueprint works.
 
 If the folder name provided is new, a new folder will automatically be created.
 

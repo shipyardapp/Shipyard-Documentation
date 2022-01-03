@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-Quickly export one or more files from a Google Cloud Storage (GCS) bucket. The [match type](../reference/blueprint-library/match-type.md) selected greatly affects how this Blueprint works.
+Quickly export one or more files from a Google Cloud Storage (GCS) bucket. The [match type](../../reference/blueprint-library/match-type.md) selected greatly affects how this Blueprint works.
 
 
 

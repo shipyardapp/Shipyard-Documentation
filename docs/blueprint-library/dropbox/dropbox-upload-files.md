@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-Easily import one or more files directly into Dropbox. The [match type](../reference/blueprint-library/match-type.md) selected greatly affects how this Blueprint works.
+Easily import one or more files directly into Dropbox. The [match type](../../reference/blueprint-library/match-type.md) selected greatly affects how this Blueprint works.
 
 If the folder name provided doesn&#39;t already exist, it will be created.
 
