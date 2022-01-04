@@ -23,7 +23,7 @@ Quickly export one or more files from your Google Drive account. The [match type
 | Name | Reference | Type | Required | Default | Options | Description |
 |:---|:---|:---|:---|:---|:---|:---|
 | Google Drive Folder Name | source_folder_name | Alphanumeric | :heavy_minus_sign: | - | - | Name of the folder where the file is stored in Google Drive. Leaving blank will place the file in the root directory of Google Drive which is inaccessible from the UI. |
-| Google Drive File Name Match Type | source_file_name_match_type | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br><br><br>Regex Match: `regex_match` | Determines if the text in &#34;Google Drive File Name&#34; will look for one file with exact match, or multiple files using regex. |
+| Google Drive File Name Match Type | source_file_name_match_type | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in &#34;Google Drive File Name&#34; will look for one file with exact match, or multiple files using regex. |
 | Google Drive File Name | source_file_name | Alphanumeric | :white_check_mark: | - | - | Name of the target file in Google Drive. Can be regex if &#34;Match Type&#34; is set accordingly. |
 | Local Folder Name | destination_folder_name | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the file(s) should be downloaded. Leaving blank will place the file in the home directory. |
 | Local File Name | destination_file_name | Alphanumeric | :heavy_minus_sign: | - | - | What to name the file(s) being downloaded. If left blank, defaults to the original file name(s). |

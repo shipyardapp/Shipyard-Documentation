@@ -24,7 +24,7 @@ Quickly export one or more files from an Amazon S3 bucket. Once the files have d
 |:---|:---|:---|:---|:---|:---|:---|
 | Bucket Name | S3_BUCKET_NAME | Alphanumeric | :white_check_mark: | - | - | - |
 | S3 Folder Name | S3_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | - |
-| S3 File Name Match Type | S3_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br><br><br>Regex Match: `regex_match` | - |
+| S3 File Name Match Type | S3_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | - |
 | S3 File Name | S3_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | - |
 | Local Folder Name | S3_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | - |
 | Local File Name | S3_DESTINATION_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | - |

@@ -32,10 +32,10 @@ In all instances, if the table name does not already exist, a new table will be 
 |:---|:---|:---|:---|:---|:---|:---|
 | Dataset Name | dataset_name | Alphanumeric | :white_check_mark: | - | - | Name of the dataset where the BigQuery table lives. |
 | Table Name | table_name | Alphanumeric | :white_check_mark: | - | - | Name of the BigQuery table to upload the dataset to. |
-| Local File Name Match Type | source_file_name_match_type | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br><br><br>Regex Match: `regex_match` | Determines if the text in &#34;Local File Name&#34; will look for one file with exact match, or multiple files using regex. |
+| Local File Name Match Type | source_file_name_match_type | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in &#34;Local File Name&#34; will look for one file with exact match, or multiple files using regex. |
 | Local File Name | source_file_name | Alphanumeric | :white_check_mark: | - | - | Name of the target CSV file on Shipyard. Can be regex if &#34;Match Type&#34; is set accordingly. |
 | Local Folder Name | source_folder_name | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Shipyard to upload the target file from. If left blank, will look in the home directory. |
-| Upload Method | upload_type | Select | :white_check_mark: | `append` | Append Data: `append`<br><br><br>Overwrite Data: `overwrite` | Determines how the data in your file(s) will be added to the table. |
+| Upload Method | upload_type | Select | :white_check_mark: | `append` | Append Data: `append`<br></br><br></br>Overwrite Data: `overwrite` | Determines how the data in your file(s) will be added to the table. |
 | Service Account | GOOGLE_APPLICATION_CREDENTIALS | Password | :white_check_mark: | - | - | JSON from a Google Cloud Service account key. |
 | Schema | SCHEMA | Alphanumeric | :heavy_minus_sign: | - | - | Schema for the uploaded dataset, formatted as a double-nested list. If left blank, it will be auto-detected. |
 | Header Rows to Skip | SKIP_HEADER_ROWS | Integer | :heavy_minus_sign: | - | - | Number of header rows to skip when inserting data. Only required if provided custom schema. |

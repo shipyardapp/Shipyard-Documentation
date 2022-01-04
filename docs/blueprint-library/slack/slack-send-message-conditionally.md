@@ -26,16 +26,16 @@ Works primarily when used as part of a Fleet, where a File can be generated or d
 
 | Name | Reference | Type | Required | Default | Options | Description |
 |:---|:---|:---|:---|:---|:---|:---|
-| Destination Type | destination_type | Select | :white_check_mark: | `channel` | Channel: `channel`<br><br><br>DM: `dm` | - |
+| Destination Type | destination_type | Select | :white_check_mark: | `channel` | Channel: `channel`<br></br><br></br>DM: `dm` | - |
 | Channel Name | channel_name | Alphanumeric | :heavy_minus_sign: |  | - | - |
-| User Lookup Method | user_lookup_method | Select | :white_check_mark: | `display_name` | Display Name: `display_name`<br><br><br>Real Name: `real_name`<br><br><br>Email: `email` | - |
+| User Lookup Method | user_lookup_method | Select | :white_check_mark: | `display_name` | Display Name: `display_name`<br></br><br></br>Real Name: `real_name`<br></br><br></br>Email: `email` | - |
 | Users to Notify | users_to_notify | Alphanumeric | :heavy_minus_sign: |  | - | - |
 | Message | message | Alphanumeric | :white_check_mark: |  | - | - |
-| Send Message Only When | conditional_send | Select | :white_check_mark: | `file_exists` | File(s) Exist: `file_exists`<br><br><br>File(s) Don't Exist: `file_dne` | - |
-| File Name Match Type | source_file_name_match_type | Select | :white_check_mark: | `exact_match` | Regex: `regex_match`<br><br><br>Exact: `exact_match` | - |
+| Send Message Only When | conditional_send | Select | :white_check_mark: | `file_exists` | File(s) Exist: `file_exists`<br></br><br></br>File(s) Don't Exist: `file_dne` | - |
+| File Name Match Type | source_file_name_match_type | Select | :white_check_mark: | `exact_match` | Regex: `regex_match`<br></br><br></br>Exact: `exact_match` | - |
 | File Name | source_file_name | Alphanumeric | :white_check_mark: |  | - | - |
 | Folder Name | source_folder_name | Alphanumeric | :heavy_minus_sign: |  | - | - |
-| Upload File to Slack? | UPLOAD_FILE | Select | :white_check_mark: | `no` | Yes: `yes`<br><br><br>No: `no` | - |
+| Upload File to Slack? | UPLOAD_FILE | Select | :white_check_mark: | `no` | Yes: `yes`<br></br><br></br>No: `no` | - |
 | Slack Token | slack_token | Password | :white_check_mark: | - | - | - |
 
 

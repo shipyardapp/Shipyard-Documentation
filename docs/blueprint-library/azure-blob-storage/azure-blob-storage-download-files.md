@@ -24,7 +24,7 @@ Quickly export one or more files directly into an an Azure Blob Storage containe
 |:---|:---|:---|:---|:---|:---|:---|
 | Container Name | container_name | Alphanumeric | :white_check_mark: | - | - | Name of the target Azure storage container. |
 | Azure Storage Folder Name | source_folder_name | Alphanumeric | :heavy_minus_sign: | - | - | Name of the folder where the file is stored in the Azure storage container. |
-| Azure Storage File Name Match Type | source_file_name_match_type | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br><br><br>Regex Match: `regex_match` | Determines if the text in &#34;Azure Storage File Name&#34; will look for one file with exact match, or multiple files using regex. |
+| Azure Storage File Name Match Type | source_file_name_match_type | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in &#34;Azure Storage File Name&#34; will look for one file with exact match, or multiple files using regex. |
 | Azure Storage File Name | source_file_name | Alphanumeric | :white_check_mark: | - | - | Name of the target file(s) in the Azure storage storage container. Can be regex if &#34;Match Type&#34; is set accordingly. |
 | Local Folder Name | destination_folder_name | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the file(s) should be downloaded. Leaving blank will place the file in the home directory. |
 | Local File Name | destination_file_name | Alphanumeric | :heavy_minus_sign: | - | - | What to name the file(s) being downloaded. If left blank, defaults to the original file name(s). |
