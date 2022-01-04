@@ -3,6 +3,7 @@ id: google-drive-overview
 title: Google Drive Blueprints Overview
 hide_title: true
 sidebar_label: Overview
+pagination_label: Google Drive - Overview
 description: Information about Shipyard's low-code Google Drive templates.
 keywords:
   - google drive

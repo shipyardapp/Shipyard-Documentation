@@ -18,7 +18,7 @@ Shipyard's low-code Google Sheets blueprints allow users to connect their data i
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available:
 - [Download Sheet to CSV](google-sheets-download-sheet-to-csv)
-- [Upload CSV to Sheet](google-sheets-upload-sheet-to-csv)
+- [Upload CSV to Sheet](google-sheets-upload-csv-to-sheet)
 - [Clear Data from Sheet](google-sheets-clear-data-from-sheet)
 
 ## How to Use

@@ -18,8 +18,8 @@ Shipyard's low-code Snowflake blueprints allow users to connect their data in Sn
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available:
 - [Execute Query](snowflake-execute-query)
-- [Download Query Results as CSV](snowflake-download-query-results-as-csv)
-- [Execute Upload CSV to Table](snowflake-upload-csv-totable)
+- [Store Query Results as CSV](snowflake-store-query-results-as-csv)
+- [Upload CSV to Table](snowflake-upload-csv-to-table)
 
 ## How to Use
 For information on how to set up these Blueprints successfully, please read through the [Snowflake Authorization guide](snowflake-authorization).

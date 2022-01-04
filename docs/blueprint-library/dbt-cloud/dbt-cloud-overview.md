@@ -31,7 +31,7 @@ Shipyard currently has the following Blueprints readily available:
 - [Execute Job](dbt-cloud-execute-job)
 - [Check Run Status](dbt-cloud-check-run-status)
 - [Download Logs and Artifacts](dbt-cloud-download-logs-and-artifacts)
-- [Execute Job & Download Results](dbt-cloud-execute-job-&-download-results)
+- [Execute Job & Download Results](dbt-cloud-execute-job-and-download-results)
 
 ## How to Use
 For information on how to set up these Blueprints successfully, please read through the [dbt Cloud Authorization guide](dbt-cloud-authorization).
