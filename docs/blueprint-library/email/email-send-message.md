@@ -22,7 +22,7 @@ For more information on how to use this Blueprint, [read the documentation](http
 
 | Name | Reference | Type | Required | Default | Options | Description |
 |:---|:---|:---|:---|:---|:---|:---|
-| Send Method | send_method | Select | :white_check_mark: | tls | `SSL`, `TLS` | - |
+| Send Method | send_method | Select | :white_check_mark: | `tls` | SSL: `ssl`<br><br><br>TLS: `tls` | - |
 | SMTP Host | smtp_host | Alphanumeric | :white_check_mark: |  | - | - |
 | SMTP Port | smtp_port | Alphanumeric | :white_check_mark: |  | - | - |
 | Username | username | Alphanumeric | :white_check_mark: | - | - | - |

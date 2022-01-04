@@ -23,7 +23,7 @@ For more information on how to use this Blueprint, [read the documentation](http
 | Name | Reference | Type | Required | Default | Options | Description |
 |:---|:---|:---|:---|:---|:---|:---|
 | Local Folder Name | source_folder_name | Alphanumeric | :heavy_minus_sign: |  | - | - |
-| Local File Name Match Type | source_file_name_match_type | Select | :white_check_mark: | exact_match | `Exact Match`, `Regex Match` | - |
+| Local File Name Match Type | source_file_name_match_type | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br><br><br>Regex Match: `regex_match` | - |
 | Local File Name | source_file_name | Alphanumeric | :heavy_minus_sign: |  | - | If left blank, will retain the original file name |
 | Box Folder Name | destination_folder_name | Alphanumeric | :heavy_minus_sign: |  | - | - |
 | Box File Name | destination_file_name | Alphanumeric | :heavy_minus_sign: |  | - | If left blank, will use the original file name |

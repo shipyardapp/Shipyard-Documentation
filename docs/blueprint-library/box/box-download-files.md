@@ -25,7 +25,7 @@ For more information on how to use this Blueprint, [read the documentation](http
 |:---|:---|:---|:---|:---|:---|:---|
 | Box Folder Name | source_folder_name | Alphanumeric | :heavy_minus_sign: |  | - | - |
 | Box File Name | source_file_name | Alphanumeric | :white_check_mark: |  | - | - |
-| Box File Name Match Type | source_file_name_match_type | Select | :white_check_mark: | exact_match | `Exact Match`, `Regex Match` | - |
+| Box File Name Match Type | source_file_name_match_type | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br><br><br>Regex Match: `regex_match` | - |
 | Local Folder Name | destination_folder_name | Alphanumeric | :heavy_minus_sign: |  | - | - |
 | Local File Name | destination_file_name | Alphanumeric | :heavy_minus_sign: |  | - | If left blank, will retain the original file name |
 | Service Account Credentials | BOX_APPLICATION_CREDENTIALS | Password | :white_check_mark: |  | - | JSON from a Box Service Account key |

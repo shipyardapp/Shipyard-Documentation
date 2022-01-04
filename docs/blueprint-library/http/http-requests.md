@@ -24,9 +24,9 @@ For more information on how to use this Blueprint, [read the documentation](http
 
 | Name | Reference | Type | Required | Default | Options | Description |
 |:---|:---|:---|:---|:---|:---|:---|
-| Method | method | Select | :white_check_mark: | GET | `GET`, `POST`, `PUT`, `PATCH` | - |
+| Method | method | Select | :white_check_mark: | `GET` | `GET`, `POST`, `PUT`, `PATCH` | - |
 | URL | url | Alphanumeric | :white_check_mark: |  | - | - |
-| Content Type | content_type | Select | :white_check_mark: | application/json | `application/json`, `application/xml`, `text/plain`, `text/html` | - |
+| Content Type | content_type | Select | :white_check_mark: | `application/json` | `application/json`, `application/xml`, `text/plain`, `text/html` | - |
 | Authorization Header | authorization_header | Password | :heavy_minus_sign: | - | - | - |
 | Message | message | Alphanumeric | :heavy_minus_sign: |  | - | - |
 | Destination Folder Name | destination_folder_name | Alphanumeric | :heavy_minus_sign: |  | - | - |

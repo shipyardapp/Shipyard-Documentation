@@ -22,7 +22,7 @@ For more information on how to use this Blueprint, [read the documentation](http
 
 | Name | Reference | Type | Required | Default | Options | Description |
 |:---|:---|:---|:---|:---|:---|:---|
-| Send Method | send_method | Select | :white_check_mark: | tls | `SSL`, `TLS` | - |
+| Send Method | send_method | Select | :white_check_mark: | `tls` | SSL: `ssl`<br><br><br>TLS: `tls` | - |
 | SMTP Host | smtp_host | Alphanumeric | :white_check_mark: |  | - | - |
 | SMTP Port | smtp_port | Alphanumeric | :white_check_mark: |  | - | - |
 | Username | username | Alphanumeric | :white_check_mark: | - | - | - |
@@ -34,8 +34,8 @@ For more information on how to use this Blueprint, [read the documentation](http
 | BCC | bcc | Alphanumeric | :heavy_minus_sign: |  | - | - |
 | Subject | subject | Alphanumeric | :heavy_minus_sign: |  | - | - |
 | Message | message | Alphanumeric | :white_check_mark: |  | - | - |
-| Send Messages Only When | conditional_send | Select | :white_check_mark: | file_exists | `File(s) Exist`, `File(s) Don&#39;t Exist` | - |
-| File Name Match Type | source_file_name_match_type | Select | :white_check_mark: | exact_match | `Regex`, `Exact` | - |
+| Send Messages Only When | conditional_send | Select | :white_check_mark: | `file_exists` | File(s) Exist: `file_exists`<br><br><br>File(s) Don't Exist: `file_dne` | - |
+| File Name Match Type | source_file_name_match_type | Select | :white_check_mark: | `exact_match` | Regex: `regex_match`<br><br><br>Exact: `exact_match` | - |
 | File Name | source_file_name | Alphanumeric | :heavy_minus_sign: |  | - | - |
 | Folder Name | source_folder_name | Alphanumeric | :heavy_minus_sign: |  | - | - |
 | Include Shipyard Footer? | INCLUDE_SHIPYARD_FOOTER | Boolean | :white_check_mark: | true | - | - |

@@ -40,9 +40,9 @@ In all instances, if the table name does not already exist, a new table will be 
 | Database | DATABASE | Alphanumeric | :white_check_mark: | - | - | Name of the database in MySQL to connect to. |
 | Extra URL Parameters | URL_PARAMETERS | Alphanumeric | :heavy_minus_sign: | - | - | Extra parameters that will be placed at the end of the connection string, after the &#34;?&#34;. Must be separated by &#34;&amp;&#34;. |
 | Folder Name | source_folder_name | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the file to upload can be found. If left blank, will search in the current working directory. |
-| File Name Match Type | source_file_name_match_type | Select | :white_check_mark: | exact_match | `Exact Match`, `Regex Match` | Determines if the text in &#34;File Name&#34; will match exactly to a single file, or use regex to match to multiple files. |
+| File Name Match Type | source_file_name_match_type | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br><br><br>Regex Match: `regex_match` | Determines if the text in &#34;File Name&#34; will match exactly to a single file, or use regex to match to multiple files. |
 | File Name | source_file_name | Alphanumeric | :white_check_mark: | - | - | The file name that contains the data you want uploaded. |
 | Table Name | table_name | Alphanumeric | :white_check_mark: | - | - | Name of the table where you want data inserted. If the table doesn&#39;t already exist, it will be created. |
-| Insertion Method | insert_method | Select | :white_check_mark: | append | `Append Data`, `Replace Data`, `Add Data Only if Table is Empty` | Determines how the data in your file will be added into the target table. |
+| Insertion Method | insert_method | Select | :white_check_mark: | `append` | Append Data: `append`<br><br><br>Replace Data: `replace`<br><br><br>Add Data Only if Table is Empty: `fail` | Determines how the data in your file will be added into the target table. |
 
 
