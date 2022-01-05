@@ -16,17 +16,17 @@ keywords:
 
 Upload a CSV file to any table in Amazon Redshift. With the file data, you can create a new table, overwrite the existing table, or append to the end of the table.
 
-For more information on how to use this Blueprint, [read the documentation](https://www.shipyardapp.com/docs/blueprint-library/amazon-redshift). You can also dig into the open-source code [on Github](https://github.com/shipyardapp/amazonredshift-blueprints).
+
 
 ## Variables
 
 | Name | Reference | Type | Required | Default | Options | Description |
 |:---|:---|:---|:---|:---|:---|:---|
 | Host | REDSHIFT_HOST | Alphanumeric | :white_check_mark: | - | - | The domain or the IP address of the database you want to connect to. |
-| Port | REDSHIFT_PORT | Integer | :white_check_mark: | 5439 | - | - |
-| Username | REDSHIFT_USERNAME | Alphanumeric | :white_check_mark: | - | - | - |
+| Port | REDSHIFT_PORT | Integer | :white_check_mark: | 5439 | - | Port number where the database accepts inbound connections |
+| Username | REDSHIFT_USERNAME | Alphanumeric | :white_check_mark: | - | - | Username configured as part of the database credentials. See Authorization documentation for more information. |
 | Password | REDSHIFT_PASSWORD | Password | :heavy_minus_sign: | - | - | Password for the provided username |
-| Database | REDSHIFT_DATABASE | Alphanumeric | :white_check_mark: | - | - | - |
+| Database | REDSHIFT_DATABASE | Alphanumeric | :white_check_mark: | - | - | Name of the database to connect to. |
 | Extra URL Parameters | REDSHIFT_URL_PARAMETERS | Alphanumeric | :heavy_minus_sign: | - | - | Extra parameters that will be placed at the end of the connection string, after the &#34;?&#34;. Must be separated by &#34;&amp;&#34; |
 | Folder Name | REDSHIFT_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the file to upload can be found. Leaving blank will search in the current working directory. |
 | File Name Match Type | REDSHIFT_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in &#34;File Name&#34; will match to one or multiple files. |

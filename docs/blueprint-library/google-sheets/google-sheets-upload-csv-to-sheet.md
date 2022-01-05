@@ -28,12 +28,12 @@ This Blueprint is still subject to [Google&#39;s limitations](https://support.go
 
 | Name | Reference | Type | Required | Default | Options | Description |
 |:---|:---|:---|:---|:---|:---|:---|
-| Google Sheet Name or ID | destination_file_name | Alphanumeric | :white_check_mark: | - | - | Name or ID of the sheet to put data into. |
-| Tab Name | tab_name | Alphanumeric | :heavy_minus_sign: | - | - | Name of the tab in the sheet to upload data tp. This field is case sensitive. If left blank, data will be put into the first tab. |
-| Shared Drive Name | drive | Alphanumeric | :heavy_minus_sign: | - | - | Name of the Shared Drive the sheet exists in. This field is case sensitive. Leave blank if the file does not exist in a Shared Drive. |
-| Local File Name | source_file_name | Alphanumeric | :white_check_mark: | - | - | Name of the target CSV file on Shipyard to be uploaded to the sheet.  |
-| Local Folder Name | source_folder_name | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Shipyard to upload the target file from. If left blank, will look in the home directory. |
-| Starting Cell | starting_cell | Alphanumeric | :heavy_minus_sign: | - | - | Cell to start at when uploading data. If left blank, will start at cell A1. |
+| Google Spreadsheet Name or ID | SHEETS_SPREADSHEET_ID | Alphanumeric | :white_check_mark: | - | - | Name or ID of the sheet to put data into. |
+| Tab Name | SHEETS_TAB_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the tab in the sheet to upload data tp. This field is case sensitive. If left blank, data will be put into the first tab. |
+| Shared Drive Name | SHEETS_SHARED_DRIVE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the Shared Drive the sheet exists in. This field is case sensitive. Leave blank if the file does not exist in a Shared Drive. |
+| Local File Name | SHEETS_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target CSV file on Shipyard to be uploaded to the sheet.  |
+| Local Folder Name | SHEETS_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Shipyard to upload the target file from. If left blank, will look in the home directory. |
+| Starting Cell | SHEETS_STARTING_CELL | Alphanumeric | :heavy_minus_sign: | - | - | Cell to start at when uploading data. If left blank, will start at cell A1. |
 | Service Account | GOOGLE_APPLICATION_CREDENTIALS | Password | :white_check_mark: | - | - | JSON from a Google Cloud Service account key. |
 
 

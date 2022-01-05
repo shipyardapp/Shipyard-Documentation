@@ -31,8 +31,8 @@ Before using this Blueprint on a connector, we strongly recommend first setting 
 
 | Name | Reference | Type | Required | Default | Options | Description |
 |:---|:---|:---|:---|:---|:---|:---|
-| API Key | API_KEY | Password | :white_check_mark: | - | - | Your account&#39;s unique API Key for Fivetran. |
-| API Secret | API_SECRET | Password | :white_check_mark: | - | - | Your account&#39;s unique API Secret for Fivetran. |
-| Connector ID | CONNECTOR_ID | Alphanumeric | :white_check_mark: | - | - | The unique ID associated with a connector. Typically two words separated by an underscore. |
+| API Key | FIVETRAN_API_KEY | Password | :white_check_mark: | - | - | Your account&#39;s unique API Key for Fivetran. |
+| API Secret | FIVETRAN_API_SECRET | Password | :white_check_mark: | - | - | Your account&#39;s unique API Secret for Fivetran. |
+| Connector ID | FIVETRAN_CONNECTOR_ID | Alphanumeric | :white_check_mark: | - | - | The unique ID associated with a connector. Typically two words separated by an underscore. |
 
 

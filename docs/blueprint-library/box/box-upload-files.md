@@ -16,17 +16,17 @@ keywords:
 
 Quickly export one or more files from your company&#39;s Box account. Once the files have downloaded, transfer them to another service or run another Vessel against the data.
 
-For more information on how to use this Blueprint, [read the documentation](https://www.shipyardapp.com/docs/blueprint-library/box). You can also dig into the open-source code [on Github](https://github.com/shipyardapp/box-blueprints).
+
 
 ## Variables
 
 | Name | Reference | Type | Required | Default | Options | Description |
 |:---|:---|:---|:---|:---|:---|:---|
-| Local Folder Name | source_folder_name | Alphanumeric | :heavy_minus_sign: |  | - | - |
-| Local File Name Match Type | source_file_name_match_type | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | - |
-| Local File Name | source_file_name | Alphanumeric | :heavy_minus_sign: |  | - | If left blank, will retain the original file name |
-| Box Folder Name | destination_folder_name | Alphanumeric | :heavy_minus_sign: |  | - | - |
-| Box File Name | destination_file_name | Alphanumeric | :heavy_minus_sign: |  | - | If left blank, will use the original file name |
-| Service Account Credentials | BOX_APPLICATION_CREDENTIALS | Password | :white_check_mark: | - | - | JSON from a Box Service Account key |
+| Local Folder Name | BOX_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Shipyard to upload the target file from. If left blank, will look in the home directory. |
+| Local File Name Match Type | BOX_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in &#34;Local File Name&#34; will look for one file with exact match, or multiple files using regex. |
+| Local File Name | BOX_SOURCE_FILE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the target file on Shipyard. Can be regex if &#34;Match Type&#34; is set accordingly. |
+| Box Folder Name | BOX_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the file(s) should be uploaded. Leaving blank will place the file in the root directory of Box. |
+| Box File Name | BOX_DESTINATION_FILE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | What to name the file(s) being uploaded to Box. If left blank, defaults to the original file name(s). |
+| Service Account Credentials | BOX_APPLICATION_CREDENTIALS | Password | :white_check_mark: | - | - | JSON from a Box Service Account key. |
 
 

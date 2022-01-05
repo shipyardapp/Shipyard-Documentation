@@ -22,9 +22,9 @@ Larger datasets may run into file size limitations set by BigQuery. In these ins
 
 | Name | Reference | Type | Required | Default | Options | Description |
 |:---|:---|:---|:---|:---|:---|:---|
-| Query | query | Alphanumeric | :white_check_mark: | - | - | Standard SQL query to be executed against BigQuery. Does not support Legacy SQL. |
-| Local File Name | destination_file_name | Alphanumeric | :white_check_mark: | - | - | Name of file to be generated with the results. Should be `.csv` extension. |
-| Local Folder Name | destination_folder_name | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the file should be downloaded. Leaving blank will place the file in the home directory. |
+| Query | BIGQUERY_QUERY | Alphanumeric | :white_check_mark: | - | - | Standard SQL query to be executed against BigQuery. Does not support Legacy SQL. |
+| Local File Name | BIGQUERY_DESTINATION_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of file to be generated with the results. Should be `.csv` extension. |
+| Local Folder Name | BIGQUERY_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the file should be downloaded. Leaving blank will place the file in the home directory. |
 | Service Account | GOOGLE_APPLICATION_CREDENTIALS | Password | :white_check_mark: | - | - | JSON from a Google Cloud Service account key. |
 
 

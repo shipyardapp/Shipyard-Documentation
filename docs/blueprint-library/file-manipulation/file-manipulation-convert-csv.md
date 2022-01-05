@@ -26,11 +26,11 @@ This Blueprint uses built-in Pandas methods to read in a CSV file and output it 
 
 | Name | Reference | Type | Required | Default | Options | Description |
 |:---|:---|:---|:---|:---|:---|:---|
-| Destination File Format | destination_file_format | Select | :white_check_mark: | `tsv` | `TSV (Tab-Separated File): `tsv``, `PSV (Pipe-Separated File): `psv``, `XLSX (Excel File): `xlsx``, `Parquet: `parquet``, `Stata: `stata``, `hdf5` | Type of file that you want the CSV file(s) converted into. |
-| Local Folder Name | source_folder_name | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Shipyard where the target file lives. If left blank, will look in the home directory. |
-| Local File Name Match Type | source_file_name_match_type | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in &#34;Local File Name&#34; will look for one file with exact match, or multiple files using regex. |
-| Local File Name | source_file_name | Alphanumeric | :white_check_mark: | - | - | Name of the target file on Shipyard. Can be regex if &#34;Match Type&#34; is set accordingly. |
-| New Folder Name | destination_folder_name | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the newly converted file(s) should be created on Shipyard. Leaving blank will place the file in the home directory. If the folder does not already exist, it will be created. |
-| New File Name | destination_file_name | Alphanumeric | :heavy_minus_sign: | - | - | What to name the newly converted files on Shipyard. If left blank, defaults to the original file name(s). |
+| Destination File Format | MANIPULATION_DESTINATION_FILE_FORMAT | Select | :white_check_mark: | `tsv` | Tab-Separated File (.tsv): `tsv`<br></br><br></br>Pipe-Separated File (.psv): `psv`<br></br><br></br>Excel File (.xlsx): `xlsx`<br></br><br></br>Parquet (.parquet): `parquet`<br></br><br></br>Stata (.dta): `stata`<br></br><br></br>HDF5 (.h5): `hdf5` | Type of file that you want the CSV file(s) converted into. |
+| Local Folder Name | MANIPULATION_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Shipyard where the target file lives. If left blank, will look in the home directory. |
+| Local File Name Match Type | MANIPULATION_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in &#34;Local File Name&#34; will look for one file with exact match, or multiple files using regex. |
+| Local File Name | MANIPULATION_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file on Shipyard. Can be regex if &#34;Match Type&#34; is set accordingly. |
+| New Folder Name | MANIPULATION_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the newly converted file(s) should be created on Shipyard. Leaving blank will place the file in the home directory. If the folder does not already exist, it will be created. |
+| New File Name | MANIPULATION_DESTINATION_FILE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | What to name the newly converted files on Shipyard. If left blank, defaults to the original file name(s) with an updated extension based on the selected file format. |
 
 
