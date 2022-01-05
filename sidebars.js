@@ -264,6 +264,11 @@ module.exports = {
 					"blueprint-library/google-sheets/google-sheets-upload-csv-to-sheet",
 					"blueprint-library/google-sheets/google-sheets-clear-data-from-sheet",
 				],
+				HTTP: [
+					"blueprint-library/http/http-overview",
+					"blueprint-library/http/http-requests",
+					"blueprint-library/http/http-download-file-from-url",
+				],
 				"Microsoft SQL Server": [
 					"blueprint-library/microsoft-sql-server/microsoft-sql-server-overview",
 					"blueprint-library/microsoft-sql-server/microsoft-sql-server-authorization",
