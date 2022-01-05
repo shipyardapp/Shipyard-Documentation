@@ -14,7 +14,7 @@ module.exports = {
 
 			{
 				"Blueprint Library": [
-					"reference/blueprint-library/blueprint-library",
+					"reference/blueprint-library/blueprint-library-overview",
 					"reference/blueprint-library/match-type",
 				],
 				Admin: [
@@ -128,31 +128,6 @@ module.exports = {
 			"tutorials/dbt-core-blueprint",
 			"tutorials/first-fleet",
 			"tutorials/non-native-language-vessels",
-		],
-		"📦 Blueprint Library": [
-			"blueprint-library/airtable",
-			"blueprint-library/amazon-athena",
-			"blueprint-library/amazon-redshift",
-			"blueprint-library/amazon-s3",
-			"blueprint-library/azure-blob-storage",
-			"blueprint-library/box",
-			"blueprint-library/data-manipulation",
-			"blueprint-library/dbt-cloud",
-			"blueprint-library/dropbox",
-			"blueprint-library/email",
-			"blueprint-library/file-manipulation",
-			"blueprint-library/fivetran",
-			"blueprint-library/ftp",
-			"blueprint-library/google-bigquery",
-			"blueprint-library/google-cloud-storage",
-			"blueprint-library/google-drive",
-			"blueprint-library/google-sheets",
-			"blueprint-library/microsoft-sql-server",
-			"blueprint-library/mysql",
-			"blueprint-library/postgresql",
-			"blueprint-library/sftp",
-			"blueprint-library/slack",
-			"blueprint-library/snowflake",
 		],
 		"📦 Library Blueprints": [
 			{
