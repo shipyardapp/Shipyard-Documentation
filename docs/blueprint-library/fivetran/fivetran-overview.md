@@ -35,6 +35,7 @@ Shipyard currently has the following Blueprints readily available:
 - [Execute Sync](fivetran-execute-sync)
 - [Check Sync Status](fivetran-check-sync-status)
 - [Execute Sync and Check Status](fivetran-execute-sync-and-check-status)
+- [Update Connector](fivetran-update-connector)
 
 ## How to Use
 For information on how to set up these Blueprints successfully, please read through the [Fivetran Authorization guide](fivetran-authorization).

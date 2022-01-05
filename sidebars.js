@@ -229,6 +229,7 @@ module.exports = {
 					"blueprint-library/fivetran/fivetran-execute-sync",
 					"blueprint-library/fivetran/fivetran-check-sync-status",
 					"blueprint-library/fivetran/fivetran-execute-sync-and-check-status",
+					"blueprint-library/fivetran/fivetran-update-connector",
 				],
 				FTP: [
 					"blueprint-library/ftp/ftp-overview",
