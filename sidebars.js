@@ -267,12 +267,14 @@ module.exports = {
 				"Microsoft SQL Server": [
 					"blueprint-library/microsoft-sql-server/microsoft-sql-server-overview",
 					"blueprint-library/microsoft-sql-server/microsoft-sql-server-authorization",
+					"blueprint-library/microsoft-sql-server/microsoft-sql-server-execute-query",
 					"blueprint-library/microsoft-sql-server/microsoft-sql-server-store-query-results-as-csv",
 					"blueprint-library/microsoft-sql-server/microsoft-sql-server-upload-csv-to-table",
 				],
 				MySQL: [
 					"blueprint-library/mysql/mysql-overview",
 					"blueprint-library/mysql/mysql-authorization",
+					"blueprint-library/mysql/mysql-execute-query",
 					"blueprint-library/mysql/mysql-store-query-results-as-csv",
 					"blueprint-library/mysql/mysql-upload-csv-to-table",
 				],

@@ -17,6 +17,7 @@ Shipyard's low-code MySQL blueprints allow users to connect their data in MySQL 
 
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available:
+- [Execute Query](mysql-execute-query)
 - [Store Query Results as CSV](mysql-store-query-results-as-csv)
 - [Upload CSV to Table](mysql-upload-csv-to-table)
 
