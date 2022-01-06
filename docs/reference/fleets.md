@@ -75,7 +75,9 @@ When you click on the canvas, or on the sidebar with the `+` icon, the left pane
 
 This section is split into 3 parts:
 - [Code](code/code-overview.md)
-- [Library Blueprints](blueprint-library/blueprint-library-overview)
+
+- [Library Blueprints](blueprint-library/blueprint-library-overview.md)
+
 - [Organization Blueprints](blueprints.md)
 
 Clicking the Blueprint/Language you want to use will result in a new Vessel being added to the canvas. Hovering over a Blueprint/Language will give you more information about how it can be used.

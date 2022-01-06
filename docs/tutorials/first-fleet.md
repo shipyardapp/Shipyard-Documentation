@@ -173,7 +173,7 @@ Now that you've got the basics down, experiment on your own with a few changes t
 
 1. Create an intermediary Vessel that renames the file after **Stock Prices** and before **Print Stocks**. How will you need to adjust things to ensure that **Print Stocks** run successfully? How about if you create the file in a directory? 
 2. Change the **Stock Prices** Vessel to generate a few different files for different stock tickers. How will you need to adjust **Print Stocks** to access all of these files? How can you combine the files into one? 
-3. Create a Vessel using a Blueprint from the [Blueprint Library](../reference/blueprint-library/blueprint-library-overview) that uploads the file to your storage solution of choice \(S3, Google Cloud Storage, Dropbox, etc.\). Can you successfully get the file delivered to your own storage solution? 
+3. Create a Vessel using a Blueprint from the [Blueprint Library](../reference/blueprint-library/blueprint-library-overview.md) that uploads the file to your storage solution of choice \(S3, Google Cloud Storage, Dropbox, etc.\). Can you successfully get the file delivered to your own storage solution? 
 4. Create an intermediary Bash Vessel to list all of the files available to the fleet \(using `ls -a -R`\). What files are available to the Fleet at the beginning of the Fleet? What files are available to the Fleet at the end of the Fleet?
 
 

@@ -161,13 +161,523 @@ module.exports = {
 						from: ["/reference/glossary-of-terms"],
 					},
 					{
+						to: "/reference/blueprint-library/blueprint-library-overview",
+						from: [
+							"/reference/blueprint-library",
+							"/reference/blueprint-library/blueprint-library",
+						],
+					},
+					{
 						to: "/tutorials/dbt-core-blueprint",
 						from: [
 							"/blueprint-library/dbt",
 							"/tutorials/dbt-blueprint",
-						], // string | string[]
+						],
+					},
+					{
+						to: "/blueprint-library/airtable/airtable-overview",
+						from: ["/blueprint-library/airtable"],
+					},
+					{
+						to: "/blueprint-library/amazon-athena/amazon-athena-overview",
+						from: ["/blueprint-library/amazon-athena"],
+					},
+					{
+						to: "/blueprint-library/amazon-redshift/amazon-redshift-overview",
+						from: ["/blueprint-library/amazon-redshift"],
+					},
+					{
+						to: "/blueprint-library/amazon-s3/amazon-s3-overview",
+						from: ["/blueprint-library/amazon-s3"],
+					},
+					{
+						to: "/blueprint-library/azure-blob-storage/azure-blob-storage-overview",
+						from: ["/blueprint-library/azure-blob-storage"],
+					},
+					{
+						to: "/blueprint-library/box/box-overview",
+						from: ["/blueprint-library/box"],
+					},
+					{
+						to: "/blueprint-library/data-manipulation/data-manipulation-overview",
+						from: ["/blueprint-library/data-manipulation"],
+					},
+					{
+						to: "/blueprint-library/dbt-cloud/dbt-cloud-overview",
+						from: ["/blueprint-library/dbt-cloud"],
+					},
+					{
+						to: "/blueprint-library/dropbox/dropbox-overview",
+						from: ["/blueprint-library/dropbox"],
+					},
+					{
+						to: "/blueprint-library/email/email-overview",
+						from: ["/blueprint-library/email"],
+					},
+					{
+						to: "/blueprint-library/file-manipulation/file-manipulation-overview",
+						from: ["/blueprint-library/file-manipulation"],
+					},
+					{
+						to: "/blueprint-library/fivetran/fivetran-overview",
+						from: ["/blueprint-library/fivetran"],
+					},
+					{
+						to: "/blueprint-library/ftp/ftp-overview",
+						from: ["/blueprint-library/ftp"],
+					},
+					{
+						to: "/blueprint-library/google-bigquery/google-bigquery-overview",
+						from: ["/blueprint-library/google-bigquery"],
+					},
+					{
+						to: "/blueprint-library/google-cloud-storage/google-cloud-storage-overview",
+						from: ["/blueprint-library/google-cloud-storage"],
+					},
+					{
+						to: "/blueprint-library/google-drive/google-drive-overview",
+						from: ["/blueprint-library/google-drive"],
+					},
+					{
+						to: "/blueprint-library/google-sheets/google-sheets-overview",
+						from: ["/blueprint-library/google-sheets"],
+					},
+					{
+						to: "/blueprint-library/http/http-overview",
+						from: ["/blueprint-library/http"],
+					},
+					{
+						to: "/blueprint-library/microsoft-sql-server/microsoft-sql-server-overview",
+						from: ["/blueprint-library/microsoft-sql-server"],
+					},
+					{
+						to: "/blueprint-library/mysql/mysql-overview",
+						from: ["/blueprint-library/mysql"],
+					},
+					{
+						to: "/blueprint-library/postgresql/postgresql-overview",
+						from: ["/blueprint-library/postgresql"],
+					},
+					{
+						to: "/blueprint-library/sftp/sftp-overview",
+						from: ["/blueprint-library/sftp"],
+					},
+					{
+						to: "/blueprint-library/slack/slack-overview",
+						from: ["/blueprint-library/slack"],
+					},
+					{
+						to: "/blueprint-library/snowflake/snowflake-overview",
+						from: ["/blueprint-library/snowflake"],
 					},
 				],
+				createRedirects: function (existingPath) {
+					if (
+						existingPath.includes(
+							"airtable#download-table-or-view-to-csv"
+						)
+					) {
+						return [
+							"/blueprint-library/airtable/airtable-download-table-or-view-to-csv",
+						];
+					}
+					if (existingPath.includes("amazon-athena#execute-query")) {
+						return [
+							"/blueprint-library/amazon-athena/amazon-athena-execute-query",
+						];
+					}
+					if (
+						existingPath.includes(
+							"amazon-athena#store-query-results-as-csv"
+						)
+					) {
+						return [
+							"/blueprint-library/amazon-athena/amazon-athena-store-query-results-as-csv",
+						];
+					}
+					if (
+						existingPath.includes("amazon-redshift#execute-query")
+					) {
+						return [
+							"/blueprint-library/amazon-redshift/amazon-redshift-execute-query",
+						];
+					}
+					if (
+						existingPath.includes(
+							"amazon-redshift#store-query-results-as-csv"
+						)
+					) {
+						return [
+							"/blueprint-library/amazon-redshift/amazon-redshift-store-query-results-as-csv",
+						];
+					}
+					if (
+						existingPath.includes(
+							"amazon-redshift#upload-csv-to-table"
+						)
+					) {
+						return [
+							"/blueprint-library/amazon-redshift/amazon-redshift-upload-csv-to-table",
+						];
+					}
+					if (existingPath.includes("amazon-s3#download-files")) {
+						return [
+							"/blueprint-library/amazon-s3/amazon-s3-download-files",
+						];
+					}
+					if (existingPath.includes("amazon-s3#upload-files")) {
+						return [
+							"/blueprint-library/amazon-s3/amazon-s3-upload-files",
+						];
+					}
+					if (
+						existingPath.includes(
+							"azure-blob-storage#download-files"
+						)
+					) {
+						return [
+							"/blueprint-library/azure-blob-storage/azure-blob-storage-download-files",
+						];
+					}
+					if (
+						existingPath.includes("azure-blob-storage#upload-files")
+					) {
+						return [
+							"/blueprint-library/azure-blob-storage/azure-blob-storage-upload-files",
+						];
+					}
+					if (existingPath.includes("box#download-files")) {
+						return ["/blueprint-library/box/box-download-files"];
+					}
+					if (existingPath.includes("box#upload-files")) {
+						return ["/blueprint-library/box/box-upload-files"];
+					}
+					if (
+						existingPath.includes(
+							"data-manipulation#compare-datasets"
+						)
+					) {
+						return [
+							"/blueprint-library/data-manipulation/data-manipulation-compare-datasets",
+						];
+					}
+					if (existingPath.includes("dbt-cloud#check-run-status")) {
+						return [
+							"/blueprint-library/dbt-cloud/dbt-cloud-check-run-status",
+						];
+					}
+					if (
+						existingPath.includes(
+							"dbt-cloud#download-logs-and-artifacts"
+						)
+					) {
+						return [
+							"/blueprint-library/dbt-cloud/dbt-cloud-download-logs-and-artifacts",
+						];
+					}
+					if (existingPath.includes("dbt-cloud#execute-job")) {
+						return [
+							"/blueprint-library/dbt-cloud/dbt-cloud-execute-job",
+						];
+					}
+					if (
+						existingPath.includes(
+							"dbt-cloud#execute-job-and-download-results"
+						)
+					) {
+						return [
+							"/blueprint-library/dbt-cloud/dbt-cloud-execute-job-and-download-results",
+						];
+					}
+					if (existingPath.includes("dropbox#download-files")) {
+						return [
+							"/blueprint-library/dropbox/dropbox-download-files",
+						];
+					}
+					if (existingPath.includes("dropbox#upload-files")) {
+						return [
+							"/blueprint-library/dropbox/dropbox-upload-files",
+						];
+					}
+					if (existingPath.includes("email#send-message")) {
+						return ["/blueprint-library/email/email-send-message"];
+					}
+					if (
+						existingPath.includes(
+							"email#send-message-conditionally"
+						)
+					) {
+						return [
+							"/blueprint-library/email/email-send-message-conditionally",
+						];
+					}
+					if (existingPath.includes("email#send-message-with-file")) {
+						return [
+							"/blueprint-library/email/email-send-message-with-file",
+						];
+					}
+					if (
+						existingPath.includes(
+							"file-manipulation#compress-files"
+						)
+					) {
+						return [
+							"/blueprint-library/file-manipulation/file-manipulation-compress-files",
+						];
+					}
+					if (
+						existingPath.includes("file-manipulation#convert-csv")
+					) {
+						return [
+							"/blueprint-library/file-manipulation/file-manipulation-convert-csv",
+						];
+					}
+					if (
+						existingPath.includes(
+							"file-manipulation#decompress-files"
+						)
+					) {
+						return [
+							"/blueprint-library/file-manipulation/file-manipulation-decompress-files",
+						];
+					}
+					if (existingPath.includes("fivetran#check-sync-status")) {
+						return [
+							"/blueprint-library/fivetran/fivetran-check-sync-status",
+						];
+					}
+					if (existingPath.includes("fivetran#execute-sync")) {
+						return [
+							"/blueprint-library/fivetran/fivetran-execute-sync",
+						];
+					}
+					if (
+						existingPath.includes(
+							"fivetran#execute-sync-and-check-status"
+						)
+					) {
+						return [
+							"/blueprint-library/fivetran/fivetran-execute-sync-and-check-status",
+						];
+					}
+					if (existingPath.includes("fivetran#update-connector")) {
+						return [
+							"/blueprint-library/fivetran/fivetran-update-connector",
+						];
+					}
+					if (existingPath.includes("ftp#download-files")) {
+						return ["/blueprint-library/ftp/ftp-download-files"];
+					}
+					if (existingPath.includes("ftp#upload-files")) {
+						return ["/blueprint-library/ftp/ftp-upload-files"];
+					}
+					if (
+						existingPath.includes("google-bigquery#execute-query")
+					) {
+						return [
+							"/blueprint-library/google-bigquery/google-bigquery-execute-query",
+						];
+					}
+					if (
+						existingPath.includes(
+							"google-bigquery#store-query-results-as-csv"
+						)
+					) {
+						return [
+							"/blueprint-library/google-bigquery/google-bigquery-store-query-results-as-csv",
+						];
+					}
+					if (
+						existingPath.includes(
+							"google-bigquery#store-query-results-in-google-cloud-storage"
+						)
+					) {
+						return [
+							"/blueprint-library/google-bigquery/google-bigquery-store-query-results-in-google-cloud-storage",
+						];
+					}
+					if (
+						existingPath.includes(
+							"google-bigquery#upload-csv-to-table"
+						)
+					) {
+						return [
+							"/blueprint-library/google-bigquery/google-bigquery-upload-csv-to-table",
+						];
+					}
+					if (
+						existingPath.includes(
+							"google-cloud-storage#download-files"
+						)
+					) {
+						return [
+							"/blueprint-library/google-cloud-storage/google-cloud-storage-download-files",
+						];
+					}
+					if (
+						existingPath.includes(
+							"google-cloud-storage#upload-files"
+						)
+					) {
+						return [
+							"/blueprint-library/google-cloud-storage/google-cloud-storage-upload-files",
+						];
+					}
+					if (existingPath.includes("google-drive#download-files")) {
+						return [
+							"/blueprint-library/google-drive/google-drive-download-files",
+						];
+					}
+					if (existingPath.includes("google-drive#upload-files")) {
+						return [
+							"/blueprint-library/google-drive/google-drive-upload-files",
+						];
+					}
+					if (
+						existingPath.includes(
+							"google-sheets#clear-data-from-sheet"
+						)
+					) {
+						return [
+							"/blueprint-library/google-sheets/google-sheets-clear-data-from-sheet",
+						];
+					}
+					if (
+						existingPath.includes(
+							"google-sheets#download-sheet-to-csv"
+						)
+					) {
+						return [
+							"/blueprint-library/google-sheets/google-sheets-download-sheet-to-csv",
+						];
+					}
+					if (
+						existingPath.includes(
+							"google-sheets#upload-csv-to-sheet"
+						)
+					) {
+						return [
+							"/blueprint-library/google-sheets/google-sheets-upload-csv-to-sheet",
+						];
+					}
+					if (existingPath.includes("http#download-file-from-url")) {
+						return [
+							"/blueprint-library/http/http-download-file-from-url",
+						];
+					}
+					if (existingPath.includes("http#requests")) {
+						return ["/blueprint-library/http/http-requests"];
+					}
+					if (
+						existingPath.includes(
+							"microsoft-sql-server#execute-query"
+						)
+					) {
+						return [
+							"/blueprint-library/microsoft-sql-server/microsoft-sql-server-execute-query",
+						];
+					}
+					if (
+						existingPath.includes(
+							"microsoft-sql-server#store-query-results-as-csv"
+						)
+					) {
+						return [
+							"/blueprint-library/microsoft-sql-server/microsoft-sql-server-store-query-results-as-csv",
+						];
+					}
+					if (
+						existingPath.includes(
+							"microsoft-sql-server#upload-csv-to-table"
+						)
+					) {
+						return [
+							"/blueprint-library/microsoft-sql-server/microsoft-sql-server-upload-csv-to-table",
+						];
+					}
+					if (existingPath.includes("mysql#execute-query")) {
+						return ["/blueprint-library/mysql/mysql-execute-query"];
+					}
+					if (
+						existingPath.includes(
+							"mysql#store-query-results-as-csv"
+						)
+					) {
+						return [
+							"/blueprint-library/mysql/mysql-store-query-results-as-csv",
+						];
+					}
+					if (existingPath.includes("mysql#upload-csv-to-table")) {
+						return [
+							"/blueprint-library/mysql/mysql-upload-csv-to-table",
+						];
+					}
+					if (existingPath.includes("postgresql#execute-query")) {
+						return [
+							"/blueprint-library/postgresql/postgresql-execute-query",
+						];
+					}
+					if (
+						existingPath.includes(
+							"postgresql#store-query-results-as-csv"
+						)
+					) {
+						return [
+							"/blueprint-library/postgresql/postgresql-store-query-results-as-csv",
+						];
+					}
+					if (
+						existingPath.includes("postgresql#upload-csv-to-table")
+					) {
+						return [
+							"/blueprint-library/postgresql/postgresql-upload-csv-to-table",
+						];
+					}
+					if (existingPath.includes("sftp#download-files")) {
+						return ["/blueprint-library/sftp/sftp-download-files"];
+					}
+					if (existingPath.includes("sftp#upload-files")) {
+						return ["/blueprint-library/sftp/sftp-upload-files"];
+					}
+					if (existingPath.includes("slack#send-message")) {
+						return ["/blueprint-library/slack/slack-send-message"];
+					}
+					if (
+						existingPath.includes(
+							"slack#send-message-conditionally"
+						)
+					) {
+						return [
+							"/blueprint-library/slack/slack-send-message-conditionally",
+						];
+					}
+					if (existingPath.includes("slack#send-message-with-file")) {
+						return [
+							"/blueprint-library/slack/slack-send-message-with-file",
+						];
+					}
+					if (existingPath.includes("snowflake#execute-query")) {
+						return [
+							"/blueprint-library/snowflake/snowflake-execute-query",
+						];
+					}
+					if (
+						existingPath.includes(
+							"snowflake#store-query-results-as-csv"
+						)
+					) {
+						return [
+							"/blueprint-library/snowflake/snowflake-store-query-results-as-csv",
+						];
+					}
+					if (
+						existingPath.includes("snowflake#upload-csv-to-table")
+					) {
+						return [
+							"/blueprint-library/snowflake/snowflake-upload-csv-to-table",
+						];
+					}
+				},
 			},
 		],
 	],
