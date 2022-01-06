@@ -30,15 +30,15 @@ If you would like to run an action against Fivetran that is not built out as a B
 These Blueprints will only work for Fivetran customers that have API access (Starter and Enterprise Plans).
 :::
 
+## How to Use
+For information on how to set up these Blueprints successfully, please read through the [Fivetran Authorization guide](fivetran-authorization.md).
+
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available:
-- [Execute Sync](fivetran-execute-sync)
-- [Check Sync Status](fivetran-check-sync-status)
-- [Execute Sync and Check Status](fivetran-execute-sync-and-check-status)
-- [Update Connector](fivetran-update-connector)
-
-## How to Use
-For information on how to set up these Blueprints successfully, please read through the [Fivetran Authorization guide](fivetran-authorization).
+- [Execute Sync](fivetran-execute-sync.md)
+- [Check Sync Status](fivetran-check-sync-status.md)
+- [Execute Sync and Check Status](fivetran-execute-sync-and-check-status.md)
+- [Update Connector](fivetran-update-connector.md)
 
 ## Open Source Code
 The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/fivetran-blueprints), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.

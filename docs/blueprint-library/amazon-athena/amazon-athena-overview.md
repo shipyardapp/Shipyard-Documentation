@@ -15,14 +15,14 @@ keywords:
 
 Shipyard's low-code Amazon Athena blueprints allow users to connect their data in Amazon Athena to the rest of their data stack.
 
+## How to Use
+For information on how to set up these Blueprints successfully, please read through the [Amazon Athena Authorization guide](amazon-athena-authorization.md).
+
 ## Available Blueprints
 
 Shipyard currently has the following Blueprints readily available:
-- [Execute Query](amazon-athena-execute-query)
-- [Store Query Results as CSV](amazon-athena-store-query-results-as-csv)
-
-## How to Use
-For information on how to set up these Blueprints successfully, please read through the [Amazon Athena Authorization guide](amazon-athena-authorization).
+- [Execute Query](amazon-athena-execute-query.md)
+- [Store Query Results as CSV](amazon-athena-store-query-results-as-csv.md)
 
 
 ## Open Source Code

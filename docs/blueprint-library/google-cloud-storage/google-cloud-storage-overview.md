@@ -15,13 +15,13 @@ keywords:
 
 Shipyard's low-code Google Cloud Storage blueprints allow users to connect their data in Google Cloud Storage to the rest of their modern data stack.
 
+## How to Use
+For information on how to set up these Blueprints successfully, please read through the [Google Cloud Storage Authorization guide](google-cloud-storage-authorization.md).
+
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available:
-- [Download Files](google-cloud-storage-download-files)
-- [Upload Files](google-cloud-storage-upload-files)
-
-## How to Use
-For information on how to set up these Blueprints successfully, please read through the [Google Cloud Storage Authorization guide](google-cloud-storage-authorization).
+- [Download Files](google-cloud-storage-download-files.md)
+- [Upload Files](google-cloud-storage-upload-files.md)
 
 ## Open Source Code
 The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/googlecloudstorage-blueprints), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.
