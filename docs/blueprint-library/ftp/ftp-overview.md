@@ -15,13 +15,13 @@ keywords:
 
 Shipyard's low-code FTP blueprints allow users to connect their data in FTP to the rest of their modern data stack.
 
+## How to Use
+For information on how to set up these Blueprints successfully, please read through the [FTP Authorization guide](ftp-authorization.md).
+
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available:
-- [Download Files](ftp-download-files)
-- [Upload Files](ftp-upload-files)
-
-## How to Use
-For information on how to set up these Blueprints successfully, please read through the [FTP Authorization guide](FTP-authorization).
+- [Download Files](ftp-download-files.md)
+- [Upload Files](ftp-upload-files.md)
 
 ## Open Source Code
 The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/ftp-blueprints), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.
