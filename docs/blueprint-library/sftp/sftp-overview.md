@@ -18,7 +18,7 @@ Shipyard's low-code SFTP blueprints allow users to connect their data in SFTP to
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available:
 - [Download Files](sftp-download-files)
-- [Upload Files](sftp-download-files)
+- [Upload Files](sftp-upload-files)
 
 ## How to Use
 For information on how to set up these Blueprints successfully, please read through the [SFTP Authorization guide](sftp-authorization).

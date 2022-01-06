@@ -19,7 +19,7 @@ Shipyard's low-code Amazon S3 blueprints allow users to connect their data in Am
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available:
 - [Download Files](amazon-s3-download-files)
-- [Upload Files](amazon-s3-download-files)
+- [Upload Files](amazon-s3-upload-files)
 
 ## How to Use
 For information on how to set up these Blueprints successfully, please read through the [Amazon S3 Authorization guide](amazon-s3-authorization).

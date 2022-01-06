@@ -19,7 +19,7 @@ Shipyard's low-code Google Drive blueprints allow users to connect their data in
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available:
 - [Download Files](google-drive-download-files)
-- [Upload Files](google-drive-download-files)
+- [Upload Files](google-drive-upload-files)
   
 ## How to Use  
 For information on how to set up these Blueprints successfully, please read through the [Google Drive Authorization guide](google-drive-authorization).
