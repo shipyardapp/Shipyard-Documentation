@@ -24,6 +24,8 @@ Shipyard currently has the following Blueprints readily available:
 ## How to Use
 For information on how to set up these Blueprints successfully, please read through the [Email Authorization guide](email-authorization).
 
+Running into issues? Read our [Email Troubleshooting guide](email-troubleshooting).
+
 ## Open Source Code
 The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/email-blueprints), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.
 

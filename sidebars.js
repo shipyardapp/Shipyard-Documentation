@@ -191,6 +191,7 @@ module.exports = {
 					"blueprint-library/email/email-send-message",
 					"blueprint-library/email/email-send-message-conditionally",
 					"blueprint-library/email/email-send-message-with-file",
+					"blueprint-library/email/email-troubleshooting",
 				],
 				"File Manipulation": [
 					"blueprint-library/file-manipulation/file-manipulation-overview",
@@ -277,6 +278,7 @@ module.exports = {
 					"blueprint-library/slack/slack-send-message",
 					"blueprint-library/slack/slack-send-message-conditionally",
 					"blueprint-library/slack/slack-send-message-with-file",
+					"blueprint-library/slack/slack-troubleshooting",
 				],
 				Snowflake: [
 					"blueprint-library/snowflake/snowflake-overview",
@@ -284,6 +286,7 @@ module.exports = {
 					"blueprint-library/snowflake/snowflake-execute-query",
 					"blueprint-library/snowflake/snowflake-store-query-results-as-csv",
 					"blueprint-library/snowflake/snowflake-upload-csv-to-table",
+					"blueprint-library/snowflake/snowflake-troubleshooting",
 				],
 			},
 		],
