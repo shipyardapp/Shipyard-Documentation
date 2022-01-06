@@ -32,6 +32,23 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - Slack (Embed Data into Message)
 - Email (Embed Data into Message)
 
+## 12/22/2021
+
+### Bug Fixes
+- Prevented Usage Dashboard graphs from occasionally showing no data.
+- Updated Snowflake Blueprints to suppress SQLAlchemy error messages.
+
+## 12/20/2021
+
+### Bug Fixes
+- Prevented an error that occurred when changing a Fleet name immediately after saving.
+- Removed project ID field from the project creation screen.
+
+## 12/14/2021
+
+### New Features
+- We now accept international payments from Canada, Australia, United Kingdom, and any country in the EU! The billing portal has been updated to reflect these changes.
+
 ## 11/29/2021
 
 ### New Features

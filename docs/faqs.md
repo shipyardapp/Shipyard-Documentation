@@ -36,6 +36,7 @@ Bash allows us to support any language non-natively, where the right language pa
 
 SQL can be used natively with some Blueprints found in the [Blueprint Library](reference/blueprint-library/blueprint-library-overview.md).
 
+
 In the future, we plan to expand our native language support to R. If you have a language that you would like to see supported, let us know!
 
 ## Is Shipyard a low-code tool?
@@ -51,6 +52,7 @@ Additionally, we offer a wide variety of Blueprints in our [Blueprint Library](r
 ## What skills do I need to get started with Shipyard?
 
 If you have standard needs to run QA on your data, deliver reports, and send data to external partners, you will be able to get by using only the Blueprints found in our [Blueprint Library](reference/blueprint-library/blueprint-library-overview.md).
+
 
 If you have proprietary business logic needs, you will likely need at least one technical team member that can initially build solutions for the organization. However, other users of Shipyard are **not** required to know code. We built the platform to allow business users the ability to easily access and take advantage of internally built solutions as [Blueprints](reference/blueprints).
 
