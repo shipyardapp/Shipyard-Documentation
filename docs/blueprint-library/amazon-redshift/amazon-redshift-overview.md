@@ -18,7 +18,7 @@ Shipyard's low-code Amazon Redshift blueprints allow users to connect their data
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available:
 - [Execute Query](amazon-redshift-execute-query)
-- [Store Query Results as CSV](amazon-redshift-query-results-as-csv)
+- [Store Query Results as CSV](amazon-redshift-store-query-results-as-csv)
 - [Execute Query](amazon-redshift-upload-csv-to-table)
 
 ## How to Use
