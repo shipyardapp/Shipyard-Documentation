@@ -161,6 +161,13 @@ module.exports = {
 					"blueprint-library/azure-blob-storage/azure-blob-storage-download-files",
 					"blueprint-library/azure-blob-storage/azure-blob-storage-upload-files",
 				],
+				"Bit.io": [
+					"blueprint-library/bitio/bitio-overview",
+					"blueprint-library/bitio/bitio-authorization",
+					"blueprint-library/bitio/bitio-execute-query",
+					"blueprint-library/bitio/bitio-store-query-results-as-csv",
+					"blueprint-library/bitio/bitio-upload-csv-to-table",
+				],
 				Box: [
 					"blueprint-library/box/box-overview",
 					"blueprint-library/box/box-authorization",
