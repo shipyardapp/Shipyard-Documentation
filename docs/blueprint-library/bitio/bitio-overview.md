@@ -13,11 +13,11 @@ keywords:
 
 # bit.io Blueprints Overview
 
-Shipyard's low-code bit.io blueprints allow users to connect their data in bit.io to the rest of their modern data stack. T
+Shipyard's low-code bit.io blueprints allow users to connect their data in bit.io to the rest of their modern data stack.
 
-hese Blueprints are based on our [PostgreSQL Blueprints](../postgresql/postgresql-overview.md) with slight modifications to simplify the setup process required for bit.io.
+These Blueprints are based on our [PostgreSQL Blueprints](../postgresql/postgresql-overview.md) with slight modifications to simplify the setup process required for bit.io.
 
-These blueprints use modified approaches to connecting with bit.io found [here](https://docs.bit.io/docs/connecting-via-pandas). Modifications include chunking the files when downloading/uploading. While this can result in slightly slower speeds, it prevents users from running into potential memory issues for larger data sets.
+These blueprints use modified approaches to connecting with bit.io found [here](https://docs.bit.io/docs/connecting-via-pandas). Modifications include chunking the files when downloading/uploading.
 
 
 ## How to Use
