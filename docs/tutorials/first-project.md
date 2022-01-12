@@ -12,25 +12,24 @@ keywords:
 
 ## Overview
 
-For the sake of all of our tutorials, we suggest creating a new project specifically for testing. This will serve as an area for you to freely explore the functionality of Shipyard without the fear of affecting anything else in the platform.
+For the sake of all of our tutorials, we suggest either using the existing Playground project creating a new project specifically for testing. This will serve as an area for you to freely explore the functionality of Shipyard without the fear of affecting anything else in the platform.
 
 ## Creating your Testing Project
 
-1. Using the navigation on the left-side of the screen, click on **Projects**. This will cause the navigation menu to expand.
+1. Navigate to the [Shipyard application](https://app.shipyardapp.com/) and select your Organization name.
+2. Using the navigation on the left side of the screen, click on **Projects**. This will navigate to the All Projects page.
 
-2. Click on **View All Projects**. This will take you to the All Projects page.
+If this is your first time in the platform, you should only see a project called *Playground*. 
 
-   If this is your first time in the platform, you should only see a project called *Playground*. 
-
-   ![](../.gitbook/assets/shipyard_2021_03_16_16_03_50.png)
+![All Projects Page](../.gitbook/assets/shipyard_2022_01_11_17_04_20.png)
 
 3. Click the **New Project** button in the top-right corner of the screen.
 
-   ![](../.gitbook/assets/image_6_1.png)
+   ![New Project Button](../.gitbook/assets/image_6_1.png)
 
-4. Give your project a name of *Testing*.
+4. Give your project a name of **Testing**.
 5. In the timezone field, start typing `Central` .
-6. Select the *US/Central* time zone by clicking the name.
+6. Select the **US/Central** time zone by clicking the name.
 
 :::note
 Feel free to search for and select your own time zone instead.
