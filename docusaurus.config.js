@@ -1,5 +1,7 @@
 var BASE_URL = "/docs/";
 
+console.log('aaid', process.env.ALGOLIA_APP_ID);
+
 module.exports = {
 	title: "Shipyard Documentation",
 	tagline:
@@ -18,7 +20,8 @@ module.exports = {
 	],
 	themeConfig: {
 		algolia: {
-			apiKey: "2030b32cbbe6b44fceed15711cd0ed4c",
+			appId: process.env.ALGOLIA_APP_ID,
+			apiKey: process.env.ALGOLIA_API_KEY,
 			indexName: "shipyardapp",
 
 			// Optional: see doc section bellow
