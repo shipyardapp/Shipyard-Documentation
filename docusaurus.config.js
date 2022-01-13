@@ -1,7 +1,5 @@
 var BASE_URL = "/docs/";
 
-console.log('aaid', process.env.ALGOLIA_APP_ID);
-
 module.exports = {
 	title: "Shipyard Documentation",
 	tagline:
