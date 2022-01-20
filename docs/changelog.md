@@ -32,6 +32,15 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - Slack (Embed Data into Message)
 - Email (Embed Data into Message)
 
+## 1/20/2022
+
+### Enhancements
+- Allow Fleets to have a single Vessel instead of requiring two or more.
+- Added a Need Help section to the sidebar with different options for reaching
+out for support.
+- Switched the Fleets and Vessels tab on the main Project landing page. Additionally,
+moved the New Fleet option above New Vessel in the New dropdown.
+
 ## 1/18/2022
 
 ### Enhancements
