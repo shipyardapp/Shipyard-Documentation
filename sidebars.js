@@ -51,6 +51,7 @@ module.exports = {
 				"Requirements Tab": [
 					"reference/requirements/environment-variables",
 					"reference/requirements/external-package-dependencies",
+					"reference/requirements/system-package-dependencies",
 				],
 				"Settings Tab": [
 					"reference/settings/information",
