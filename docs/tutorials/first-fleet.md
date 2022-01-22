@@ -1,6 +1,6 @@
 ---
 id: first-fleet
-title: Building Your First Fleet - Sharing Files
+title: Building Your First Fleet that Shares Files
 hide_title: true
 sidebar_label: Building your First Fleet
 description: In-depth tutorial to walk you through the steps needed to set your first Fleet that shares files.
@@ -8,6 +8,7 @@ keywords:
   - fleet
   - file sharing
   - tutorial
+  - workflow
 ---
 
 # Building Your First Fleet that Shares Files
