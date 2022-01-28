@@ -121,13 +121,19 @@ module.exports = {
 			"how-tos/access-environment-variables",
 		],
 		"🚀 Tutorials": [
-			"tutorials/first-project",
+			{
+				"Getting Started": [
+					"tutorials/first-project",
+					"tutorials/first-fleet",
+				],
+				"Advanced Use Cases": ["tutorials/non-native-language-vessels"],
+				"Working with Data Packages": [
+					"tutorials/dbt-core-blueprint",
+					"tutorials/great-expectations-blueprint",
+				],
+			},
 			"tutorials/first-vessel-with-code",
 			"tutorials/advanced-code-vessel",
-			"tutorials/great-expectations-blueprint",
-			"tutorials/dbt-core-blueprint",
-			"tutorials/first-fleet",
-			"tutorials/non-native-language-vessels",
 		],
 		"📦 Library Blueprints": [
 			{
