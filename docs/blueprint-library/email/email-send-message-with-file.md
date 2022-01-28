@@ -25,9 +25,9 @@ Send a message to anyone in the world using email, attaching one or more files.
 | Send Method | EMAIL_SEND_METHOD | Select | :white_check_mark: | `tls` | SSL: `ssl`<br></br><br></br>TLS: `tls` | Determines how you want to send the email. We generally suggest using TLS when possible. |
 | SMTP Host | EMAIL_SMTP_HOST | Alphanumeric | :white_check_mark: | - | - | The server where your email will be sent from. Usually formatted as smtp.domain.com |
 | SMTP Port | EMAIL_SMTP_PORT | Alphanumeric | :white_check_mark: | - | - | The port from which your email will be sent. Commonly used ports are 25, 465, and 587. We generally suggest using 587 with TLS. |
-| Username | EMAIL_USERNAME | Alphanumeric | :white_check_mark: | - | - | The username that your email provider uses to identify your access to send email. |
-| Password | EMAIL_PASSWORD | Password | :white_check_mark: | - | - | The password associated with your username. |
-| Sender Address | EMAIL_SENDER_ADDRESS | Alphanumeric | :white_check_mark: | - | - | The email address you want recipients to see when you send an email. We generally suggest keeping the sender address as your own email to ensure that you can appropriately receive replies. |
+| Username | EMAIL_USERNAME | Alphanumeric | :white_check_mark: | shipyardapptest@gmail.com | - | The username that your email provider uses to identify your access to send email. |
+| Password | EMAIL_PASSWORD | Password | :white_check_mark: | hlgyecgskabctidf | - | The password associated with your username. |
+| Sender Address | EMAIL_SENDER_ADDRESS | Alphanumeric | :white_check_mark: | ${EMAIL_USERNAME} | - | The email address you want recipients to see when you send an email. We generally suggest keeping the sender address as your own email to ensure that you can appropriately receive replies. |
 | Sender Name | EMAIL_SENDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | The name you want users to see that the email is from. If left blank, the Sender Address will be used. |
 | TO | EMAIL_TO | Alphanumeric | :heavy_minus_sign: | - | - | The email(s) that you want to send a message to. Can be comma-separated to include multiple email addresses. |
 | CC | EMAIL_CC | Alphanumeric | :heavy_minus_sign: | - | - | The email(s) that you want your message to be carbon copied (CCed) to. Can be comma-separated to include multiple email addresses. |
