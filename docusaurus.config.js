@@ -17,8 +17,9 @@ module.exports = {
 		},
 	],
 	themeConfig: {
-		algolia: {
-			apiKey: "2030b32cbbe6b44fceed15711cd0ed4c",
+		algolia: process.env.NODE_ENV === 'production' ? {
+			appId: process.env.ALGOLIA_APP_ID,
+			apiKey: process.env.ALGOLIA_API_KEY,
 			indexName: "shipyardapp",
 
 			// Optional: see doc section bellow
@@ -28,7 +29,7 @@ module.exports = {
 			searchParameters: {},
 
 			//... other Algolia params
-		},
+		} : void 0,
 		googleAnalytics: {
 			trackingID: "UA-142749850-1",
 			anonymizeIP: true,
