@@ -196,6 +196,10 @@ module.exports = {
 						from: ["/blueprint-library/azure-blob-storage"],
 					},
 					{
+						to: "/blueprint-library/bitio/bitio-overview",
+						from: ["/blueprint-library/bitio"],
+					},
+					{
 						to: "/blueprint-library/box/box-overview",
 						from: ["/blueprint-library/box"],
 					},
