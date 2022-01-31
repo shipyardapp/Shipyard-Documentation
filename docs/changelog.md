@@ -26,11 +26,27 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - Fleet Templates
 
 ## Blueprints on Deck
+
 - Firebolt
 - Census
 - Hightouch
 - Slack (Embed Data into Message)
 - Email (Embed Data into Message)
+
+## 1/31/2022
+
+### Enhancements
+
+- Allow Debian Linux system packages to be installed on Node and Python Vessels.  
+- Display the Usage tab in the Admin sidebar.  
+- The Organization Blueprints dropdown is now expanded by default for easier discovery.  
+- A "create" button has been added to all pages that report no data exists (e.g. "No Vessels").  
+- An error is now thrown when users attempt to signup without accepting the Terms of Service.   
+
+### Bug Fixes
+
+- The Admin sidebar items now remain highlighted after selection.  
+- Blueprint code will not be deleted when making updates to the Requirements tab.  
 
 ## 1/20/2022
 
