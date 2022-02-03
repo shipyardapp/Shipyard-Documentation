@@ -37,11 +37,11 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 ### New Features
 
-- Added a mini map view of fleets with zoom in/out buttons for easier navigation.
+- Added a mini map view of Fleets with zoom in/out buttons for easier navigation.
 
 ### Bug Fixes
 
-- Prevented an error on save after removing and adding blueprint vessels to a fleet.
+- Prevented an error on save after removing and adding Blueprint Vessels to a Fleet.
 
 ## 1/31/2022
 
