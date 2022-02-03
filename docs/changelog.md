@@ -33,6 +33,16 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - Slack (Embed Data into Message)
 - Email (Embed Data into Message)
 
+## 2/2/2022
+
+### New Features
+
+- Added a mini map view of fleets with zoom in/out buttons for easier navigation.
+
+### Bug Fixes
+
+- Prevented an error on save after removing and adding blueprint vessels to a fleet.
+
 ## 1/31/2022
 
 ### Enhancements
