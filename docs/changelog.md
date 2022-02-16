@@ -33,6 +33,21 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - Slack (Embed Data into Message)
 - Email (Embed Data into Message)
 
+## 2/16/2022
+
+### New Features
+
+- Users can create a Project directly from the Fleet Builder now.
+- A "New Fleet" button has been added to the main sidebar of the application.
+
+### Enhancements
+
+- A success notification will alert users when a Project has been created.
+- On a users' first login they will be redirected to the Fleet Builder page.
+- Blueprint descriptions will be displayed when a Blueprint Vessel is added to a Fleet.
+- Navigation users with one Organization has been improved to guide to the Projects page.
+- The Shipyard Demo Organization has clearer links to it and has been made less obtrusive.
+
 ## 2/2/2022
 
 ### New Features
