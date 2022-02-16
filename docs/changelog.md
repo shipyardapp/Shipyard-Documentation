@@ -43,10 +43,10 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 ### Enhancements
 
 - A success notification will alert users when a Project has been created.
-- On a users' first login they will be redirected to the Fleet Builder page.
-- Blueprint descriptions will be displayed when a Blueprint Vessel is added to a Fleet.
-- Navigation users with one Organization has been improved to guide to the Projects page.
-- The Shipyard Demo Organization has clearer links to it and has been made less obtrusive.
+- Upon first logging in, users will be redirected to the new Fleet Builder page.
+- Blueprint descriptions will be displayed automatically when a Blueprint Vessel is added to a Fleet.
+- Users with one Organization will now be directed to the Projects page instead of the Organizations page..
+- The Shipyard Demo Organization has been renamed to Example Organization with clearer links to it and has been made less obtrusive.
 
 ## 2/2/2022
 
