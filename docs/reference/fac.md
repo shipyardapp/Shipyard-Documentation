@@ -23,11 +23,15 @@ Below is a breakdown of a typical FAC YAML file and some guidance for working wi
 
 Below are the top-level fields that make up a FAC YAML file. Sub-objects are defined beneath these as needed.
 
+---
+
 #### `name`
 
 `name` is the string name of the Fleet. It is a **required** field.
 
 If both a `name` and `_id` field are provided at the top-level of the file, Shipyard will attempt to update a Fleet with that `_id` value with the `name` field.
+
+---
 
 #### `_id`
 
@@ -35,23 +39,25 @@ If both a `name` and `_id` field are provided at the top-level of the file, Ship
 
 If the ID value does _not_ exist, Shipyard will attempt to create a new Fleet with the information provided.
 
+---
+
 #### `vessels`
 
-`vessels` represents the [Vessels](vessels.md) that constitute the Fleet. Keys represent the name of the Vessel and must be unique within the Fleet. Values are the Vessel definition represented as a YAML object which may be code-based, Blueprint-based, or Git-based.
+`vessels` represents the [Vessels](vessels.md) that constitute the Fleet. Keys represent the name of the Vessel and must be unique within the Fleet object. Values are the Vessel definition represented as a YAML object which may be code-based, Blueprint-based, or Git-based.
 
 Vessels may have `_id` and `_ref` top-level fields.
 
 ```yaml
 long_vessel_name:
   _id: example_uuid
-  _ref: short_vessel_name
+  _ref: lvn
 ```
 
 If `_id` is provided, Shipyard will attempt to find and update the Vessel with the provided values. The `_ref` field can be used in the `connections` section for easier reference and is essentially a "nickname" for the Vessel within FAC.
 
 Below are examples of the three types with accompanying notes on the various fields that go under the `source` field.
 
-**Code** (written)
+> **Code**
 
 ```yaml
 source:
@@ -65,25 +71,25 @@ source:
   file_to_run: script.py
 ```
 
-- `language` for all Vessel options may be one of `PYTHON`, `BASH`, or `NODE`
+- `language` may be one of `PYTHON`, `BASH`, or `NODE`
 - `name` is a string represented the file name containing the code
 - `content` is a string or multiline string contining the code
 - `file_to_run` is a string representing the file to for any Vessel type that requires it
 
-**Blueprint**
+> **Blueprint**
 
 ```yaml
 source:
   type: BLUEPRINT
   blueprint: "Send Email"
   inputs:
-    email: example@email.com
+    target_email: example@email.com
 ```
 
 - `blueprint` is the name of the Blueprint created separately from the Fleet - it must match the name exactly and may either be a [Shipyard Blueprint](blueprint-library/blueprint-library-overview.md) or an [Organization Blueprint](blueprints.md)
-- `inputs` are a key-value pair representing the [input](inputs/blueprint-variables.md) name and value - if the Blueprint is configured so that the input is a "password" type, when this FAC is fetched back to the user it will show `SHIPYARD_HIDDEN` to obfuscate the value
+- `inputs` are a key-value pair representing the [input variable](inputs/blueprint-variables.md) name and value - if the Blueprint is configured so that the input is a "password" type, when this FAC is fetched back to the user it will show `SHIPYARD_HIDDEN` to obfuscate the value
 
-**Git**
+> **Git**
 
 ```yaml
 source:
@@ -101,7 +107,7 @@ source:
 - `clone_location` indicates where to download the repo to and may either be `REPO_NAME` or `CWD`
 - see [Git connections](code/git-connection.md) for more information
 
-In addition to these source-specific fields, there the standard requirements configurations common to all Vessels are also available within the `source` field. _These are all optional_.
+In addition to these source-specific fields, there the standard requirements configurations common to all Vessels are also available within the `source` field. _These are all optional_. See examples below.
 
 **Arguments**
 
@@ -135,16 +141,14 @@ source:
 	  version: '1.0.0'
 ```
 
-- `version` is an optional value string value
+- `version` is an optional string value
 - see [Packages](requirements/external-package-dependencies.md) for more information
 
 **System Packages**
 
-These are the same as `packages` above and are available for `PYTHON` and `NODE` Vessel types only.
+These are the same as `packages` above and are available for `PYTHON` and `NODE` Vessel types only. See [System Packages](requirements/system-package-dependencies.md) for more information
 
-- see [System Packages](requirements/system-package-dependencies.md) for more information
-
-Additionally, there are optional [Guardrail](settings/guardrails.md) and [Notification](settings/notifications.md) settings available for Vessel objects.
+Additionally, there are optional [Guardrail](settings/guardrails.md) and [Notification](settings/notifications.md) settings available for Vessel objects. See below for examples.
 
 **Guardrails**
 
@@ -157,7 +161,7 @@ vessel_name:
     runtime_cutoff: 5m30s
     exclude_exit_code_ranges:
       - 2
-	  - 3-5
+	  - '3-5'
 ```
 
 - `retry_count` is an integer representing the number of times to retry a Vessel if it fails (max of 24)
@@ -180,6 +184,8 @@ vessel_name:
 - `after_error` is a boolean indicating whether to send a notification after a Vessel fails
 - `after_on_demand` is a boolean indicating whether to send a notification after a Vessel is run on demand
 
+---
+
 #### `connections`
 
 `connections` is a top-level field that defines the graph of how the Vessels defined in the `vessels` section are connected.
@@ -198,6 +204,8 @@ connections:
 This example indicates that if `vessel_one` succeeds, it will invoke `vessel_two` and if `vessel_two` succeeds, it will invoke `vessel_three`. If `vessel_two` fails, it will invoke `vessel_four`.
 
 See [Fleets](fleets.md) documentation for more information on connections.
+
+---
 
 #### `triggers`
 
@@ -224,6 +232,8 @@ In these examples there are four schedules set on the Fleet.
 2. running daily at 2:00 AM
 3. running weekly on Wednesday at 3:00 AM
 4. running monthly on the 1st at 4:00 AM
+
+---
 
 #### `notifications`
 
