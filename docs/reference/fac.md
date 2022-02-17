@@ -11,6 +11,9 @@ keywords:
   - dataflow
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # FAC
 
 ## Definition
@@ -57,7 +60,15 @@ If `_id` is provided, Shipyard will attempt to find and update the Vessel with t
 
 Below are examples of the three types with accompanying notes on the various fields that go under the `source` field.
 
-> **Code**
+<Tabs
+groupId="sourceCodeTypes"
+defaultValue="code"
+values={[
+{label: 'Code', value: 'code'},
+{label: 'Blueprint', value: 'blueprint'},
+{label: 'Git', value: 'git'},
+]}>
+<TabItem value="code">
 
 ```yaml
 source:
@@ -76,7 +87,8 @@ source:
 - `content` is a string or multiline string contining the code
 - `file_to_run` is a string representing the file to for any Vessel type that requires it
 
-> **Blueprint**
+</TabItem>
+<TabItem value="blueprint">
 
 ```yaml
 source:
@@ -89,7 +101,8 @@ source:
 - `blueprint` is the name of the Blueprint created separately from the Fleet - it must match the name exactly and may either be a [Shipyard Blueprint](blueprint-library/blueprint-library-overview.md) or an [Organization Blueprint](blueprints.md)
 - `inputs` are a key-value pair representing the [input variable](inputs/blueprint-variables.md) name and value - if the Blueprint is configured so that the input is a "password" type, when this FAC is fetched back to the user it will show `SHIPYARD_HIDDEN` to obfuscate the value
 
-> **Git**
+</TabItem>
+<TabItem value="git">
 
 ```yaml
 source:
@@ -105,11 +118,24 @@ source:
 - `repository` is a string representing the GitHub repository owner and name
 - `checkout_point` is a string representing the branch or tag to checkout
 - `clone_location` indicates where to download the repo to and may either be `REPO_NAME` or `CWD`
+- `file_to_run` is a string representing the file to for any Vessel type that requires it
 - see [Git connections](code/git-connection.md) for more information
 
-In addition to these source-specific fields, there the standard requirements configurations common to all Vessels are also available within the `source` field. _These are all optional_. See examples below.
+</TabItem>
+</Tabs>
 
-**Arguments**
+In addition to these code source-specific objects, there the standard requirements configurations common to all Vessels are also available within the `source` field. _These are all optional_. See examples below.
+
+<Tabs
+groupId="sourceRequirementTypes"
+defaultValue="arguments"
+values={[
+{label: 'Arguments', value: 'arguments'},
+{label: 'Environment Variables', value: 'environmentVariables'},
+{label: 'Packages', value: 'packages'},
+{label: 'System Packages', value: 'systemPackages'},
+]}>
+<TabItem value="arguments">
 
 ```yaml
 source:
@@ -119,7 +145,8 @@ source:
     value: example_value
 ```
 
-**Environment Variables**
+</TabItem>
+<TabItem value="environmentVariables">
 
 ```yaml
 source:
@@ -131,7 +158,8 @@ source:
 
 - see [Environment Variables](requirements/environment-variables.md) for more information
 
-**Packages**
+</TabItem>
+<TabItem value="packages">
 
 ```yaml
 source:
@@ -144,9 +172,13 @@ source:
 - `version` is an optional string value
 - see [Packages](requirements/external-package-dependencies.md) for more information
 
-**System Packages**
+</TabItem>
+<TabItem value="systemPackages">
 
 These are the same as `packages` above and are available for `PYTHON` and `NODE` Vessel types only. See [System Packages](requirements/system-package-dependencies.md) for more information
+
+</TabItem>
+</Tabs>
 
 Additionally, there are optional [Guardrail](settings/guardrails.md) and [Notification](settings/notifications.md) settings available for Vessel objects. See below for examples.
 
@@ -154,8 +186,8 @@ Additionally, there are optional [Guardrail](settings/guardrails.md) and [Notifi
 
 ```yaml
 vessel_name:
+  ...
   guardrails:
-    ...
     retry_count: 3
     retry_wait: 1m0s
     runtime_cutoff: 5m30s
@@ -173,6 +205,7 @@ vessel_name:
 
 ```yaml
 vessel_name:
+  ...
   notifications:
     emails:
       - example@email.com
