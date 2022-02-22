@@ -30,5 +30,7 @@ If you want multiple [Vessels](../../reference/vessels.md) to work together for 
 9. Click the cog icon along the left side of the Fleet Builder sidebar and update Fleet settings as desired.
 10. Click the **Save & Finish** button to save the new Fleet.
 
+For more information, read up on our [Visual Fleet Builder](../../reference/fleets.md#visual-editor) or our [YAML Editor](../../reference/fleets.md#yaml-editor).
+
 :::tip success
 You've now successfully created a Fleet.
