@@ -143,7 +143,7 @@ In order to access the YAML editor, ensure that your Fleet is saved.
 
 1. A Fleet cannot be set up with Vessels that live across multiple projects. You'll need to make sure that all of the relevant Vessels live within the same project.
 2. A Fleet cannot contain any paths that would create a loop.
-3. A Fleet must contain two or more Vessels that are all connected together by a path. If you want to have a set of Vessels that aren't connected to the larger group, you will need to create a different Fleet.
+3. If you want to have a set of Vessels that aren't connected to the larger group, you will need to create a different Fleet.
 4. You are currently unable to kick off a Fleet starting anywhere in the middle, although you can kick off individual Vessels at will. This prevention is in place because we delete data as soon as a Fleet has finished running, whether it was successful or not. If you ran a Vessel starting from the middle and it relied on data created upstream, it would be unable to find that data and immediately fail.
 
 ## Learn More
