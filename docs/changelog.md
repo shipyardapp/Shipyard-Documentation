@@ -33,6 +33,34 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - Slack (Embed Data into Message)
 - Email (Embed Data into Message)
 
+## 2/22/2022
+
+### Enhancements
+
+- Users can now stop Voyages even if they are currently in a "Retry" state.
+- Pagination has been removed from the Vessels table on a Fleet's Log page for better visibility.
+- The "Edit Vessel" on the Vessel Logs page is now more prominent and easier to find.
+- Handlebars have been added to Blueprint inputs for reordering in the UI.
+
+### Bug Fixes
+
+- Subscriptions will now correctly reflect the number of users active in the account when the organization upgrades to a paid account.
+
+## 2/16/2022
+
+### New Features
+
+- Users can create a Project directly from the Fleet Builder now.
+- A "New Fleet" button has been added to the main sidebar of the application.
+
+### Enhancements
+
+- A success notification will alert users when a Project has been created.
+- Upon first logging in, users will be redirected to the new Fleet Builder page.
+- Blueprint descriptions will be displayed automatically when a Blueprint Vessel is added to a Fleet.
+- Users with one Organization will now be directed to the Projects page instead of the Organizations page..
+- The Shipyard Demo Organization has been renamed to Example Organization with clearer links to it and has been made less obtrusive.
+
 ## 2/2/2022
 
 ### New Features
