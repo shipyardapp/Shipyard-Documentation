@@ -33,6 +33,19 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - Slack (Embed Data into Message)
 - Email (Embed Data into Message)
 
+## 2/22/2022
+
+### Enhancements
+
+- Users can now stop Voyages even if they are currently in a "Retry" state.
+- Pagination has been removed from the Vessels table on a Fleet's Log page for better visibility.
+- The "Edit Vessel" on the Vessel Logs page is now more prominent and easier to find.
+- Handlebars have been added to Blueprint inputs for reordering in the UI.
+
+### Bug Fixes
+
+- Subscriptions will now correctly reflect the number of users active in the account when the organization upgrades to a paid account.
+
 ## 2/16/2022
 
 ### New Features
