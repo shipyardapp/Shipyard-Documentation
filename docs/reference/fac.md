@@ -272,10 +272,6 @@ In these examples there are four schedules set on the Fleet.
 
 This is the same object available under the Vessels `notifications` field. If configured, this will emit notifications based on actions of the full Fleet.
 
-## Screenshots
-
-TBD
-
 ## Additional Notes
 
 Below is a full example FAC file.
@@ -302,7 +298,8 @@ vessels:
    retry_wait: 5m
    runtime_cutoff: 10m
    exclude_exit_code_ranges:
-   - 2-200
+    - 2
+	- '3-5'
  SecondVessel:
   source:
    type: BLUEPRINT
@@ -322,7 +319,3 @@ notifications:
  after_error: true
  after_on_demand: false
 ```
-
-## Learn More
-
-TBD
