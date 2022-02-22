@@ -16,12 +16,13 @@ keywords:
 
 In this tutorial, you'll walk through the steps required to set up a very simple Fleet that contains two Vessels.
 
-* A vessel that generates a CSV file containing stock data
-* A Vessel that reads the contents of the CSV file and prints the output. 
+* A Vessel, built with Code, that generates a CSV file containing stock data and prints the output.
+* A Vessel, built with a Blueprint, that emails the contents of the CSV file. 
 
 By the end of the tutorial, you will know how to:
 
 * Set up a Vessel with Code
+* Set up a Vessel with a Blueprint
 * Write a script directly in the UI
 * Connect Vessels together as part of a Fleet
 * Use a Fleet to access files created upstream
@@ -30,151 +31,159 @@ By the end of the tutorial, you will know how to:
 For the sake of this tutorial, we suggest starting off by building a Vessel inside of the Project called *Playground* or *Testing*. You can follow [this tutorial](first-project.md) to set that up.
 :::
 
-## Steps
+## Step 1 - Accessing the Fleet Builder
 
-### Step 1 - Building a Vessel to Generate a CSV
-
-1. Using the sidebar, click on **Projects** to expand the list of projects.
+1. Using the sidebar, click on **Projects** to navigate to the list of all projects.
 2. Click on either the **Playground** project or the **Testing** project. You'll be directed to the Vessels tab for that project.
-3. Hover over the **+ New** button in the top-right corner of the screen and select **New Vessel**.
+3. Hover over the **+ New** button in the top-right corner of the screen and select **New Fleet**. This will redirect you to the Fleet builder page. 
 
-![](../.gitbook/assets/image_122.png)
+![Create New Element Button](../.gitbook/assets/image_122.png)
 
-4. A modal will pop up asking you how you would like to build your Vessel. On the left side of the modal, you'll see an option for a **With Code**. Click this option.
+## Step 2 - Building a Vessel to Generate a CSV
 
-![](../.gitbook/assets/image_116.png)
+1. Click **Python** from the list of options on the sidebar. 
+![Select Python](../.gitbook/assets/shipyard_2022_01_11_17_14_24.png)
 
-5. Select **Python** as your Language.
+This creates a New Vessel and immediately opens the edit pane for that Vessel on the left side of the screen.
+![](../.gitbook/assets/shipyard_2022_01_11_17_17_29.png)
 
-![](../.gitbook/assets/image_24_1_1.png)
+2. In the **Vessel Name** field, remove the automatically generated name and type **Download Stock Data**. 
 
-7. In the **File Name** field type `stocks.py`
+3. In the **File to Run** field type `stocks.py`
 
-8. In the Code field, copy and paste the following code. Once finished, click **Next Step** at the bottom.
+4. In the Code field, copy and paste the following code. Once finished, click **Next Step** at the bottom.
 
 ```python title="stocks.py"
 # Import external packages
 import pandas_datareader as web
+import pandas as pd
 import datetime
+import os
  
 # Set key variables
 today = datetime.date.today()  
-start = today - datetime.timedelta(days=30)
+start = today - datetime.timedelta(days=180)
 end = today
-stock = 'AMZN'
+stock = os.environ.get('STOCK','AMZN')
 file_name = 'stock_prices.csv'
 
 # Create stock price dataframe
 df = web.DataReader(stock, 'yahoo', start, end)
- 
- # Create CSV with stock prices
-df.to_csv(file_name)
-print(f'{file_name} was successfully created.')
-```
-
-This code pulls down the last 30 days of stock data for Amazon and creates a file named `stock_prices.csv`.  
-  
-9.  On the Requirements tab, add in `pandas_datareader` as a package. Once finished click **Next Step**.
-
-![](../.gitbook/assets/requirements_datareader.png)
-
-10. Give your Vessel a name of `Stock Prices` and click **Save & Finish**. 
-
-11. Click **Run your Vessel** to view the output**.** If you set everything up successfully, you should see a page that looks similar to this with an output message of `stock_prices.csv was successfully created.`
-
-![](../.gitbook/assets/stock_file_log.png)
-
-### Step 2 - Building a Vessel to Print the contents of the CSV
-
-1. Repeat instructions 1-5 on Step 1 to begin setting up a new Vessel using Python.
-
-2. In the **File Name** field type `print_stocks.py`
-
-3. In the Code field, copy and paste the following code. Once finished click **Next Step**.
-
-```python title="print_stocks.py"
-import pandas as pd
-
-# Set key variables
-file_name = 'stock_prices.csv'
 
 # Set better print options
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_colwidth', None)
+ 
+ # Create CSV with stock prices
+df.to_csv(file_name)
+print(f'{file_name} was successfully created.')
 
-# Import the CSV created in the previous step as a dataframe
-df = pd.read_csv(file_name)
-
-# Print the dataframe
+# Print the contents of the generated dataframe.
 print(df)
 ```
 
-This code imports a CSV file name that you specify, in this case `stock_prices.csv` and prints the contents of the file in full.   
+This code pulls down the last 30 days of stock data for any stock of your choosing (defaults to AMZN), creates a file named `stock_prices.csv` and prints the contents to standard output.  
 
-4. On the Requirements tab, add in `pandas` as a package and `==1.2.3` as the version. Once finished click **Next Step**.
+1. Click on the **Environment Variables** panel and click **Add Environment Variable**.
+   
+2.  Set the name to `STOCK` and the value to any single US Stock Ticker. We recommend something like `GOOG` , `AMZN` or `AAPL`.
 
-![](../.gitbook/assets/requirements_pandas.png)
+![Setting an Environment Variable](../.gitbook/assets/shipyard_2022_01_11_17_24_18.png)
 
-5. Give your Vessel a name of `Print Stocks` and click **Save & Finish**. 
+7.  Click on the **Packages** panel and click the **Add Package** button twice.
+8.  Set the name of the first package to  `pandas_datareader` and the version to `==0.10.0`.
+9.  Set the name of the second package to `pandas` without a version.
 
-6. Click **Run your Vessel** to view the output**. This Vessel should error out** because it's trying to read the contents of a file, `stock_prices.csv`, that doesn't currently exist. This result is expected.   
-  
-In order to make this Vessel run successfully, we need to create a Fleet that connects it to our first Vessel, `Stock Prices`, which creates the file we want to print. 
+![Setting an External Package Dependency](../.gitbook/assets/shipyard_2022_01_11_17_29_59.png)
 
-### Step 3 - Creating the Fleet
+:::note Pro-Tip
+When specifying external packages, not including a version is the equivelant of saying "Always install the latest package".
+:::
 
-1. Navigate back to the playground project. 
-2. Hover over the **+ New** button and click **New Fleet.**
+## Step 3 - Building a Vessel to Email the CSV
 
-![](../.gitbook/assets/create_new.png)
+1. Click the `+` icon in the sidebar to add another Vessel to the Fleet.
+![Add Another Vessel](../.gitbook/assets/shipyard_2022_01_11_17_32_41.png)
 
-3. On the Fleets page, click into the empty white canvas area to open up a Vessel selection box. 
+2. Search for **email** using the search bar at the top. Click on **Send Message with File**
 
-Select the **Stock Prices** Vessel to add it to the fleet. Repeat the process for the **Print Stocks** Vessel.
+![Email Blueprint Options](../.gitbook/assets/shipyard_2022_01_11_17_35_14.png)
 
-4. Hover over the **Stock Prices** Vessel to reveal purple circles. Drag from one of these circles to the **Print Stocks** Vessel and release. This should have connected the two Vessel together with an arrow that says **Success.**  
-  
-The editor shows that after **Stock Prices** runs successfully, it will immediately trigger **Print Stocks**. 
+3. In the **Vessel Name** field, remove the automatically generated name and type **Send Stock Data via Email**.
+4. Fill out fields with the following values:
 
-![](../.gitbook/assets/screen-cast-2021-03-10-at-8.09.03-pm.gif)
+| Name | Value |
+|:---|:---|
+| Send Method | TLS |
+| SMTP Host | smtp.gmail.com|
+| SMTP Port |587 |
+| Username | Leave blank and use the default |
+| Password | Leave blank and use the default |
+| Sender Address | Leave blank and use the default |
+| Sender Name | |
+| TO | YOUR EMAIL HERE |
+| CC | |
+| BCC | |
+| Subject | Stock Data |
+| Message | Here's the most recent stock data! |
+| File Name Match Type | Exact Match|
+| File Name | stock_prices.csv |
+| Folder Name | |
+| Include Shipyard Footer? | ✅|
 
-Once you've connected the Vessels together, click **Next Step**.
+## Step 4 - Finalizing the Fleet
 
-5. Name your Fleet `Download and Print Stocks` then click **Save and Finish**.
+1. Click and drag from a circle on the **Download Stock Data** Vessel towards a circle on the **Send Stock Data via Email** Vessel. 
 
-6. You should see the following success screen.
+![Connect Vessels](../.gitbook/assets/connect_vessels.gif)
 
-![](../.gitbook/assets/successful_fleet.png)
+This will connect the two Vessels, allowing one to be triggered by the other. Additionally, this allows files created upstream (Download Stock Data) to be accessed by the Vessel that lives downstream (Send Stock Data via Email).
 
-### Step 4 - Run the Fleet
+2. Select the cog icon on the sidebar to open up Fleet settings.
 
-1. Click **Run your Fleet** on the success confirmation screen**.** 
+![Fleet Settings](../.gitbook/assets/shipyard_2022_01_11_17_58_36.png)
+
+3. In the **Fleet Name** field, remove the automatically generated name and type **Generate and Send Stocks**.
+![Update your Fleet Name](../.gitbook/assets/shipyard_2022_01_11_17_59_45.png)
+
+
+:::note
+By default, every Fleet and every Vessel you create will send error notifications to your email. You can always update this as needed.
+:::
+
+4. Click the **Save and Finish** button at the bottom.
+
+5. You should see the following success screen.
+
+![Fleet Success Screen](../.gitbook/assets/successful_fleet.png)
+
+## Step 5 - Running the Fleet On Demand
+
+1. Click **Run your Fleet** on the success confirmation screen.
 
 2. You'll be redirected to a Fleet Log page as your Fleet runs. This page will refresh automatically as the Fleet runs. Wait until you see both Vessels as green bars, indicating that they completed successfully.
 
-![](../.gitbook/assets/fleet_log.png)
+3. Click on the Log ID or the bar graph for the **Download Stock Data** Vessel. Your Log ID will be different than the one shown below.
 
-3. Click on the Log ID for the **Print Stocks** Vessel. Your Log ID will be different than the one shown below.
-
-![](../.gitbook/assets/shipyard_log_id.png)
+![Fleet Log Gantt](../.gitbook/assets/shipyard_2022_01_12_12_56_54.png)
 
 4. In the output, you should now see the Stock data printed out! 
 
-![](../.gitbook/assets/stock_log.png)
+![Printed Stock Output](../.gitbook/assets/shipyard_2022_01_12_12_57_50.png)
+
+5. Go check your email. You should also see a message that contains the stock data.
+
+![Stock Price Email](../.gitbook/assets/shipyard_2022_01_12_12_58_40.png)
 
 :::tip success
-You've successfully created and verified a Fleet that shares files!
+You've successfully created and verified a Fleet that shares files between a Vessel built with Code and a Vessel build with a Blueprint!
 :::
 
 ## Further Experimentation
 
 Now that you've got the basics down, experiment on your own with a few changes to make sure you understand how Fleets allow Vessels to share files. Some suggestions to get you started:
 
-1. Create an intermediary Vessel that renames the file after **Stock Prices** and before **Print Stocks**. How will you need to adjust things to ensure that **Print Stocks** run successfully? How about if you create the file in a directory? 
-2. Change the **Stock Prices** Vessel to generate a few different files for different stock tickers. How will you need to adjust **Print Stocks** to access all of these files? How can you combine the files into one? 
-3. Create a Vessel using a Blueprint from the [Blueprint Library](../reference/blueprint-library/blueprint-library-overview.md) that uploads the file to your storage solution of choice \(S3, Google Cloud Storage, Dropbox, etc.\). Can you successfully get the file delivered to your own storage solution? 
-4. Create an intermediary Bash Vessel to list all of the files available to the fleet \(using `ls -a -R`\). What files are available to the Fleet at the beginning of the Fleet? What files are available to the Fleet at the end of the Fleet?
-
-
-
+1. Create an intermediary Vessel that renames the file after **Download Stock Data** and before **Send Stock Data via Email**. How will you need to adjust things to ensure that **Send Stock Data via Email** run successfully? How about if you create the file in a directory? 
+2. Change the **Download Stock Data** Vessel to loop through multiple stock tickers.
+3. Create a Vessel using a Blueprint from the [Blueprint Library](../reference/blueprint-library/blueprint-library-overview.md) that uploads the file to your storage solution of choice \(S3, Google Cloud Storage, Dropbox, etc.\) at the same time the email delivers. Can you successfully get the file delivered to your own storage solution?
