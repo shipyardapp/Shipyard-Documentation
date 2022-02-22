@@ -51,7 +51,7 @@ This creates a New Vessel and immediately opens the edit pane for that Vessel on
 
 3. In the **File to Run** field type `stocks.py`
 
-4. In the Code field, copy and paste the following code. Once finished, click **Next Step** at the bottom.
+4. In the Code field, copy and paste the following code.
 
 ```python title="stocks.py"
 # Import external packages
@@ -91,11 +91,11 @@ This code pulls down the last 30 days of stock data for any stock of your choosi
 
 ![Setting an Environment Variable](../.gitbook/assets/shipyard_2022_01_11_17_24_18.png)
 
-7.  Click on the **Packages** panel and click the **Add Package** button twice.
+7.  Click on the **Python Packages** panel and click the **Add Python Package** button twice.
 8.  Set the name of the first package to  `pandas_datareader` and the version to `==0.10.0`.
 9.  Set the name of the second package to `pandas` without a version.
 
-![Setting an External Package Dependency](../.gitbook/assets/shipyard_2022_01_11_17_29_59.png)
+![Setting an External Package Dependency](../.gitbook/assets/shipyard_2022_02_22_16_13_27.png)
 
 :::note Pro-Tip
 When specifying external packages, not including a version is the equivelant of saying "Always install the latest package".
