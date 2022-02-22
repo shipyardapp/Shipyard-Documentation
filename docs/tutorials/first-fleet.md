@@ -227,7 +227,7 @@ vessels:
             runtime_cutoff: 4h0m0s
         notifications:
             emails:
-                - john@shipyardapp.com
+                - shipyardapptest@shipyardapp.com
             after_error: true
             after_on_demand: false
     Send Stock Data via Email:
@@ -248,7 +248,7 @@ vessels:
                 EMAIL_SOURCE_FILE_NAME_MATCH_TYPE: exact_match
                 EMAIL_SOURCE_FOLDER_NAME: null
                 EMAIL_SUBJECT: Stock Data
-                EMAIL_TO: john@shipyardapp.com
+                EMAIL_TO: shipyardapptest@shipyardapp.com
                 EMAIL_USERNAME: shipyardapptest@gmail.com
             type: BLUEPRINT
         guardrails:
@@ -257,7 +257,7 @@ vessels:
             runtime_cutoff: 4h0m0s
         notifications:
             emails:
-                - john@shipyardapp.com
+                - shipyardapptest@shipyardapp.com
             after_error: true
             after_on_demand: false
 connections:
@@ -265,7 +265,7 @@ connections:
         Send Stock Data via Email: SUCCESS
 notifications:
     emails:
-        - john@shipyardapp.com
+        - shipyardapptest@shipyardapp.com
     after_error: true
     after_on_demand: false
 ```
