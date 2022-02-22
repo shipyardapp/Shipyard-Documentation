@@ -53,7 +53,7 @@ Vessels may have `_id` and `_ref` top-level fields.
 ```yaml
 long_vessel_name:
   _id: example_uuid
-  _ref: lvn
+  _ref: short_name
 ```
 
 If `_id` is provided, Shipyard will attempt to find and update the Vessel with the provided values. The `_ref` field can be used in the `connections` section for easier reference and is essentially a "nickname" for the Vessel within FAC.
