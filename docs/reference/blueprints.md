@@ -28,7 +28,7 @@ As a Blueprint author or editor, you are in charge of writing the code that runs
 
 When creating a Blueprint, you must **always** provide the following elements:
 
-- [Code](code/code-overview)
+- [Code](code/code-overview.md)
 - [Command ](code/command.md)to execute the code
 - [Blueprint Information](settings/information.md)
 
@@ -37,7 +37,7 @@ You may also _optionally_ provide these elements:
 - [Blueprint Variables](inputs/blueprint-variables.md)
 - [Blueprint Description](inputs/blueprint-description.md)
 - [External Package Dependencies](requirements/external-package-dependencies.md)
-- [Environment Variables](requirements/environment-variables/)
+- [Environment Variables](requirements/environment-variables.md)
 - [Guardrails](settings/guardrails.md)
 
 ### Building a Vessel
@@ -50,8 +50,8 @@ When creating a Vessel with a Blueprint, you must always provide the following e
 You may also _optionally_ provide these elements:
 
 1. [Triggers](triggers/triggers-overview)
-2. [Notifications](settings/notifications)
-3. [Guardrails](settings/guardrails)
+2. [Notifications](settings/notifications.md)
+3. [Guardrails](settings/guardrails.md)
 
 ## Additional Notes
 
@@ -60,11 +60,11 @@ You may also _optionally_ provide these elements:
 
 ## Learn More
 
-- [How to Search for Blueprints](../how-tos/blueprints/search-for-blueprint)
-- [How to Create a New Blueprint](../how-tos/blueprints/create-blueprint)
-- [How to Edit a Blueprint](../how-tos/blueprints/edit-blueprint)
-- [How to Delete a Blueprint](../how-tos/blueprints/delete-blueprint)
-- [How to Duplicate a Blueprint](../how-tos/blueprints/duplicate-blueprint)
-- [How to Create Blueprint Variables](../how-tos/blueprints/create-blueprint-variables)
-- [How to Reference a Blueprint Variable](../how-tos/blueprints/reference-blueprint-variables)
-- [How to Reorder Blueprint Variables](../how-tos/blueprints/reorder-blueprint-variables)
+- [How to Search for Blueprints](../how-tos/blueprints/search-for-blueprint.md)
+- [How to Create a New Blueprint](../how-tos/blueprints/create-blueprint.md)
+- [How to Edit a Blueprint](../how-tos/blueprints/edit-blueprint.md)
+- [How to Delete a Blueprint](../how-tos/blueprints/delete-blueprint.md)
+- [How to Duplicate a Blueprint](../how-tos/blueprints/duplicate-blueprint.md)
+- [How to Create Blueprint Variables](../how-tos/blueprints/create-blueprint-variables.md)
+- [How to Reference a Blueprint Variable](../how-tos/blueprints/reference-blueprint-variables.md)
+- [How to Reorder Blueprint Variables](../how-tos/blueprints/reorder-blueprint-variables.md)

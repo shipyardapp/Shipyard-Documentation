@@ -14,27 +14,27 @@ keywords:
 
 ## Definitions
 
-[**Blueprint Library**](/reference/blueprint-library/blueprint-library-overview) is a location for pre-made Custom Blueprints developed by Shipyard staff.
+[**Blueprint Library**](/reference/blueprint-library/blueprint-library-overview.md) is a location for pre-made Custom Blueprints developed by Shipyard staff.
 
-[**Blueprints**](/reference/blueprints) are the foundation of the application. They contain the design specifications for a repeatable task. In other applications, these may be referenced as templates, macros, or operators.
+[**Blueprints**](/reference/blueprints.md) are the foundation of the application. They contain the design specifications for a repeatable task. In other applications, these may be referenced as templates, macros, or operators.
 
-[**Vessels**](/reference/vessels) are built using either [Blueprints](/reference/blueprints) or [Code](/reference/code/code-overview). In other applications, these may be referenced as tasks, jobs, or steps.
+[**Vessels**](/reference/vessels.md) are built using either [Blueprints](/reference/blueprints.md) or [Code](/reference/code/code-overview.md). In other applications, these may be referenced as tasks, jobs, or steps.
 
 **Dependent Vessels** - Vessels that are built on a specific Blueprint. They depend on the underlying code and structure of the Blueprint.
 
-[**Fleets**](/reference/fleets) are built by connecting multiple Vessels together. In other applications, these may be referenced as flows, workflows, or DAGs.
+[**Fleets**](/reference/fleets.md) are built by connecting multiple Vessels together. In other applications, these may be referenced as flows, workflows, or DAGs.
 
 **Paths** are the lines that connect Vessels together in a Fleet, evaluating the status of the connected Vessel.
 
-**Voyages** are a single run of a Vessel or Fleet. In other applications, these may be referenced as an execution. Metadata about a Voyage is stored as a [Log](reference/logs/logs-overview).
+**Voyages** are a single run of a Vessel or Fleet. In other applications, these may be referenced as an execution. Metadata about a Voyage is stored as a [Log](reference/logs/logs-overview.md).
 
-[**Logs**](reference/logs/logs-overview) are a historical record of how a Fleet or Vessel ran at a specific point in time. A [Fleet Log](reference/logs/fleet-logs) will consist of one or more [Vessel Logs](reference/logs/vessel-logs).
+[**Logs**](reference/logs/logs-overview.md) are a historical record of how a Fleet or Vessel ran at a specific point in time. A [Fleet Log](reference/logs/fleet-logs.md) will consist of one or more [Vessel Logs](reference/logs/vessel-logs.md).
 
-[**Triggers**](reference/triggers/triggers-overview) are the logic that determines when a Vessel or Fleet should begin running.
+[**Triggers**](reference/triggers/triggers-overview.md) are the logic that determines when a Vessel or Fleet should begin running.
 
-[**Projects**](reference/projects) are used to categorize Vessels and Fleets pertaining to specific teams, functions, or use cases. Each project is associated with its own [timezone](reference/other-functions/timestamps-and-timezones) used for [Schedule Triggers](reference/triggers/schedule-triggers).
+[**Projects**](reference/projects.md) are used to categorize Vessels and Fleets pertaining to specific teams, functions, or use cases. Each project is associated with its own [timezone](reference/other-functions/timestamps-and-timezones.md) used for [Schedule Triggers](reference/triggers/schedule-triggers.md).
 
-[**Organizations**](reference/organizations) contain all of your Projects and Blueprints. This is the highest grouping structure in the platform that users can control.
+[**Organizations**](reference/organization.md) contain all of your Projects and Blueprints. This is the highest grouping structure in the platform that users can control.
 
 **Element** is a generic term used to refer to any of the above bolded words.
 

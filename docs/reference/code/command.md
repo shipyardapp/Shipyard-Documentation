@@ -144,7 +144,7 @@ Arguments can be passed in 3 different ways:
 - With only a Value (must be placed in the first column)
 
 :::caution
-Command arguments are not suitable for secrets. They are available to change the behavior of your script with values that are not secret, like a file name to process or column names in a table to work with. For secrets, use [environment variables](../requirements/environment-variables).
+Command arguments are not suitable for secrets. They are available to change the behavior of your script with values that are not secret, like a file name to process or column names in a table to work with. For secrets, use [environment variables](../requirements/environment-variables.md).
 :::
 
 ## Screenshots

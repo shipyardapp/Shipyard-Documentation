@@ -27,6 +27,6 @@ A project is a flexible way to categorize everything that your organization is a
 
 ## Learn More
 
-- [How to Create a New Project](../how-tos/projects/create-project)
-- [How to Edit an Existing Project](../how-tos/projects/edit-project)
-- [How to Delete an Existing Project](../how-tos/projects/delete-project)
+- [How to Create a New Project](../how-tos/projects/create-project.md)
+- [How to Edit an Existing Project](../how-tos/projects/edit-project.md)
+- [How to Delete an Existing Project](../how-tos/projects/delete-project.md)

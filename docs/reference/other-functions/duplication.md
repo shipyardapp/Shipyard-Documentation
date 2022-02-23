@@ -30,7 +30,7 @@ When a Vessel is duplicated, the following things occur:
 
 1. A new Vessel is immediately created, with the name of `{Old Vessel Name} (Copy) {New Vessel ID}` .
 2. The [Code](../code/code-overview.md), [Command](../code/command.md), [Environment Variables](../requirements/environment-variables.md), [Packages](../requirements/external-package-dependencies.md), [Guardrails](../settings/guardrails.md), and [Notifications](../settings/notifications.md) from the old Vessel are transferred to the new Vessel.
-3. The Vessel's [Triggers](../triggers/triggers-overview) are all reset.
+3. The Vessel's [Triggers](../triggers/triggers-overview.md) are all reset.
 4. The new Vessel starts with 0 logs.
 
 </TabItem>
@@ -40,7 +40,7 @@ When a Fleet is duplicated, the following things occur:
 
 1. A new Fleet is immediately created, with the name of `{Old Fleet Name} (Copy) {New Fleet ID}` .
 2. Every Vessel in the Fleet is recreated with the name of `{Old Vessel Name} (Copy) {New Vessel ID}`, using the same rules when duplicating a Vessel individually.
-3. The Fleet's [Triggers](../triggers/triggers-overview) are all reset.
+3. The Fleet's [Triggers](../triggers/triggers-overview.md) are all reset.
 4. The new Fleet starts with 0 logs.
 
 </TabItem>
