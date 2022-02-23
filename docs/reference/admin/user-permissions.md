@@ -60,8 +60,8 @@ able to stop those Voyages triggered by a Webhook.
 
 ### Account
 
-- [Billing](billing)
-- [Usage](usage-dashboard)
+- [Billing](billing.md)
+- [Usage](usage-dashboard.md)
 
 #### Permissions
 

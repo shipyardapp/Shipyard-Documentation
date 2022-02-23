@@ -45,11 +45,11 @@ You may also _optionally_ provide these elements:
 When creating a Vessel with a Blueprint, you must always provide the following elements:
 
 1. [Inputs](inputs/inputs-overview.md) \(if any are required\)
-2. [Vessel Information](settings/information)
+2. [Vessel Information](settings/information.md)
 
 You may also _optionally_ provide these elements:
 
-1. [Triggers](triggers/triggers-overview)
+1. [Triggers](triggers/triggers-overview.md)
 2. [Notifications](settings/notifications.md)
 3. [Guardrails](settings/guardrails.md)
 
