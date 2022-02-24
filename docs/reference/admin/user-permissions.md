@@ -22,9 +22,9 @@ levels for each element of the platform.
 
 ### Access Settings
 
-- [Projects](../projects)
+- [Projects](../projects.md)
 - [Blueprints](../blueprints.md)
-- [Integrations](integrations/integrations-overview)
+- [Integrations](integrations/integrations-overview.md)
 - [Vessels](../vessels.md)
 - [Fleets](../fleets.md)
 
@@ -37,7 +37,7 @@ levels for each element of the platform.
 
 ### Triggers
 
-- [Has Access](../triggers/triggers-overview)
+- [Has Access](../triggers/triggers-overview.md)
 
 #### Permissions
 
@@ -49,7 +49,7 @@ able to stop those Voyages triggered by a Webhook.
 
 ### Users
 
-- [Has Access](user-management)
+- [Has Access](user-management.md)
 
 #### Permissions
 
@@ -60,8 +60,8 @@ able to stop those Voyages triggered by a Webhook.
 
 ### Account
 
-- [Billing](billing)
-- [Usage](usage-dashboard)
+- [Billing](billing.md)
+- [Usage](usage-dashboard.md)
 
 #### Permissions
 

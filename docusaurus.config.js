@@ -11,29 +11,29 @@ module.exports = {
 	favicon: BASE_URL + "img/favicon.ico",
 	organizationName: "Shipyard", // Usually your GitHub org/user name.
 	projectName: "Shipyard-Documentation", // Usually your repo name.
+	trailingSlash: true,
 	scripts: [
 		{
 			src: BASE_URL + "js/segment.js",
 		},
 	],
 	themeConfig: {
-		algolia: process.env.NODE_ENV === 'production' ? {
-			appId: process.env.ALGOLIA_APP_ID,
-			apiKey: process.env.ALGOLIA_API_KEY,
-			indexName: "shipyardapp",
+		algolia:
+			process.env.NODE_ENV === "production"
+				? {
+						appId: process.env.ALGOLIA_APP_ID,
+						apiKey: process.env.ALGOLIA_API_KEY,
+						indexName: "shipyardapp",
 
-			// Optional: see doc section bellow
-			// contextualSearch: true,
+						// Optional: see doc section bellow
+						// contextualSearch: true,
 
-			// Optional: Algolia search parameters
-			searchParameters: {},
+						// Optional: Algolia search parameters
+						searchParameters: {},
 
-			//... other Algolia params
-		} : void 0,
-		googleAnalytics: {
-			trackingID: "UA-142749850-1",
-			anonymizeIP: true,
-		},
+						//... other Algolia params
+				  }
+				: void 0,
 		navbar: {
 			title: "Shipyard",
 			logo: {
@@ -134,6 +134,10 @@ module.exports = {
 					// Please change this to your repo.
 					editUrl:
 						"https://github.com/shipyardapp/Shipyard-Documentation/edit/main/",
+				},
+				googleAnalytics: {
+					trackingID: "UA-142749850-1",
+					anonymizeIP: true,
 				},
 				blog: {
 					showReadingTime: true,
