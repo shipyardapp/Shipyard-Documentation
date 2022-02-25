@@ -19,7 +19,7 @@ Blueprint Variables allow your code to accept user input through the Shipyard UI
 
 A Blueprint can contain as many variables as you want. Blueprint variables can also be re-ordered to make it easier for users to understand.
 
-A user who creates a Vessel from your Blueprint will provide their own values on the [Input](vessel-inputs) tab for Blueprint Variables that you define. Those user entered values then become available at runtime.
+A user who creates a Vessel from your Blueprint will provide their own values on the [Input](vessel-inputs.md) tab for Blueprint Variables that you define. Those user entered values then become available at runtime.
 
 ## Components
 
@@ -75,7 +75,7 @@ All of the user input provided when setting up a Vessel will be provided to your
 
 ### Pass Variable Values to Code
 
-You can obtain the variable's value via either the [command arguments](../code/command) or as an [environment variable](../requirements/environment-variables) by referencing the variable using `${variable_name}`. The variable name will **exactly match** the Blueprint Variable's [Reference Name](blueprint-variables.md#reference-name).
+You can obtain the variable's value via either the [command arguments](../code/command.md) or as an [environment variable](../requirements/environment-variables.md) by referencing the variable using `${variable_name}`. The variable name will **exactly match** the Blueprint Variable's [Reference Name](blueprint-variables.md#reference-name).
 
 For example, if a variable's reference name is `Operator_A`, then you would reference it by typing`${Operator_A}`.
 
@@ -87,7 +87,7 @@ We recommend this option, as it makes it extremely clear which variables are bei
 
 In your code, you can obtain the value for the variable just like you would any other environment variable. The environment variable name will **exactly match** the Blueprint Variable's [Reference Name](blueprint-variables.md#reference-name). For example, if a variable's reference name is `Operator_A`, then its environment variable name will be `Operator_A`.
 
-View our [how-to guide for accessing Environment Variables](../../how-tos/access-environment-variables).
+View our [how-to guide for accessing Environment Variables](../../how-tos/access-environment-variables.md).
 
 :::caution
 A Blueprint's environment variables and Blueprint variables **are both** set as environment variables that can be accessed at runtime. It's important to make sure that the naming between these two sections doesn't overlap.
@@ -113,6 +113,6 @@ Make sure not to set any variables to important environment variable names like 
 
 ## Learn More
 
-- [How to Create Blueprint Variables](../../how-tos/blueprints/create-blueprint-variables)
-- [How to Reference a Blueprint Variable](../../how-tos/blueprints/reference-blueprint-variables)
-- [How to Reorder Blueprint Variables](../../how-tos/blueprints/reorder-blueprint-variables)
+- [How to Create Blueprint Variables](../../how-tos/blueprints/create-blueprint-variables.md)
+- [How to Reference a Blueprint Variable](../../how-tos/blueprints/reference-blueprint-variables.md)
+- [How to Reorder Blueprint Variables](../../how-tos/blueprints/reorder-blueprint-variables.md)

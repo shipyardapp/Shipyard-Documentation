@@ -32,7 +32,7 @@ We love to hear what our users would like to see out of our product. Feel free t
 
 We currently natively support the creation of solutions using Python 3.7, Node 14.15, and Bash.
 
-Bash allows us to support any language non-natively, where the right language packages just need to be manually installed by the user as an [external package](reference/requirements/external-package-dependencies)
+Bash allows us to support any language non-natively, where the right language packages just need to be manually installed by the user as an [external package](reference/requirements/external-package-dependencies.md)
 
 SQL can be used natively with some Blueprints found in the [Blueprint Library](reference/blueprint-library/blueprint-library-overview.md).
 
@@ -54,7 +54,7 @@ Additionally, we offer a wide variety of Blueprints in our [Blueprint Library](r
 If you have standard needs to run QA on your data, deliver reports, and send data to external partners, you will be able to get by using only the Blueprints found in our [Blueprint Library](reference/blueprint-library/blueprint-library-overview.md).
 
 
-If you have proprietary business logic needs, you will likely need at least one technical team member that can initially build solutions for the organization. However, other users of Shipyard are **not** required to know code. We built the platform to allow business users the ability to easily access and take advantage of internally built solutions as [Blueprints](reference/blueprints).
+If you have proprietary business logic needs, you will likely need at least one technical team member that can initially build solutions for the organization. However, other users of Shipyard are **not** required to know code. We built the platform to allow business users the ability to easily access and take advantage of internally built solutions as [Blueprints](reference/blueprints.md).
 
 Shipyard is a workflow automation platform built for semi-technical team members. As long as you know how to write a little bit of code in SQL, Python, Bash, or Node.js, you can build and launch almost any solution that doesn't need a UI to function. We've made the platform as easy as possible for you to take your existing coding skills, no matter how advanced they are, and solve problems at scale.
 

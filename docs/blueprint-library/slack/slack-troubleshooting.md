@@ -41,4 +41,4 @@ When this error occurs, users listed under Users to Notify will show up as `<@>`
 
 `The server responded with: {'ok': False, 'error': 'invalid_auth'}`
 
-The Slack Token that was provided is incorrect. Follow the [Authorization steps](slack-authorization#accessing-the-slack-bot-token) to resolve.
+The Slack Token that was provided is incorrect. Follow the [Authorization steps](./slack-authorization.md#accessing-the-slack-bot-token) to resolve.

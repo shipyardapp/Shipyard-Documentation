@@ -11,7 +11,7 @@ keywords:
 
 ## Definition
 
-The inputs are a direct reflection of the [Blueprint Variables ](blueprint-variables) that are set up for the selected [Blueprint](../blueprints).
+The inputs are a direct reflection of the [Blueprint Variables ](blueprint-variables.md) that are set up for the selected [Blueprint](../blueprints.md).
 
 These fields allow a user to input data that a script uses, without the need to code.
 

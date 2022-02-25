@@ -32,7 +32,7 @@ To create an effective Blueprint, you'll need to add multiple [Blueprint Variabl
 ### Step 2 - Optional Fields
 The following steps are optional, but strongly recommended to increase usability.
 
-1. Set a [default value](../../reference/inputs/blueprint-variables#default-value) for the variable to use.
+1. Set a [default value](../../reference/inputs/blueprint-variables.md#default-value) for the variable to use.
 2. Select if the field should be [required](../../reference/other-functions/duplication.md#required) or not.
 3. Give the variable [placeholder](../../reference/inputs/blueprint-variables.md#placeholder) text as an example of what should be entered.
 4. Give the variable a [tooltip](../../reference/inputs/blueprint-variables.md#tooltip) explanation.

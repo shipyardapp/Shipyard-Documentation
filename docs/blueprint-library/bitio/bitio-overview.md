@@ -27,7 +27,7 @@ For information on how to set up these Blueprints successfully, please read thro
 Shipyard currently has the following Blueprints readily available:
 - [Execute Query](bitio-execute-query.md)
 - [Store Query Results as CSV](bitio-store-query-results-as-csv.md)
-- [Upload CSV to Table](bitio-upload-csv-to-table)
+- [Upload CSV to Table](bitio-upload-csv-to-table.md)
 
 ## Open Source Code
 The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/postgresql-blueprints), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.
