@@ -33,6 +33,17 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - Slack (Embed Data into Message)
 - Email (Embed Data into Message)
 
+## 2/28/2022
+
+### Enhancements
+
+- Blueprint "Dependent Vessels" table now has links to both the Vessel and conditionally to the Fleet if the Vessel is a part of one
+- Project-level Vessels can now be added to and removed from Fleets without having to build them in the Fleet Builder
+
+### Bug Fixes
+
+- Duplicate Vessel names are now prevented in the Project
+
 ## 2/22/2022
 
 ### Enhancements
