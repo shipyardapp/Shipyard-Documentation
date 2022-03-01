@@ -22,13 +22,13 @@ import TabItem from '@theme/TabItem';
 
 Below is a breakdown of a typical FAC YAML file and some guidance for working with these resources.
 
-### Anatomy
+## Anatomy
 
 Below are the top-level fields that make up a FAC YAML file. Sub-objects are defined beneath these as needed.
 
 ---
 
-#### `name`
+### `name`
 
 `name` is the string name of the Fleet. It is a **required** field.
 
@@ -36,7 +36,7 @@ If both a `name` and `_id` field are provided at the top-level of the file, Ship
 
 ---
 
-#### `_id`
+### `_id`
 
 `_id` is an optional top-level value representing the ID of an existing Fleet. If provivded, Shipyard will attempt to look it up and apply the FAC YAML as an update to the Fleet.
 
@@ -44,7 +44,7 @@ If the ID value does _not_ exist, Shipyard will attempt to create a new Fleet wi
 
 ---
 
-#### `vessels`
+### `vessels`
 
 `vessels` represents the [Vessels](vessels.md) that constitute the Fleet. Keys represent the name of the Vessel and must be unique within the Fleet object. Values are the Vessel definition represented as a YAML object which may be code-based, Blueprint-based, or Git-based.
 
@@ -84,7 +84,7 @@ source:
 
 - `language` may be one of `PYTHON`, `BASH`, or `NODE`
 - `name` is a string represented the file name containing the code
-- `content` is a string or multiline string contining the code
+- `content` is a string or multiline string containing the code
 - `file_to_run` is a string representing the file to for any Vessel type that requires it
 
 </TabItem>
@@ -156,7 +156,7 @@ source:
     value: variable_value
 ```
 
-- see [Environment Variables](requirements/environment-variables.md) for more information
+See [Environment Variables](requirements/environment-variables.md) for more information
 
 </TabItem>
 <TabItem value="packages">
@@ -170,7 +170,8 @@ source:
 ```
 
 - `version` is an optional string value
-- see [Packages](requirements/external-package-dependencies.md) for more information
+
+See [Packages](requirements/external-package-dependencies.md) for more information.
 
 </TabItem>
 <TabItem value="systemPackages">
@@ -219,7 +220,7 @@ vessel_name:
 
 ---
 
-#### `connections`
+### `connections`
 
 `connections` is a top-level field that defines the graph of how the Vessels defined in the `vessels` section are connected.
 
@@ -240,7 +241,7 @@ See [Fleets](fleets.md) documentation for more information on connections.
 
 ---
 
-#### `triggers`
+### `triggers`
 
 Currently, the triggers supported in FAC are [Schedules](triggers/schedule-triggers.md). These are defined as an array of objects under the `schedules` field. See below for an example.
 
@@ -268,11 +269,11 @@ In these examples there are four schedules set on the Fleet.
 
 ---
 
-#### `notifications`
+### `notifications`
 
 This is the same object available under the Vessels `notifications` field. If configured, this will emit notifications based on actions of the full Fleet.
 
-## Additional Notes
+## Examples and Templates
 
 Below is a full example FAC file.
 
