@@ -28,7 +28,7 @@ Below are the top-level fields that make up a FAC YAML file. Sub-objects are def
 
 ---
 
-### `name`
+#### `name`
 
 `name` is the string name of the Fleet. It is a **required** field.
 
@@ -36,7 +36,7 @@ If both a `name` and `_id` field are provided at the top-level of the file, Ship
 
 ---
 
-### `_id`
+#### `_id`
 
 `_id` is an optional top-level value representing the ID of an existing Fleet. If provivded, Shipyard will attempt to look it up and apply the FAC YAML as an update to the Fleet.
 
@@ -44,19 +44,18 @@ If the ID value does _not_ exist, Shipyard will attempt to create a new Fleet wi
 
 ---
 
-### `vessels`
+#### `vessels`
 
 `vessels` represents the [Vessels](vessels.md) that constitute the Fleet. Keys represent the name of the Vessel and must be unique within the Fleet object. Values are the Vessel definition represented as a YAML object which may be code-based, Blueprint-based, or Git-based.
 
-Vessels may have `_id` and `_ref` top-level fields.
+Vessels may have a `_id` top-level field.
 
 ```yaml
 long_vessel_name:
   _id: example_uuid
-  _ref: short_name
 ```
 
-If `_id` is provided, Shipyard will attempt to find and update the Vessel with the provided values. The `_ref` field can be used in the `connections` section for easier reference and is essentially a "nickname" for the Vessel within FAC.
+If `_id` is provided, Shipyard will attempt to find and update the Vessel with the provided values.
 
 Below are examples of the three types with accompanying notes on the various fields that go under the `source` field.
 
@@ -77,8 +76,8 @@ source:
   file:
     name: script.py
     content: |
-      print("Hello")
-	  print("World")
+      for i in range(10):
+        print(i)
   file_to_run: script.py
 ```
 
@@ -98,7 +97,7 @@ source:
     target_email: example@email.com
 ```
 
-- `blueprint` is the name of the Blueprint created separately from the Fleet - it must match the name exactly and may either be a [Shipyard Blueprint](blueprint-library/blueprint-library-overview.md) or an [Organization Blueprint](blueprints.md)
+- `blueprint` is the name of the Blueprint created separately from the Fleet - it must match the name exactly and may either be a [Library Blueprint](blueprint-library/blueprint-library-overview.md) or an [Organization Blueprint](blueprints.md)
 - `inputs` are a key-value pair representing the [input variable](inputs/blueprint-variables.md) name and value - if the Blueprint is configured so that the input is a "password" type, when this FAC is fetched back to the user it will show `SHIPYARD_HIDDEN` to obfuscate the value
 
 </TabItem>
@@ -141,8 +140,9 @@ values={[
 source:
   ...
   arguments:
-    key: example_key
-    value: example_value
+    - key: example_key_1
+      value: example_value_1
+	- { key: example_key_2, value: example_value_2 }
 ```
 
 </TabItem>
@@ -152,8 +152,9 @@ source:
 source:
   ...
   environment:
-    name: variable_name
-    value: variable_value
+    - name: variable_name_1
+      value: variable_value_1
+	- { name: variable_name_2, value: variable_value_2 }
 ```
 
 See [Environment Variables](requirements/environment-variables.md) for more information
@@ -166,7 +167,7 @@ source:
   ...
   packages:
     - name: example_package
-	  version: '1.0.0'
+	  version: '==1.0.0'
 ```
 
 - `version` is an optional string value
@@ -176,7 +177,14 @@ See [Packages](requirements/external-package-dependencies.md) for more informati
 </TabItem>
 <TabItem value="systemPackages">
 
-These are the same as `packages` above and are available for `PYTHON` and `NODE` Vessel types only. See [System Packages](requirements/system-package-dependencies.md) for more information
+```yaml
+source:
+  ...
+  system_packages:
+    - name: example_package
+```
+
+These are the same structure as `packages` above and are available for `PYTHON` and `NODE` Vessel types only. See [System Packages](requirements/system-package-dependencies.md) for more information
 
 </TabItem>
 </Tabs>
@@ -190,17 +198,19 @@ vessel_name:
   ...
   guardrails:
     retry_count: 3
-    retry_wait: 1m0s
-    runtime_cutoff: 5m30s
+    retry_wait: 5m0s
+    runtime_cutoff: 15m0s
     exclude_exit_code_ranges:
       - 2
 	  - '3-5'
 ```
 
 - `retry_count` is an integer representing the number of times to retry a Vessel if it fails (max of 24)
-- `retry_wait` is a string representing the amount of time to wait between retries (max of 1h) - the example above indicates a retry wait of 1 minute
-- `runtime_cutoff` is a string representing the amount of time to wait before killing a Vessel (max of 1h) - the example above indicates a runtime cutoff of 5 minutes and 30 seconds
+- `retry_wait` is a string representing the amount of time to wait between retries (max of 1h) - the example above indicates a retry wait of 5 minutes
+- `runtime_cutoff` is a string representing the amount of time to wait before killing a Vessel (max of 4h) - the example above indicates a runtime cutoff of 15 minutes
 - `exclude_exit_code_ranges` is an array of values (integers or strings formated at "N-N") representing the exit codes to exclude from the Vessel's exit code range - the example above indicates that exit codes `2`, `3`, `4`, and `5` should be excluded
+
+Formatting for `retry_wait` and `runtime_cutoff` follow a "#h#m#s" format for hours, minutes, and seconds. These values must be divisible by 5 minute increments.
 
 **Notifications**
 
@@ -210,21 +220,22 @@ vessel_name:
   notifications:
     emails:
       - example@email.com
+	  - another@email.com
     after_error: true
     after_on_demand: false
 ```
 
 - `emails` is an array of email addresses to send notifications to
-- `after_error` is a boolean indicating whether to send a notification after a Vessel fails
+- `after_error` is a boolean indicating whether to send a notification after a Vessel after a Vessel completes with a [status](other-functions/status.md) of Errored
 - `after_on_demand` is a boolean indicating whether to send a notification after a Vessel is run on demand
 
 ---
 
-### `connections`
+#### `connections`
 
 `connections` is a top-level field that defines the graph of how the Vessels defined in the `vessels` section are connected.
 
-Each key in the object is a Vessel name or `_ref` value (if provided) representing the "from" Vessel and the value is an object that contains the "to" Vessel(s) and the connection type. See below for an example.
+Each key in the object is a Vessel name value (if provided) representing the "from" Vessel and the value is an object that contains the "to" Vessel(s) and the connection type. See below for an example.
 
 ```yaml
 connections:
@@ -241,7 +252,7 @@ See [Fleets](fleets.md) documentation for more information on connections.
 
 ---
 
-### `triggers`
+#### `triggers`
 
 Currently, the triggers supported in FAC are [Schedules](triggers/schedule-triggers.md). These are defined as an array of objects under the `schedules` field. See below for an example.
 
@@ -249,27 +260,27 @@ Currently, the triggers supported in FAC are [Schedules](triggers/schedule-trigg
 triggers:
   schedules:
     - how_often: HOURLY
-	  at: ':00'
+      at: ':00'
     - how_often: DAILY
-	  at: '2:00'
+      at: '2:00'
     - how_often: WEEKLY
-	  at: '3:00'
-	  when: WEDNESDAY
+      at: '3:00'
+      when: WEDNESDAY
     - how_often: MONTHLY
-	  at: '4:00'
-	  when: 1
+      at: '22:00'
+      when: 1
 ```
 
-In these examples there are four schedules set on the Fleet.
+In these examples there are four schedules set on the Fleet. Note that the times are represented in 24-hour format.
 
 1. running hourly on the hour
 2. running daily at 2:00 AM
 3. running weekly on Wednesday at 3:00 AM
-4. running monthly on the 1st at 4:00 AM
+4. running monthly on the 1st at 10:00 PM
 
 ---
 
-### `notifications`
+#### `notifications`
 
 This is the same object available under the Vessels `notifications` field. If configured, this will emit notifications based on actions of the full Fleet.
 
