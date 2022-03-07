@@ -84,7 +84,7 @@ source:
 - `language` may be one of `PYTHON`, `BASH`, or `NODE`
 - `name` is a string represented the file name containing the code
 - `content` is a string or multiline string containing the code
-- `file_to_run` is a string representing the file to for any Vessel type that requires it
+- `file_to_run` indicates the file to run that contains the Vessel code - for a `CODE` Vessel type, this is likely the same as `name` above
 
 </TabItem>
 <TabItem value="blueprint">
@@ -92,13 +92,16 @@ source:
 ```yaml
 source:
   type: BLUEPRINT
-  blueprint: "Send Email"
+  blueprint: "Email - Send Message"
   inputs:
-    target_email: example@email.com
+    EMAIL_SENDER_ADDRESS: example@email.com
+...
 ```
 
 - `blueprint` is the name of the Blueprint created separately from the Fleet - it must match the name exactly and may either be a [Library Blueprint](blueprint-library/blueprint-library-overview.md) or an [Organization Blueprint](blueprints.md)
-- `inputs` are a key-value pair representing the [input variable](inputs/blueprint-variables.md) name and value - if the Blueprint is configured so that the input is a "password" type, when this FAC is fetched back to the user it will show `SHIPYARD_HIDDEN` to obfuscate the value
+- `inputs` are a key-value pair representing the [input variable](inputs/blueprint-variables.md) name and value
+	- the "key" maps to the [Reference Name](inputs/blueprint-variables.md/#reference-name) for any Blueprint Input
+	- if the Blueprint is configured so that the input is a "password" type, when this FAC is fetched back to the user it will show `SHIPYARD_HIDDEN` to obfuscate the value
 
 </TabItem>
 <TabItem value="git">
@@ -243,7 +246,7 @@ connections:
     vessel_two: SUCCESS
   vessel_two:
     vessel_three: SUCCESS
-	vessel_four: ERRORED
+    vessel_four: ERRORED
 ```
 
 This example indicates that if `vessel_one` succeeds, it will invoke `vessel_two` and if `vessel_two` succeeds, it will invoke `vessel_three`. If `vessel_two` fails, it will invoke `vessel_four`.
@@ -284,6 +287,15 @@ In these examples there are four schedules set on the Fleet. Note that the times
 
 This is the same object available under the Vessels `notifications` field. If configured, this will emit notifications based on actions of the full Fleet.
 
+```yaml
+notifications:
+emails:
+	- example@email.com
+	- another@email.com
+after_error: true
+after_on_demand: false
+```
+
 ## Examples and Templates
 
 Below is a full example FAC file.
@@ -291,43 +303,43 @@ Below is a full example FAC file.
 ```yaml
 name: Example Fleet
 vessels:
- FirstVessel:
-  source:
-   type: CODE
-   language: PYTHON
-   file:
-    name: script.py
-    content: "print('hello, world!')"
-   file_to_run: script.py
-   arguments:
-   - '-example_arg': example_value
-   environment:
-   - name: example_name_a
-     value: example_value_a
-   - { name: example_name_b, value: example_value_b }
-  guardrails:
-   retry_count: 1
-   retry_wait: 5m
-   runtime_cutoff: 10m
-   exclude_exit_code_ranges:
-    - 2
-	- '3-5'
- SecondVessel:
-  source:
-   type: BLUEPRINT
-   blueprint: 'Example Blueprint'
-   inputs:
-    FIRST_INPUT: 'blueprint input value' 
+    FirstVessel:
+        source:
+            type: CODE
+            language: PYTHON
+            file:
+                name: script.py
+                content: "print('hello, world!')"
+            file_to_run: script.py
+            arguments:
+                - '-example_arg': example_value
+            environment:
+                - name: example_name_a
+                  value: example_value_a
+                - { name: example_name_b, value: example_value_b }
+        guardrails:
+            retry_count: 1
+            retry_wait: 5m
+            runtime_cutoff: 10m
+            exclude_exit_code_ranges:
+                - 2
+	            - '3-5'
+    SecondVessel:
+        source:
+            type: BLUEPRINT
+            blueprint: 'Example Blueprint'
+            inputs:
+                FIRST_INPUT: 'blueprint input value' 
 connections:
- FirstVessel:
-  SecondVessel: SUCCESS
+    FirstVessel:
+        SecondVessel: SUCCESS
 triggers:
- schedules:
- - how_often: HOURLY
-   at: ':25'
+    schedules:
+        - how_often: HOURLY
+          at: ':25'
 notifications:
- emails:
- - example@emailcom
- after_error: true
- after_on_demand: false
+    emails:
+        - example@emailcom
+    after_error: true
+    after_on_demand: false
 ```
