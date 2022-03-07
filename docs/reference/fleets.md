@@ -133,6 +133,8 @@ In order to access the YAML editor, ensure that your Fleet is saved.
 - **Edit** code in-line
 - **Click** "Save" to save your changes
 
+![YAML Editor](../.gitbook/assets/yaml-editor-example.png)
+
 ## Screenshots
 
 ![Fleets Overview](../.gitbook/assets/shipyard_2021_10_19_11_43_30.png)

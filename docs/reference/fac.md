@@ -251,6 +251,10 @@ connections:
 
 This example indicates that if `vessel_one` succeeds, it will invoke `vessel_two` and if `vessel_two` succeeds, it will invoke `vessel_three`. If `vessel_two` fails, it will invoke `vessel_four`.
 
+Below is what the YAML configuration above would look like in the graph editor.
+
+![FAC Fleet connections](../.gitbook/assets/fac-fleet-connections-example.png)
+
 See [Fleets](fleets.md) documentation for more information on connections.
 
 ---
