@@ -28,7 +28,7 @@ Below are the top-level fields that make up a FAC YAML file. Sub-objects are def
 
 ---
 
-#### `name`
+### name
 
 `name` is the string name of the Fleet. It is a **required** field.
 
@@ -36,7 +36,7 @@ If both a `name` and `_id` field are provided at the top-level of the file, Ship
 
 ---
 
-#### `_id`
+### _id
 
 `_id` is an optional top-level value representing the ID of an existing Fleet. If provivded, Shipyard will attempt to look it up and apply the FAC YAML as an update to the Fleet.
 
@@ -44,7 +44,7 @@ If the ID value does _not_ exist, Shipyard will attempt to create a new Fleet wi
 
 ---
 
-#### `vessels`
+### vessels
 
 `vessels` represents the [Vessels](vessels.md) that constitute the Fleet. Keys represent the name of the Vessel and must be unique within the Fleet object. Values are the Vessel definition represented as a YAML object which may be code-based, Blueprint-based, or Git-based.
 
@@ -126,18 +126,9 @@ source:
 </TabItem>
 </Tabs>
 
-In addition to these code source-specific objects, there the standard requirements configurations common to all Vessels are also available within the `source` field. _These are all optional_. See examples below.
+In addition to these code source-specific objects, there the standard requirements configurations common to all Vessels are also available within the `source` field. _These are all optional_. Any combination of these fields may be provided.
 
-<Tabs
-groupId="sourceRequirementTypes"
-defaultValue="arguments"
-values={[
-{label: 'Arguments', value: 'arguments'},
-{label: 'Environment Variables', value: 'environmentVariables'},
-{label: 'Packages', value: 'packages'},
-{label: 'System Packages', value: 'systemPackages'},
-]}>
-<TabItem value="arguments">
+`arguments`
 
 ```yaml
 source:
@@ -148,8 +139,7 @@ source:
 	- { key: example_key_2, value: example_value_2 }
 ```
 
-</TabItem>
-<TabItem value="environmentVariables">
+`environment`
 
 ```yaml
 source:
@@ -162,8 +152,7 @@ source:
 
 See [Environment Variables](requirements/environment-variables.md) for more information
 
-</TabItem>
-<TabItem value="packages">
+`packages`
 
 ```yaml
 source:
@@ -177,8 +166,8 @@ source:
 
 See [Packages](requirements/external-package-dependencies.md) for more information.
 
-</TabItem>
-<TabItem value="systemPackages">
+
+`system_packages`
 
 ```yaml
 source:
@@ -189,12 +178,9 @@ source:
 
 These are the same structure as `packages` above and are available for `PYTHON` and `NODE` Vessel types only. See [System Packages](requirements/system-package-dependencies.md) for more information
 
-</TabItem>
-</Tabs>
+Additionally, there are optional [Guardrail](settings/guardrails.md) and [Notification](settings/notifications.md) settings available for Vessel objects. These both live at the same level as the `source` field. See below for examples.
 
-Additionally, there are optional [Guardrail](settings/guardrails.md) and [Notification](settings/notifications.md) settings available for Vessel objects. See below for examples.
-
-**Guardrails**
+`guardrails`
 
 ```yaml
 vessel_name:
@@ -215,7 +201,7 @@ vessel_name:
 
 Formatting for `retry_wait` and `runtime_cutoff` follow a "#h#m#s" format for hours, minutes, and seconds. These values must be divisible by 5 minute increments.
 
-**Notifications**
+`notifications`
 
 ```yaml
 vessel_name:
@@ -234,7 +220,7 @@ vessel_name:
 
 ---
 
-#### `connections`
+### connections
 
 `connections` is a top-level field that defines the graph of how the Vessels defined in the `vessels` section are connected.
 
@@ -259,7 +245,7 @@ See [Fleets](fleets.md) documentation for more information on connections.
 
 ---
 
-#### `triggers`
+### triggers
 
 Currently, the triggers supported in FAC are [Schedules](triggers/schedule-triggers.md). These are defined as an array of objects under the `schedules` field. See below for an example.
 
@@ -287,7 +273,7 @@ In these examples there are four schedules set on the Fleet. Note that the times
 
 ---
 
-#### `notifications`
+### notifications
 
 This is the same object available under the Vessels `notifications` field. If configured, this will emit notifications based on actions of the full Fleet.
 
@@ -308,23 +294,39 @@ Below is a full example FAC file.
 name: Example Fleet
 vessels:
     FirstVessel:
-        source:
-            type: CODE
-            language: PYTHON
+        source: # source holds all Vessel-code related resources
+            type: CODE # (required) "CODE" or "BLUEPRINT" values allowed
+            language: PYTHON # (required) "PYTHON", "NODE", or "BASH" values allowed
+            # name and content define the file holding "CODE" Vessel code to execute
+            # multiline strings are supported using the YAML "|" syntax
             file:
-                name: script.py
-                content: "print('hello, world!')"
-            file_to_run: script.py
-            arguments:
-                - '-example_arg': example_value
+                name: script.py 
+                content: |
+                    import os
+                    import argparse
+
+                    parser = argparse.ArgumentParser()
+                    parser.add_argument('--example_arg')
+
+                    print('hello, world!')
+                    print(parser.parse_args())
+					print(os.environ['example_name_a'])
+            file_to_run: script.py # this generally maps to the name field above
+            # arguments are fed in as command line arguments to the script
+            # see the two formatting methods for the array below
+			arguments:
+                - '--example_arg': example_value
+                - { name: example_arg, value: example_value }
+            # environment represents environment variables made available to the script
+            # see the two formatting methods for the array below
             environment:
                 - name: example_name_a
                   value: example_value_a
                 - { name: example_name_b, value: example_value_b }
         guardrails:
-            retry_count: 1
-            retry_wait: 5m
-            runtime_cutoff: 10m
+            retry_count: 1 # (optional) max of 24
+            retry_wait: 5m # (optional) max of 1h and must be divisible by 5 minutes
+            runtime_cutoff: 10m # (optional) max of 4h and must be divisible by 5 minutes
             exclude_exit_code_ranges:
                 - 2
 	            - '3-5'
@@ -333,17 +335,37 @@ vessels:
             type: BLUEPRINT
             blueprint: 'Example Blueprint'
             inputs:
-                FIRST_INPUT: 'blueprint input value' 
+                FIRST_INPUT: 'blueprint input value'
+    ## Paste this code under 'vessels' and then connect it to other vessels under 'connections'
+    'ambitious_sail':
+        source:
+            type: BLUEPRINT
+            blueprint: 'Email - Send Message'
+            inputs: 
+                'EMAIL_SEND_METHOD': 'tls' # (required) determines how email is sent - TLS is recommended
+                'EMAIL_SMTP_HOST': # (required) server where your email will be sent from - usually formatted "smtp.domain.com"
+                'EMAIL_SMTP_PORT': # (required) port to send from - 587 is recommended with TLS
+                'EMAIL_USERNAME': # (required) username of the address to send from 
+                'EMAIL_PASSWORD': 'hlgyecgskabctidf' # (required) password for the "sender address"
+                'EMAIL_SENDER_ADDRESS': # (required) email address to send from
+                'EMAIL_SENDER_NAME': # (optional) name of the sender which defaults to the "sender email" if left blank
+                'EMAIL_TO': # (optional) emails to send to - formatted as a comma-separated list e.g. first@email.com,second@email.com
+                'EMAIL_CC': # (optional) emails to CC - formatted as a comma-separated list e.g. third@email.com,fourth@email.com
+                'EMAIL_BCC': # (optional) emails to CC - formatted as a comma-separated list e.g. fifth@email.com,sixth@email.com
+                'EMAIL_SUBJECT': # (optional) subject of the email
+                'EMAIL_MESSAGE': # (required) body of the email
+                'EMAIL_INCLUDE_SHIPYARD_FOOTER': true # (required) determines whether to send emails with links back to the originating Vessel or Fleet
 connections:
     FirstVessel:
-        SecondVessel: SUCCESS
+        SecondVessel: SUCCESS # (required) valid options are "SUCCESS", "ERRORED", or "COMPLETED"
 triggers:
     schedules:
         - how_often: HOURLY
           at: ':25'
 notifications:
     emails:
-        - example@emailcom
+	    # - example@email.com (remove when using this example)
+        # - (add your email here)
     after_error: true
     after_on_demand: false
 ```
