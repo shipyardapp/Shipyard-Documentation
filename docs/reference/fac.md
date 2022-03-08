@@ -290,6 +290,8 @@ after_on_demand: false
 
 Below is a full example FAC file.
 
+_One thing to note_: right now, comments will **not** be saved or rendered whenever the Fleet is saved and refreshed. This is a known issue and will be addressed in a future release.
+
 ```yaml
 name: Example Fleet
 vessels:
