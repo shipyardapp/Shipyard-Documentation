@@ -20,7 +20,6 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 ## Features On Deck
 
-- Fleet as Code Editor
 - Version Control
 - Bulk Edit/Create Fleets
 - Fleet Templates
@@ -32,6 +31,13 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - Hightouch
 - Slack (Embed Data into Message)
 - Email (Embed Data into Message)
+
+## 3/8/22
+
+### Enhancements
+
+- Add help messages to the logs pages with possible resolutions.
+- Make unique blueprint downloaded file name in a voyage.
 
 ## 2/28/2022
 
