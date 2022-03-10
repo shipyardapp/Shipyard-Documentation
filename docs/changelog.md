@@ -32,7 +32,13 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - Slack (Embed Data into Message)
 - Email (Embed Data into Message)
 
-## 3/8/22
+## 3/10/2022
+
+### Enhancements
+
+- Triggers have been removed from Project Vessels for more Fleet-centered workflow construction.
+
+## 3/8/2022
 
 ### Enhancements
 
