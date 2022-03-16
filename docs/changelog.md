@@ -34,10 +34,13 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 ## 3/16/2022
 
+### Features
+
+- Add YAML Fleet editor to the UI.
+
 ### Enhancements
 
 - Add error messages for incompatible Pandas versions.
-- Add beta tag to YAML Fleet editor.
 - Add a new Project modal to the Fleet builder flow.
 
 ### Bug Fixes
@@ -56,7 +59,7 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 ### Enhancements
 
 - Add help messages to the logs pages with possible resolutions.
-- Make unique blueprint downloaded file name in a voyage.
+- Make unique Blueprint downloaded file name in a voyage.
 
 ## 2/28/2022
 
