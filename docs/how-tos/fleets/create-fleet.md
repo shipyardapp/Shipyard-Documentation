@@ -19,16 +19,18 @@ If you want multiple [Vessels](../../reference/vessels.md) to work together for 
 
 ## Steps
 
-1. Follow our how to guide to build at least two Vessels, either [with code](../vessels/build-vessel-code.md) or [with a blueprint](../vessels/build-vessel-blueprint.md), that you want to be run as part of your Fleet.
-2. Within the project where you created these two Vessels, navigate to the Fleets tab.
-3. Hover over the **+ New** button in the top-right and click New Fleet.
-4. On the blank canvas below, click to add a Vessel and select your Vessel name from the dropdown.
-5. Repeat the previous step for your other Vessels.
-6. Hover over your Vessels until purple dots appear. Click and drag from the purple dots of one Vessel to another Vessel to create a path. Continue until all Vessels are connected together in the order you want.
-7. Click the paths to edit their conditions (if needed).
-8. Click **Next Step**.
-9. Give your Fleet a Name.
-10. Click **Save & Finish**.
+1. Click the **+ New Fleet** button on the left sidebar.
+2. Click the plus icon along the left side of the Fleet Builder sidebar.
+3. Click any option from the _Code Vessels_, _Library Blueprints_, _Org Blueprints_, or _Project Vessels_ sections
+4. Fill out required fields for the new Vessel in the edit pane that appears.
+5. Repeat steps 2-4 for as many Vessels as you want.
+6. Hover over the circle nodes on a Vessel then click and drag to another Vessel to connect them.
+7. Update the connection status by clicking on "Success" and changing to the desired condition if needed.
+8. Repeat steps 6-7 for all of the Vessels to ensure each Vessel has at least one connection to another Vessel in the Fleet.
+9. Click the cog icon along the left side of the Fleet Builder sidebar to select a project and update Fleet settings as desired.
+10. Click the **Save & Finish** button to save the new Fleet.
+
+For more information, read up on our [Visual Fleet Builder](../../reference/fleets.md#visual-editor) or our [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 :::tip success
 You've now successfully created a Fleet.

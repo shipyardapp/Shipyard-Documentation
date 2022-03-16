@@ -33,6 +33,7 @@ module.exports = {
 			"reference/blueprints",
 			"reference/vessels",
 			"reference/fleets",
+			"reference/fac",
 			{
 				"Code Tab": [
 					"reference/code/code-overview",

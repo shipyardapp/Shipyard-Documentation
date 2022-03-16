@@ -19,7 +19,7 @@ A Fleet is a collection of multiple Vessels working together to tackle one large
 
 Fleets can contain any number of Vessels and contain any different type of Vessels \(including a mixture of programming languages and Blueprints\). Vessels can be reused across multiple Fleets and can continue to run independently of the Fleets they belong to.
 
-All Vessels are connected together with paths which check for the final status of the Vessel they are attached to. While success is checked for by default, the following statuses can be checked for:
+Vessels are connected together with paths which check for the final status of the Vessel they are attached to. While success is checked for by default, the following statuses can be checked for:
 
 - **Success** \(exit code 0\)
 - **Errored** \(exit code 1-255\)
@@ -74,11 +74,11 @@ For information about how to use the visual editor, click the the question mark 
 When you click on the canvas, or on the sidebar with the `+` icon, the left pane will update to show Blueprints and Languages that you can add/create Vessels with.
 
 This section is split into 3 parts:
-- [Code](code/code-overview.md)
+- [Code Vessels](code/code-overview.md)
 
 - [Library Blueprints](blueprint-library/blueprint-library-overview.md)
 
-- [Organization Blueprints](blueprints.md)
+- [Org Blueprints](blueprints.md)
 
 Clicking the Blueprint/Language you want to use will result in a new Vessel being added to the canvas. Hovering over a Blueprint/Language will give you more information about how it can be used.
 
@@ -122,6 +122,18 @@ During the process of making edits, if any panel's contents are invalid, you wil
 
 All changes are "soft-saved" as you work in the Fleet Builder. You can make as many edits as you'd like and these changes will be continue to be shown in the UI as long as you don't leave the Fleet Builder tab or refresh the page. Once you're finished making all of your edits, you **must** click the Save button at the bottom to officially save all of your changes.
 
+### YAML Editor
+
+In addition to the graph UI, the Fleet Builder also has a YAML editor to directly edit the Fleet configuration.  The YAML definition follows the Shipyard [FAC specifications](fac.md) - see the documentation for additional information.
+
+In order to access the YAML editor, ensure that your Fleet is saved.
+
+- **Click** "Save" if the option is available
+- **Click** the text icon in the top right corner of the graph editor
+- **Edit** code in-line
+- **Click** "Save" to save your changes
+
+![YAML Editor](../.gitbook/assets/yaml-editor-example.png)
 
 ## Screenshots
 
@@ -133,7 +145,7 @@ All changes are "soft-saved" as you work in the Fleet Builder. You can make as m
 
 1. A Fleet cannot be set up with Vessels that live across multiple projects. You'll need to make sure that all of the relevant Vessels live within the same project.
 2. A Fleet cannot contain any paths that would create a loop.
-3. A Fleet must contain two or more Vessels that are all connected together by a path. If you want to have a set of Vessels that aren't connected to the larger group, you will need to create a different Fleet.
+3. If you want to have a set of Vessels that aren't connected to the larger group, you will need to create a different Fleet.
 4. You are currently unable to kick off a Fleet starting anywhere in the middle, although you can kick off individual Vessels at will. This prevention is in place because we delete data as soon as a Fleet has finished running, whether it was successful or not. If you ran a Vessel starting from the middle and it relied on data created upstream, it would be unable to find that data and immediately fail.
 
 ## Learn More

@@ -16,18 +16,15 @@ When running a [Fleet](../../reference/fleets.md), every Vessel that either gene
 
 ## Steps
 
-### Step 1 - Create a Vessel to List All Files
-1. Create a Bash Vessel.
-2. Name your file `list_files.sh`
-3. Ensure the code section is set to **Write** and paste in `ls -a -R`. This script lists all files in every directory.
-4. Complete the remaining steps and save your Vessel.
-   
-### Step 2 - Add the Vessel to Your Fleet
-4. Navigate to the Fleet you want to see files in.
-5. Add the Vessel to the Fleet and connect it to existing Vessels. We recommend connecting it towards the end of the Fleet. Location matters!
-6. Save the Fleet.
-7. Click **Run Now**
-8. Once the Fleet has finished running, navigate to the Log for the Bash Vessel you just added. You should see an output that shows all of the available files in the Fleet.
+1. Find the Fleet you want to see files in on the **Fleets** tab.
+2. Click on the **Fleet Builder** tab. 
+3. Click the plus icon along the left side of the Fleet Builder sidebar.
+4. Select the _Bash_ option from the _Code Vessels_ dropdown.
+5. In the sidebar, name your file `list_files.sh`.
+6. Ensure the code section is set to **Write** and paste in `ls -a -R`. This script lists all files in every directory.
+7. Add the Vessel to the Fleet and connect it to existing Vessels. We recommend connecting it towards the end of the Fleet. Location matters!
+8. Click **Run Now**.
+9. Once the Fleet has finished running, navigate to the Log for the Bash Vessel you just added. You should see an output that shows all of the available files in the Fleet.
 
 :::tip success
 You've successfully created a Vessel that lists all the files in your Fleet.
