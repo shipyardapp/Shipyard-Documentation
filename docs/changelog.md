@@ -32,6 +32,19 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - Slack (Embed Data into Message)
 - Email (Embed Data into Message)
 
+## 3/16/2022
+
+### Enhancements
+
+- Add error messages for incompatible Pandas versions.
+- Add beta tag to YAML Fleet editor.
+- Add a new Project modal to the Fleet builder flow.
+
+### Bug Fixes
+
+- Fixed issue where changing order of Blueprint Inputs would not prompt a save.
+- Fixed an issue where users could not click on Vessels after creating a Project.
+
 ## 3/10/2022
 
 ### Enhancements
