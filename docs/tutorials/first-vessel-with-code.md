@@ -34,7 +34,7 @@ For the sake of the this tutorial, we suggest starting off by building a Vessel 
 2. Click on either the *Playground* project or the *Testing* project. You'll be directed to the Vessels tab of this project.
 3.  Hover over the **+ New** button in the top-right corner of the screen and click **New Vessel**.
 
-![](../.gitbook/assets/shipyard_2021_03_16_16_23_03.png)
+![](../.gitbook/assets/shipyard_2022_03_21_14_45_10.png)
 
 4. A modal will pop up asking you how you would like to use to build your Vessel. On the left side of the modal, you'll see an option for a **With Code**. Click this option.
 
