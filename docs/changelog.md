@@ -32,6 +32,17 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - Slack (Embed Data into Message)
 - Email (Embed Data into Message)
 
+## 3/30/2022
+
+### Enhancements
+
+- Separate tabs in Logs for **Historical** and **Upcoming** Fleet Runs.
+
+### Bug Fixes
+
+- Disable **Run Now** on an edited, pre-saved Fleet
+- Prevent the modal to select a Project from appearing unnecessarily in the Fleet Settings
+
 ## 3/16/2022
 
 ### Features
