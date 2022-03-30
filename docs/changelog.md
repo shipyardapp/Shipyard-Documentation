@@ -34,13 +34,13 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 ## 3/30/2022
 
-### Features
+### Enhancements
 
 - Separate tabs in Logs for **Historical** and **Upcoming** Fleet Runs.
 
 ### Bug Fixes
 
-- Disable **Run Now** on a edited, pre-saved Fleet
+- Disable **Run Now** on an edited, pre-saved Fleet
 - Prevent the modal to select a Project from appearing unnecessarily in the Fleet Settings
 
 ## 3/16/2022

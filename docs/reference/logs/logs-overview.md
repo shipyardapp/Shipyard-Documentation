@@ -15,7 +15,7 @@ keywords:
 
 ## Definition
 
-Logs are a historical record of how a Vessel or Fleet ran in Shipyard at a specific point in time. They can be referenced by their UUIDv4 and contain metadata pertaining to one individual voyage or run.
+Logs include historical records of how a Vessel or Fleet ran in Shipyard at a specific point in time and upcoming scheduled runs. They can be referenced by their UUIDv4 and contain metadata pertaining to one individual voyage or run.
 
 A log is created under the following conditions:
 -  As soon as the **Run Now** button is clicked, resulting in an [On-Demand Trigger](../triggers/on-demand-triggers.md)
