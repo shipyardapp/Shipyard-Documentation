@@ -37,7 +37,6 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 ### Bug Fixes
 
 - Prevent the "double scheduling" error.
-- Ensure Bash Vessels stop running after the "Stop Voyage" action is performed.
 
 ## 3/30/2022
 
