@@ -32,6 +32,12 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - Slack (Embed Data into Message)
 - Email (Embed Data into Message)
 
+## 04/06/2022
+
+### Bug Fixes
+
+- Prevent the "double scheduling" error.
+
 ## 3/30/2022
 
 ### Enhancements
