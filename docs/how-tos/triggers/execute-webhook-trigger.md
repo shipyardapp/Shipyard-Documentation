@@ -14,7 +14,7 @@ import TabItem from '@theme/TabItem';
 # How to Execute a Webhook Trigger
 
 ## Overview
-Setting up a [Webhook Trigger](../../reference/triggers/webhook-triggers.md) allows you to programmatically run the Vessel or Fleet from an external service. Webhooks can be used by running a POST request against the provided webhook URL. This how to guide will walk you through the steps to execute a Webhook Trigger.
+Setting up a [Webhook Trigger](../../reference/triggers/webhook-triggers.md) allows you to programmatically run the Fleet from an external service. Webhooks can be used by running a POST request against the provided webhook URL. This how to guide will walk you through the steps to execute a Webhook Trigger.
 
 ## Steps
 
