@@ -32,6 +32,18 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - Slack (Embed Data into Message)
 - Email (Embed Data into Message)
 
+## 04/07/2022
+
+### Enhancements
+
+- Update *Delete Fleet* and *Go to Vessel* buttons to make their function more obvious.
+
+### Bug Fixes
+
+- Prevent new Fleets overwriting existing Fleets with the same name.
+- Fix selected Vessel not being highlighted in Fleet.
+- Fix error occurring when saving Fleets larger than five Vessels.
+
 ## 04/06/2022
 
 ### Bug Fixes
