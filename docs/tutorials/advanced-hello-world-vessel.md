@@ -26,7 +26,6 @@ By the end of the tutorial, you'll be able to:
 - Pass [environment variables](../reference/requirements/environment-variables.md) to your solution.
 - Install [package dependencies](../reference/requirements/external-package-dependencies.md) for your solution.
 - Reference [platform environment variables](../reference/shipyard-environment-variables.md).
-- Create a [schedule trigger](../reference/triggers/schedule-triggers.md).
 - Check [Logs](../reference/logs/logs-overview.md) to verify that a Vessel ran successfully.
 
 ## Setup
@@ -154,23 +153,7 @@ Once you're done, go ahead and click the **Next Step** button at the bottom of t
 We changed the default Guardrails because of the potential for the Cat Facts API to have connection issues.
 :::
 
-### Step 5 - Add Triggers
-
-![](../.gitbook/assets/shipyard_2021_03_16_17_39_37.png)
-
-1. Click **Add Triggers**
-2. Click **Add Schedule** or the **+** icon to make a new schedule.
-3. Under How Often select **Daily**.
-4. Select a time that's 15 minutes in the future from now.
-  
-  ![](../.gitbook/assets/shipyard_2021_03_16_17_42_16.png)
-5. Click **Save** at the bottom.
-
-:::caution
-The Vessel will be scheduled according to its project's timezone. If you didn't set the Playground project to your current time zone, it will not be scheduled to run 15 minutes in the future.
-:::
-
-### Step 6 - Running the Vessel On-Demand
+### Step 5 - Running the Vessel On-Demand
 
 1. Click **Run Now** at the top right of the page. This will schedule your Vessel to run immediately and redirect you to the [Vessel Log](../reference/logs/vessel-logs.md) page.
 
@@ -193,10 +176,10 @@ In the output, you'll see a total of 6 things.
 5. Shipyard prints out a cat fact.
 6. Shipyard prints out your Vessel Name, the time it ran, and a link to that specific run.
 
-### Step 7 - Viewing all Logs
+### Step 6 - Viewing all Logs
 
 1. Switch to the **Logs** tab at the top. This will redirect you back to all of the Logs for the Vessel you just made.
-2. You should see two logs. One that has been triggered *On Demand* from you clicking the **Run Now** button and another that has a trigger of *Scheduled* for the time you set in Step 5.
+2. You should see a log that has been triggered *On Demand* from you clicking the **Run Now** button.
 
 ![](../.gitbook/assets/shipyard_2021_03_17_10_37_27.png)
 

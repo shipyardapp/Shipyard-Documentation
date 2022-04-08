@@ -13,7 +13,7 @@ keywords:
 
 ## Overview
 
-If you want to automate a Vessel or Fleet to run at a specific time on a repeated schedule, you'll want to add a [Schedule Trigger](../../reference/triggers/schedule-triggers.md). These require answering 3 distinct questions.
+If you want to automate a Fleet to run at a specific time on a repeated schedule, you'll want to add a [Schedule Trigger](../../reference/triggers/schedule-triggers.md). These require answering 3 distinct questions.
 
 - **How often** do you want the element to run?
 - **When do** you want the element to run?
@@ -23,7 +23,7 @@ These 3 questions together define one distinct schedule. This how to guide will 
 
 ## Steps
 
-1. Navigate the specific Vessel or Fleet that you want to add schedules to.
+1. Navigate the specific Fleet that you want to add schedules to.
 2. Click the **Triggers** tab.
 3. Click the **+** icon underneath the Schedules header.
 4. Select an option for "How Often?". Your choices are hourly, daily, weekly, or monthly.

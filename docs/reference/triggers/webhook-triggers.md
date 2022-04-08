@@ -18,9 +18,9 @@ import TabItem from '@theme/TabItem';
 
 ## Definition
 
-On the Trigger tab for every Vessel and Fleet, you are provided with a section for creating and managing Webhook Triggers.
+On the Trigger tab for every Fleet, you are provided with a section for creating and managing Webhook Triggers.
 
-Webhook Triggers enable you to programmatically execute a Vessel or Fleet in Shipyard by running a POST request from any service. When you run the POST request, your Vessel or Fleet will be scheduled to run immediately.
+Webhook Triggers enable you to programmatically execute a Fleet in Shipyard by running a POST request from any service. When you run the POST request, your Fleet will be scheduled to run immediately.
 
 When a webhook has been created, you will be given 3 options:
 
@@ -34,33 +34,7 @@ No matter which language or service you use to run the POST request, you will se
 
 ### 201 - Created Successfully
 
-When your POST request returns a status code of 201, your entity has been successfully scheduled. Depending on which entity was run, you'll see a slightly different JSON response that includes multiple relevant Shipyard IDs.
-
-<Tabs
-groupId="element"
-defaultValue="vessel"
-values={[
-{label: 'Vessel', value: 'vessel'},
-{label: 'Fleet', value: 'fleet'},
-]}>
-<TabItem value="vessel">
-
-```javascript
-{
-   "data" : {
-      "org_id" : "2d52c575-989e-4642-bc63-c63408ee3fd8",
-      "voyaged_id" : "88fab44e-2fa4-4e98-b91c-d5116bebf40c",
-      "project_id" : "2caa1d4e-3054-40c1-82f1-50d7fa83fac2",
-      "vessel_id" : "bbc31c05-557a-448b-bdd1-6f595213ddcd"
-   },
-   "request" : {
-      "id" : "7ea6d061-e1d2-4b7d-9016-97af39a0f815"
-   }
-}
-```
-
-</TabItem>
-<TabItem value='fleet'>
+When your POST request returns a status code of 201, your entity has been successfully scheduled.
 
 ```javascript
 {
@@ -75,9 +49,6 @@ values={[
    }
 }
 ```
-
-</TabItem>
-</Tabs>
 
 With this status code, you'll receive back IDs for the element you ran, alongside a unique request ID.
 
@@ -102,9 +73,9 @@ When your POST request returns a status code of 400, your request has failed. Th
 
 ## Additional Notes
 
-1. Webhooks only allow you to immediately run a Vessel or a Fleet in a programmatic manner. They do not currently support the passing of variables.
-2. Each Vessel or Fleet can only have one webhook associated to it.
-3. Vessels or Fleets may not run instantaneously, as there is still time associated with entering a job queue, spinning up servers, and installing any [external package dependencies](../requirements/external-package-dependencies.md).
+1. Webhooks only allow you to immediately run a Fleet in a programmatic manner. They do not currently support the passing of variables.
+2. Each Fleet can only have one webhook associated to it.
+3. Fleets may not run instantaneously, as there is still time associated with entering a job queue, spinning up servers, and installing any [external package dependencies](../requirements/external-package-dependencies.md).
 
 ## Learn More
 - [How to Execute a Webhook Trigger](../../how-tos/triggers/execute-webhook-trigger.md)
