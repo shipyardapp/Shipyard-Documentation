@@ -13,9 +13,9 @@ keywords:
 
 ## Definition
 
-The Logs tab of a Fleet shows a list of each unique log of every Fleet Voyage or run that has occurred, alongside additional metadata and graphs around performance. By clicking on an ID or the Open action, you can view more information.
+The Logs tab of a Fleet shows two lists: historical and upcoming. The Historical tab shows a list of each unique log of every Fleet Voyage or run that has occurred, alongside additional metadata and graphs around performance. The Upcoming tab shows a list of scheduled runs for the Fleet. By clicking on an ID or the Open action, you can view more information.
 
-The graph on the Fleet Logs tab shows historical run durations trended out for all logs shown on the current page.
+The graph on the Fleet Logs Historical tab shows historical run durations trended out for all logs shown on the current page.
 
 ### Individual Fleet Log
 
@@ -51,7 +51,9 @@ Once the Fleet has finished running, the page will no longer automatically refre
 
 ## Screenshots
 
-![Fleet Logs Page](../../.gitbook/assets/shipyard_2021_09_10_11_56_40.png)
+![Fleet Logs Historical Page](../../.gitbook/assets/shipyard-2022-03-30-15-48-35.png)
+
+![Fleet Logs Upcoming Page](../../.gitbook/assets/shipyard-2022-03-30-15-35-37.png)
 
 ![Individual Fleet Log](../../.gitbook/assets/shipyard_2021_09_10_11_57_46.png)
 
