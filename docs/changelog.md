@@ -32,6 +32,12 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 - Slack (Embed Data into Message)
 - Email (Embed Data into Message)
 
+## 04/11/2022
+
+### Bug Fixes
+
+- Fix error occurring when editing a Project Blueprint Vessel.
+
 ## 04/07/2022
 
 ### Enhancements
