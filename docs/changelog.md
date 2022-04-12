@@ -20,17 +20,13 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 ## Features On Deck
 
-- Version Control
-- Bulk Edit/Create Fleets
-- Fleet Templates
+_All timing of feature development is estimated and subject to change_
 
-## Blueprints on Deck
-
-- Firebolt
-- Census
-- Hightouch
-- Slack (Embed Data into Message)
-- Email (Embed Data into Message)
+- Enhanced Developer Plan (April)
+- Version Control (May)
+- Paramaterized Webhooks (June)
+- API Access for Exporting Logs (July)
+- API Access for Bulk Editing/Creating Fleets (July)
 
 ## 04/11/2022
 
