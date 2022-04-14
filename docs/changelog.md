@@ -32,12 +32,12 @@ _All timing of feature development is estimated and subject to change_
 
 ### Enhancements
 
-- Add New Zealand to the billing options
-- Always show Vessel tools on the selected Vessel in the Fleet Builder
+- Add New Zealand to the billing options.
+- Always show Vessel tools on the selected Vessel in the Fleet Builder.
 
 ### Bug Fixes
 
-- Allow Vessels in Fleets to have the same name as Project Vessels
+- Allow Vessels in Fleets to have the same name as Project Vessels.
 
 ## 04/11/2022
 
