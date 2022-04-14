@@ -28,6 +28,17 @@ _All timing of feature development is estimated and subject to change_
 - API Access for Exporting Logs (July)
 - API Access for Bulk Editing/Creating Fleets (July)
 
+## 04/14/2022
+
+### Enhancements
+
+- Add New Zealand to the billing options
+- Always show Vessel tools on the selected Vessel in the Fleet Builder
+
+### Bug Fixes
+
+- Allow Vessels in Fleets to have the same name as Project Vessels
+
 ## 04/11/2022
 
 ### Bug Fixes
