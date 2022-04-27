@@ -12,17 +12,20 @@ keywords:
 
 ## How can I get access to Shipyard?
 
-If you want to start using Shipyard, you can [sign up here](https://app.shipyardapp.com/auth/signup?ref=docs-faq). Once you sign up, you'll start your free 14-day trial.
+If you want to start using Shipyard, you can [sign up for free](https://app.shipyardapp.com/auth/signup?ref=docs-faq). Once you sign up, you'll begin to use your Developer Plan.
 
-## How does the trial work?
-During your first 14 days of using Shipyard, you'll be able to test drive every feature on our platform available as if you were subscribed to our paid Team plan. After 14 days, if you have not subscribed to the platform, you will be downgraded to our free Developer plan. When your organization is downgraded, the following changes will occur:
+## How does the Developer Plan work?
+As part of our free Developer Plan, you get to quickly build data pipelines using our orchestration platform with only a few limitations:
 
-- Every month, you will have a total of 1 hour runtime that you can use. If you go over this amount, your organization will be unable to run any Vessels or Fleets until the next month cycle. You will, however, still have the ability to edit and create Vessels and Fleets.
-- Your organization will no longer have access to use [Webhooks](reference/triggers/webhook-triggers.md).
-- The default [runtime cutoff](reference/settings/guardrails.md#runtime-cutoff) state for every Vessel will be lowered from 4 hours to 1 hour.
-- Any existing users invited to your organization will have read-only access. Additionally, you will be unable to manage user permissions or invite new users to your organization.
+- Every month, you will have a total of 10 hours of runtime that you can use. If you go over this amount, your organization will be unable to run any Vessels or Fleets until the next month cycle. You will, however, still have the ability to edit and create Vessels and Fleets.
+- You will be only be able to access logs from the last 72 hours. These logs aren't deleted - you can always view more logs on our paid plans.
+- Your organization will be unable to use [Webhooks](reference/triggers/webhook-triggers.md).
+- Vessels will only be able to run for a maximum of 1 hour.
+- You will be unable to invite users to your organization.
 
-Your month cycle is determined based on the time when your organization first gets downgraded to the Developer Plan. You will receive emails to notify you of your organizations change to developer plan, when you've used too much runtime, and when your runtime is reset for the month.
+Your month cycle is determined based on when your organization is first created. You will receive emails to notify you when you've used too much runtime and when your runtime is reset for the month.
+
+For additional access, subscribe to one of our paid plans in your [billing](reference/admin/billing.md) portal. 
 
 ## How do I submit feedback or a feature request?
 

@@ -64,7 +64,7 @@ module.exports = {
 				},
 				{
 					to: "https://app.shipyardapp.com/auth/signup?ref=documentation",
-					label: "Start Free Trial",
+					label: "Get Started for Free",
 					position: "left",
 				},
 				// {
