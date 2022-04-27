@@ -23,7 +23,7 @@ As part of our free Developer Plan, you get to quickly build data pipelines usin
 - Vessels will only be able to run for a maximum of 1 hour.
 - You will be unable to invite users to your organization.
 
-Your month cycle is determined based on the time when your organization is first created. You will receive emails to notify you when you've used too much runtime and when your runtime is reset for the month.
+Your month cycle is determined based on when your organization is first created. You will receive emails to notify you when you've used too much runtime and when your runtime is reset for the month.
 
 For additional access, subscribe to one of our paid plans in your [billing](reference/admin/billing.md) portal. 
 
