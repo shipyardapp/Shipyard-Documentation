@@ -22,11 +22,18 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 _All timing of feature development is estimated and subject to change_
 
-- Enhanced Developer Plan (April)
 - Version Control (May)
 - Paramaterized Webhooks (June)
 - API Access for Exporting Logs (July)
 - API Access for Bulk Editing/Creating Fleets (July)
+
+## 04/27/2022
+
+### Enhancements
+- Enhanced Developer Plan. It now includes 10 hours of runtime each month.
+
+### Bug Fixes
+- Fix Voyages not always terminating when requested.
 
 ## 04/14/2022
 
