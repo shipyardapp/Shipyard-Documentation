@@ -25,15 +25,17 @@ To solve this issue, split out the queries you're trying to run into multiple Ve
 ## IP Not Allowed Access
 `IP ____ is not allowed to access Snowflake.`
 
-If your Vessel runs into this issue, you need to [whitelist Shipyard's IP addresses](snowflake-authorization.md#whitelisting-shipyard-ip-addresses]. This will ensure that our platform has permission to access your database.
+If your Vessel runs into this issue, you need to [whitelist Shipyard's IP addresses](snowflake-authorization.md#whitelisting-shipyard-ip-addresses). This will ensure that our platform has permission to access your database.
 
 ## Failed to Connect
 If your Vessel runs into this issue, there's a few likely scenarios:
 
 1. Your account name contains `snowflakecomputing.com` or `snowflakecomputing.com/` in it. You should only use the subdomain of the URL found _before_ this.
 
+**Examples: **
 - If your URL shows `xy12345.snowflakecomputing.com`, your account name would be `xy12345`
 - If your URL shows `xy12345.us-east-2.aws.snowflakecomputing.com`, your account name would be `xy12345.us-east-2.aws`
 
 See [this guide](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html) from Snowflake for more details.
+
 2. Your account name, username, or password contain typos. Double check your spelling to make sure everything is correct.
