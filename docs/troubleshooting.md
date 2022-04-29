@@ -28,7 +28,7 @@ If your script runs into this issue, there's a few likely scenarios:
 
 To test this out on your local machine, you can spin up a new virtual environment and pip install packages one by one. If one throws an error, that's your culprit.
 
-::: note
+:::note
 If pip runs into a single error during installation, it will fail to install all remaining packages listed, so the the package listed in the error may not be the one causing an issue.
 :::
 
