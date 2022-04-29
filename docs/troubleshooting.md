@@ -18,10 +18,19 @@ If your script runs into this issue, there's a few likely scenarios:
    1. Including a typo in the package name.
    2. Not formatting the version number properly.
    3. Listing a version that doesn't exist.
+   4. Listing a version that's not compatible with Python 3.7.
+3. When pulling code from our Git sync, you've simultaneously provided Python Packages in the UI and a `requirements.txt` file in your repository. You'll need to use one or the other. Providing both results in two separate `pip install` commands which can result in package installation issues.
+4. You've provided a package that has additional system package dependencies. For example:
+
+- `psycopg2` requires that you install `libpq-dev` as a system package. Alternatively, you can use `psycopg2-binary` to avoid the extra dependency.
+- `spark` requires that you install `default-jre` and `scala` as system packages.
+- `JayDeBeApi` requires that you install `default-jre` as a system package.
 
 To test this out on your local machine, you can spin up a new virtual environment and pip install packages one by one. If one throws an error, that's your culprit.
 
-Unfortunately, if pip runs into a single error during installation, it will fail to install all remaining packages listed.
+:::note
+If pip runs into a single error during installation, it will fail to install all remaining packages listed, so the the package listed in the error may not be the one causing an issue.
+:::
 
 ## No such file or directory
 
