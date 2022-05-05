@@ -27,6 +27,17 @@ _All timing of feature development is estimated and subject to change_
 - API Access for Exporting Logs (July)
 - API Access for Bulk Editing/Creating Fleets (July)
 
+## 05/05/2022
+
+### Enhancements
+- Update the code input on Code Vessels to have syntax highlighting.
+- Add a badge with a count of required fields that need completing to Blueprint Vessels.
+- Add more troubleshooting tips for when a Vessel errors.
+
+### Bug Fixes
+- Fix error occurring when Panda's version is not provided in a Python Vessel.
+- Fix issue with some jobs not scheduling appropriately.
+
 ## 04/27/2022
 
 ### Enhancements
