@@ -33,7 +33,7 @@ By the end of the tutorial, you'll be able to:
 ## Setup
 
 :::caution
-For the sake of the this tutorial, we suggest starting off by building a Vessel inside either the *Playground* Project or a *Testing* Project. You can follow [this tutorial](first-project.md) to set that up.
+For the sake of the this tutorial, we suggest starting off by building a *Testing* Project. You can follow [this tutorial](../getting-started/first-project.md) to set that up.
 :::
 
 Getting started with this walkthrough is fairly straight-forward.
