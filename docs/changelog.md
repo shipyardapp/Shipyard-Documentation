@@ -37,7 +37,7 @@ _All timing of feature development is estimated and subject to change_
 ![Photo of billable runtime added to Logs](./.gitbook/assets/change_log_release_20220512_1_2.png)
 
 ### Bug Fixes
-- Vessels were rebelling against their Blueprint parents and refusing to adopt the same guardrails. The Blueprints won out. Every Vessel built with a Blueprint (from this point forward) will be set to same guardrails as the original Blueprint. If you decide to change the Vessel guardrails anyway, that decisions will also be respected.
+- Vessels were rebelling against their Blueprint parents and refusing to adopt the same guardrails. The Blueprints won out. Every Vessel built with a Blueprint (from this point forward) will be set to same guardrails as the original Blueprint. If you decide to change the Vessel guardrails anyway, that decision will also be respected.
 - We did a little refactoring and miiight have left a variable undefined. That's been fixed, so next time you visit the YAML Editor it shouldn't keel over on you.
 - A few clients had trouble viewing their Usage charts but that's been cleared up.
 
