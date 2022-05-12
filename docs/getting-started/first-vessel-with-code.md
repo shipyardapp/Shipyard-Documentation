@@ -74,7 +74,7 @@ df['SPOSTHR'] = round(df['SPOSTMIN'] / 60,2)
 df.to_csv('disney_world_wait_times/slinky_dog_dash_with_hours.csv',index = None)
 ```
 
-Your set-up should look like this:
+Your setup should look like this:
 
   ![](../.gitbook/assets/shipyard_2022_05_05_14_18_16.png)
 </TabItem>
@@ -110,9 +110,9 @@ For this tutorial, we don't have any [environment variables](../reference/requir
 The version field can accept many types of arguments including: >, <, ==, >=. <=, etc. You can use learn more about how to define package versions in our documentation [here](../reference/requirements/external-package-dependencies.md)
 :::
 
-### Step 4 = Connect Vessels
+### Step 4 - Connect Vessels
 
-In the previous tutorial, we created two Vessels, **Download Slinky Dog Dash Ride Data** and **Send Slinky Dog Dash Data via Email**. This process allowed us to download the wait time information for the Disney World ride Slinky Dog Dash and email the CSV file to our email address. The Vessel that we created in this tutorial, **Add Time in Hours**, should fit in the middle of these two Vessels to add the column to have the wait time in terms of hours. 
+In the previous tutorial, we created two vessels: **Download Slinky Dog Dash Ride Data** and **Send Slinky Dog Dash Data via Email**. This process allowed us to download the wait time information for the Disney World ride Slinky Dog Dash and email the CSV file to our email address. The vessel that we created in this tutorial, **Add Time in Hours**, should fit in the middle of these two vessels to add the column to have the wait time in terms of hours. 
 
 1. We will need to break the connection that currently exists between the two original Vessels. To do that, hover your mouse over the word success, then a small x will appear. Click the x to delete the connection.
 
