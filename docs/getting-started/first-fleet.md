@@ -187,7 +187,7 @@ notifications:
     
     ![](../.gitbook/assets/shipyard_2022_05_04_14_02_56.png)
 
-2. Rename your fleet to Download File from Webpage and Email to User. Notice that the project is pre-selected from our actions in Step 1 above. 
+2. Rename your fleet to **Download File from Webpage and Email to User**. Notice that the project is pre-selected from our actions in Step 1 above. 
 3. After completing the settings, navigate back to **add vessel** by using the Fleet Builder sidebar.
 
 :::note
@@ -225,6 +225,7 @@ You've successfully created and verified a Fleet that shares files between two V
 
 Now that you've got the basics down, experiment on your own with a few changes to make sure you understand how Fleets allow Vessels to share files. Some suggestions to get you started:
 
-1. Create an intermediary Vessel that renames the file after **Download Slinky Dog Dash Ride Data** and before **Send Slinky Dog Dash Data via Email**. How will you need to adjust things to ensure that **Send Slinky Dog Dash Data via Email** run successfully? How about if you create the file in a directory? 
-2. Use the **Slack** blueprint called **Send Message** to send a message saying that the download the email process completed successfully.
-3. Create a Vessel using a Blueprint from the [Blueprint Library](../reference/blueprint-library/blueprint-library-overview.md) that uploads the file to your storage solution of choice \(S3, Google Cloud Storage, Dropbox, etc.\) at the same time the email delivers. Can you successfully get the file delivered to your own storage solution?
+1. Create an additional Vessel that downloads the [ride times](https://touringplans.com/walt-disney-world/crowd-calendar#DataSets) from a different ride. How will you need to set this up to ensure both files get uploaded in the same email?
+2. Create an intermediary Vessel that renames the file after **Download Slinky Dog Dash Ride Data** and before **Send Slinky Dog Dash Data via Email**. How will you need to adjust things to ensure that **Send Slinky Dog Dash Data via Email** run successfully? How about if you create the file in a directory? 
+3. Use the **Slack** blueprint called **Send Message** to send a message saying that the download the email process completed successfully.
+4. Create a Vessel using a Blueprint from the [Blueprint Library](../reference/blueprint-library/blueprint-library-overview.md) that uploads the file to your storage solution of choice \(S3, Google Cloud Storage, Dropbox, etc.\) at the same time the email delivers. Can you successfully get the file delivered to your own storage solution?

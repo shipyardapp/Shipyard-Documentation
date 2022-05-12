@@ -71,7 +71,7 @@ df['SPOSTHR'] = round(df['SPOSTMIN'] / 60,2)
 df.to_csv('disney_world_wait_times/slinky_dog_dash_with_hours.csv',index = None)
 ```
 
-Your set-up should look like this:
+Your setup should look like this:
 
   ![](../.gitbook/assets/shipyard_2022_05_05_14_18_16.png)
 </TabItem>
@@ -107,9 +107,9 @@ For this tutorial, we don't have any [environment variables](../reference/requir
 The version field can accept three types of arguments: >, <, and ==. You can use these three options to be as specific as you want to specific package version
 :::
 
-### Step 4 = Connect Vessels
+### Step 4 - Connect Vessels
 
-In the previous tutorial, we created two vessels, **Download Slinky Dog Dash Ride Data** and **Send Slinky Dog Dash Data via Email**. This process allowed us to download the wait time information for the Disney World ride Slinky Dog Dash and email the CSV file to our email address. The vessel that we created in this tutorial, **Add Time in Hours**, should fit in the middle of these two vessels to add the column to have the wait time in terms of hours. 
+In the previous tutorial, we created two vessels: **Download Slinky Dog Dash Ride Data** and **Send Slinky Dog Dash Data via Email**. This process allowed us to download the wait time information for the Disney World ride Slinky Dog Dash and email the CSV file to our email address. The vessel that we created in this tutorial, **Add Time in Hours**, should fit in the middle of these two vessels to add the column to have the wait time in terms of hours. 
 
 1. We will need to break the connection that currently exists between the two original vessels. To do that, hover your mouse over the word success, then a small x will appear. Click the x to delete the connection.
 
@@ -127,7 +127,7 @@ In the previous tutorial, we created two vessels, **Download Slinky Dog Dash Rid
 
 In the top right corner of the fleet builder, click the **Run Now** button. This will schedule your Vessel to run immediately and redirect you to [Vessel Log](../reference/logs/vessel-logs.md) page.
 
-### Step 7 - Checking the Logs
+### Step 6 - Checking the Logs
 
 You should have been redirected to the following page that shows you all of the details about the specific Log you clicked.
 
