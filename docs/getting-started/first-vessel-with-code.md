@@ -16,7 +16,7 @@ import TabItem from '@theme/TabItem';
 
 ## Overview
 
-In this tutorial, you'll walk through the steps required to set up a vessel using Pandas to transform data that exists in Shipyard. By the end of the tutorial, you will know how to:
+In this tutorial, you'll walk through the steps required to set up a Vessel using Pandas to transform data that exists in Shipyard. By the end of the tutorial, you will know how to:
 
 - Set up a Vessel with Code.
 - Write a script directly in the UI.
@@ -25,7 +25,7 @@ In this tutorial, you'll walk through the steps required to set up a vessel usin
 - Connect Vessels together as part of a Fleet
 
 :::caution
-For the sake of the this tutorial, we suggest starting off by building the fleet that is built using [**this tutorial** ](first-fleet.md).
+For the sake of the this tutorial, we suggest starting off by building the Fleet that is built using [**this tutorial** ](first-fleet.md).
 :::
 ## Steps
 
@@ -35,22 +35,25 @@ For the sake of the this tutorial, we suggest starting off by building the fleet
 
   ![](../.gitbook/assets/shipyard_2022_05_05_09_41_15.png)
 2. Click on the *Testing* project.
-3. Find the **Download File from Webpage and Email to User** fleet and click the **Edit** button under Actions.
+3. Find the **Download File from Webpage and Email to User** Fleet and click the **Edit** button under Actions.
    
   ![](../.gitbook/assets/shipyard_2022_05_05_09_44_43.png)
 
 :::tip success
-You are now ready to add a code vessel to your existing fleet
+You are now ready to add a code Vessel to your existing Fleet
 :::
 
 ### Step 2 - Provide your Code
 
-1. Using the Fleet Builder sidebar, click on **Python**. This will automatically add a new vessel to your fleet.
+1. Using the Fleet Builder sidebar, click on **Python**. This will automatically add a new Vessel to your Fleet.
 
   ![](../.gitbook/assets/shipyard_2022_05_05_09_55_27.png)
 
-2. Name your vessel **Add Time in Hours** under Vessel Name.
-3. Shipyard allows you to provide code to run in the service in three different ways: write the code in service, upload the code as a file, or get the code from a Github repository. This tutorial will focus on writing the code in service and uploading the code as a file. Github integration is covered in the documentation. 
+2. Name your Vessel **Add Time in Hours** under Vessel Name.
+
+:::note
+Shipyard allows you to provide code to run in the UI in three different ways: write the code in service, upload the code as a file, or get the code from a Github repository. This tutorial will focus on writing the code in service and uploading the code as a file. Github integration is covered in the documentation. 
+:::
 
 <Tabs
 groupId="code-inputs"
@@ -92,11 +95,11 @@ After upload, your setup should look like this:
 </TabItem>
 </Tabs>
 
-### Step 3 - Requirements
+### Step 3 - Install Python Packages
 
-For this tutorial, we don't have any [environment variables](../reference/requirements/environment-variables.md) to set up or [external package dependencies](../reference/requirements/external-package-dependencies.md) to install. However, we do need to install Pandas for our code to run. 
+For this tutorial, we don't have any [environment variables](../reference/requirements/environment-variables.md) to set up. However, we do need to install Pandas for our code to run. 
 
-1. Find the **Python Packages** drop down in your vessel's settings and click on it to show the package installer.
+1. Find the **Python Packages** panel in your Vessel's settings and click on it to show the package installer.
 2. Click the **Add Python Package** button.
 3. In the **Name** field, enter Pandas.
 4. In the **Version** field, enter >1.0.0
@@ -104,14 +107,14 @@ For this tutorial, we don't have any [environment variables](../reference/requir
 ![](../.gitbook/assets/shipyard_2022_05_05_14_40_16.png)
 
 :::info
-The version field can accept three types of arguments: >, <, and ==. You can use these three options to be as specific as you want to specific package version
+The version field can accept many types of arguments including: >, <, ==, >=. <=, etc. You can use learn more about how to define package versions in our documentation [here](../reference/requirements/external-package-dependencies.md)
 :::
 
 ### Step 4 = Connect Vessels
 
-In the previous tutorial, we created two vessels, **Download Slinky Dog Dash Ride Data** and **Send Slinky Dog Dash Data via Email**. This process allowed us to download the wait time information for the Disney World ride Slinky Dog Dash and email the CSV file to our email address. The vessel that we created in this tutorial, **Add Time in Hours**, should fit in the middle of these two vessels to add the column to have the wait time in terms of hours. 
+In the previous tutorial, we created two Vessels, **Download Slinky Dog Dash Ride Data** and **Send Slinky Dog Dash Data via Email**. This process allowed us to download the wait time information for the Disney World ride Slinky Dog Dash and email the CSV file to our email address. The Vessel that we created in this tutorial, **Add Time in Hours**, should fit in the middle of these two Vessels to add the column to have the wait time in terms of hours. 
 
-1. We will need to break the connection that currently exists between the two original vessels. To do that, hover your mouse over the word success, then a small x will appear. Click the x to delete the connection.
+1. We will need to break the connection that currently exists between the two original Vessels. To do that, hover your mouse over the word success, then a small x will appear. Click the x to delete the connection.
 
   ![](../.gitbook/assets/delete_vessel_connection.gif)
 
@@ -125,19 +128,19 @@ In the previous tutorial, we created two vessels, **Download Slinky Dog Dash Rid
 
 ### Step 5 - Running the Vessel
 
-In the top right corner of the fleet builder, click the **Run Now** button. This will schedule your Vessel to run immediately and redirect you to [Vessel Log](../reference/logs/vessel-logs.md) page.
+In the top right corner of the Fleet builder, click the **Run Now** button. This will schedule your Fleet to run immediately and redirect you to [Fleet Log](../reference/logs/fleet-logs.md) page.
 
-### Step 7 - Checking the Logs
+### Step 6 - Checking the Logs
 
 You should have been redirected to the following page that shows you all of the details about the specific Log you clicked.
 
 ![](../.gitbook/assets/shipyard_2022_05_05_14_57_30.png)
 
-After your fleet has completed running, you should have received a new email with another CSV. If you open that CSV, you are able to see the new **SPOSTHR** column that we created with our code vessel. 
+After your Fleet has completed running, you should have received a new email with another CSV. If you open that CSV, you are able to see the new **SPOSTHR** column that we created with our code Vessel. 
 
   ![](../.gitbook/assets/shipyard_2022_05_05_15_01_20.png)
 
 :::tip success
-You've successfully created and run a Fleet with vessels from the Shipyard library and code!
+You've successfully created and run a Fleet with Vessels from the Shipyard library and code!
 :::
 

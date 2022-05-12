@@ -12,7 +12,7 @@ keywords:
 
 ## Overview
 
-For the sake of all of our tutorials, we suggest creating a new project specifically for testing. This will serve as an area for you to freely explore the functionality of Shipyard without the fear of affecting anything else in the platform.
+For the sake of all of our tutorials, we suggest creating a new Project specifically for testing. This will serve as an area for you to freely explore the functionality of Shipyard without the fear of affecting anything else in the platform.
 
 ## Creating your Testing Project
 
@@ -20,11 +20,11 @@ For the sake of all of our tutorials, we suggest creating a new project specific
 
    ![](../.gitbook/assets/shipyard_2022_05_03_10_22_24.png)
 
-2. A prompt will appear asking you to select a project. Click on the dropdown menu and select **Create a new project**
+2. A prompt will appear asking you to select a Project. Click on the dropdown menu and select **Create a new Project**
 
    ![](../.gitbook/assets/shipyard_2022_05_04_13_46_11.png)
 
-3. Give your project a name of *Testing*.
+3. Give your Project a name of *Testing*.
 4. In the timezone field, start typing `Central` .
 5. Select the *US/Central* time zone by clicking the name.
 
@@ -39,10 +39,10 @@ Your setup should look like this:
 6. Click the **Create Project** button in the bottom-right corner of the prompt.
 
 :::tip success
-You've now successfully created your first project named Testing.
+You've now successfully created your first Project named Testing.
 :::
 
-After creating a project, you'll be able to select the **Testing** project from the Select a Project prompt. After selecting the Testing project, you will be taken into the fleet builder to begin building your first fleet in the Testing Project.
+After creating a Project, you'll be able to select the **Testing** Project from the Select a Project prompt. After selecting the Testing Project, you will be taken into the Fleet builder to begin building your first Fleet in the Testing Project.
 
 ![](../.gitbook/assets/shipyard_2022_05_04_13_49_53.png)
 

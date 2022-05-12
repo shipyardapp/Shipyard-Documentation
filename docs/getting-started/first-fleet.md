@@ -28,10 +28,15 @@ By the end of the tutorial, you will know how to:
 * Connect Vessels together as part of a Fleet
 * Use a Fleet to access files created upstream
 
+:::caution
+We recommend you create a **Training** project before beginning this tutorial. The steps to create that project are located in [here](first-project.md).
+:::
+## Steps
+
 ## Step 1 - Accessing the Fleet Builder
 
-1. Using the sidebar, click on **New Fleet** to begin building your new fleet. This will bring up a prompt that allows you to choose what project you want the fleet to go into. 
-2. Using the drop down selector, choose the **Testing** project that we created in the previous tutorial. If you have not created the Testing project, we recommend you create that project for the remaining steps. The steps to create that project are located in [this tutorial](first-project.md). After clicking select project, you will be able to see the Fleet Builder.
+1. Using the sidebar, click on **New Fleet** to begin building your new Fleet. This will bring up a prompt that allows you to choose what project you want the Fleet to go into. 
+2. Using the drop down selector, choose the **Testing** project that we created in the previous tutorial. After clicking select project, you will be able to see the Fleet Builder.
 
     ![](../.gitbook/assets/shipyard_2022_05_04_13_59_56.png)
 
@@ -41,7 +46,7 @@ By the end of the tutorial, you will know how to:
 There are two options for creating a new Fleet: **Graph** (a visual editor) and **YAML** (a text editor).
 
 <Tabs
-groupId="fleetCreateTypes"
+groupId="FleetCreateTypes"
 defaultValue="graph"
 values={[
 {label: 'Graph', value: 'graph'},
@@ -49,13 +54,13 @@ values={[
 ]}>
 <TabItem value="graph">
 
-### Build HTTP Download File Vessel
+### Build Vessel to Download File via HTTP
 
-1. Navigate down to the **HTTP** dropdown and click it. It will expand the blueprints that are available to use for HTTP. 
+1. Navigate down to the **HTTP** dropdown and click it. It will expand the Blueprints that are available to use for HTTP. 
    
    ![](../.gitbook/assets/shipyard_2022_05_04_16_35_45.png)
 
-2. Double click the vessel named **Download File from URL**. This creates a New Vessel and immediately opens the edit pane for that Vessel on the left side of the screen.
+2. Click the Vessel named **Download File from URL**. This creates a New Vessel and immediately opens the edit pane for that Vessel on the left side of the screen.
 
     ![](../.gitbook/assets/shipyard_2022_05_04_14_13_02.png)
 
@@ -64,7 +69,7 @@ values={[
 5. In the **File Name** field type `slinky_dog_dash.csv`
 6. In the **Folder Name** field type `disney_world_wait_times`
 
-### Build Send Email Message with File Vessel
+### Build Vessel to Email a File
 
 1.  Click the `+` icon in the sidebar to add another Vessel to the Fleet.
 2.  Search for **email** using the search bar at the top. Click on **Send Message with File**
@@ -97,12 +102,16 @@ values={[
 
 ![Connect Vessels](../gitbook/assets/../../.gitbook/assets/connecting_vessels.gif)
 
+:::tip
+It is possible that the Vessels are stacked on top of each other or placed in a spot that is not visually pleasing. It is possible to drag Vessels and place them wherever you would like by holding your left mouse click button on the Vessel and dragging it wherever you would like.
+
+![](../.gitbook/assets/moving_vessels_around.gif)
+:::
+
+
 :::note
 This will connect the two Vessels, allowing one to be triggered by the other. Additionally, this allows files created upstream (Download Slinky Dog Dash Ride Data) to be accessed by the Vessel that lives downstream (Send Slinky Dog Dash Data via Email).
 :::
-
-6.  Click the **Save** button at the bottom.
-
 
 </TabItem>
 <TabItem value="yaml">
@@ -114,11 +123,9 @@ This will connect the two Vessels, allowing one to be triggered by the other. Ad
 2. Replace the code in the editor with the YAML code below.
 
 ```yaml
-name: Download File from Webpage and Email to User
-_id: 38bc6d23-3c0d-41cc-a300-6f77a484f42b
+name: Slippery Poopdeck
 vessels:
     Download Slinky Dog Dash Ride Data:
-        _id: 0624d71f-037e-43ca-be6d-3d5dd114fd3e
         source:
             blueprint: HTTP - Download File from URL
             inputs:
@@ -132,11 +139,10 @@ vessels:
             runtime_cutoff: 4h0m0s
         notifications:
             emails:
-                - steven.johnson@shipyardapp.com
+                - tutorials@shipyardapp.com
             after_error: true
             after_on_demand: false
     Send Slinky Dog Dash Data via Email:
-        _id: 5d58f255-fac1-4e23-bccf-97a6c7a503ba
         source:
             blueprint: Email - Send Message with File
             inputs:
@@ -154,7 +160,7 @@ vessels:
                 EMAIL_SOURCE_FILE_NAME_MATCH_TYPE: exact_match
                 EMAIL_SOURCE_FOLDER_NAME: disney_world_wait_times
                 EMAIL_SUBJECT: Slinky Dog Dash Wait Times
-                EMAIL_TO: steven.johnson@shipyardapp.com
+                EMAIL_TO: tutorials@shipyardapp.com
                 EMAIL_USERNAME: shipyardapptest@gmail.com
             type: BLUEPRINT
         guardrails:
@@ -163,7 +169,7 @@ vessels:
             runtime_cutoff: 4h0m0s
         notifications:
             emails:
-                - steven.johnson@shipyardapp.com
+                - tutorials@shipyardapp.com
             after_error: true
             after_on_demand: false
 connections:
@@ -171,7 +177,7 @@ connections:
         Send Slinky Dog Dash Data via Email: SUCCESS
 notifications:
     emails:
-        - steven.johnson@shipyardapp.com
+        - tutorials@shipyardapp.com
     after_error: true
     after_on_demand: false
 ```
@@ -182,26 +188,51 @@ notifications:
 </Tabs>
 
 ## Step 3 - Setting Up the Fleet
+<Tabs
+groupId="FleetCreateTypes"
+defaultValue="graph"
+values={[
+{label: 'Graph', value: 'graph'},
+{label: 'YAML', value: 'yaml'},
+]}>
+<TabItem value="graph">
 
-1. Using the fleet builder sidebar, click the **gear** icon to navigate to the **fleet settings**.
+1. Using the Fleet builder sidebar, click the **gear** icon to navigate to the **Fleet settings**.
     
-    ![](../.gitbook/assets/shipyard_2022_05_04_14_02_56.png)
+    ![](../.gitbook/assets/shipyard_2022_05_12_11_04_46.png)
 
-2. Rename your fleet to Download File from Webpage and Email to User. Notice that the project is pre-selected from our actions in Step 1 above. 
-3. After completing the settings, navigate back to **add vessel** by using the Fleet Builder sidebar.
+2. In the **Vessel Name** field, remove the automatically generated name and type **Disney World Ride Wait Alerts**. Notice that the project is pre-selected from our actions in Step 1 above. 
+3. After completing the settings, click the **Save & Finish** button on the bottom-right of your screen. This will redirect you to the **Success** page.
+
+![](../.gitbook/assets/shipyard_2022_05_12_10_45_15.png)
 
 :::note
 By default, every Fleet and every Vessel you create will send error notifications to your email. You can always update this as needed.
 :::
 
 :::caution
-After a vessel is added to a fleet and saved, the project **cannot** be changed. Always make sure that the proper project is selected when creating a new fleet
+After a Vessel is added to a Fleet and saved, the project **cannot** be changed. Always make sure that the proper project is selected when creating a new Fleet
 :::
 
+</TabItem>
+<TabItem value="yaml">
+
+1. Using the YAML Editor, scroll back up to the top of the editor. Your page should look like this: 
+
+![](../.gitbook/assets/shipyard_2022_05_12_11_50_03.png)
+
+2. The first line of the YAML is the name field. This field defines the name of the fleet. 
+3. Remove the automatically generated name and type **Disney World Ride Wait Alerts**.
+4. After changing the name, click the **Save & Finish** button on the bottom-right of your screen. This will redirect you to the **Success** page.
+
+![](../.gitbook/assets/shipyard_2022_05_12_10_45_15.png)
+
+</TabItem>
+</Tabs>
 
 ## Step 4 - Running the Fleet On Demand
 
-1. Click **Run Now** on the top-right corner of the Fleet Builder.
+1. On the success page, click the **Run Your Fleet** button.
 
 2. You'll be redirected to a Fleet Log page as your Fleet runs. This page will refresh automatically as the Fleet runs. Wait until you see both Vessels as green bars, indicating that they completed successfully.
 
@@ -221,10 +252,16 @@ After a vessel is added to a fleet and saved, the project **cannot** be changed.
 You've successfully created and verified a Fleet that shares files between two Vessels built with a Blueprint!
 :::
 
+:::note
+A Fleet can always be ran by clicking the **Run Now** button on the top right corner of the Fleet builder. 
+:::
+
+
+
 ## Further Experimentation
 
 Now that you've got the basics down, experiment on your own with a few changes to make sure you understand how Fleets allow Vessels to share files. Some suggestions to get you started:
 
 1. Create an intermediary Vessel that renames the file after **Download Slinky Dog Dash Ride Data** and before **Send Slinky Dog Dash Data via Email**. How will you need to adjust things to ensure that **Send Slinky Dog Dash Data via Email** run successfully? How about if you create the file in a directory? 
-2. Use the **Slack** blueprint called **Send Message** to send a message saying that the download the email process completed successfully.
+2. Use the **Slack** Blueprint called **Send Message** to send a message saying that the download the email process completed successfully.
 3. Create a Vessel using a Blueprint from the [Blueprint Library](../reference/blueprint-library/blueprint-library-overview.md) that uploads the file to your storage solution of choice \(S3, Google Cloud Storage, Dropbox, etc.\) at the same time the email delivers. Can you successfully get the file delivered to your own storage solution?
