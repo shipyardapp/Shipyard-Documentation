@@ -31,7 +31,10 @@ _All timing of feature development is estimated and subject to change_
 
 ### Enhancements
 - Hit a "Panel Invalid" error while building a Fleet? We've all been there. But now the message will be a bit more helpful and the invalid Vessel and panels will be highlighted in red. 
+![Photo of enhanced error descriptions and highlighting added to Fleet Builder](./.gitbook/assets/change_log_release_20220512_1_1.png)
+
 - Ever find it weird that you can see billable runtime on Fleet Run and Voyage tables but not on the actual log? Yeah, we did too. Now you can.
+![Photo of billable runtime added to Logs](./.gitbook/assets/change_log_release_20220512_1_2.png)
 
 ### Bug Fixes
 - Vessels were rebelling against their Blueprint parents and refusing to adopt the same guardrails. The Blueprints won out. Every Vessel built with a Blueprint (from this point forward) will be set to same guardrails as the original Blueprint. If you decide to change the Vessel guardrails anyway, the Blueprints will respect your decision.
