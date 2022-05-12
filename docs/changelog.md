@@ -34,8 +34,8 @@ _All timing of feature development is estimated and subject to change_
 - Ever find it weird that you can see billable runtime on Fleet Run and Voyage tables but not on the actual log? Yeah, we did too. Now you can.
 
 ### Bug Fixes
-- Vessels were rebelling against their Blueprint parents and refusing to adopt the same guardrails. The Blueprints won out. Every Vessel built with a Blueprint (from this point forward) will be set to same guardrails as the original Blueprint. If you decide to change the Vessel guardrails anyway, the Blueprints will respect your decision.
-- We did a little refactoring and miiight have left a variable undefined. That's been fixed it, so next time you visit the YAML Editor it shouldn't keel over on you.
+- Vessels were rebelling against their Blueprint parents and refusing to adopt the same guardrails. The Blueprints won out. Every Vessel built with a Blueprint (from this point forward) will be set to same guardrails as the original Blueprint. If you decide to change the Vessel guardrails anyway, that decisions will also be respected.
+- We did a little refactoring and miiight have left a variable undefined. That's been fixed, so next time you visit the YAML Editor it shouldn't keel over on you.
 - A few clients had trouble viewing their Usage charts but that's been cleared up.
 
 ## 05/05/2022
