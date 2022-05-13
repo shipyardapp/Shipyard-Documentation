@@ -33,7 +33,7 @@ We recommend you create a **Training** project before beginning this tutorial. T
 :::
 ## Steps
 
-## Step 1 - Accessing the Fleet Builder
+### Step 1 - Accessing the Fleet Builder
 
 1. Using the sidebar, click on **New Fleet** to begin building your new Fleet. This will bring up a prompt that allows you to choose what project you want the Fleet to go into. 
 2. Using the drop down selector, choose the **Testing** project that we created in the previous tutorial. After clicking select project, you will be able to see the Fleet Builder.
@@ -41,11 +41,11 @@ We recommend you create a **Training** project before beginning this tutorial. T
     ![](../.gitbook/assets/shipyard_2022_05_04_13_59_56.png)
 
 
-## Step 2 - Building the Fleet
+### Step 2 - Building the Fleet
 
 There are two options for creating a new Fleet: **Graph** (a visual editor) and **YAML** (a text editor). This tutorial will focus on using the **Graph** method. The YAML Editor will be addressed in a different set of tutorials.
 
-### Build Vessel to Download File via HTTP
+#### Build Vessel to Download File via HTTP
 
 1. Navigate down to the **HTTP** dropdown and click it. It will expand the Blueprints that are available to use for HTTP. 
    
@@ -60,7 +60,7 @@ There are two options for creating a new Fleet: **Graph** (a visual editor) and 
 5. In the **File Name** field type `slinky_dog_dash.csv`
 6. In the **Folder Name** field type `disney_world_wait_times`
 
-### Build Vessel to Email a File
+#### Build Vessel to Email a File
 
 1.  Click the `+` icon in the sidebar to add another Vessel to the Fleet.
 2.  Search for **email** using the search bar at the top. Click on **Send Message with File**
@@ -94,7 +94,7 @@ There are two options for creating a new Fleet: **Graph** (a visual editor) and 
 ![Connect Vessels](../gitbook/assets/../../.gitbook/assets/connecting_vessels.gif)
 
 :::tip
-It is possible that the Vessels are stacked on top of each other or placed in a spot that is not visually pleasing. It is possible to drag Vessels and place them wherever you would like by holding your left mouse click button on the Vessel and dragging it wherever you would like.
+It is possible that the Vessels are stacked on top of each other or placed in a spot that is not visually pleasing. You can always drag Vessels by holding your left mouse click button on the Vessel and moving it wherever you would like.
 
 ![](../.gitbook/assets/moving_vessels_around.gif)
 :::
@@ -106,14 +106,18 @@ This will connect the two Vessels, allowing one to be triggered by the other. Ad
 
 
 
-## Step 3 - Setting Up the Fleet
+### Step 3 - Adjusting Fleet Settings
 
 1. Using the Fleet builder sidebar, click the **gear** icon to navigate to the **Fleet settings**.
     
     ![](../.gitbook/assets/shipyard_2022_05_12_11_04_46.png)
 
-2. Rename your fleet to **Download File from Webpage and Email to User**. Notice that the project is pre-selected from our actions in Step 1 above. 
-3. After completing the settings, navigate back to **add vessel** by using the Fleet Builder sidebar.
+2. Select the Fleet Name field and rename your fleet to **Download File from Webpage and Email to User**. 
+   
+   Notice that the project is pre-selected from our actions in Step 1 above. 
+3. Click the **Save & Finish** button at the bottom. You should now see the following screen:
+
+![Fleet Success Screen](../.gitbook/assets/shipyard_2022_05_13_09_55_44.png)
 
 :::note
 By default, every Fleet and every Vessel you create will send error notifications to your email. You can always update this as needed.
@@ -124,9 +128,9 @@ After a Vessel is added to a Fleet and saved, the project **cannot** be changed.
 :::
 
 
-## Step 4 - Running the Fleet On Demand
+### Step 4 - Running the Fleet On Demand
 
-1. On the success page, click the **Run Your Fleet** button.
+1. On the success page, click the **Run your Fleet** button.
 
 2. You'll be redirected to a Fleet Log page as your Fleet runs. This page will refresh automatically as the Fleet runs. Wait until you see both Vessels as green bars, indicating that they completed successfully.
 
@@ -147,7 +151,7 @@ You've successfully created and verified a Fleet that shares files between two V
 :::
 
 :::note
-A Fleet can always be ran by clicking the **Run Now** button on the top right corner of the Fleet builder. 
+A Fleet can always be run by clicking the **Run Now** button on the top right corner of the Fleet builder. 
 :::
 
 

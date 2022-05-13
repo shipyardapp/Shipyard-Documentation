@@ -34,7 +34,7 @@ For the sake of the this tutorial, we suggest starting off by building the Fleet
 1. Using the sidebar, click on **Projects** to navigate to the All Projects page.
 
   ![](../.gitbook/assets/shipyard_2022_05_05_09_41_15.png)
-2. Click on the *Testing* project.
+2. Click on the **Testing** project.
 3. Find the **Download File from Webpage and Email to User** Fleet and click the **Edit** button under Actions.
    
   ![](../.gitbook/assets/shipyard_2022_05_05_09_44_43.png)
@@ -52,7 +52,7 @@ You are now ready to add a code Vessel to your existing Fleet
 2. Name your Vessel **Add Time in Hours** under Vessel Name.
 
 :::note
-Shipyard allows you to provide code to run in the UI in three different ways: write the code in service, upload the code as a file, or get the code from a Github repository. This tutorial will focus on writing the code in service and uploading the code as a file. Github integration is covered in the documentation. 
+Shipyard allows you to provide code in three different ways: write the code in the UI, upload the code as a file, or clone the code from a GitHub repository. This tutorial will focus on writing the code in the UI and uploading the code as a file. GitHub integration is covered in the documentation. 
 :::
 
 <Tabs
@@ -97,7 +97,7 @@ After upload, your setup should look like this:
 
 ### Step 3 - Install Python Packages
 
-For this tutorial, we don't have any [environment variables](../reference/requirements/environment-variables.md) to set up. However, we do need to install Pandas for our code to run. 
+For this tutorial, we don't have any [environment variables](../reference/requirements/environment-variables.md) to set up. However, we do need to install the [Python Package](../reference/requirements/external-package-dependencies.md) called Pandas for our code to run. 
 
 1. Find the **Python Packages** panel in your Vessel's settings and click on it to show the package installer.
 2. Click the **Add Python Package** button.
@@ -141,6 +141,6 @@ After your Fleet has completed running, you should have received a new email wit
   ![](../.gitbook/assets/shipyard_2022_05_05_15_01_20.png)
 
 :::tip success
-You've successfully created and run a Fleet with Vessels from the Shipyard library and code!
+You've successfully created and run a Fleet that contains Vessels built with code and low-code Library Blueprints!
 :::
 
