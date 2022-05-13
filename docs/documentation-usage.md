@@ -12,6 +12,10 @@ keywords:
 
 All of our documentation is organized into 4 core sections that help you find exactly what you're looking for whether you're just starting out, have been using the platform for a while, or are interested in diving deeper before making the decision to use Shipyard.
 
+## 🚀 Getting Started
+
+Get started with a hands-on introduction to using Shipyard. Follow along with projects that help you learn the ins-and-outs of the platform.
+
 ## 📚 Reference
 
 Definitions and detailed explanations into the various elements and components of Shipyard.
@@ -20,9 +24,9 @@ Definitions and detailed explanations into the various elements and components o
 
 Step-by-step guides for accomplishing key tasks within Shipyard.
 
-## 🚀 Tutorials
+## 🎯 Tutorials
 
-Get started with a hands-on introduction to using Shipyard. Follow along with projects that help you learn the ins-and-outs of the platform.
+Take the knowledge from the **Getting Started** section to the next level! Includes tutorials for specific use cases.
 
 ## 📦 Blueprint Library
 

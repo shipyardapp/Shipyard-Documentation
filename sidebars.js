@@ -8,6 +8,11 @@ module.exports = {
 			"troubleshooting",
 			"changelog",
 		],
+		"🚀 Getting Started": [
+			"getting-started/first-project",
+			"getting-started/first-fleet",
+			"getting-started/first-vessel-with-code"
+		],
 		"📚 Reference": [
 			"reference/organizations",
 			"reference/projects",
@@ -122,13 +127,10 @@ module.exports = {
 			},
 			"how-tos/access-environment-variables",
 		],
-		"🚀 Tutorials": [
-			"tutorials/first-project",
-			"tutorials/first-vessel-with-code",
+		"🎯 Tutorials": [
 			"tutorials/advanced-code-vessel",
 			"tutorials/great-expectations-blueprint",
 			"tutorials/dbt-core-blueprint",
-			"tutorials/first-fleet",
 			"tutorials/non-native-language-vessels",
 		],
 		"📦 Library Blueprints": [

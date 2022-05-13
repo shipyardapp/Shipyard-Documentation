@@ -16,7 +16,7 @@ import TabItem from '@theme/TabItem';
 
 ## Overview
 
-In this tutorial, you'll walk through the steps required to set up a more advanced Vessel that prints `Hello, World`. This contains many of the same steps as our [original Hello World tutorial](first-vessel-with-code.md), with added steps to teach more features of the platform. This tutorial is only in Python \(for now\).
+In this tutorial, you'll walk through the steps required to set up a more advanced Vessel that prints `Hello, World`. This contains many of the same steps as our [original Hello World tutorial](../getting-started/first-vessel-with-code.md), with added steps to teach more features of the platform. This tutorial is only in Python \(for now\).
 
 By the end of the tutorial, you'll be able to:
 
@@ -31,10 +31,10 @@ By the end of the tutorial, you'll be able to:
 ## Setup
 
 :::caution
-For the sake of the this tutorial, we suggest starting off by building a Vessel inside either the *Playground* Project or a *Testing* Project. You can follow [this tutorial](first-project.md) to set that up.
+For the sake of the this tutorial, we suggest starting off by building a Vessel inside either the *Playground* Project or a *Testing* Project. You can follow [this tutorial](../getting-started/first-project.md) to set that up.
 :::
 
-First, [download this code](../.gitbook/assets/advanced_tutorial.zip), named `hello_world_advanced.tar` to your computer without making any changes.
+First, [download this code](https://drive.google.com/file/d/1e6xQOo2M2jnPJdPOmAPOKwW4aLlgV-GF/view?usp=sharing), named `hello_world_advanced.zip` to your computer without making any changes.
 
 Feel free to peruse this script beforehand so you understand everything that it's doing. The script is accomplishing four main things:
 
@@ -46,8 +46,8 @@ Feel free to peruse this script beforehand so you understand everything that it'
 
 ## Steps
 
-1. Using the sidebar, click on **Projects** to expand the list of projects.
-2. Click on either the *Playground* or *Testing* Project. You'll be directed to the Vessels tab for this project.
+1. Using the sidebar, click on **Projects** to navigate to the All Projects page.
+2. Click on either the *Playground* or *Testing* Project.
 3. Hover over the **+ New** button in the top-right corner of the screen and click **New Vessel**.
 
 ![](../.gitbook/assets/shipyard_2021_03_16_16_23_03.png)
@@ -88,16 +88,16 @@ values={[
 ]}>
 <TabItem value="python">
 
-![](../.gitbook/assets/image_13_1.png)
+![](../.gitbook/assets/shipyard_2022_05_03_11_23_05.png)
 
 1. On the left side of the screen, select the **Upload** option. 
-2. Click the upload section icon and select the `hello_world_advanced.tar` file from your computer.
+2. Click the upload section icon and select the `hello_world_advanced.zip` file from your computer.
 3. On the right-hand side of the screen, there is a field entitled **File to Run**. Because the .zip contains a single python file named `hello_world_advanced.py`, you'll need to use that name.
 4. Click the **+** icon next to Arguments to create a new [command argument](../reference/code/command.md#arguments).
 5. In the **flag** field on the left-hand side, type `--name`.
 6. In the **value** field on the right-hand side of the new argument, type your name.
 
-![](../.gitbook/assets/shipyard_2021_03_16_17_34_07.png)
+![](../.gitbook/assets/shipyard_2022_05_03_11_39_15.png)
 </TabItem>
 </Tabs>
 
@@ -147,7 +147,7 @@ Once you're done, go ahead and click the **Next Step** button at the bottom of t
 4. Under the Guardrails section, set the **Number of Retries** to 2x and the **Time Between Retries** to 5m.
 5. Click the **Save & Finish** button at the bottom of the screen.
 
-![](../.gitbook/assets/shipyard_2021_03_16_17_38_34.png)
+![](../.gitbook/assets/shipyard_2022_05_03_11_29_50.png)
 
 :::info
 We changed the default Guardrails because of the potential for the Cat Facts API to have connection issues.
