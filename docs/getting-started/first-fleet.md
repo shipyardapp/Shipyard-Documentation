@@ -1,19 +1,21 @@
 ---
 id: first-fleet
-title: Building Your First Fleet - Sharing Files
+title: Building Your First Fleet with Low-Code Library Blueprints
 hide_title: true
 sidebar_label: Building your First Fleet with Library Blueprints
-description: In-depth tutorial to walk you through the steps needed to set your first Fleet that shares files.
+description: In-depth tutorial to walk you through the steps needed to build your first Fleet with low-code Library Blueprints.
 keywords:
   - fleet
   - file sharing
+  - low-code
+  - library blueprints
   - tutorial
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Building Your First Fleet that Uses Shipyard-Created Blueprints
+# Building Your First Fleet with Low-Code Library Blueprints
 
 ## Overview
 
