@@ -24,7 +24,7 @@ Definitions and detailed explanations into the various elements and components o
 
 Step-by-step guides for accomplishing key tasks within Shipyard.
 
-## 🚀 Tutorials
+## 🎯 Tutorials
 
 Take the knowledge from the **Getting Started** section to the next level! Includes tutorials for specific use cases.
 
