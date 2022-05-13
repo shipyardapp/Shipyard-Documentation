@@ -43,16 +43,7 @@ We recommend you create a **Training** project before beginning this tutorial. T
 
 ## Step 2 - Building the Fleet
 
-There are two options for creating a new Fleet: **Graph** (a visual editor) and **YAML** (a text editor).
-
-<Tabs
-groupId="FleetCreateTypes"
-defaultValue="graph"
-values={[
-{label: 'Graph', value: 'graph'},
-{label: 'YAML', value: 'yaml'},
-]}>
-<TabItem value="graph">
+There are two options for creating a new Fleet: **Graph** (a visual editor) and **YAML** (a text editor). This tutorial will focus on using the **Graph** method. The YAML Editor will be addressed in a different set of tutorials.
 
 ### Build Vessel to Download File via HTTP
 
@@ -113,89 +104,9 @@ It is possible that the Vessels are stacked on top of each other or placed in a 
 This will connect the two Vessels, allowing one to be triggered by the other. Additionally, this allows files created upstream (Download Slinky Dog Dash Ride Data) to be accessed by the Vessel that lives downstream (Send Slinky Dog Dash Data via Email).
 :::
 
-</TabItem>
-<TabItem value="yaml">
 
-1. Toggle from the Graph Editor to the YAML editor with the text icon in the top right corner.
-
-![YAML Toggle Button](../.gitbook/assets/shipyard_2022_02_22_16_31_34.png)
-
-2. Replace the code in the editor with the YAML code below.
-
-```yaml
-name: Slippery Poopdeck
-vessels:
-    Download Slinky Dog Dash Ride Data:
-        source:
-            blueprint: HTTP - Download File from URL
-            inputs:
-                HTTP_DESTINATION_FILE_NAME: slinky_dog.csv
-                HTTP_DESTINATION_FOLDER_NAME: disney_world_wait_times
-                HTTP_FILE_URL: https://cdn.touringplans.com/datasets/slinky_dog.csv
-            type: BLUEPRINT
-        guardrails:
-            retry_count: 0
-            retry_wait: 0s
-            runtime_cutoff: 4h0m0s
-        notifications:
-            emails:
-                - tutorials@shipyardapp.com
-            after_error: true
-            after_on_demand: false
-    Send Slinky Dog Dash Data via Email:
-        source:
-            blueprint: Email - Send Message with File
-            inputs:
-                EMAIL_BCC: null
-                EMAIL_CC: null
-                EMAIL_INCLUDE_SHIPYARD_FOOTER: true
-                EMAIL_MESSAGE: Here's the most recent wait times for Slinky Dog Dash!
-                EMAIL_PASSWORD: SHIPYARD_HIDDEN
-                EMAIL_SEND_METHOD: tls
-                EMAIL_SENDER_ADDRESS: ${EMAIL_USERNAME}
-                EMAIL_SENDER_NAME: null
-                EMAIL_SMTP_HOST: smtp.gmail.com
-                EMAIL_SMTP_PORT: "587"
-                EMAIL_SOURCE_FILE_NAME: slinky_dog_dash.csv
-                EMAIL_SOURCE_FILE_NAME_MATCH_TYPE: exact_match
-                EMAIL_SOURCE_FOLDER_NAME: disney_world_wait_times
-                EMAIL_SUBJECT: Slinky Dog Dash Wait Times
-                EMAIL_TO: tutorials@shipyardapp.com
-                EMAIL_USERNAME: shipyardapptest@gmail.com
-            type: BLUEPRINT
-        guardrails:
-            retry_count: 0
-            retry_wait: 0s
-            runtime_cutoff: 4h0m0s
-        notifications:
-            emails:
-                - tutorials@shipyardapp.com
-            after_error: true
-            after_on_demand: false
-connections:
-    Download Slinky Dog Dash Ride Data:
-        Send Slinky Dog Dash Data via Email: SUCCESS
-notifications:
-    emails:
-        - tutorials@shipyardapp.com
-    after_error: true
-    after_on_demand: false
-```
-
-3. Click the **Save** button at the bottom.
-
-</TabItem>
-</Tabs>
 
 ## Step 3 - Setting Up the Fleet
-<Tabs
-groupId="FleetCreateTypes"
-defaultValue="graph"
-values={[
-{label: 'Graph', value: 'graph'},
-{label: 'YAML', value: 'yaml'},
-]}>
-<TabItem value="graph">
 
 1. Using the Fleet builder sidebar, click the **gear** icon to navigate to the **Fleet settings**.
     
@@ -212,21 +123,6 @@ By default, every Fleet and every Vessel you create will send error notification
 After a Vessel is added to a Fleet and saved, the project **cannot** be changed. Always make sure that the proper project is selected when creating a new Fleet
 :::
 
-</TabItem>
-<TabItem value="yaml">
-
-1. Using the YAML Editor, scroll back up to the top of the editor. Your page should look like this: 
-
-![](../.gitbook/assets/shipyard_2022_05_12_11_50_03.png)
-
-2. The first line of the YAML is the name field. This field defines the name of the fleet. 
-3. Remove the automatically generated name and type **Disney World Ride Wait Alerts**.
-4. After changing the name, click the **Save & Finish** button on the bottom-right of your screen. This will redirect you to the **Success** page.
-
-![](../.gitbook/assets/shipyard_2022_05_12_10_45_15.png)
-
-</TabItem>
-</Tabs>
 
 ## Step 4 - Running the Fleet On Demand
 
