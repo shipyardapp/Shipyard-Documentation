@@ -14,6 +14,8 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [Google Sheets authorization guide](https://www.shipyardapp.com/docs/blueprint-library/google-sheets/google-sheets-authorization/)**.
+
 Easily import data from a single CSV into a single Google Sheet tab. The Google Sheet must already exist for the data to be uploaded.
 
 Only one CSV file can be uploaded at a time, since the upload process requires a static starting cell to determine where to place the data. If you leave the starting cell blank, data will be inserted starting at cell A1 and expanding in width and depth as needed.
@@ -21,6 +23,12 @@ Only one CSV file can be uploaded at a time, since the upload process requires a
 If you leave the tab name blank, the data will be uploaded into the first tab. If you specify a Tab Name that doesn&#39;t exist, it will be created.
 
 This Blueprint is still subject to [Google&#39;s limitations](https://support.google.com/drive/answer/37603) which restrict the number of cells, number of columns, and number of characters per cell in a spreadsheet.
+
+**Note:** This Vessel cannot be used to upload a local file from your computer.
+
+**Recommended Setup:**
+
+1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Shipyard or generates a file with code. 
 
 
 

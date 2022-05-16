@@ -14,6 +14,8 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [Fivetran authorization guide](https://www.shipyardapp.com/docs/blueprint-library/fivetran/fivetran-authorization/)**.
+
 Immediately execute a sync of a Fivetran connector. The connector must already be set up within the Fivetran interface.
 
 If a sync is already running for the specified connector, it will be stopped and restarted.

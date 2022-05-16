@@ -14,6 +14,8 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [Box authorization guide](https://www.shipyardapp.com/docs/blueprint-library/box/box-authorization/)**.
+
 Easily import one or more files directly into your company&#39;s Box account.
 
 
