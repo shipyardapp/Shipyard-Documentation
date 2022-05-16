@@ -14,6 +14,8 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [Google Sheets authorization guide](https://www.shipyardapp.com/docs/blueprint-library/google-sheets/google-sheets-authorization/)**.
+
 Easily wipe data from a single tab on Google Sheet. Typically used to start fresh before inserting new data.
 
 If you leave the cell range blank, data will be wiped from the entire tab.
