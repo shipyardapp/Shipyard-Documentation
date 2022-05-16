@@ -14,6 +14,8 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [dbt Cloud authorization guide](https://www.shipyardapp.com/docs/blueprint-library/dbt-cloud/dbt-cloud-authorization/)**.
+
 Check for the status of a single run on dbt Cloud. The Vessel&#39;s exit code and status will match the status of the dbt Cloud run. 
 
 - If the run is not completed, the Vessel will return an exit code of 255, an error.

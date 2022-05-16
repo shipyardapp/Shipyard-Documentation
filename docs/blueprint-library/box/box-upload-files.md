@@ -14,7 +14,16 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [Box authorization guide](https://www.shipyardapp.com/docs/blueprint-library/box/box-authorization/)**.
+
 Quickly export one or more files from your company&#39;s Box account. Once the files have downloaded, transfer them to another service or run another Vessel against the data.
+
+**Note:** This Vessel cannot be used to upload a local file from your computer.
+
+**Recommended Setup:**
+
+1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Shipyard or generates a file with code. 
+
 
 
 

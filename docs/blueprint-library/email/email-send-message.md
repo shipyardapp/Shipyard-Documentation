@@ -14,6 +14,8 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [Email authorization guide](https://www.shipyardapp.com/docs/blueprint-library/email/email-authorization/)**.
+
 Send a message to anyone in the world using email, attaching one or more files.
 
 

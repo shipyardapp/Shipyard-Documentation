@@ -14,6 +14,8 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [Slack authorization guide](https://www.shipyardapp.com/docs/blueprint-library/slack/slack-authorization/)**.
+
 Send a Slack message to any channel or DM, alerting any user in your company.
 
 

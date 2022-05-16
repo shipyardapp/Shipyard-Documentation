@@ -14,6 +14,8 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [Fivetran authorization guide](https://www.shipyardapp.com/docs/blueprint-library/fivetran/fivetran-authorization/)**.
+
 Check for the status of a connector on Fivetran. The Vessel&#39;s exit code and status will match the status of the latest sync.
 
 Fivetran does not have a synchronous API that allows you to determine if the exact sync you kicked off has finished. Instead, status has to be determined by comparing data to the returned `last_success` and `last_failure` timestamps for a connector. 
