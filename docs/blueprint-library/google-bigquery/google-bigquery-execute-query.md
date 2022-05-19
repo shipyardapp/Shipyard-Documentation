@@ -14,6 +14,8 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [BigQuery authorization guide](https://www.shipyardapp.com/docs/blueprint-library/google-bigquery/google-bigquery-authorization/)**.
+
 Execute any Standard SQL query against a Google BigQuery database. Perfect for creating multi-step SQL jobs, executing DML statements, or running scheduled queries.
 
 

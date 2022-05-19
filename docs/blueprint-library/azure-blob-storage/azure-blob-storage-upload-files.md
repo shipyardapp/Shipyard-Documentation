@@ -14,7 +14,16 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [Blob Storage authorization guide](https://www.shipyardapp.com/docs/blueprint-library/azure-blob-storage/azure-blob-storage-authorization/)**.
+
 Easily import one or more files directly into an an Azure Blob Storage container, no matter how big they are. The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
+
+**Note:** This Vessel cannot be used to upload a local file from your computer.
+
+**Recommended Setup:**
+
+1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Shipyard or generates a file with code. 
+
 
 
 

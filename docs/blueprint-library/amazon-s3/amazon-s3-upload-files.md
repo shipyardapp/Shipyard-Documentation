@@ -14,7 +14,16 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [S3 authorization guide](https://www.shipyardapp.com/docs/blueprint-library/amazon-s3/amazon-s3-authorization/)**.
+
 Easily import one or more files directly into an Amazon S3 bucket, no matter how big they are.
+
+**Note:** This Vessel cannot be used to upload a local file from your computer.
+
+**Recommended Setup:**
+
+1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Shipyard or generates a file with code. 
+
 
 
 

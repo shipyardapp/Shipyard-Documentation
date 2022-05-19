@@ -14,6 +14,8 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [Athena authorization guide](https://www.shipyardapp.com/docs/blueprint-library/amazon-athena/amazon-athena-authorization/)**.
+
 Execute any SQL query against Amazon Athena. Perfect for creating multi-step SQL jobs, executing DML statements, or running scheduled queries.
 
 
