@@ -14,6 +14,8 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [Airtable authorization guide](https://www.shipyardapp.com/docs/blueprint-library/airtable/airtable-authorization/)**.
+
 Quickly export data from a single table on an Airtable base to a CSV. 
 
 Only one table or view of data can be downloaded at a time, since CSVs are flat files.

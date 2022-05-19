@@ -14,6 +14,8 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [SQL Server authorization guide](https://www.shipyardapp.com/docs/blueprint-library/microsoft-sql-server/microsoft-sql-server-authorization/)**.
+
 Turn the results of your SQL SELECT statement into a CSV file. Extract your Microsoft SQL Server data into files for easier delivery to clients and partners.
 
 
