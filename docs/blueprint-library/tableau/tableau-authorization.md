@@ -44,24 +44,24 @@ For example, if the full URL was `https://10ax.online.tableau.com/#/site/shipyar
 
 Workbook names can be found in multiple locations.
 
-In the Explore Section
+#### In the Explore Section
 ![Workbook Name in Explore Section](../../.gitbook/assets/shipyard_2022_05_19_16_03_48.png)
 
-While Viewing Workbook Details
+#### While Viewing Workbook Details
 ![Workbook Name in Overview](../../.gitbook/assets/shipyard_2022_05_19_16_04_27.png)
 
-While Editing a Workbook
+#### While Editing a Workbook
 ![Workbook Name while Editing](../../.gitbook/assets/shipyard_2022_05_19_16_05_31.png)
 
 ## Finding the Datasource Name
 
-In the Explore Section
+#### In the Explore Section
 ![Datasource Name in the Explore Section](../../.gitbook/assets/shipyard_2022_05_19_16_06_51.png)
 
-While viewing Datasource Details
+#### While viewing Datasource Details
 ![Datasource Name in Dataousrce Details](../../.gitbook/assets/shipyard_2022_05_19_16_07_46.png)
 
-While Editing the Datasource
+#### While Editing the Datasource
 ![Datasource Name while Editing Datasource](../../.gitbook/assets/shipyard_2022_05_19_16_08_40.png)
 
 :::note
@@ -72,11 +72,11 @@ Currently, we only support refreshing Datasources that have been published.
 
 Views can be individual charts or a Dashboard that combines multiple charts. The names for these views can be found in multiple locations.
 
-While Viewing Workbook Details
+#### While Viewing Workbook Details
 ![View Name while viewing Workbook Details](../../.gitbook/assets/shipyard_2022_05_19_16_11_02.png)
 
-While Editing a Workbook
+#### While Editing a Workbook
 ![View Name while Editing a Workbook](../../.gitbook/assets/shipyard_2022_05_19_16_12_46.png)
 
-:::notes
+:::note
 Currently, we only support pulling data from views that have been published as part of the workbook. Anything in a draft state cannot be accessed.
