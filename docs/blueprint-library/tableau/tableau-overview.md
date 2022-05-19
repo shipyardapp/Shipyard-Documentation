@@ -20,9 +20,9 @@ For information on how to set up these Blueprints successfully, please read thro
 
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available:
-- [Trigger Refresh](tableau-trigger-refresh.md)
+- [Trigger Datasource Refresh](tableau-trigger-datasource-refresh.md)
 - [Check Refresh Status](tableau-check-refresh-status.md)
-- [Trigger Refresh and Check Status](tableau-trigger-refresh-and-check-status.md)
+- [Trigger Datasource Refresh and Check Status](tableau-trigger-datasource-refresh-and-check-status.md)
 - [Download View as File](tableau-download-view-as-file.md)
 
 ## Open Source Code
