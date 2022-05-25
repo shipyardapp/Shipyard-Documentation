@@ -27,6 +27,12 @@ _All timing of feature development is estimated and subject to change_
 - API Access for Exporting Logs (July)
 - API Access for Bulk Editing/Creating Fleets (July)
 
+## 05/25/2022
+
+### Enhancements
+
+- Fleet and Vessel logs now have limits placed on them depending on whether you're on the Developer or Team plan. Want to see more of what's happend in your historical logs? [Sign in and upgrade your plan now!](https://app.shipyardapp.com/auth/signin)
+
 ## 05/12/2022
 
 ### Enhancements
