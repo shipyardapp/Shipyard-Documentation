@@ -25,7 +25,7 @@ The table below shows all of the [Vessel Logs](vessel-logs.md) that were created
 
 ### Live Update
 
-If a log has a status of *Scheduled* or *Running*, the individual Log page will automatically refresh every few seconds to show:
+In the **Overview** tab a log has a status of *Scheduled* or *Running*, the individual Log page will automatically refresh every few seconds to show:
 
 - Current Fleet Status
 - Current Duration
@@ -34,6 +34,17 @@ If a log has a status of *Scheduled* or *Running*, the individual Log page will 
 While the Fleet is actively running, you can click into an Individual [Vessel Log](vessel-logs.md) that's currently running and click **Stop Voyage** to terminate the voyage, thus terminating all downstream Vessels in the Fleet.
 
 Once the Fleet has finished running, the page will no longer automatically refresh.
+
+### Webhook Parameters
+
+In the **Webhook Parameters** tab, you can see the parameters that may have been conditionally sent via a webhook trigger. There are no values in this tab if the Fleet is triggered manually or via a schedule.
+
+The content will be rendered as a JSON object with two optional fields:
+
+- `headers_content`: this contains any key-value pairs that may have been sent as headers in the webhook trigger
+- `body_content`: this contains the full payload in whatever format it was received in the webhook trigger
+
+These values can be accessed as files via the [platform environment variables](../shipyard-environment-variables.md) of `SHIPYARD_WEBHOOK_HEADERS_FILE` and `SHIPYARD_WEBHOOK_BODY_FILE` that hold the path to each file.
 
 ### Metadata
 
