@@ -43,13 +43,10 @@ In the event that either headers or body are not provided in the webhook invocat
 
 ## Steps
 
-1. Using the sidebar, click on **Projects** to navigate to the All Projects page.
-2. Click on either the *Playground* or *Testing* Project.
-3. Hover over the **+ New** button in the top-right corner of the screen and click **New Fleet** and you'll be redirected to the Fleet builder UI.
+1. Using the sidebar, click **+ New Fleet**.
+2. In the **Select a Project** dropdown, choose either the *Playground* or *Testing* Project.
 
-![](../.gitbook/assets/shipyard_2021_03_16_16_23_03.png)
-
-We'll now walk through the process of building the required Vessel and invoking the Fleet with a webhook.
+You'll now be on the Fleet builder canvas. Next we'll walk through the process of building the required Vessel and invoking the Fleet with a webhook.
 
 ### Step 1 - Create a Code Vessel
 

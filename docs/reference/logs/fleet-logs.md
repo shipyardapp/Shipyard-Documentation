@@ -39,12 +39,14 @@ Once the Fleet has finished running, the page will no longer automatically refre
 
 In the **Webhook Parameters** tab, you can see the parameters that may have been conditionally sent via a webhook trigger. There are no values in this tab if the Fleet is triggered manually or via a schedule.
 
-The content will be rendered as a JSON object with two optional fields:
+The content will be rendered as a JSON object in the UI with two optional fields:
 
 - `headers_content`: this contains any key-value pairs that may have been sent as headers in the webhook trigger
 - `body_content`: this contains the full payload in whatever format it was received in the webhook trigger
 
-These values can be accessed as files via the [platform environment variables](../shipyard-environment-variables.md) of `SHIPYARD_WEBHOOK_HEADERS_FILE` and `SHIPYARD_WEBHOOK_BODY_FILE` that hold the path to each file.
+These values can be accessed as files via the [platform environment variables](../shipyard-environment-variables.md) of `SHIPYARD_WEBHOOK_HEADERS_FILE` and `SHIPYARD_WEBHOOK_BODY_FILE` that hold the path to each file which looks like `/home/shipyard/<voyage_id>.webhook_headers` and `/home/shipyard/<voyage_id>.webhook_body`, respectively.
+
+The **headers** file is stored as JSON and the **body** file is stored in the same format it was received (e.g. JSON, YAML, etc.).
 
 ### Metadata
 
