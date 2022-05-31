@@ -87,8 +87,8 @@ curl -X POST <webhook_url> -H "Content-Type: application/json" -d '{"action_id":
 ### Step 4 - Examing the Webhook Parameters
 
 1. Click on the **Logs** tab on the Shipyard browser tab.
-2. Click on the Fleet in the **Runtime History** histograph (it may be yellow if running or green if comlete).
-3. Click on the Vessel in the **Overview** tab (it may be yellow if running or green if comlete).
+2. Click on the Fleet in the **Runtime History** histogram (it may be yellow if running or green if complete).
+3. Click on the Vessel in the **Overview** tab (it may be yellow if running or green if complete).
 4. You'll see the output in the logs showing the headers and body values.
 
 ![](../.gitbook/assets/webhook_parameters_output_logs.png)
