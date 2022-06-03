@@ -27,6 +27,18 @@ _All timing of feature development is estimated and subject to change_
 - API Access for Exporting Logs (July)
 - API Access for Bulk Editing/Creating Fleets (July)
 
+## 06/02/2022
+
+### Enhancements
+
+- Time is relative, and so are our timestamps. All times displayed in tables now use an easy-to-read format with a hover-over if you want more detail.
+![Photo of relative timestamps displayed in tables](./.gitbook/assets/change_log_release_20220602_1_1.png)
+
+### Bug Fixes
+
+- Project Vessels were uninterested in joining Fleets. If you tried to add a Project Vessel to an existing Fleet, the Fleet would fail to save. They have since learned that "teamwork makes the dream work" and can be successfully added to Fleets.
+- Some Vessels weren't taking to their new names so, when you tried to rename a Fleet Vessel, its old name would reappear. New names will now stick around after a Vessel has been renamed.
+
 ## 05/25/2022
 
 ### Enhancements
@@ -36,6 +48,7 @@ _All timing of feature development is estimated and subject to change_
 ## 05/12/2022
 
 ### Enhancements
+
 - Hit a "Panel Invalid" error while building a Fleet? We've all been there. But now the message will be a bit more helpful and the invalid Vessel and panels will be highlighted in red. 
 ![Photo of enhanced error descriptions and highlighting added to Fleet Builder](./.gitbook/assets/change_log_release_20220512_1_1.png)
 
@@ -43,6 +56,7 @@ _All timing of feature development is estimated and subject to change_
 ![Photo of billable runtime added to Logs](./.gitbook/assets/change_log_release_20220512_1_2.png)
 
 ### Bug Fixes
+
 - Vessels were rebelling against their Blueprint parents and refusing to adopt the same guardrails. The Blueprints won out. Every Vessel built with a Blueprint (from this point forward) will be set to same guardrails as the original Blueprint. If you decide to change the Vessel guardrails anyway, that decision will also be respected.
 - We did a little refactoring and miiight have left a variable undefined. That's been fixed, so next time you visit the YAML Editor it shouldn't keel over on you.
 - A few clients had trouble viewing their Usage charts but that's been cleared up.
@@ -50,20 +64,24 @@ _All timing of feature development is estimated and subject to change_
 ## 05/05/2022
 
 ### Enhancements
+
 - Update the code input on Code Vessels to have syntax highlighting.
 - Add a badge with a count of required fields that need completing to Blueprint Vessels.
 - Add more troubleshooting tips for when a Vessel errors.
 
 ### Bug Fixes
+
 - Fix error occurring when Panda's version is not provided in a Python Vessel.
 - Fix issue with some jobs not scheduling appropriately.
 
 ## 04/27/2022
 
 ### Enhancements
+
 - Enhanced Developer Plan. It now includes 10 hours of runtime each month.
 
 ### Bug Fixes
+
 - Fix Voyages not always terminating when requested.
 
 ## 04/14/2022
