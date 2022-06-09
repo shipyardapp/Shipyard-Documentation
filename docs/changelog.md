@@ -23,9 +23,21 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 _All timing of feature development is estimated and subject to change_
 
 - Version Control (May)
-- Paramaterized Webhooks (June)
 - API Access for Exporting Logs (July)
 - API Access for Bulk Editing/Creating Fleets (July)
+
+## 06/09/2022
+
+### New Features
+
+- Want to provide data to a [Shipyard webhook](reference/triggers/webhook-triggers.md)? Now you can by using the [webhook parameters](reference/logs/fleet-logs.md###webhook-parameters) giving your Vessels access to the webhook headers and body you may provide.
+
+### Bug Fixes
+
+- Various small fixes have been made to the logs pages ensuring you're able to see the status and results of all of your Fleets and Vessels accurately.
+- A bug preventing you from naming one Fleet what another Fleet has been previously made has been addressed.
+- There was a situation where some Fleets were unable to be deleted and has now been resolved.
+- Previously, you were able to create a Fleet using YAML without any Vessels provided which lead to an incorrect Fleet state. Now, you'll prevented from doing so with an alert in the code editor.
 
 ## 06/02/2022
 
