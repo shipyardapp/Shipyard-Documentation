@@ -132,6 +132,7 @@ module.exports = {
 			"tutorials/great-expectations-blueprint",
 			"tutorials/dbt-core-blueprint",
 			"tutorials/non-native-language-vessels",
+			"tutorials/referencing-fleet-webhook-parameters",
 		],
 		"📦 Library Blueprints": [
 			{
