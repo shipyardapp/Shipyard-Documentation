@@ -39,6 +39,7 @@ module.exports = {
 			"reference/vessels",
 			"reference/fleets",
 			"reference/fac",
+			"reference/version-control",
 			{
 				"Code Tab": [
 					"reference/code/code-overview",
@@ -63,10 +64,6 @@ module.exports = {
 					"reference/settings/information",
 					"reference/settings/notifications",
 					"reference/settings/guardrails",
-				],
-				"Version Control Tab": [
-					"reference/version-control/version-control-overview",
-					"reference/version-control/version-cards",
 				],
 				Logs: [
 					"reference/logs/logs-overview",
