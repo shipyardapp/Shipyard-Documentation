@@ -64,6 +64,10 @@ module.exports = {
 					"reference/settings/notifications",
 					"reference/settings/guardrails",
 				],
+				"Version Control Tab": [
+					"reference/version-control/version-control-overview",
+					"reference/version-control/version-cards",
+				],
 				Logs: [
 					"reference/logs/logs-overview",
 					"reference/logs/vessel-logs",
