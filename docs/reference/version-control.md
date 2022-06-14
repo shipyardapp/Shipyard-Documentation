@@ -27,7 +27,7 @@ The YAML-based definition of a Shipyard Fleet is generated rather than stored as
 :::
 
 - **Revert to this version**: This will revert the Fleet's configuration to the selected version. A new version will be generated and will appear at the top of the list as the **latest** version. This will be the version the Fleet Builder will display if you navigate to that tab.
-- **Create a new fleet from version**: This will use the selected version to create a new Fleet. You will be redirected to the Fleet Builder in the newly created Fleet. This will not make any changes to the current Fleet.
+- **Create a new fleet from version**: This will use the selected version to create a new Fleet (without the schedules associated with the version). You will be redirected to the Fleet Builder in the newly created Fleet. This will not make any changes to the current Fleet.
 
 ## Screenshots
 ![Version Control Overview](./../.gitbook/assets/version-control-overview-1.png)
