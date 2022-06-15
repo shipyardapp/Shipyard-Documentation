@@ -22,9 +22,19 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 _All timing of feature development is estimated and subject to change_
 
-- Version Control (May)
 - API Access for Exporting Logs (July)
 - API Access for Bulk Editing/Creating Fleets (July)
+
+## 06/09/2022
+
+### New Features
+
+- [Fleets are now version controlled!](reference/version-control.md) Those of you on Team Plans now have access to the last six versions of your Fleets. Each version is presented in their [FAC](reference/fac.md) YAML format so they can be easily compared to the current configuration of the Fleet. In addition, you can revert to a previous version or create a brand new Fleet from a version. 
+![Photo of relative timestamps displayed in tables](./.gitbook/assets/version-control-overview-1.png)
+
+### Bug Fixes
+
+- Fleets with freshly duplicated Vessels weren't saving but all's well now.
 
 ## 06/09/2022
 
