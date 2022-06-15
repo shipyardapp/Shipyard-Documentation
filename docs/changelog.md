@@ -30,7 +30,7 @@ _All timing of feature development is estimated and subject to change_
 ### New Features
 
 - [Fleets are now version controlled!](reference/version-control.md) Those of you on Team Plans now have access to the last six versions of your Fleets. Each version is presented in their [FAC](reference/fac.md) YAML format so they can be easily compared to the current configuration of the Fleet. In addition, you can revert to a previous version or create a brand new Fleet from a version. 
-![Photo of relative timestamps displayed in tables](./.gitbook/assets/version-control-overview-1.png)
+![Photo of Fleet Version Control](./.gitbook/assets/version-control-overview-1.png)
 
 ### Bug Fixes
 
