@@ -39,6 +39,7 @@ module.exports = {
 			"reference/vessels",
 			"reference/fleets",
 			"reference/fac",
+			"reference/version-control",
 			{
 				"Code Tab": [
 					"reference/code/code-overview",
