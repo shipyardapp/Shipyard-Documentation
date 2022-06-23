@@ -11,7 +11,7 @@ module.exports = {
 		"🚀 Getting Started": [
 			"getting-started/first-project",
 			"getting-started/first-fleet",
-			"getting-started/first-vessel-with-code"
+			"getting-started/first-vessel-with-code",
 		],
 		"📚 Reference": [
 			"reference/organizations",
@@ -300,6 +300,14 @@ module.exports = {
 					"blueprint-library/snowflake/snowflake-store-query-results-as-csv",
 					"blueprint-library/snowflake/snowflake-upload-csv-to-table",
 					"blueprint-library/snowflake/snowflake-troubleshooting",
+				],
+				Tableau: [
+					"blueprint-library/tableau/tableau-overview",
+					"blueprint-library/tableau/tableau-authorization",
+					"blueprint-library/tableau/tableau-trigger-datasource-refresh",
+					"blueprint-library/tableau/tableau-check-refresh-status",
+					"blueprint-library/tableau/tableau-trigger-datasource-refresh-and-check-status",
+					"blueprint-library/tableau/tableau-download-view-as-file",
 				],
 			},
 		],
