@@ -11,7 +11,7 @@ keywords:
 
 ## Definition
 
-The Inputs tab is found both when editing/creating a Blueprint and a Vessel. The contents of this tab changes based on which element you are viewing.
+The Inputs tab is found when editing or creating a Blueprint and a Vessel. The contents of this tab changes based on which element you are viewing.
 
 ### Vessel
 

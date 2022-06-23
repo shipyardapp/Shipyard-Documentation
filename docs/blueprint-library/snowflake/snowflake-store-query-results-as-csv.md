@@ -31,7 +31,7 @@ Turn the results of your SQL SELECT statement into a CSV file. Extract your Snow
 | Database | SNOWFLAKE_DATABASE | Alphanumeric | :white_check_mark: | - | - | The name of the Database that you want to run a query against. |
 | Schema | SNOWFLAKE_SCHEMA | Alphanumeric | :heavy_minus_sign: | - | - | The name of the Schema you want to run a query against. If left blank, it&#39;s expected that your query will include the schema in it. |
 | Query | SNOWFLAKE_QUERY | Alphanumeric | :white_check_mark: | - | - | A SQL query with a SELECT statement that returns data. |
-| Local File Name | SNOWFLAKE_DESTINATION_FILE_NAME | Alphanumeric | :white_check_mark: | ${SHIPYARD_LOG_ID}_output.csv | - | The file name that you want your generated CSV to have. |
+| Local File Name | SNOWFLAKE_DESTINATION_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | The file name that you want your generated CSV to have. |
 | Local Folder Name | SNOWFLAKE_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | The folder structure that you want your CSV to be created in. If left blank, the file will be created in the home directory. |
 | Include Column Names as Header? | SNOWFLAKE_FILE_HEADER | Boolean | :white_check_mark: | true | - | If checked, your CSV file will include a header row with column names. |
 

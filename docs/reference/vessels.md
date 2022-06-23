@@ -53,7 +53,8 @@ Building a Vessel with a Blueprint allows you to run scripts without needing to 
 1. A Vessel can only be tied to one Blueprint, one Project, and one Organization.
 2. A Vessel's Blueprint or Code type cannot be changed once it is built.
 3. A Vessel's Project cannot be changed once it is built.
-4. A Vessel is not version controlled. Any changes made directly in the Vessel creation pages cannot be visualized or restored.
+4. A Project Vessel is _not_ version controlled. Any changes made directly in the Vessel creation pages cannot be visualized or restored.
+5. A Fleet Vessel _is_ version controlled. A Vessel's previous configuration within a Fleet is viewable in the Fleet's [Version Control](reference/version-control.md) tab.
 
 ## Learn More
 

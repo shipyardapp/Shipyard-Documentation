@@ -39,6 +39,7 @@ module.exports = {
 			"reference/vessels",
 			"reference/fleets",
 			"reference/fac",
+			"reference/version-control",
 			{
 				"Code Tab": [
 					"reference/code/code-overview",
@@ -132,6 +133,7 @@ module.exports = {
 			"tutorials/great-expectations-blueprint",
 			"tutorials/dbt-core-blueprint",
 			"tutorials/non-native-language-vessels",
+			"tutorials/referencing-fleet-webhook-parameters",
 		],
 		"📦 Library Blueprints": [
 			{
