@@ -14,6 +14,8 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [Snowflake authorization guide](https://www.shipyardapp.com/docs/blueprint-library/snowflake/snowflake-authorization/)**.
+
 Upload one or more CSV files to any table in Snowflake. With the file data, you can:
 - **Append Data** - Add the contents of your file to the end of the table.
 - **Replace Data** - Write over the entire contents of table with the contents of your file.
@@ -24,6 +26,13 @@ Column names are inferred from the header row of your CSV file. If the table alr
 Data is inserted into the table by using multiple INSERT statements. For larger datasets, we recommend building an &#34;Execute Query&#34;
 
 In all instances, if the table name does not already exist, a new table will be created with datatypes inferred from the CSV contents.
+
+**Note:** This Vessel cannot be used to upload a local file from your computer.
+
+**Recommended Setup:**
+
+1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Shipyard or generates a file with code. 
+
 
 
 

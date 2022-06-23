@@ -14,6 +14,8 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [MySQL authorization guide](https://www.shipyardapp.com/docs/blueprint-library/mysql/mysql-authorization/)**.
+
 Turn the results of your SQL SELECT statement into a CSV file. Extract your MySQL data into files for easier delivery to clients and partners.
 
 

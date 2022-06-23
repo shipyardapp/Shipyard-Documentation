@@ -14,9 +14,18 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [Dropbox authorization guide](https://www.shipyardapp.com/docs/blueprint-library/dropbox/dropbox-authorization/)**.
+
 Easily import one or more files directly into Dropbox. The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
 
 If the folder name provided doesn&#39;t already exist, it will be created.
+
+**Note:** This Vessel cannot be used to upload a local file from your computer.
+
+**Recommended Setup:**
+
+1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Shipyard or generates a file with code. 
+
 
 
 

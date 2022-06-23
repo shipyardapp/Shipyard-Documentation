@@ -14,6 +14,8 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [dbt Cloud authorization guide](https://www.shipyardapp.com/docs/blueprint-library/dbt-cloud/dbt-cloud-authorization/)**.
+
 Download all of the Logs and Artifacts created by a single run on dbt Cloud.
 
 This Vessel should run immediately after a Vessel built with the _dbt Cloud - Check Run Status_ Blueprint. With this setup, you can leave the Run ID field blank and this Vessel will download the logs and artifacts of the recently completed run.
