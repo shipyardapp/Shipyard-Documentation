@@ -31,7 +31,7 @@ _All timing of feature development is estimated and subject to change_
 
 - We want everyone to jump right in and make quick use of our platform. To help you get acclimated, there is now a short "how to" video available in the Fleet Builder guide section.
 ![Photo of Fleet Builder How to Video](./.gitbook/assets/change_log_release_20220627_1_1.png)
-- For those of you struggling with a lagging internet connection, we have added in loaders so you know things are happening... even if they are taking their sweet time.
+- For those of you struggling with a lagging internet connection, we have added in loaders so you know things are happening...even if they are taking their sweet time.
 
 ### Bug Fixes
 
