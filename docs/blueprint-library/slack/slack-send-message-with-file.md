@@ -14,7 +14,15 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [Slack authorization guide](https://www.shipyardapp.com/docs/blueprint-library/slack/slack-authorization/)**.
+
 Send a Slack message with a message attachment to any channel or DM, alerting any user in your company.
+
+**Note:** This Vessel cannot be used to access a local file from your computer.
+
+**Recommended Setup:**
+
+1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Shipyard or generates a file with code. 
 
 
 

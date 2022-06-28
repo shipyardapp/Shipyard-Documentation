@@ -14,6 +14,8 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [Snowflake authorization guide](https://www.shipyardapp.com/docs/blueprint-library/snowflake/snowflake-authorization/)**.
+
 Execute a query against Snowflake, without returning any of the resulting data. This Blueprint should primarily be used for queries that perform functionality other than SELECT, like multi-step SQL jobs, or DML statements.
 
 This Blueprint is limited to executing a single query. You cannot run multiple queries separated by `;` (this is prohibited by the Snowflake Python connector). Instead, you&#39;ll have to set up multiple Vessels with this Blueprint to run one after the other.

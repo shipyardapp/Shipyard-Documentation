@@ -14,6 +14,8 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [Google Sheets authorization guide](https://www.shipyardapp.com/docs/blueprint-library/google-sheets/google-sheets-authorization/)**.
+
 Quickly export data from a single tab on a Google Sheet to a CSV. 
 
 Only one tab of data can be downloaded at a time, since CSVs are flat files. If you leave the tab name blank, the first tab of data will be pulled.

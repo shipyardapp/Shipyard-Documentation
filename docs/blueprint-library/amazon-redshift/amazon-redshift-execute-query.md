@@ -14,6 +14,8 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [Redshift authorization guide](https://www.shipyardapp.com/docs/blueprint-library/amazon-redshift/amazon-redshift-authorization/)**.
+
 Execute any SQL query against your Redshift database. Perfect for creating multi-step SQL jobs, executing DML statements, or running scheduled queries.
 
 

@@ -14,6 +14,8 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [S3 authorization guide](https://www.shipyardapp.com/docs/blueprint-library/amazon-s3/amazon-s3-authorization/)**.
+
 Quickly export one or more files from an Amazon S3 bucket. Once the files have downloaded, transfer them to another service or run another Vessel against the data.
 
 

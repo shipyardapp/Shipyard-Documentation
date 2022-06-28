@@ -14,6 +14,8 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [dbt Cloud authorization guide](https://www.shipyardapp.com/docs/blueprint-library/dbt-cloud/dbt-cloud-authorization/)**.
+
 A Vessel built with this Blueprint will kick off a single job on dbt Cloud and check for the status every 30 seconds. Once the status is confirmed to be completed, Shipyard will attempt to download all of the logs and artifacts.
 
 The final status of this Vessel in Shipyard will reflect the status of the run in dbt Cloud.

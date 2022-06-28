@@ -14,6 +14,8 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [Cloud Storage authorization guide](https://www.shipyardapp.com/docs/blueprint-library/google-cloud-storage/google-cloud-storage-authorization/)**.
+
 Quickly export one or more files from a Google Cloud Storage (GCS) bucket. The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
 
 

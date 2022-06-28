@@ -14,6 +14,8 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [Dropbox authorization guide](https://www.shipyardapp.com/docs/blueprint-library/dropbox/dropbox-authorization/)**.
+
 Quickly export one or more files from Dropbox. The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
 
 

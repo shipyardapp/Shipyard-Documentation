@@ -14,6 +14,8 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [SFTP authorization guide](https://www.shipyardapp.com/docs/blueprint-library/sftp/sftp-authorization/)**.
+
 Quickly export one or more files from an SFTP Server. The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
 
 This Blueprint requires _read_ permissions in order to download from the SFTP server.
