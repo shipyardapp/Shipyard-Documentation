@@ -26,7 +26,7 @@ Shipyard currently has the following Blueprints readily available:
 - [Download View](tableau-download-view.md)
 
 ## Open Source Code
-The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/tableau-blueprints.md), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.
+The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/tableau-blueprints), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.
 
 ## Helpful Tableau Links
 - [Tableau SDK Documentation](https://tableau.github.io/server-client-python/docs/)  

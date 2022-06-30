@@ -192,6 +192,13 @@ module.exports = {
 					"blueprint-library/dbt-cloud/dbt-cloud-download-logs-and-artifacts",
 					"blueprint-library/dbt-cloud/dbt-cloud-execute-job-and-download-results",
 				],
+				Domo: [
+					"blueprint-library/domo/domo-overview",
+					"blueprint-library/domo/domo-authorization",
+					"blueprint-library/domo/domo-refresh-dataset",
+					"blueprint-library/domo/domo-check-refresh-status",
+					"blueprint-library/domo/domo-download-card",
+				],
 				Dropbox: [
 					"blueprint-library/dropbox/dropbox-overview",
 					"blueprint-library/dropbox/dropbox-authorization",
