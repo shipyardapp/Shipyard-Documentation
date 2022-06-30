@@ -16,11 +16,14 @@ keywords:
 
 &gt; ## **First time using this Blueprint? Make sure you follow our [Domo authorization guide](https://www.shipyardapp.com/docs/blueprint-library/domo/domo-authorization/)**.
 
-Check the job status of a workbook or datasource that has recently been refreshed in Tableau.
+Check the job status of a dataset that has recently been refreshed in Domo.
 
 **Recommended Setup:**
+
 1. A Vessel built with this Blueprint should be paired with guardrail retries. This will allow the Vessel to continually check for status until a final result is found.
-2. This Vessel should run immediately after a Vessel built with the Domo - Trigger Dataset Refresh Blueprint. With this setup, you can leave the Execution ID field blank and this Vessel will check for the results of the recently created job.
+
+2. This Vessel should run immediately after a Vessel built with the _Domo - Trigger Dataset Refresh_ Blueprint. With this setup, you can leave the Execution ID field blank and this Vessel will check for the results of the recently created job.
+
 
 
 

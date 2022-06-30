@@ -21,6 +21,7 @@ Manually trigger a refresh of a dataset in Domo.
 This Blueprint will only kick off the refresh and will almost always return a status of success. It will not wait around to verify if the created refresh job was successfully completed, but it will create and store the generated job ID to shipyard-artifacts/domo-blueprints/variables/job_id.pickle
 
 **Recommended Setup:**
+
 1. A Vessel built with the _Domo - Check Refresh Status_ Blueprint should be run immediately after this Vessel. This will ensure that you build your Fleet to act on the final status of your refresh.
 
 
