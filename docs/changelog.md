@@ -25,6 +25,18 @@ _All timing of feature development is estimated and subject to change_
 - API Access for Exporting Logs (July)
 - API Access for Bulk Editing/Creating Fleets (July)
 
+## 06/27/2022
+
+### Enhancements
+
+- We want everyone to jump right in and make quick use of our platform. To help you get acclimated, there is now a short "how to" video available in the Fleet Builder guide section.
+![Photo of Fleet Builder How to Video](./.gitbook/assets/change_log_release_20220627_1_1.png)
+- For those of you struggling with a lagging internet connection, we have added in loaders so you know things are happening...even if they are taking their sweet time.
+
+### Bug Fixes
+
+- Some logs were refusing to display causing some Fleets to keel over. Those Fleets are now afloat, the logs are back onboard, and users can see their logs in all their glory.
+
 ## 06/09/2022
 
 ### New Features
