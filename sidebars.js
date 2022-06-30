@@ -11,7 +11,7 @@ module.exports = {
 		"🚀 Getting Started": [
 			"getting-started/first-project",
 			"getting-started/first-fleet",
-			"getting-started/first-vessel-with-code"
+			"getting-started/first-vessel-with-code",
 		],
 		"📚 Reference": [
 			"reference/organizations",
@@ -191,6 +191,10 @@ module.exports = {
 					"blueprint-library/dbt-cloud/dbt-cloud-check-run-status",
 					"blueprint-library/dbt-cloud/dbt-cloud-download-logs-and-artifacts",
 					"blueprint-library/dbt-cloud/dbt-cloud-execute-job-and-download-results",
+				],
+				Domo: [
+					"blueprint-library/domo/domo-overview",
+					"blueprint-library/domo/domo-authorization",
 				],
 				Dropbox: [
 					"blueprint-library/dropbox/dropbox-overview",
