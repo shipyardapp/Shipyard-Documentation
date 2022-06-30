@@ -14,11 +14,19 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [Slack authorization guide](https://www.shipyardapp.com/docs/blueprint-library/slack/slack-authorization/)**.
+
 Send a message to Slack conditionally by determining if a file exists or not.
 
 Vessels built with this Blueprint should never fail, as the presence or lack or presence of the file only indicates whether or not the message should be sent.
 
 Works primarily when used as part of a Fleet, where a File can be generated or downloaded by an upstream Vessel.
+
+**Note:** This Vessel cannot be used to access a local file from your computer.
+
+**Recommended Setup:**
+
+1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Shipyard or generates a file with code. 
 
 
 

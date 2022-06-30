@@ -14,6 +14,8 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [BigQuery authorization guide](https://www.shipyardapp.com/docs/blueprint-library/google-bigquery/google-bigquery-authorization/)**.
+
 Turn the results of your SQL SELECT statement into CSV files that get stored in Google Cloud Storage (GCS).
 
 When exporting data from Bigquery, a [file cannot contain more than 1GB of data](https://cloud.google.com/bigquery/docs/exporting-data). As a result, this Blueprint automatically splits up data that is &gt;1GB in size into multiple files. The name of these files will be the Bucket File Name provided, with `_#` base 0 enumeration appended to the file name, before the file extension. This is the [default behavior provided by Google](https://cloud.google.com/bigquery/docs/exporting-data#exporting_data_into_one_or_more_files).

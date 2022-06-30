@@ -14,6 +14,8 @@ keywords:
 
 ## Overview
 
+&gt; ## **First time using this Blueprint? Make sure you follow our [SQL Server authorization guide](https://www.shipyardapp.com/docs/blueprint-library/microsoft-sql-server/microsoft-sql-server-authorization/)**.
+
 Execute any SQL query against a Microsoft SQL Server database, without returning any of the resulting data. This Blueprint should primarily be used for queries that perform functionality other than SELECT, like multi-step SQL jobs, or DML statements.
 
 
