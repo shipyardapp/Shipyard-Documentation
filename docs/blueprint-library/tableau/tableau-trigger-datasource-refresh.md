@@ -38,4 +38,3 @@ This Blueprint will only kick off the refresh and will almost always return a st
 | Datasource Name | TABLEAU_DATASOURCE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the published datasource you want to refresh. |
 
 
-
