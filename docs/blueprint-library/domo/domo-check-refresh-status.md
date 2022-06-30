@@ -26,6 +26,7 @@ Check the job status of a dataset that has recently been refreshed in Domo.
 
 
 
+
 ## Variables
 
 | Name | Reference | Type | Required | Default | Options | Description |

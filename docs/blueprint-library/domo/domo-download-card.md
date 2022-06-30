@@ -33,3 +33,4 @@ Download a card from Domo as a CSV, XLSX, or PPT file. Typically used for pullin
 | Folder Name | DOMO_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the file will be created. Leave blank to store in the current working directory |
 
 
+
