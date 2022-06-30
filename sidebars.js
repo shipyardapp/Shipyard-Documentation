@@ -195,6 +195,9 @@ module.exports = {
 				Domo: [
 					"blueprint-library/domo/domo-overview",
 					"blueprint-library/domo/domo-authorization",
+					"blueprint-library/domo/domo-refresh-dataset",
+					"blueprint-library/domo/domo-check-refresh-status",
+					"blueprint-library/domo/domo-download-card",
 				],
 				Dropbox: [
 					"blueprint-library/dropbox/dropbox-overview",
