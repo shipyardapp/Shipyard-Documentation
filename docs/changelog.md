@@ -22,8 +22,11 @@ Have a feature request, a bug report, a suggestion or an interesting use case? W
 
 _All timing of feature development is estimated and subject to change_
 
-- API Access for Exporting Logs (July)
-- API Access for Bulk Editing/Creating Fleets (July)
+## 07/11/2022
+
+### New Features
+
+- Want to interact with Shipyard programmatically? Now you can with the new API! Official documentation will be released soon but if you can't wait, just reach out to the team and we'll get you set up.
 
 ## 06/27/2022
 
