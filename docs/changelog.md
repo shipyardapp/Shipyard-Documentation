@@ -25,6 +25,20 @@ _All timing of feature development is estimated and subject to change_
 - API Access for Exporting Logs (July)
 - API Access for Bulk Editing/Creating Fleets (July)
 
+## 07/17/2022
+
+### Enhancements
+
+- All of our tables have been amped up!
+  - New columns (_Last Run_ and _Version_) will give you greater visibility into your Fleets and their runs without having to dig in.
+  - A new _Triggers_ column indicates if your Fleet is scheduled or has a webhook.
+  - Filtering, searching, and sorting have been added in several tables so you can more easily find what you're looking for.
+![Photo of Fleet table](./.gitbook/assets/change_log_release_20220713_1_1.png)
+
+### Bug Fixes
+
+- Who wasn't showing up to the party after they'd RSVP'ed? Status dots. We've tracked them down so they don't miss the fun. On the Fleets and Vessels tables, the Status dots should now be filled in to show you the most recent 8 statuses for your Fleet or Vessel.
+
 ## 06/27/2022
 
 ### Enhancements
