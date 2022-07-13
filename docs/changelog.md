@@ -32,7 +32,7 @@ _All timing of feature development is estimated and subject to change_
 - All of our tables have been amped up!
   - New columns (_Last Run_ and _Version_) will give you greater visibility into your Fleets and their runs without having to dig in.
   - A new _Triggers_ column indicates if your Fleet is scheduled or has a webhook.
-  - Filtering, searching, and sorting has been added in several tables so you can more easily find what you're looking for.
+  - Filtering, searching, and sorting have been added in several tables so you can more easily find what you're looking for.
 ![Photo of Fleet table](./.gitbook/assets/change_log_release_20220713_1_1.png)
 
 ### Bug Fixes
