@@ -279,6 +279,14 @@ module.exports = {
 						to: "/blueprint-library/snowflake/snowflake-overview",
 						from: ["/blueprint-library/snowflake"],
 					},
+					{
+						to: "/data-packages/dbt-core/dbt-core-overview",
+						from: ["/tutorials/dbt-blueprint"],
+					},
+					{
+						to: "/data-packages/great-expectations/great-expectations-blueprint",
+						from: ["/tutorials/great-expectations-blueprint"],
+					}
 				],
 				createRedirects: function (existingPath) {
 					if (

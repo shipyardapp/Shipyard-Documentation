@@ -318,5 +318,18 @@ module.exports = {
 				],
 			},
 		],
+		"📦 Data Packages": [
+			{
+				"dbt Core": [
+					"data-packages/dbt-core/dbt-core-overview",
+					"data-packages/dbt-core/dbt-core-day-1",
+					"data-packages/dbt-core/dbt-core-day-2",
+					"data-packages/dbt-core/dbt-core-day-3",
+				],
+				"Great Expectations": [
+					"data-packages/great-expectations/great-expectations-blueprint"
+				],
+			}
+		],
 	},
 };
