@@ -316,7 +316,7 @@ module.exports = {
 				],
 			},
 		],
-		"📦 Data Packages": [
+		"🗂 Data Packages": [
 			{
 				"dbt Core": [
 					"data-packages/dbt-core/dbt-core-overview",
