@@ -53,7 +53,7 @@ In part 3 of the dbt Core guide, we will run the dbt model that was created in p
 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_31_11_47_26.png)
 
-1.  Click **Run your Fleet**. This will take you to the Fleet Log page.
+12. Click **Run your Fleet**. This will take you to the Fleet Log page.
 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_31_13_46_29.png)
 
