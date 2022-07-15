@@ -18,7 +18,7 @@ Shipyard allows you to host dbt Core in the cloud from a Github repository. The 
 We have created a three part guide that walks you through the setup process for dbt Core and Shipyard. 
 
 * [Part 1 - Setting up your Data Warehouse](dbt-core-set-up-data-warehouse.md)
-* [Part two](dbt-core-day-2.md)
+* [Part 2 - Setting up dbt](dbt-core-set-up-dbt.md)
 * [Part three](dbt-core-day-3.md)
 
 ## Cloud Databases Covered in this Guide

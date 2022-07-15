@@ -321,7 +321,7 @@ module.exports = {
 				"dbt Core": [
 					"data-packages/dbt-core/dbt-core-overview",
 					"data-packages/dbt-core/dbt-core-set-up-data-warehouse",
-					"data-packages/dbt-core/dbt-core-day-2",
+					"data-packages/dbt-core/dbt-core-set-up-dbt",
 					"data-packages/dbt-core/dbt-core-day-3",
 				],
 				"Great Expectations": [

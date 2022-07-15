@@ -1,11 +1,12 @@
 ---
-id: dbt-core-day-2
-title: Getting Started with dbt Core - Part 2
+id: dbt-core-set-up-dbt
+title: dbt Core Tutorial Part 2 - Setting Up dbt
+sidebar_label: Part 2 - Setting Up dbt
 hide_title: true
-description: Part two of a three part series on running dbt Core in the cloud.
+description: Set up the components necessary for dbt core to run. Part two of a three part series on running dbt Core in the cloud.
 keywords:
   - dbt
-  - dbt-core
+  - dbt core
   - tutorial
 ---
 
@@ -16,8 +17,8 @@ import TabItem from '@theme/TabItem';
 
 In part 2 of the dbt core setup series, we will review the setup process for each of the cloud data warehouses that we discussed on part 1. We will also setup a free developer account on **Shipyard** and setup a Blueprint to run our dbt core process. Before we can begin, there are some prerequisite items that need to be addressed:
 * Complete [Part 1](dbt-core-set-up-data-warehouse.md) of the dbt core series
-* Create a [Github Account] if you do not currently have one.
-* Have a text editor available. I recommend [Atom](https://atom.io/) or [Visual Studio Code](https://code.visualstudio.com/).
+* Create a [Github Account](https://github.com/) if you do not currently have one.
+* Have a text editor available. We recommend [Atom](https://atom.io/) or [Visual Studio Code](https://code.visualstudio.com/).
 
 ### Get Initial dbt Project Setup from Github
 1. Fork [this repository](https://github.com/smjohnsonShipyard/dbt_test). The repository contains the beginning state of a dbt project.
