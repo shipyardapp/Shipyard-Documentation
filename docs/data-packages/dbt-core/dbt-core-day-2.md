@@ -65,7 +65,9 @@ soccer_538:
       priority: interactive
       keyfile: "{{ env_var('BIGQUERY_KEYFILE') }}"
 ```
+:::note
 You'll note that the keyfile above is denoted as an environment variable. We will send that in as an environment variable inside of **Shipyard** to protect it from being seen.
+:::
 3. Create a new file in your root directory of your dbt project called `execute_dbt.py`.
 4. Paste this code block for the content of execute_dbt.py:
 
@@ -260,8 +262,8 @@ select * from `"DBT_HOL_DEV"."PUBLIC"."STG_FOOTBALL_MATCHES"`
 </TabItem>
 </Tabs>
 
-1. Inside the staging folder, create a file called `stg_football_rankings.sql`
-2. Paste the following code into that file:
+5.  Inside the staging folder, create a file called `stg_football_rankings.sql`
+6.  Paste the following code into that file:
 
 <Tabs
 groupId="code-inputs"
@@ -444,7 +446,7 @@ values={[
 | Variable Name           | Value                    |
 |-------------------------|--------------------------|
 | snowflake_trial_account | snowflake account name |
-| dbt_user_password       | username from redshift |
+| dbt_user_password       | password from snowflake |
 | DBT_PROFILES_DIR        | .                        |
 
 </TabItem>

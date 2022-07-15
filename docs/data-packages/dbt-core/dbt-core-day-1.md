@@ -57,21 +57,21 @@ values={[
 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_16_15_54_46.png)
 
-1. For **Dataset ID**, enter `538_football`.
-2. Click **Create Dataset**.
-3. Expand the dbt-demos project on the left sidebar by clicking the arrow. Locate the 538_football dataset. Click the 3 dots and choose **Create Table**.
-4. Under **Create Table from**, choose Upload and choose `spi_matches_latest.csv`.
-5. Under **File Format**, choose CSV.
-6. Project and Dataset should automatically be set to `dbt-demos` and `538_football` respectively.
-7.  Under table, enter `stg_football_matches`
-8.  Check the box for **Auto Detect**.
+3. For **Dataset ID**, enter `538_football`.
+4. Click **Create Dataset**.
+5. Expand the dbt-demos project on the left sidebar by clicking the arrow. Locate the 538_football dataset. Click the 3 dots and choose **Create Table**.
+6. Under **Create Table from**, choose Upload and choose `spi_matches_latest.csv`.
+7. Under **File Format**, choose CSV.
+8. Project and Dataset should automatically be set to `dbt-demos` and `538_football` respectively.
+9. Under table, enter `stg_football_matches`
+10. Check the box for **Auto Detect**.
 
 Your settings should look like this:
 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_16_16_27_33.png)
 
-1.  Click **Create Table**.
-2.  Repeat steps 6-12 with the second CSV file, however name the table `stg_football_rankings`.
+11. Click **Create Table**.
+12. Repeat steps 6-12 with the second CSV file, however name the table `stg_football_rankings`.
 
 You should be able to see the two tables you created under the `538_football` dataset on the left sidebar as seen in this photo:
 
@@ -102,7 +102,7 @@ This query creates an example user, warehouse, and database to use throughout th
 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_20_14_47_37.png)
 
-1. Click **DBT_HOL_DEV** to navigate inside of the database.
+4. Click **DBT_HOL_DEV** to navigate inside of the database.
 
 ### Load Data
 1. Click **Create** on the top left of the screen to create a table inside our database.
@@ -125,24 +125,24 @@ Your final table setup should look like this:
 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_17_11_45_30.png)
 
-1. Click **Finish**. You should see the new table **stg_football_rankings** in your dbt_demo database now
+6.  Click **Finish**. You should see the new table **stg_football_rankings** in your dbt_demo database now
 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_17_11_46_51.png)
 
-1. Click **Load Data** which will bring up the load data menu.
-2. Choose **DBT_DEV_WH** as the warehouse to load data. Click next.
-3. Click **Select Files** and select `spi_global_rankings.csv`. Click next.
-4.  Click the plus sign next to the drop down to create our file format.
-5.  Under **name**, enter **dbt_tutorial_csv**.
-6.  Change header lines to skip to 1 from 0.
-7.  Keep the other settings at their default.
-8.  Click **Finish**.
-9.  Click **Load**.
-10. After the data has loaded into Snowflake, you will receive a success message that looks like this:
+7.  Click **Load Data** which will bring up the load data menu.
+8.  Choose **DBT_DEV_WH** as the warehouse to load data. Click next.
+9.  Click **Select Files** and select `spi_global_rankings.csv`. Click next.
+10. Click the plus sign next to the drop down to create our file format.
+11. Under **name**, enter **dbt_tutorial_csv**.
+12. Change header lines to skip to 1 from 0.
+13. Keep the other settings at their default.
+14. Click **Finish**.
+15. Click **Load**.
+16. After the data has loaded into Snowflake, you will receive a success message that looks like this:
 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_20_15_04_46.png)
 
-1.  We will need to repeat the steps above for our second table with the following settings:
+17. We will need to repeat the steps above for our second table with the following settings:
    1. **Table Name**: stg_football_matches
    2. **Schema**:
 
@@ -172,46 +172,46 @@ Your final table setup should look like this:
 | adj_score1 | Float |
 | adj_score2 | Float |
 
-    1. File selected to load data from: `spi_matches_latest.csv`.
+  3. File selected to load data from: `spi_matches_latest.csv`.
 
-You should be able to see both tables listed under your `DBT_HOL_DEV` database now
+You should be able to see both tables listed under your `DBT_HOL_DEV` database now.
 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_20_15_12_16.png)
 
-1.  Click on `STG_FOOTBALL_RANKINGS` and click **Grant Privileges** on the right of the screen. Grant all actions to the `DBT_DEV_ROLE`.
-2.  Repeat this for `STG_FOOTBALL_MATCHES`
+18. Click on `STG_FOOTBALL_RANKINGS` and click **Grant Privileges** on the right of the screen. Grant all actions to the `DBT_DEV_ROLE`.
+19. Repeat this for `STG_FOOTBALL_MATCHES`.
 
 </TabItem>
 
 <TabItem value="databricks">
 
 
-1. Navigate to the left sidebar and select data. This will open up the sidebar to look at the data currently stored in Databricks.
-2. Click **Create Table**. This will take you to the Create New Table page.
-3. Under Files, click the box to browse your files and select `spi_matches_latest.csv`.
+1.  Navigate to the left sidebar and select data. This will open up the sidebar to look at the data currently stored in Databricks.
+2.  Click **Create Table**. This will take you to the Create New Table page.
+3.  Under Files, click the box to browse your files and select `spi_matches_latest.csv`.
 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_19_11_12_40.png)
 
-1. Click **Create Table with UI**
-2. Select Cluster to preview table. Click **Preview Table**. This will give you the ability to specify options for the table.
+4.  Click **Create Table with UI**
+5.  Select Cluster to preview table. Click **Preview Table**. This will give you the ability to specify options for the table.
 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_19_11_13_44.png)
 
-1. Under **Table Name**, enter `stg_football_matches`.
-2. Under **Create in Database**, feel free to change to any database you like. We will use the default for simplicity's sake.
-3. Under **File Type**, make sure CSV is selected.
-4. Under **Column Delimiter**, make sure `,` is in the box.
-5.  Check the box for **First row is header**.
-6.  Check the box for **Infer schema**.
-7.  Click **Create Table**. This will redirect to the table that you just created:
+6.  Under **Table Name**, enter `stg_football_matches`.
+7.  Under **Create in Database**, feel free to change to any database you like. We will use the default for simplicity's sake.
+8.  Under **File Type**, make sure CSV is selected.
+9.  Under **Column Delimiter**, make sure `,` is in the box.
+10. Check the box for **First row is header**.
+11. Check the box for **Infer schema**.
+12. Click **Create Table**. This will redirect to the table that you just created:
 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_19_11_25_05.png)
 
-1.  Click **Data** on the left sidebar to open the data sidebar. Click **Create Table**.
-2.  Repeat steps 3-12 with the following changes:
+13. Click **Data** on the left sidebar to open the data sidebar. Click **Create Table**.
+14. Repeat steps 3-12 with the following changes:
     1.  Under Files, click the box to browse your files and select `spi_global_rankings.csv`.
     2.  Under **Table Name**, enter `stg_football_rankings`.
-3.  After repeating those steps with the indicated changes, your resulting page should look like this:
+15. After repeating those steps with the indicated changes, your resulting page should look like this:
 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_19_11_31_39.png)
 </TabItem>
@@ -238,7 +238,7 @@ This tutorial assumes that you have done the following:
 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_23_16_19_24.png)
 
-1. Click **Upload**. After the upload is complete, you should be shown an upload succeeded banner that looks like this:
+8. Click **Upload**. After the upload is complete, you should be shown an upload succeeded banner that looks like this:
 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_23_16_24_11.png)
 
@@ -299,8 +299,8 @@ Now that we have our tables setup in Redshift. We need to load the data from S3 
 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_24_10_22_12.png)
 
-1. Navigate back to the Redshift console.
-2. Run the following two queries replacing the italicized lines with the S3 URI, IAM_role, and your region:
+4. Navigate back to the Redshift console.
+5. Run the following two queries replacing the italicized lines with the S3 URI, IAM_role, and your region:
 
 ```sql
 copy soccer.stg_football_matches( season, date, league_id, league, team1, team2, spi1, spi2, prob1, prob2, probtie, proj_score1, proj_score2, importance1, importance2, score1, score2, xg1, xg2, nsxg1, nsxg2, adj_score1, adj_score2)
