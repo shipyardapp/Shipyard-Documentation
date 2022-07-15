@@ -15,7 +15,7 @@ import TabItem from '@theme/TabItem';
 # dbt Core Part 2 - Setting Up dbt
 
 In part 2 of the dbt core setup series, we will review the setup process for each of the cloud data warehouses that we discussed on part 1. We will also setup a free developer account on **Shipyard** and setup a Blueprint to run our dbt core process. Before we can begin, there are some prerequisite items that need to be addressed:
-* Complete [Part 1](dbt-core-day-1.md) of the dbt core series
+* Complete [Part 1](dbt-core-set-up-data-warehouse.md) of the dbt core series
 * Create a [Github Account] if you do not currently have one.
 * Have a text editor available. I recommend [Atom](https://atom.io/) or [Visual Studio Code](https://code.visualstudio.com/).
 
@@ -39,7 +39,7 @@ In part 2 of the dbt core setup series, we will review the setup process for eac
 groupId="code-inputs"
 defaultValue="bigquery"
 values={[
-{label: 'Bigquery', value: 'bigquery'},
+{label: 'BigQuery', value: 'bigquery'},
 {label: 'Databricks', value: 'databricks'},
 {label: 'Redshift', value: 'redshift'},
 {label: 'Snowflake', value: 'snowflake'}
@@ -231,7 +231,7 @@ Now that we have our sample data and dbt processes setup, we need to write our e
 groupId="code-inputs"
 defaultValue="bigquery"
 values={[
-{label: 'Bigquery', value: 'bigquery'},
+{label: 'BigQuery', value: 'bigquery'},
 {label: 'Databricks', value: 'databricks'},
 {label: 'Redshift', value: 'redshift'},
 {label: 'Snowflake', value: 'snowflake'}
@@ -269,7 +269,7 @@ select * from `"DBT_HOL_DEV"."PUBLIC"."STG_FOOTBALL_MATCHES"`
 groupId="code-inputs"
 defaultValue="bigquery"
 values={[
-{label: 'Bigquery', value: 'bigquery'},
+{label: 'BigQuery', value: 'bigquery'},
 {label: 'Databricks', value: 'databricks'},
 {label: 'Redshift', value: 'redshift'},
 {label: 'Snowflake', value: 'snowflake'}
@@ -403,7 +403,7 @@ The environment variables that need to be added will vary based on the cloud dat
 groupId="code-inputs"
 defaultValue="bigquery"
 values={[
-{label: 'Bigquery', value: 'bigquery'},
+{label: 'BigQuery', value: 'bigquery'},
 {label: 'Databricks', value: 'databricks'},
 {label: 'Redshift', value: 'redshift'},
 {label: 'Snowflake', value: 'snowflake'}

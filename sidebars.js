@@ -320,14 +320,14 @@ module.exports = {
 			{
 				"dbt Core": [
 					"data-packages/dbt-core/dbt-core-overview",
-					"data-packages/dbt-core/dbt-core-day-1",
+					"data-packages/dbt-core/dbt-core-set-up-data-warehouse",
 					"data-packages/dbt-core/dbt-core-day-2",
 					"data-packages/dbt-core/dbt-core-day-3",
 				],
 				"Great Expectations": [
-					"data-packages/great-expectations/great-expectations-blueprint"
+					"data-packages/great-expectations/great-expectations-blueprint",
 				],
-			}
+			},
 		],
 	},
 };
