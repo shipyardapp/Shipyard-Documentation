@@ -322,7 +322,7 @@ module.exports = {
 					"data-packages/dbt-core/dbt-core-overview",
 					"data-packages/dbt-core/dbt-core-set-up-data-warehouse",
 					"data-packages/dbt-core/dbt-core-set-up-dbt",
-					"data-packages/dbt-core/dbt-core-day-3",
+					"data-packages/dbt-core/dbt-core-run-and-generate-docs",
 				],
 				"Great Expectations": [
 					"data-packages/great-expectations/great-expectations-blueprint",

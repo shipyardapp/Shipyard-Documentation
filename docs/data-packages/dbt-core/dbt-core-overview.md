@@ -19,7 +19,7 @@ We have created a three part guide that walks you through the setup process for 
 
 * [Part 1 - Setting up your Data Warehouse](dbt-core-set-up-data-warehouse.md)
 * [Part 2 - Setting up dbt](dbt-core-set-up-dbt.md)
-* [Part three](dbt-core-day-3.md)
+* [Part 3 - Run dbt, Generate Docs, and Upload to Cloud Storage](dbt-core-run-and-generate-docs.md)
 
 ## Cloud Databases Covered in this Guide
 While the steps in this guide will work with any [cloud data warehouse that dbt supports](https://docs.getdbt.com/docs/available-adapters), our guide walks through the steps specifically for the following four databases: 
