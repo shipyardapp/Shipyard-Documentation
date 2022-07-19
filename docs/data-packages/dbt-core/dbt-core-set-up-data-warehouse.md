@@ -188,7 +188,7 @@ You should be able to see both tables listed under your `DBT_HOL_DEV` database n
  
 You should now be able to query `"DBT_HOL_DEV"."PUBLIC"."STG_FOOTBALL_RANKINGS"` and `"DBT_HOL_DEV"."PUBLIC"."STG_FOOTBALL_MATCHES"`. Feel free to run this query to verify that this process worked successfully: 
 ```sql
-select * from `"DBT_HOL_DEV"."PUBLIC"."STG_FOOTBALL_MATCHES"`
+select * from "DBT_HOL_DEV"."PUBLIC"."STG_FOOTBALL_MATCHES"
 ```
 
 ## Databricks
@@ -225,7 +225,7 @@ select * from `"DBT_HOL_DEV"."PUBLIC"."STG_FOOTBALL_MATCHES"`
 
 You should now be able to query `default.stg_football_rankings` and `default.stg_football_matches`. Feel free to run this query to verify that this process worked successfully: 
 ```sql
-select * from `default.stg_football_matches`
+select * from default.stg_football_matches
 ```
 
 
@@ -337,5 +337,5 @@ acceptinvchars;
 
 You should now be able to query `soccer.stg_football_rankings` and `soccer.stg_football_matches`. Feel free to run this query to verify that this process worked successfully: 
 ```sql
-select * from `soccer.stg_football_matches`
+select * from soccer.stg_football_matches
 ```

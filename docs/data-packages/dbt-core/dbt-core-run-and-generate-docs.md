@@ -1,8 +1,8 @@
 ---
 id: dbt-core-run-and-generate-docs
-title: dbt Core Tutorial Part 3 - Run dbt and Upload Documentation
+title: dbt Core Tutorial Part 4 - Run dbt and Upload Documentation
 hide_title: true
-sidebar_label: Part 3 - Run dbt, Generate Docs, and Upload
+sidebar_label: Part 4 - Run dbt, Generate Docs, and Upload
 description: Run dbt, generate documentation, and upload the contents to cloud storage. Part three of a three part series on running dbt Core in the cloud.
 keywords:
   - dbt
@@ -13,12 +13,13 @@ keywords:
   - tutorial
 ---
 
-# dbt Core Part 3 - Setting Up dbt
+# dbt Core Part 4 - Setting Up dbt
 
-In part 3 of the dbt Core guide, we will run the dbt model that was created in part 2. After the model completes its run, we will use Shipyard to upload the documentation to an Amazon S3 bucket. If you missed the first two installments of this guide, please go back and check them out: 
+In part 4 of the dbt Core guide, we will run the dbt model that was created in part 2. After the model completes its run, we will use Shipyard to upload the documentation to an Amazon S3 bucket. If you missed the first two installments of this guide, please go back and check them out: 
 
   * [Part 1](dbt-core-set-up-data-warehouse.md)
   * [Part 2](dbt-core-set-up-dbt.md)
+  * [Part 3](dbt-core-set-up-shipyard.md)
 
 ## Run dbt model
 
