@@ -1,34 +1,39 @@
 ---
-id: dbt-core-day-3
-title: Getting Started with dbt Core - Part 3
+id: dbt-core-run-and-generate-docs
+title: dbt Core Tutorial Part 3 - Run dbt and Upload Documentation
 hide_title: true
-description: Part three of a three part series on running dbt Core in the cloud.
+sidebar_label: Part 3 - Run dbt, Generate Docs, and Upload
+description: Run dbt, generate documentation, and upload the contents to cloud storage. Part three of a three part series on running dbt Core in the cloud.
 keywords:
   - dbt
-  - dbt-core
+  - dbt core
+  - dbt run
+  - dbt docs
+  - amazon s3
   - tutorial
 ---
 
 # dbt Core Part 3 - Setting Up dbt
 
-In part 3 of the dbt Core guide, we will run the dbt model that was created in part 2. After the model completes its run, we will use **Shipyard** to upload the documentation to an Amazon S3 bucket. If you missed the first two installments of this guide, please go back and check them out: 
+In part 3 of the dbt Core guide, we will run the dbt model that was created in part 2. After the model completes its run, we will use Shipyard to upload the documentation to an Amazon S3 bucket. If you missed the first two installments of this guide, please go back and check them out: 
 
-  * [Part 1](dbt-core-day-1.md)
-  * [Part 2](dbt-core-day-2.md)
+  * [Part 1](dbt-core-set-up-data-warehouse.md)
+  * [Part 2](dbt-core-set-up-dbt.md)
 
-### Run dbt model
+## Run dbt model
 
 1. Navigate back to the Project created in Part 2 called `dbt Core Testing`.
 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_31_11_16_55.png)
 
-2. Hover over the blue **New** button in the top right corner of your page and click **New Fleet**.
-3. Click the gear icon on the sidebar of the Fleet Builder to open **Fleet Settings**.
-4. Under **Fleet Name**, enter `dbt Run and Download Documents`. Click on the plus sign on the Fleet Builder sidebar to begin adding Vessels.
+2. Hover over the **+ New** button in the top right corner of your page and click **New Fleet**.
+2. Click the gear icon on the sidebar of the Fleet Builder to open **Fleet Settings**.
+3. Under **Fleet Name**, enter `dbt Run and Download Documents`. 
+4. Click the plus sign on the Fleet Builder sidebar to begin adding Vessels.
 5. Scroll to Org Blueprints and find the Blueprint that was created in part 2 of the guide called `dbt - Execute CLI Command`. Click the Blueprint to add it to the Fleet as a Vessel.
 6. Under **Vessel Name**, enter `dbt Model Run`. Leave the **dbt CLI Command** as the default.
 
-### Generate Documentation on the dbt Run
+## Generate Documentation on the dbt Run
 
 1. Click on the plus sign on the Fleet Builder sidebar.
 2. Click the `dbt - Execute CLI Command` Blueprint again to add it to the Fleet a second time. 
@@ -37,7 +42,7 @@ In part 3 of the dbt Core guide, we will run the dbt model that was created in p
 5. Connect the `dbt Model Run` and `dbt docs generate` Vessels together. 
 
 
-### Upload Documentation to Amazon S3 Bucket
+## Upload Documentation to Amazon S3 Bucket
 
 1. Click on the plus sign on the Fleet Builder sidebar.
 2. Click on **Amazon S3** to expand the Blueprint options. Click the Blueprint titled `Upload Files`. A Vessel will be created and placed into the Fleet Builder.

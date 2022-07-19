@@ -1,21 +1,28 @@
 ---
-id: dbt-core-day-1
-title: Getting Started with dbt Core - Part 1
+id: dbt-core-set-up-data-warehouse
+title: dbt Core Tutorial Part 1 - Setting Up Your Data Warehouse
+sidebar_label: Part 1 - Setting Up Your Data Warehouse
 hide_title: true
-description: Part one of a three part series on running dbt Core in the cloud.
+description: Set up data in your data warehouse of choice (Snowflake, Databricks, BigQuery, or Redshift) to begin using dbt Core. Part one of a three part series on running dbt Core in the cloud.
 keywords:
   - dbt
-  - dbt-core
+  - dbt core
+  - data warehouse
+  - data build tool
+  - snowflake
+  - bigquery
+  - redshift
+  - databricks
   - tutorial
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# dbt Core Part 1 - Loading Sample Data into your Cloud Provider
+# dbt Core Tutorial Part 1 - Setting Up Your Data Warehouse
 
 To begin our tutorial for dbt core in Shipyard, we need to setup an example dataset to work with. This guide will follow the steps in dbt's tutorial, however, we will setup the following cloud data warehouses:
-* Bigquery
+* BigQuery
 * Databricks
 * Redshift
 * Snowflake
@@ -35,10 +42,9 @@ This tutorial assumes that you have an account created for your chosen data ware
 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_16_15_34_51.png)
 
-3. On the top right of the Project Browser, click New Project. This will redirect you to put information in about your new project
-4. Under **Project Name**, enter `dbt-demos`
-5. Organization and Location can stay at their default values.
-6. Click **Create***.
+3. On the top right of the Project Browser, click New Project. This will redirect you to put information in about your new project.
+4. Under **Project Name**, enter `dbt-demos`. Organization and Location can stay at their default values.
+5. Click **Create**.
 
 ### Upload Data
 1. Locate the `dbt-demos` project that we created on the left side bar.
@@ -77,7 +83,7 @@ SELECT * FROM `dbt-demos.538_football.stg_football_matches`
 ### Set-Up Users, Roles, Warehouses, and Database
 
 1. From the Snowflake homepage, click **Worksheets** on the top of the webpage.
-2. Input the follow query:
+2. Input the follow query and run it:
 
 ```
 USE ROLE accountadmin;
@@ -93,12 +99,12 @@ GRANT ALL ON DATABASE dbt_hol_dev  TO ROLE dbt_dev_role;
 GRANT ALL ON ALL SCHEMAS IN DATABASE dbt_hol_dev   TO ROLE dbt_dev_role
 ```
 This query creates an example user, warehouse, and database to use throughout the tutorial.
-3. Run the queries.
-4. Click the **Databases** button on the top left of your screen. You should see the `DBT_HOL_DEV` database that we created:
+
+3. Click the **Databases** button on the top left of your screen. You should see the `DBT_HOL_DEV` database that we created:
 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_20_14_47_37.png)
 
-5. Click **Worksheets** on the top of your page.
+4. Click **Worksheets** on the top of your page.
 
 ### Create Tables
 1. Enter the following query into the worksheet to create our `stg_football_rankings` table:
@@ -228,9 +234,9 @@ select * from `default.stg_football_matches`
 :::note
 This tutorial assumes that you have done the following:
 
-  * setup the appropriate permissions.
-  * created a cluster.
-  * created an S3 bucket to store the sample files.
+  * setup the appropriate permissions (see [authorization guide](../../blueprint-library/amazon-redshift/amazon-redshift-authorization.md))
+  * created a Redshift cluster
+  * created an S3 bucket to store the sample files
 :::
 
 ### Load data into S3
@@ -257,7 +263,7 @@ This tutorial assumes that you have done the following:
 ```sql
 create schema if not exists soccer
 ```
-3. Create the tables inside of our new soccer schema to hold our uploaded data in S3. This query will accomplish that:
+3. Run the following query to create tables inside of our new soccer schema to hold our uploaded data in S3.
 
 ```sql
 create table soccer.stg_football_rankings(
@@ -302,7 +308,7 @@ Now that we have our tables setup in Redshift. We need to load the data from S3 
 
 1. Navigate to S3 and find the files that we uploaded in the prior steps.
 2. Click the name of each file to locate the S3 URI.
-3. Copy and paste the S3 URIs to a notepad for use later in these steps.
+3. Copy and paste the S3 URIs for use later in these steps.
 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_24_10_22_12.png)
 

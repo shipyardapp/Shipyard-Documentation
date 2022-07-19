@@ -37,7 +37,7 @@ Blueprints are broken down into a few categories with core functionality that sh
 - [Amazon Athena](../../blueprint-library/amazon-athena/amazon-athena-overview.md)
 - [Amazon Redshift](../../blueprint-library/amazon-redshift/amazon-redshift-overview.md)
 - [bit.io](../../blueprint-library/bitio/bitio-overview.md)
-- [Google Bigquery](../../blueprint-library/google-bigquery/google-bigquery-overview.md)
+- [Google BigQuery](../../blueprint-library/google-bigquery/google-bigquery-overview.md)
 - [Microsoft SQL Server](../../blueprint-library/microsoft-sql-server/microsoft-sql-server-overview.md)
 - [MySQL](../../blueprint-library/mysql/mysql-overview.md)
 - [PostgreSQL](../../blueprint-library/postgresql/postgresql-overview.md)
