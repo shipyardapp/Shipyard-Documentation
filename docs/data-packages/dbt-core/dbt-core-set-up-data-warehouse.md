@@ -22,10 +22,10 @@ import TabItem from '@theme/TabItem';
 # dbt Core Tutorial Part 1 - Setting Up Your Data Warehouse
 
 To begin our tutorial for dbt core in Shipyard, we need to setup an example dataset to work with. This guide will follow the steps in dbt's tutorial, however, we will setup the following cloud data warehouses:
-* BigQuery
-* Databricks
-* Redshift
-* Snowflake
+* [BigQuery](#bigquery)
+* [Databricks](#databricks)
+* [Redshift](#redshift)
+* [Snowflake](#snowflake)
 
 Before getting into the steps of setting up the different cloud data warehouses, please download the sample files that we will use for this tutorial [here](https://drive.google.com/drive/folders/15gLVxj5-aMee0CRZ7H9Ht-S9CkZ1jB6y?usp=sharing).
 
@@ -65,8 +65,8 @@ Your settings should look like this:
 
 ![](../../.gitbook/assets/shipyard_2022_07_18_10_20_43.png)
 
-1.  Click **Create Table**.
-2.  Repeat steps 6-12 with the second CSV file, however name the table `stg_football_rankings`.
+11.  Click **Create Table**.
+12.  Repeat steps 5-11 with the second CSV file, however name the table `stg_football_rankings`.
 
 You should be able to see the two tables you created under the `538_football` dataset on the left sidebar as seen in this photo:
 
