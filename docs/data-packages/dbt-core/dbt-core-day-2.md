@@ -19,6 +19,8 @@ In part 2 of the dbt core setup series, we will review the setup process for eac
 * Create a [Github Account] if you do not currently have one.
 * Have a text editor available. I recommend [Atom](https://atom.io/) or [Visual Studio Code](https://code.visualstudio.com/).
 
+## dbt Set-Up
+
 ### Get Initial dbt Project Setup from Github
 1. Fork [this repository](https://github.com/smjohnsonShipyard/dbt_test). The repository contains the beginning state of a dbt project.
 2. Open `dbt_project.yml` in your text editor.
@@ -363,6 +365,8 @@ models:
 
 
 We are ready to move into **Shipyard** to run our process. First, you will need to create a developer account.
+
+## Shipyard Set-Up
 
 ### Create Developer **Shipyard** Account
 

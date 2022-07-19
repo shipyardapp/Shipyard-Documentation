@@ -61,7 +61,7 @@ On the Fleet Log, you can see the status confirms that the Fleet completed succe
 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_31_13_48_51.png)
 
-#### Other Options for Documentation Export
+### Other Options for Documentation Export
 
 * [Azure Blob Storage](https://www.shipyardapp.com/docs/blueprint-library/azure-blob-storage/azure-blob-storage-overview/)
 * [Box](https://www.shipyardapp.com/docs/blueprint-library/box/box-overview/)
