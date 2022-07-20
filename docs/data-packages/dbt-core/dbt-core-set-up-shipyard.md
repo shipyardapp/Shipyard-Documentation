@@ -20,7 +20,7 @@ In part 3 of this guide, we will move into Shipyard to deploy dbt Core in the cl
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_24_10_49_18.png)
 
 2. Sign up with your email address and organization name.
-3. Connect to your Github account by following this [guide](https://www.shipyardapp.com/blog/automate-deployment-github-code/). After connecting your Github account, you'll be ready to create your first Blueprint.
+3. Connect to your GitHub account by following this [guide](https://www.shipyardapp.com/blog/automate-deployment-github-code/). After connecting your GitHub account, you'll be ready to create your first Blueprint.
 
 ### Creating dbt Core Blueprint
 1. On the sidebar of Shipyard's website, click **Blueprints**.
@@ -112,7 +112,7 @@ values={[
 2. Click the plus sign next to **Python Packages** twice to add two new packages.
 3. In the first **Name** field, enter `dbt`. In the version field, enter `==1.0.0`.
 :::caution
-For Databricks, use `dbt-databricks` instead of dbt
+For Databricks, use `dbt-databricks` instead of `dbt`
 :::
 4. In the second **Name** field, enter `MarkupSafe`. In the version field, enter `==2.0.1`.
 5. Click **Next**.

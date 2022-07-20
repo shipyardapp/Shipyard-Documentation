@@ -18,7 +18,7 @@ import TabItem from '@theme/TabItem';
 
 In part 2 of the dbt core setup series, we will review the setup process for each of the cloud data warehouses that we discussed on part 1. Before we can begin, there are some prerequisite items that need to be addressed:
 * Complete [Part 1](dbt-core-set-up-data-warehouse.md) of the dbt core series
-* Create a [Github Account](https://github.com/) if you do not currently have one.
+* Create a [GitHub Account](https://github.com/) if you do not currently have one.
 * Have a text editor available. We recommend [Atom](https://atom.io/) or [Visual Studio Code](https://code.visualstudio.com/).
 
 ## dbt Set-Up
@@ -72,8 +72,8 @@ soccer_538:
 :::note
 You'll note that the keyfile above is denoted as an environment variable. We will send that in as an environment variable inside of Shipyard to protect it from being seen.
 :::
-1. Create a new file in your root directory of your dbt project called `execute_dbt.py`.
-2. Paste this code block for the content of execute_dbt.py:
+2. Create a new file in your root directory of your dbt project called `execute_dbt.py`.
+3. Paste this code block for the content of `execute_dbt.py`:
 
 ```python title="execute_dbt.py"
 import subprocess
@@ -92,7 +92,7 @@ if not bigquery_credentials or not bigquery_credentials == 'None':
 
 subprocess.run(['sh', '-c', dbt_command], check=True)
 ```
-3. Commit and push your changes to Github.
+4. Save your changes, make a commit, and push your changes to GitHub.
 
 </TabItem>
 
@@ -121,7 +121,7 @@ soccer_538:
 ```
 
 2. Create a new file in your root directory of your dbt project called `execute_dbt.py`.
-3. Paste this code block for the content of execute_dbt.py:
+3. Paste this code block for the content of `execute_dbt.py`:
 
 ```python title="execute_dbt.py"
 import subprocess
@@ -132,7 +132,7 @@ dbt_command = os.environ.get('dbt_command', 'dbt run')
 
 subprocess.run(['sh', '-c', dbt_command], check=True)
 ```
-5. Commit and push your changes to Github.
+5. Save your changes, make a commit, and push your changes to GitHub.
 
 </TabItem>
 
@@ -141,7 +141,7 @@ subprocess.run(['sh', '-c', dbt_command], check=True)
 
 <TabItem value="databricks">
 
-1. Open `profiles.yml` and Update the file to the following contents, changing the schema to use your name and the correct http path:
+1. Open `profiles.yml` and update the file to the following contents, changing the schema to use your name and the correct http path:
 
 ```yaml title="profiles.yml"
 soccer_538:
@@ -155,7 +155,7 @@ soccer_538:
           token: "{{ env_var('databricks_token') }}"
 ```
 2. Create a new file in your root directory of your dbt project called `execute_dbt.py`.
-3. Paste this code block for the content of execute_dbt.py:
+3. Paste this code block for the content of `execute_dbt.py`:
 
 ```python title="execute_dbt.py"
 import subprocess
@@ -166,7 +166,7 @@ dbt_command = os.environ.get('dbt_command', 'dbt run')
 
 subprocess.run(['sh', '-c', dbt_command], check=True)
 ```
-4. Commit and push your changes to Github.
+4. Save your changes, make a commit, and push your changes to GitHub.
 
 </TabItem>
 
@@ -177,7 +177,7 @@ subprocess.run(['sh', '-c', dbt_command], check=True)
 
 <TabItem value="redshift">
 
-1. Open `profiles.yml` and update the file to contain the following:
+1. Open `profiles.yml` and update the file to contain the following code:
 
 ```yaml title="profiles.yml"
 soccer_538:
@@ -209,7 +209,7 @@ dbt_command = os.environ.get('dbt_command', 'dbt run')
 
 subprocess.run(['sh', '-c', dbt_command], check=True)
 ```
-4. Commit and push your changes to Github.
+4. Save your changes, make a commit, and push your changes to GitHub.
 
 </TabItem>
 </Tabs>
@@ -286,7 +286,7 @@ values={[
 
 ```sql title="stg_football_rankings.sql"
 SELECT * 
-FROM dbt-demos.538_football.stg_football_rankings
+FROM `dbt-demos.538_football.stg_football_rankings`
 ```
 </TabItem>
 
@@ -294,7 +294,7 @@ FROM dbt-demos.538_football.stg_football_rankings
 
 ```sql title="stg_football_rankings.sql"
 SELECT * 
-FROM `default.stg_football_rankings`
+FROM default.stg_football_rankings
 ```
 
 </TabItem>
@@ -303,7 +303,7 @@ FROM `default.stg_football_rankings`
 
 ```sql title="stg_football_rankings.sql"
 SELECT *
-FROM `soccer.stg_football_rankings`
+FROM soccer.stg_football_rankings
 ```
 </TabItem>
 
@@ -311,7 +311,7 @@ FROM `soccer.stg_football_rankings`
 
 ```sql title="stg_football_rankings.sql"
 SELECT *
-FROM `"DBT_HOL_DEV"."PUBLIC"."stg_football_rankings"`
+FROM "DBT_HOL_DEV"."PUBLIC"."stg_football_rankings"
 ```
 
 </TabItem>
@@ -381,11 +381,11 @@ models:
     description: Table that displays football matches along with each team's world ranking.
 ```
 8. Save the changes.
-9. Push a commit to Github
+9. Push a commit to GitHub
 
 :::note
-In this tutorial, we made changes using the main branch of our Github repository. This was done for simplicity sake and is not the best practice.
+In this tutorial, we made changes using the main branch of our GitHub repository. This was done for simplicity sake and is not the best practice.
 :::
 
-We are ready to move into Shipyard to run our process in the cloud
+We are ready to move into Shipyard to run our process in the cloud.
 
