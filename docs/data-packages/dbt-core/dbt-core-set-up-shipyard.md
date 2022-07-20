@@ -114,8 +114,7 @@ values={[
 :::caution
 For Databricks, use `dbt-databricks` instead of `dbt`
 :::
-4. In the second **Name** field, enter `MarkupSafe`. In the version field, enter `==2.0.1`.
-5. Click **Next**.
+4. Click **Next**.
 
 ### Blueprint Settings
 1. Under **Bluprint Name**, enter `dbt - Execute CLI Command`.
