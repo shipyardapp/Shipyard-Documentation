@@ -38,6 +38,8 @@ In part 2 of the dbt core setup series, we will review the setup process for eac
 4. Under the soccer_538 model, add a `staging` and `marts` folder that are both materialized as views.
 5. Save your changes.
 
+![](../../.gitbook/assets/shipyard_2022_07_20_11_24_17.png)
+
 ## dbt Profile Setup
 
 <Tabs
