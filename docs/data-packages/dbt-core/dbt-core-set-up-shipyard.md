@@ -10,6 +10,10 @@ keywords:
   - shipyard
   - tutorial
 ---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # dbt Core Part 3 - Setting Up dbt on Shipyard
 In part 3 of this guide, we will move into Shipyard to deploy dbt Core in the cloud. First, we will need to create a free developer account for Shipyard. After we have a developer account, we will create a Blueprint that can run dbt Core commands.
 
@@ -110,10 +114,42 @@ values={[
 </Tabs>
 
 2. Click the plus sign next to **Python Packages** twice to add two new packages.
-3. In the first **Name** field, enter `dbt`. In the version field, enter `==1.0.0`.
-:::caution
-For Databricks, use `dbt-databricks` instead of `dbt`
-:::
+
+<Tabs
+groupId="code-inputs"
+defaultValue="bigquery"
+values={[
+{label: 'BigQuery', value: 'bigquery'},
+{label: 'Databricks', value: 'databricks'},
+{label: 'Redshift', value: 'redshift'},
+{label: 'Snowflake', value: 'snowflake'}
+]}>
+
+<TabItem value="bigquery">
+
+3. In the first **Name** field, enter `dbt-bigquery`. In the version field, enter `==1.0.0`.
+
+</TabItem>
+
+<TabItem value="databricks">
+
+3. In the first **Name** field, enter `dbt-databricks`. In the version field, enter `==1.0.0`.
+
+</TabItem>
+
+<TabItem value="redshift">
+
+3. In the first **Name** field, enter `dbt-redshift`. In the version field, enter `==1.0.0`.
+
+</TabItem>
+
+<TabItem value="snowflake">
+
+3. In the first **Name** field, enter `dbt-snowflake`. In the version field, enter `==1.0.0`.
+
+</TabItem>
+</Tabs>
+
 4. Click **Next**.
 
 ### Blueprint Settings
