@@ -30,5 +30,12 @@ While the steps in this guide will work with any [cloud data warehouse that dbt 
 * [Redshift](https://aws.amazon.com/redshift/)
 * [Snowflake](https://www.snowflake.com/)
 
+## Video Versions of this Series
+
+* [BigQuery](https://www.youtube.com/playlist?list=PLsy6kuGU_wiP22zWMMjmzBffenPtbmSFi)
+* [Databricks](https://www.youtube.com/playlist?list=PLsy6kuGU_wiMu-r-JPWzK5B06GqtpzCp1)
+* [Redshift](https://www.youtube.com/playlist?list=PLsy6kuGU_wiN62vhxRTu9tRK1nUB2Hhpb)
+* [Snowflake](https://www.youtube.com/playlist?list=PLsy6kuGU_wiPs7I3xLA4F6ffyWzQQW7eG)
+
 ## Helpful dbt Core Links
 - [dbt Documentation](https://docs.getdbt.com/docs/introduction)
