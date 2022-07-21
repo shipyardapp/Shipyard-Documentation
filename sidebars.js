@@ -83,6 +83,7 @@ module.exports = {
 					"reference/other-functions/visibility",
 				],
 			},
+			"reference/api",
 			"reference/shipyard-environment-variables",
 			"reference/shipyard-url-structures",
 		],
