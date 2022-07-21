@@ -25,6 +25,17 @@ _All timing of feature development is estimated and subject to change_
 - API Access for Exporting Logs (July)
 - API Access for Bulk Editing/Creating Fleets (July)
 
+## 07/20/2022
+
+### Enhancements
+
+- We are just trying to help you, and frankly, you keep ignoring us. So, we've made our troubleshooting notification in an errored Vessel’s output a bit more, well, in your face. Honestly, it is just because we care.
+![Photo of Troubleshooting Notification](./.gitbook/assets/change_log_release_v0_297_1.png)
+
+### Bug Fixes
+
+- Changing a Blueprint's inputs, after creating a Vessel with it, was causing some odd behavior. Now, you'll see a warning when you try to access a Fleet or Vessel that is out of sync with a Blueprint. We hope you'll take the time to patch up the holes before anything sinks!
+
 ## 07/17/2022
 
 ### Enhancements
