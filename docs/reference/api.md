@@ -43,7 +43,103 @@ Access for an API key can be revoked by clicking the **Delete** button next to i
 
 ## Endpoints
 
-TBD
+These are the currently available endpoints as well as example requests and responses. Note that the `*_id` values would be substituted for the actual UUID values in a real-world request. The API key is the example one generated in the **Authorization** section above.
 
-<!-- EXAMPLE KEY -->
-<!-- p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ= -->
+The response code snippets have been truncated for brevity.
+
+### List Organizations
+
+#### Request
+
+```bash
+curl https://api.shipyardapp.com/orgs --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
+```
+
+#### Response
+
+```json
+{
+	"id": "org_id",
+	"name": "example org",
+	...
+}
+```
+
+### List Organization Fleets
+
+#### Request
+
+```bash
+curl https://api.shipyardapp.com/orgs/<org_id>/fleets --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
+```
+
+#### Response
+
+```json
+[
+	{
+		"id": "fleet_id",
+		"org_id": "org_id",
+		"name": "example fleet",
+		...
+	},
+	...
+]
+```
+
+### Upsert Fleet
+
+#### Request
+
+```bash
+curl -X PUT https://api.shipyardapp.com/orgs/<org_id>/projects/<project_id>/fleets --data-binary @fleet.yaml -header "Content-type: application/yaml" --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
+```
+
+The contents of `fleet.yaml` would be in the required [FAC format](fac.md).
+
+#### Response
+
+The Fleet is returned in FAC YAML format.
+
+```yaml
+name: example fleet
+vessels:
+    first_vessel:
+	...
+```
+
+### Get Fleet
+
+#### Request
+
+```bash
+curl https://api.shipyardapp.com/orgs/<org_id>/projects/<project_id>/fleets/<fleet_id> --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
+```
+
+#### Response
+
+The Fleet is returned in FAC YAML format.
+
+```yaml
+name: example fleet
+vessels:
+    first_vessel:
+	...
+```
+
+### Get Fleet Logs
+
+#### Request
+
+```bash
+curl https://api.shipyardapp.com/orgs/<org_id>/projects/<project_id>/fleets/<fleet_id>/logs --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
+```
+
+#### Response
+
+The Fleet Logs are returned in CSV format.
+
+```csv
+Fleet ID,Fleet Name,Fleet Version,...
+fleet_id,example fleet,1,...
+```
