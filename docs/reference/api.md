@@ -43,7 +43,7 @@ Access for an API key can be revoked by clicking the **Delete** button next to i
 
 ## Endpoints
 
-These are the currently available endpoints as well as example requests and responses. Note that the `*_id` values would be substituted for the actual UUID values in a real-world request. The API key is the example one generated in the **Authorization** section above.
+These are the currently available endpoints as well as example requests and responses. Note that the ID values would be substituted for the actual UUID values in a real-world request. The API key is the example one generated in the **Authorization** section above.
 
 The response code snippets have been truncated for brevity.
 
@@ -52,16 +52,22 @@ The response code snippets have been truncated for brevity.
 #### Request
 
 ```bash
-curl https://api.shipyardapp.com/orgs --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
+curl https://api.app.shipyardapp.com/orgs --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
 ```
 
 #### Response
 
 ```json
 {
-	"id": "org_id",
-	"name": "example org",
-	...
+	"data_kind": "organizations",
+	"data": [
+		{
+			"id": "11111111-1111-1111-1111-111111111111",
+			"name": "example organization",
+			"created_at": "2019-08-22T21:53:30.095954Z",
+			...
+		}
+	]
 }
 ```
 
@@ -70,21 +76,36 @@ curl https://api.shipyardapp.com/orgs --header "X-Shipyard-API-Key: p1yfkloJnpVn
 #### Request
 
 ```bash
-curl https://api.shipyardapp.com/orgs/<org_id>/fleets --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
+curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/fleets --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
 ```
 
 #### Response
 
 ```json
-[
-	{
-		"id": "fleet_id",
-		"org_id": "org_id",
-		"name": "example fleet",
-		...
-	},
-	...
-]
+{
+	"data_kind": "fleets",
+	"data": [
+		{
+			"org_id": "11111111-1111-1111-1111-111111111111",
+			"id": "33333333-3333-3333-3333-333333333333",
+			"name": "confident_oyster",
+			"pallet_ids": [
+				"44444444-4444-4444-4444-444444444444"
+			],
+			"created_at": "2022-07-21T21:37:30.623386Z",
+			"vessel_dag": {
+				"vertices": [
+					"44444444-4444-4444-4444-444444444444"
+				],
+				"versions": [
+					1
+				],
+				"edges": []
+			},
+			...
+		}
+	]
+}
 ```
 
 ### Upsert Fleet
@@ -92,14 +113,14 @@ curl https://api.shipyardapp.com/orgs/<org_id>/fleets --header "X-Shipyard-API-K
 #### Request
 
 ```bash
-curl -X PUT https://api.shipyardapp.com/orgs/<org_id>/projects/<project_id>/fleets --data-binary @fleet.yaml -header "Content-type: application/yaml" --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
+curl -X PUT https://api.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets --data-binary @fleet.yaml -header "Content-type: application/yaml" --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
 ```
 
 The contents of `fleet.yaml` would be in the required [FAC format](fac.md).
 
 #### Response
 
-The Fleet is returned in FAC YAML format.
+The Fleet is returned in [FAC YAML](fac.md) format.
 
 ```yaml
 name: example fleet
@@ -113,12 +134,12 @@ vessels:
 #### Request
 
 ```bash
-curl https://api.shipyardapp.com/orgs/<org_id>/projects/<project_id>/fleets/<fleet_id> --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
+curl https://api.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets/33333333-3333-3333-3333-333333333333 --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
 ```
 
 #### Response
 
-The Fleet is returned in FAC YAML format.
+The Fleet is returned in [FAC YAML](fac.md) format.
 
 ```yaml
 name: example fleet
@@ -127,12 +148,12 @@ vessels:
 	...
 ```
 
-### Get Fleet Logs
+### Get Fleet Runs
 
 #### Request
 
 ```bash
-curl https://api.shipyardapp.com/orgs/<org_id>/projects/<project_id>/fleets/<fleet_id>/logs --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
+curl https://api.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets/33333333-3333-3333-3333-333333333333/runs --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
 ```
 
 #### Response
