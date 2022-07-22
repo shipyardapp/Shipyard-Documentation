@@ -24,7 +24,7 @@ Sub-folders can be any of the following:
 - artifacts
 - variables
 
-If you would like to run **dbt Core** directly from Shipyard, rather than executing dbt on a separate platform, follow our [dbt Core Blueprint tutorial](../../tutorials/dbt-blueprint.md).
+If you would like to run **dbt Core** directly from Shipyard, rather than executing dbt on a separate platform, follow our [dbt Core tutorial](../../data-packages/dbt-core/dbt-core-overview.md).
 
 ## How to Use
 For information on how to set up these Blueprints successfully, please read through the [dbt Cloud Authorization guide](dbt-cloud-authorization.md).

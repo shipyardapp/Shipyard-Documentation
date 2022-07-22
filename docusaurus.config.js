@@ -173,13 +173,6 @@ module.exports = {
 						],
 					},
 					{
-						to: "/tutorials/dbt-core-blueprint",
-						from: [
-							"/blueprint-library/dbt",
-							"/tutorials/dbt-blueprint",
-						],
-					},
-					{
 						to: "/blueprint-library/airtable/airtable-overview",
 						from: ["/blueprint-library/airtable"],
 					},
@@ -286,7 +279,7 @@ module.exports = {
 					{
 						to: "/data-packages/great-expectations/great-expectations-blueprint",
 						from: ["/tutorials/great-expectations-blueprint"],
-					}
+					},
 				],
 				createRedirects: function (existingPath) {
 					if (
