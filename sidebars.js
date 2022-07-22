@@ -130,8 +130,6 @@ module.exports = {
 		],
 		"🎯 Tutorials": [
 			"tutorials/advanced-code-vessel",
-			"tutorials/great-expectations-blueprint",
-			"tutorials/dbt-core-blueprint",
 			"tutorials/non-native-language-vessels",
 			"tutorials/referencing-fleet-webhook-parameters",
 		],
@@ -315,6 +313,20 @@ module.exports = {
 					"blueprint-library/tableau/tableau-trigger-workbook-refresh",
 					"blueprint-library/tableau/tableau-check-refresh-status",
 					"blueprint-library/tableau/tableau-download-view",
+				],
+			},
+		],
+		"🗂 Data Packages": [
+			{
+				"dbt Core": [
+					"data-packages/dbt-core/dbt-core-overview",
+					"data-packages/dbt-core/dbt-core-set-up-data-warehouse",
+					"data-packages/dbt-core/dbt-core-set-up-dbt",
+					"data-packages/dbt-core/dbt-core-set-up-shipyard",
+					"data-packages/dbt-core/dbt-core-run-and-generate-docs"
+				],
+				"Great Expectations": [
+					"data-packages/great-expectations/great-expectations-blueprint",
 				],
 			},
 		],
