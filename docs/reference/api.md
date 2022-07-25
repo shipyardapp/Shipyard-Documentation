@@ -20,7 +20,7 @@ The **API** allows for programmatic access to a subset of Shipyard's features. T
 
 In order to interact with the API, an **API key** is required.
 
-1. Navigate to the **Settings** page
+1. Navigate to your user's [**Settings**](https://app.shipyardapp.com/user/settings) page
 
 ![Settings page API keys](../.gitbook/assets/settings-page-api-keys.png)
 
