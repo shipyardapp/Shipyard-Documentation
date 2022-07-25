@@ -158,9 +158,23 @@ curl https://api.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/proje
 
 #### Response
 
-The Fleet Logs are returned in CSV format.
+The Fleet Runs are returned in CSV format.
 
 ```csv
 Fleet ID,Fleet Name,Fleet Version,...
 fleet_id,example fleet,1,...
 ```
+
+Below is a reference table for the Fleet Runs CSV.
+
+| Column | Description |
+|---|---|
+| Fleet ID | The UUID of the associated Fleet |
+| Fleet Name | The name of the associated Fleet |
+| Fleet Version | The version number of the associated Fleet |
+| Fleet Run ID | The UUID of the Fleet Run |
+| Status | The status the Fleet Run completed in |
+| Run Time | The time the Fleet Run began in RFC3339 format |
+| Duration | The length of time the Fleet Run ran for |
+| Billable Runtime | The length of time the Fleet Run ran the customer will be billed for |
+| Vessels Count | The number of Vessels in the associated Fleet |
