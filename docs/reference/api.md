@@ -20,7 +20,7 @@ The **API** allows for programmatic access to a subset of Shipyard's features. T
 
 In order to interact with the API, an **API key** is required.
 
-1. Navigate to the **Settings** page
+1. Navigate to your user's [**Settings**](https://app.shipyardapp.com/user/settings) page
 
 ![Settings page API keys](../.gitbook/assets/settings-page-api-keys.png)
 
@@ -107,6 +107,24 @@ curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/f
 	]
 }
 ```
+### Get Fleet
+
+#### Request
+
+```bash
+curl https://api.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets/33333333-3333-3333-3333-333333333333 --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
+```
+
+#### Response
+
+The Fleet is returned in [FAC YAML](fac.md) format.
+
+```yaml
+name: example fleet
+vessels:
+    first_vessel:
+	...
+```
 
 ### Upsert Fleet
 
@@ -129,24 +147,7 @@ vessels:
 	...
 ```
 
-### Get Fleet
 
-#### Request
-
-```bash
-curl https://api.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets/33333333-3333-3333-3333-333333333333 --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
-```
-
-#### Response
-
-The Fleet is returned in [FAC YAML](fac.md) format.
-
-```yaml
-name: example fleet
-vessels:
-    first_vessel:
-	...
-```
 
 ### Get Fleet Runs
 
