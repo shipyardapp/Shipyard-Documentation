@@ -29,6 +29,17 @@ _All timing of feature development is estimated and subject to change_
 
 ### Enhancements
 
+- It's time for action! Fleets, Vessel, and Blueprint actions, that is. Now, you can perform all your favorite actions from a table with just one click. Just hover over the vertical dots in any _Action_ column and behold the menu of options: run now, delete, duplicate, and more.
+![Photo of Fleet Table Actions](./.gitbook/assets/change_log_release_v0_298_1.png)
+
+### Bug Fixes
+
+- We were taking it a wee bit personally when a user cancelled. Organizations with a previously cancelled [Team Plan](https://www.shipyardapp.com/pricing) weren't able to access anything. They now get all the perks of our [Developer Plan](faqs.md/#how-does-the-developer-plan-work). See, we forgive you.
+
+## 07/20/2022
+
+### Enhancements
+
 - We are just trying to help you, and frankly, you keep ignoring us. So, we've made our troubleshooting notification in an errored Vessel’s output a bit more, well, in your face. Honestly, it is just because we care.
 ![Photo of Troubleshooting Notification](./.gitbook/assets/change_log_release_v0_297_1.png)
 
