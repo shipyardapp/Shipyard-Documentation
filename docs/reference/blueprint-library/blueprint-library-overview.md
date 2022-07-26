@@ -86,17 +86,17 @@ Blueprints are broken down into a few categories with core functionality that sh
 - Send Message Conditionally
 - Send Message w/ Attachment
 
-### File or Data Manipulation
+### Data Visualization
 
 #### Integrations
-- [Data Manipulation](../../blueprint-library/data-manipulation/data-manipulation-overview.md)
-- [File Manipulation](../../blueprint-library/file-manipulation/file-manipulation-overview.md)
+- [Domo](../../blueprint-library/domo/domo-overview.md)
+- [Tableau](../../blueprint-library/tableau/tableau-overview.md)
 
 #### Actions
-- Compress Files
-- Decompress Files
-- Convert Files
-- Compare File Contents
+- Download Dashboard as File
+- Download View/Card as File
+- Refresh Dataset
+- Verify Refresh Status
 
 ### Data Ingestion, Transformation, and Syncing
 
@@ -118,6 +118,18 @@ Blueprints are broken down into a few categories with core functionality that sh
 #### Actions
 - HTTP Request
 - Download File from URL
+
+### File or Data Manipulation
+
+#### Integrations
+- [Data Manipulation](../../blueprint-library/data-manipulation/data-manipulation-overview.md)
+- [File Manipulation](../../blueprint-library/file-manipulation/file-manipulation-overview.md)
+
+#### Actions
+- Compress Files
+- Decompress Files
+- Convert Files
+- Compare File Contents
 
 ## Screenshots
 
