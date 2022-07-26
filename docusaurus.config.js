@@ -209,6 +209,10 @@ module.exports = {
 						from: ["/blueprint-library/dbt-cloud"],
 					},
 					{
+						to: "/blueprint-library/domo/domo-overview",
+						from: ["/blueprint-library/domo"],
+					},
+					{
 						to: "/blueprint-library/dropbox/dropbox-overview",
 						from: ["/blueprint-library/dropbox"],
 					},
@@ -271,6 +275,10 @@ module.exports = {
 					{
 						to: "/blueprint-library/snowflake/snowflake-overview",
 						from: ["/blueprint-library/snowflake"],
+					},
+					{
+						to: "/blueprint-library/tableau/tableau-overview",
+						from: ["/blueprint-library/tableau"],
 					},
 					{
 						to: "/data-packages/dbt-core/dbt-core-overview",
