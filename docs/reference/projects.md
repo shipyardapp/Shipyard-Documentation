@@ -19,9 +19,9 @@ A project is a flexible way to categorize everything that your organization is a
 
 ## Additional Notes
 
-1. Vessels cannot be moved between projects in the UI right now, so you'll want to make sure that you internally agree on the setup as a team. If you need to move a Vessel to a new project reach out to [support](mailto:support@shipyardapp.com).
+1. Vessels and Fleets cannot be moved between projects in the UI right now, so you'll want to make sure that you internally agree on the setup as a team. If you need to move a Vessel or a Fleet to a new project reach out to [support](mailto:support@shipyardapp.com).
 2. Vessels in one project cannot interact with a Vessel or a Fleet in another project.
-3. Vessels cannot be scheduled to run in a timezone other than the project's selected timezone. It is currently not possible to mix timezones within a single project.
+3. Fleets cannot be scheduled to run in a timezone other than the project's selected [timezone](other-functions/timestamps-and-timezones.md). It is currently not possible to mix timezones within a single project.
 4. A project cannot be shared between two organizations. If you would like to give an external member access to Vessels within a project, you'll need to add them to your organization and give them access to that specific project.
 5. A project name must be unique within your organization.
 

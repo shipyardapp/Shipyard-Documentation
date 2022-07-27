@@ -132,8 +132,7 @@ Blueprints are broken down into a few categories with core functionality that sh
 - Compare File Contents
 
 ## Screenshots
-
-![Over 50+ Blueprints to take action on modern data platforms](../../../.gitbook/assets/image_80.png)
+![Over 50+ Blueprints to take action on modern data platforms](../../../.gitbook/assets/shipyard_2022_07_27_10_21_09.png)
 
 ## Learn More
 

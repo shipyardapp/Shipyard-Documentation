@@ -38,22 +38,20 @@ For information about how to use the visual editor, click the the question mark 
 
 When you click on the canvas, or on the sidebar with the `+` icon, the left pane will update to show Blueprints and Languages that you can add/create Vessels with.
 
-This section is split into 3 parts:
+This section is split into 4 parts:
 - [Code Vessels](../code/code-overview.md)
 
 - [Library Blueprints](../blueprints/blueprint-library/blueprint-library-overview.md)
 
 - [Org Blueprints](../blueprints/blueprints-overview.md)
+  
+- Project Vessels
 
 Clicking the Blueprint/Language you want to use will result in a new Vessel being added to the canvas. Hovering over a Blueprint/Language will give you more information about how it can be used.
 
 You can always search for a specific Blueprint using the search bar at the top. This will pre-filter the list to what you're looking for.
 
 You can also duplicate existing Vessels by hovering over the Vessel and clicking the copy icon in the top right corner. This option requires that the original Vessel first be saved.
-
-:::note
-With our new updated Fleet Builder, you are no longer able to use pre-existing Vessels in a Fleet. We recommend creating all of your new Vessels from the Fleet Builder view.
-:::
 
 ### Editing Vessels
 
@@ -71,7 +69,7 @@ If your Vessel is built with Code, you will see the following panels:
 - [Information](../other-functions/information.md)
 - [Code](../code/code-overview.md)
 - [Arguments](../arguments.md)
-- [Environment Variables](../environment-variables.md)
+- [Environment Variables](../environment-variables/environment-variables-overview.md)
 - [{Language} Packages](../packages/external-package-dependencies.md)
 - [System Packages](../packages/system-package-dependencies.md)
 - [Notifications](../notifications.md)
@@ -87,3 +85,7 @@ During the process of making edits, if any panel's contents are invalid, you wil
 - You will not be able to change any underlying Vessels
 
 All changes are "soft-saved" as you work in the Fleet Builder. You can make as many edits as you'd like and these changes will be continue to be shown in the UI as long as you don't leave the Fleet Builder tab or refresh the page. Once you're finished making all of your edits, you **must** click the Save button at the bottom to officially save all of your changes.
+
+## Learn More
+
+- [Video Guide](https://youtu.be/sTQid-R5dcs)

@@ -1,6 +1,6 @@
 ---
 id: fleets-overview
-title: Fleets
+title: Fleets Overview
 hide_title: true
 description: Information about how to build and work with Fleets in Shipyard.
 keywords:
@@ -11,13 +11,13 @@ keywords:
   - dataflow
 ---
 
-# Fleets
+# Fleets Overview
 
 ## Definition
 
 A Fleet is a collection of multiple Vessels working together to tackle one larger job. Fleets are the equivalent of a Workflow or DAG in other orchestration tools.
 
-Fleets can contain any number of Vessels and contain any different type of Vessels \(including a mixture of programming languages and Blueprints\). Vessels can be reused across multiple Fleets and can continue to run independently of the Fleets they belong to.
+Fleets can contain any number of Vessels and contain any different type of Vessels \(including a mixture of programming languages and Blueprints\). They can be built in either the [Visual Editor](visual-editor.md) or the [YAML Editor](yaml-editor.md), with changes made in one editor synced to the other.
 
 Vessels are connected together with paths which check for the final status of the Vessel they are attached to. While success is checked for by default, the following statuses can be checked for:
 
@@ -60,7 +60,7 @@ This setup allows Vessels to be built to run independent, modular tasks off of n
 1. A Fleet cannot be set up with Vessels that live across multiple projects. You'll need to make sure that all of the relevant Vessels live within the same project.
 2. A Fleet cannot contain any paths that would create a loop.
 3. If you want to have a set of Vessels that aren't connected to the larger group, you will need to create a different Fleet.
-4. You are currently unable to kick off a Fleet starting anywhere in the middle, although you can kick off individual Vessels at will. This prevention is in place because we delete data as soon as a Fleet has finished running, whether it was successful or not. If you ran a Vessel starting from the middle and it relied on data created upstream, it would be unable to find that data and immediately fail.
+4. You are currently unable to kick off a Fleet starting anywhere in the middle. This prevention is in place because we delete data as soon as a Fleet has finished running, whether it was successful or not. If you ran a Vessel starting from the middle and it relied on data created upstream, it would be unable to find that data and immediately fail.
 5. Each time a Fleet is saved, a version of that Fleet is generated and is accessible in the [Version Control](version-control.md) tab.
 
 ## Learn More

@@ -16,6 +16,8 @@ keywords:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+# YAML Editor
+
 ## Definition
 
 In addition to the graph UI, the Fleet Builder also has a YAML editor to directly edit the Fleet configuration. This system allows for users to take a more code-based approach to constructing their workflow definitions. Additionally, it makes it easier for users to share their configured workflows with teammates and other developers.
@@ -157,7 +159,7 @@ source:
 	- { name: variable_name_2, value: variable_value_2 }
 ```
 
-See [Environment Variables](../environment-variables.md) for more information
+See [Environment Variables](../environment-variables/environment-variables-overview.md) for more information
 
 `packages`
 

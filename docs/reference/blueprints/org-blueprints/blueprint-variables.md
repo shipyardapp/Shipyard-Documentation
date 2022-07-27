@@ -15,17 +15,17 @@ keywords:
 
 ## Definition
 
-Blueprint Variables allow your code to accept user input through the Shipyard UI that gets stored and made available to your code as an environment variable.
+Blueprint Variables allow your code to accept user input through the Shipyard UI that gets stored and made available to your code as an [environment variable](../../environment-variables/environment-variables-overview.md).
 
 A Blueprint can contain as many variables as you want. Blueprint variables can also be re-ordered to make it easier for users to understand.
 
-A user who creates a Vessel from your Blueprint will provide their own values on the [Input](../../inputs.md) tab for Blueprint Variables that you define. Those user entered values then become available at runtime.
+A user who creates a Vessel from your Blueprint will provide their own values on the [Input](../../inputs.md) panel for Blueprint Variables that you define. Those user entered values then become available at runtime.
 
 ## Components
 
 ### Display Name
 
-A required string of letters and digits. This name will be shown to a user on the input tab.
+A required string of letters and digits. This name will be shown to a user on the input panel.
 
 ### Reference Name
 
@@ -33,20 +33,20 @@ A required string of letters and digits. This name will be shown to a user on th
 - Must be unique \(case sensitive\) within a Blueprint
 - Must not contain whitespace or special characters other than `_`
 
-This name will be translated into an environment variable with the same name, used to reference the input data in your script. 
+This name will be translated into an [environment variable](../../environment-variables/environment-variables-overview.md) with the same name, used to reference the input data in your script. 
 
 ### Variable Type
 
 A required high-level choice that helps provide validation for the user input. The following are the currently available variable types:
 
 - **Alphanumeric -** Lets the user provide a string of text.
-There is an additional toggle for allowing multine values to be input with a textarea.
+There is an additional toggle for allowing multiline values to be input with a textarea.
 - **Integer -** Lets the user provide a number.
 - **Floating Point -** Lets the user provide a decimal number.
 - **Boolean** - Lets the user select either a `TRUE` or `FALSE` value in the form of a checkbox.
 - **Date** - Lets the user provide a date, using a date selector, in the `YYYY-MM-DD` format.
 - **Select -** Lets a Blueprint creator define a restricted set of valid values as Select Options. These values contain both a Display Name, shown to the user, and an Internal Value, passed to the code. Requires at least one option.
-- **Password** - Allows the user to provide a string that gets hidden by default. Upon saving, this data will not be sent to the UI and will show as `(hidden)`. This behavior is similar to how [environment variables](../../environment-variables.md) are handled.
+- **Password** - Allows the user to provide a string that gets hidden by default. Upon saving, this data will not be sent to the UI and will show as `(hidden)`. This behavior is similar to how [environment variables](../../environment-variables/environment-variables-overview.md) are handled.
 There is an additional toggle for allowing multiline values to be input with a textarea.
 
 :::caution
@@ -75,7 +75,7 @@ All of the user input provided when setting up a Vessel will be provided to your
 
 ### Pass Variable Values to Code
 
-You can obtain the variable's value via either the [arguments](../../arguments.md) or as an [environment variable](../../environment-variables.md) by referencing the variable using `${variable_name}`. The variable name will **exactly match** the Blueprint Variable's [Reference Name](blueprint-variables.md#reference-name).
+You can obtain the variable's value via either the [arguments](../../arguments.md) or as an [environment variable](../../environment-variables/environment-variables-overview.md) by referencing the variable using `${variable_name}`. The variable name will **exactly match** the Blueprint Variable's [Reference Name](blueprint-variables.md#reference-name).
 
 For example, if a variable's reference name is `Operator_A`, then you would reference it by typing`${Operator_A}`.
 
@@ -97,6 +97,21 @@ A Blueprint's environment variables and Blueprint variables **are both** set as 
 Make sure not to set any variables to important environment variable names like `PATH` or `HOME` unless you _really_ know what you're doing.
 :::
 
+## Handling Updates
+
+One of the benefits of using Blueprints is that updates made to the Blueprint get made to every single Vessel built with that Blueprint. However, changes to the Blueprint could result in errors when your existing Vessels run if you're not careful.
+
+If you add or remove an input on an existing Blueprint that's already used by other Vessels, we do our best to get you out of trouble and keep your Vessels running smoothly. 
+
+- If a new input is required, existing Vessels will use the default value if it's available. If not, an empty string will be used as the value.
+- If an existing input is suddenly required and the input was blank, existing Vessels will use the default value if it's available. If not, an empty string will be used as the value.
+- If the new input is not required, an empty string will be used as the value.
+- If a previously available select option is removed, Vessels will continue to use the previously set value.
+- If an input is removed, it will no longer be used by existing Vessels.
+- In all other cases, if a value was previously set on a field, that value will continue to be used.
+
+In all of the above instances, these Vessels will throw a warning that encourages you to update the Vessel. Changes to a Fleet cannot be saved until these issues are fixed.
+
 ## Screenshots
 
 ![Viewing all variables](../../../.gitbook/assets/image_81.png)
@@ -107,7 +122,7 @@ Make sure not to set any variables to important environment variable names like 
 
 ## Additional Notes
 
-1. A Blueprint cannot have two variables with the same name.
+1. A Blueprint cannot have two variables with the same display name.
 2. A Blueprint variable cannot be conditionally shown or hidden based on a user's selection.
 3. There is no built-in system to ensure that `${variable_name}` exactly matches a reference name. Make sure you don't have typos!
 
