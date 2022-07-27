@@ -18,6 +18,6 @@ This field supports [standard Markdown formatting](https://www.markdownguide.org
 
 ## Screenshots
 
-![](../../.gitbook/assets/image_93.png)
+![](../../../.gitbook/assets/image_93.png)
 
-![](../../.gitbook/assets/markdown_description.png)
+![](../../../.gitbook/assets/markdown_description.png)

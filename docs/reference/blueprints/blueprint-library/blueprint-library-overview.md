@@ -15,7 +15,7 @@ keywords:
 
 ## Definition
 
-The Blueprint Library is a location for pre-made [Blueprints](../blueprints.md) developed by Shipyard staff. These Blueprints provide an easy way to avoid monotonous development work associated with integrations.
+The Blueprint Library is a location for pre-made [Blueprints](../blueprints-overview.md) developed by Shipyard staff. These Blueprints provide an easy way to avoid monotonous development work associated with integrations.
 
 Library Blueprints are designed to:
 
@@ -34,14 +34,14 @@ Blueprints are broken down into a few categories with core functionality that sh
 ### Databases
  
 #### Integrations
-- [Amazon Athena](../../blueprint-library/amazon-athena/amazon-athena-overview.md)
-- [Amazon Redshift](../../blueprint-library/amazon-redshift/amazon-redshift-overview.md)
-- [bit.io](../../blueprint-library/bitio/bitio-overview.md)
-- [Google BigQuery](../../blueprint-library/google-bigquery/google-bigquery-overview.md)
-- [Microsoft SQL Server](../../blueprint-library/microsoft-sql-server/microsoft-sql-server-overview.md)
-- [MySQL](../../blueprint-library/mysql/mysql-overview.md)
-- [PostgreSQL](../../blueprint-library/postgresql/postgresql-overview.md)
-- [Snowflake](../../blueprint-library/snowflake/snowflake-overview.md)
+- [Amazon Athena](../../../blueprint-library/amazon-athena/amazon-athena-overview.md)
+- [Amazon Redshift](../../../blueprint-library/amazon-redshift/amazon-redshift-overview.md)
+- [bit.io](../../../blueprint-library/bitio/bitio-overview.md)
+- [Google BigQuery](../../../blueprint-library/google-bigquery/google-bigquery-overview.md)
+- [Microsoft SQL Server](../../../blueprint-library/microsoft-sql-server/microsoft-sql-server-overview.md)
+- [MySQL](../../../blueprint-library/mysql/mysql-overview.md)
+- [PostgreSQL](../../../blueprint-library/postgresql/postgresql-overview.md)
+- [Snowflake](../../../blueprint-library/snowflake/snowflake-overview.md)
 
 #### Actions
 - Execute SQL Queries
@@ -51,14 +51,14 @@ Blueprints are broken down into a few categories with core functionality that sh
 ### Cloud Storage
 
 #### Integrations
-- [Amazon S3](../../blueprint-library/amazon-s3/amazon-s3-overview.md)
-- [Azure Blob Storage](../../blueprint-library/azure-blob-storage/azure-blob-storage-overview.md)
-- [Box](../../blueprint-library/box/box-overview.md)
-- [Dropbox](../../blueprint-library/dropbox/dropbox-overview.md)
-- [FTP](../../blueprint-library/ftp/ftp-overview.md)
-- [Google Cloud Storage](../../blueprint-library/google-cloud-storage/google-cloud-storage-overview.md)
-- [Google Drive](../../blueprint-library/google-drive/google-drive-overview.md)
-- [SFTP](../../blueprint-library/sftp/sftp-overview.md)
+- [Amazon S3](../../../blueprint-library/amazon-s3/amazon-s3-overview.md)
+- [Azure Blob Storage](../../../blueprint-library/azure-blob-storage/azure-blob-storage-overview.md)
+- [Box](../../../blueprint-library/box/box-overview.md)
+- [Dropbox](../../../blueprint-library/dropbox/dropbox-overview.md)
+- [FTP](../../../blueprint-library/ftp/ftp-overview.md)
+- [Google Cloud Storage](../../../blueprint-library/google-cloud-storage/google-cloud-storage-overview.md)
+- [Google Drive](../../../blueprint-library/google-drive/google-drive-overview.md)
+- [SFTP](../../../blueprint-library/sftp/sftp-overview.md)
 
 #### Actions
 - Upload Files
@@ -67,8 +67,8 @@ Blueprints are broken down into a few categories with core functionality that sh
 ### Spreadsheets
 
 #### Integrations
-- [Airtable](../../blueprint-library/airtable/airtable-overview.md)
-- [Google Sheets](../../blueprint-library/google-sheets/google-sheets-overview.md)
+- [Airtable](../../../blueprint-library/airtable/airtable-overview.md)
+- [Google Sheets](../../../blueprint-library/google-sheets/google-sheets-overview.md)
 
 #### Actions
 - Download Sheet to a CSV
@@ -78,8 +78,8 @@ Blueprints are broken down into a few categories with core functionality that sh
 ### Messaging
 
 #### Integrations
-- [Email](../../blueprint-library/email/email-overview.md)
-- [Slack](../../blueprint-library/email/email-overview.md)
+- [Email](../../../blueprint-library/email/email-overview.md)
+- [Slack](../../../blueprint-library/email/email-overview.md)
 
 #### Actions
 - Send Message
@@ -89,8 +89,8 @@ Blueprints are broken down into a few categories with core functionality that sh
 ### Data Visualization
 
 #### Integrations
-- [Domo](../../blueprint-library/domo/domo-overview.md)
-- [Tableau](../../blueprint-library/tableau/tableau-overview.md)
+- [Domo](../../../blueprint-library/domo/domo-overview.md)
+- [Tableau](../../../blueprint-library/tableau/tableau-overview.md)
 
 #### Actions
 - Download Dashboard as File
@@ -101,8 +101,8 @@ Blueprints are broken down into a few categories with core functionality that sh
 ### Data Ingestion, Transformation, and Syncing
 
 #### Integrations
-- [Fivetran](../../blueprint-library/fivetran/fivetran-overview.md)
-- [dbt Cloud](../../blueprint-library/dbt-cloud/dbt-cloud-overview.md)
+- [Fivetran](../../../blueprint-library/fivetran/fivetran-overview.md)
+- [dbt Cloud](../../../blueprint-library/dbt-cloud/dbt-cloud-overview.md)
 
 #### Actions
 - Execute Job
@@ -113,7 +113,7 @@ Blueprints are broken down into a few categories with core functionality that sh
 ### 3rd-Party APIs
 
 #### Integrations
-- [HTTP](../../blueprint-library/http/http-overview.md)
+- [HTTP](../../../blueprint-library/http/http-overview.md)
 
 #### Actions
 - HTTP Request
@@ -122,8 +122,8 @@ Blueprints are broken down into a few categories with core functionality that sh
 ### File or Data Manipulation
 
 #### Integrations
-- [Data Manipulation](../../blueprint-library/data-manipulation/data-manipulation-overview.md)
-- [File Manipulation](../../blueprint-library/file-manipulation/file-manipulation-overview.md)
+- [Data Manipulation](../../../blueprint-library/data-manipulation/data-manipulation-overview.md)
+- [File Manipulation](../../../blueprint-library/file-manipulation/file-manipulation-overview.md)
 
 #### Actions
 - Compress Files
@@ -133,7 +133,7 @@ Blueprints are broken down into a few categories with core functionality that sh
 
 ## Screenshots
 
-![Over 50+ Blueprints to take action on modern data platforms](../../.gitbook/assets/image_80.png)
+![Over 50+ Blueprints to take action on modern data platforms](../../../.gitbook/assets/image_80.png)
 
 ## Learn More
 

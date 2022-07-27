@@ -29,7 +29,7 @@ The Git connection is only available after setting up a [GitHub Integration](../
 
 ### Default - Folder with Repo Name
 
-By default, your code is cloned into a new folder with the repo name. This mirrors the behavior that you would expect when running the command locally. If the [**file to run**](command.md#file-to-run) exists in your git repository, you will need to include the repo-name as a folder.
+By default, your code is cloned into a new folder with the repo name. This mirrors the behavior that you would expect when running the command locally. If the [**file to run**] exists in your git repository, you will need to include the repo-name as a folder.
 
 ![Including the repo name as a folder](../../.gitbook/assets/folder_in_file_to_run.png)
 
@@ -58,7 +58,6 @@ You can use the [platform environment variable](../shipyard-environment-variable
 ## Additional Notes
 
 1. The git connection only supports GitHub at the moment.
-2. The organization source will not be listed as part of the repo. If you have multiple organizations synced with the [GitHub Integration](../admin/integrations/github-integration.md), there is a potential to display multiple repos with the same name.
 
 ## Learn More
 

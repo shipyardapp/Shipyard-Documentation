@@ -19,7 +19,7 @@ Blueprint Variables allow your code to accept user input through the Shipyard UI
 
 A Blueprint can contain as many variables as you want. Blueprint variables can also be re-ordered to make it easier for users to understand.
 
-A user who creates a Vessel from your Blueprint will provide their own values on the [Input](vessel-inputs.md) tab for Blueprint Variables that you define. Those user entered values then become available at runtime.
+A user who creates a Vessel from your Blueprint will provide their own values on the [Input](../../inputs.md) tab for Blueprint Variables that you define. Those user entered values then become available at runtime.
 
 ## Components
 
@@ -46,8 +46,8 @@ There is an additional toggle for allowing multine values to be input with a tex
 - **Boolean** - Lets the user select either a `TRUE` or `FALSE` value in the form of a checkbox.
 - **Date** - Lets the user provide a date, using a date selector, in the `YYYY-MM-DD` format.
 - **Select -** Lets a Blueprint creator define a restricted set of valid values as Select Options. These values contain both a Display Name, shown to the user, and an Internal Value, passed to the code. Requires at least one option.
-- **Password** - Allows the user to provide a string that gets hidden by default. Upon saving, this data will not be sent to the UI and will show as `(hidden)`. This behavior is similar to how [environment variables](../requirements/environment-variables.md) are handled.
-There is an additional toggle for allowing multine values to be input with a textarea.
+- **Password** - Allows the user to provide a string that gets hidden by default. Upon saving, this data will not be sent to the UI and will show as `(hidden)`. This behavior is similar to how [environment variables](../../environment-variables.md) are handled.
+There is an additional toggle for allowing multiline values to be input with a textarea.
 
 :::caution
 Regardless of which variable type is selected, the user input will always passed back to your code as a string. Your code will need to appropriately translate the input into the required data type.
@@ -75,7 +75,7 @@ All of the user input provided when setting up a Vessel will be provided to your
 
 ### Pass Variable Values to Code
 
-You can obtain the variable's value via either the [command arguments](../code/command.md) or as an [environment variable](../requirements/environment-variables.md) by referencing the variable using `${variable_name}`. The variable name will **exactly match** the Blueprint Variable's [Reference Name](blueprint-variables.md#reference-name).
+You can obtain the variable's value via either the [arguments](../../arguments.md) or as an [environment variable](../../environment-variables.md) by referencing the variable using `${variable_name}`. The variable name will **exactly match** the Blueprint Variable's [Reference Name](blueprint-variables.md#reference-name).
 
 For example, if a variable's reference name is `Operator_A`, then you would reference it by typing`${Operator_A}`.
 
@@ -87,7 +87,7 @@ We recommend this option, as it makes it extremely clear which variables are bei
 
 In your code, you can obtain the value for the variable just like you would any other environment variable. The environment variable name will **exactly match** the Blueprint Variable's [Reference Name](blueprint-variables.md#reference-name). For example, if a variable's reference name is `Operator_A`, then its environment variable name will be `Operator_A`.
 
-View our [how-to guide for accessing Environment Variables](../../how-tos/access-environment-variables.md).
+View our [how-to guide for accessing Environment Variables](../../../how-tos/access-environment-variables.md).
 
 :::caution
 A Blueprint's environment variables and Blueprint variables **are both** set as environment variables that can be accessed at runtime. It's important to make sure that the naming between these two sections doesn't overlap.
@@ -99,11 +99,11 @@ Make sure not to set any variables to important environment variable names like 
 
 ## Screenshots
 
-![Viewing all variables](../../.gitbook/assets/image_81.png)
+![Viewing all variables](../../../.gitbook/assets/image_81.png)
 
-![Editing a variable](../../.gitbook/assets/image_38.png)
+![Editing a variable](../../../.gitbook/assets/image_38.png)
 
-![No variables](../../.gitbook/assets/shipyard_2021_03_12_10_42_39.png)
+![No variables](../../../.gitbook/assets/shipyard_2021_03_12_10_42_39.png)
 
 ## Additional Notes
 
@@ -113,6 +113,6 @@ Make sure not to set any variables to important environment variable names like 
 
 ## Learn More
 
-- [How to Create Blueprint Variables](../../how-tos/blueprints/create-blueprint-variables.md)
-- [How to Reference a Blueprint Variable](../../how-tos/blueprints/reference-blueprint-variables.md)
-- [How to Reorder Blueprint Variables](../../how-tos/blueprints/reorder-blueprint-variables.md)
+- [How to Create Blueprint Variables](../../../how-tos/blueprints/create-blueprint-variables.md)
+- [How to Reference a Blueprint Variable](../../../how-tos/blueprints/reference-blueprint-variables.md)
+- [How to Reorder Blueprint Variables](../../../how-tos/blueprints/reorder-blueprint-variables.md)

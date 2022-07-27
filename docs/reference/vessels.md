@@ -34,8 +34,8 @@ Additionally, your script should stop its work if it receives a SIGTERM \(15\) s
 1. Select **With Code**
 2. Select a **Language**
 3. Provide [**Code**](code/code-overview.md)
-4. Define **Requirements** \([Environment Variables](requirements/environment-variables.md), [External Package Dependencies](requirements/external-package-dependencies.md)\)
-5. Save **Settings** \([Information](settings/information.md), [Notifications](settings/notifications.md), and [Guardrails](settings/guardrails.md)\)
+4. Define **Requirements** \([Environment Variables](environment-variables.md), [External Package Dependencies](packages/external-package-dependencies.md\)
+5. Save **Settings** \([Information](other-functions/information.md), [Notifications](notifications.md), and [Guardrails](guardrails.md\)
 
 ### With Blueprint
 
@@ -44,9 +44,9 @@ Building a Vessel with a Blueprint allows you to run scripts without needing to 
 #### Setup Steps
 
 1. Select **With a Blueprint**
-2. Select your [**Blueprint**](blueprints.md)
-3. Provide [**Inputs**](inputs/inputs-overview.md)
-4. Save **Settings** \([Information](settings/information.md), [Notifications](settings/notifications.md), and [Guardrails](settings/guardrails.md)\)
+2. Select your [**Blueprint**](blueprints/blueprints-overview.md)
+3. Provide [**Inputs**](inputs.md)
+4. Save **Settings** \([Information](other-functions/information.md), [Notifications](notifications.md), and [Guardrails](guardrails.md\)
 
 ## Additional Notes
 
@@ -54,7 +54,7 @@ Building a Vessel with a Blueprint allows you to run scripts without needing to 
 2. A Vessel's Blueprint or Code type cannot be changed once it is built.
 3. A Vessel's Project cannot be changed once it is built.
 4. A Project Vessel is _not_ version controlled. Any changes made directly in the Vessel creation pages cannot be visualized or restored.
-5. A Fleet Vessel _is_ version controlled. A Vessel's previous configuration within a Fleet is viewable in the Fleet's [Version Control](reference/version-control.md) tab.
+5. A Fleet Vessel _is_ version controlled. A Vessel's previous configuration within a Fleet is viewable in the Fleet's [Version Control](fleets/version-control.md) tab.
 
 ## Learn More
 

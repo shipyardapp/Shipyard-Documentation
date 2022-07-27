@@ -14,7 +14,7 @@ import TabItem from '@theme/TabItem';
 
 ## Definition
 
-The information section lives within the settings tab for almost every element in Shipyard. It usually contains IDs, names, and descriptors for the current element. For Projects, it also contains a field for timezone.
+The information section lives within the settings tab for almost every element in Shipyard. It usually contains IDs, names, and descriptors for the current element. For Projects, it also contains a field for [timezone](timestamps-and-timezones.md).
 
 ## Screenshots
 
@@ -23,24 +23,14 @@ groupId="elements"
 defaultValue="project"
 values={[
 {label: 'Projects', value: 'project'},
-{label: 'Vessels', value: 'vessel'},
 {label: 'Blueprint', value: 'blueprint'},
-{label: 'Fleets', value: 'fleet'},
 ]}>
 <TabItem value="project">
 
 ![](../../.gitbook/assets/image_44.png)
 </TabItem>
-<TabItem value='vessel'>
-
-![](../../.gitbook/assets/image_59_1.png)
-</TabItem>
 <TabItem value='blueprint'>
 
 ![](../../.gitbook/assets/image_24.png)
-</TabItem>
-<TabItem value='fleet'>
-
-![](../../.gitbook/assets/image_6.png)
 </TabItem>
 </Tabs>
