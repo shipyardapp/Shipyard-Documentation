@@ -25,7 +25,7 @@ _All timing of feature development is estimated and subject to change_
 - API Access for Exporting Logs (July)
 - API Access for Bulk Editing/Creating Fleets (July)
 
-## 07/20/2022
+## 07/26/2022
 
 ### Enhancements
 
