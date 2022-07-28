@@ -18,7 +18,7 @@ import TabItem from '@theme/TabItem';
 
 Environment Variables are set at the beginning of a run for the current Vessel. These types of variables are the preferred way to pass secrets \(password, API tokens, etc.\) to scripts. Secrets required by your programs should **never** be hard-coded into the script. Instead, use Environment Variables to pass them to your script.
 
-Environment Variables all have a **Name** and a **Value**. By referencing the variable's **Name** in your program, you can retrieve the **Value**. For more information, read our guide on [how to access environment variable data](../../how-tos/access-environment-variables.md). 
+Environment Variables all have a **Name** and a **Value**. By referencing the variable's **Name** in your program, you can retrieve the **Value**. For more information, read our guide on how to access environment variable data [with code](../../how-tos/environment-variables/access-environment-variables-with-code.md) or [using the UI](../../how-tos/environment-variables/access-environment-variables-in-ui.md). 
 
 Environment Variables set in Shipyard are not visible in the UI and are encrypted on the backend. There are 3 distinct ways that your environment variable values can show up.
 

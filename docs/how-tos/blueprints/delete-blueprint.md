@@ -33,7 +33,7 @@ You can't recover a Blueprint once it's deleted. Make sure you have any data you
 3. Look under the Vessels column. If the number is >0, click the number. If not, skip to Step 3.
 
 ### Step 2 - Delete Dependent Vessels
-1. Follow [this how to guide](../vessels/delete-vessel.md) to delete each dependent Vessel found in the table on the Dependent Vessels tab.
+1. Follow [this how to guide](../vessels/remove-vessel.md) to delete each dependent Vessel found in the table on the Dependent Vessels tab.
 2. Once all dependent Vessels are deleted, switch to the Settings tab for the Blueprint you want to delete.
 
 ### Step 3 - Delete the Blueprint
