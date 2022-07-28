@@ -91,7 +91,6 @@ module.exports = {
 					"reference/triggers/webhook-triggers",
 				],
 				"Misc Functions": [
-					"reference/other-functions/information",
 					"reference/other-functions/duplication",
 					"reference/other-functions/status",
 					"reference/other-functions/timestamps-and-timezones",

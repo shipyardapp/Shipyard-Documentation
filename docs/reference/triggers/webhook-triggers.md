@@ -28,6 +28,10 @@ When a webhook has been created, you will be given 3 options:
 - Replace the current webhook URL with a new webhook URL
 - Remove the webhook URL from existence
 
+:::tip Pro Tip
+You can use webhooks to dynamically pass data to your Vessels at runtime. Check out our [tutorial](../../tutorials/referencing-fleet-webhook-parameters.md) to better understand this functionality.
+:::
+
 ## Webhook Status Codes
 
 No matter which language or service you use to run the POST request, you will see the following status codes returned.
@@ -73,9 +77,8 @@ When your POST request returns a status code of 400, your request has failed. Th
 
 ## Additional Notes
 
-1. Webhooks only allow you to immediately run a Fleet in a programmatic manner. They do not currently support the passing of variables.
-2. Each Fleet can only have one webhook associated to it.
-3. Fleets may not run instantaneously, as there is still time associated with entering a job queue, spinning up servers, and installing any [external package dependencies](../requirements/external-package-dependencies.md).
+1. Each Fleet can only have one webhook associated to it.
+2. Fleets may not run instantaneously, as there is still time associated with entering a job queue, spinning up servers, and installing any [external package dependencies](../packages/external-package-dependencies.md).
 
 ## Learn More
 - [How to Execute a Webhook Trigger](../../how-tos/triggers/execute-webhook-trigger.md)
