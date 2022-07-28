@@ -19,16 +19,17 @@ Sometimes, you'll want to re-use the existing components of a Vessel with only a
 
 ### Step 1 - Navigate to the Vessel
 1. Navigate to the Project where your Vessel lives.
-2. Click either the **Edit** action or the **Vessel Name**.
-3. Click the **Duplicate** button at the bottom.
+2. Find the Fleet that your Vessel lives in and click it.
+3. Find the Vessel that you want to edit. Hover over the Vessel block and select the "copy" icon.
 
 :::tip success
-You've now successfully duplicated the Vessel and are viewing the copy.
+You've now successfully duplicated the Vessel and are editing the copy.
 :::
 
 ### Step 2 - Edit the Duplicate
 While the Vessel has been successfully duplicated, it contains a less readable name that indicates the Vessel it was originally a copy of. We recommend making a few adjustments before moving on.
 
 1. Decide on a new Vessel name.
-2. [Edit the Vessel](edit-vessel.md) to make any other minor tweaks you want. 
-3. Click **Save**.
+2. [Edit the Vessel](edit-vessel.md) to make any other minor tweaks you want.
+3. Connect the Vessel to at least one other Vessel in the Fleet.
+4. Click **Save**.

@@ -130,15 +130,18 @@ module.exports = {
 				Vessels: [
 					"how-tos/vessels/build-vessel-code",
 					"how-tos/vessels/build-vessel-blueprint",
-					"how-tos/vessels/delete-vessel",
+					"how-tos/vessels/remove-vessel",
 					"how-tos/vessels/edit-vessel",
 					"how-tos/vessels/duplicate-vessel",
 					"how-tos/vessels/search-for-vessel",
 					"how-tos/vessels/assess-vessel-performance",
 				],
 				Code: ["how-tos/code/download-code"],
+				"Environment Variables": [
+					"how-tos/environment-variables/access-environment-variables-with-code",
+					"how-tos/environment-variables/access-environment-variables-in-ui",
+				],
 			},
-			"how-tos/access-environment-variables",
 		],
 		"🎯 Tutorials": [
 			"tutorials/advanced-code-vessel",

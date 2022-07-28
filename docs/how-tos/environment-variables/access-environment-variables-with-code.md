@@ -1,6 +1,6 @@
 ---
-id: access-environment-variables
-title: How to Access Environment Variables
+id: access-environment-variables-with-code
+title: How to Access Environment Variables with Code
 hide_title: true
 description: Quick how-to guide to access environment variables from a Blueprint or a Vessel.
 keywords:
@@ -13,11 +13,11 @@ keywords:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# How to Access Environment Variables
+# How to Access Environment Variables with Code
 
 ## Overview
 
-When a user provides input via [Blueprint Variables](../reference/blueprints/org-blueprints/blueprint-variables.md), or you pass values to your script using [environment variables](../reference/environment-variables/environment-variables-overview.md), you'll want to make sure that you can access these values in your code. This how to guide will walk you through the steps to access environment variables.
+When a user provides input via [Blueprint Variables](../../reference/blueprints/org-blueprints/blueprint-variables.md), or you pass values to your script using [environment variables](../../reference/environment-variables/environment-variables-overview.md), you'll want to make sure that you can access these values in your code. This how to guide will walk you through the steps to access environment variables.
 
 :::note
 When accessing the contents of an environment variable in your code, we recommend storing it as a variable so it can be continuously used.
