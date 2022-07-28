@@ -2,7 +2,7 @@
 id: system-package-dependencies
 title: System Package Dependencies
 hide_title: true
-description: Information about the optional system package dependencies section of the requirements tab.
+description: Information about the optional system package dependencies panel.
 keywords:
   - external packages
   - requirements

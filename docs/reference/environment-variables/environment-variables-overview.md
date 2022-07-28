@@ -2,7 +2,7 @@
 id: environment-variables-overview
 title: Environment Variables Overview
 hide_title: true
-description: Information about the environment variables section of the requirements tab.
+description: Information about the environment variables panel.
 keywords:
   - env_var
   - env var

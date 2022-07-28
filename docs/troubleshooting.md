@@ -13,7 +13,7 @@ keywords:
 `ModuleNotFoundError: No module named 'xxxx'`
 
 If your script runs into this issue, there's a few likely scenarios:
-1. You haven't provided the right [External Package Dependendencies](reference/packages/external-package-dependencies.md) on the requirements tab or through a `requirements.txt` file.
+1. You haven't provided the right [External Package Dependendencies](reference/packages/external-package-dependencies.md) on the language packages panel or through a `requirements.txt` file.
 2. You have provided a package incorrectly, either by:
    1. Including a typo in the package name.
    2. Not formatting the version number properly.

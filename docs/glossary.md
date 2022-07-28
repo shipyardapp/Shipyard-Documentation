@@ -68,6 +68,8 @@ keywords:
 
 [**System Packages**](reference/packages/system-package-dependencies.md) refer to the linux-level operating system packages that can installed.
 
+**Panel** refers to the collapsible sections displayed when editing a Vessel in a Fleet.
+
 ## Visuals
 
 ### Shipyard Platform Diagram

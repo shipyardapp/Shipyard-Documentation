@@ -2,7 +2,7 @@
 id: external-package-dependencies
 title: External Package Dependencies
 hide_title: true
-description: Information about the external package dependencies section of the requirements tab.
+description: Information about the external package dependencies panel.
 keywords:
   - external packages
   - pip
