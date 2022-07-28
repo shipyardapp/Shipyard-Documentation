@@ -23,10 +23,10 @@ levels for each element of the platform.
 ### Access Settings
 
 - [Projects](../projects.md)
-- [Blueprints](../blueprints.md)
+- [Blueprints](../blueprints/blueprints-overview.md)
 - [Integrations](integrations/integrations-overview.md)
 - [Vessels](../vessels.md)
-- [Fleets](../fleets.md)
+- [Fleets](../fleets/fleets-overview.md)
 
 #### Permissions
 
@@ -89,4 +89,4 @@ that they have access to while respecting their Vessels and Fleets permissions.
 3. The User Permissions page is the only way to view all projects that exist.
 4. There is no way to guarantee that a user has access to all current and future projects.
 If a user has _Create_ permissions for Projects, it is possible for them to
-create _Rogue Projects_ that only they have access to.
+create a "_Rogue Project_" that only they have access to.

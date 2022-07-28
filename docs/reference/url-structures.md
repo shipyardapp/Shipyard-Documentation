@@ -12,7 +12,7 @@ keywords:
 
 ## Definition
 
-All URLs within Shipyard follow a consistent format that's built on internal IDs and names. When used in combination with the [Shipyard Environment Variables](shipyard-environment-variables.md), this can be a useful way to link a user directly to an area of the platform that you want them to view, edit, or run manually.
+All URLs within Shipyard follow a consistent format that's built on internal IDs and names. When used in combination with the [Shipyard Environment Variables](environment-variables/environment-variables-overview.md), this can be a useful way to link a user directly to an area of the platform that you want them to view, edit, or run manually.
 
 Below is a list of the most common URL structures that may be needed.
 
@@ -30,4 +30,4 @@ Below is a list of the most common URL structures that may be needed.
 
 ## Additional Notes
 
-1. Shipyard first checks to verify that the user visiting the page has access to the underlying content. If not, they will be redirected to the login screen.
+1. Shipyard first checks to verify that the user visiting the page has access to the underlying content. If not, they will be redirected to the projects page.

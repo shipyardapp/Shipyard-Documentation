@@ -25,9 +25,9 @@ The preview will show all unsaved, staged changes. If you like the way the Bluep
 
 ## Screenshots
 
-![Every Blueprint has the ability to preview what it will look like to users.](../../.gitbook/assets/image_88.png)
+![Every Blueprint has the ability to preview what it will look like to users.](../../../.gitbook/assets/image_88.png)
 
-![Full preview window, showing the Markdown description and the Blueprint Variables as inputs.](../../.gitbook/assets/image_89.png)
+![Full preview window, showing the Markdown description and the Blueprint Variables as inputs.](../../../.gitbook/assets/image_89.png)
 
 ## Additional Notes
 

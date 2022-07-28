@@ -14,12 +14,9 @@ keywords:
 
 ## Definition
 
-Notifications provide an automated way to receive updates about the Vessels and Fleets you care most about. By default, notifications will be sent for the following events:
+Notifications provide an automated way to receive updates about the Vessels and Fleets you care most about. By default, notifications will be sent if the Vessel or Fleet errors out.
 
-- If the Vessel or Fleet errors out
-- If the Vessel or Fleet completes an On-Demand run
-
-Notifications are only sent after the final [status](../other-functions/status.md) has been determined, not as soon as the issue occurs. For example, if your Vessel has [guardrails](guardrails.md) set to 3x, an error notification would not be sent until it had errored out all 3 times.
+Notifications are only sent after the final [status](other-functions/status.md) has been determined, not as soon as the issue occurs. For example, if your Vessel has [guardrails](guardrails.md) set to 3x, an error notification would not be sent until it had errored out all 3 times.
 
 When initially creating a Vessel or Fleet, the owner's email will be added automatically. You can always add additional user emails to be notified about the Vessel, or remove your own email in place of another. Notifications are always a required field because _someone_ should always be aware if your scripts fail.
 
@@ -44,13 +41,13 @@ Every email sent by Shipyard will contain links to the organizational structure 
 
 
 ### Success Notification
-In a success notification, a button will appear to **View Results**. This will direct you to the [Log](../logs/logs-overview.md) of the Vessel or Fleet that ran successfully.
+In a success notification, a button will appear to **View Results**. This will direct you to the [Log](logs/logs-overview.md) of the Vessel or Fleet that ran successfully.
 
-Currently, you will only receive success notifications when a Vessel or Fleet was triggered [On-Demand](../triggers/on-demand-triggers.md).
+Currently, you can only select to receive success notifications when a Vessel or Fleet is triggered [On-Demand](triggers/on-demand-triggers.md).
 
 ### Error Notification
 
-In an error notification, a button will appear to **Investigate Issue**. This will take you directly to the [Log](../logs/logs-overview.md) where the error occurred so that you can troubleshoot effectively.
+In an error notification, a button will appear to **Investigate Issue**. This will take you directly to the [Log](logs/logs-overview.md) where the error occurred so that you can troubleshoot effectively.
 
 If a Fleet errors out, you will only receive a notification for the Fleet, not every Vessel in the Fleet that errors out or doesn't run. This setup helps reduce notification overload in the event that something goes wrong.
 
@@ -58,13 +55,23 @@ If a Fleet errors out, you will only receive a notification for the Fleet, not e
 We recommend adding the Shipyard email address `notifications@shipyardapp.com` to your address book to ensure that alerts are never sent to spam.
 :::
 
+### Alternative Notifications
+
+While Shipyard currently only supports sending notifications via email, most vendors support the ability to send messages to their service with a specialized email address. Check to see if this is the case for the vendor of your choice!
+
+We've verified that this alternative works for:
+- Slack
+- Microsoft Teams
+- Pagerduty
+
+
 ## Screenshots
 
-![Add Email Addresses](../../.gitbook/assets/image_7_1.png)
+![Add Email Addresses](../.gitbook/assets/image_7_1.png)
 
-![Success Email example](../../.gitbook/assets/shipyard_2021_03_15_10_32_26.png)
+![Success Email example](../.gitbook/assets/shipyard_2021_03_15_10_32_26.png)
 
-![Failure Email example](../../.gitbook/assets/shipyard_2021_03_15_10_33_35.png)
+![Failure Email example](../.gitbook/assets/shipyard_2021_03_15_10_33_35.png)
 
 ## Additional Notes
 

@@ -21,4 +21,4 @@ An organization is the highest level structure that exists within Shipyard. It h
 
 ## Additional Notes
 
-1. An email cannot belong to multiple organizations. You must use a different email for each organization that you need to access.
+1. An email can belong to multiple organizations if it is invited to them. However, a single email cannot initially make more than one organization.

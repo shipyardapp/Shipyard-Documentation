@@ -39,7 +39,7 @@ These environment variables can help your scripts be context-aware as they run, 
 
 ### Fleet Environment Variables
 
-When a Vessel is run as part of a Fleet, the following Environment Variables will be available. For an overview of Upstream, Currentstream, and Downstream read our [Glossary of Terms](../glossary.md).
+When a Vessel is run as part of a Fleet, the following Environment Variables will be available. For an overview of Upstream, Currentstream, and Downstream read our [Glossary of Terms](../../glossary.md).
 
 | Name                                      | Example                                                                     | Definition                                                                                                                                                                                                     |
 | :---------------------------------------- | :-------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

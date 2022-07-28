@@ -13,16 +13,17 @@ keywords:
 
 ## Definition
 
-The in-app editor allows you to copy and paste your code directly into Shipyard or write your code from scratch. The editor allows you to make changes directly in the UI as needed. This solution is perfect for smaller code snippets that you may need to change and edit on the fly.
+The in-app editor allows you to copy and paste your code directly into Shipyard or write your code from scratch, allowing you to make changes directly in the UI as needed. This solution is perfect for smaller code snippets that you may need to change and edit on the fly.
 
-If the write option is selected, both the **file name** and **code** fields must be filled out. When first setting up a Vessel or Blueprint, the **file name** that you type will be mirrored in the [file to run](command.md#file-to-run) field, effectively ensuring that the script you're writing is the script that will be run. Once saved, the fields will be treated separately.
+This editor is built using [monaco-editor](https://microsoft.github.io/monaco-editor/), the same underlying base as VSCode. The editor will automatically perform syntax highlighting based on the language you selected. In addition, you can press **ctrl+f** to bring up functionality to find and replace text in your code. 
 
+When writing code, the **File To Run** field represents both the script name of the code you provided and the name of script to be executed.
 
 ## Screenshots
 
-![Write Code](../../.gitbook/assets/write_code.png)
+![Write Code](../../.gitbook/assets/shipyard_2022_07_26_16_34_24.png)
 
 ## Additional Notes
 
 1. The in-app editor only supports editing one file per Vessel.
-2. You cannot include folder names in the **file name** field. The file will always be created in the home directory.
+2. You cannot include folder names in the **File To Run** field when writing code. The file will always be created in the home directory.

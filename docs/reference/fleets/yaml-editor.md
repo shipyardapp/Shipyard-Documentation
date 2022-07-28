@@ -1,28 +1,37 @@
 ---
-id: fac
-title: FAC
+id: yaml-editor
+title: YAML Editor
 hide_title: true
-description: Information about how to work with and write FAC files.
+description: Information about how to build Fleets with the Visual Editor.
 keywords:
   - workflow
-  - fac
+  - fleets
   - dag
   - flow
   - dataflow
+  - yaml
+  - editor
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# FAC
+# YAML Editor
 
 ## Definition
 
-"Fleets As Code" ("FAC") is a YAML-based definition of a Shipyard [Fleet](fleets.md). This system allows for users to take a more code-based approach to constructing their workflow definitions. Additionally, it makes it easier for users to share their configured workflows with teammates and other developers.
+In addition to the graph UI, the Fleet Builder also has a YAML editor to directly edit the Fleet configuration. This system allows for users to take a more code-based approach to constructing their workflow definitions. Additionally, it makes it easier for users to share their configured workflows with teammates and other developers.
 
-Below is a breakdown of a typical FAC YAML file and some guidance for working with these resources.
+In order to access the YAML editor, ensure that your Fleet is saved.
 
-## Anatomy
+- **Click** "Save" if the option is available
+- **Click** the text icon in the top right corner of the graph editor
+- **Edit** code in-line
+- **Click** "Save" to save your changes
+
+![YAML Editor](../../.gitbook/assets/yaml-editor-example.png)
+
+## YAML Specification
 
 Below are the top-level fields that make up a FAC YAML file. Sub-objects are defined beneath these as needed.
 
@@ -46,7 +55,7 @@ If the ID value does _not_ exist, Shipyard will attempt to create a new Fleet wi
 
 ### vessels
 
-`vessels` represents the [Vessels](vessels.md) that constitute the Fleet. Keys represent the name of the Vessel and must be unique within the Fleet object. Values are the Vessel definition represented as a YAML object which may be code-based, Blueprint-based, or Git-based.
+`vessels` represents the [Vessels](../vessels.md) that constitute the Fleet. Keys represent the name of the Vessel and must be unique within the Fleet object. Values are the Vessel definition represented as a YAML object which may be code-based, Blueprint-based, or Git-based.
 
 Vessels may have a `_id` top-level field.
 
@@ -98,9 +107,9 @@ source:
 ...
 ```
 
-- `blueprint` is the name of the Blueprint created separately from the Fleet - it must match the name exactly and may either be a [Library Blueprint](blueprint-library/blueprint-library-overview.md) or an [Organization Blueprint](blueprints.md)
-- `inputs` are a key-value pair representing the [input variable](inputs/blueprint-variables.md) name and value
-	- the "key" maps to the [Reference Name](inputs/blueprint-variables.md/#reference-name) for any Blueprint Input
+- `blueprint` is the name of the Blueprint created separately from the Fleet - it must match the name exactly and may either be a [Library Blueprint](../blueprints/blueprint-library/blueprint-library-overview.md) or an [Organization Blueprint](../blueprints/blueprints-overview.md)
+- `inputs` are a key-value pair representing the [input variable](../inputs.md) name and value
+	- the "key" maps to the [Reference Name](../blueprints/org-blueprints/blueprint-variables.md#reference-name) for any Blueprint Input
 	- if the Blueprint is configured so that the input is a "password" type, when this FAC is fetched back to the user it will show `SHIPYARD_HIDDEN` to obfuscate the value
 
 </TabItem>
@@ -121,7 +130,7 @@ source:
 - `checkout_point` is a string representing the branch or tag to checkout
 - `clone_location` indicates where to download the repo to and may either be `REPO_NAME` or `CWD`
 - `file_to_run` is a string representing the file to for any Vessel type that requires it
-- see [Git connections](code/git-connection.md) for more information
+- see [Git connections](../code/git-connection.md) for more information
 
 </TabItem>
 </Tabs>
@@ -150,7 +159,7 @@ source:
 	- { name: variable_name_2, value: variable_value_2 }
 ```
 
-See [Environment Variables](requirements/environment-variables.md) for more information
+See [Environment Variables](../environment-variables/environment-variables-overview.md) for more information
 
 `packages`
 
@@ -164,7 +173,7 @@ source:
 
 - `version` is an optional string value
 
-See [Packages](requirements/external-package-dependencies.md) for more information.
+See [Packages](../packages/external-package-dependencies.md) for more information.
 
 
 `system_packages`
@@ -176,9 +185,9 @@ source:
     - name: example_package
 ```
 
-These are the same structure as `packages` above and are available for `PYTHON` and `NODE` Vessel types only. See [System Packages](requirements/system-package-dependencies.md) for more information
+These are the same structure as `packages` above and are available for `PYTHON` and `NODE` Vessel types only. See [System Packages](../packages/system-package-dependencies.md) for more information
 
-Additionally, there are optional [Guardrail](settings/guardrails.md) and [Notification](settings/notifications.md) settings available for Vessel objects. These both live at the same level as the `source` field. See below for examples.
+Additionally, there are optional [Guardrail](../guardrails.md) and [Notification](../notifications.md) settings available for Vessel objects. These both live at the same level as the `source` field. See below for examples.
 
 `guardrails`
 
@@ -215,7 +224,7 @@ vessel_name:
 ```
 
 - `emails` is an array of email addresses to send notifications to
-- `after_error` is a boolean indicating whether to send a notification after a Vessel after a Vessel completes with a [status](other-functions/status.md) of Errored
+- `after_error` is a boolean indicating whether to send a notification after a Vessel after a Vessel completes with a [status](../other-functions/status.md) of Errored
 - `after_on_demand` is a boolean indicating whether to send a notification after a Vessel is run on demand
 
 ---
@@ -239,15 +248,15 @@ This example indicates that if `vessel_one` succeeds, it will invoke `vessel_two
 
 Below is what the YAML configuration above would look like in the graph editor.
 
-![FAC Fleet connections](../.gitbook/assets/fac-fleet-connections-example.png)
+![FAC Fleet connections](../../.gitbook/assets/fac-fleet-connections-example.png)
 
-See [Fleets](fleets.md) documentation for more information on connections.
+See [Fleets](fleets-overview.md) documentation for more information on connections.
 
 ---
 
 ### triggers
 
-Currently, the triggers supported in FAC are [Schedules](triggers/schedule-triggers.md). These are defined as an array of objects under the `schedules` field. See below for an example.
+Currently, the triggers supported in FAC are [Schedules](../triggers/schedule-triggers.md). These are defined as an array of objects under the `schedules` field. See below for an example.
 
 ```yaml
 triggers:

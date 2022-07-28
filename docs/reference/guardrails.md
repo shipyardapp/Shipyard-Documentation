@@ -45,7 +45,7 @@ Exclusions can be provided in two ways:
 
 ## Screenshots
 
-![Guardrail Settings](../../.gitbook/assets/shipyard_2021_10_19_11_38_32.png)
+![Guardrail Settings](../.gitbook/assets/shipyard_2021_10_19_11_38_32.png)
 
 ## Additional Notes
 

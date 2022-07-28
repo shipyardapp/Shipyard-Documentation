@@ -30,7 +30,7 @@ On the Fleet builder tab, you'll be able to
 2. Edit any and all fields that need updating. You can make multiple updates across multiple Vessels.
 3. Once all of your changes have been made, click the **Save** button at the bottom of the page.
 
-For more information, read up on our [Visual Fleet Builder](../../reference/fleets.md#visual-editor) or our [YAML Editor](../../reference/fleets.md#yaml-editor).
+For more information, read up on our [Visual Fleet Builder](../../reference/fleets/fleets-overview.md#visual-editor) or our [YAML Editor](../../reference/fleets/fleets-overview.md#yaml-editor).
 
 :::tip success
 You've now successfully edited a Fleet.

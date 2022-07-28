@@ -13,7 +13,7 @@ keywords:
 `ModuleNotFoundError: No module named 'xxxx'`
 
 If your script runs into this issue, there's a few likely scenarios:
-1. You haven't provided the right [External Package Dependendencies](reference/requirements/external-package-dependencies.md) on the requirements tab or through a `requirements.txt` file.
+1. You haven't provided the right [External Package Dependendencies](reference/packages/external-package-dependencies.md) on the language packages panel or through a `requirements.txt` file.
 2. You have provided a package incorrectly, either by:
    1. Including a typo in the package name.
    2. Not formatting the version number properly.
@@ -35,7 +35,7 @@ If pip runs into a single error during installation, it will fail to install all
 ## No such file or directory
 
 ### Beginning of Output
-If this error appears printed at the beginning of your output and your Vessel appears to never run, the likely culprit is due to the [File to Run](reference/code/command.md#file-to-run) field either containing, or not containing, the correct folder name.
+If this error appears printed at the beginning of your output and your Vessel appears to never run, the likely culprit is due to the [File to Run](reference/code/code-overview.md) field either containing, or not containing, the correct folder name.
 
 1. If you're using a Git Connection, make sure to [follow these instructions](reference/code/git-connection.md#accessing-code-from-git) to reference the file name correctly.
 2. If you're not storing files in a folder structure, make sure the File to Run field only contains the file name.

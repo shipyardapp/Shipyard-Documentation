@@ -166,7 +166,7 @@ module.exports = {
 						from: ["/reference/glossary-of-terms"],
 					},
 					{
-						to: "/reference/blueprint-library/blueprint-library-overview",
+						to: "/reference/blueprints/blueprint-library/blueprint-library-overview",
 						from: [
 							"/reference/blueprint-library",
 							"/reference/blueprint-library/blueprint-library",
@@ -207,6 +207,10 @@ module.exports = {
 					{
 						to: "/blueprint-library/dbt-cloud/dbt-cloud-overview",
 						from: ["/blueprint-library/dbt-cloud"],
+					},
+					{
+						to: "/blueprint-library/domo/domo-overview",
+						from: ["/blueprint-library/domo"],
 					},
 					{
 						to: "/blueprint-library/dropbox/dropbox-overview",
@@ -271,6 +275,10 @@ module.exports = {
 					{
 						to: "/blueprint-library/snowflake/snowflake-overview",
 						from: ["/blueprint-library/snowflake"],
+					},
+					{
+						to: "/blueprint-library/tableau/tableau-overview",
+						from: ["/blueprint-library/tableau"],
 					},
 					{
 						to: "/data-packages/dbt-core/dbt-core-overview",

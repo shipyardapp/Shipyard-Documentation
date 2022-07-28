@@ -14,43 +14,42 @@ keywords:
 
 ## Overview
 
-Every unique solution you create will require you to build a [Vessel](../../reference/vessels.md). If you're creating the solution from scratch, you'll want to create a Vessel with [Code](../../reference/code/code-overview.md). This how to guide will walk you through the steps to build a Vessel with Code.
+Every unique solution you create will require you to build a [Vessel](../../reference/vessels.md). Vessels can only be built as part of a Fleet. If you're creating the solution from scratch, you'll want to create a Vessel with [Code](../../reference/code/code-overview.md). This how to guide will walk you through the steps to build a Vessel with Code.
 
 ## Steps
 
 ### Step 1 - Initial Setup
 
-1. Navigate to the Vessels tab underneath a project.
-2. Hover over the **+ New** button in the top-right and click **New Vessel**.
-3. Select **With Code**.
-4. Select the language that you want to use to build your Vessel.
+1. Navigate to the Fleets tab underneath a project.
+2. Hover over the **+ New** button in the top-right and click **New Fleet**.
+3. Click the plus icon along the left side of the Fleet Builder sidebar.
+4. Select any option under Code Vessels.
 
-At this point you'll be walked through the Vessel setup wizard. If at any point in the process, you want to go to a previous step, you can either click on the step process number at the top, or click the **Back** button at the bottom. You can also completely delete your unfinished progress by clicking **Cancel**.
+At this point, the Vessel editing panels will be opened. You can also completely delete your unfinished progress by clicking the red X in the corner of the Vessel.
 
-### Step 2 - Provide Code
+### Step 2 - Name your Vessel
 
-All of the information on this tab is required.
+1. At the the top of the information panel, update your Vessel to have a descriptive name. By default, we automatically generate a unique, but undescriptive name.
 
-1. Provide the code for your solution, using any of the [available methods](../../reference/code/code-overview.md).
-2. Provide the [command](../../reference/code/command.md) details necessary for your code to run properly.
-3. Click **Next Step** once you're done.
+### Step 3 - Provide Code
 
-### Step 3 - Define Requirements
+All of the information on this panel is required.
 
-All of the information on this tab is optional.
+1. Provide the **File to Run** necessary for your code to run properly.
+2. Provide the code for your solution, using any of the [available methods](../../reference/code/code-overview.md).
 
-1. Provide any [environment variables](../access-environment-variables.md) that your script uses.
-2. Provide any [external packages](../../reference/requirements/external-package-dependencies.md) that your script needs to use.
-3. Click **Next Step** once you're done.
+### Step 4 - Optional Items
 
-### Step 4 - Save Settings
+All of the following panels are optional.
 
-1. Give your Vessel a unique, descriptive name.
-2. Optionally, change the project. By default, the project you navigated to in [Step 1](#step-1---initial-setup) will be selected.
-3. Optionally, edit the [notifcations](../../reference/settings/notifications.md) to send users emails about the Vessel.
-4. Optionally, edit the [guardrails](../../reference/settings/guardrails.md) to make the system automatically retry your Vessel upon an error.
-5. Click **Save and Finish** once you're done
+1. Provide any [arguments](../../reference/arguments.md) that your script uses.
+2. Provide any [environment variables](../../reference/environment-variables/environment-variables-overview.md) that your script uses.
+3. Provide any [language packages](../../reference/packages/external-package-dependencies.md) that your script needs to use.
+4. Provide any [system packages](../../reference/packages/system-package-dependencies.md) that your script needs to use.
+5. Update the [notifications](../../reference/notifications.md) if you want someone other than yourself to receive alerts.
+6. Update the [guardrails](../../reference/guardrails.md) if you want your Vessel to retry in the event of an error.
+7. Click **Save & Finish** once you're done.
 
 :::tip success
-You've now successfully built a Vessel with code.
+You've now successfully built a Vessel with code as part of a Fleet.
 :::

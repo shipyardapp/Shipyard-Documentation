@@ -18,10 +18,6 @@ module.exports = {
 			"reference/projects",
 
 			{
-				"Blueprint Library": [
-					"reference/blueprint-library/blueprint-library-overview",
-					"reference/blueprint-library/match-type",
-				],
 				Admin: [
 					"reference/admin/billing",
 					"reference/admin/usage-dashboard",
@@ -35,36 +31,54 @@ module.exports = {
 					},
 				],
 			},
-			"reference/blueprints",
-			"reference/vessels",
-			"reference/fleets",
-			"reference/fac",
-			"reference/version-control",
 			{
-				"Code Tab": [
+				Blueprints: [
+					"reference/blueprints/blueprints-overview",
+					,
+					{
+						"Library Blueprints": [
+							"reference/blueprints/blueprint-library/blueprint-library-overview",
+							"reference/blueprints/blueprint-library/match-type",
+						],
+						"Org Blueprints": [
+							"reference/blueprints/org-blueprints/blueprint-variables",
+							"reference/blueprints/org-blueprints/blueprint-description",
+							"reference/blueprints/org-blueprints/blueprint-preview",
+							"reference/blueprints/org-blueprints/visibility",
+						],
+					},
+				],
+				Fleets: [
+					"reference/fleets/fleets-overview",
+					"reference/fleets/visual-editor",
+					"reference/fleets/yaml-editor",
+					"reference/fleets/version-control",
+				],
+			},
+			"reference/vessels",
+			"reference/inputs",
+			{
+				Code: [
 					"reference/code/code-overview",
 					"reference/code/write-code",
 					"reference/code/upload-code",
 					"reference/code/git-connection",
-					"reference/code/command",
 				],
-				"Inputs Tab": [
-					"reference/inputs/inputs-overview",
-					"reference/inputs/vessel-inputs",
-					"reference/inputs/blueprint-variables",
-					"reference/inputs/blueprint-description",
-					"reference/inputs/blueprint-preview",
+			},
+			"reference/arguments",
+			{
+				"Environment Variables": [
+					"reference/environment-variables/environment-variables-overview",
+					"reference/environment-variables/shipyard-environment-variables",
 				],
-				"Requirements Tab": [
-					"reference/requirements/environment-variables",
-					"reference/requirements/external-package-dependencies",
-					"reference/requirements/system-package-dependencies",
+				Packages: [
+					"reference/packages/external-package-dependencies",
+					"reference/packages/system-package-dependencies",
 				],
-				"Settings Tab": [
-					"reference/settings/information",
-					"reference/settings/notifications",
-					"reference/settings/guardrails",
-				],
+			},
+			"reference/notifications",
+			"reference/guardrails",
+			{
 				Logs: [
 					"reference/logs/logs-overview",
 					"reference/logs/vessel-logs",
@@ -80,10 +94,8 @@ module.exports = {
 					"reference/other-functions/duplication",
 					"reference/other-functions/status",
 					"reference/other-functions/timestamps-and-timezones",
-					"reference/other-functions/visibility",
 				],
 			},
-			"reference/shipyard-environment-variables",
 			"reference/shipyard-url-structures",
 		],
 		"💡 How-Tos": [
@@ -118,15 +130,18 @@ module.exports = {
 				Vessels: [
 					"how-tos/vessels/build-vessel-code",
 					"how-tos/vessels/build-vessel-blueprint",
-					"how-tos/vessels/delete-vessel",
+					"how-tos/vessels/remove-vessel",
 					"how-tos/vessels/edit-vessel",
 					"how-tos/vessels/duplicate-vessel",
 					"how-tos/vessels/search-for-vessel",
 					"how-tos/vessels/assess-vessel-performance",
 				],
 				Code: ["how-tos/code/download-code"],
+				"Environment Variables": [
+					"how-tos/environment-variables/access-environment-variables-with-code",
+					"how-tos/environment-variables/access-environment-variables-in-ui",
+				],
 			},
-			"how-tos/access-environment-variables",
 		],
 		"🎯 Tutorials": [
 			"tutorials/advanced-code-vessel",
@@ -323,7 +338,7 @@ module.exports = {
 					"data-packages/dbt-core/dbt-core-set-up-data-warehouse",
 					"data-packages/dbt-core/dbt-core-set-up-dbt",
 					"data-packages/dbt-core/dbt-core-set-up-shipyard",
-					"data-packages/dbt-core/dbt-core-run-and-generate-docs"
+					"data-packages/dbt-core/dbt-core-run-and-generate-docs",
 				],
 				"Great Expectations": [
 					"data-packages/great-expectations/great-expectations-blueprint",

@@ -1,8 +1,8 @@
 ---
-id: environment-variables
-title: Environment Variables
+id: environment-variables-overview
+title: Environment Variables Overview
 hide_title: true
-description: Information about the environment variables section of the requirements tab.
+description: Information about the environment variables panel.
 keywords:
   - env_var
   - env var
@@ -12,13 +12,13 @@ keywords:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Environment Variables
+# Environment Variables Overview
 
 ## Definition
 
 Environment Variables are set at the beginning of a run for the current Vessel. These types of variables are the preferred way to pass secrets \(password, API tokens, etc.\) to scripts. Secrets required by your programs should **never** be hard-coded into the script. Instead, use Environment Variables to pass them to your script.
 
-Environment Variables all have a **Name** and a **Value**. By referencing the variable's **Name** in your program, you can retrieve the **Value**. For more information, read our guide on [how to access environment variable data](../../how-tos/access-environment-variables.md). 
+Environment Variables all have a **Name** and a **Value**. By referencing the variable's **Name** in your program, you can retrieve the **Value**. For more information, read our guide on how to access environment variable data [with code](../../how-tos/environment-variables/access-environment-variables-with-code.md) or [using the UI](../../how-tos/environment-variables/access-environment-variables-in-ui.md). 
 
 Environment Variables set in Shipyard are not visible in the UI and are encrypted on the backend. There are 3 distinct ways that your environment variable values can show up.
 
@@ -42,3 +42,5 @@ Staying inline with programming best practices, we recommend that all of your en
 
 1. Previously stored environment variables can never be viewed.
 2. Leaving an existing Name's value as blank will result in the value not updating. If you need to set a value to be blank, you will need to delete it, save the Vessel, then recreate the environment variable with a blank value.
+3. Because Vessels are containerized, the environment variables you set will only be available for that Vessel.
+
