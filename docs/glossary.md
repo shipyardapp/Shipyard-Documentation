@@ -14,7 +14,7 @@ keywords:
 
 ## Definitions
 
-[**Blueprint Library**](reference/blueprints/blueprint-library/blueprint-library-overview.md) is a location for pre-made Custom Blueprints developed by Shipyard staff.
+[**Blueprint Library**](reference/blueprints/blueprint-library/blueprint-library-overview.md) is a location for pre-made Blueprints developed by Shipyard staff.
 
 [**Blueprints**](/reference/blueprints/blueprints-overview.md) are the foundation of the application. They contain the design specifications for a repeatable task. In other applications, these may be referenced as templates, macros, or operators.
 
@@ -52,7 +52,21 @@ keywords:
 
 [**Billable Runtime**](faqs.md#how-do-you-calculate-billable-runtime) refers to the cumulative length of execution time that a Vessel or Fleet took while running. For Fleets with high concurrency, it is possible for the billable runtime to exceed duration. For Vessels with retries, it is possible for the billable runtime to be less than duration.
 
-[**Visual Editor**](reference/fleets/fleets-overview.md/#visual-editor) visual editor refers to the drag and drop interface for connecting Vessels together. 
+**Fleet Builder** refers to the interface used to connect Vessels together as a Fleet. The Fleet Builder can either be accessed with the Visual Editor or the YAML Editor.
+
+[**Visual Editor**](reference/fleets/fleets-overview.md/#visual-editor) refers to the drag and drop interface on the Fleet Builder tab.
+
+[**YAML Editor**](reference/fleets/yaml-editor.md) refers to the code-based interface on the Fleet Builder tab.
+
+[**Version Control**](reference/fleets/version-control.md) refers to Shipyard's automatic storage of the past configuration of a Fleet, displayed as YAML.
+
+[**Webhooks**](reference/triggers/webhook-triggers.md) refer to the URL that can be used to trigger a Fleet programatically.
+
+[**Webhook Parameters**](reference/triggers/webhook-triggers.md) refers to the headers or body that are sent to a webhook at runtime.
+
+[**Language Packages**](reference/packages/external-package-dependencies.md) refer to the external package dependencies used by the selected programming language.
+
+[**System Packages**](reference/packages/system-package-dependencies.md) refer to the linux-level operating system packages that can installed.
 
 ## Visuals
 
