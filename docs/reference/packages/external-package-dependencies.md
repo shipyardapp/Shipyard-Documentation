@@ -124,5 +124,6 @@ Make sure you only provide one `package.json`. Having multiple can result in iss
 </TabItem>
 </Tabs>
 
-
+## Additional Notes
+1. Because Vessels are containerized, the packages you install will only be available for that Vessel.
 

@@ -17,6 +17,8 @@ import TabItem from '@theme/TabItem';
 
 A Vessel is the "unit of work" in Shipyard, or an individual script that has been designed and built to accomplish a very specific job. Just like the real world equivalent, Vessels can be built for any purpose and come in any size, shape, or speed.
 
+Vessels are run in independent docker containers, so underlying code, environment variables, and packages of one cannot affect another.
+
 Every Vessel is either built with code or with a Blueprint that contains the design specifications that determine what that Vessel will do. New Vessels get built through the process of building a [Fleet](fleets/fleets-overview.md). The options required for creating a New Vessel differ based on the creation method that you select.
 
 ### Project Vessel
