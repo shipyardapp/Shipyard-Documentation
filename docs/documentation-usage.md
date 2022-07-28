@@ -31,3 +31,7 @@ Take the knowledge from the **Getting Started** section to the next level! Inclu
 ## 📦 Blueprint Library
 
 Detailed overviews of every Blueprint that exists in the Blueprint Library. Includes instructions for getting the proper authorization, as well as explanations of how to run the blueprints on Shipyard.
+
+## 🗂 Data Packages
+
+Detailed overviews of how to get started using popular [external data packages](reference/packages/external-package-dependencies.md) for our supported programming languages.
