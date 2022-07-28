@@ -1,6 +1,6 @@
 ---
 id: environment-variables-overview
-title: Environment Variables
+title: Environment Variables Overview
 hide_title: true
 description: Information about the environment variables section of the requirements tab.
 keywords:
@@ -12,7 +12,7 @@ keywords:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Environment Variables
+# Environment Variables Overview
 
 ## Definition
 

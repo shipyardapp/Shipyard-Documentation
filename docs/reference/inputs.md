@@ -11,7 +11,7 @@ keywords:
 
 ## Definition
 
-The Inputs panel is found when editing or creating Vessel built with a Blueprint. 
+The Inputs panel is found when editing or creating a Vessel built with a Blueprint. 
 
 The inputs are a direct reflection of the [Blueprint Variables](blueprints/org-blueprints/blueprint-variables.md) that are set up for the selected [Blueprint](blueprints/blueprints-overview.md).
 
