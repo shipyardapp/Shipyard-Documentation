@@ -166,7 +166,7 @@ module.exports = {
 						from: ["/reference/glossary-of-terms"],
 					},
 					{
-						to: "/reference/blueprint-library/blueprint-library-overview",
+						to: "/reference/blueprints/blueprint-library/blueprint-library-overview",
 						from: [
 							"/reference/blueprint-library",
 							"/reference/blueprint-library/blueprint-library",
