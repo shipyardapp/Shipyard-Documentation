@@ -87,7 +87,7 @@ We recommend this option, as it makes it extremely clear which variables are bei
 
 In your code, you can obtain the value for the variable just like you would any other environment variable. The environment variable name will **exactly match** the Blueprint Variable's [Reference Name](blueprint-variables.md#reference-name). For example, if a variable's reference name is `Operator_A`, then its environment variable name will be `Operator_A`.
 
-View our [how-to guide for accessing Environment Variables](../../../how-tos/access-environment-variables.md).
+View our [how-to guide for accessing Environment Variables](../../../how-tos/environment-variables/access-environment-variables-with-code.md).
 
 :::caution
 A Blueprint's environment variables and Blueprint variables **are both** set as environment variables that can be accessed at runtime. It's important to make sure that the naming between these two sections doesn't overlap.

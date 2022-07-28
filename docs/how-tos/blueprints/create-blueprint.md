@@ -48,7 +48,7 @@ All of the information on this tab is required.
 
 All of the information on this tab is optional.
 
-1. Provide any [environment variables](../access-environment-variables.md) that your script uses.
+1. Provide any [environment variables](../../reference/environment-variables/environment-variables-overview.md) that your script uses.
 2. Provide any [external packages](../../reference/packages/external-package-dependencies.md) that your script needs to use.
 3. Click **Next Step** once you're done.
 

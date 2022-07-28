@@ -46,7 +46,7 @@ Now, when the Vessel runs, the reference of `${cool_var_name}` will be replaced 
 </TabItem>
 <TabItem value='env'>
 
-1. In your code, set a variable to [access data from an Environment Variable](../access-environment-variables.md) whose name matches the Reference Name. 
+1. In your code, set a variable to [access data from an Environment Variable](../environment-variables/access-environment-variables-with-code.md) whose name matches the Reference Name. 
 2. Save and/or re-upload your code depending on your setup.
 
 
