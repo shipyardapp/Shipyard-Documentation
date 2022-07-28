@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-You may have an old blueprint that should no longer be used, or maybe you just set something up incorrectly. This how to guide will walk you through the steps to delete the [Blueprint](../../reference/blueprints.md).
+You may have an old blueprint that should no longer be used, or maybe you just set something up incorrectly. This how to guide will walk you through the steps to delete the [Blueprint](../../reference/blueprints/blueprints-overview.md).
 
 :::note
 You can't delete a Blueprint if it has any dependent Vessels. If you try to, you'll receive an error message of `You cannot delete the Blueprint. It has Vessels that were created from it.`

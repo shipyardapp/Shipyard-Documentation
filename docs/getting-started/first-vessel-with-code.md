@@ -21,7 +21,7 @@ In this tutorial, you'll walk through the steps required to set up a Vessel usin
 
 - Set up a Vessel with Code.
 - Write a script directly in the UI.
-- Install [package dependencies](../reference/requirements/external-package-dependencies.md) for your solution.
+- Install [package dependencies](../reference/packages/external-package-dependencies.md) for your solution.
 - Check to verify that a Vessel ran successfully.
 - Connect Vessels together as part of a Fleet
 
@@ -98,7 +98,7 @@ After upload, your setup should look like this:
 
 ### Step 3 - Install Python Packages
 
-For this tutorial, we don't have any [environment variables](../reference/requirements/environment-variables.md) to set up. However, we do need to install the [Python Package](../reference/requirements/external-package-dependencies.md) called Pandas for our code to run. 
+For this tutorial, we don't have any [environment variables](../reference/environment-variables/environment-variables-overview.md) to set up. However, we do need to install the [Python Package](../reference/packages/external-package-dependencies.md) called Pandas for our code to run. 
 
 1. Find the **Python Packages** panel in your Vessel's settings and click on it to show the package installer.
 2. Click the **Add Python Package** button.
@@ -108,7 +108,7 @@ For this tutorial, we don't have any [environment variables](../reference/requir
 ![](../.gitbook/assets/shipyard_2022_05_05_14_40_16.png)
 
 :::info
-The version field can accept many types of arguments including: >, <, ==, >=. <=, etc. You can use learn more about how to define package versions in our documentation [here](../reference/requirements/external-package-dependencies.md)
+The version field can accept many types of arguments including: >, <, ==, >=. <=, etc. You can use learn more about how to define package versions in our documentation [here](../reference/packages/external-package-dependencies.md) 
 :::
 
 ### Step 4 - Connect Vessels

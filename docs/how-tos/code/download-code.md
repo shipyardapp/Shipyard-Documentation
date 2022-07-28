@@ -15,7 +15,7 @@ keywords:
 
 ## Overview
 
-You may run into an instance where you need to see what [code](../../reference/code/code-overview.md) a Vessel is actively running to understand changes that need to be made. This how to guide will walk you through the steps to download code that has previously been [uploaded](../../reference/code/upload-code.md) to a [Vessel](../../reference/vessels.md) or [Blueprint](../../reference/blueprints.md).
+You may run into an instance where you need to see what [code](../../reference/code/code-overview.md) a Vessel is actively running to understand changes that need to be made. This how to guide will walk you through the steps to download code that has previously been [uploaded](../../reference/code/upload-code.md) to a [Vessel](../../reference/vessels.md) or [Blueprint](../../reference/blueprints/blueprints-overview.md).
 
 :::note
 You can't download code if [Write](../../reference/code/write-code.md) or [Git](../../reference/code/git-connection.md) are used on the Code tab.

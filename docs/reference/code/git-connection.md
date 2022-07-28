@@ -46,7 +46,7 @@ While this option is convenient, due to the nature of file sharing within Fleets
 ### Either Option
 
 :::tip Pro Tip
-You can use the [platform environment variable](../shipyard-environment-variables.md) of `SHIPYARD_CLONE_LOCATION` in your **file to run** to dynamically reference the clone location. This environment variable will resolve with `home/shipyard/` or `home/shipyard/<repo-name>` depending on the git clone location that you select.
+You can use the [platform environment variable](../environment-variables/shipyard-environment-variables.md) of `SHIPYARD_CLONE_LOCATION` in your **file to run** to dynamically reference the clone location. This environment variable will resolve with `home/shipyard/` or `home/shipyard/<repo-name>` depending on the git clone location that you select.
 
 ![](../../.gitbook/assets/dynamic_clone_location_folder.png)
 :::

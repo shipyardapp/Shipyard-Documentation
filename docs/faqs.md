@@ -35,9 +35,9 @@ We love to hear what our users would like to see out of our product. Feel free t
 
 We currently natively support the creation of solutions using Python 3.7, Node 14.15, and Bash.
 
-Bash allows us to support any language non-natively, where the right language packages just need to be manually installed by the user as an [external package](reference/requirements/external-package-dependencies.md)
+Bash allows us to support any language non-natively, where the right language packages just need to be manually installed by the user as an [external package](reference/packages/external-package-dependencies.md)
 
-SQL can be used natively with some Blueprints found in the [Blueprint Library](reference/blueprint-library/blueprint-library-overview.md).
+SQL can be used natively with some Blueprints found in the [Blueprint Library](reference/blueprints/blueprint-library/blueprint-library-overview.md).
 
 
 In the future, we plan to expand our native language support to R. If you have a language that you would like to see supported, let us know!
@@ -50,14 +50,14 @@ Shipyard is not inherently a low-code tool, as it's custom-designed for data tea
 
 However, the platform allows technical teams to turn coded solutions into low-code Blueprints that can be used by anyone in the organization.
 
-Additionally, we offer a wide variety of Blueprints in our [Blueprint Library](reference/blueprint-library/blueprint-library-overview.md) that don't require minimal code to use.
+Additionally, we offer a wide variety of Blueprints in our [Blueprint Library](reference/blueprints/blueprint-library/blueprint-library-overview.md) that don't require minimal code to use.
 
 ## What skills do I need to get started with Shipyard?
 
-If you have standard needs to run QA on your data, deliver reports, and send data to external partners, you will be able to get by using only the Blueprints found in our [Blueprint Library](reference/blueprint-library/blueprint-library-overview.md).
+If you have standard needs to run QA on your data, deliver reports, and send data to external partners, you will be able to get by using only the Blueprints found in our [Blueprint Library](reference/blueprints/blueprint-library/blueprint-library-overview.md).
 
 
-If you have proprietary business logic needs, you will likely need at least one technical team member that can initially build solutions for the organization. However, other users of Shipyard are **not** required to know code. We built the platform to allow business users the ability to easily access and take advantage of internally built solutions as [Blueprints](reference/blueprints.md).
+If you have proprietary business logic needs, you will likely need at least one technical team member that can initially build solutions for the organization. However, other users of Shipyard are **not** required to know code. We built the platform to allow business users the ability to easily access and take advantage of internally built solutions as [Blueprints](reference/blueprints/blueprints-overview.md).
 
 Shipyard is a workflow automation platform built for semi-technical team members. As long as you know how to write a little bit of code in SQL, Python, Bash, or Node.js, you can build and launch almost any solution that doesn't need a UI to function. We've made the platform as easy as possible for you to take your existing coding skills, no matter how advanced they are, and solve problems at scale.
 
@@ -104,7 +104,7 @@ To see your organization's usage for the current billing period, you can view th
 
 Shipyard charges for the cumulative time that your scripts take to run on our infrastructure, regardless of the final status of the job. This is distinct from the duration.
 
-You are not charged for any time delays between [automatic retries](reference/settings/guardrails.md), but each retry will have its own billable runtime associated to it. You are not charged for any time delay between two Vessels in a Fleet. On your invoice, we bill per second, with each Vessel's billable runtime rounded up to the nearest second. Below are a few examples to demonstrate this calculation.
+You are not charged for any time delays between [automatic retries](reference/guardrails.md), but each retry will have its own billable runtime associated to it. You are not charged for any time delay between two Vessels in a Fleet. On your invoice, we bill per second, with each Vessel's billable runtime rounded up to the nearest second. Below are a few examples to demonstrate this calculation.
 
 Assumptions:
 - Process A always takes 1hr
@@ -131,7 +131,7 @@ Yes - absolutely! There are two options to have Shipyard orchestrate work betwee
 
 1. You can tell your external system to run a POST command against a Shipyard [webhook](reference/triggers/webhook-triggers.md) to kick off a specific Vessel or Fleet after your external system process has finished. This event-driven workflow results in less runtime and more immediacy between each step.
 2. You can set up Vessels in Shipyard that continuously poll another service, looking for a specific response. 
-   1. When the Vessel doesn't find the expected response, it errors out. Upon erroring out, the Vessel is retried with a [guardrail](reference/settings/guardrails.md) that retries the job up to 24x, with anywhere from 0-60m between each try.
+   1. When the Vessel doesn't find the expected response, it errors out. Upon erroring out, the Vessel is retried with a [guardrail](reference/guardrails.md) that retries the job up to 24x, with anywhere from 0-60m between each try.
    2. When the Vessel does find the expected response, it registers as a success. The Vessel then kicks off downstream Vessels in the Fleet.
 
 ## How do I change my password?

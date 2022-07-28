@@ -12,7 +12,7 @@ keywords:
 
 ## Definition
 
-Triggers are the logic that determines when a [Fleet](../fleets.md) begins running. They are set on the Triggers tab and can only be set up after a Fleet has been created.
+Triggers are the logic that determines when a [Fleet](../fleets/fleets-overview.md) begins running. They are set on the Triggers tab and can only be set up after a Fleet has been created.
 
 There are currently 3 types of supported triggers:
 

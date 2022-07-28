@@ -66,7 +66,7 @@ _All timing of feature development is estimated and subject to change_
 
 ### New Features
 
-- [Fleets are now version controlled!](reference/version-control.md) Those of you on Team Plans now have access to the last six versions of your Fleets. Each version is presented in their [FAC](reference/fac.md) YAML format so they can be easily compared to the current configuration of the Fleet. In addition, you can revert to a previous version or create a brand new Fleet from a version. 
+- [Fleets are now version controlled!](reference/fleets/version-control.md) Those of you on Team Plans now have access to the last six versions of your Fleets. Each version is presented in their [YAML format](reference/fleets/yaml-editor.md) so they can be easily compared to the current configuration of the Fleet. In addition, you can revert to a previous version or create a brand new Fleet from a version. 
 ![Photo of Fleet Version Control](./.gitbook/assets/version-control-overview-1.png)
 
 ### Bug Fixes
@@ -319,7 +319,7 @@ selected for building from that Blueprint.
 ## 11/29/2021
 
 ### New Features
-- Updated the Fleet Builder tab to allow the creation of multiple Vessels all from one location. You will no longer need to create individual Vessels first then string them together. In fact - you can't! If you're wanting to connect Vessels, you'll need to build them as part of your Fleet initially. See more about these changes [here](reference/fleets.md#visual-editor)
+- Updated the Fleet Builder tab to allow the creation of multiple Vessels all from one location. You will no longer need to create individual Vessels first then string them together. In fact - you can't! If you're wanting to connect Vessels, you'll need to build them as part of your Fleet initially. See more about these changes [here](reference/fleets/fleets-overview.md#visual-editor)
 - Added the ability to Duplicate a Fleet. See more about these changes [here](how-tos/fleets/duplicate-fleet.md)
 - Added the ability to Duplicate a Vessel directly from the Fleet Builder screen.
 
@@ -345,8 +345,8 @@ selected for building from that Blueprint.
 ## 10/19/2021
 
 ### New Features
-- Updated the Fleet Builder tab to allow editing of multiple Vessels all from one location. See more about these changes [here](reference/fleets.md#visual-editor)
-- There's a new feature for Guardrails to exclude specific exit codes. This was custom-built to help situations when working with asynchronous APIs where you may not need to keep retrying because a final result of an error is returned and that will never change. See more about these changes [here](reference/settings/guardrails.md#exclude-exit-code-ranges).
+- Updated the Fleet Builder tab to allow editing of multiple Vessels all from one location. See more about these changes [here](reference/fleets/fleets-overview.md#visual-editor)
+- There's a new feature for Guardrails to exclude specific exit codes. This was custom-built to help situations when working with asynchronous APIs where you may not need to keep retrying because a final result of an error is returned and that will never change. See more about these changes [here](reference/guardrails.md#exclude-exit-code-ranges).
 
 ### Enhancements
 - Arguments are now more flexible. You can provide only a flag, a flag and a value, or just a value. 

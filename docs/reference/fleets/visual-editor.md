@@ -59,14 +59,14 @@ When you click on a Vessel, the left pane will update to show the contents of th
 
 If your Vessel is built with a Blueprint, you will see the following panels:
 
-- [Information](../other-functions/information.md)
+- Information
 - [Inputs](../inputs.md)
 - [Notifications](../notifications.md)
 - [Guardrails](../guardrails.md)
 
 If your Vessel is built with Code, you will see the following panels:
 
-- [Information](../other-functions/information.md)
+- Information
 - [Code](../code/code-overview.md)
 - [Arguments](../arguments.md)
 - [Environment Variables](../environment-variables/environment-variables-overview.md)

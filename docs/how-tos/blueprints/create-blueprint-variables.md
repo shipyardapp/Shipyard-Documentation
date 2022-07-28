@@ -18,7 +18,7 @@ keywords:
 
 ## Overview
 
-To create an effective Blueprint, you'll need to add multiple [Blueprint Variables](../../reference/inputs/blueprint-variables.md) that a user can fill out on the [Inputs tab](../../reference/inputs/vessel-inputs.md) while building a Vessel. The data from these Blueprint Variables will then pass directly to the code as environment variables every time the Vessel runs. This how to guide will walk you through the steps to create these Blueprint Variables.
+To create an effective Blueprint, you'll need to add multiple [Blueprint Variables](../../reference/blueprints/org-blueprints/blueprint-variables.md) that a user can fill out on the [Inputs tab](../../reference/inputs.md) while building a Vessel. The data from these Blueprint Variables will then pass directly to the code as environment variables every time the Vessel runs. This how to guide will walk you through the steps to create these Blueprint Variables.
 
 ## Steps
 
@@ -32,10 +32,10 @@ To create an effective Blueprint, you'll need to add multiple [Blueprint Variabl
 ### Step 2 - Optional Fields
 The following steps are optional, but strongly recommended to increase usability.
 
-1. Set a [default value](../../reference/inputs/blueprint-variables.md#default-value) for the variable to use.
+1. Set a [default value](../../reference/blueprints/org-blueprints/blueprint-variables.md#default-value) for the variable to use.
 2. Select if the field should be [required](../../reference/other-functions/duplication.md#required) or not.
-3. Give the variable [placeholder](../../reference/inputs/blueprint-variables.md#placeholder) text as an example of what should be entered.
-4. Give the variable a [tooltip](../../reference/inputs/blueprint-variables.md#tooltip) explanation.
+3. Give the variable [placeholder](../../reference/blueprints/org-blueprints/blueprint-variables.md#placeholder) text as an example of what should be entered.
+4. Give the variable a [tooltip](../../reference/blueprints/org-blueprints/blueprint-variables.md#tooltip) explanation.
 
 ### Step 3 - Create the Variable
 1. Click the **Add Variable** Button at the bottom.

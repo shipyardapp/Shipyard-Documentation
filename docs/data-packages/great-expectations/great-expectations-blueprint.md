@@ -38,7 +38,7 @@ Feel free to peruse this script beforehand so you understand everything that it'
 1. Downloading a file from a public URL.
 2. Decompressing the file if it is a`.gz` file and converting the file into a CSV if it is not one already.
 3. Running Great Expectations against the downloaded file, using the included sample expectation suites.
-4. Uploading the validation output to S3, using a file name structure that reference's Shipyard's [Platform Environment Variables](../reference/../../reference/shipyard-environment-variables.md).
+4. Uploading the validation output to S3, using a file name structure that reference's Shipyard's [Platform Environment Variables](../../reference/environment-variables/shipyard-environment-variables.md).
 5. Printing the validation results to the standard output.
 6. Returning the appropriate exit code based on expectation results.
 
@@ -59,7 +59,7 @@ Click the **+** icon to create a new Blueprint variable. You should see a screen
 
 ![](../.gitbook/assets/../../../.gitbook/assets/add_blueprint_variables.png)
 
-Our code for Great Expectations has 3 variables that we expect to receive. For a detailed overview of each of these fields, read more about [Blueprint Variables](../reference/../../reference/inputs/blueprint-variables.md).
+Our code for Great Expectations has 3 variables that we expect to receive. For a detailed overview of each of these fields, read more about [Blueprint Variables](../../reference/blueprints/org-blueprints/blueprint-variables.md).
 
 #### File URL
 

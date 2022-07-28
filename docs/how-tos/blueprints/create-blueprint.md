@@ -16,7 +16,7 @@ keywords:
 
 ## Overview
 
-When you use a solution over and over again, it's a good idea to turn it into a Blueprint. This how to guide will walk you through the steps needed to create a repeatable solution as a [Blueprint](../../reference/blueprints.md)
+When you use a solution over and over again, it's a good idea to turn it into a Blueprint. This how to guide will walk you through the steps needed to create a repeatable solution as a [Blueprint](../../reference/blueprints/blueprints-overview.md)
 
 ## Steps
 
@@ -32,7 +32,7 @@ All of the information on this tab is optional, but strongly recommended.
 
 1. Follow this how to guide on [creating Blueprint Variables](create-blueprint-variables.md).
 2. Repeat until you've created all of the variables you need.
-3. Give your Blueprint a [description](../../reference/inputs/blueprint-description.md) that indicates what exactly it will do.
+3. Give your Blueprint a [description](../../reference/blueprints/org-blueprints/blueprint-description.md) that indicates what exactly it will do.
 4. Click **Preview this Blueprint** to verify that everything looks exactly as you want.
 5. Click **Next Step** once you're done.
 
@@ -41,7 +41,7 @@ All of the information on this tab is optional, but strongly recommended.
 All of the information on this tab is required.
 
 1. Provide the code for your solution, using any of the [available methods](../../reference/code/code-overview.md).
-2. Provide the [command](../../reference/code/command.md) details necessary for your code to run properly.
+2. Provide the File to Run to execute your script properly.
 3. Click **Next Step** once you're done.
 
 ### Step 4 - Define Requirements
@@ -49,14 +49,14 @@ All of the information on this tab is required.
 All of the information on this tab is optional.
 
 1. Provide any [environment variables](../access-environment-variables.md) that your script uses.
-2. Provide any [external packages](../../reference/requirements/external-package-dependencies.md) that your script needs to use.
+2. Provide any [external packages](../../reference/packages/external-package-dependencies.md) that your script needs to use.
 3. Click **Next Step** once you're done.
 
 ### Step 5 - Settings
 
 1. Give your Blueprint a unique, descriptive name.
 2. Give your Blueprint a synopsis that describes what it should be used for.
-3. If desired, update the [visibility](../../reference/other-functions/visibility.md) or the [guardrails](../../reference/settings/guardrails.md).
+3. If desired, update the [visibility](../../reference/blueprints/org-blueprints/visibility.md) or the [guardrails](../../reference/guardrails.md).
 4. Click **Save and Finish** once you're done
 
 :::tip success

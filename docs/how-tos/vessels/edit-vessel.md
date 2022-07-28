@@ -12,7 +12,7 @@ keywords:
 
 ## Overview
 
-If you find yourself needing to update existing [code](../../reference/code/code-overview.md), change a [Trigger](../../reference/triggers/triggers-overview.md), or even update [external package versions](../../reference/requirements/external-package-dependencies.md), you'll likely want to edit an existing [Vessel](../../reference/vessels.md). This how to guide will walk you through the steps to edit a Vessel.
+If you find yourself needing to update existing [code](../../reference/code/code-overview.md), change a [Trigger](../../reference/triggers/triggers-overview.md), or even update [external package versions](../../reference/packages/external-package-dependencies.md), you'll likely want to edit an existing [Vessel](../../reference/vessels.md). This how to guide will walk you through the steps to edit a Vessel.
 
 ## Steps
 

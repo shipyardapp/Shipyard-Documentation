@@ -32,7 +32,7 @@ At this point you'll be walked through the Vessel setup wizard. If at any point 
 All of the information on this tab is required.
 
 1. Provide the code for your solution, using any of the [available methods](../../reference/code/code-overview.md).
-2. Provide the [command](../../reference/code/command.md) details necessary for your code to run properly.
+2. Provide the File to Run necessary for your code to run properly.
 3. Click **Next Step** once you're done.
 
 ### Step 3 - Define Requirements
@@ -40,15 +40,15 @@ All of the information on this tab is required.
 All of the information on this tab is optional.
 
 1. Provide any [environment variables](../access-environment-variables.md) that your script uses.
-2. Provide any [external packages](../../reference/requirements/external-package-dependencies.md) that your script needs to use.
+2. Provide any [external packages](../../reference/packages/external-package-dependencies.md) that your script needs to use.
 3. Click **Next Step** once you're done.
 
 ### Step 4 - Save Settings
 
 1. Give your Vessel a unique, descriptive name.
 2. Optionally, change the project. By default, the project you navigated to in [Step 1](#step-1---initial-setup) will be selected.
-3. Optionally, edit the [notifcations](../../reference/settings/notifications.md) to send users emails about the Vessel.
-4. Optionally, edit the [guardrails](../../reference/settings/guardrails.md) to make the system automatically retry your Vessel upon an error.
+3. Optionally, edit the [notifcations](../../reference/notifications.md) to send users emails about the Vessel.
+4. Optionally, edit the [guardrails](../../reference/guardrails.md) to make the system automatically retry your Vessel upon an error.
 5. Click **Save and Finish** once you're done
 
 :::tip success

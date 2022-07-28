@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-Every unique solution you create will require you to build a Vessel. Some solutions can be built with no-code [Blueprints](../../reference/blueprints.md), designed by other team members or Shipyard staff. This how to guide will walk you through the steps to build a Vessel with a Blueprint.
+Every unique solution you create will require you to build a Vessel. Some solutions can be built with no-code [Blueprints](../../reference/blueprints/blueprints-overview.md), designed by other team members or Shipyard staff. This how to guide will walk you through the steps to build a Vessel with a Blueprint.
 
 ## Steps
 
@@ -38,8 +38,8 @@ This page will look different for every Blueprint. The left hand side will conta
 
 1. Give your Vessel a unique, descriptive name.
 2. Optionally, change the project. By default, the project you navigated to in [Step 1](#step-1---initial-setup) will be selected.
-3. Optionally, edit the [notifications](../../reference/settings/notifications.md) to send users emails about the Vessel.
-4. Optionally, edit the [guardrails](../../reference/settings/guardrails.md) to make the system automatically retry your Vessel upon an error.
+3. Optionally, edit the [notifications](../../reference/notifications.md) to send users emails about the Vessel.
+4. Optionally, edit the [guardrails](../../reference/guardrails.md) to make the system automatically retry your Vessel upon an error.
 5. Click **Save and Finish** once you're done
 
 :::tip success
