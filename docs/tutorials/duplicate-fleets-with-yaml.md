@@ -27,113 +27,192 @@ For more information about our YAML Editor, check out this [blog post](https://w
 
 ### Create Initial Fleet
 
-:::note 
-We are going to be using the Fleet created in our Getting Started tutorial. If you went through that tutorial, feel free to skip this section and navigate to that Fleet. 
-:::
+1. Click the **New Fleet** button on the top left corner of the Shipyard webpage.
+2. Choose the **Playground** project. Click **Select Project**.
+![Select Project](../.gitbook/assets/shipyard_2022_08_08_14_48_55.png)
+3. Click the **Use YAML Editor** button on the top right of the Fleet Builder page
+![Use YAML Editor Button](../.gitbook/assets/shipyard_2022_08_10_10_46_32.png)
+4. Copy the following YAML and paste it into the YAML Editor: 
+```
+name: Download Slinky Dog Dash Ride Wait Times
+vessels:
+    Download Slinky Dog Dash Ride Data:
+        source:
+            blueprint: HTTP - Download File from URL
+            inputs:
+                HTTP_DESTINATION_FILE_NAME: slinky_dog.csv
+                HTTP_DESTINATION_FOLDER_NAME: disney_world_wait_times
+                HTTP_FILE_URL: https://cdn.touringplans.com/datasets/slinky_dog.csv
+            type: BLUEPRINT
+        guardrails:
+            retry_count: 0
+            retry_wait: 0s
+            runtime_cutoff: 4h0m0s
+        notifications:
+            emails:
+                - tutorials@shipyardapp.com
+            after_error: true
+            after_on_demand: false
+    Send Slinky Dog Dash Data via Email:
+        source:
+            blueprint: Email - Send Message with File
+            inputs:
+                EMAIL_BCC: null
+                EMAIL_CC: null
+                EMAIL_INCLUDE_SHIPYARD_FOOTER: true
+                EMAIL_MESSAGE: Here's the most recent wait times for Slinky Dog Dash!
+                EMAIL_PASSWORD: SHIPYARD_HIDDEN
+                EMAIL_SEND_METHOD: tls
+                EMAIL_SENDER_ADDRESS: ${EMAIL_USERNAME}
+                EMAIL_SENDER_NAME: null
+                EMAIL_SMTP_HOST: smtp.gmail.com
+                EMAIL_SMTP_PORT: "587"
+                EMAIL_SOURCE_FILE_NAME: slinky_dog.csv
+                EMAIL_SOURCE_FILE_NAME_MATCH_TYPE: exact_match
+                EMAIL_SOURCE_FOLDER_NAME: disney_world_wait_times
+                EMAIL_SUBJECT: Slinky Dog Dash Wait Times
+                EMAIL_TO: shipyardapptest@gmail.com
+                EMAIL_USERNAME: shipyardapptest@gmail.com
+            type: BLUEPRINT
+        guardrails:
+            retry_count: 0
+            retry_wait: 0s
+            runtime_cutoff: 4h0m0s
+        notifications:
+            emails:
+                - tutorials@shipyardapp.com
+            after_error: true
+            after_on_demand: false
+connections:
+    Download Slinky Dog Dash Ride Data:
+        Send Slinky Dog Dash Data via Email: SUCCESS
+notifications:
+    emails:
+        - tutorials@shipyardapp.com
+    after_error: true
+    after_on_demand: false
+```
+5. Click **Save & Finish** on the bottom right corner of the Shipyard webpage. This will take you to a page that says the Fleet has been created successfully.
+![Fleet Created Sucessfully](../.gitbook/assets/shipyard_2022_08_10_10_52_17.png)
+6. Click **Edit Fleet**. This will take you back to the Fleet Builder. 
+7. Click the **Use YAML Editor** button.
+8. Copy the Yaml from this fleet. We will use it to create our new fleet.
 
-1. On the top left of your Shipyard screen, click the **New Fleet** button
-2. This will pop up a prompt asking you to select a Project. Select the **Playground** Project. Click **Select Project**.
-
-![](../.gitbook/assets/shipyard_2022_08_08_14_48_55.png)
-
-3. Navigate down to the **HTTP** dropdown and click it. It will expand the Blueprints that are available to use for HTTP. 
-   
-   ![](../.gitbook/assets/shipyard_2022_05_04_16_35_45.png)
-
-4. Click the Vessel named **Download File from URL**. This creates a New Vessel and immediately opens the edit pane for that Vessel on the left side of the screen.
-
-    ![](../.gitbook/assets/shipyard_2022_05_04_14_13_02.png)
-
-5. In the **Vessel Name** field, remove the automatically generated name and type **Download Slinky Dog Dash Ride Data**. 
-6. In the **File URL** field type `https://cdn.touringplans.com/datasets/slinky_dog.csv`
-7. In the **File Name** field type `slinky_dog_dash.csv`
-8. In the **Folder Name** field type `disney_world_wait_times`
-
-9.  Click the `+` icon in the sidebar to add another Vessel to the Fleet.
-10.  Search for **email** using the search bar at the top. Click on **Send Message with File**
-
-![Email Blueprint Options](../.gitbook/assets/shipyard_2022_01_11_17_35_14.png)
-
-11. In the **Vessel Name** field, remove the automatically generated name and type **Send Slinky Dog Dash Data via Email**.
-12. Fill out fields with the following values:
-
-| Name | Value |
-|:---|:---|
-| Send Method | TLS |
-| SMTP Host | smtp.gmail.com|
-| SMTP Port |587 |
-| Username | Leave blank and use the default |
-| Password | Leave blank and use the default |
-| Sender Address | Leave blank and use the default |
-| Sender Name | |
-| TO | YOUR EMAIL HERE |
-| CC | |
-| BCC | |
-| Subject | Slinky Dog Dash Wait Times |
-| Message | Here's the most recent wait times for Slinky Dog Dash! |
-| File Name Match Type | Exact Match|
-| File Name | slinky_dog_dash.csv |
-| Folder Name | disney_world_wait_times |
-| Include Shipyard Footer? | ✅|
-
-13. Click and drag from a circle on the **Download Slinky Dog Dash Ride Data** Vessel towards a circle on the **Send Slinky Dog Dash Data via Email** Vessel. 
-
-![Connect Vessels](../gitbook/assets/../../.gitbook/assets/connecting_vessels.gif)
-
-14. Click the gear icon on the side of the Fleet Builder to access Fleet Settings.
-15. Under Fleet Name, enter `Download Slinky Dog Dash Ride Data`.
-
-![](../.gitbook/assets/shipyard_2022_08_08_14_57_52.png)
-
-16. Click **Save and Finish** on the bottom right corner of your screen. This will take you to a screen letting you know that the Fleet was created successfully. 
-17. Click **Return to Project**. 
-18. Click on your Download Slinky dog Dash Ride Data Fleet. 
-19. Click the **Fleet Builder** button to open the Fleet Builder.
-
-### Copy Initial Fleet's YAML
-
-1. Click on the **Use YAML Editor** button.
-
-![](../.gitbook/assets/shipyard_2022_08_08_15_31_30.png)
-
-You should now be able to see the YAML code for the fleet we created:
-
-![](../.gitbook/assets/shipyard_2022_08_08_15_34_39.png)
-
-2. Copy the YAML code.
 
 ### Create New Fleet with YAML Editor
 
 1. Click **New Fleet** in the top left corner of the Shipyard webpage.
 2. Choose the **Playground** project. Click **Select Project**.
-![](../.gitbook/assets/shipyard_2022_08_08_14_48_55.png)
 3. Click the **Use YAML Editor** button.
-4. Delete the YAML code that is currently in the editor and paste the code from the previous fleet.
+4. Paste the code from the previous fleet.
 
 ### Use YAML Editor to Edit Fleet
 
 1. For name, change `Download Slinky Dog Dash Ride Data` to `Download Space Mountain Ride Data`.
 2. Under vessels, change `Download Slinky Dog Dash Ride Data` to `Download Space Mountain Ride Data`
-3. Under inputs,
-   1. Change HTTP_DESTINATION_FILE_NAME to `space_mountain.csv`
-   2. Change HTTP_FILE_URL to `https://cdn.touringplans.com/datasets/space_mountain.csv`
+3. Under inputs:
 
-![](../.gitbook/assets/shipyard_2022_08_08_16_10_49.png)
+| Input                       | Value                                                    |
+|-----------------------------|----------------------------------------------------------|
+| HTTP _DESTINATION_FILE_NAME | space_mountain.csv                                       |
+| HTTP _FILE_URL              | https://cdn.touringplans.com/datasets/space_mountain.csv |
+
+![Download from URL Vessel Changes](../.gitbook/assets/shipyard_2022_08_08_16_10_49.png)
 
 4. Change the second Vessels name from `Send Slinky Dog Dash Data via Email` to `Send Space Mountain Data via Email`
 5. Change the following inputs for that Vessel:
-   1. EMAIL_MESSAGE: Here's the most recent wait times for Space Mountain!
-   2. EMAIL_SOURCE_FILE_NAME: space_mountain.csv
-   3. EMAIL_SUBJECT: Space Mountain Wait Times
 
-![](../.gitbook/assets/shipyard_2022_08_08_16_11_20.png)
+| Input                  | Value                                                 |
+|------------------------|-------------------------------------------------------|
+| EMAIL_MESSAGE          | Here's the most recent wait times for Space Mountain! |
+| EMAIL_SOURCE_FILE_NAME | space_mountain.csv                                    |
+| EMAIL_SUBJECT          | Space Mountain Wait Times                             |
+
+![Email Vessel Changes](../.gitbook/assets/shipyard_2022_08_10_11_07_38.png)
 
 6. Under Connections, change the names of the two vessels to match our new vessels:
-   1. Download Slinky Dog Dash Ride Data -> Download Space Mountain Ride Data
-   2. Send Slinky Dog Dash Data via Email -> Send Space Mountain Data via Email
 
-![](../.gitbook/assets/shipyard_2022_08_08_16_11_48.png)
+| From                                | To                                 |
+|-------------------------------------|------------------------------------|
+| Download Slinky Dog Dash Ride Data  | Download Space Mountain Ride Data  |
+| Send Slinky Dog Dash Data via Email | Send Space Mountain Data via Email |
 
-7. Click **Save & Finish**.
+![Connection Changes](../.gitbook/assets/shipyard_2022_08_10_11_17_42.png)
+
+1. Find all of the values in the YAML called `_id` and delete the full line. These ids were for the Slinky Dog Fleet. Shipyard will automatically generate new ids for the new Space Mountain Fleet.
+2. Your finished YAML for the Space Mountain Fleet should look like this:
+
+```
+name: Download Space Mountain Ride Data
+vessels:
+    Download Space Mountain Ride Data:
+        source:
+            blueprint: HTTP - Download File from URL
+            inputs:
+                HTTP_DESTINATION_FILE_NAME: space_mountain.csv
+                HTTP_DESTINATION_FOLDER_NAME: disney_world_wait_times
+                HTTP_FILE_URL: https://cdn.touringplans.com/datasets/space_mountain.csv
+            type: BLUEPRINT
+        guardrails:
+            retry_count: 0
+            retry_wait: 0s
+            runtime_cutoff: 4h0m0s
+        notifications:
+            emails:
+                - tutorials@shipyardapp.com
+            after_error: true
+            after_on_demand: false
+    Send Space Mountain Data via Email:
+        source:
+            blueprint: Email - Send Message with File
+            inputs:
+                EMAIL_BCC: null
+                EMAIL_CC: null
+                EMAIL_INCLUDE_SHIPYARD_FOOTER: true
+                EMAIL_MESSAGE: Here's the most recent wait times for Space Mountain!
+                EMAIL_PASSWORD: SHIPYARD_HIDDEN
+                EMAIL_SEND_METHOD: tls
+                EMAIL_SENDER_ADDRESS: ${EMAIL_USERNAME}
+                EMAIL_SENDER_NAME: null
+                EMAIL_SMTP_HOST: smtp.gmail.com
+                EMAIL_SMTP_PORT: "587"
+                EMAIL_SOURCE_FILE_NAME: space_mountain.csv
+                EMAIL_SOURCE_FILE_NAME_MATCH_TYPE: exact_match
+                EMAIL_SOURCE_FOLDER_NAME: disney_world_wait_times
+                EMAIL_SUBJECT: Space Mountain Wait Times
+                EMAIL_TO: steven.johnson@shipyardapp.com
+                EMAIL_USERNAME: shipyardapptest@gmail.com
+            type: BLUEPRINT
+        guardrails:
+            retry_count: 0
+            retry_wait: 0s
+            runtime_cutoff: 4h0m0s
+        notifications:
+            emails:
+                - tutorials@shipyardapp.com
+            after_error: true
+            after_on_demand: false
+connections:
+    Download Space Mountain Ride Data:
+        Send Space Mountain Data via Email: SUCCESS
+triggers:
+    schedules:
+        - how_often: WEEKLY
+          when: MONDAY
+          at: :00
+notifications:
+    emails:
+        - tutorials@shipyardapp.com
+    after_error: true
+    after_on_demand: false
+```
+
+9.  Click **Save & Finish**.
+
+:::tip Success
+
+You've successfully duplicated a Fleet with the YAML Editor
+
+:::
 
 
