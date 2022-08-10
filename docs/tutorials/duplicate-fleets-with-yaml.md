@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-In this tutorial, you'll walk through the steps to duplicate a fleet using Shipyard's YAML Editor. 
+In this tutorial, you'll walk through the steps to duplicate a fleet using Shipyard's [YAML Editor](../reference/fleets/yaml-editor.md). 
 
 By the end of this tutorial, you'll be able to: 
 
@@ -106,6 +106,7 @@ You should now be able to see the YAML code for the fleet we created:
 
 1. Click **New Fleet** in the top left corner of the Shipyard webpage.
 2. Choose the **Playground** project. Click **Select Project**.
+![](../.gitbook/assets/shipyard_2022_08_08_14_48_55.png)
 3. Click the **Use YAML Editor** button.
 4. Delete the YAML code that is currently in the editor and paste the code from the previous fleet.
 
