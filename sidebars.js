@@ -147,7 +147,7 @@ module.exports = {
 			"tutorials/advanced-code-vessel",
 			"tutorials/non-native-language-vessels",
 			"tutorials/referencing-fleet-webhook-parameters",
-			"tutorials/duplicate-fleets-with-yaml"
+			"tutorials/create-fleets-with-yaml",
 		],
 		"📦 Library Blueprints": [
 			{

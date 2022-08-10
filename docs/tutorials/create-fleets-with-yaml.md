@@ -1,8 +1,8 @@
 ---
-id: duplicate-fleets-with-yaml
-title: Duplicating Fleets with the YAML Editor
+id: create-fleets-with-yaml
+title: Create Fleets with the YAML Editor
 hide_title: true
-description: In-depth tutorial to walk you through the steps needed to quickly duplicate fleets with the YAML editor.
+description: In-depth tutorial to walk you through the steps needed to quickly create or duplicate fleets with the YAML editor.
 keywords:
   - fleet
   - advanced
@@ -10,7 +10,7 @@ keywords:
   - YAML
 ---
 
-# Duplicating a Fleet with the YAML Editor
+# Creating a Fleet with the YAML Editor
 
 ## Overview
 
@@ -25,18 +25,23 @@ For more information about our YAML Editor, check out this [blog post](https://w
 
 ## Steps
 
-### Create Initial Fleet
+### Create New Fleet with YAML Editor
 
 1. Click the **New Fleet** button on the top left corner of the Shipyard webpage.
 2. Choose the **Playground** project. Click **Select Project**.
 ![Select Project](../.gitbook/assets/shipyard_2022_08_08_14_48_55.png)
 3. Click the **Use YAML Editor** button on the top right of the Fleet Builder page
+
 ![Use YAML Editor Button](../.gitbook/assets/shipyard_2022_08_10_10_46_32.png)
-4. Copy the following YAML and paste it into the YAML Editor: 
-```
+
+4. Highlight and delete all of the existing YAML.
+5. Copy the following YAML and paste it into the YAML Editor: 
+```yaml
 name: Download Slinky Dog Dash Ride Wait Times
+_id: f7cea97e-ee68-4b3e-9eba-76114694e555
 vessels:
     Download Slinky Dog Dash Ride Data:
+        _id: a8ca098c-0e0e-4e2f-a310-6d2e14e7d690
         source:
             blueprint: HTTP - Download File from URL
             inputs:
@@ -54,6 +59,7 @@ vessels:
             after_error: true
             after_on_demand: false
     Send Slinky Dog Dash Data via Email:
+        _id: 4c1a1d9d-3be4-4560-888a-cf37d3101131
         source:
             blueprint: Email - Send Message with File
             inputs:
@@ -92,57 +98,49 @@ notifications:
     after_error: true
     after_on_demand: false
 ```
-5. Click **Save & Finish** on the bottom right corner of the Shipyard webpage. This will take you to a page that says the Fleet has been created successfully.
-![Fleet Created Sucessfully](../.gitbook/assets/shipyard_2022_08_10_10_52_17.png)
-6. Click **Edit Fleet**. This will take you back to the Fleet Builder. 
-7. Click the **Use YAML Editor** button.
-8. Copy the Yaml from this fleet. We will use it to create our new fleet.
-
-
-### Create New Fleet with YAML Editor
-
-1. Click **New Fleet** in the top left corner of the Shipyard webpage.
-2. Choose the **Playground** project. Click **Select Project**.
-3. Click the **Use YAML Editor** button.
-4. Paste the code from the previous fleet.
 
 ### Use YAML Editor to Edit Fleet
 
-1. For name, change `Download Slinky Dog Dash Ride Data` to `Download Space Mountain Ride Data`.
+1. For name, change `Download Slinky Dog Dash Ride Wait Times` to `Download Space Mountain Ride Data`.
 2. Under vessels, change `Download Slinky Dog Dash Ride Data` to `Download Space Mountain Ride Data`
-3. Under inputs:
+3. Under that Vessel, change the following inputs to the values listed:
 
 | Input                       | Value                                                    |
 |-----------------------------|----------------------------------------------------------|
-| HTTP _DESTINATION_FILE_NAME | space_mountain.csv                                       |
-| HTTP _FILE_URL              | https://cdn.touringplans.com/datasets/space_mountain.csv |
+| HTTP _DESTINATION_FILE_NAME | `space_mountain.csv`                                    |
+| HTTP _FILE_URL              | `https://cdn.touringplans.com/datasets/space_mountain.csv` |
 
 ![Download from URL Vessel Changes](../.gitbook/assets/shipyard_2022_08_08_16_10_49.png)
 
-4. Change the second Vessels name from `Send Slinky Dog Dash Data via Email` to `Send Space Mountain Data via Email`
-5. Change the following inputs for that Vessel:
+4. Change the second Vessel's name from `Send Slinky Dog Dash Data via Email` to `Send Space Mountain Data via Email`
+5. Under that Vessel, change the following inputs to the values listed:
 
 | Input                  | Value                                                 |
 |------------------------|-------------------------------------------------------|
-| EMAIL_MESSAGE          | Here's the most recent wait times for Space Mountain! |
-| EMAIL_SOURCE_FILE_NAME | space_mountain.csv                                    |
-| EMAIL_SUBJECT          | Space Mountain Wait Times                             |
+| EMAIL_MESSAGE          | `Here's the most recent wait times for Space Mountain!` |
+| EMAIL_SOURCE_FILE_NAME | `space_mountain.csv`                                    |
+| EMAIL_SUBJECT          | `Space Mountain Wait Times`                             |
 
 ![Email Vessel Changes](../.gitbook/assets/shipyard_2022_08_10_11_07_38.png)
 
 6. Under Connections, change the names of the two vessels to match our new vessels:
 
-| From                                | To                                 |
+| Original Name                                | New Name                                 |
 |-------------------------------------|------------------------------------|
 | Download Slinky Dog Dash Ride Data  | Download Space Mountain Ride Data  |
 | Send Slinky Dog Dash Data via Email | Send Space Mountain Data via Email |
 
 ![Connection Changes](../.gitbook/assets/shipyard_2022_08_10_11_17_42.png)
 
-1. Find all of the values in the YAML called `_id` and delete the full line. These ids were for the Slinky Dog Fleet. Shipyard will automatically generate new ids for the new Space Mountain Fleet.
-2. Your finished YAML for the Space Mountain Fleet should look like this:
+7. Find all of the values in the YAML called `_id` and delete the full line. Shipyard will automatically generate new ids for the new Space Mountain Fleet.
 
-```
+:::warning
+A YAML with IDs is used when updating an existing Fleet. If you try to create a new Fleet with IDs, it will error out.
+:::
+
+Your finished YAML for the Space Mountain Fleet should look like this:
+
+```yaml
 name: Download Space Mountain Ride Data
 vessels:
     Download Space Mountain Ride Data:
@@ -207,11 +205,12 @@ notifications:
     after_on_demand: false
 ```
 
-9.  Click **Save & Finish**.
+8.  Click **Save & Finish** on the bottom right corner of the Shipyard webpage. This will take you to a page that says the Fleet has been created successfully.
+![Fleet Created Sucessfully](../.gitbook/assets/shipyard_2022_08_10_10_52_17.png)
 
 :::tip Success
 
-You've successfully duplicated a Fleet with the YAML Editor
+You've successfully created a Fleet with the YAML Editor!
 
 :::
 
