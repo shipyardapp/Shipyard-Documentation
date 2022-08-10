@@ -51,7 +51,7 @@ Selecting a schedule of `Monthly` on the 31st will only result in a run being sc
    1. A schedule that only runs on specific dates, like holidays.
    2. A schedule that runs every hour except on specific days.
    3. A schedule that can be described as "every other" or "every nth"
-4. Fleets may not run at exactly their scheduled time, as there is still time associated with entering a job queue, spinning up servers, and installing any [external package dependencies](../requirements/external-package-dependencies.md).
+4. Fleets may not run at exactly their scheduled time, as there is still time associated with entering a job queue, spinning up servers, and installing any [external package dependencies](../packages/external-package-dependencies.md).
 
 ## Learn More
 

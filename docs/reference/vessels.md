@@ -17,7 +17,12 @@ import TabItem from '@theme/TabItem';
 
 A Vessel is the "unit of work" in Shipyard, or an individual script that has been designed and built to accomplish a very specific job. Just like the real world equivalent, Vessels can be built for any purpose and come in any size, shape, or speed.
 
-Every Vessel is either built with code or with a Blueprint that contains the design specifications that determine what that Vessel will do. Building a new Vessel will walk you through a multi-step setup wizard. The steps required for creating a New Vessel differ based on the creation method that you select.
+Vessels are run in independent docker containers, so underlying code, environment variables, and packages of one cannot affect another.
+
+Every Vessel is either built with code or with a Blueprint that contains the design specifications that determine what that Vessel will do. New Vessels get built through the process of building a [Fleet](fleets/fleets-overview.md). The options required for creating a New Vessel differ based on the creation method that you select.
+
+### Project Vessel
+A Project Vessel is a Vessel that has been previously built in a Fleet but is now disconnected from any Fleet. You can turn any existing Vessel into a Project Vessel by removing it from a Fleet and saving the Fleet. Project Vessels are an easy way to move a Vessel from one Fleet to another or to store the contents of a Fleet for later.
 
 ## Setup
 
@@ -29,32 +34,34 @@ When building a Vessel with code, your script should return an exit code of 0 to
 
 Additionally, your script should stop its work if it receives a SIGTERM \(15\) signal.
 
-#### Wizard Steps
+#### Panels
 
-1. Select **With Code**
-2. Select a **Language**
-3. Provide [**Code**](code/code-overview.md)
-4. Define **Requirements** \([Environment Variables](requirements/environment-variables.md), [External Package Dependencies](requirements/external-package-dependencies.md)\)
-5. Save **Settings** \([Information](settings/information.md), [Notifications](settings/notifications.md), and [Guardrails](settings/guardrails.md)\)
+1. [Code](code/code-overview.md)
+2. [Arguments](arguments.md) (Optional)
+3. [Environment Variables](environment-variables/environment-variables-overview.md) (Optional)
+4. [Code Packages](packages/external-package-dependencies.md) (Optional)
+5. [System Packages](packages/system-package-dependencies.md) (Optional)
+6. [Notifications](notifications.md) (Optional)
+7. [Guardrails](guardrails.md) (Optional)
 
-### With Blueprint
+
+### With a Blueprint
 
 Building a Vessel with a Blueprint allows you to run scripts without needing to touch code. Instead, you're only required to fill out a few key form inputs. This user input then gets passed to a script in the backend.
 
 #### Setup Steps
 
-1. Select **With a Blueprint**
-2. Select your [**Blueprint**](blueprints.md)
-3. Provide [**Inputs**](inputs/inputs-overview.md)
-4. Save **Settings** \([Information](settings/information.md), [Notifications](settings/notifications.md), and [Guardrails](settings/guardrails.md)\)
-
+1. [Inputs](inputs.md)
+2. [Notifications](notifications.md) (Optional)
+3. [Guardrails](guardrails.md) (Optional)
+   
 ## Additional Notes
 
 1. A Vessel can only be tied to one Blueprint, one Project, and one Organization.
 2. A Vessel's Blueprint or Code type cannot be changed once it is built.
 3. A Vessel's Project cannot be changed once it is built.
-4. A Project Vessel is _not_ version controlled. Any changes made directly in the Vessel creation pages cannot be visualized or restored.
-5. A Fleet Vessel _is_ version controlled. A Vessel's previous configuration within a Fleet is viewable in the Fleet's [Version Control](reference/version-control.md) tab.
+4. A Project Vessel is _not_ version controlled.
+5. A Fleet Vessel _is_ version controlled. A Vessel's previous configuration within a Fleet is viewable in the Fleet's [Version Control](fleets/version-control.md) tab.
 
 ## Learn More
 
@@ -62,6 +69,6 @@ Building a Vessel with a Blueprint allows you to run scripts without needing to 
 - [How to Build a New Vessel using a Custom Blueprint](../how-tos/vessels/build-vessel-blueprint.md)
 - [How to Duplicate a Vessel](../how-tos/vessels/duplicate-vessel.md)
 - [How to Search for Vessels](../how-tos/vessels/search-for-vessel.md)
-- [How to Delete a Vessel](../how-tos/vessels/delete-vessel.md)
+- [How to Delete a Vessel](../how-tos/vessels/remove-vessel.md)
 - [How to Edit a Vessel](../how-tos/vessels/edit-vessel.md)
 - [How to Assess Vessel Performance](../how-tos/vessels/assess-vessel-performance.md)

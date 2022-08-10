@@ -14,15 +14,15 @@ keywords:
 
 ## Definitions
 
-[**Blueprint Library**](/reference/blueprint-library/blueprint-library-overview.md) is a location for pre-made Custom Blueprints developed by Shipyard staff.
+[**Blueprint Library**](reference/blueprints/blueprint-library/blueprint-library-overview.md) is a location for pre-made Blueprints developed by Shipyard staff.
 
-[**Blueprints**](/reference/blueprints.md) are the foundation of the application. They contain the design specifications for a repeatable task. In other applications, these may be referenced as templates, macros, or operators.
+[**Blueprints**](/reference/blueprints/blueprints-overview.md) are the foundation of the application. They contain the design specifications for a repeatable task. In other applications, these may be referenced as templates, macros, or operators.
 
-[**Vessels**](/reference/vessels.md) are built using either [Blueprints](/reference/blueprints.md) or [Code](/reference/code/code-overview.md). In other applications, these may be referenced as tasks, jobs, or steps.
+[**Vessels**](/reference/vessels.md) are built using either [Blueprints](/reference/blueprints/blueprints-overview.md) or [Code](/reference/code/code-overview.md). In other applications, these may be referenced as tasks, jobs, or steps.
 
 **Dependent Vessels** - Vessels that are built on a specific Blueprint. They depend on the underlying code and structure of the Blueprint.
 
-[**Fleets**](/reference/fleets.md) are built by connecting multiple Vessels together. In other applications, these may be referenced as flows, workflows, or DAGs.
+[**Fleets**](reference/fleets/fleets-overview.md) are built by connecting multiple Vessels together. In other applications, these may be referenced as flows, workflows, or DAGs.
 
 **Paths** are the lines that connect Vessels together in a Fleet, evaluating the status of the connected Vessel.
 
@@ -52,7 +52,23 @@ keywords:
 
 [**Billable Runtime**](faqs.md#how-do-you-calculate-billable-runtime) refers to the cumulative length of execution time that a Vessel or Fleet took while running. For Fleets with high concurrency, it is possible for the billable runtime to exceed duration. For Vessels with retries, it is possible for the billable runtime to be less than duration.
 
-[**Visual Editor**](reference/fleets.md/#visual-editor) visual editor refers to the drag and drop interface for connecting Vessels together. 
+**Fleet Builder** refers to the interface used to connect Vessels together as a Fleet. The Fleet Builder can either be accessed with the Visual Editor or the YAML Editor.
+
+[**Visual Editor**](reference/fleets/fleets-overview.md/#visual-editor) refers to the drag and drop interface on the Fleet Builder tab.
+
+[**YAML Editor**](reference/fleets/yaml-editor.md) refers to the code-based interface on the Fleet Builder tab.
+
+[**Version Control**](reference/fleets/version-control.md) refers to Shipyard's automatic storage of the past configuration of a Fleet, displayed as YAML.
+
+[**Webhooks**](reference/triggers/webhook-triggers.md) refer to the URL that can be used to trigger a Fleet programatically.
+
+[**Webhook Parameters**](reference/triggers/webhook-triggers.md) refers to the headers or body that are sent to a webhook at runtime.
+
+[**Language Packages**](reference/packages/external-package-dependencies.md) refer to the external package dependencies used by the selected programming language.
+
+[**System Packages**](reference/packages/system-package-dependencies.md) refer to the linux-level operating system packages that can installed.
+
+**Panel** refers to the collapsible sections displayed when editing a Vessel in a Fleet.
 
 ## Visuals
 

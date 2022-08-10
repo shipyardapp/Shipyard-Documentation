@@ -15,7 +15,7 @@ keywords:
 
 ## Overview
 
-Sometimes, you may want your variables to be shown to a user in a specific order. This how to guide will walk you through the steps to re-order those [Blueprint Variables](../../reference/inputs/blueprint-variables.md) in the UI.
+Sometimes, you may want your variables to be shown to a user in a specific order. This how to guide will walk you through the steps to re-order those [Blueprint Variables](../../reference/blueprints/org-blueprints/blueprint-variables.md) in the UI.
 
 ## Steps
 
