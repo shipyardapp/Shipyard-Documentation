@@ -194,6 +194,10 @@ module.exports = {
 					"blueprint-library/box/box-download-files",
 					"blueprint-library/box/box-upload-files",
 				],
+				Databricks: [
+					"blueprint-library/databricks/databricks-overview",
+					"blueprint-library/databricks/databricks-authorization",
+				],
 				"Data Manipulation": [
 					"blueprint-library/data-manipulation/data-manipulation-overview",
 					"blueprint-library/data-manipulation/data-manipulation-compare-datasets",
