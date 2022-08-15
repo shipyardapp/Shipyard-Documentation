@@ -29,7 +29,7 @@ _All timing of feature development is estimated and subject to change_
 
 ### Enhancements
 
-- Get cracking with Shipyard! Our new **Get Started** page is quick and easy guide for those who are new to the platform, but also a great way for current users to explore features. And that feeling you'll get when a completed task is greeted with a shower of confetti? Priceless.
+- Get cracking with Shipyard! Our new **Get Started** page is a quick and easy guide for those who are new to the platform, but also a great way for current users to explore features. And that feeling you'll get when a completed task is greeted with a shower of confetti? Priceless.
 ![Photo Get Started page](./.gitbook/assets/change_log_release_v0_302_0.png)
 
 ## 07/26/2022
