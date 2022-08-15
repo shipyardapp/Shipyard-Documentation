@@ -282,6 +282,10 @@ module.exports = {
 					"blueprint-library/google-sheets/google-sheets-upload-csv-to-sheet",
 					"blueprint-library/google-sheets/google-sheets-clear-data-from-sheet",
 				],
+				Hightouch: [
+					"blueprint-library/hightouch/hightouch-overview",
+					"blueprint-library/hightouch/hightouch-authorization",
+				],
 				HTTP: [
 					"blueprint-library/http/http-overview",
 					"blueprint-library/http/http-requests",
