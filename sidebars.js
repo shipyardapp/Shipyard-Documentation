@@ -304,6 +304,10 @@ module.exports = {
 					"blueprint-library/postgresql/postgresql-store-query-results-as-csv",
 					"blueprint-library/postgresql/postgresql-upload-csv-to-table",
 				],
+				RudderStack: [
+					"blueprint-library/rudderstack/rudderstack-overview",
+					"blueprint-library/rudderstack/rudderstack-authorization",
+				],
 				SFTP: [
 					"blueprint-library/sftp/sftp-overview",
 					"blueprint-library/sftp/sftp-authorization",
