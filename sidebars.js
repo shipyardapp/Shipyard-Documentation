@@ -194,6 +194,10 @@ module.exports = {
 					"blueprint-library/box/box-download-files",
 					"blueprint-library/box/box-upload-files",
 				],
+				Census: [
+					"blueprint-library/census/census-overview",
+					"blueprint-library/census/census-authorization",
+				],
 				Databricks: [
 					"blueprint-library/databricks/databricks-overview",
 					"blueprint-library/databricks/databricks-authorization",
