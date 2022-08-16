@@ -18,12 +18,28 @@ The purpose of this changelog is to publicly document the updates we are continu
 Have a feature request, a bug report, a suggestion or an interesting use case? We'd love to hear it! Let us know at support@shipyardapp.com!
 :::
 
-## Features On Deck
+## Bigger Features On Deck
 
 _All timing of feature development is estimated and subject to change_
 
-- API Access for Exporting Logs (July)
-- API Access for Bulk Editing/Creating Fleets (July)
+- API Access for Exporting Logs (Sept)
+- API Access for Bulk Editing/Creating Fleets (Sept)
+- Credential Management (Late Q4)
+
+## 08/17/2022
+
+### New Features
+- We've added a handful of new Blueprints to the application:
+  - [Mode](blueprint-library/mode/mode-overview.md)
+  - [Rudderstack](blueprint-library/rudderstack/rudderstack-overview.md)
+  - [Census](blueprint-library/census/census-overview.md)
+  - [Hightouch](blueprint-library/hightouch/hightouch-overview.md)
+  - [Databricks](blueprint-library/databricks/databricks-overview.md)
+  
+### Enhancements
+
+- The [Snowflake Upload CSV to Table](blueprint-library/snowflake/snowflake-upload-csv-to-table.md) Blueprint been updated to use a new method for uploading by default. From our testing, uploads can now be up to 15x faster... and that's especially true for larger datasets. (We uploaded 25mm rows in under 5 minutes!)
+- The [HTTP Download File from URL](blueprint-library/http/http-download-file-from-url.md) Blueprint has been updated to accept custom headers.
 
 ## 08/15/2022
 
