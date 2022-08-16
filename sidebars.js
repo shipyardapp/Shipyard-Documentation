@@ -298,6 +298,10 @@ module.exports = {
 					"blueprint-library/microsoft-sql-server/microsoft-sql-server-store-query-results-as-csv",
 					"blueprint-library/microsoft-sql-server/microsoft-sql-server-upload-csv-to-table",
 				],
+				Mode: [
+					"blueprint-library/mode/mode-overview",
+					"blueprint-library/mode/mode-authorization",
+				],
 				MySQL: [
 					"blueprint-library/mysql/mysql-overview",
 					"blueprint-library/mysql/mysql-authorization",
