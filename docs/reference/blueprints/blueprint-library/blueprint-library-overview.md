@@ -59,10 +59,13 @@ Blueprints are broken down into a few categories with core functionality that sh
 - [Google Cloud Storage](../../../blueprint-library/google-cloud-storage/google-cloud-storage-overview.md)
 - [Google Drive](../../../blueprint-library/google-drive/google-drive-overview.md)
 - [SFTP](../../../blueprint-library/sftp/sftp-overview.md)
+- [Databricks](../../../blueprint-library/databricks/databricks-overview.md)
 
 #### Actions
 - Upload Files
 - Download Files
+- Move or Rename Files
+- Delete Files
 
 ### Spreadsheets
 
@@ -91,18 +94,21 @@ Blueprints are broken down into a few categories with core functionality that sh
 #### Integrations
 - [Domo](../../../blueprint-library/domo/domo-overview.md)
 - [Tableau](../../../blueprint-library/tableau/tableau-overview.md)
+- [Mode](../../../blueprint-library/mode/mode-overview.md)
 
 #### Actions
-- Download Dashboard as File
-- Download View/Card as File
+- Download Dashboard/View/Card/Report as File
 - Refresh Dataset
 - Verify Refresh Status
 
-### Data Ingestion, Transformation, and Syncing
+### Data Ingestion, Transformation, Reverse ETL, and Syncing
 
 #### Integrations
 - [Fivetran](../../../blueprint-library/fivetran/fivetran-overview.md)
 - [dbt Cloud](../../../blueprint-library/dbt-cloud/dbt-cloud-overview.md)
+- [Rudderstack](../../../blueprint-library/rudderstack/rudderstack-overview.md)
+- [Census](../../../blueprint-library/census/census-overview.md)
+- [Hightouch](../../../blueprint-library/hightouch/hightouch-overview.md)
 
 #### Actions
 - Execute Job
