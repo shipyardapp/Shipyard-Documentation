@@ -39,3 +39,26 @@ Easily import one or more files directly into a Google Drive account. The [match
 | Service Account | GOOGLE_APPLICATION_CREDENTIALS | Password | :white_check_mark: | - | - | JSON from a Google Cloud Service account key. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+
+```yaml
+source:
+  blueprint: Google Drive - Upload Files
+  inputs:
+    Local File Name: null ## REQUIRED
+    Local File Name Match Type: exact_match ## REQUIRED
+    Local Folder Name: null 
+    Shared Drive Name: null 
+    Google Drive Folder Name: null 
+    Google Drive File Name: null 
+    Service Account: null ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "0"
+```

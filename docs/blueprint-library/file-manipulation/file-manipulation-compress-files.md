@@ -32,3 +32,25 @@ The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/ma
 | New File Name | MANIPULATION_DESTINATION_FILE_NAME | Alphanumeric | :white_check_mark: | Archive.zip | - | What to name the newly compressed file on Shipyard. It is recommended to end this name with the same extension as the compression type chosen. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+
+```yaml
+source:
+  blueprint: File Manipulation - Compress Files
+  inputs:
+    Compression Type: zip ## REQUIRED
+    Local Folder Name: null 
+    Local File Name Match Type: exact_match ## REQUIRED
+    Local File Name: null ## REQUIRED
+    New Folder Name: null 
+    New File Name: Archive.zip ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 0
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "0"
+```

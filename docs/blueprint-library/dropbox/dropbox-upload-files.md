@@ -41,3 +41,25 @@ If the folder name provided doesn&#39;t already exist, it will be created.
 | Access Token | DROPBOX_ACCESS_TOKEN | Password | :white_check_mark: | - | - | Access token, with no expiration, to access your Dropbox files. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+
+```yaml
+source:
+  blueprint: Dropbox - Upload Files
+  inputs:
+    Local Folder Name: null 
+    Local File Name Match Type: exact_match ## REQUIRED
+    Local File Name: null 
+    Dropbox Folder Name: null 
+    Dropox File Name: null ## REQUIRED
+    Access Token: null ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "0"
+```

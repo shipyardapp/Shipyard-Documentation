@@ -36,3 +36,29 @@ Turn the results of your SQL SELECT statement into a CSV file. Extract your Amaz
 | Include Column Names as Header? | REDSHIFT_FILE_HEADER | Boolean | :white_check_mark: | true | - | If checked, your CSV file will include a header row with column names. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+
+```yaml
+source:
+  blueprint: Amazon Redshift - Store Query Results as CSV
+  inputs:
+    Host: null ## REQUIRED
+    Port: 5439 ## REQUIRED
+    Username: null ## REQUIRED
+    Password: null 
+    Database: null ## REQUIRED
+    Extra URL Parameters: null 
+    Query: null ## REQUIRED
+    Folder Name: null 
+    File Name: output.csv ## REQUIRED
+    Include Column Names as Header?: true ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "0"
+```

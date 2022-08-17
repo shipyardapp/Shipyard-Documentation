@@ -32,3 +32,25 @@ Quickly export one or more files from Dropbox. The [match type](https://www.ship
 | Access Token | DROPBOX_ACCESS_TOKEN | Password | :white_check_mark: | - | - | Access token, with no expiration, to access your Dropbox files. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+
+```yaml
+source:
+  blueprint: Dropbox - Download Files
+  inputs:
+    Dropbox Folder Name: null 
+    Dropbox File Name Match Type: exact_match ## REQUIRED
+    Dropbox File Name: null ## REQUIRED
+    Local Folder Name: null 
+    Local File Name: null 
+    Access Token: null ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "0"
+```

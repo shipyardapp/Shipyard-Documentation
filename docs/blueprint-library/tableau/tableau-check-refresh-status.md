@@ -37,3 +37,27 @@ Check the job status of a workbook or datasource that has recently been refreshe
 | Job ID | TABLEAU_JOB_ID | Alphanumeric | :heavy_minus_sign: | - | - | The ID of a specific job you check the status of. If left blank, will try to find the job ID from an &#34;Refresh Workbook/Datasource&#34; Vessel that ran upstream. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+
+```yaml
+source:
+  blueprint: Tableau - Check Refresh Status
+  inputs:
+    Authentication Method: username_password ## REQUIRED
+    Username or Access Token Name: null ## REQUIRED
+    Password or Access Token: null ## REQUIRED
+    Server URL: null ## REQUIRED
+    Site ID: null ## REQUIRED
+    Job ID: null 
+  type: BLUEPRINT
+guardrails:
+  retry_count: 12
+  retry_wait: 5m0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "200-205"
+    - "210"
+    - "211"
+```

@@ -35,3 +35,28 @@ Quickly export one or more files from an Amazon S3 bucket. Once the files have d
 | Region | AWS_DEFAULT_REGION | Select | :white_check_mark: | `us-east-2` | `us-east-2`, `us-east-1`, `us-west-1`, `us-west-2`, `af-south-1`, `ap-east-1`, `ap-south-1`, `ap-northeast-3`, `ap-northeast-2`, `ap-southeast-1`, `ap-southeast-2`, `ap-northeast-1`, `ca-central-1`, `cn-north-1`, `cn-northwest-1`, `eu-central-1`, `eu-west-1`, `eu-west-2`, `eu-south-1`, `eu-west-3`, `eu-north-1`, `sa-east-1`, `me-south-1` | The AWS region for the S3 bucket and IAM user. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+
+```yaml
+source:
+  blueprint: Amazon S3 - Download Files
+  inputs:
+    Bucket Name: null ## REQUIRED
+    S3 Folder Name: null 
+    S3 File Name Match Type: exact_match ## REQUIRED
+    S3 File Name: null ## REQUIRED
+    Local Folder Name: null 
+    Local File Name: null 
+    Access Key ID: null ## REQUIRED
+    Secret Access Key: null ## REQUIRED
+    Region: us-east-2 ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "0"
+```

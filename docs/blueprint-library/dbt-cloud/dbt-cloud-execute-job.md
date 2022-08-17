@@ -39,3 +39,25 @@ The response for this request will always be stored at _shipyard-artifacts/dbtcl
 | Job ID | DBT_JOB_ID | Alphanumeric | :white_check_mark: | - | - | The ID of a specific job you want to run, found in the URL of dbt Cloud. https://cloud.getdbt.com/#/accounts/ACCOUNT_ID/projects/PROJECT_ID/jobs/JOB_ID/ |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+
+```yaml
+source:
+  blueprint: dbt Cloud - Execute Job
+  inputs:
+    Service Token: null ## REQUIRED
+    Account ID: null ## REQUIRED
+    Job ID: null ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "200"
+    - "201"
+    - "211"
+    - "212"
+```

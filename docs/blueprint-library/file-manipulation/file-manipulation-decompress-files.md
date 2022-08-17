@@ -33,3 +33,24 @@ If the archive contains only a single file, the `New File Name` field can be use
 | New Folder Name | MANIPULATION_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the newly decompressed file(s) should be created on Shipyard. Leaving blank will place the archive&#39;s contents in the home directory. If the folder does not already exist, it will be created. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+
+```yaml
+source:
+  blueprint: File Manipulation - Decompress Files
+  inputs:
+    Compression Type: zip ## REQUIRED
+    Local File Name: Archive.zip ## REQUIRED
+    Local Folder Name: null 
+    New File Name: null 
+    New Folder Name: null 
+  type: BLUEPRINT
+guardrails:
+  retry_count: 0
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "0"
+```

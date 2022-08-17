@@ -37,3 +37,28 @@ This Blueprint requires _read_ permissions in order to download from the FTP ser
 | Local File Name | FTP_DESTINATION_FILE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | What to name the file(s) being downloaded. If left blank, defaults to the original file name(s). |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+
+```yaml
+source:
+  blueprint: FTP - Download Files
+  inputs:
+    Host: null ## REQUIRED
+    Port: 21 ## REQUIRED
+    Username: null 
+    Password: null 
+    FTP Folder Name: null 
+    FTP File Name Match Type: exact_match ## REQUIRED
+    FTP File Name: null ## REQUIRED
+    Local Folder Name: null 
+    Local File Name: null 
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "0"
+```

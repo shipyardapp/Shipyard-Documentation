@@ -41,3 +41,27 @@ Send a Slack message with a message attachment to any channel or DM, alerting an
 | Slack Token | SLACK_TOKEN | Password | :white_check_mark: | - | - | The Bot User Oauth Token that is used to programmatically send messages by your specific application. Read Authorization documentation for more information. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+
+```yaml
+source:
+  blueprint: Slack - Send Message with File
+  inputs:
+    Destination Type: channel ## REQUIRED
+    Channel Name: null 
+    User Lookup Method: email ## REQUIRED
+    Users to Notify: null 
+    Message: null ## REQUIRED
+    File Name: null 
+    File Name Match Type: exact_match ## REQUIRED
+    Folder Name: null 
+    Slack Token: null ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+```

@@ -33,3 +33,26 @@ Execute any SQL query against a Microsoft SQL Server database, without returning
 | Query | MSSQL_QUERY | Alphanumeric | :white_check_mark: | - | - | Any SQL query that runs a job against the database (CREATE, DROP, INSERT, etc.). Formatting is ignored. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+
+```yaml
+source:
+  blueprint: Microsoft SQL Server - Execute Query
+  inputs:
+    Host: null ## REQUIRED
+    Port: 1433 ## REQUIRED
+    Username: null ## REQUIRED
+    Password: null 
+    Database: null ## REQUIRED
+    Extra URL Parameters: null 
+    Query: null ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "0"
+```

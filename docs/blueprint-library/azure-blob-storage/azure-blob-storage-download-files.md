@@ -33,3 +33,26 @@ Quickly export one or more files directly into an an Azure Blob Storage containe
 | Connection String | AZURE_STORAGE_CONNECTION_STRING | Password | :white_check_mark: | - | - | Connection string for programmatic access to download the file from the specified Azure storage container. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+
+```yaml
+source:
+  blueprint: Azure Blob Storage - Download Files
+  inputs:
+    Container Name: null ## REQUIRED
+    Azure Storage Folder Name: null 
+    Azure Storage File Name Match Type: exact_match ## REQUIRED
+    Azure Storage File Name: null ## REQUIRED
+    Local Folder Name: null 
+    Local File Name: null 
+    Connection String: null ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "0"
+```

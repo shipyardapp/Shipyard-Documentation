@@ -40,3 +40,22 @@ The response for this request will always be stored at `shipyard-artifacts/fivet
 | Connector ID | FIVETRAN_CONNECTOR_ID | Alphanumeric | :white_check_mark: | - | - | The unique ID associated with a connector. Typically two words separated by an underscore. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+
+```yaml
+source:
+  blueprint: Fivetran - Execute Sync
+  inputs:
+    API Key: null ## REQUIRED
+    API Secret: null ## REQUIRED
+    Connector ID: null ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "0"
+```
