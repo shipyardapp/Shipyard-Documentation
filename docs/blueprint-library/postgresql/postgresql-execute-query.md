@@ -29,7 +29,29 @@ Execute any SQL query against a PostgreSQL database, without returning any of th
 | Username | POSTGRES_USERNAME | Alphanumeric | :white_check_mark: | - | - | Name of the user to connect to the database with. |
 | Password | POSTGRES_PASSWORD | Password | :heavy_minus_sign: | - | - | Password associated to the provided username. |
 | Database | POSTGRES_DATABASE | Alphanumeric | :white_check_mark: | - | - | Name of the database in the PostgreSQL to connect to. |
-| Extra URL Parameters | POSTGRES_URL_PARAMETERS | Alphanumeric | :heavy_minus_sign: | - | - | Extra parameters that will be placed at the end of the connection string, after the &#34;?&#34;. Must be separated by &#34;&amp;&#34;. |
+| Extra URL Parameters | POSTGRES_URL_PARAMETERS | Alphanumeric | :heavy_minus_sign: | - | - | Extra parameters that will be placed at the end of the connection string, after the `?`. Must be separated by `&`. |
 | Query | POSTGRES_QUERY | Alphanumeric | :white_check_mark: | - | - | Any SQL query that runs a job against the database (CREATE, DROP, INSERT, etc.). Formatting is ignored. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+
+```yaml
+source:
+  blueprint: PostgreSQL - Execute Query
+  inputs:
+    Host: null ## REQUIRED
+    Port: 5432 ## REQUIRED
+    Username: null ## REQUIRED
+    Password: null 
+    Database: null ## REQUIRED
+    Extra URL Parameters: null 
+    Query: null ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  
+```

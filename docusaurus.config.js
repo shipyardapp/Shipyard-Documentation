@@ -166,6 +166,10 @@ module.exports = {
 						from: ["/reference/glossary-of-terms"],
 					},
 					{
+						to: "/reference/blueprints/blueprint-library/match-type/",
+						from: "/reference/blueprint-library/match-type/",
+					},
+					{
 						to: "/reference/blueprints/blueprint-library/blueprint-library-overview",
 						from: [
 							"/reference/blueprint-library",

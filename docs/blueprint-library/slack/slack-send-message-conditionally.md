@@ -40,10 +40,35 @@ Works primarily when used as part of a Fleet, where a File can be generated or d
 | Users to Notify | SLACK_USERS_TO_NOTIFY | Alphanumeric | :heavy_minus_sign: | - | - | A comma separated list of case insensitive user information, used to look up user IDs. The user information needs to match the selected User Lookup Method. This field is only required if the Destination Type is DM. |
 | Message | SLACK_MESSAGE | Alphanumeric | :white_check_mark: | - | - | The message that you want sent to a user. You can use all of the same markdown syntax that you would typically use in a Slack message. If you want to create a link in your message, you can use the format of &lt;www.website.com|text to link&gt; |
 | Send Message Only When | SLACK_CONDITIONAL_SEND | Select | :white_check_mark: | `file_exists` | File(s) Exist: `file_exists`<br></br><br></br>File(s) Don't Exist: `file_dne` | Determines what condition needs to be met for a message to send.  File(s) Exist - Send the message only if a file can be found using the provided folder/filename.ext combination.  File(s) Don&#39;t Exist - Send the message only if a file cannot found using the provided folder/filename.ext combination. |
-| File Name Match Type | SLACK_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Regex: `regex_match`<br></br><br></br>Exact: `exact_match` | Determines if the text in &#34;File Name&#34; will look for one file with exact match, or multiple files using regex. |
+| File Name Match Type | SLACK_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Regex: `regex_match`<br></br><br></br>Exact: `exact_match` | Determines if the text in `File Name` will look for one file with exact match, or multiple files using regex. |
 | File Name | SLACK_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | The name of the file you want to search for. |
 | Folder Name | SLACK_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | The folder that the file can be found in. Unless specified elsewhere, starts by looking in the current working directory. Can contain leading, trailing, or no slashes (if only looking for the file in a single folder).  This field is not required and the folder name can technically be provided as part of the File Name.If left blank, will look for the file in the current working directory. |
 | Upload File to Slack? | SLACK_UPLOAD_FILE | Select | :white_check_mark: | `no` | Yes: `yes`<br></br><br></br>No: `no` | Determines whether or not the file(s) you&#39;re looking for to conditionally send the message should get uploaded to Slack. Defaults to no. |
 | Slack Token | SLACK_TOKEN | Password | :white_check_mark: | - | - | The Bot User Oauth Token that is used to programmatically send messages by your specific application. See Authorization documentation for more information. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+
+```yaml
+source:
+  blueprint: Slack - Send Message Conditionally
+  inputs:
+    Destination Type: channel ## REQUIRED
+    Channel Name: null 
+    User Lookup Method: display_name ## REQUIRED
+    Users to Notify: null 
+    Message: null ## REQUIRED
+    Send Message Only When: file_exists ## REQUIRED
+    File Name Match Type: exact_match ## REQUIRED
+    File Name: null ## REQUIRED
+    Folder Name: null 
+    Upload File to Slack?: no ## REQUIRED
+    Slack Token: null ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+```

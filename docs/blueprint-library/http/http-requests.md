@@ -34,3 +34,26 @@ For downloading large files, we recommend using the *HTTP - Download File from U
 | Print Response to Output? | HTTP_PRINT_RESPONSE | Boolean | :white_check_mark: | false | - | If checked, the response will be printed to the log output in Shipyard. This is only recommended if the output is guaranteed to not have sensitive in it. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+
+```yaml
+source:
+  blueprint: HTTP - Requests
+  inputs:
+    Method: GET ## REQUIRED
+    URL: null ## REQUIRED
+    Content Type: application/json ## REQUIRED
+    Authorization Header: null 
+    Message: null 
+    Destination Folder Name: null 
+    Destination File Name: response.txt ## REQUIRED
+    Print Response to Output?: false ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  
+```

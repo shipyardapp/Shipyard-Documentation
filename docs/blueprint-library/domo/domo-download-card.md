@@ -33,4 +33,32 @@ Download a card from Domo as a CSV, XLSX, or PPT file. Typically used for pullin
 | Folder Name | DOMO_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the file will be created. Leave blank to store in the current working directory |
 
 
+## YAML
 
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+
+```yaml
+source:
+  blueprint: Domo - Download Card
+  inputs:
+    Email: null ## REQUIRED
+    Password: null ## REQUIRED
+    Domo Instance: null ## REQUIRED
+    Card ID: null ## REQUIRED
+    Download As: csv ## REQUIRED
+    File Name: null ## REQUIRED
+    Folder Name: null 
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "200"
+    - "201"
+    - "203"
+    - "204"
+    - "205"
+    - "210"
+    - "211"
+```

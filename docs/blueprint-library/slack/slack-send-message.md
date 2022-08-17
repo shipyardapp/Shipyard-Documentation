@@ -32,3 +32,24 @@ Send a Slack message to any channel or DM, alerting any user in your company.
 | Slack Token | SLACK_TOKEN | Password | :white_check_mark: | - | - | The Bot User Oauth Token that is used to programmatically send messages by your specific application. See Authorization documentation for more information. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+
+```yaml
+source:
+  blueprint: Slack - Send Message
+  inputs:
+    Destination Type: channel ## REQUIRED
+    Channel Name: null 
+    User Lookup Method: email ## REQUIRED
+    Users to Notify: null 
+    Message: null ## REQUIRED
+    Slack Token: null ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+```

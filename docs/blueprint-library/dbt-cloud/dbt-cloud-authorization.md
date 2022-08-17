@@ -13,7 +13,7 @@ keywords:
 
 # dbt Cloud Authorization
 
-To get started with any dbt Cloud Blueprints, you will need to create an Service Token. This Service Token is a secure way for Shipyard to access dbt Cloud and will be required for **every** dbt Cloud Blueprint..
+To get started with any dbt Cloud Blueprints, you will need to create an Service Token. This Service Token is a secure way for Shipyard to access dbt Cloud and will be required for **every** dbt Cloud Blueprint.
 
 ## Create a dbt Cloud Service Token
 1. Navigate to your organization's instance of [dbt Cloud](https://cloud.getdbt.com)

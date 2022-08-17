@@ -44,3 +44,25 @@ The full list of settings that can be changed can be found [here](https://fivetr
 | Custom Update | FIVETRAN_CUSTOM_UPDATE | Alphanumeric | :heavy_minus_sign: | - | - | Additional connector parameters you would like to update, provided in a JSON format. These can be found at https://fivetran.com/docs/rest-api/connectors#modifyaconnector |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+
+```yaml
+source:
+  blueprint: Fivetran - Update Connector
+  inputs:
+    API Key: null ## REQUIRED
+    API Secret: null ## REQUIRED
+    Connector ID: null ## REQUIRED
+    Set Schedule Type: None ## REQUIRED
+    Set Connector State: None ## REQUIRED
+    Trigger Historical Sync?: None ## REQUIRED
+    Custom Update: null 
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  
+```

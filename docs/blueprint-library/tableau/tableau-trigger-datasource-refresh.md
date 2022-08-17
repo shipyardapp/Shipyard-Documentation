@@ -38,3 +38,26 @@ This Blueprint will only kick off the refresh and will almost always return a st
 | Datasource Name | TABLEAU_DATASOURCE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the published datasource you want to refresh. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+
+```yaml
+source:
+  blueprint: Tableau - Trigger Datasource Refresh
+  inputs:
+    Authentication Method: username_password ## REQUIRED
+    Username or Access Token Name: null ## REQUIRED
+    Password or Access Token: null ## REQUIRED
+    Server URL: null ## REQUIRED
+    Site ID: null ## REQUIRED
+    Project Name: null ## REQUIRED
+    Datasource Name: null ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - "200-205"
+```
