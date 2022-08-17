@@ -41,7 +41,7 @@ The response for this request will always be stored at `shipyard-artifacts/censu
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
@@ -51,10 +51,10 @@ source:
     Sync Run ID: null 
   type: BLUEPRINT
 guardrails:
-  retry_count: 0
+  retry_count: 1
   retry_wait: 0s
   runtime_cutoff: 4h0m0s
   exclude_exit_code_ranges:
     - "200"
-    - "210"
+    - "211"
 ```

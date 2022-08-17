@@ -20,7 +20,7 @@ Immediately execute a sync of a Rudderstack source. This can kick off either an 
 
 If a sync is already running for the specified connector, it will be stopped and restarted.
 
-This Blueprint will only kick off the source and will almost always return a status of success. It will not wait around to verify if the created sync was successfully completed, but it will create and store the source ID used to shipyard-artifacts/rudderstack-blueprints/variables/source_id.pickle
+This Blueprint will only kick off the source and will almost always return a status of success. It will not wait around to verify if the created sync was successfully completed, but it will create and store the source ID used to `shipyard-artifacts/rudderstack-blueprints/variables/source_id.pickle`
 
 **Recommended Setup:**
 1. This Vessel should be immediately followed by a Vessel built from the Check Sync Status Blueprint so you can verify the status and completion of your sync.
@@ -37,7 +37,7 @@ This Blueprint will only kick off the source and will almost always return a sta
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
@@ -52,5 +52,6 @@ guardrails:
   runtime_cutoff: 4h0m0s
   exclude_exit_code_ranges:
     - "200"
-    - "202-204"
+    - "203"
+    - "204"
 ```

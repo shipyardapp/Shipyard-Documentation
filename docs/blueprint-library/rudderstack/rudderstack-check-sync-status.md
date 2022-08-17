@@ -29,7 +29,7 @@ The response for this request will always be stored at `shipyard-artifacts/rudde
 
 **Recommended Setup:**
 1. A Vessel built with this Blueprint should be paired with guardrail retries. This will allow the Vessel to continually check for status until a final result is found.
-2. This Vessel should run immediately after a Vessel built with the Execute Sync Blueprint. With this setup, you can leave the Connector ID field blank and this Vessel will check for the results of the recently created sync.
+2. This Vessel should run immediately after a Vessel built with the Trigger Sync Blueprint. With this setup, you can leave the Source ID field blank and this Vessel will check for the results of the recently created sync.
 
 
 
@@ -38,12 +38,12 @@ The response for this request will always be stored at `shipyard-artifacts/rudde
 | Name | Reference | Type | Required | Default | Options | Description |
 |:---|:---|:---|:---|:---|:---|:---|
 | Access Token | RUDDERSTACK_ACCESS_TOKEN | Password | :white_check_mark: | - | - | The access token associated with your Rudderstack account. |
-| Source ID | RUDDERSTACK_SOURCE_ID | Alphanumeric | :heavy_minus_sign: | - | - | The ID of the Rudderstack source you want to refresh. This should be left blank if connected to an Execute Sync Blueprint. |
+| Source ID | RUDDERSTACK_SOURCE_ID | Alphanumeric | :heavy_minus_sign: | - | - | The ID of the Rudderstack source you want to refresh. This should be left blank if connected to an Trigger Sync Blueprint. |
 
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
@@ -58,5 +58,8 @@ guardrails:
   runtime_cutoff: 4h0m0s
   exclude_exit_code_ranges:
     - "200"
-    - "202-204"
+    - "203"
+    - "204"
+    - "211"
+    - "212"
 ```

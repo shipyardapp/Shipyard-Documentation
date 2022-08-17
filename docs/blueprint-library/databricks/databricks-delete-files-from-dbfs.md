@@ -16,7 +16,7 @@ keywords:
 
 &gt; ## **First time using this Blueprint? Make sure you follow our [Databricks authorization guide](https://www.shipyardapp.com/docs/blueprint-library/databricks/databricks-authorization/)**.
 
-Delete one or more files from your Databricks File System (DBFS).The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
+Delete one or more files from your Databricks File System (DBFS). The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
 
 
 
@@ -33,7 +33,7 @@ Delete one or more files from your Databricks File System (DBFS).The [match type
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:

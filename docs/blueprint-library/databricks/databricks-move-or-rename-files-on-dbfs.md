@@ -16,7 +16,7 @@ keywords:
 
 &gt; ## **First time using this Blueprint? Make sure you follow our [Databricks authorization guide](https://www.shipyardapp.com/docs/blueprint-library/databricks/databricks-authorization/)**.
 
-Easily import one or more files from Shipyard to your Databricks File System (DBFS).The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
+Easily import one or more files from Shipyard to your Databricks File System (DBFS). The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
 
 
 
@@ -27,15 +27,15 @@ Easily import one or more files from Shipyard to your Databricks File System (DB
 | Original Databricks Folder Name | DATABRICKS_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the Databricks File System folder where the file you want to move lives. If left blank, selects from /FileStore/. |
 | Original Databricks File Name Match Type | DATABRICKS_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in &#34;Original Databricks File Name&#34; will look for one file with exact match, or multiple files using regex. |
 | Original Databricks File Name | DATABRICKS_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file on the Databricks File System (DBFS). Can be regex if &#34;Match Type&#34; is set accordingly. |
-| Databricks Folder Name | DATABRICKS_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the folder where you want to move the Databricks files to in the Databricks File System (DBFS). If left blank, selects from /FileStore/. |
-| Databricks File Name | DATABRICKS_DESTINATION_FILE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | What to name the file(s) being moved or renamed. If left blank, defaults to the original file name(s). |
+| New Databricks Folder Name | DATABRICKS_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the folder where you want to move the Databricks files to in the Databricks File System (DBFS). If left blank, selects from /FileStore/. |
+| New Databricks File Name | DATABRICKS_DESTINATION_FILE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | What to name the file(s) being moved or renamed. If left blank, defaults to the original file name(s). |
 | Workspace Instance URL | DATABRICKS_INSTANCE_URL | Alphanumeric | :white_check_mark: | - | - | The subdomain, domain, and top-level domain (TLD) of your Databricks Workspace URL. |
 | Access Token | DATABRICKS_ACCESS_TOKEN | Password | :white_check_mark: | - | - | The personal access token associated with the provided Workspace Instance. |
 
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
@@ -44,8 +44,8 @@ source:
     Original Databricks Folder Name: null 
     Original Databricks File Name Match Type: exact_match ## REQUIRED
     Original Databricks File Name: null ## REQUIRED
-    Databricks Folder Name: null 
-    Databricks File Name: null 
+    New Databricks Folder Name: null 
+    New Databricks File Name: null 
     Workspace Instance URL: null ## REQUIRED
     Access Token: null ## REQUIRED
   type: BLUEPRINT

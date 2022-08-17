@@ -18,9 +18,10 @@ keywords:
 
 Manually trigger a refresh of a report in Mode.
 
-This Blueprint will only kick off the refresh and will almost always return a status of success. It will not wait around to verify if the created refresh job was successfully completed, but it will create and store the generated job ID to `shipyard-artifacts/mode-blueprints/variables/report_run_id.pickle`
+This Blueprint will only kick off the refresh and will almost always return a status of success. It will not wait around to verify if the created refresh job was successfully completed, but it will create and store the generated run ID to `shipyard-artifacts/mode-blueprints/variables/report_run_id.pickle`
 
-*Recommended Setup:*
+**Recommended Setup:**
+
 1. A Vessel built with the Mode - Check Refresh Status Blueprint should be run immediately after this Vessel. This will ensure that you build your Fleet to act on the final status of your refresh.
 
 
@@ -37,7 +38,7 @@ This Blueprint will only kick off the refresh and will almost always return a st
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
@@ -53,4 +54,7 @@ guardrails:
   retry_wait: 0s
   runtime_cutoff: 4h0m0s
   exclude_exit_code_ranges:
+    - "200"
+    - "203"
+    - "204"
 ```
