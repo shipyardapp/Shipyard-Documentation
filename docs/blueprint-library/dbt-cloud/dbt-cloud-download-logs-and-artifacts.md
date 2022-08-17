@@ -38,3 +38,25 @@ The steps of each run can be variable so we combine the log data from every step
 | Run ID | DBT_RUN_ID | Alphanumeric | :heavy_minus_sign: | - | - | The ID of a specific job you want to run, found in the URL of dbt Cloud. https://cloud.getdbt.com/#/accounts/ACCOUNT_ID/projects/PROJECT_ID/runs/RUN_ID/. If left blank, will try to find the run ID from an &#34;Execute Job&#34; Vessel that ran upstream. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+
+```yaml
+source:
+  blueprint: dbt Cloud - Download Logs and Artifacts
+  inputs:
+    Service Token: null ## REQUIRED
+    Account ID: null ## REQUIRED
+    Run ID: null 
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "200"
+    - "201"
+    - "211"
+    - "212"
+```

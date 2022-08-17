@@ -18,12 +18,14 @@ keywords:
 
 Upload one or more CSV files to any table in Snowflake. With the file data, you can:
 - **Append Data** - Add the contents of your file to the end of the table.
-- **Replace Data** - Write over the entire contents of table with the contents of your file.
+- **Replace Data** - Drop the existing table and create a new table that contains the entire contents of your file.
 - **Add Data Only if Table is Empty** - Add data to the table if no data exists.
 
-Column names are inferred from the header row of your CSV file. If the table already exists, the header values are matched to the table column names. The header names must match the existing column names in your table, otherwise the Vessel will error.
+Column names are inferred from the header row of your CSV file. If the table already exists, the header values are matched to the table column names. The header names must match the existing column names in your table, case insensitive. If a header name doesn&#39;t match, only the data associated with that specific column will not be uploaded.
 
-Data is inserted into the table by using multiple INSERT statements. For larger datasets, we recommend building an &#34;Execute Query&#34;
+Column names and table names are automatically made into upper case values, a standard for Snowflake.
+
+Data is inserted into the table by PUTing the file on Snowflake temporary staging for the named table, running a COPY INTO function, then purging the file from Snowflake staging. If there are any errors with this method, we revert to a slow but consistent method that creates INSERT statements for 10,000 rows at a time.
 
 In all instances, if the table name does not already exist, a new table will be created with datatypes inferred from the CSV contents.
 
@@ -53,3 +55,30 @@ In all instances, if the table name does not already exist, a new table will be 
 | Insertion Method | SNOWFLAKE_INSERT_METHOD | Select | :white_check_mark: | `append` | Append Data: `append`<br></br><br></br>Replace Data: `replace`<br></br><br></br>Add Data Only if Table is Empty: `fail` | Determines how the data in your file will be added to the table |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+
+```yaml
+source:
+  blueprint: Snowflake - Upload CSV to Table
+  inputs:
+    Username: null ## REQUIRED
+    Password: null ## REQUIRED
+    Account Name: null ## REQUIRED
+    Warehouse: null 
+    Database: null ## REQUIRED
+    Schema: null 
+    Folder Name: null 
+    File Name Match Type: exact_match ## REQUIRED
+    File Name: null ## REQUIRED
+    Table Name: null ## REQUIRED
+    Insertion Method: append ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "200-207"
+```

@@ -40,3 +40,23 @@ This Blueprint is relatively memory intensive because it loads both file content
 | Folder Name 2 | MANIPULATION_SOURCE_FOLDER_NAME_2 | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Shipyard where the target file lives. If left blank, will look in the home directory. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+
+```yaml
+source:
+  blueprint: Data Manipulation - Compare Datasets
+  inputs:
+    File Name 1: null ## REQUIRED
+    Folder Name 1: null 
+    File Name 2: null ## REQUIRED
+    Folder Name 2: null 
+  type: BLUEPRINT
+guardrails:
+  retry_count: 0
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "0"
+```

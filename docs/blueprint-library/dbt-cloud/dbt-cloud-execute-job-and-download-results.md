@@ -44,3 +44,27 @@ Execute Job -&gt; Check Run Status -&gt; Download Artifacts &amp; Logs
 | Download Logs? | DBT_DOWNLOAD_LOGS | Boolean | :white_check_mark: | true | - | Determines if the logs from the run that was generated will be downloaded. Checked by default. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+
+```yaml
+source:
+  blueprint: dbt Cloud - Execute Job and Download Results
+  inputs:
+    Service Token: null ## REQUIRED
+    Account ID: null ## REQUIRED
+    Job ID: null ## REQUIRED
+    Download Artifacts?: true ## REQUIRED
+    Download Logs?: true ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 0
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "200"
+    - "201"
+    - "211"
+    - "212"
+```

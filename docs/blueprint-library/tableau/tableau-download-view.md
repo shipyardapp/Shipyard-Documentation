@@ -37,3 +37,30 @@ Download a view from Tableau as a PNG, PDF, or CSV file. Typically used for pull
 | Folder Name | TABLEAU_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the file will be created. Leave blank to store in the current working directory |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+
+```yaml
+source:
+  blueprint: Tableau - Download View
+  inputs:
+    Authentication Method: username_password ## REQUIRED
+    Username or Access Token Name: null ## REQUIRED
+    Password or Access Token: null ## REQUIRED
+    Server URL: null ## REQUIRED
+    Site ID: null ## REQUIRED
+    Project Name: null ## REQUIRED
+    Workbook Name: null ## REQUIRED
+    View Name: null ## REQUIRED
+    Download As: png ## REQUIRED
+    File Name: null ## REQUIRED
+    Folder Name: null 
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "200-205"
+```

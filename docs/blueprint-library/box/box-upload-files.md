@@ -39,3 +39,25 @@ Quickly export one or more files from your company&#39;s Box account. Once the f
 | Service Account Credentials | BOX_APPLICATION_CREDENTIALS | Password | :white_check_mark: | - | - | JSON from a Box Service Account key. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+
+```yaml
+source:
+  blueprint: Box - Upload Files
+  inputs:
+    Local Folder Name: null 
+    Local File Name Match Type: exact_match ## REQUIRED
+    Local File Name: null 
+    Box Folder Name: null 
+    Box File Name: null 
+    Service Account Credentials: null ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "0"
+```

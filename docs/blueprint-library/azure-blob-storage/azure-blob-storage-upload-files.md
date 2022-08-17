@@ -40,3 +40,26 @@ Easily import one or more files directly into an an Azure Blob Storage container
 | Connection String | AZURE_STORAGE_CONNECTION_STRING | Password | :white_check_mark: | - | - | Connection string for programmatic access to upload the file to the specified Azure storage container. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+
+```yaml
+source:
+  blueprint: Azure Blob Storage - Upload Files
+  inputs:
+    Local Folder Name: null 
+    Local File Name Match Type: exact_match ## REQUIRED
+    Local File Name: null ## REQUIRED
+    Container Name: null ## REQUIRED
+    Azure Storage Folder Name: null 
+    Azure Storage File Name: null 
+    Connection String: null ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "0"
+```

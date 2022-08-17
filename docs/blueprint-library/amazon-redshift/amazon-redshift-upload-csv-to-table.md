@@ -43,3 +43,30 @@ Upload a CSV file to any table in Amazon Redshift. With the file data, you can c
 | Insertion Method | REDSHIFT_INSERT_METHOD | Select | :white_check_mark: | `append` | Append Data: `append`<br></br><br></br>Replace Data: `replace`<br></br><br></br>Add Data Only if Table is Empty: `fail` | Determines how the data in your file will be added to the table |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+
+```yaml
+source:
+  blueprint: Amazon Redshift - Upload CSV to Table
+  inputs:
+    Host: null ## REQUIRED
+    Port: 5439 ## REQUIRED
+    Username: null ## REQUIRED
+    Password: null 
+    Database: null ## REQUIRED
+    Extra URL Parameters: null 
+    Folder Name: null 
+    File Name Match Type: exact_match ## REQUIRED
+    File Name: null ## REQUIRED
+    Table Name: null ## REQUIRED
+    Insertion Method: append ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "0"
+```
