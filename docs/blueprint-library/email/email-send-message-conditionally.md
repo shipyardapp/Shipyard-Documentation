@@ -18,6 +18,10 @@ keywords:
 
 Send a message to anyone in the world using email, attaching one or more files.
 
+To upload multiple files, use [Regex Match Type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/).
+
+Due to email file size constraints, when the the total file size &gt;10MB, Shipyard will automatically zip the files under the name &#34;Archive.zip&#34;.
+
 **Note:** This Vessel cannot be used to access a local file from your computer.
 
 **Recommended Setup:**
@@ -50,3 +54,36 @@ Send a message to anyone in the world using email, attaching one or more files.
 | Include Shipyard Footer? | EMAIL_INCLUDE_SHIPYARD_FOOTER | Boolean | :white_check_mark: | true | - | Determines if a footer should be sent with the email that links back to the originating Vessel or Fleet. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+
+```yaml
+source:
+  blueprint: Email - Send Message Conditionally
+  inputs:
+    Send Method: tls ## REQUIRED
+    SMTP Host: null ## REQUIRED
+    SMTP Port: null ## REQUIRED
+    Username: null ## REQUIRED
+    Password: null ## REQUIRED
+    Sender Address: null ## REQUIRED
+    Sender Name: null 
+    TO: null 
+    CC: null 
+    BCC: null 
+    Subject: null 
+    Message: null ## REQUIRED
+    Send Messages Only When: file_exists ## REQUIRED
+    File Name Match Type: exact_match ## REQUIRED
+    File Name: null 
+    Folder Name: null 
+    Include Shipyard Footer?: true ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "0"
+```

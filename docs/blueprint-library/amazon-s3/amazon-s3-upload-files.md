@@ -43,3 +43,29 @@ Easily import one or more files directly into an Amazon S3 bucket, no matter how
 | Extra Variables | S3_EXTRA_ARGS | Alphanumeric | :heavy_minus_sign: | {} | - | Extra arguments that may be passed to the S3 operation. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+
+```yaml
+source:
+  blueprint: Amazon S3 - Upload Files
+  inputs:
+    Bucket Name: null ## REQUIRED
+    Local Folder Name: null 
+    Local File Name Match Type: exact_match ## REQUIRED
+    Local File Name: null ## REQUIRED
+    S3 Folder Name: null 
+    S3 File Name: null 
+    Access Key ID: null ## REQUIRED
+    Secret Access Key: null ## REQUIRED
+    Region: us-east-2 ## REQUIRED
+    Extra Variables: {} 
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "0"
+```

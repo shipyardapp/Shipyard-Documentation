@@ -44,3 +44,26 @@ All files uploaded will inherit the default settings for the GCS bucket.
 | Service Account | GOOGLE_APPLICATION_CREDENTIALS | Password | :white_check_mark: | - | - | JSON from a Google Cloud Service account key. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+
+```yaml
+source:
+  blueprint: Google Cloud Storage - Upload Files
+  inputs:
+    Local Folder Name: null 
+    Local File Name Match Type: exact_match ## REQUIRED
+    Local File Name: null ## REQUIRED
+    GCS Bucket Name: null ## REQUIRED
+    GCS Folder Name: null 
+    GCS File Name: null 
+    Service Account: null ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "0"
+```

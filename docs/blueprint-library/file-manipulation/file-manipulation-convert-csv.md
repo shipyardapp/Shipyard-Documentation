@@ -34,3 +34,25 @@ This Blueprint uses built-in Pandas methods to read in a CSV file and output it 
 | New File Name | MANIPULATION_DESTINATION_FILE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | What to name the newly converted files on Shipyard. If left blank, defaults to the original file name(s) with an updated extension based on the selected file format. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+
+```yaml
+source:
+  blueprint: File Manipulation - Convert CSV
+  inputs:
+    Destination File Format: tsv ## REQUIRED
+    Local Folder Name: null 
+    Local File Name Match Type: exact_match ## REQUIRED
+    Local File Name: null ## REQUIRED
+    New Folder Name: null 
+    New File Name: null 
+  type: BLUEPRINT
+guardrails:
+  retry_count: 0
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "0"
+```

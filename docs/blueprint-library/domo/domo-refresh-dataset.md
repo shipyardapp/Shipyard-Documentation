@@ -38,3 +38,31 @@ This Blueprint will only kick off the refresh and will almost always return a st
 | Dataset ID | DOMO_DATASET_ID | Alphanumeric | :white_check_mark: | - | - | UUID of the dataset you want to download, typically found at the end of the URL. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+
+```yaml
+source:
+  blueprint: Domo - Refresh Dataset
+  inputs:
+    Email: null ## REQUIRED
+    Password: null ## REQUIRED
+    Client ID: null ## REQUIRED
+    Secret: null ## REQUIRED
+    Domo Instance: null ## REQUIRED
+    Dataset ID: null ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "200"
+    - "201"
+    - "203"
+    - "204"
+    - "205"
+    - "210"
+    - "211"
+```
