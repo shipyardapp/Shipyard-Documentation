@@ -18,11 +18,17 @@ To get started with any Databricks Blueprints, you will need to create an Access
 ## Create a Databricks Access Token
 
 1. Navigate to your [Databricks Workspaces](https://accounts.cloud.databricks.com/workspaces). Open whichever one you want to get an access token for.
+
 ![Databricks Workspace Selection](../../.gitbook/assets/shipyard_2022_08_13_18_50_08.png)
+
 2. On the sidebar, select the **Settings** icon and then **User Settings**.
+
 ![Selecting User Settings](../../.gitbook/assets/shipyard_2022_08_13_18_52_02.png)
+
 3. Select the **Access tokens** tab at the top.
+
 ![Access Tokens](../../.gitbook/assets/shipyard_2022_08_13_18_53_39.png)
+
 4. Click **Generate new token**.
 5. Provide a descriptive name under **Comment** (like "Shipyard")
 6. Remove the value under **Lifetime (days)** so that it's blank.
@@ -34,7 +40,9 @@ While best practice is typically to have expiring API tokens that rotate, we rec
 ![Generate New Access Token](../../.gitbook/assets/shipyard_2022_08_13_18_57_16.png)
 
 8. Copy the newly created token and store it in a safe location. This is the access token value you will use for every Databricks Blueprint.
+
 ![New Access Token](../../.gitbook/assets/shipyard_2022_08_13_18_58_19.png)
+
 9. Click **Done**.
 
 ## Finding the Instance URL

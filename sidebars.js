@@ -197,6 +197,8 @@ module.exports = {
 				Census: [
 					"blueprint-library/census/census-overview",
 					"blueprint-library/census/census-authorization",
+					"blueprint-library/census/census-trigger-sync",
+					"blueprint-library/census/census-check-sync-status",
 				],
 				Databricks: [
 					"blueprint-library/databricks/databricks-overview",
@@ -204,7 +206,7 @@ module.exports = {
 					"blueprint-library/databricks/databricks-download-files-from-dbfs",
 					"blueprint-library/databricks/databricks-upload-files-to-dbfs",
 					"blueprint-library/databricks/databricks-move-or-rename-files-on-dbfs",
-					"blueprint-library/databricks/databricks-upload-files-to-dbfs",
+					"blueprint-library/databricks/databricks-delete-files-from-dbfs",
 				],
 				"Data Manipulation": [
 					"blueprint-library/data-manipulation/data-manipulation-overview",

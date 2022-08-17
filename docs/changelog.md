@@ -28,8 +28,10 @@ _All timing of feature development is estimated and subject to change_
 
 ## 08/17/2022
 
+It's a Blueprint-palooza this week, with lots of new data vendors to integrate with and updates to improve the overall Blueprint experience.
+
 ### New Features
-- We've added a handful of new Blueprints to the application:
+- We've added a handful of new Blueprints to the application. Check out the added functionality with the links below!
   - [Mode](blueprint-library/mode/mode-overview.md)
   - [Rudderstack](blueprint-library/rudderstack/rudderstack-overview.md)
   - [Census](blueprint-library/census/census-overview.md)
@@ -38,8 +40,9 @@ _All timing of feature development is estimated and subject to change_
   
 ### Enhancements
 
-- The [Snowflake Upload CSV to Table](blueprint-library/snowflake/snowflake-upload-csv-to-table.md) Blueprint been updated to use a new method for uploading by default. From our testing, uploads can now be up to 15x faster... and that's especially true for larger datasets. (We uploaded 25mm rows in under 5 minutes!)
-- The [HTTP Download File from URL](blueprint-library/http/http-download-file-from-url.md) Blueprint has been updated to accept custom headers.
+- The [Snowflake Upload CSV to Table](blueprint-library/snowflake/snowflake-upload-csv-to-table.md) Blueprint has been updated to use a new method for uploading by default. From our testing, uploads can now be up to 15x faster... and that's especially true for larger datasets. (We uploaded 25mm rows in under 5 minutes!)
+- The [HTTP Download File from URL](blueprint-library/http/http-download-file-from-url.md) Blueprint has been updated to accept custom headers so you can customize your requests.
+- The [Domo Blueprints](blueprint-library/domo/domo-overview.md) have been updated to accept developer tokens as an alternative to username/password.
 
 ## 08/15/2022
 
