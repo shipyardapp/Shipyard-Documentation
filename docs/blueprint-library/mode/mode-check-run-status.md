@@ -41,7 +41,7 @@ The response for this request will always be stored at `shipyard-artifacts/mode-
 | Token Password | MODE_TOKEN_PASSWORD | Password | :white_check_mark: | - | - | The Token Password associated to the Token ID used to authenticate with Mode. |
 | Workspace Name | MODE_WORKSPACE_NAME | Alphanumeric | :white_check_mark: | - | - | Typically found in the URL structure as https://app.mode.com/ACCOUNT_NAME/ |
 | Report ID | MODE_REPORT_ID | Alphanumeric | :white_check_mark: | - | - | Numeric ID of the report you want to download, typically found at the end of the URL. |
-| Run ID | MODE_RUN_ID | Alphanumeric | :heavy_minus_sign: | - | - | The report run ID that you want to check the status of. If connected to a &#34;Trigger Sync&#34; Blueprint, leave blank. |
+| Run ID | MODE_RUN_ID | Alphanumeric | :heavy_minus_sign: | - | - | The report run ID that you want to check the status of. If connected to a `Trigger Sync` Blueprint, leave blank. |
 
 
 ## YAML

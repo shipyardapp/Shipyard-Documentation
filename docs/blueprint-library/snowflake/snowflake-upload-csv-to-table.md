@@ -49,7 +49,7 @@ In all instances, if the table name does not already exist, a new table will be 
 | Database | SNOWFLAKE_DATABASE | Alphanumeric | :white_check_mark: | - | - | - |
 | Schema | SNOWFLAKE_SCHEMA | Alphanumeric | :heavy_minus_sign: | - | - | - |
 | Folder Name | SNOWFLAKE_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the file to upload can be found. Leaving blank will search in the current working directory. |
-| File Name Match Type | SNOWFLAKE_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in &#34;File Name&#34; will match to one or multiple files. |
+| File Name Match Type | SNOWFLAKE_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in `File Name` will match to one or multiple files. |
 | File Name | SNOWFLAKE_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the file to upload to the specified table |
 | Table Name | SNOWFLAKE_TABLE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the table where you want data inserted |
 | Insertion Method | SNOWFLAKE_INSERT_METHOD | Select | :white_check_mark: | `append` | Append Data: `append`<br></br><br></br>Replace Data: `replace`<br></br><br></br>Add Data Only if Table is Empty: `fail` | Determines how the data in your file will be added to the table |

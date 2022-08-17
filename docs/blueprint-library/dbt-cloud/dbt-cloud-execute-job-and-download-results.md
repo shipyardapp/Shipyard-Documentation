@@ -20,16 +20,16 @@ A Vessel built with this Blueprint will kick off a single job on dbt Cloud and c
 
 The final status of this Vessel in Shipyard will reflect the status of the run in dbt Cloud.
 
-The &#34;cause&#34; for an execution triggered via Shipyard will always contain the following details:
+The `cause` for an execution triggered via Shipyard will always contain the following details:
 - Fleet ID
 - Vessel ID
 - Vessel Log ID
 
-**Note:** This is considered an &#34;all-in-one&#34; Blueprint for the other 3 dbt Cloud Blueprints. By using this Blueprint, you will accumulate runtime as the Vessel continuously waits for the job to be completed. The tradeoff is that results may be quicker and the setup/complexity is less.
+**Note:** This is considered an `all-in-one` Blueprint for the other 3 dbt Cloud Blueprints. By using this Blueprint, you will accumulate runtime as the Vessel continuously waits for the job to be completed. The tradeoff is that results may be quicker and the setup/complexity is less.
 
 If you want to reduce the overall runtime you&#39;re billed for, you will need to instead set up a Fleet with Vessels built with these blueprints in this order:
 
-Execute Job -&gt; Check Run Status -&gt; Download Artifacts &amp; Logs
+Execute Job -&gt; Check Run Status -&gt; Download Artifacts & Logs
 
 
 

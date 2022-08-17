@@ -36,7 +36,7 @@ The response for this request will always be stored at `shipyard-artifacts/censu
 | Name | Reference | Type | Required | Default | Options | Description |
 |:---|:---|:---|:---|:---|:---|:---|
 | API Key | CENSUS_API_KEY | Password | :white_check_mark: | - | - | The API Key associated with your Census account. |
-| Sync Run ID | CENSUS_SYNC_RUN_ID | Alphanumeric | :heavy_minus_sign: | - | - | The ID of the Census sync run you want to check the status of. If connected to &#34;Trigger Sync&#34; blueprint, leave blank. |
+| Sync Run ID | CENSUS_SYNC_RUN_ID | Alphanumeric | :heavy_minus_sign: | - | - | The ID of the Census sync run you want to check the status of. If connected to `Trigger Sync` blueprint, leave blank. |
 
 
 ## YAML

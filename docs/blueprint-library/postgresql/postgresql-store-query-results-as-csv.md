@@ -29,7 +29,7 @@ Turn the results of your SQL SELECT statement into a CSV file. Extract your Post
 | Username | POSTGRES_USERNAME | Alphanumeric | :white_check_mark: | - | - | Name of the user to connect to the database with. |
 | Password | POSTGRES_PASSWORD | Password | :heavy_minus_sign: | - | - | Password associated to the provided username. |
 | Database | POSTGRES_DATABASE | Alphanumeric | :white_check_mark: | - | - | Name of the database in PostgreSQL to connect to. |
-| Extra URL Parameters | POSTGRES_URL_PARAMETERS | Alphanumeric | :heavy_minus_sign: | - | - | Extra parameters that will be placed at the end of the connection string, after the &#34;?&#34;. Must be separated by &#34;&amp;&#34;. |
+| Extra URL Parameters | POSTGRES_URL_PARAMETERS | Alphanumeric | :heavy_minus_sign: | - | - | Extra parameters that will be placed at the end of the connection string, after the `?`. Must be separated by `&`. |
 | Query | POSTGRES_QUERY | Alphanumeric | :white_check_mark: | - | - | A SELECT statement that returns data. Formatting is ignored. |
 | Folder Name | POSTGRES_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | The folder structure that you want your CSV to be created in. If left blank, the file will be created in the home directory. |
 | File Name | POSTGRES_DESTINATION_FILE_NAME | Alphanumeric | :white_check_mark: | output.csv | - | The file name that you want your generated CSV to have. |
@@ -59,6 +59,5 @@ guardrails:
   retry_count: 1
   retry_wait: 0s
   runtime_cutoff: 4h0m0s
-  exclude_exit_code_ranges:
-    - "0"
+  
 ```

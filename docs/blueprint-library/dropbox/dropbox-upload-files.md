@@ -34,8 +34,8 @@ If the folder name provided doesn&#39;t already exist, it will be created.
 | Name | Reference | Type | Required | Default | Options | Description |
 |:---|:---|:---|:---|:---|:---|:---|
 | Local Folder Name | DROPBOX_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Shipyard to upload the target file from. If left blank, will look in the home directory. |
-| Local File Name Match Type | DROPBOX_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in &#34;Local File Name&#34; will look for one file with exact match, or multiple files using regex. |
-| Local File Name | DROPBOX_SOURCE_FILE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the target file on Shipyard. Can be regex if &#34;Match Type&#34; is set accordingly. |
+| Local File Name Match Type | DROPBOX_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in `Local File Name` will look for one file with exact match, or multiple files using regex. |
+| Local File Name | DROPBOX_SOURCE_FILE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the target file on Shipyard. Can be regex if `Match Type` is set accordingly. |
 | Dropbox Folder Name | DROPBOX_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the file(s) should be uploaded. Leaving blank will place the file in the root directory of Dropbox. |
 | Dropox File Name | DROPBOX_DESTINATION_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | What to name the file(s) being uploaded to Dropbox. If left blank, defaults to the original file name(s).  |
 | Access Token | DROPBOX_ACCESS_TOKEN | Password | :white_check_mark: | - | - | Access token, with no expiration, to access your Dropbox files. |
@@ -60,6 +60,5 @@ guardrails:
   retry_count: 1
   retry_wait: 0s
   runtime_cutoff: 4h0m0s
-  exclude_exit_code_ranges:
-    - "0"
+  
 ```

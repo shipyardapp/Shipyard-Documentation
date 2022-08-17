@@ -31,8 +31,8 @@ This Blueprint requires _read_ permissions in order to download from the FTP ser
 | Username | FTP_USERNAME | Alphanumeric | :heavy_minus_sign: | - | - | Value of the configured username in the FTP server. |
 | Password | FTP_PASSWORD | Password | :heavy_minus_sign: | - | - | Value of the configured password associated to the username on the FTP server. |
 | FTP Folder Name | FTP_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the folder where the file is stored in the FTP server. |
-| FTP File Name Match Type | FTP_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in &#34;FTP File Name&#34; will look for one file with exact match, or multiple files using regex. |
-| FTP File Name | FTP_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file in the FTP server. Can be regex if &#34;Match Type&#34; is set accordingly. |
+| FTP File Name Match Type | FTP_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in `FTP File Name` will look for one file with exact match, or multiple files using regex. |
+| FTP File Name | FTP_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file in the FTP server. Can be regex if `Match Type` is set accordingly. |
 | Local Folder Name | FTP_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the file(s) should be downloaded. Leaving blank will place the file in the home directory. |
 | Local File Name | FTP_DESTINATION_FILE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | What to name the file(s) being downloaded. If left blank, defaults to the original file name(s). |
 
@@ -59,6 +59,5 @@ guardrails:
   retry_count: 1
   retry_wait: 0s
   runtime_cutoff: 4h0m0s
-  exclude_exit_code_ranges:
-    - "0"
+  
 ```

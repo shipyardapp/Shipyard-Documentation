@@ -34,9 +34,9 @@ To get started with any Mode Blueprints, you will need to create an API Access T
 ## Finding your Workspace Name
 On any page of Mode, the workspace name can be found in the URL.
 
-For example, if your're on the main dashboard and the URL is `https://app.mode.com/my-workspace/spaces/90210abcdef` then your workspace name would be `my-workspace`.
+For example, if you're on the main dashboard and the URL is `https://app.mode.com/my-workspace/spaces/90210abcdef` then your workspace name would be `my-workspace`.
 
 ## Finding your Report ID
 When viewing a report in Mode, the Report ID can be found at the end of the URL.
 
-For example, if your're on a report and the URL is `https://app.mode.com/my-org/reports/90210abcdef` then your report ID would be `90210abcdef`.
+For example, if you're on a report and the URL is `https://app.mode.com/my-org/reports/90210abcdef` then your report ID would be `90210abcdef`.

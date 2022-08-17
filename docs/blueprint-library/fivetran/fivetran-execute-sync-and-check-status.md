@@ -16,7 +16,7 @@ keywords:
 
 &gt; ## **First time using this Blueprint? Make sure you follow our [Fivetran authorization guide](https://www.shipyardapp.com/docs/blueprint-library/fivetran/fivetran-authorization/)**.
 
-This is considered an &#34;all-in-one&#34; Blueprint that Executes a Sync and checks the status of the sync until it&#39;s is finished. By using this Blueprint, you will accumulate runtime as the Vessel continuously waits for the job to be completed. The tradeoff is that results may be quicker and the setup/complexity is less.
+This is considered an `all-in-one` Blueprint that Executes a Sync and checks the status of the sync until it&#39;s is finished. By using this Blueprint, you will accumulate runtime as the Vessel continuously waits for the job to be completed. The tradeoff is that results may be quicker and the setup/complexity is less.
 
 If you want to reduce the overall runtime you&#39;re billed for, you will need to instead set up a Fleet with Vessels built with these Blueprints in this order:
 `Execute Sync` -&gt; `Check Sync Status`
@@ -54,6 +54,5 @@ guardrails:
   retry_count: 1
   retry_wait: 0s
   runtime_cutoff: 4h0m0s
-  exclude_exit_code_ranges:
-    - "0"
+  
 ```

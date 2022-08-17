@@ -38,8 +38,8 @@ This Blueprint requires _write_ permissions in order to upload to the SFTP serve
 | Password | SFTP_PASSWORD | Password | :heavy_minus_sign: | - | - | Value of the configured password associated to the username on the SFTP server. |
 | RSA Key File | SFTP_RSA_KEY_FILE | Alphanumeric | :heavy_minus_sign: | - | - | The file name of an RSA Key that you want to use. |
 | Local Folder Name | SFTP_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Shipyard to upload the target file from. If left blank, will look in the home directory. |
-| Local File Name Match Type | SFTP_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in &#34;Local File Name&#34; will look for one file with exact match, or multiple files using regex. |
-| Local File Name | SFTP_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file on Shipyard. Can be regex if &#34;Match Type&#34; is set accordingly. |
+| Local File Name Match Type | SFTP_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in `Local File Name` will look for one file with exact match, or multiple files using regex. |
+| Local File Name | SFTP_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file on Shipyard. Can be regex if `Match Type` is set accordingly. |
 | FTP Folder Name | SFTP_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the file(s) should be uploaded. Leaving blank will place the file in the root directory of the SFTP. |
 | FTP File Name | SFTP_DESTINATION_FILE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | What to name the file(s) being uploaded to the SFTP. If left blank, defaults to the original file name(s). |
 
@@ -67,6 +67,5 @@ guardrails:
   retry_count: 1
   retry_wait: 0s
   runtime_cutoff: 4h0m0s
-  exclude_exit_code_ranges:
-    - "0"
+  
 ```

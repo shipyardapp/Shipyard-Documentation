@@ -34,7 +34,7 @@ Check the job status of a workbook or datasource that has recently been refreshe
 | Password or Access Token | TABLEAU_PASSWORD | Password | :white_check_mark: | - | - | The password associated with the provided username OR the access token associated with the provided access token name. |
 | Server URL | TABLEAU_SERVER_URL | Alphanumeric | :white_check_mark: | - | - | The scheme, subdomain, domain, and top-level domain (TLD) of your Tableau URL. |
 | Site ID | TABLEAU_SITE_ID | Alphanumeric | :white_check_mark: | - | - | Typically found in the URL as /site/YOURSITEID/ |
-| Job ID | TABLEAU_JOB_ID | Alphanumeric | :heavy_minus_sign: | - | - | The ID of a specific job you check the status of. If left blank, will try to find the job ID from an &#34;Refresh Workbook/Datasource&#34; Vessel that ran upstream. |
+| Job ID | TABLEAU_JOB_ID | Alphanumeric | :heavy_minus_sign: | - | - | The ID of a specific job you check the status of. If left blank, will try to find the job ID from an `Refresh Workbook/Datasource` Vessel that ran upstream. |
 
 
 ## YAML
