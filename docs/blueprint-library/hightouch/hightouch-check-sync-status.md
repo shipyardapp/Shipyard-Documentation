@@ -16,7 +16,7 @@ keywords:
 
 &gt; ## **First time using this Blueprint? Make sure you follow our [Hightouch authorization guide](https://www.shipyardapp.com/docs/blueprint-library/hightouch/hightouch-authorization/)**.
 
-Check for the status of a Census sync. The Vessel&#39;s exit code and status will match the status of the latest sync.
+Check for the status of a Hightouch sync. The Vessel&#39;s exit code and status will match the status of the latest sync.
 
 ## Status Codes
 - If the sync finishes successfully, an exit code of 0 will be returned.

@@ -13,7 +13,7 @@ keywords:
 
 # Hightouch Authorization
 
-To get started with any Hightouch Blueprints, you will need to create an API Key. This API Key is a secure way for Shipyard to access Hightouch and will be required for **every** Census Blueprint. Additionally, you'll need a Sync ID.
+To get started with any Hightouch Blueprints, you will need to create an API Key. This API Key is a secure way for Shipyard to access Hightouch and will be required for **every** Hightouch Blueprint. Additionally, you'll need a Sync ID.
 
 ## Creating a Hightouch API Key
 1. Log into [Hightouch](https://app.hightouch.com/).
