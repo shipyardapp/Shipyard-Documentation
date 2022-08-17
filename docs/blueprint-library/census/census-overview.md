@@ -20,8 +20,8 @@ For information on how to set up these Blueprints successfully, please read thro
 
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available:
-- Trigger Sync
-- Check Sync Status
+- [Trigger Sync](census-trigger-sync.md)
+- [Check Sync Status](census-check-sync-status.md)
 
 
 ## Open Source Code

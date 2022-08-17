@@ -20,8 +20,8 @@ For information on how to set up these Blueprints successfully, please read thro
 
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available:
-- Trigger Sync
-- Check Sync Status
+- [Trigger Sync](hightouch-trigger-sync.md)
+- [Check Sync Status](hightouch-check-sync-status.md)
 
 
 ## Open Source Code

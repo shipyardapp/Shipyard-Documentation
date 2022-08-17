@@ -20,13 +20,13 @@ For information on how to set up these Blueprints successfully, please read thro
 
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available:
-- Download Files from DBFS
-- Upload Files to DBFS
-- Move or Rename Files on DBFS
-- Delete Files from DBFS
+- [Download Files from DBFS](databricks-download-files-from-dbfs.md)
+- [Upload Files to DBFS](databricks-upload-files-to-dbfs.md)
+- [Move or Rename Files on DBFS](databricks-move-or-rename-files-on-dbfs.md)
+- [Delete Files from DBFS](databricks-delete-files-from-dbfs.md)
 
 ## Open Source Code
 The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/databricks-blueprints), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.
 
 ## Helpful Databricks Links
-- [Something](https://externallink.com)  
+- [Databricks API Documentation](https://docs.databricks.com/dev-tools/api/latest/index.html)  

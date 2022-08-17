@@ -201,6 +201,10 @@ module.exports = {
 				Databricks: [
 					"blueprint-library/databricks/databricks-overview",
 					"blueprint-library/databricks/databricks-authorization",
+					"blueprint-library/databricks/databricks-download-files-from-dbfs",
+					"blueprint-library/databricks/databricks-upload-files-to-dbfs",
+					"blueprint-library/databricks/databricks-move-or-rename-files-on-dbfs",
+					"blueprint-library/databricks/databricks-upload-files-to-dbfs",
 				],
 				"Data Manipulation": [
 					"blueprint-library/data-manipulation/data-manipulation-overview",
@@ -285,6 +289,8 @@ module.exports = {
 				Hightouch: [
 					"blueprint-library/hightouch/hightouch-overview",
 					"blueprint-library/hightouch/hightouch-authorization",
+					"blueprint-library/hightouch/hightouch-trigger-sync",
+					"blueprint-library/hightouch/hightouch-check-sync-status",
 				],
 				HTTP: [
 					"blueprint-library/http/http-overview",
@@ -301,6 +307,9 @@ module.exports = {
 				Mode: [
 					"blueprint-library/mode/mode-overview",
 					"blueprint-library/mode/mode-authorization",
+					"blueprint-library/mode/mode-trigger-report-refresh",
+					"blueprint-library/mode/mode-check-run-status",
+					"blueprint-library/mode/mode-download-report-as-file",
 				],
 				MySQL: [
 					"blueprint-library/mysql/mysql-overview",
@@ -319,6 +328,8 @@ module.exports = {
 				RudderStack: [
 					"blueprint-library/rudderstack/rudderstack-overview",
 					"blueprint-library/rudderstack/rudderstack-authorization",
+					"blueprint-library/rudderstack/rudderstack-trigger-sync",
+					"blueprint-library/rudderstack/rudderstack-check-sync-status",
 				],
 				SFTP: [
 					"blueprint-library/sftp/sftp-overview",
