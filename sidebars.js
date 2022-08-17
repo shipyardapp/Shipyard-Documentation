@@ -194,6 +194,20 @@ module.exports = {
 					"blueprint-library/box/box-download-files",
 					"blueprint-library/box/box-upload-files",
 				],
+				Census: [
+					"blueprint-library/census/census-overview",
+					"blueprint-library/census/census-authorization",
+					"blueprint-library/census/census-trigger-sync",
+					"blueprint-library/census/census-check-sync-status",
+				],
+				Databricks: [
+					"blueprint-library/databricks/databricks-overview",
+					"blueprint-library/databricks/databricks-authorization",
+					"blueprint-library/databricks/databricks-download-files-from-dbfs",
+					"blueprint-library/databricks/databricks-upload-files-to-dbfs",
+					"blueprint-library/databricks/databricks-move-or-rename-files-on-dbfs",
+					"blueprint-library/databricks/databricks-delete-files-from-dbfs",
+				],
 				"Data Manipulation": [
 					"blueprint-library/data-manipulation/data-manipulation-overview",
 					"blueprint-library/data-manipulation/data-manipulation-compare-datasets",
@@ -274,6 +288,12 @@ module.exports = {
 					"blueprint-library/google-sheets/google-sheets-upload-csv-to-sheet",
 					"blueprint-library/google-sheets/google-sheets-clear-data-from-sheet",
 				],
+				Hightouch: [
+					"blueprint-library/hightouch/hightouch-overview",
+					"blueprint-library/hightouch/hightouch-authorization",
+					"blueprint-library/hightouch/hightouch-trigger-sync",
+					"blueprint-library/hightouch/hightouch-check-sync-status",
+				],
 				HTTP: [
 					"blueprint-library/http/http-overview",
 					"blueprint-library/http/http-requests",
@@ -285,6 +305,13 @@ module.exports = {
 					"blueprint-library/microsoft-sql-server/microsoft-sql-server-execute-query",
 					"blueprint-library/microsoft-sql-server/microsoft-sql-server-store-query-results-as-csv",
 					"blueprint-library/microsoft-sql-server/microsoft-sql-server-upload-csv-to-table",
+				],
+				Mode: [
+					"blueprint-library/mode/mode-overview",
+					"blueprint-library/mode/mode-authorization",
+					"blueprint-library/mode/mode-trigger-report-refresh",
+					"blueprint-library/mode/mode-check-run-status",
+					"blueprint-library/mode/mode-download-report-as-file",
 				],
 				MySQL: [
 					"blueprint-library/mysql/mysql-overview",
@@ -299,6 +326,12 @@ module.exports = {
 					"blueprint-library/postgresql/postgresql-execute-query",
 					"blueprint-library/postgresql/postgresql-store-query-results-as-csv",
 					"blueprint-library/postgresql/postgresql-upload-csv-to-table",
+				],
+				RudderStack: [
+					"blueprint-library/rudderstack/rudderstack-overview",
+					"blueprint-library/rudderstack/rudderstack-authorization",
+					"blueprint-library/rudderstack/rudderstack-trigger-sync",
+					"blueprint-library/rudderstack/rudderstack-check-sync-status",
 				],
 				SFTP: [
 					"blueprint-library/sftp/sftp-overview",
