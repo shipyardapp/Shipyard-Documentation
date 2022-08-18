@@ -44,6 +44,9 @@ It's a Blueprint-palooza this week, with lots of new data vendors to integrate w
 - The [HTTP Download File from URL](blueprint-library/http/http-download-file-from-url.md) Blueprint has been updated to accept custom headers so you can customize your requests.
 - The [Domo Blueprints](blueprint-library/domo/domo-overview.md) have been updated to accept developer tokens as an alternative to username/password.
 
+### Bug Fixes
+- Empty non-required password fields in Blueprint vessels were being rejected on Fleet save. They have now be authorized to remain empty if you so choose.
+
 ## 08/15/2022
 
 ### Enhancements
