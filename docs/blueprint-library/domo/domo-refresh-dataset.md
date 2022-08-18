@@ -30,8 +30,9 @@ This Blueprint will only kick off the refresh and will almost always return a st
 
 | Name | Reference | Type | Required | Default | Options | Description |
 |:---|:---|:---|:---|:---|:---|:---|
-| Email | DOMO_EMAIL | Alphanumeric | :white_check_mark: | - | - | Email that you use to log into Domo. |
-| Password | DOMO_PASSWORD | Password | :white_check_mark: | - | - | Password associated to the email used to sign into Domo. |
+| Access Token | DOMO_ACCESS_TOKEN | Password | :heavy_minus_sign: | - | - | Access token to authenticate with Domo. Used in place of username/password. |
+| Email | DOMO_EMAIL | Alphanumeric | :heavy_minus_sign: | - | - | Email that you use to log into Domo. Used with the password for authentication as an alternative method to providing an access token. |
+| Password | DOMO_PASSWORD | Password | :heavy_minus_sign: | - | - | Password associated to the email used to sign into Domo. Used with the email for authentication as an alternative method to providing an access token. |
 | Client ID | DOMO_CLIENT_ID | Alphanumeric | :white_check_mark: | - | - | Client ID of your organization&#39;s Domo App. |
 | Secret | DOMO_SECRET_KEY | Password | :white_check_mark: | - | - | Secret associated with the provided Client ID. |
 | Domo Instance | DOMO_INSTANCE | Alphanumeric | :white_check_mark: | - | - | Typically found in the URL structure as https://DOMOINSTANCE.domo.com |

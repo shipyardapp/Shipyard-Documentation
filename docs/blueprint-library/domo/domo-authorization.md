@@ -15,12 +15,33 @@ keywords:
 
 Domo Blueprints rely on users to:
 
-- Provide their username and password
+- Provide their username and password or an access token
 - Provide a Client ID and Secret from a Domo App
 - Provide the Domo Instance
 - Provide the id of the relevant element (Dataset, Card)
 
 Below are the steps of how to accomplish each of these individually.
+
+## Create a Domo Access Token
+1. Log in to your Domo Instance (typically `domo-instance.domo.com`)
+2. Click the **More** icon at the top.
+3. Click the **Admin** icon.
+![Navigating to Domo Admin](../../.gitbook/assets/shipyard_2022_08_17_17_51_59.png)
+4. Click **Access Tokens**
+![Domo Access Tokens](../../.gitbook/assets/shipyard_2022_08_17_17_53_30.png)
+5. Click **+ Generate access token** in the top right.
+![Generate Access Token](../../.gitbook/assets/shipyard_2022_08_17_17_55_18.png)
+6. Provide a descriptive name for the access token.
+7. Assign the token to a specific user.
+8. Set the access token to expire after 10 years.
+:::caution
+While best practice is typically to have expiring access tokens that rotate, we recommend letting Shipyard tokens run as long as possible to prevent interruption to your Fleets.
+:::
+9. Click **Generate**.
+![Generating Domo Access Token](../../.gitbook/assets/shipyard_2022_08_17_17_57_33.png)
+
+10. Copy the Access Token and store it somewhere safe. This value will be used for every Domo Blueprint.
+![New Domo Access Token](../../.gitbook/assets/shipyard_2022_08_17_19_38_23.png)
 
 ## Create a Domo App for a Client ID and Secret
 

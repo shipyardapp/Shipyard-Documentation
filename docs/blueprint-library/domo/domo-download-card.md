@@ -24,8 +24,9 @@ Download a card from Domo as a CSV, XLSX, or PPT file. Typically used for pullin
 
 | Name | Reference | Type | Required | Default | Options | Description |
 |:---|:---|:---|:---|:---|:---|:---|
-| Email | DOMO_EMAIL | Alphanumeric | :white_check_mark: | - | - | Email that you use to log into Domo. |
-| Password | DOMO_PASSWORD | Password | :white_check_mark: | - | - | Password associated to the email used to sign into Domo. |
+| Access Token | DOMO_ACCESS_TOKEN | Password | :heavy_minus_sign: | - | - | Access token to authenticate with Domo. Used in place of username/password. |
+| Email | DOMO_EMAIL | Alphanumeric | :heavy_minus_sign: | - | - | Email that you use to log into Domo. Used with the password for authentication as an alternative method to providing an access token. |
+| Password | DOMO_PASSWORD | Password | :heavy_minus_sign: | - | - | Password associated to the email used to sign into Domo. Used with the email for authentication as an alternative method to providing an access token. |
 | Domo Instance | DOMO_INSTANCE | Alphanumeric | :white_check_mark: | - | - | Typically found in the URL structure as https://DOMOINSTANCE.domo.com |
 | Card ID | DOMO_CARD_ID | Alphanumeric | :white_check_mark: | - | - | Numeric ID of the card you want to download, typically found at the end of the URL. |
 | Download As | DOMO_FILE_TYPE | Select | :white_check_mark: | `csv` | .csv: `csv`<br></br><br></br>.xlsx: `excel`<br></br><br></br>.ppt: `ppt` | File format to download the specified card as. |
