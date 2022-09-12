@@ -14,9 +14,9 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [Hightouch authorization guide](https://www.shipyardapp.com/docs/blueprint-library/hightouch/hightouch-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Hightouch authorization guide](https://www.shipyardapp.com/docs/blueprint-library/hightouch/hightouch-authorization/)**.
 
-Check for the status of a Hightouch sync. The Vessel&#39;s exit code and status will match the status of the latest sync.
+Check for the status of a Hightouch sync. The Vessel's exit code and status will match the status of the latest sync.
 
 ## Status Codes
 - If the sync finishes successfully, an exit code of 0 will be returned.
@@ -42,15 +42,15 @@ The response for this request will always be stored at `shipyard-artifacts/hight
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
   blueprint: Hightouch - Check Sync Status
   inputs:
-    API Key: null ## REQUIRED
-    Sync ID: null ## REQUIRED
-    Sync Run ID: null 
+    HIGHTOUCH_API_KEY: null ## REQUIRED
+    HIGHTOUCH_SYNC_ID: null ## REQUIRED
+    HIGHTOUCH_SYNC_RUN_ID: null 
   type: BLUEPRINT
 guardrails:
   retry_count: 1

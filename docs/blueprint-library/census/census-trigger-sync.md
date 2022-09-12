@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [Census authorization guide](https://www.shipyardapp.com/docs/blueprint-library/census/cesnsus-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Census authorization guide](https://www.shipyardapp.com/docs/blueprint-library/census/cesnsus-authorization/)**.
 
 Immediately execute a Census snyc. The sync must already be set up within the Census interface.
 
@@ -38,14 +38,14 @@ This Blueprint will only kick off the sync and will almost always return a statu
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
   blueprint: Census - Trigger Sync
   inputs:
-    API Key: null ## REQUIRED
-    Sync ID: null ## REQUIRED
+    CENSUS_API_KEY: null ## REQUIRED
+    CENSUS_SYNC_ID: null ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1

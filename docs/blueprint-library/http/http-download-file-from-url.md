@@ -36,16 +36,16 @@ The file will be downloaded directly to the specified folder using the File Name
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
   blueprint: HTTP - Download File from URL
   inputs:
-    File URL: null ## REQUIRED
-    Custom Headers: null 
-    File Name: null 
-    Folder Name: null 
+    HTTP_FILE_URL: null ## REQUIRED
+    HTTP_CUSTOM_HEADERS: null 
+    HTTP_DESTINATION_FILE_NAME: null 
+    HTTP_DESTINATION_FOLDER_NAME: null 
   type: BLUEPRINT
 guardrails:
   retry_count: 1
