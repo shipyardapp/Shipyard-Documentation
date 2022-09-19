@@ -12,7 +12,7 @@ keywords:
 
 ## Overview
 
-In this tutorial, you'll learn how to upload a local file to be used in a Fleet. We do not recommend this process for data uploads. It can be helpful to upload credentials like the RSA key that we will upload in this tutorial. 
+In this tutorial, you'll learn how to upload a file from your computer to Shipyard that can be used in a Fleet. This can be helpful to upload static credential or reference files.
 
 By the end of the tutorial, you'll be able to:
 
@@ -20,22 +20,22 @@ By the end of the tutorial, you'll be able to:
 - Check [Logs](../reference/logs/logs-overview.md) to verify that your local file was uploaded.
 
 :::caution
-We do not recommend using this process to upload data. We recommend that you download data files using our native cloud storage Blueprints.
+We do not recommend using this process to upload dynamic data files. We recommend that you download data files using our [Library Blueprints](../reference/blueprints/blueprint-library/blueprint-library-overview.md).
 :::
 
 ## Setup
 
 First, [download this zip file](https://drive.google.com/file/d/1dlxUFR9MxKdtsO-AdWPEfsWgA2_rr2oc/view?usp=sharing), named `upload_rsa.zip` to your computer without making any changes.
 
-Feel free to peruse this script beforehand so you understand everything that it's doing. The script is accomplishing two main things:
+Feel free to peruse this zip file beforehand so you understand the contents and purpose. The zip file contains two files:
 
-1. Runs a bash script that returns a 0 exit code.
-2. Allows the RSA key to be uploaded into Shipyard.
+1. `upload_rsa.sh` - A bash script that prints a success message and returns a 0 exit code.
+2. `id_rsa` - The RSA key file to be uploaded into Shipyard.
 
 ## Steps
 
 1. Using the sidebar, click **+ New Fleet**.
-2. In the **Select a Project** dropdown, choose either the *Playground* or *Testing* Project.
+2. In the dropdown, choose either the *Playground* or *Testing* Project, then click **Select Project**
 
 You'll now be on the Fleet builder canvas. Next we'll walk through the process of building the required Vessel to upload the file to Shipyard
 
@@ -49,13 +49,17 @@ You'll now be on the Fleet builder canvas. Next we'll walk through the process o
 
 ![Vessel Setup](2022-09-19-14-25-39.png)
 
+:::info Pro Tip
+When you [upload files](../reference/code/upload-code.md) to Shipyard using this method, they will be automatically unzipped. Only a single specified file (in this tutorial, `upload_rsa.sh`) can ever be run per Vessel. Future downstream Vessels can run and access the files in the zipped file.
+:::
+
 ### Step 2 - Create a Vessel to Check Shipyard File System
 
 1. Click the **Add Vessel** button to add a second Vessel.
 2. Click **Bash** to add a Bash code Vessel.
 3. Under **Vessel Name**, enter `List All Files`.
 4. Under **File to Run**, enter `list_files.sh`.
-5. Under **Code**, enter `ls -aR`.
+5. Under **Code**, enter `ls -laR`.
 6. Connect the Upload RSA File and List All Files Vessels.
 
 ![](2022-09-19-14-32-18.png)
@@ -83,8 +87,12 @@ You'll now be on the Fleet builder canvas. Next we'll walk through the process o
 3. This takes you to the [Vessel Log](../reference/logs/vessel-logs.md).
 4. You are able to see the `id_rsa` file that we wanted to upload from our computer in the Shipyard file system.
 
-![Shipyard File System](2022-09-19-14-53-52.png)
+![Shipyard File System](../.gitbook/assets/shipyard_2022_09_19_17_58_52.png)
 
 :::tip success
-You have successfully created a Fleet with a Vessel that can upload a file to use in Shipyard from your local file system.
+You have successfully created a Fleet with a Vessel that can upload a file to use in Shipyard from your local file system. 
+
+Use this process in any of your own Fleets by connecting the "Upload Local File Vessel" before another Vessel.
 :::
+
+
