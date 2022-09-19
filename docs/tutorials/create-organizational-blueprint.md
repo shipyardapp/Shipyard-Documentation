@@ -16,14 +16,14 @@ keywords:
 In this tutorial, you will walk through the steps required to build a custom Blueprint for your organization using Python. By the end of the tutorial, you'll be able to:
 
 - Create a custom [Blueprint](../reference/blueprints/blueprints-overview.md).
-- Pass [Blueprint Variables](../reference/blueprints/org-blueprints/blueprint-variables.md) to your solution.
+- Pass [Blueprint variables](../reference/blueprints/org-blueprints/blueprint-variables.md) to your solution.
 - Pass [environment variables](../reference/environment-variables/environment-variables-overview.md) to your solution.
 - Install [package dependencies](../reference/packages/external-package-dependencies.md) for your solution.
 
 ## Steps
 
 1. Using the sidebar, click on **Blueprints** to navigate to the Blueprints page.
-2. Click the **Add Blueprint** button on the top right of the screen
+2. Click the **Add Blueprint** button on the top right of the screen.
 
 :::tip success
 You've successfully started the setup flow for building a Blueprint.
@@ -68,11 +68,10 @@ Click on the **Python** option. You'll be immediately redirected to the next ste
 | Display Name   | Initial File Format                                         |
 | Reference Name | initial_file_format                                         |
 | Variable Type  | Select                                                      |
-| Default Value  | XLSX                                                        |
 | Required?      | Yes                                                         |
 | Placeholder    | File type of the initial file that will be converted to CSV |
 
-7. Before we click Add Variable, we need to add the options that the user will have when selecting. Click the **plus sign** to add the following select options:
+7. Before we click Add Variable, we need to add the options that the user will have when selecting a file type. Click the **plus sign** to add the following select options:
 
 | Display Name | Reference Name |
 |--------------|----------------|
@@ -80,13 +79,14 @@ Click on the **Python** option. You'll be immediately redirected to the next ste
 | Parquet      | parquet        |
 | TSV          | tsv            |
 
-8. Click **Add Variable**.
-9. Under **Blueprint Description**, enter: `This Blueprint takes a file and converts it to a CSV.`
-10. Click the **Preview this Blueprint** button to take a look at what a user will see when trying to use this Blueprint.
+8. Select `XLSX` as the default value.
+9. Click **Add Variable**.
+10. Under **Blueprint Description**, enter: `This Blueprint takes a file and converts it to a CSV.`
+11. Click the **Preview this Blueprint** button to take a look at what a user will see when trying to use this Blueprint.
 
 ![](../.gitbook/assets/shipyard_2022_09_06_15_40_38.png)
 
-11. Click **Next Step**.
+12. Click **Next Step**.
 
 ### Step 3 - Code
 
