@@ -25,10 +25,6 @@ In this tutorial, you will walk through the steps required to build a custom Blu
 1. Using the sidebar, click on **Blueprints** to navigate to the Blueprints page.
 2. Click the **Add Blueprint** button on the top right of the screen.
 
-:::tip success
-You've successfully started the setup flow for building a Blueprint.
-:::
-
 ### Step 1 - Select a Language
 
 Click on the **Python** option. You'll be immediately redirected to the next step.
@@ -125,7 +121,7 @@ print(f'{converted_file} is ready to use!')
 
 ### Step 4 - Requirements
 
-1. Click the **plus sign** to add an Enivronment Variable.
+1. Click the **plus sign** next to Environment Variables to add an environment variable.
 2. For the **name**, enter `current_user`.
 3. For the **hidden value**, enter the name of everyone's favorite pirate: Jack_Sparrow.
 4. Click the **plus sign** next to Python Packages to add a package. 
@@ -136,15 +132,17 @@ print(f'{converted_file} is ready to use!')
 
 ### Step 5 - Settings
 
-1. Under **Blueprint Name**, enter `Convert to CSV`.
-2. Under **Synopsis**, enter the following: Blueprint used to convert files to CSV.
+1. Set the **Visibility** to **Everyone**.
+2. Under **Blueprint Name**, enter `Convert to CSV`.
+3. Under **Synopsis**, enter `Blueprint used to convert files to CSV`.
+4. Under **Icon**, enter `https://cdn-icons-png.flaticon.com/512/14/14521.png`
 
-![](../.gitbook/assets/shipyard_2022_09_06_15_56_18.png)
+![](../.gitbook/assets/shipyard_2022_09_19_16_40_06.png)
 
-3. Click **Save & Finish**. This will redirect you to a page that tells you that your Blueprint has been created successfully.
+5. Click **Save & Finish**. This will redirect you to a page that tells you that your Blueprint has been created successfully.
 
 ![](../.gitbook/assets/shipyard_2022_09_06_15_36_47.png)
 
 :::tip Success
-You've successfully created a Blueprint for your organization!
+You've successfully created a Blueprint for your organization. Click **Use this Blueprint** or select it in the [Fleet Builder](../reference/fleets/visual-editor.md) to test it out!
 :::
