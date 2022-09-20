@@ -1,6 +1,6 @@
 ---
 id: create-blueprint
-title: Create Org. Blueprint Using Python
+title: Create Org Blueprint Using Python
 hide_title: true
 description: In-depth tutorial to walk you through the steps needed to create a Blueprint for your organization
 keywords:
@@ -139,7 +139,7 @@ print(f'{converted_file} is ready to use!')
 3. Under **Synopsis**, enter `Blueprint used to convert files to CSV`.
 4. Under **Icon**, enter `https://cdn-icons-png.flaticon.com/512/14/14521.png`
 
-![](../.gitbook/assets/shipyard_2022_09_19_16_40_06.png)
+![](../.gitbook/assets/shipyard_2022_09_20_16_52_42.png)
 
 5. Click **Save & Finish**. This will redirect you to a page that tells you that your Blueprint has been created successfully.
 
