@@ -47,7 +47,7 @@ You'll now be on the Fleet builder canvas. Next we'll walk through the process o
 4. Click the **Upload** toggle option.
 5. Click the **Upload File** button and select the `upload_rsa.zip` downloaded in the **Setup** section above.
 
-![Vessel Setup](2022-09-19-14-25-39.png)
+![Vessel Setup](../.gitbook/assets/2022-09-19-14-25-39.png)
 
 :::info Pro Tip
 When you [upload files](../reference/code/upload-code.md) to Shipyard using this method, they will be automatically unzipped. Only a single specified file (in this tutorial, `upload_rsa.sh`) can ever be run per Vessel. Future downstream Vessels can run and access the files in the zipped file.
@@ -62,14 +62,14 @@ When you [upload files](../reference/code/upload-code.md) to Shipyard using this
 5. Under **Code**, enter `ls -laR`.
 6. Connect the Upload RSA File and List All Files Vessels.
 
-![](2022-09-19-14-32-18.png)
+![](../.gitbook/assets/2022-09-19-14-32-18.png)
 
 ### Step 3 - Name your Fleet
 
 1. Click the cog for **Fleet Settings** on the left side of the Fleet Builder.
 2. Under **Fleet Name**, enter `Upload RSA File to Shipyard`.
 
-![](2022-09-19-14-34-29.png)
+![](../.gitbook/assets/2022-09-19-14-34-29.png)
 
 3. Click **Save & Finish** on the bottom right corner of your screen. This will redirect you to a page that lets you know that your Fleet has been created successfully.
 
@@ -82,12 +82,12 @@ When you [upload files](../reference/code/upload-code.md) to Shipyard using this
 1. Wait for your Fleet to complete running with a status of Success.
 2. Click the green rectangle for the List All Files Vessel.
 
-![](2022-09-19-14-50-08.png)
+![](../.gitbook/assets/2022-09-19-14-50-08.png)
 
 3. This takes you to the [Vessel Log](../reference/logs/vessel-logs.md).
 4. You are able to see the `id_rsa` file that we wanted to upload from our computer in the Shipyard file system.
 
-![Shipyard File System](../.gitbook/assets/shipyard_2022_09_19_17_58_52.png)
+![Shipyard File System](../.gitbook/assets/shipyard_2022_09_20_16_54_58.png)
 
 :::tip success
 You have successfully created a Fleet with a Vessel that can upload a file to use in Shipyard from your local file system. 
