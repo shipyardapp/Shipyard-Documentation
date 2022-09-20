@@ -15,6 +15,23 @@ module.exports = {
 	scripts: [
 		{
 			src: BASE_URL + "js/segment.js",
+			async: false,
+			"data-cookieyes": "cookieyes-analytics",
+		},
+		{
+			src: "https://www.googletagmanager.com/gtag/js?id=UA-142749850-1",
+			async: true,
+			"data-cookieyes": "cookieyes-analytics",
+		},
+		{
+			src: BASE_URL + "js/googleanalytics.js",
+			async: false,
+			"data-cookieyes": "cookieyes-analytics",
+		},
+		{
+			src: BASE_URL + "js/clearbit.js",
+			async: false,
+			"data-cookieyes": "cookieyes-analytics",
 		},
 	],
 	themeConfig: {
