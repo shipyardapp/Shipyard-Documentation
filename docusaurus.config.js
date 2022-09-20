@@ -152,10 +152,11 @@ module.exports = {
 					editUrl:
 						"https://github.com/shipyardapp/Shipyard-Documentation/edit/main/",
 				},
-				googleAnalytics: {
-					trackingID: "UA-142749850-1",
-					anonymizeIP: true,
-				},
+				// Removing this in favor of manually inserting the script with cookieyes permissions.
+				// googleAnalytics: {
+				// 	trackingID: "UA-142749850-1",
+				// 	anonymizeIP: true,
+				// },
 				blog: {
 					showReadingTime: true,
 					// Please change this to your repo.
