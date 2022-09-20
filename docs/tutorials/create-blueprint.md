@@ -1,6 +1,6 @@
 ---
 id: create-blueprint
-title: Create Organizational Blueprint Using Python
+title: Create Org. Blueprint Using Python
 hide_title: true
 description: In-depth tutorial to walk you through the steps needed to create a Blueprint for your organization
 keywords:
@@ -9,11 +9,13 @@ keywords:
   - code
 ---
 
-# Create Organizational Blueprint Using Python
+# Create Org Blueprint Using Python
 
 ## Overview
 
-In this tutorial, you will walk through the steps required to build a custom Blueprint for your organization using Python. By the end of the tutorial, you'll be able to:
+In this tutorial, you will walk through the steps required to build an org Blueprint for your organization using Python. After creation, this Blueprint can be used to convert a XLSX, Parquet, or TSV file to a CSV. 
+
+By the end of the tutorial, you'll be able to:
 
 - Create a custom [Blueprint](../reference/blueprints/blueprints-overview.md).
 - Pass [Blueprint variables](../reference/blueprints/org-blueprints/blueprint-variables.md) to your solution.
@@ -31,7 +33,7 @@ Click on the **Python** option. You'll be immediately redirected to the next ste
 
 ### Step 2 - Provide Blueprint Variables
 
-1. Click the **plus sign** to add a new Blueprint Variable. This will pop up a menu to input information about the Blueprint Variable.
+1. Click the **plus sign** next to Blueprint Variables to add a new Blueprint Variable. This will pop up a menu to input information about the Blueprint Variable.
 
 ![](../.gitbook/assets/shipyard_2022_09_06_15_39_38.png)
 
@@ -46,7 +48,7 @@ Click on the **Python** option. You'll be immediately redirected to the next ste
 | Placeholder    | Name of the file that you want to convert |
 
 3. Click **Add Variable**.
-4. Click the **plus sign** to add a second Blueprint Variable. Input the following information:
+4. Click the **plus sign** next to Blueprint Variables to add a second Blueprint Variable. Input the following information:
 
 | Input          | Value                             |
 |----------------|-----------------------------------|
@@ -57,7 +59,7 @@ Click on the **Python** option. You'll be immediately redirected to the next ste
 | Placeholder    | Name of the file after converting |
 
 5. Click **Add Variable**.
-6. Click the **plus sign** to add a third Blueprint Variable. Input the following information:
+6. Click the **plus sign** next to Blueprint Variables to add a third Blueprint Variable. Input the following information:
 
 | Input          | Value                                                       |
 |----------------|-------------------------------------------------------------|
@@ -67,7 +69,7 @@ Click on the **Python** option. You'll be immediately redirected to the next ste
 | Required?      | Yes                                                         |
 | Placeholder    | File type of the initial file that will be converted to CSV |
 
-7. Before we click Add Variable, we need to add the options that the user will have when selecting a file type. Click the **plus sign** to add the following select options:
+7. Before we click Add Variable, we need to add the options that the user will have when selecting a file type. Click the **plus sign** next to Select Options 3 times to add the following select options:
 
 | Display Name | Reference Name |
 |--------------|----------------|
@@ -144,5 +146,5 @@ print(f'{converted_file} is ready to use!')
 ![](../.gitbook/assets/shipyard_2022_09_06_15_36_47.png)
 
 :::tip Success
-You've successfully created a Blueprint for your organization. Click **Use this Blueprint** or select it in the [Fleet Builder](../reference/fleets/visual-editor.md) to test it out!
+You've successfully created a Blueprint for your organization. Click **Use this Blueprint** or select it in the [Fleet Builder](../reference/fleets/visual-editor.md) to test it out! If you want to learn how to create a Fleet, feel free to head over to our [tutorial](../getting-started/first-fleet.md) on just that!
 :::
