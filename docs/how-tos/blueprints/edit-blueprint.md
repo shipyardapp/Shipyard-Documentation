@@ -27,7 +27,7 @@ Any edits made to a Blueprint will apply to every Dependent Vessel for a Bluepri
 1. Click the **Blueprints** navigation button on the side navigation.
 2. Find the Blueprint that you want to edit.
    1. Click on the **Edit** action to land on the Settings tab.
-   2. Click on the **Blueprint Name** to land on the [Inputs](../../reference/inputs/inputs-overview.md) tab.
+   2. Click on the **Blueprint Name** to land on the [Inputs](../../reference/inputs.md) tab.
 
 ### Step 2 - Make Edits
 Every tab, except for Vessels, has fields that can be added or edited. These fields will look extremely similar to what you see when initially [creating a Blueprint](create-blueprint.md).

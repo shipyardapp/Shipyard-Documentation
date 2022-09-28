@@ -35,3 +35,26 @@ This Blueprint is limited to executing a single query. You cannot run multiple q
 | Query | SNOWFLAKE_QUERY | Alphanumeric | :white_check_mark: | - | - | The contents of the SQL query that you want to run. Does not support running multiple queries separated by `;` |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+
+```yaml
+source:
+  blueprint: Snowflake - Execute Query
+  inputs:
+    Username: null ## REQUIRED
+    Password: null ## REQUIRED
+    Account Name: null ## REQUIRED
+    Warehouse: null 
+    Database: null ## REQUIRED
+    Schema: null 
+    Query: null ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "200-205"
+```

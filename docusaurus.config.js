@@ -15,6 +15,23 @@ module.exports = {
 	scripts: [
 		{
 			src: BASE_URL + "js/segment.js",
+			async: false,
+			"data-cookieyes": "cookieyes-analytics",
+		},
+		{
+			src: "https://www.googletagmanager.com/gtag/js?id=UA-142749850-1",
+			async: true,
+			"data-cookieyes": "cookieyes-analytics",
+		},
+		{
+			src: BASE_URL + "js/googleanalytics.js",
+			async: false,
+			"data-cookieyes": "cookieyes-analytics",
+		},
+		{
+			src: BASE_URL + "js/clearbit.js",
+			async: false,
+			"data-cookieyes": "cookieyes-analytics",
 		},
 	],
 	themeConfig: {
@@ -135,10 +152,11 @@ module.exports = {
 					editUrl:
 						"https://github.com/shipyardapp/Shipyard-Documentation/edit/main/",
 				},
-				googleAnalytics: {
-					trackingID: "UA-142749850-1",
-					anonymizeIP: true,
-				},
+				// Removing this in favor of manually inserting the script with cookieyes permissions.
+				// googleAnalytics: {
+				// 	trackingID: "UA-142749850-1",
+				// 	anonymizeIP: true,
+				// },
 				blog: {
 					showReadingTime: true,
 					// Please change this to your repo.
@@ -166,17 +184,14 @@ module.exports = {
 						from: ["/reference/glossary-of-terms"],
 					},
 					{
-						to: "/reference/blueprint-library/blueprint-library-overview",
+						to: "/reference/blueprints/blueprint-library/match-type/",
+						from: "/reference/blueprint-library/match-type/",
+					},
+					{
+						to: "/reference/blueprints/blueprint-library/blueprint-library-overview",
 						from: [
 							"/reference/blueprint-library",
 							"/reference/blueprint-library/blueprint-library",
-						],
-					},
-					{
-						to: "/tutorials/dbt-core-blueprint",
-						from: [
-							"/blueprint-library/dbt",
-							"/tutorials/dbt-blueprint",
 						],
 					},
 					{
@@ -214,6 +229,10 @@ module.exports = {
 					{
 						to: "/blueprint-library/dbt-cloud/dbt-cloud-overview",
 						from: ["/blueprint-library/dbt-cloud"],
+					},
+					{
+						to: "/blueprint-library/domo/domo-overview",
+						from: ["/blueprint-library/domo"],
 					},
 					{
 						to: "/blueprint-library/dropbox/dropbox-overview",
@@ -278,6 +297,18 @@ module.exports = {
 					{
 						to: "/blueprint-library/snowflake/snowflake-overview",
 						from: ["/blueprint-library/snowflake"],
+					},
+					{
+						to: "/blueprint-library/tableau/tableau-overview",
+						from: ["/blueprint-library/tableau"],
+					},
+					{
+						to: "/data-packages/dbt-core/dbt-core-overview",
+						from: ["/tutorials/dbt-blueprint"],
+					},
+					{
+						to: "/data-packages/great-expectations/great-expectations-blueprint",
+						from: ["/tutorials/great-expectations-blueprint"],
 					},
 				],
 				createRedirects: function (existingPath) {

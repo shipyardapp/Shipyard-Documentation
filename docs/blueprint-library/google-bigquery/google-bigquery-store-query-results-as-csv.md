@@ -30,3 +30,22 @@ Larger datasets may run into file size limitations set by BigQuery. In these ins
 | Service Account | GOOGLE_APPLICATION_CREDENTIALS | Password | :white_check_mark: | - | - | JSON from a Google Cloud Service account key. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+
+```yaml
+source:
+  blueprint: Google BigQuery - Store Query Results as CSV
+  inputs:
+    Query: null ## REQUIRED
+    Local File Name: null ## REQUIRED
+    Local Folder Name: null 
+    Service Account: null ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  
+```

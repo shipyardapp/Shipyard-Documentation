@@ -22,7 +22,7 @@ By the end of the tutorial, you'll be able to:
 
 - Set up a [Vessel](../reference/vessels.md) with Code
 - [Upload a script](../reference/code/upload-code.md) to Shipyard.
-- Reference [platform environment variables](../reference/shipyard-environment-variables.md).
+- Reference [platform environment variables](../reference/environment-variables/shipyard-environment-variables.md)
 - Check [Logs](../reference/logs/logs-overview.md) to verify that a Vessel correctly referenced the **webhook parameters**.
 
 ## Setup

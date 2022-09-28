@@ -18,12 +18,63 @@ The purpose of this changelog is to publicly document the updates we are continu
 Have a feature request, a bug report, a suggestion or an interesting use case? We'd love to hear it! Let us know at support@shipyardapp.com!
 :::
 
-## Features On Deck
+## Bigger Features On Deck
 
 _All timing of feature development is estimated and subject to change_
 
-- API Access for Exporting Logs (July)
-- API Access for Bulk Editing/Creating Fleets (July)
+- API Access for Exporting Logs (Sept)
+- API Access for Bulk Editing/Creating Fleets (Sept)
+- Credential Management (Late Q4)
+
+## 08/17/2022
+
+It's a Blueprint-palooza this week, with lots of new data vendors to integrate with and updates to improve the overall Blueprint experience.
+
+### New Features
+- We've added a handful of new Blueprints to the application. Check out the added functionality with the links below!
+  - [Mode](blueprint-library/mode/mode-overview.md)
+  - [Rudderstack](blueprint-library/rudderstack/rudderstack-overview.md)
+  - [Census](blueprint-library/census/census-overview.md)
+  - [Hightouch](blueprint-library/hightouch/hightouch-overview.md)
+  - [Databricks](blueprint-library/databricks/databricks-overview.md)
+  
+### Enhancements
+
+- The [Snowflake Upload CSV to Table](blueprint-library/snowflake/snowflake-upload-csv-to-table.md) Blueprint has been updated to use a new method for uploading by default. From our testing, uploads can now be up to 15x faster... and that's especially true for larger datasets. (We uploaded 25mm rows in under 5 minutes!)
+- The [HTTP Download File from URL](blueprint-library/http/http-download-file-from-url.md) Blueprint has been updated to accept custom headers so you can customize your requests.
+- The [Domo Blueprints](blueprint-library/domo/domo-overview.md) have been updated to accept developer tokens as an alternative to username/password.
+
+### Bug Fixes
+- Empty non-required password fields in Blueprint vessels were being rejected on Fleet save. They have now been authorized to remain empty if you so choose.
+
+## 08/15/2022
+
+### Enhancements
+
+- Get cracking with Shipyard! Our new **Get Started** page is a quick and easy guide for those who are new to the platform, but also a great way for current users to explore features. And that feeling you'll get when a completed task is greeted with a shower of confetti? Priceless.
+![Photo Get Started page](./.gitbook/assets/change_log_release_v0_302_0.png)
+
+## 07/26/2022
+
+### Enhancements
+
+- It's time for action! Fleets, Vessel, and Blueprint actions, that is. Now, you can perform all your favorite actions from a table with just one click. Just hover over the vertical dots in any _Action_ column and behold the menu of options: run now, delete, duplicate, and more.
+![Photo of Fleet Table Actions](./.gitbook/assets/change_log_release_v0_298_1.png)
+
+### Bug Fixes
+
+- We were taking it a wee bit personally when a user cancelled. Organizations with a previously cancelled [Team Plan](https://www.shipyardapp.com/pricing) weren't able to access anything. They now get all the perks of our [Developer Plan](faqs.md/#how-does-the-developer-plan-work). See, we forgive you.
+
+## 07/20/2022
+
+### Enhancements
+
+- We are just trying to help you, and frankly, you keep ignoring us. So, we've made our troubleshooting notification in an errored Vessel’s output a bit more, well, in your face. Honestly, it is just because we care.
+![Photo of Troubleshooting Notification](./.gitbook/assets/change_log_release_v0_297_1.png)
+
+### Bug Fixes
+
+- Changing a Blueprint's inputs, after creating a Vessel with it, was causing some odd behavior. Now, you'll see a warning when you try to access a Fleet or Vessel that is out of sync with a Blueprint. We hope you'll take the time to patch up the holes before anything sinks!
 
 ## 07/17/2022
 
@@ -55,7 +106,7 @@ _All timing of feature development is estimated and subject to change_
 
 ### New Features
 
-- [Fleets are now version controlled!](reference/version-control.md) Those of you on Team Plans now have access to the last six versions of your Fleets. Each version is presented in their [FAC](reference/fac.md) YAML format so they can be easily compared to the current configuration of the Fleet. In addition, you can revert to a previous version or create a brand new Fleet from a version. 
+- [Fleets are now version controlled!](reference/fleets/version-control.md) Those of you on Team Plans now have access to the last six versions of your Fleets. Each version is presented in their [YAML format](reference/fleets/yaml-editor.md) so they can be easily compared to the current configuration of the Fleet. In addition, you can revert to a previous version or create a brand new Fleet from a version. 
 ![Photo of Fleet Version Control](./.gitbook/assets/version-control-overview-1.png)
 
 ### Bug Fixes
@@ -308,7 +359,7 @@ selected for building from that Blueprint.
 ## 11/29/2021
 
 ### New Features
-- Updated the Fleet Builder tab to allow the creation of multiple Vessels all from one location. You will no longer need to create individual Vessels first then string them together. In fact - you can't! If you're wanting to connect Vessels, you'll need to build them as part of your Fleet initially. See more about these changes [here](reference/fleets.md#visual-editor)
+- Updated the Fleet Builder tab to allow the creation of multiple Vessels all from one location. You will no longer need to create individual Vessels first then string them together. In fact - you can't! If you're wanting to connect Vessels, you'll need to build them as part of your Fleet initially. See more about these changes [here](reference/fleets/fleets-overview.md#visual-editor)
 - Added the ability to Duplicate a Fleet. See more about these changes [here](how-tos/fleets/duplicate-fleet.md)
 - Added the ability to Duplicate a Vessel directly from the Fleet Builder screen.
 
@@ -334,8 +385,8 @@ selected for building from that Blueprint.
 ## 10/19/2021
 
 ### New Features
-- Updated the Fleet Builder tab to allow editing of multiple Vessels all from one location. See more about these changes [here](reference/fleets.md#visual-editor)
-- There's a new feature for Guardrails to exclude specific exit codes. This was custom-built to help situations when working with asynchronous APIs where you may not need to keep retrying because a final result of an error is returned and that will never change. See more about these changes [here](reference/settings/guardrails.md#exclude-exit-code-ranges).
+- Updated the Fleet Builder tab to allow editing of multiple Vessels all from one location. See more about these changes [here](reference/fleets/fleets-overview.md#visual-editor)
+- There's a new feature for Guardrails to exclude specific exit codes. This was custom-built to help situations when working with asynchronous APIs where you may not need to keep retrying because a final result of an error is returned and that will never change. See more about these changes [here](reference/guardrails.md#exclude-exit-code-ranges).
 
 ### Enhancements
 - Arguments are now more flexible. You can provide only a flag, a flag and a value, or just a value. 

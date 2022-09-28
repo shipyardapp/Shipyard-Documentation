@@ -13,7 +13,9 @@ keywords:
 
 ## Definition
 
-The Logs tab of a Fleet shows two lists: historical and upcoming. The Historical tab shows a list of each unique log of every Fleet Voyage or run that has occurred, alongside additional metadata and graphs around performance. The Upcoming tab shows a list of scheduled runs for the Fleet. By clicking on an ID or the Open action, you can view more information.
+The Logs tab of a Fleet shows two lists: historical and upcoming. 
+- The Historical tab shows a list of each unique log of every Fleet Voyage or run that has occurred, alongside additional metadata and graphs around performance. 
+- The Upcoming tab shows a list of scheduled runs for the Fleet. By clicking on an ID or the Open action, you can view more information.
 
 The graph on the Fleet Logs Historical tab shows historical run durations trended out for all logs shown on the current page.
 
@@ -21,11 +23,11 @@ The graph on the Fleet Logs Historical tab shows historical run durations trende
 
 The graph on the individual Fleet Log page shows a Gantt chart view of the order and length of time that each Vessel in the fleet ran for.
 
-The table below shows all of the [Vessel Logs](vessel-logs.md) that were created and run as a part of the current Fleet. You can view more information about the individual Vessel Log by clicking on the ID or the Open action.
+The table below shows all of the [Vessel Logs](vessel-logs.md) that were created and run as a part of the current Fleet. You can view more information about the individual Vessel Log by clicking on the ID.
 
 ### Live Update
 
-In the **Overview** tab a log has a status of *Scheduled* or *Running*, the individual Log page will automatically refresh every few seconds to show:
+In the **Overview** tab, if a log has a status of *Scheduled* or *Running*, the individual Log page will automatically refresh every few seconds to show:
 
 - Current Fleet Status
 - Current Duration
@@ -44,7 +46,7 @@ The content will be rendered as a JSON object in the UI with two optional fields
 - `headers_content`: this contains any key-value pairs that may have been sent as headers in the webhook trigger
 - `body_content`: this contains the full payload in whatever format it was received in the webhook trigger
 
-These values can be accessed as files via the [platform environment variables](../shipyard-environment-variables.md) of `SHIPYARD_WEBHOOK_HEADERS_FILE` and `SHIPYARD_WEBHOOK_BODY_FILE` that hold the path to each file which looks like `/home/shipyard/<voyage_id>.webhook_headers` and `/home/shipyard/<voyage_id>.webhook_body`, respectively.
+These values can be accessed as files via the [platform environment variables](../environment-variables/environment-variables-overview.md) of `SHIPYARD_WEBHOOK_HEADERS_FILE` and `SHIPYARD_WEBHOOK_BODY_FILE` that hold the path to each file which looks like `/home/shipyard/<voyage_id>.webhook_headers` and `/home/shipyard/<voyage_id>.webhook_body`, respectively.
 
 The **headers** file is stored as JSON and the **body** file is stored in the same format it was received (e.g. JSON, YAML, etc.).
 

@@ -24,8 +24,9 @@ Download a card from Domo as a CSV, XLSX, or PPT file. Typically used for pullin
 
 | Name | Reference | Type | Required | Default | Options | Description |
 |:---|:---|:---|:---|:---|:---|:---|
-| Email | DOMO_EMAIL | Alphanumeric | :white_check_mark: | - | - | Email that you use to log into Domo. |
-| Password | DOMO_PASSWORD | Password | :white_check_mark: | - | - | Password associated to the email used to sign into Domo. |
+| Access Token | DOMO_ACCESS_TOKEN | Password | :heavy_minus_sign: | - | - | Access token to authenticate with Domo. Used in place of username/password. |
+| Email | DOMO_EMAIL | Alphanumeric | :heavy_minus_sign: | - | - | Email that you use to log into Domo. Used with the password for authentication as an alternative method to providing an access token. |
+| Password | DOMO_PASSWORD | Password | :heavy_minus_sign: | - | - | Password associated to the email used to sign into Domo. Used with the email for authentication as an alternative method to providing an access token. |
 | Domo Instance | DOMO_INSTANCE | Alphanumeric | :white_check_mark: | - | - | Typically found in the URL structure as https://DOMOINSTANCE.domo.com |
 | Card ID | DOMO_CARD_ID | Alphanumeric | :white_check_mark: | - | - | Numeric ID of the card you want to download, typically found at the end of the URL. |
 | Download As | DOMO_FILE_TYPE | Select | :white_check_mark: | `csv` | .csv: `csv`<br></br><br></br>.xlsx: `excel`<br></br><br></br>.ppt: `ppt` | File format to download the specified card as. |
@@ -33,4 +34,32 @@ Download a card from Domo as a CSV, XLSX, or PPT file. Typically used for pullin
 | Folder Name | DOMO_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the file will be created. Leave blank to store in the current working directory |
 
 
+## YAML
 
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+
+```yaml
+source:
+  blueprint: Domo - Download Card
+  inputs:
+    Email: null ## REQUIRED
+    Password: null ## REQUIRED
+    Domo Instance: null ## REQUIRED
+    Card ID: null ## REQUIRED
+    Download As: csv ## REQUIRED
+    File Name: null ## REQUIRED
+    Folder Name: null 
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "200"
+    - "201"
+    - "203"
+    - "204"
+    - "205"
+    - "210"
+    - "211"
+```

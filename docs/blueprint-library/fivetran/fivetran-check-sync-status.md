@@ -53,3 +53,21 @@ The response for this request will always be stored at `shipyard-artifacts/fivet
 | Connector ID | FIVETRAN_CONNECTOR_ID | Alphanumeric | :heavy_minus_sign: | - | - | The unique ID associated with a connector. This should be left blank if connected to an Execute Sync Blueprint. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+
+```yaml
+source:
+  blueprint: Fivetran - Check Sync Status
+  inputs:
+    API Key: null ## REQUIRED
+    API Secret: null ## REQUIRED
+    Connector ID: null 
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 5m0s
+  runtime_cutoff: 4h0m0s
+  
+```

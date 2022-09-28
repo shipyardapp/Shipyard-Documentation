@@ -37,3 +37,25 @@ Content of the downloaded file can be refined by providing a cell range. Otherwi
 | Service Account | GOOGLE_APPLICATION_CREDENTIALS | Password | :white_check_mark: | - | - | JSON from a Google Cloud Service account key. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+
+```yaml
+source:
+  blueprint: Google Sheets - Download Sheet to CSV
+  inputs:
+    Google Spreadsheet Name or ID: null ## REQUIRED
+    Tab Name: null 
+    Shared Drive Name: null 
+    Local File Name: null ## REQUIRED
+    Local Folder Name: null 
+    Cell Range: null 
+    Service Account: null ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  
+```

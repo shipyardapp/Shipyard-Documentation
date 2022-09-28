@@ -15,7 +15,7 @@ keywords:
 
 ## Overview
 
-If you want multiple [Vessels](../../reference/vessels.md) to work together for a larger goal, then you want to set up a [Fleet](../../reference/fleets.md). This how to guide will walk you through the steps to create a Fleet.
+If you want multiple [Vessels](../../reference/vessels.md) to work together for a larger goal, then you want to set up a [Fleet](../../reference/fleets/fleets-overview.md). This how to guide will walk you through the steps to create a Fleet.
 
 ## Steps
 
@@ -30,7 +30,7 @@ If you want multiple [Vessels](../../reference/vessels.md) to work together for 
 9. Click the cog icon along the left side of the Fleet Builder sidebar to select a project and update Fleet settings as desired.
 10. Click the **Save & Finish** button to save the new Fleet.
 
-For more information, read up on our [Visual Fleet Builder](../../reference/fleets.md#visual-editor) or our [YAML Editor](../../reference/fleets.md#yaml-editor).
+For more information, read up on our [Visual Fleet Builder](../../reference/fleets/fleets-overview.md#visual-editor) or our [YAML Editor](../../reference/fleets/fleets-overview.md#yaml-editor).
 
 :::tip success
 You've now successfully created a Fleet.

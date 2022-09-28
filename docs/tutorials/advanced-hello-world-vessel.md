@@ -22,10 +22,10 @@ By the end of the tutorial, you'll be able to:
 
 - Set up a [Vessel](../reference/vessels.md) with Code
 - [Upload a script](../reference/code/upload-code.md) to Shipyard.
-- Pass [arguments](../reference/code/command.md#arguments) to your solution.
-- Pass [environment variables](../reference/requirements/environment-variables.md) to your solution.
-- Install [package dependencies](../reference/requirements/external-package-dependencies.md) for your solution.
-- Reference [platform environment variables](../reference/shipyard-environment-variables.md).
+- Pass [arguments](../reference/arguments.md) to your solution.
+- Pass [environment variables](../reference/environment-variables/environment-variables-overview.md) to your solution.
+- Install [package dependencies](../reference/packages/external-package-dependencies.md) for your solution.
+- Reference [platform environment variables](../reference/environment-variables/shipyard-environment-variables.md).
 - Check [Logs](../reference/logs/logs-overview.md) to verify that a Vessel ran successfully.
 
 ## Setup
@@ -41,7 +41,7 @@ Feel free to peruse this script beforehand so you understand everything that it'
 1. Prints `Hello` and `{your_name}` by referencing the command argument of `--name`.
 2. Prints custom text that is stored as an environment variable called `CUSTOM_TEXT`.
 3. Connects to an [external API](https://alexwohlbruck.github.io/cat-facts/), using the requests library, to find and print a random Cat Fact.
-4. Prints information about the current run, including a timestamp and a link to the current log by using [Platform Environment Variables](../reference/shipyard-environment-variables.md).
+4. Prints information about the current run, including a timestamp and a link to the current log by using [Platform Environment Variables](../reference/environment-variables/shipyard-environment-variables.md).
 
 
 ## Steps
@@ -93,7 +93,7 @@ values={[
 1. On the left side of the screen, select the **Upload** option. 
 2. Click the upload section icon and select the `hello_world_advanced.zip` file from your computer.
 3. On the right-hand side of the screen, there is a field entitled **File to Run**. Because the .zip contains a single python file named `hello_world_advanced.py`, you'll need to use that name.
-4. Click the **+** icon next to Arguments to create a new [command argument](../reference/code/command.md#arguments).
+4. Click the **+** icon next to Arguments to create a new [command argument](../reference/arguments.md).
 5. In the **flag** field on the left-hand side, type `--name`.
 6. In the **value** field on the right-hand side of the new argument, type your name.
 

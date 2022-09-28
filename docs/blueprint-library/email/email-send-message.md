@@ -16,7 +16,7 @@ keywords:
 
 &gt; ## **First time using this Blueprint? Make sure you follow our [Email authorization guide](https://www.shipyardapp.com/docs/blueprint-library/email/email-authorization/)**.
 
-Send a message to anyone in the world using email, attaching one or more files.
+Send a message to anyone in the world using email.
 
 
 
@@ -39,3 +39,31 @@ Send a message to anyone in the world using email, attaching one or more files.
 | Include Shipyard Footer? | EMAIL_INCLUDE_SHIPYARD_FOOTER | Boolean | :white_check_mark: | true | - | Determines if a footer should be sent with the email that links back to the originating Vessel or Fleet. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+
+```yaml
+source:
+  blueprint: Email - Send Message
+  inputs:
+    Send Method: tls ## REQUIRED
+    SMTP Host: null ## REQUIRED
+    SMTP Port: null ## REQUIRED
+    Username: null ## REQUIRED
+    Password: hlgyecgskabctidf ## REQUIRED
+    Sender Address: null ## REQUIRED
+    Sender Name: null 
+    TO: null 
+    CC: null 
+    BCC: null 
+    Subject: null 
+    Message: null ## REQUIRED
+    Include Shipyard Footer?: true ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  
+```

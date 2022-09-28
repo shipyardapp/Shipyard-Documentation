@@ -24,7 +24,10 @@ A log is created under the following conditions:
 
 ### Log Retention
 
-Log data is routinely deleted from our system to decrease storage costs. The amount of time we'll hold onto your logs is determined by the pricing tier that you're currently subscribed to. Currently, we keep logs around for a minimum of 7 days.
+Log data is routinely deleted from our system to decrease storage costs. The amount of time we'll hold onto your logs is determined by the pricing tier that you're currently subscribed to. Currently, we keep logs around for a minimum of 90 days.
+- Developer Plan has access to 7 days of logs.
+- Team Plan has access to 30 days of logs.
+- Enterprise plan has access to a custom amount of logs.
 
 ### Log Data
 
@@ -36,5 +39,4 @@ The data contained within a Log differs slightly for Vessels and Fleetsv. Explor
 ## Additional Notes
 
 1. Logs cannot be manually removed from Shipyard by users. If you need a log deleted because sensitive information was accidentally printed, contact [support](mailto:support@shipyardapp.com).
-2. Logs cannot currently be exported from Shipyard for analysis. If you need access to this data, reach out to [support](mailto:support@shipyardapp.com).
-3. We currently only expose a portion of the available log data, but we have more metadata stored on the backend. If there's something you would like to see, please contact [support](mailto:support@shipyardapp.com).
+2. We currently only expose a portion of the available log data, but we have more metadata stored on the backend. If there's something you would like to see, please contact [support](mailto:support@shipyardapp.com).

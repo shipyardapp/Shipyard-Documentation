@@ -35,7 +35,7 @@ In all instances, if the table name does not already exist, a new table will be 
 |:---|:---|:---|:---|:---|:---|:---|
 | API Key | BITIO_API_KEY | Password | :white_check_mark: | - | - | API Key associated to your bit.io account. For more information, see the Authorization documentation. |
 | Folder Name | BITIO_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the file to upload can be found. If left blank, will search in the current working directory. |
-| File Name Match Type | BITIO_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in &#34;File Name&#34; will match exactly to a single file, or use regex to match to multiple files. |
+| File Name Match Type | BITIO_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in `File Name` will match exactly to a single file, or use regex to match to multiple files. |
 | File Name | BITIO_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | The file name that contains the data you want uploaded. |
 | Schema | BITIO_SCHEMA | Alphanumeric | :heavy_minus_sign: | - | - | Schema where the table you&#39;re creating or uploading to exists. |
 | Table Name | BITIO_TABLE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the table where you want data inserted. If the table doesn&#39;t already exist, it will be created. |

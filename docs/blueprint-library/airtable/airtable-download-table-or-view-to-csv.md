@@ -37,3 +37,26 @@ Content of the downloaded file can be further refined by providing a view. Other
 | Local Folder Name | AIRTABLE_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | lder where the file should be downloaded. Leaving blank will place the file in the home directory. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+
+```yaml
+source:
+  blueprint: Airtable - Download Table or View to CSV
+  inputs:
+    Base ID: null ## REQUIRED
+    Table Name or ID: null ## REQUIRED
+    View Name or ID: null 
+    Include Record IDs?: true ## REQUIRED
+    API Key: null ## REQUIRED
+    Local File Name: null ## REQUIRED
+    Local Folder Name: null 
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "200-203"
+```

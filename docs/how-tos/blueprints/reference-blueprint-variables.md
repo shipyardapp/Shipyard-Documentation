@@ -18,7 +18,7 @@ import TabItem from '@theme/TabItem';
 
 ## Overview
 
-As part of creating a Blueprint, you'll no doubt have multiple [Blueprint Variables](../../reference/inputs/blueprint-variables.md) that users can fill out. To access the user input, you'll want to use the Variable's Reference Name. This how to guide will walk you through the steps to reference those Blueprint Variables in your code.
+As part of creating a Blueprint, you'll no doubt have multiple [Blueprint Variables](../../reference/blueprints/org-blueprints/blueprint-variables.md) that users can fill out. To access the user input, you'll want to use the Variable's Reference Name. This how to guide will walk you through the steps to reference those Blueprint Variables in your code.
 
 
 
@@ -38,7 +38,7 @@ values={[
 ]}>
 <TabItem value="ui">
 
-1. Locate the field where you want user data to flow into. Common locations are in the [Argument Value ](../../reference/code/command.md#arguments)or the [Environment Variable Value](../../reference/requirements/environment-variables.md) field.
+1. Locate the field where you want user data to flow into. Common locations are in the [Argument Value ](../../reference/arguments.md) or the [Environment Variable Value](../../reference/environment-variables/environment-variables-overview.md) field.
 2. Use the format of `${VAR_NAME}` , replacing `VAR_NAME` with your Reference Name. For our example, this would be `${cool_var_name}`
 3. Save the Vessel.
 
@@ -46,7 +46,7 @@ Now, when the Vessel runs, the reference of `${cool_var_name}` will be replaced 
 </TabItem>
 <TabItem value='env'>
 
-1. In your code, set a variable to [access data from an Environment Variable](../access-environment-variables.md) whose name matches the Reference Name. 
+1. In your code, set a variable to [access data from an Environment Variable](../environment-variables/access-environment-variables-with-code.md) whose name matches the Reference Name. 
 2. Save and/or re-upload your code depending on your setup.
 
 

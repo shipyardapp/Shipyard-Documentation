@@ -36,3 +36,29 @@ Turn the results of your SQL SELECT statement into a CSV file. Extract your Snow
 | Include Column Names as Header? | SNOWFLAKE_FILE_HEADER | Boolean | :white_check_mark: | true | - | If checked, your CSV file will include a header row with column names. |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+
+```yaml
+source:
+  blueprint: Snowflake - Store Query Results as CSV
+  inputs:
+    Username: null ## REQUIRED
+    Password: null ## REQUIRED
+    Account Name: null ## REQUIRED
+    Warehouse: null 
+    Database: null ## REQUIRED
+    Schema: null 
+    Query: null ## REQUIRED
+    Local File Name: null ## REQUIRED
+    Local Folder Name: null 
+    Include Column Names as Header?: true ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "200-206"
+```

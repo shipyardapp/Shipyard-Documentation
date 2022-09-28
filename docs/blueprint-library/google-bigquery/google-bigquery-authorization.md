@@ -57,4 +57,4 @@ In order to get started with the Google BigQuery Blueprints, a service account w
 	![Create key dropdown button](../../.gitbook/assets/service-account-add-key-button.png)  
 13. In the popup modal select the "**JSON**" radio button  
 14. Click "**CREATE**"  
-15. Copy the downloaded file JSON contents and save for safe keeping. The contents of this file can be pasted into the "**Service Account**" input for all Bigquery Blueprints.
+15. Copy the downloaded file JSON contents and save for safe keeping. The contents of this file can be pasted into the "**Service Account**" input for all BigQuery Blueprints.

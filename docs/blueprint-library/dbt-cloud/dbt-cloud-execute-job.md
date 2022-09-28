@@ -20,7 +20,7 @@ Execute a single job on dbt Cloud, creating a new run. The job must be set up wi
 
 This Blueprint will only kick off the job and will always return a status of success. It will not wait around to verify if the created run was successfully completed, but it will create and store the generated run ID to _shipyard-artifacts/dbtcloud-blueprints/variables/run_id.pickle_
 
-The &#34;cause&#34; for an execution triggered via Shipyard will always contain the following details:
+The `cause` for an execution triggered via Shipyard will always contain the following details:
 - Fleet ID
 - Vessel ID
 - Vessel Log ID
@@ -39,3 +39,25 @@ The response for this request will always be stored at _shipyard-artifacts/dbtcl
 | Job ID | DBT_JOB_ID | Alphanumeric | :white_check_mark: | - | - | The ID of a specific job you want to run, found in the URL of dbt Cloud. https://cloud.getdbt.com/#/accounts/ACCOUNT_ID/projects/PROJECT_ID/jobs/JOB_ID/ |
 
 
+## YAML
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+
+```yaml
+source:
+  blueprint: dbt Cloud - Execute Job
+  inputs:
+    Service Token: null ## REQUIRED
+    Account ID: null ## REQUIRED
+    Job ID: null ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0s
+  runtime_cutoff: 4h0m0s
+  exclude_exit_code_ranges:
+    - "200"
+    - "201"
+    - "211"
+    - "212"
+```

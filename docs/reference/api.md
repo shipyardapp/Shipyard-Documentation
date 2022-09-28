@@ -125,7 +125,7 @@ curl https://api.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/proje
 
 #### Response
 
-The Fleet is returned in [FAC YAML](fac.md) format.
+The Fleet is returned in [FAC YAML](fleets/yaml-editor.md) format.
 
 ```yaml
 name: example fleet
@@ -142,11 +142,11 @@ vessels:
 curl -X PUT https://api.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets --data-binary @fleet.yaml -header "Content-type: application/yaml" --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
 ```
 
-The contents of `fleet.yaml` would be in the required [FAC format](fac.md).
+The contents of `fleet.yaml` would be in the required [FAC format](fleets/yaml-editor.md).
 
 #### Response
 
-The Fleet is returned in [FAC YAML](fac.md) format.
+The Fleet is returned in [FAC YAML](fleets/yaml-editor.md) format.
 
 ```yaml
 name: example fleet
@@ -157,7 +157,7 @@ vessels:
 
 
 
-### Get Fleet Runs
+### List Fleet Runs
 
 #### Request
 
@@ -181,9 +181,51 @@ Below is a reference table for the Fleet Runs CSV.
 | Fleet ID | The UUID of the associated Fleet |
 | Fleet Name | The name of the associated Fleet |
 | Fleet Version | The version number of the associated Fleet |
-| Fleet Run ID | The UUID of the Fleet Run |
+| Fleet Log ID | The UUID of the Fleet Run log |
 | Status | The status the Fleet Run completed in |
-| Run Time | The time the Fleet Run began in RFC3339 format |
+| Start Time | The time the Fleet Run started |
+| End Time | The time the Fleet Run ended |
 | Duration | The length of time the Fleet Run ran for |
 | Billable Runtime | The length of time the Fleet Run ran the customer will be billed for |
 | Vessels Count | The number of Vessels in the associated Fleet |
+| Trigger | The method the Fleet Run was started by |
+
+### List Voyages
+
+#### Request
+
+This request returns all of the Voyages in the requested Organization.
+
+```bash
+curl https://api.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/voyages --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
+```
+
+#### Response
+
+The Voyages are returned in CSV format.
+
+```csv
+Fleet ID,Fleet Name,Fleet Version,...
+fleet_id,example fleet,1,...
+```
+
+Below is a reference table for the Fleet Runs CSV.
+
+| Column | Description |
+|---|---|
+| Fleet ID | The UUID of the Fleet |
+| Fleet Name | The name of the Fleet |
+| Fleet Version | The version number of the Fleet |
+| Fleet Log ID | The UUID of the Fleet log |
+| Fleet Log Trigger | The method the Fleet was started by |
+| Fleet Log Status | The status the Fleet completed in |
+| Vessel Log ID | The UUID of the Vessel log |
+| Vessel Status | The status the Vessel completed in |
+| Vessel Name | The name of the Vessel |
+| Vessel Trigger | The method the Vessel was started by |
+| Retries | The number of times the Vessel attempted to run |
+| Exit Code | The final exit code for the Vessel final run |
+| Vessel Start Time | The time the Vessel started |
+| Vessel End Time | The time the Vessel ended |
+| Duration | The length of time the Fleet ran for |
+| Billable Runtime | The length of time the Fleet ran the customer will be billed for |

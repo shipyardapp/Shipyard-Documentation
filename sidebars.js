@@ -18,10 +18,6 @@ module.exports = {
 			"reference/projects",
 
 			{
-				"Blueprint Library": [
-					"reference/blueprint-library/blueprint-library-overview",
-					"reference/blueprint-library/match-type",
-				],
 				Admin: [
 					"reference/admin/billing",
 					"reference/admin/usage-dashboard",
@@ -35,36 +31,54 @@ module.exports = {
 					},
 				],
 			},
-			"reference/blueprints",
-			"reference/vessels",
-			"reference/fleets",
-			"reference/fac",
-			"reference/version-control",
 			{
-				"Code Tab": [
+				Blueprints: [
+					"reference/blueprints/blueprints-overview",
+					,
+					{
+						"Library Blueprints": [
+							"reference/blueprints/blueprint-library/blueprint-library-overview",
+							"reference/blueprints/blueprint-library/match-type",
+						],
+						"Org Blueprints": [
+							"reference/blueprints/org-blueprints/blueprint-variables",
+							"reference/blueprints/org-blueprints/blueprint-description",
+							"reference/blueprints/org-blueprints/blueprint-preview",
+							"reference/blueprints/org-blueprints/visibility",
+						],
+					},
+				],
+				Fleets: [
+					"reference/fleets/fleets-overview",
+					"reference/fleets/visual-editor",
+					"reference/fleets/yaml-editor",
+					"reference/fleets/version-control",
+				],
+			},
+			"reference/vessels",
+			"reference/inputs",
+			{
+				Code: [
 					"reference/code/code-overview",
 					"reference/code/write-code",
 					"reference/code/upload-code",
 					"reference/code/git-connection",
-					"reference/code/command",
 				],
-				"Inputs Tab": [
-					"reference/inputs/inputs-overview",
-					"reference/inputs/vessel-inputs",
-					"reference/inputs/blueprint-variables",
-					"reference/inputs/blueprint-description",
-					"reference/inputs/blueprint-preview",
+			},
+			"reference/arguments",
+			{
+				"Environment Variables": [
+					"reference/environment-variables/environment-variables-overview",
+					"reference/environment-variables/shipyard-environment-variables",
 				],
-				"Requirements Tab": [
-					"reference/requirements/environment-variables",
-					"reference/requirements/external-package-dependencies",
-					"reference/requirements/system-package-dependencies",
+				Packages: [
+					"reference/packages/external-package-dependencies",
+					"reference/packages/system-package-dependencies",
 				],
-				"Settings Tab": [
-					"reference/settings/information",
-					"reference/settings/notifications",
-					"reference/settings/guardrails",
-				],
+			},
+			"reference/notifications",
+			"reference/guardrails",
+			{
 				Logs: [
 					"reference/logs/logs-overview",
 					"reference/logs/vessel-logs",
@@ -80,11 +94,9 @@ module.exports = {
 					"reference/other-functions/duplication",
 					"reference/other-functions/status",
 					"reference/other-functions/timestamps-and-timezones",
-					"reference/other-functions/visibility",
 				],
 			},
 			"reference/api",
-			"reference/shipyard-environment-variables",
 			"reference/shipyard-url-structures",
 		],
 		"💡 How-Tos": [
@@ -119,22 +131,26 @@ module.exports = {
 				Vessels: [
 					"how-tos/vessels/build-vessel-code",
 					"how-tos/vessels/build-vessel-blueprint",
-					"how-tos/vessels/delete-vessel",
+					"how-tos/vessels/remove-vessel",
 					"how-tos/vessels/edit-vessel",
 					"how-tos/vessels/duplicate-vessel",
 					"how-tos/vessels/search-for-vessel",
 					"how-tos/vessels/assess-vessel-performance",
 				],
 				Code: ["how-tos/code/download-code"],
+				"Environment Variables": [
+					"how-tos/environment-variables/access-environment-variables-with-code",
+					"how-tos/environment-variables/access-environment-variables-in-ui",
+				],
 			},
-			"how-tos/access-environment-variables",
 		],
 		"🎯 Tutorials": [
 			"tutorials/advanced-code-vessel",
-			"tutorials/great-expectations-blueprint",
-			"tutorials/dbt-core-blueprint",
 			"tutorials/non-native-language-vessels",
 			"tutorials/referencing-fleet-webhook-parameters",
+			"tutorials/create-fleets-with-yaml",
+			"tutorials/create-blueprint",
+			"tutorials/upload-local-file"
 		],
 		"📦 Library Blueprints": [
 			{
@@ -180,6 +196,20 @@ module.exports = {
 					"blueprint-library/box/box-authorization",
 					"blueprint-library/box/box-download-files",
 					"blueprint-library/box/box-upload-files",
+				],
+				Census: [
+					"blueprint-library/census/census-overview",
+					"blueprint-library/census/census-authorization",
+					"blueprint-library/census/census-trigger-sync",
+					"blueprint-library/census/census-check-sync-status",
+				],
+				Databricks: [
+					"blueprint-library/databricks/databricks-overview",
+					"blueprint-library/databricks/databricks-authorization",
+					"blueprint-library/databricks/databricks-download-files-from-dbfs",
+					"blueprint-library/databricks/databricks-upload-files-to-dbfs",
+					"blueprint-library/databricks/databricks-move-or-rename-files-on-dbfs",
+					"blueprint-library/databricks/databricks-delete-files-from-dbfs",
 				],
 				"Data Manipulation": [
 					"blueprint-library/data-manipulation/data-manipulation-overview",
@@ -261,6 +291,12 @@ module.exports = {
 					"blueprint-library/google-sheets/google-sheets-upload-csv-to-sheet",
 					"blueprint-library/google-sheets/google-sheets-clear-data-from-sheet",
 				],
+				Hightouch: [
+					"blueprint-library/hightouch/hightouch-overview",
+					"blueprint-library/hightouch/hightouch-authorization",
+					"blueprint-library/hightouch/hightouch-trigger-sync",
+					"blueprint-library/hightouch/hightouch-check-sync-status",
+				],
 				HTTP: [
 					"blueprint-library/http/http-overview",
 					"blueprint-library/http/http-requests",
@@ -272,6 +308,13 @@ module.exports = {
 					"blueprint-library/microsoft-sql-server/microsoft-sql-server-execute-query",
 					"blueprint-library/microsoft-sql-server/microsoft-sql-server-store-query-results-as-csv",
 					"blueprint-library/microsoft-sql-server/microsoft-sql-server-upload-csv-to-table",
+				],
+				Mode: [
+					"blueprint-library/mode/mode-overview",
+					"blueprint-library/mode/mode-authorization",
+					"blueprint-library/mode/mode-trigger-report-refresh",
+					"blueprint-library/mode/mode-check-run-status",
+					"blueprint-library/mode/mode-download-report-as-file",
 				],
 				MySQL: [
 					"blueprint-library/mysql/mysql-overview",
@@ -286,6 +329,12 @@ module.exports = {
 					"blueprint-library/postgresql/postgresql-execute-query",
 					"blueprint-library/postgresql/postgresql-store-query-results-as-csv",
 					"blueprint-library/postgresql/postgresql-upload-csv-to-table",
+				],
+				RudderStack: [
+					"blueprint-library/rudderstack/rudderstack-overview",
+					"blueprint-library/rudderstack/rudderstack-authorization",
+					"blueprint-library/rudderstack/rudderstack-trigger-sync",
+					"blueprint-library/rudderstack/rudderstack-check-sync-status",
 				],
 				SFTP: [
 					"blueprint-library/sftp/sftp-overview",
@@ -316,6 +365,20 @@ module.exports = {
 					"blueprint-library/tableau/tableau-trigger-workbook-refresh",
 					"blueprint-library/tableau/tableau-check-refresh-status",
 					"blueprint-library/tableau/tableau-download-view",
+				],
+			},
+		],
+		"🗂 Data Packages": [
+			{
+				"dbt Core": [
+					"data-packages/dbt-core/dbt-core-overview",
+					"data-packages/dbt-core/dbt-core-set-up-data-warehouse",
+					"data-packages/dbt-core/dbt-core-set-up-dbt",
+					"data-packages/dbt-core/dbt-core-set-up-shipyard",
+					"data-packages/dbt-core/dbt-core-run-and-generate-docs",
+				],
+				"Great Expectations": [
+					"data-packages/great-expectations/great-expectations-blueprint",
 				],
 			},
 		],
