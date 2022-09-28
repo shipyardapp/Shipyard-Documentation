@@ -120,7 +120,7 @@ curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/f
 #### Request
 
 ```bash
-curl https://api.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets/33333333-3333-3333-3333-333333333333 --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
+curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets/33333333-3333-3333-3333-333333333333 --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
 ```
 
 #### Response
@@ -139,7 +139,7 @@ vessels:
 #### Request
 
 ```bash
-curl -X PUT https://api.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets --data-binary @fleet.yaml -header "Content-type: application/yaml" --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
+curl -X PUT https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets --data-binary @fleet.yaml -header "Content-type: application/yaml" --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
 ```
 
 The contents of `fleet.yaml` would be in the required [FAC format](fleets/yaml-editor.md).
@@ -162,7 +162,7 @@ vessels:
 #### Request
 
 ```bash
-curl https://api.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets/33333333-3333-3333-3333-333333333333/runs --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
+curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets/33333333-3333-3333-3333-333333333333/runs --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
 ```
 
 #### Response
@@ -197,7 +197,7 @@ Below is a reference table for the Fleet Runs CSV.
 This request returns all of the Voyages in the requested Organization.
 
 ```bash
-curl https://api.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/voyages --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
+curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/voyages --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
 ```
 
 #### Response
