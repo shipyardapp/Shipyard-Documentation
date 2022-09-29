@@ -17,7 +17,7 @@ keywords:
 The **API** allows for programmatic access to a subset of Shipyard's features. This allows users to write scripts and programs to directly interact with the Shipyard platform instead of through the UI interface.
 
 :::info
-Shipyard's API is currently in private beta and is only available to customers on paid plans. If you want access, please reach out to [support@shipyardapp.com](mailto:support@shipyardapp.com)
+Shipyard's API is currently only available to customers on paid plans.
 
 **Please Note**
 1. The API is subject to change. The API is tightly coupled with the front end of the application, which is subject to change between releases. While endpoints usually won’t change that much, if you write code to use the API, you might have to update it in the future.
