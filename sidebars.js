@@ -96,6 +96,7 @@ module.exports = {
 					"reference/other-functions/timestamps-and-timezones",
 				],
 			},
+			"reference/api",
 			"reference/shipyard-url-structures",
 		],
 		"💡 How-Tos": [
