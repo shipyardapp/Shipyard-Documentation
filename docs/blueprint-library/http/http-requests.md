@@ -36,24 +36,25 @@ For downloading large files, we recommend using the *HTTP - Download File from U
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
   blueprint: HTTP - Requests
   inputs:
-    Method: GET ## REQUIRED
-    URL: null ## REQUIRED
-    Content Type: application/json ## REQUIRED
-    Authorization Header: null 
-    Message: null 
-    Destination Folder Name: null 
-    Destination File Name: response.txt ## REQUIRED
-    Print Response to Output?: false ## REQUIRED
+    HTTP_METHOD: GET ## REQUIRED
+    HTTP_URL: null ## REQUIRED
+    HTTP_CONTENT_TYPE: application/json ## REQUIRED
+    HTTP_AUTHORIZATION_HEADER: null 
+    HTTP_MESSAGE: null 
+    HTTP_DESTINATION_FOLDER_NAME: null 
+    HTTP_DESTINATION_FILE_NAME: response.txt ## REQUIRED
+    HTTP_PRINT_RESPONSE: false ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1
   retry_wait: 0s
   runtime_cutoff: 4h0m0s
-  
+  exclude_exit_code_ranges:
+    - "0"
 ```

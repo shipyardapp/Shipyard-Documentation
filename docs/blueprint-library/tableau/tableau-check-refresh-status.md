@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [Tableau authorization guide](https://www.shipyardapp.com/docs/blueprint-library/tableau/tableau-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Tableau authorization guide](https://www.shipyardapp.com/docs/blueprint-library/tableau/tableau-authorization/)**.
 
 Check the job status of a workbook or datasource that has recently been refreshed in Tableau. 
 
@@ -34,23 +34,23 @@ Check the job status of a workbook or datasource that has recently been refreshe
 | Password or Access Token | TABLEAU_PASSWORD | Password | :white_check_mark: | - | - | The password associated with the provided username OR the access token associated with the provided access token name. |
 | Server URL | TABLEAU_SERVER_URL | Alphanumeric | :white_check_mark: | - | - | The scheme, subdomain, domain, and top-level domain (TLD) of your Tableau URL. |
 | Site ID | TABLEAU_SITE_ID | Alphanumeric | :white_check_mark: | - | - | Typically found in the URL as /site/YOURSITEID/ |
-| Job ID | TABLEAU_JOB_ID | Alphanumeric | :heavy_minus_sign: | - | - | The ID of a specific job you check the status of. If left blank, will try to find the job ID from an `Refresh Workbook/Datasource` Vessel that ran upstream. |
+| Job ID | TABLEAU_JOB_ID | Alphanumeric | :heavy_minus_sign: | - | - | The ID of a specific job you check the status of. If left blank, will try to find the job ID from an "Refresh Workbook/Datasource" Vessel that ran upstream. |
 
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
   blueprint: Tableau - Check Refresh Status
   inputs:
-    Authentication Method: username_password ## REQUIRED
-    Username or Access Token Name: null ## REQUIRED
-    Password or Access Token: null ## REQUIRED
-    Server URL: null ## REQUIRED
-    Site ID: null ## REQUIRED
-    Job ID: null 
+    TABLEAU_SIGN_IN_METHOD: username_password ## REQUIRED
+    TABLEAU_USERNAME: null ## REQUIRED
+    TABLEAU_PASSWORD: null ## REQUIRED
+    TABLEAU_SERVER_URL: null ## REQUIRED
+    TABLEAU_SITE_ID: null ## REQUIRED
+    TABLEAU_JOB_ID: null 
   type: BLUEPRINT
 guardrails:
   retry_count: 12

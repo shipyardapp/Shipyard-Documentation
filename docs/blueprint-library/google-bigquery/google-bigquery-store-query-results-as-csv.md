@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [BigQuery authorization guide](https://www.shipyardapp.com/docs/blueprint-library/google-bigquery/google-bigquery-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [BigQuery authorization guide](https://www.shipyardapp.com/docs/blueprint-library/google-bigquery/google-bigquery-authorization/)**.
 
 Larger datasets may run into file size limitations set by BigQuery. In these instances, we recommend using the **Google BigQuery - Store Query Results in Google Cloud Storage** Blueprint.
 
@@ -32,20 +32,21 @@ Larger datasets may run into file size limitations set by BigQuery. In these ins
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
   blueprint: Google BigQuery - Store Query Results as CSV
   inputs:
-    Query: null ## REQUIRED
-    Local File Name: null ## REQUIRED
-    Local Folder Name: null 
-    Service Account: null ## REQUIRED
+    BIGQUERY_QUERY: null ## REQUIRED
+    BIGQUERY_DESTINATION_FILE_NAME: null ## REQUIRED
+    BIGQUERY_DESTINATION_FOLDER_NAME: null 
+    GOOGLE_APPLICATION_CREDENTIALS: null ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1
   retry_wait: 0s
   runtime_cutoff: 4h0m0s
-  
+  exclude_exit_code_ranges:
+    - "0"
 ```

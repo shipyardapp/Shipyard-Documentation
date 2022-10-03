@@ -3,7 +3,7 @@ id: fivetran-update-connector
 title: Fivetran Template - Update Connector
 hide_title: true
 sidebar_label: Update Connector
-description: Information about Shipyard's low-code Fivetran Update Connector blueprint. Update an existing connector&#39;s settings in Fivetran. Useful for pausing, setting manual schedules, or triggering historical syncs.
+description: Information about Shipyard's low-code Fivetran Update Connector blueprint. Update an existing connector's settings in Fivetran. Useful for pausing, setting manual schedules, or triggering historical syncs.
 keywords:
     - fivetran
     - blueprint
@@ -14,14 +14,14 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [Fivetran authorization guide](https://www.shipyardapp.com/docs/blueprint-library/fivetran/fivetran-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Fivetran authorization guide](https://www.shipyardapp.com/docs/blueprint-library/fivetran/fivetran-authorization/)**.
 
 Update the settings of a connector in Fivetran. The connector must already exist in the Fivetran interface.
 
 By default, every option is set to `No Change`. This ensures that existing settings will not be overwritten by running this Blueprint. However, this Blueprint requires that at least one setting be changed, otherwise it will result in an error.
 
 The settings that can be updated with this Blueprint:
-- Switch the connector&#39;s schedule between manual and auto.
+- Switch the connector's schedule between manual and auto.
 - Pause and Unpause the connector
 - Trigger a historical sync for the connector
 
@@ -35,10 +35,10 @@ The full list of settings that can be changed can be found [here](https://fivetr
 
 | Name | Reference | Type | Required | Default | Options | Description |
 |:---|:---|:---|:---|:---|:---|:---|
-| API Key | FIVETRAN_API_KEY | Password | :white_check_mark: | - | - | Your account&#39;s unique API Key for Fivetran. |
-| API Secret | FIVETRAN_API_SECRET | Password | :white_check_mark: | - | - | Your account&#39;s unique API Secret for Fivetran. |
+| API Key | FIVETRAN_API_KEY | Password | :white_check_mark: | - | - | Your account's unique API Key for Fivetran. |
+| API Secret | FIVETRAN_API_SECRET | Password | :white_check_mark: | - | - | Your account's unique API Secret for Fivetran. |
 | Connector ID | FIVETRAN_CONNECTOR_ID | Alphanumeric | :white_check_mark: | - | - | The unique ID associated with a connector. Typically two words separated by an underscore. |
-| Set Schedule Type | FIVETRAN_SCHEDULE_TYPE | Select | :white_check_mark: | `None` | No Change: `None`<br></br><br></br>Manual: `manual`<br></br><br></br>Auto: `auto` | Set your connector&#39;s schedule to sync automatically, manually, or make no change. |
+| Set Schedule Type | FIVETRAN_SCHEDULE_TYPE | Select | :white_check_mark: | `None` | No Change: `None`<br></br><br></br>Manual: `manual`<br></br><br></br>Auto: `auto` | Set your connector's schedule to sync automatically, manually, or make no change. |
 | Set Connector State | FIVETRAN_PAUSED | Select | :white_check_mark: | `None` | No Change: `None`<br></br><br></br>Paused: `TRUE`<br></br><br></br>Enabled: `FALSE` | Set your connector to paused, enabled, or make no change. |
 | Trigger Historical Sync? | FIVETRAN_HISTORICAL_SYNC | Select | :white_check_mark: | `None` | No Change: `None`<br></br><br></br>Yes: `TRUE` | Set your connector to start a historical sync, or make no change. |
 | Custom Update | FIVETRAN_CUSTOM_UPDATE | Alphanumeric | :heavy_minus_sign: | - | - | Additional connector parameters you would like to update, provided in a JSON format. These can be found at https://fivetran.com/docs/rest-api/connectors#modifyaconnector |
@@ -46,23 +46,24 @@ The full list of settings that can be changed can be found [here](https://fivetr
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
   blueprint: Fivetran - Update Connector
   inputs:
-    API Key: null ## REQUIRED
-    API Secret: null ## REQUIRED
-    Connector ID: null ## REQUIRED
-    Set Schedule Type: None ## REQUIRED
-    Set Connector State: None ## REQUIRED
-    Trigger Historical Sync?: None ## REQUIRED
-    Custom Update: null 
+    FIVETRAN_API_KEY: null ## REQUIRED
+    FIVETRAN_API_SECRET: null ## REQUIRED
+    FIVETRAN_CONNECTOR_ID: null ## REQUIRED
+    FIVETRAN_SCHEDULE_TYPE: None ## REQUIRED
+    FIVETRAN_PAUSED: None ## REQUIRED
+    FIVETRAN_HISTORICAL_SYNC: None ## REQUIRED
+    FIVETRAN_CUSTOM_UPDATE: null 
   type: BLUEPRINT
 guardrails:
   retry_count: 1
   retry_wait: 0s
   runtime_cutoff: 4h0m0s
-  
+  exclude_exit_code_ranges:
+    - "0"
 ```

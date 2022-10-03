@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [Athena authorization guide](https://www.shipyardapp.com/docs/blueprint-library/amazon-athena/amazon-athena-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Athena authorization guide](https://www.shipyardapp.com/docs/blueprint-library/amazon-athena/amazon-athena-authorization/)**.
 
 Turn the results of your SQL SELECT statement into a CSV file. Extract your Amazon Athena data into files for easier delivery to clients and partners.
 
@@ -37,25 +37,26 @@ Turn the results of your SQL SELECT statement into a CSV file. Extract your Amaz
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
   blueprint: Amazon Athena - Store Query Results as CSV
   inputs:
-    Database: null ## REQUIRED
-    Query: null ## REQUIRED
-    S3 Log Bucket Name: null ## REQUIRED
-    S3 Log Folder Name: null 
-    Local File Name: output.csv ## REQUIRED
-    Local Folder Name: null 
-    Access Key ID: null ## REQUIRED
-    Secret Access Key: null ## REQUIRED
-    Region: us-east-2 ## REQUIRED
+    ATHENA_DATABASE: null ## REQUIRED
+    ATHENA_QUERY: null ## REQUIRED
+    ATHENA_BUCKET_NAME: null ## REQUIRED
+    ATHENA_LOG_FOLDER: null 
+    ATHENA_DESTINATION_FILE_NAME: output.csv ## REQUIRED
+    ATHENA_DESTINATION_FOLDER_NAME: null 
+    AWS_ACCESS_KEY_ID: null ## REQUIRED
+    AWS_SECRET_ACCESS_KEY: null ## REQUIRED
+    AWS_DEFAULT_REGION: us-east-2 ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1
   retry_wait: 0s
   runtime_cutoff: 4h0m0s
-  
+  exclude_exit_code_ranges:
+    - "0"
 ```

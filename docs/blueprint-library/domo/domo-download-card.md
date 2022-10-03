@@ -14,9 +14,11 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [Domo authorization guide](https://www.shipyardapp.com/docs/blueprint-library/domo/domo-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Domo authorization guide](https://www.shipyardapp.com/docs/blueprint-library/domo/domo-authorization/)**.
 
 Download a card from Domo as a CSV, XLSX, or PPT file. Typically used for pulling live data and sending the output to a messaging service, like Email or Slack.
+
+Authentication can be provided with either an access token or a combination of username and password. If both are provided, access token will be preferred.
 
 
 
@@ -36,19 +38,20 @@ Download a card from Domo as a CSV, XLSX, or PPT file. Typically used for pullin
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
   blueprint: Domo - Download Card
   inputs:
-    Email: null ## REQUIRED
-    Password: null ## REQUIRED
-    Domo Instance: null ## REQUIRED
-    Card ID: null ## REQUIRED
-    Download As: csv ## REQUIRED
-    File Name: null ## REQUIRED
-    Folder Name: null 
+    DOMO_ACCESS_TOKEN: null 
+    DOMO_EMAIL: null 
+    DOMO_PASSWORD: null 
+    DOMO_INSTANCE: null ## REQUIRED
+    DOMO_CARD_ID: null ## REQUIRED
+    DOMO_FILE_TYPE: csv ## REQUIRED
+    DOMO_DESTINATION_FILE_NAME: null ## REQUIRED
+    DOMO_DESTINATION_FOLDER_NAME: null 
   type: BLUEPRINT
 guardrails:
   retry_count: 1
@@ -62,4 +65,5 @@ guardrails:
     - "205"
     - "210"
     - "211"
+    - "207"
 ```

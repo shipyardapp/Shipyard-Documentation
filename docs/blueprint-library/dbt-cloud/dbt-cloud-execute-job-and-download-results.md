@@ -14,22 +14,22 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [dbt Cloud authorization guide](https://www.shipyardapp.com/docs/blueprint-library/dbt-cloud/dbt-cloud-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [dbt Cloud authorization guide](https://www.shipyardapp.com/docs/blueprint-library/dbt-cloud/dbt-cloud-authorization/)**.
 
 A Vessel built with this Blueprint will kick off a single job on dbt Cloud and check for the status every 30 seconds. Once the status is confirmed to be completed, Shipyard will attempt to download all of the logs and artifacts.
 
 The final status of this Vessel in Shipyard will reflect the status of the run in dbt Cloud.
 
-The `cause` for an execution triggered via Shipyard will always contain the following details:
+The "cause" for an execution triggered via Shipyard will always contain the following details:
 - Fleet ID
 - Vessel ID
 - Vessel Log ID
 
-**Note:** This is considered an `all-in-one` Blueprint for the other 3 dbt Cloud Blueprints. By using this Blueprint, you will accumulate runtime as the Vessel continuously waits for the job to be completed. The tradeoff is that results may be quicker and the setup/complexity is less.
+**Note:** This is considered an "all-in-one" Blueprint for the other 3 dbt Cloud Blueprints. By using this Blueprint, you will accumulate runtime as the Vessel continuously waits for the job to be completed. The tradeoff is that results may be quicker and the setup/complexity is less.
 
-If you want to reduce the overall runtime you&#39;re billed for, you will need to instead set up a Fleet with Vessels built with these blueprints in this order:
+If you want to reduce the overall runtime you're billed for, you will need to instead set up a Fleet with Vessels built with these blueprints in this order:
 
-Execute Job -&gt; Check Run Status -&gt; Download Artifacts & Logs
+Execute Job -> Check Run Status -> Download Artifacts & Logs
 
 
 
@@ -46,17 +46,17 @@ Execute Job -&gt; Check Run Status -&gt; Download Artifacts & Logs
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
   blueprint: dbt Cloud - Execute Job and Download Results
   inputs:
-    Service Token: null ## REQUIRED
-    Account ID: null ## REQUIRED
-    Job ID: null ## REQUIRED
-    Download Artifacts?: true ## REQUIRED
-    Download Logs?: true ## REQUIRED
+    DBT_API_KEY: null ## REQUIRED
+    DBT_ACCOUNT_ID: null ## REQUIRED
+    DBT_JOB_ID: null ## REQUIRED
+    DBT_DOWNLOAD_ARTIFACTS: true ## REQUIRED
+    DBT_DOWNLOAD_LOGS: true ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 0

@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [Tableau authorization guide](https://www.shipyardapp.com/docs/blueprint-library/tableau/tableau-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Tableau authorization guide](https://www.shipyardapp.com/docs/blueprint-library/tableau/tableau-authorization/)**.
 
 Download a view from Tableau as a PNG, PDF, or CSV file. Typically used for pulling live data visuals and sending them to a messaging service, like Email or Slack.
 
@@ -39,23 +39,23 @@ Download a view from Tableau as a PNG, PDF, or CSV file. Typically used for pull
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
   blueprint: Tableau - Download View
   inputs:
-    Authentication Method: username_password ## REQUIRED
-    Username or Access Token Name: null ## REQUIRED
-    Password or Access Token: null ## REQUIRED
-    Server URL: null ## REQUIRED
-    Site ID: null ## REQUIRED
-    Project Name: null ## REQUIRED
-    Workbook Name: null ## REQUIRED
-    View Name: null ## REQUIRED
-    Download As: png ## REQUIRED
-    File Name: null ## REQUIRED
-    Folder Name: null 
+    TABLEAU_SIGN_IN_METHOD: username_password ## REQUIRED
+    TABLEAU_USERNAME: null ## REQUIRED
+    TABLEAU_PASSWORD: null ## REQUIRED
+    TABLEAU_SERVER_URL: null ## REQUIRED
+    TABLEAU_SITE_ID: null ## REQUIRED
+    TABLEAU_PROJECT_NAME: null ## REQUIRED
+    TABLEAU_WORKBOOK_NAME: null ## REQUIRED
+    TABLEAU_VIEW_NAME: null ## REQUIRED
+    TABLEAU_FILE_TYPE: png ## REQUIRED
+    TABLEAU_DESTINATION_FILE_NAME: null ## REQUIRED
+    TABLEAU_DESTINATION_FOLDER_NAME: null 
   type: BLUEPRINT
 guardrails:
   retry_count: 1
