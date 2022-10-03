@@ -16,7 +16,7 @@ keywords:
 Shipyard's low-code Hex blueprints allow users to connect their data in Hex to the rest of their modern data stack.
 
 ## How to Use
-For information on how to set up these Blueprints successfully, please read through the [Hex Authorization guide](Hex-authorization.md).
+For information on how to set up these Blueprints successfully, please read through the [Hex Authorization guide](hex-authorization.md).
 
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available:
