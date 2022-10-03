@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [Domo authorization guide](https://www.shipyardapp.com/docs/blueprint-library/domo/domo-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Domo authorization guide](https://www.shipyardapp.com/docs/blueprint-library/domo/domo-authorization/)**.
 
 Check the job status of a dataset that has recently been refreshed in Domo.
 
@@ -30,24 +30,24 @@ Check the job status of a dataset that has recently been refreshed in Domo.
 
 | Name | Reference | Type | Required | Default | Options | Description |
 |:---|:---|:---|:---|:---|:---|:---|
-| Client ID | DOMO_CLIENT_ID | Alphanumeric | :white_check_mark: | - | - | Client ID of your organization&#39;s Domo App. |
+| Client ID | DOMO_CLIENT_ID | Alphanumeric | :white_check_mark: | - | - | Client ID of your organization's Domo App. |
 | Secret | DOMO_SECRET_KEY | Password | :white_check_mark: | - | - | Secret associated with the provided Client ID. |
 | Dataset ID | DOMO_DATASET_ID | Alphanumeric | :white_check_mark: | - | - | UUID of the dataset you want to download, typically found at the end of the URL. |
-| Execution ID | DOMO_EXECUTION_ID | Alphanumeric | :heavy_minus_sign: | - | - | The ID of a specific execution you check the status of. If left blank, will try to find the execution ID from an `Refresh Dataset` Vessel that ran upstream. |
+| Execution ID | DOMO_EXECUTION_ID | Alphanumeric | :heavy_minus_sign: | - | - | The ID of a specific execution you check the status of. If left blank, will try to find the execution ID from an "Refresh Dataset" Vessel that ran upstream. |
 
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
   blueprint: Domo - Check Refresh Status
   inputs:
-    Client ID: null ## REQUIRED
-    Secret: null ## REQUIRED
-    Dataset ID: null ## REQUIRED
-    Execution ID: null 
+    DOMO_CLIENT_ID: null ## REQUIRED
+    DOMO_SECRET_KEY: null ## REQUIRED
+    DOMO_DATASET_ID: null ## REQUIRED
+    DOMO_EXECUTION_ID: null 
   type: BLUEPRINT
 guardrails:
   retry_count: 12

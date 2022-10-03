@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [FTP authorization guide](https://www.shipyardapp.com/docs/blueprint-library/ftp/ftp-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [FTP authorization guide](https://www.shipyardapp.com/docs/blueprint-library/ftp/ftp-authorization/)**.
 
 Quickly export one or more files from an FTP Server. The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
 
@@ -31,33 +31,34 @@ This Blueprint requires _read_ permissions in order to download from the FTP ser
 | Username | FTP_USERNAME | Alphanumeric | :heavy_minus_sign: | - | - | Value of the configured username in the FTP server. |
 | Password | FTP_PASSWORD | Password | :heavy_minus_sign: | - | - | Value of the configured password associated to the username on the FTP server. |
 | FTP Folder Name | FTP_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the folder where the file is stored in the FTP server. |
-| FTP File Name Match Type | FTP_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in `FTP File Name` will look for one file with exact match, or multiple files using regex. |
-| FTP File Name | FTP_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file in the FTP server. Can be regex if `Match Type` is set accordingly. |
+| FTP File Name Match Type | FTP_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in "FTP File Name" will look for one file with exact match, or multiple files using regex. |
+| FTP File Name | FTP_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file in the FTP server. Can be regex if "Match Type" is set accordingly. |
 | Local Folder Name | FTP_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the file(s) should be downloaded. Leaving blank will place the file in the home directory. |
 | Local File Name | FTP_DESTINATION_FILE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | What to name the file(s) being downloaded. If left blank, defaults to the original file name(s). |
 
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
   blueprint: FTP - Download Files
   inputs:
-    Host: null ## REQUIRED
-    Port: 21 ## REQUIRED
-    Username: null 
-    Password: null 
-    FTP Folder Name: null 
-    FTP File Name Match Type: exact_match ## REQUIRED
-    FTP File Name: null ## REQUIRED
-    Local Folder Name: null 
-    Local File Name: null 
+    FTP_HOST: null ## REQUIRED
+    FTP_PORT: 21 ## REQUIRED
+    FTP_USERNAME: null 
+    FTP_PASSWORD: null 
+    FTP_SOURCE_FOLDER_NAME: null 
+    FTP_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
+    FTP_SOURCE_FILE_NAME: null ## REQUIRED
+    FTP_DESTINATION_FOLDER_NAME: null 
+    FTP_DESTINATION_FILE_NAME: null 
   type: BLUEPRINT
 guardrails:
   retry_count: 1
   retry_wait: 0s
   runtime_cutoff: 4h0m0s
-  
+  exclude_exit_code_ranges:
+    - "0"
 ```

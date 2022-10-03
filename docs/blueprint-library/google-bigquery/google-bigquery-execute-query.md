@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [BigQuery authorization guide](https://www.shipyardapp.com/docs/blueprint-library/google-bigquery/google-bigquery-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [BigQuery authorization guide](https://www.shipyardapp.com/docs/blueprint-library/google-bigquery/google-bigquery-authorization/)**.
 
 Execute any Standard SQL query against a Google BigQuery database. Perfect for creating multi-step SQL jobs, executing DML statements, or running scheduled queries.
 
@@ -30,18 +30,19 @@ Execute any Standard SQL query against a Google BigQuery database. Perfect for c
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
   blueprint: Google BigQuery - Execute Query
   inputs:
-    Query: null ## REQUIRED
-    Service Account: null ## REQUIRED
+    BIGQUERY_QUERY: null ## REQUIRED
+    GOOGLE_APPLICATION_CREDENTIALS: null ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1
   retry_wait: 0s
   runtime_cutoff: 4h0m0s
-  
+  exclude_exit_code_ranges:
+    - "0"
 ```

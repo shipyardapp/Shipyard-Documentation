@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [Google Sheets authorization guide](https://www.shipyardapp.com/docs/blueprint-library/google-sheets/google-sheets-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Google Sheets authorization guide](https://www.shipyardapp.com/docs/blueprint-library/google-sheets/google-sheets-authorization/)**.
 
 Easily wipe data from a single tab on Google Sheet. Typically used to start fresh before inserting new data.
 
@@ -37,21 +37,22 @@ If you leave the tab name blank, the data will be cleared from the first tab.
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
   blueprint: Google Sheets - Clear Data from Sheet
   inputs:
-    Google Sheet Name or ID: null ## REQUIRED
-    Tab Name: null 
-    Shared Drive Name: null 
-    Cell Range: null 
-    Service Account: null ## REQUIRED
+    SHEETS_SPREADSHEET_ID: null ## REQUIRED
+    SHEETS_TAB_NAME: null 
+    SHEETS_SHARED_DRIVE_NAME: null 
+    SHEETS_CELL_RANGE: null 
+    GOOGLE_APPLICATION_CREDENTIALS: null ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1
   retry_wait: 0s
   runtime_cutoff: 4h0m0s
-  
+  exclude_exit_code_ranges:
+    - "0"
 ```

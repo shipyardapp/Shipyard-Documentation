@@ -14,9 +14,11 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [Domo authorization guide](https://www.shipyardapp.com/docs/blueprint-library/domo/domo-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Domo authorization guide](https://www.shipyardapp.com/docs/blueprint-library/domo/domo-authorization/)**.
 
 Manually trigger a refresh of a dataset in Domo.
+
+Authentication can be provided with either an access token or a combination of username and password. If both are provided, access token will be preferred.
 
 This Blueprint will only kick off the refresh and will almost always return a status of success. It will not wait around to verify if the created refresh job was successfully completed, but it will create and store the generated job ID to shipyard-artifacts/domo-blueprints/variables/job_id.pickle
 
@@ -33,7 +35,7 @@ This Blueprint will only kick off the refresh and will almost always return a st
 | Access Token | DOMO_ACCESS_TOKEN | Password | :heavy_minus_sign: | - | - | Access token to authenticate with Domo. Used in place of username/password. |
 | Email | DOMO_EMAIL | Alphanumeric | :heavy_minus_sign: | - | - | Email that you use to log into Domo. Used with the password for authentication as an alternative method to providing an access token. |
 | Password | DOMO_PASSWORD | Password | :heavy_minus_sign: | - | - | Password associated to the email used to sign into Domo. Used with the email for authentication as an alternative method to providing an access token. |
-| Client ID | DOMO_CLIENT_ID | Alphanumeric | :white_check_mark: | - | - | Client ID of your organization&#39;s Domo App. |
+| Client ID | DOMO_CLIENT_ID | Alphanumeric | :white_check_mark: | - | - | Client ID of your organization's Domo App. |
 | Secret | DOMO_SECRET_KEY | Password | :white_check_mark: | - | - | Secret associated with the provided Client ID. |
 | Domo Instance | DOMO_INSTANCE | Alphanumeric | :white_check_mark: | - | - | Typically found in the URL structure as https://DOMOINSTANCE.domo.com |
 | Dataset ID | DOMO_DATASET_ID | Alphanumeric | :white_check_mark: | - | - | UUID of the dataset you want to download, typically found at the end of the URL. |
@@ -41,18 +43,19 @@ This Blueprint will only kick off the refresh and will almost always return a st
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
   blueprint: Domo - Refresh Dataset
   inputs:
-    Email: null ## REQUIRED
-    Password: null ## REQUIRED
-    Client ID: null ## REQUIRED
-    Secret: null ## REQUIRED
-    Domo Instance: null ## REQUIRED
-    Dataset ID: null ## REQUIRED
+    DOMO_ACCESS_TOKEN: null 
+    DOMO_EMAIL: null 
+    DOMO_PASSWORD: null 
+    DOMO_CLIENT_ID: null ## REQUIRED
+    DOMO_SECRET_KEY: null ## REQUIRED
+    DOMO_INSTANCE: null ## REQUIRED
+    DOMO_DATASET_ID: null ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1
@@ -66,4 +69,5 @@ guardrails:
     - "205"
     - "210"
     - "211"
+    - "207"
 ```

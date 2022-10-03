@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [Email authorization guide](https://www.shipyardapp.com/docs/blueprint-library/email/email-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Email authorization guide](https://www.shipyardapp.com/docs/blueprint-library/email/email-authorization/)**.
 
 Send a message to anyone in the world using email.
 
@@ -41,29 +41,30 @@ Send a message to anyone in the world using email.
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
   blueprint: Email - Send Message
   inputs:
-    Send Method: tls ## REQUIRED
-    SMTP Host: null ## REQUIRED
-    SMTP Port: null ## REQUIRED
-    Username: null ## REQUIRED
-    Password: hlgyecgskabctidf ## REQUIRED
-    Sender Address: null ## REQUIRED
-    Sender Name: null 
-    TO: null 
-    CC: null 
-    BCC: null 
-    Subject: null 
-    Message: null ## REQUIRED
-    Include Shipyard Footer?: true ## REQUIRED
+    EMAIL_SEND_METHOD: tls ## REQUIRED
+    EMAIL_SMTP_HOST: null ## REQUIRED
+    EMAIL_SMTP_PORT: null ## REQUIRED
+    EMAIL_USERNAME: null ## REQUIRED
+    EMAIL_PASSWORD: hlgyecgskabctidf ## REQUIRED
+    EMAIL_SENDER_ADDRESS: null ## REQUIRED
+    EMAIL_SENDER_NAME: null 
+    EMAIL_TO: null 
+    EMAIL_CC: null 
+    EMAIL_BCC: null 
+    EMAIL_SUBJECT: null 
+    EMAIL_MESSAGE: null ## REQUIRED
+    EMAIL_INCLUDE_SHIPYARD_FOOTER: true ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1
   retry_wait: 0s
   runtime_cutoff: 4h0m0s
-  
+  exclude_exit_code_ranges:
+    - "0"
 ```
