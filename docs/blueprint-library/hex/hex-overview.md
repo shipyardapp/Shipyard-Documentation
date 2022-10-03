@@ -1,5 +1,5 @@
 ---
-id: Hex-overview
+id: hex-overview
 title: Hex Blueprints Overview
 hide_title: true
 sidebar_label: Overview

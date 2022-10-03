@@ -1,5 +1,5 @@
 ---
-id: Hex-authorization
+id: hex-authorization
 title: Hex Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
