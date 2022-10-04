@@ -291,6 +291,12 @@ module.exports = {
 					"blueprint-library/google-sheets/google-sheets-upload-csv-to-sheet",
 					"blueprint-library/google-sheets/google-sheets-clear-data-from-sheet",
 				],
+				"Hex": [
+					"blueprint-library/hex/hex-overview",
+					"blueprint-library/hex/hex-authorization",
+					"blueprint-library/hex/hex-run-project",
+					"blueprint-library/hex/hex-check-run-status"
+				],
 				Hightouch: [
 					"blueprint-library/hightouch/hightouch-overview",
 					"blueprint-library/hightouch/hightouch-authorization",
