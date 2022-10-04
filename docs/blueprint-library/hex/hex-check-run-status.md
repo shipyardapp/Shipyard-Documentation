@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-> ## **First time using this Blueprint? Make sure you follow our [Hex authorization guide](https://www.shipyardapp.com/docs/blueprint-library/hex/hex-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Hex authorization guide](hex-authorization.md)**.
 
 Check for the status of a project run on Hex. By default, Hex will return a response that contains the status of the project run (COMPLETED on success)
 

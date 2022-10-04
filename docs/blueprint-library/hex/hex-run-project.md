@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-> ## **First time using this Blueprint? Make sure you follow our [Hex authorization guide](https://www.shipyardapp.com/docs/blueprint-library/hex/hex-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Hex authorization guide](hex-authorization.md)**.
 
 Immediately runs a Hex project. The project must already be set up  and published within the Hex interface.
 
