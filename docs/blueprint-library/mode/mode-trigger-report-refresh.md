@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [Mode authorization guide](https://www.shipyardapp.com/docs/blueprint-library/mode/mode-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Mode authorization guide](https://www.shipyardapp.com/docs/blueprint-library/mode/mode-authorization/)**.
 
 Manually trigger a refresh of a report in Mode.
 
@@ -44,10 +44,10 @@ Below is the YAML template for this Blueprint and can be used in the Fleet [YAML
 source:
   blueprint: Mode - Trigger Report Refresh
   inputs:
-    Token ID: null ## REQUIRED
-    Token Password: null ## REQUIRED
-    Workspace Name: null ## REQUIRED
-    Report ID: null ## REQUIRED
+    MODE_TOKEN_ID: null ## REQUIRED
+    MODE_TOKEN_PASSWORD: null ## REQUIRED
+    MODE_WORKSPACE_NAME: null ## REQUIRED
+    MODE_REPORT_ID: null ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1

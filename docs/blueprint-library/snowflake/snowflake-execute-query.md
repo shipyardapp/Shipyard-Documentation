@@ -14,11 +14,11 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [Snowflake authorization guide](https://www.shipyardapp.com/docs/blueprint-library/snowflake/snowflake-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Snowflake authorization guide](https://www.shipyardapp.com/docs/blueprint-library/snowflake/snowflake-authorization/)**.
 
 Execute a query against Snowflake, without returning any of the resulting data. This Blueprint should primarily be used for queries that perform functionality other than SELECT, like multi-step SQL jobs, or DML statements.
 
-This Blueprint is limited to executing a single query. You cannot run multiple queries separated by `;` (this is prohibited by the Snowflake Python connector). Instead, you&#39;ll have to set up multiple Vessels with this Blueprint to run one after the other.
+This Blueprint is limited to executing a single query. You cannot run multiple queries separated by `;` (this is prohibited by the Snowflake Python connector). Instead, you'll have to set up multiple Vessels with this Blueprint to run one after the other.
 
 
 
@@ -31,7 +31,7 @@ This Blueprint is limited to executing a single query. You cannot run multiple q
 | Account Name | SNOWFLAKE_ACCOUNT | Alphanumeric | :white_check_mark: | - | - | Typically found in the URL you use to access Snowflake, before `.snowflakecomputing.com` |
 | Warehouse | SNOWFLAKE_WAREHOUSE | Alphanumeric | :heavy_minus_sign: | - | - | If left blank, will use the default warehouse associated with the provided username. |
 | Database | SNOWFLAKE_DATABASE | Alphanumeric | :white_check_mark: | - | - | The name of the Database that you want to run a query against. |
-| Schema | SNOWFLAKE_SCHEMA | Alphanumeric | :heavy_minus_sign: | - | - | The name of the Schema you want to run a query against. If left blank, it&#39;s expected that your query will include the schema in it. |
+| Schema | SNOWFLAKE_SCHEMA | Alphanumeric | :heavy_minus_sign: | - | - | The name of the Schema you want to run a query against. If left blank, it's expected that your query will include the schema in it. |
 | Query | SNOWFLAKE_QUERY | Alphanumeric | :white_check_mark: | - | - | The contents of the SQL query that you want to run. Does not support running multiple queries separated by `;` |
 
 
@@ -43,13 +43,13 @@ Below is the YAML template for this Blueprint and can be used in the Fleet [YAML
 source:
   blueprint: Snowflake - Execute Query
   inputs:
-    Username: null ## REQUIRED
-    Password: null ## REQUIRED
-    Account Name: null ## REQUIRED
-    Warehouse: null 
-    Database: null ## REQUIRED
-    Schema: null 
-    Query: null ## REQUIRED
+    SNOWFLAKE_USERNAME: null ## REQUIRED
+    SNOWFLAKE_PASSWORD: null ## REQUIRED
+    SNOWFLAKE_ACCOUNT: null ## REQUIRED
+    SNOWFLAKE_WAREHOUSE: null 
+    SNOWFLAKE_DATABASE: null ## REQUIRED
+    SNOWFLAKE_SCHEMA: null 
+    SNOWFLAKE_QUERY: null ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1

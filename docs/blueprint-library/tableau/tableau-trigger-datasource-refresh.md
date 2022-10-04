@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [Tableau authorization guide](https://www.shipyardapp.com/docs/blueprint-library/tableau/tableau-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Tableau authorization guide](https://www.shipyardapp.com/docs/blueprint-library/tableau/tableau-authorization/)**.
 
 Manually trigger a refresh of a datasource in Tableau.
 
@@ -46,13 +46,13 @@ Below is the YAML template for this Blueprint and can be used in the Fleet [YAML
 source:
   blueprint: Tableau - Trigger Datasource Refresh
   inputs:
-    Authentication Method: username_password ## REQUIRED
-    Username or Access Token Name: null ## REQUIRED
-    Password or Access Token: null ## REQUIRED
-    Server URL: null ## REQUIRED
-    Site ID: null ## REQUIRED
-    Project Name: null ## REQUIRED
-    Datasource Name: null ## REQUIRED
+    TABLEAU_SIGN_IN_METHOD: username_password ## REQUIRED
+    TABLEAU_USERNAME: null ## REQUIRED
+    TABLEAU_PASSWORD: null ## REQUIRED
+    TABLEAU_SERVER_URL: null ## REQUIRED
+    TABLEAU_SITE_ID: null ## REQUIRED
+    TABLEAU_PROJECT_NAME: null ## REQUIRED
+    TABLEAU_DATASOURCE_NAME: null ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1

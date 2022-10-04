@@ -14,13 +14,13 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [dbt Cloud authorization guide](https://www.shipyardapp.com/docs/blueprint-library/dbt-cloud/dbt-cloud-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [dbt Cloud authorization guide](https://www.shipyardapp.com/docs/blueprint-library/dbt-cloud/dbt-cloud-authorization/)**.
 
 Execute a single job on dbt Cloud, creating a new run. The job must be set up within the dbt Cloud interface. Shipyard does not support sending override commands to the job at this time.
 
 This Blueprint will only kick off the job and will always return a status of success. It will not wait around to verify if the created run was successfully completed, but it will create and store the generated run ID to _shipyard-artifacts/dbtcloud-blueprints/variables/run_id.pickle_
 
-The `cause` for an execution triggered via Shipyard will always contain the following details:
+The "cause" for an execution triggered via Shipyard will always contain the following details:
 - Fleet ID
 - Vessel ID
 - Vessel Log ID
@@ -47,9 +47,9 @@ Below is the YAML template for this Blueprint and can be used in the Fleet [YAML
 source:
   blueprint: dbt Cloud - Execute Job
   inputs:
-    Service Token: null ## REQUIRED
-    Account ID: null ## REQUIRED
-    Job ID: null ## REQUIRED
+    DBT_API_KEY: null ## REQUIRED
+    DBT_ACCOUNT_ID: null ## REQUIRED
+    DBT_JOB_ID: null ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1

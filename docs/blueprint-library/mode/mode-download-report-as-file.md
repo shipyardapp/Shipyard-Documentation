@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [Mode authorization guide](https://www.shipyardapp.com/docs/blueprint-library/mode/mode-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Mode authorization guide](https://www.shipyardapp.com/docs/blueprint-library/mode/mode-authorization/)**.
 
 Download a report from Mode as a CSV, PDF, or JSON file. Typically used for pulling live data and sending the output to a messaging service, like Email or Slack.
 
@@ -42,14 +42,14 @@ Below is the YAML template for this Blueprint and can be used in the Fleet [YAML
 source:
   blueprint: Mode - Download Report as File
   inputs:
-    Token ID: null ## REQUIRED
-    Token Password: null ## REQUIRED
-    Workspace Name: null ## REQUIRED
-    Report ID: null ## REQUIRED
-    Run ID: null 
-    Download As: csv ## REQUIRED
-    File Name: null ## REQUIRED
-    Folder Name: null 
+    MODE_TOKEN_ID: null ## REQUIRED
+    MODE_TOKEN_PASSWORD: null ## REQUIRED
+    MODE_WORKSPACE_NAME: null ## REQUIRED
+    MODE_REPORT_ID: null ## REQUIRED
+    MODE_RUN_ID: null 
+    MODE_FILE_TYPE: csv ## REQUIRED
+    MODE_DESTINATION_FILE_NAME: null ## REQUIRED
+    MODE_DESTINATION_FOLDER_NAME: null 
   type: BLUEPRINT
 guardrails:
   retry_count: 1

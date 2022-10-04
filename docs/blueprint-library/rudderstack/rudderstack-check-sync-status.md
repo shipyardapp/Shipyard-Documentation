@@ -3,7 +3,7 @@ id: rudderstack-check-sync-status
 title: RudderStack Template - Check Sync Status
 hide_title: true
 sidebar_label: Check Sync Status
-description: Information about Shipyard's low-code RudderStack Check Sync Status blueprint. Check for the status of a Rudderstack source. The Vessel&#39;s exit code and status will match the status of the latest sync.
+description: Information about Shipyard's low-code RudderStack Check Sync Status blueprint. Check for the status of a Rudderstack source. The Vessel's exit code and status will match the status of the latest sync.
 keywords:
     - rudderstack
     - blueprint
@@ -14,16 +14,16 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [Rudderstack authorization guide](https://www.shipyardapp.com/docs/blueprint-library/rudderstack/rudderstack-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Rudderstack authorization guide](https://www.shipyardapp.com/docs/blueprint-library/rudderstack/rudderstack-authorization/)**.
 
-Check for the status of a Rudderstack source. The Vessel&#39;s exit code and status will match the status of the latest sync.
+Check for the status of a Rudderstack source. The Vessel's exit code and status will match the status of the latest sync.
 
 ## Status Codes
 - If the sync finishes successfully, an exit code of 0 will be returned.
 - If the sync is incomplete, an exit code of 210 will be returned.
 - If the sync is finished but has errored, an exit code of 211 will be returned.
 - If the sync has finished but the status is invalid, an exit code of 212 will be returned.
-- If the sync&#39;s status is unknown, an exit code of 213 will be returned.
+- If the sync's status is unknown, an exit code of 213 will be returned.
 
 The response for this request will always be stored at `shipyard-artifacts/rudderstack-blueprints/responses/sync_run_{source_id}_response.json`.
 
@@ -49,11 +49,11 @@ Below is the YAML template for this Blueprint and can be used in the Fleet [YAML
 source:
   blueprint: RudderStack - Check Sync Status
   inputs:
-    Access Token: null ## REQUIRED
-    Source ID: null 
+    RUDDERSTACK_ACCESS_TOKEN: null ## REQUIRED
+    RUDDERSTACK_SOURCE_ID: null 
   type: BLUEPRINT
 guardrails:
-  retry_count: 0
+  retry_count: 1
   retry_wait: 0s
   runtime_cutoff: 4h0m0s
   exclude_exit_code_ranges:

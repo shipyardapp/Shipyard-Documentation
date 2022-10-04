@@ -48,14 +48,15 @@ Below is the YAML template for this Blueprint and can be used in the Fleet [YAML
 source:
   blueprint: Data Manipulation - Compare Datasets
   inputs:
-    File Name 1: null ## REQUIRED
-    Folder Name 1: null 
-    File Name 2: null ## REQUIRED
-    Folder Name 2: null 
+    MANIPULATION_SOURCE_FILE_NAME_1: null ## REQUIRED
+    MANIPULATION_SOURCE_FOLDER_NAME_1: null 
+    MANIPULATION_SOURCE_FILE_NAME_2: null ## REQUIRED
+    MANIPULATION_SOURCE_FOLDER_NAME_2: null 
   type: BLUEPRINT
 guardrails:
   retry_count: 0
   retry_wait: 0s
   runtime_cutoff: 4h0m0s
-  
+  exclude_exit_code_ranges:
+    - "0"
 ```

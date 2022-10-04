@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [Blob Storage authorization guide](https://www.shipyardapp.com/docs/blueprint-library/azure-blob-storage/azure-blob-storage-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Blob Storage authorization guide](https://www.shipyardapp.com/docs/blueprint-library/azure-blob-storage/azure-blob-storage-authorization/)**.
 
 Easily import one or more files directly into an an Azure Blob Storage container, no matter how big they are. The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
 
@@ -32,8 +32,8 @@ Easily import one or more files directly into an an Azure Blob Storage container
 | Name | Reference | Type | Required | Default | Options | Description |
 |:---|:---|:---|:---|:---|:---|:---|
 | Local Folder Name | AZURE_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Shipyard to upload the target file from. If left blank, will look in the home directory. |
-| Local File Name Match Type | AZURE_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in `Local File Name` will look for one file with exact match, or multiple files using regex. |
-| Local File Name | AZURE_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file on Shipyard. Can be regex if `Match Type` is set accordingly. |
+| Local File Name Match Type | AZURE_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in "Local File Name" will look for one file with exact match, or multiple files using regex. |
+| Local File Name | AZURE_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file on Shipyard. Can be regex if "Match Type" is set accordingly. |
 | Container Name | AZURE_CONTAINER_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target Azure storage container. |
 | Azure Storage Folder Name | AZURE_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the file(s) should be downloaded in the Azure Storage container. Leaving blank will place the file in the root directory. |
 | Azure Storage File Name | AZURE_DESTINATION_FILE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | What to name the file(s) being uploaded to Azure Storage. If left blank, defaults to the original file name(s). |
@@ -48,17 +48,18 @@ Below is the YAML template for this Blueprint and can be used in the Fleet [YAML
 source:
   blueprint: Azure Blob Storage - Upload Files
   inputs:
-    Local Folder Name: null 
-    Local File Name Match Type: exact_match ## REQUIRED
-    Local File Name: null ## REQUIRED
-    Container Name: null ## REQUIRED
-    Azure Storage Folder Name: null 
-    Azure Storage File Name: null 
-    Connection String: null ## REQUIRED
+    AZURE_SOURCE_FOLDER_NAME: null 
+    AZURE_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
+    AZURE_SOURCE_FILE_NAME: null ## REQUIRED
+    AZURE_CONTAINER_NAME: null ## REQUIRED
+    AZURE_DESTINATION_FOLDER_NAME: null 
+    AZURE_DESTINATION_FILE_NAME: null 
+    AZURE_STORAGE_CONNECTION_STRING: null ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1
   retry_wait: 0s
   runtime_cutoff: 4h0m0s
-  
+  exclude_exit_code_ranges:
+    - "0"
 ```

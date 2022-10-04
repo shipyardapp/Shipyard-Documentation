@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [bit.io authorization guide](https://www.shipyardapp.com/docs/blueprint-library/bitio/bitio-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [bit.io authorization guide](https://www.shipyardapp.com/docs/blueprint-library/bitio/bitio-authorization/)**.
 
 Turn the results of your SQL SELECT statement into a CSV file. Extract your bit.io data into files for easier delivery to clients and partners.
 
@@ -40,12 +40,12 @@ Below is the YAML template for this Blueprint and can be used in the Fleet [YAML
 source:
   blueprint: bit.io - Store Query Results as CSV
   inputs:
-    Password: null ## REQUIRED
-    Database: null ## REQUIRED
-    Query: null ## REQUIRED
-    Folder Name: null 
-    File Name: output.csv ## REQUIRED
-    Include Column Names as Header?: true ## REQUIRED
+    BITIO_PASSWORD: null ## REQUIRED
+    BITIO_DATABASE: null ## REQUIRED
+    BITIO_QUERY: null ## REQUIRED
+    BITIO_DESTINATION_FOLDER_NAME: null 
+    BITIO_DESTINATION_FILE_NAME: output.csv ## REQUIRED
+    BITIO_FILE_HEADER: true ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1

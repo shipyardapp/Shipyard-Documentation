@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [Athena authorization guide](https://www.shipyardapp.com/docs/blueprint-library/amazon-athena/amazon-athena-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Athena authorization guide](https://www.shipyardapp.com/docs/blueprint-library/amazon-athena/amazon-athena-authorization/)**.
 
 Execute any SQL query against Amazon Athena. Perfect for creating multi-step SQL jobs, executing DML statements, or running scheduled queries.
 
@@ -41,17 +41,18 @@ Below is the YAML template for this Blueprint and can be used in the Fleet [YAML
 source:
   blueprint: Amazon Athena - Execute Query
   inputs:
-    Database: null ## REQUIRED
-    Query: null ## REQUIRED
-    S3 Log Bucket Name: null ## REQUIRED
-    S3 Log Folder Name: null 
-    Access Key ID: null ## REQUIRED
-    Secret Access Key: null ## REQUIRED
-    Region: us-east-2 ## REQUIRED
+    ATHENA_DATABASE: null ## REQUIRED
+    ATHENA_QUERY: null ## REQUIRED
+    ATHENA_BUCKET_NAME: null ## REQUIRED
+    ATHENA_LOG_FOLDER: null 
+    AWS_ACCESS_KEY_ID: null ## REQUIRED
+    AWS_SECRET_ACCESS_KEY: null ## REQUIRED
+    AWS_DEFAULT_REGION: us-east-2 ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1
   retry_wait: 0s
   runtime_cutoff: 4h0m0s
-  
+  exclude_exit_code_ranges:
+    - "0"
 ```

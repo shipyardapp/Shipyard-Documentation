@@ -14,9 +14,9 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [Mode authorization guide](https://www.shipyardapp.com/docs/blueprint-library/mode/mode-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Mode authorization guide](https://www.shipyardapp.com/docs/blueprint-library/mode/mode-authorization/)**.
 
-Check for the status of a single report run on Mode. The Vessel&#39;s exit code and status will match the status of the Mode run.
+Check for the status of a single report run on Mode. The Vessel's exit code and status will match the status of the Mode run.
 
 - If the run is not completed, the Vessel will return an exit code of 210, an error.
 - If the run has completed with an error, the Vessel will return an exit code of 211, an error.
@@ -41,7 +41,7 @@ The response for this request will always be stored at `shipyard-artifacts/mode-
 | Token Password | MODE_TOKEN_PASSWORD | Password | :white_check_mark: | - | - | The Token Password associated to the Token ID used to authenticate with Mode. |
 | Workspace Name | MODE_WORKSPACE_NAME | Alphanumeric | :white_check_mark: | - | - | Typically found in the URL structure as https://app.mode.com/ACCOUNT_NAME/ |
 | Report ID | MODE_REPORT_ID | Alphanumeric | :white_check_mark: | - | - | Numeric ID of the report you want to download, typically found at the end of the URL. |
-| Run ID | MODE_RUN_ID | Alphanumeric | :heavy_minus_sign: | - | - | The report run ID that you want to check the status of. If connected to a `Trigger Sync` Blueprint, leave blank. |
+| Run ID | MODE_RUN_ID | Alphanumeric | :heavy_minus_sign: | - | - | The report run ID that you want to check the status of. If connected to a "Trigger Sync" Blueprint, leave blank. |
 
 
 ## YAML
@@ -52,11 +52,11 @@ Below is the YAML template for this Blueprint and can be used in the Fleet [YAML
 source:
   blueprint: Mode - Check Run Status
   inputs:
-    Token ID: null ## REQUIRED
-    Token Password: null ## REQUIRED
-    Workspace Name: null ## REQUIRED
-    Report ID: null ## REQUIRED
-    Run ID: null 
+    MODE_TOKEN_ID: null ## REQUIRED
+    MODE_TOKEN_PASSWORD: null ## REQUIRED
+    MODE_WORKSPACE_NAME: null ## REQUIRED
+    MODE_REPORT_ID: null ## REQUIRED
+    MODE_RUN_ID: null 
   type: BLUEPRINT
 guardrails:
   retry_count: 1
