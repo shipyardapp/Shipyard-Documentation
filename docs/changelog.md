@@ -27,32 +27,32 @@ _All timing of feature development is estimated and subject to change_
 ## 10/24/2022
 
 ### Enhancements
-- We've been tuning on queries to speed things up for you. Users will see some fast load times on Projects and Fleets.
+- We've been tuning our queries to speed things up for you. Users will see faster load times on Projects and Fleets.
 
 ### Bug Fixes
-- Like most new featues, the API endpoint for logs needed a little tweaking. All's well on the logging front.
+- Like most new features, the API endpoint for logs needed a little tweaking. All's well on the logging front.
 
 ## 09/29/2022
 
 ### Enhancements
-- Cookies? Yes, please! You can now let us know if those cookies are welcome in your browser or not.
+- Cookies? Yes, please! You can now let us know if cookies are welcome in your browser or not.
 
 ## 09/28/2022
 
 ### New Features
-- Introducing our public API! You can pull all your logs and quickly create and edit Fleets in bulk. Just check out your new Settings page under _My Profile_ to get started.
+- Introducing our public API! You can pull all your logs and quickly create and edit Fleets in bulk. Just check out Settings under _My Profile_ to get started.
 ![Photo of Settings API page](./.gitbook/assets/change_log_release_v0_307_0.png)
 
 ## 09/20/2022
 
 ### Bug Fixes
-- Our markdown was messed up, so we got down, cleaned up, and are ready for our checkmark.
+- Our markdown was messed up, so we got down, cleaned up, and are ready for our checkmark! Markdwon should now display as intended.
 
 ## 09/06/2022
 
 ### Bug Fixes
 - Housekeeping did some great work but might have misplaced a few hyperlinks. They have been found and put back where they belong.
-- Non-required password fields were being required in new Blueprints...and while we think they really _should_ be, we believe you'll make the best decisions for you.
+- Non-required password fields were being required in new Blueprints...and while we really think they _should_ be, we believe you'll make the best decisions for you.
 
 ## 08/17/2022
 
