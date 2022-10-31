@@ -46,13 +46,12 @@ _All timing of feature development is estimated and subject to change_
 ## 09/20/2022
 
 ### Bug Fixes
-- Our markdown was messed up, so we got down, cleaned up, and are ready for our checkmark! Markdwon should now display as intended.
+- Our Markdown was messed up, so we got down, cleaned up, and are ready for our checkmark! Markdown should now display as intended.
 
 ## 09/06/2022
 
 ### Bug Fixes
 - Housekeeping did some great work but might have misplaced a few hyperlinks. They have been found and put back where they belong.
-- Non-required password fields were being required in new Blueprints...and while we really think they _should_ be, we believe you'll make the best decisions for you.
 
 ## 08/17/2022
 
