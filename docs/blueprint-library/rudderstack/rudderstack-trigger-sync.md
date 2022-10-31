@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [Rudderstack authorization guide](https://www.shipyardapp.com/docs/blueprint-library/rudderstack/rudderstack-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Rudderstack authorization guide](https://www.shipyardapp.com/docs/blueprint-library/rudderstack/rudderstack-authorization/)**.
 
 Immediately execute a sync of a Rudderstack source. This can kick off either an ETL or a reverse ETL job. The source must already be set up within the Rudderstack interface.
 
@@ -43,11 +43,11 @@ Below is the YAML template for this Blueprint and can be used in the Fleet [YAML
 source:
   blueprint: RudderStack - Trigger Sync
   inputs:
-    Access Token: null ## REQUIRED
-    Source ID: null ## REQUIRED
+    RUDDERSTACK_ACCESS_TOKEN: null ## REQUIRED
+    RUDDERSTACK_SOURCE_ID: null ## REQUIRED
   type: BLUEPRINT
 guardrails:
-  retry_count: 0
+  retry_count: 1
   retry_wait: 0s
   runtime_cutoff: 4h0m0s
   exclude_exit_code_ranges:

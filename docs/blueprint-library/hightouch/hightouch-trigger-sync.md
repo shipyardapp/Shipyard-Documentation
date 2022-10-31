@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [Hightouch authorization guide](https://www.shipyardapp.com/docs/blueprint-library/hightouch/hightouch-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Hightouch authorization guide](https://www.shipyardapp.com/docs/blueprint-library/hightouch/hightouch-authorization/)**.
 
 Immediately execute a Hightouch snyc. The sync must already be set up within the Hightouch interface.
 
@@ -45,9 +45,9 @@ Below is the YAML template for this Blueprint and can be used in the Fleet [YAML
 source:
   blueprint: Hightouch - Trigger Sync
   inputs:
-    API Key: null ## REQUIRED
-    Sync ID: null ## REQUIRED
-    Run a Full Resync?: false ## REQUIRED
+    HIGHTOUCH_API_KEY: null ## REQUIRED
+    HIGHTOUCH_SYNC_ID: null ## REQUIRED
+    HIGHTOUCH_FULL_RESYNC: false ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1

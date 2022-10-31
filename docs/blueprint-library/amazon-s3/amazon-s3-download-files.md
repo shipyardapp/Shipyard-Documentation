@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [S3 authorization guide](https://www.shipyardapp.com/docs/blueprint-library/amazon-s3/amazon-s3-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [S3 authorization guide](https://www.shipyardapp.com/docs/blueprint-library/amazon-s3/amazon-s3-authorization/)**.
 
 Quickly export one or more files from an Amazon S3 bucket. Once the files have downloaded, transfer them to another service or run another Vessel against the data.
 
@@ -26,8 +26,8 @@ Quickly export one or more files from an Amazon S3 bucket. Once the files have d
 |:---|:---|:---|:---|:---|:---|:---|
 | Bucket Name | S3_BUCKET_NAME | Alphanumeric | :white_check_mark: | - | - | The target S3 bucket the target file is stored in. |
 | S3 Folder Name | S3_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the folder where the file is stored in the S3 Bucket. If left blank, looks in the root directory. |
-| S3 File Name Match Type | S3_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in `S3 File Name` will look for one file with exact match, or multiple files using regex. |
-| S3 File Name | S3_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file in the S3 bucket. Can be regex if `Match Type` is set accordingly. |
+| S3 File Name Match Type | S3_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in "S3 File Name" will look for one file with exact match, or multiple files using regex. |
+| S3 File Name | S3_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file in the S3 bucket. Can be regex if "Match Type" is set accordingly. |
 | Local Folder Name | S3_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the file(s) should be downloaded on Shipyard. Leaving blank will place the file in the home directory. |
 | Local File Name | S3_DESTINATION_FILE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | What to name the file(s) being downloaded on Shipyard. If left blank, defaults to the original file name(s). |
 | Access Key ID | AWS_ACCESS_KEY_ID | Password | :white_check_mark: | - | - | The access key ID for programmatic IAM user used to download the file. See Authorization documentation for more information. |
@@ -43,19 +43,20 @@ Below is the YAML template for this Blueprint and can be used in the Fleet [YAML
 source:
   blueprint: Amazon S3 - Download Files
   inputs:
-    Bucket Name: null ## REQUIRED
-    S3 Folder Name: null 
-    S3 File Name Match Type: exact_match ## REQUIRED
-    S3 File Name: null ## REQUIRED
-    Local Folder Name: null 
-    Local File Name: null 
-    Access Key ID: null ## REQUIRED
-    Secret Access Key: null ## REQUIRED
-    Region: us-east-2 ## REQUIRED
+    S3_BUCKET_NAME: null ## REQUIRED
+    S3_SOURCE_FOLDER_NAME: null 
+    S3_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
+    S3_SOURCE_FILE_NAME: null ## REQUIRED
+    S3_DESTINATION_FOLDER_NAME: null 
+    S3_DESTINATION_FILE_NAME: null 
+    AWS_ACCESS_KEY_ID: null ## REQUIRED
+    AWS_SECRET_ACCESS_KEY: null ## REQUIRED
+    AWS_DEFAULT_REGION: us-east-2 ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1
   retry_wait: 0s
   runtime_cutoff: 4h0m0s
-  
+  exclude_exit_code_ranges:
+    - "0"
 ```

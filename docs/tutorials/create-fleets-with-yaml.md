@@ -25,7 +25,7 @@ For more information about our YAML Editor, check out this [blog post](https://w
 
 ## Steps
 
-### Create New Fleet with YAML Editor
+### Step 1 - Create New Fleet with YAML Editor
 
 1. Click the **New Fleet** button on the top left corner of the Shipyard webpage.
 2. Choose the **Playground** project. Click **Select Project**.
@@ -99,7 +99,7 @@ notifications:
     after_on_demand: false
 ```
 
-### Use YAML Editor to Edit Fleet
+### Step 2 - Use YAML Editor to Edit Fleet
 
 1. For name, change `Download Slinky Dog Dash Ride Wait Times` to `Download Space Mountain Ride Data`.
 2. Under vessels, change `Download Slinky Dog Dash Ride Data` to `Download Space Mountain Ride Data`

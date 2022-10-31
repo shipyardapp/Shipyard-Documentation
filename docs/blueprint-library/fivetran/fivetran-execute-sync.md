@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [Fivetran authorization guide](https://www.shipyardapp.com/docs/blueprint-library/fivetran/fivetran-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Fivetran authorization guide](https://www.shipyardapp.com/docs/blueprint-library/fivetran/fivetran-authorization/)**.
 
 Immediately execute a sync of a Fivetran connector. The connector must already be set up within the Fivetran interface.
 
@@ -35,8 +35,8 @@ The response for this request will always be stored at `shipyard-artifacts/fivet
 
 | Name | Reference | Type | Required | Default | Options | Description |
 |:---|:---|:---|:---|:---|:---|:---|
-| API Key | FIVETRAN_API_KEY | Password | :white_check_mark: | - | - | Your account&#39;s unique API Key for Fivetran. |
-| API Secret | FIVETRAN_API_SECRET | Password | :white_check_mark: | - | - | Your account&#39;s unique API Secret for Fivetran. |
+| API Key | FIVETRAN_API_KEY | Password | :white_check_mark: | - | - | Your account's unique API Key for Fivetran. |
+| API Secret | FIVETRAN_API_SECRET | Password | :white_check_mark: | - | - | Your account's unique API Secret for Fivetran. |
 | Connector ID | FIVETRAN_CONNECTOR_ID | Alphanumeric | :white_check_mark: | - | - | The unique ID associated with a connector. Typically two words separated by an underscore. |
 
 
@@ -48,13 +48,14 @@ Below is the YAML template for this Blueprint and can be used in the Fleet [YAML
 source:
   blueprint: Fivetran - Execute Sync
   inputs:
-    API Key: null ## REQUIRED
-    API Secret: null ## REQUIRED
-    Connector ID: null ## REQUIRED
+    FIVETRAN_API_KEY: null ## REQUIRED
+    FIVETRAN_API_SECRET: null ## REQUIRED
+    FIVETRAN_CONNECTOR_ID: null ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1
   retry_wait: 0s
   runtime_cutoff: 4h0m0s
-  
+  exclude_exit_code_ranges:
+    - "0"
 ```

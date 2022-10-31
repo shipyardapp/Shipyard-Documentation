@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [bit.io authorization guide](https://www.shipyardapp.com/docs/blueprint-library/bitio/bitio-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [bit.io authorization guide](https://www.shipyardapp.com/docs/blueprint-library/bitio/bitio-authorization/)**.
 
 Execute any SQL query against a bit.io database, without returning any of the resulting data. This Blueprint should primarily be used for queries that perform functionality other than SELECT, like multi-step SQL jobs, or DML statements.
 
@@ -37,9 +37,9 @@ Below is the YAML template for this Blueprint and can be used in the Fleet [YAML
 source:
   blueprint: bit.io - Execute Query
   inputs:
-    Password: null ## REQUIRED
-    Database: null ## REQUIRED
-    Query: null ## REQUIRED
+    BITIO_PASSWORD: null ## REQUIRED
+    BITIO_DATABASE: null ## REQUIRED
+    BITIO_QUERY: null ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1

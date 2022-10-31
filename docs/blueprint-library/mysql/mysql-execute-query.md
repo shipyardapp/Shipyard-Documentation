@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [MySQL authorization guide](https://www.shipyardapp.com/docs/blueprint-library/mysql/mysql-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [MySQL authorization guide](https://www.shipyardapp.com/docs/blueprint-library/mysql/mysql-authorization/)**.
 
 Execute any SQL query against a MySQL database, without returning any of the resulting data. This Blueprint should primarily be used for queries that perform functionality other than SELECT, like multi-step SQL jobs, or DML statements.
 
@@ -29,7 +29,7 @@ Execute any SQL query against a MySQL database, without returning any of the res
 | Username | MYSQL_USERNAME | Alphanumeric | :white_check_mark: | - | - | Name of the user to connect to the database with. |
 | Password | MYSQL_PASSWORD | Password | :heavy_minus_sign: | - | - | Password associated to the provided username. |
 | Database | MYSQL_DATABASE | Alphanumeric | :white_check_mark: | - | - | Name of the database in MySQL to connect to. |
-| Extra URL Parameters | MYSQL_URL_PARAMETERS | Alphanumeric | :heavy_minus_sign: | - | - | Extra parameters that will be placed at the end of the connection string, after the `?`. Must be separated by `&`. |
+| Extra URL Parameters | MYSQL_URL_PARAMETERS | Alphanumeric | :heavy_minus_sign: | - | - | Extra parameters that will be placed at the end of the connection string, after the "?". Must be separated by "&". |
 | Query | MYSQL_QUERY | Alphanumeric | :white_check_mark: | - | - | Any SQL query that runs a job against the database (CREATE, DROP, INSERT, etc.). Formatting is ignored. |
 
 
@@ -41,17 +41,18 @@ Below is the YAML template for this Blueprint and can be used in the Fleet [YAML
 source:
   blueprint: MySQL - Execute Query
   inputs:
-    Host: null ## REQUIRED
-    Port: 3306 ## REQUIRED
-    Username: null ## REQUIRED
-    Password: null 
-    Database: null ## REQUIRED
-    Extra URL Parameters: null 
-    Query: null ## REQUIRED
+    MYSQL_HOST: null ## REQUIRED
+    MYSQL_PORT: 3306 ## REQUIRED
+    MYSQL_USERNAME: null ## REQUIRED
+    MYSQL_PASSWORD: null 
+    MYSQL_DATABASE: null ## REQUIRED
+    MYSQL_URL_PARAMETERS: null 
+    MYSQL_QUERY: null ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1
   retry_wait: 0s
   runtime_cutoff: 4h0m0s
-  
+  exclude_exit_code_ranges:
+    - "0"
 ```

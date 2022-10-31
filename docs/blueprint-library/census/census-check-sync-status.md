@@ -14,9 +14,9 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [Census authorization guide](https://www.shipyardapp.com/docs/blueprint-library/census/cesnsus-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Census authorization guide](https://www.shipyardapp.com/docs/blueprint-library/census/cesnsus-authorization/)**.
 
-Check for the status of a Census sync. The Vessel&#39;s exit code and status will match the status of the latest sync.
+Check for the status of a Census sync. The Vessel's exit code and status will match the status of the latest sync.
 
 ## Status Codes
 - If the sync finishes successfully, an exit code of 0 will be returned.
@@ -36,7 +36,7 @@ The response for this request will always be stored at `shipyard-artifacts/censu
 | Name | Reference | Type | Required | Default | Options | Description |
 |:---|:---|:---|:---|:---|:---|:---|
 | API Key | CENSUS_API_KEY | Password | :white_check_mark: | - | - | The API Key associated with your Census account. |
-| Sync Run ID | CENSUS_SYNC_RUN_ID | Alphanumeric | :heavy_minus_sign: | - | - | The ID of the Census sync run you want to check the status of. If connected to `Trigger Sync` blueprint, leave blank. |
+| Sync Run ID | CENSUS_SYNC_RUN_ID | Alphanumeric | :heavy_minus_sign: | - | - | The ID of the Census sync run you want to check the status of. If connected to "Trigger Sync" blueprint, leave blank. |
 
 
 ## YAML
@@ -47,8 +47,8 @@ Below is the YAML template for this Blueprint and can be used in the Fleet [YAML
 source:
   blueprint: Census - Check Sync Status
   inputs:
-    API Key: null ## REQUIRED
-    Sync Run ID: null 
+    CENSUS_API_KEY: null ## REQUIRED
+    CENSUS_SYNC_RUN_ID: null 
   type: BLUEPRINT
 guardrails:
   retry_count: 1

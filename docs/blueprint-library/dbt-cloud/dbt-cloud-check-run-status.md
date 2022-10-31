@@ -14,9 +14,9 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [dbt Cloud authorization guide](https://www.shipyardapp.com/docs/blueprint-library/dbt-cloud/dbt-cloud-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [dbt Cloud authorization guide](https://www.shipyardapp.com/docs/blueprint-library/dbt-cloud/dbt-cloud-authorization/)**.
 
-Check for the status of a single run on dbt Cloud. The Vessel&#39;s exit code and status will match the status of the dbt Cloud run. 
+Check for the status of a single run on dbt Cloud. The Vessel's exit code and status will match the status of the dbt Cloud run. 
 
 - If the run is not completed, the Vessel will return an exit code of 255, an error.
 - If the run has completed with an error, the Vessel will return an exit code of 1, an error.
@@ -39,7 +39,7 @@ The response for this request will always be stored at _shipyard-artifacts/dbtcl
 |:---|:---|:---|:---|:---|:---|:---|
 | Service Token | DBT_API_KEY | Password | :white_check_mark: | - | - | Your unique service token for dbt Cloud. Instructions for how to get this token can be found in the authorization documentation. |
 | Account ID | DBT_ACCOUNT_ID | Alphanumeric | :white_check_mark: | - | - | Your unique Account ID, found in the URL of dbt Cloud. https://cloud.getdbt.com/#/accounts/ACCOUNT_ID/projects/PROJECT_ID/dashboard/ |
-| Run ID | DBT_RUN_ID | Alphanumeric | :heavy_minus_sign: | - | - | The ID of a specific job you want to run, found in the URL of dbt Cloud. https://cloud.getdbt.com/#/accounts/ACCOUNT_ID/projects/PROJECT_ID/runs/RUN_ID/. If left blank, will try to find the run ID from an `Execute Job` Vessel that ran upstream. |
+| Run ID | DBT_RUN_ID | Alphanumeric | :heavy_minus_sign: | - | - | The ID of a specific job you want to run, found in the URL of dbt Cloud. https://cloud.getdbt.com/#/accounts/ACCOUNT_ID/projects/PROJECT_ID/runs/RUN_ID/. If left blank, will try to find the run ID from an "Execute Job" Vessel that ran upstream. |
 
 
 ## YAML
@@ -50,9 +50,9 @@ Below is the YAML template for this Blueprint and can be used in the Fleet [YAML
 source:
   blueprint: dbt Cloud - Check Run Status
   inputs:
-    Service Token: null ## REQUIRED
-    Account ID: null ## REQUIRED
-    Run ID: null 
+    DBT_API_KEY: null ## REQUIRED
+    DBT_ACCOUNT_ID: null ## REQUIRED
+    DBT_RUN_ID: null 
   type: BLUEPRINT
 guardrails:
   retry_count: 10

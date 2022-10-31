@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [MySQL authorization guide](https://www.shipyardapp.com/docs/blueprint-library/mysql/mysql-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [MySQL authorization guide](https://www.shipyardapp.com/docs/blueprint-library/mysql/mysql-authorization/)**.
 
 Upload one or more CSV files to any table in MySQL. With the file data, you can:
 - **Append Data** - Add the contents of your file to the end of the table.
@@ -46,11 +46,11 @@ In all instances, if the table name does not already exist, a new table will be 
 | Username | MYSQL_USERNAME | Alphanumeric | :white_check_mark: | - | - | Name of the user to connect to the database with. |
 | Password | MYSQL_PASSWORD | Password | :heavy_minus_sign: | - | - | Password associated to the provided username. |
 | Database | MYSQL_DATABASE | Alphanumeric | :white_check_mark: | - | - | Name of the database in MySQL to connect to. |
-| Extra URL Parameters | MYSQL_URL_PARAMETERS | Alphanumeric | :heavy_minus_sign: | - | - | Extra parameters that will be placed at the end of the connection string, after the `?`. Must be separated by `&`. |
+| Extra URL Parameters | MYSQL_URL_PARAMETERS | Alphanumeric | :heavy_minus_sign: | - | - | Extra parameters that will be placed at the end of the connection string, after the "?". Must be separated by "&". |
 | Folder Name | MYSQL_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the file to upload can be found. If left blank, will search in the current working directory. |
-| File Name Match Type | MYSQL_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in `File Name` will match exactly to a single file, or use regex to match to multiple files. |
+| File Name Match Type | MYSQL_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in "File Name" will match exactly to a single file, or use regex to match to multiple files. |
 | File Name | MYSQL_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | The file name that contains the data you want uploaded. |
-| Table Name | MYSQL_TABLE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the table where you want data inserted. If the table doesn&#39;t already exist, it will be created. |
+| Table Name | MYSQL_TABLE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the table where you want data inserted. If the table doesn't already exist, it will be created. |
 | Insertion Method | MYSQL_INSERT_METHOD | Select | :white_check_mark: | `append` | Append Data: `append`<br></br><br></br>Replace Data: `replace`<br></br><br></br>Add Data Only if Table is Empty: `fail` | Determines how the data in your file will be added into the target table. |
 
 
@@ -62,21 +62,22 @@ Below is the YAML template for this Blueprint and can be used in the Fleet [YAML
 source:
   blueprint: MySQL - Upload CSV to Table
   inputs:
-    Host: null ## REQUIRED
-    Port: 3306 ## REQUIRED
-    Username: null ## REQUIRED
-    Password: null 
-    Database: null ## REQUIRED
-    Extra URL Parameters: null 
-    Folder Name: null 
-    File Name Match Type: exact_match ## REQUIRED
-    File Name: null ## REQUIRED
-    Table Name: null ## REQUIRED
-    Insertion Method: append ## REQUIRED
+    MYSQL_HOST: null ## REQUIRED
+    MYSQL_PORT: 3306 ## REQUIRED
+    MYSQL_USERNAME: null ## REQUIRED
+    MYSQL_PASSWORD: null 
+    MYSQL_DATABASE: null ## REQUIRED
+    MYSQL_URL_PARAMETERS: null 
+    MYSQL_SOURCE_FOLDER_NAME: null 
+    MYSQL_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
+    MYSQL_SOURCE_FILE_NAME: null ## REQUIRED
+    MYSQL_TABLE_NAME: null ## REQUIRED
+    MYSQL_INSERT_METHOD: append ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1
   retry_wait: 0s
   runtime_cutoff: 4h0m0s
-  
+  exclude_exit_code_ranges:
+    - "0"
 ```

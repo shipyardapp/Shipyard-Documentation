@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-&gt; ## **First time using this Blueprint? Make sure you follow our [Cloud Storage authorization guide](https://www.shipyardapp.com/docs/blueprint-library/google-cloud-storage/google-cloud-storage-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Cloud Storage authorization guide](https://www.shipyardapp.com/docs/blueprint-library/google-cloud-storage/google-cloud-storage-authorization/)**.
 
 Import one or more files directly into a Google Cloud Storage (GCS) bucket. The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
 
@@ -36,8 +36,8 @@ All files uploaded will inherit the default settings for the GCS bucket.
 | Name | Reference | Type | Required | Default | Options | Description |
 |:---|:---|:---|:---|:---|:---|:---|
 | Local Folder Name | GCS_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Shipyard to upload the target file from. If left blank, will look in the home directory. |
-| Local File Name Match Type | GCS_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in `Local File Name` will look for one file with exact match, or multiple files using regex. |
-| Local File Name | GCS_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file on Shipyard. Can be regex if `Match Type` is set accordingly. |
+| Local File Name Match Type | GCS_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in "Local File Name" will look for one file with exact match, or multiple files using regex. |
+| Local File Name | GCS_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file on Shipyard. Can be regex if "Match Type" is set accordingly. |
 | GCS Bucket Name | GCS_BUCKET_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the GCS bucket to upload the file(s) to. |
 | GCS Folder Name | GCS_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Folder in the GCS bucket to upload the file(s) to. If left blank, will upload to the root directory. |
 | GCS File Name | GCS_DESTINATION_FILE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | What to name the file(s) being downloaded. If left blank, defaults to the original file name(s). |
@@ -52,17 +52,18 @@ Below is the YAML template for this Blueprint and can be used in the Fleet [YAML
 source:
   blueprint: Google Cloud Storage - Upload Files
   inputs:
-    Local Folder Name: null 
-    Local File Name Match Type: exact_match ## REQUIRED
-    Local File Name: null ## REQUIRED
-    GCS Bucket Name: null ## REQUIRED
-    GCS Folder Name: null 
-    GCS File Name: null 
-    Service Account: null ## REQUIRED
+    GCS_SOURCE_FOLDER_NAME: null 
+    GCS_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
+    GCS_SOURCE_FILE_NAME: null ## REQUIRED
+    GCS_BUCKET_NAME: null ## REQUIRED
+    GCS_DESTINATION_FOLDER_NAME: null 
+    GCS_DESTINATION_FILE_NAME: null 
+    GOOGLE_APPLICATION_CREDENTIALS: null ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1
   retry_wait: 0s
   runtime_cutoff: 4h0m0s
-  
+  exclude_exit_code_ranges:
+    - "0"
 ```
