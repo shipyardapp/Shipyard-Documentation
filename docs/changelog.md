@@ -24,6 +24,11 @@ _All timing of feature development is estimated and subject to change_
 
 - Credential Management (Late Q4)
 
+## 11/01/2022
+
+### Bug Fixes
+- Some users' Projects weren't loading due to borked Fleets. We've rooted out the cause and patched it up.
+
 ## 10/24/2022
 
 ### Enhancements
