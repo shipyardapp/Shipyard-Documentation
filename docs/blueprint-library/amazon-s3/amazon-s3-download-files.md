@@ -37,7 +37,7 @@ Quickly export one or more files from an Amazon S3 bucket. Once the files have d
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
@@ -58,5 +58,4 @@ guardrails:
   retry_wait: 0s
   runtime_cutoff: 4h0m0s
   exclude_exit_code_ranges:
-    - "0"
 ```

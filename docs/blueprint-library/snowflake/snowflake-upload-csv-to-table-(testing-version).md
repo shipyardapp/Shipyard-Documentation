@@ -1,16 +1,16 @@
 ---
-id: snowflake-upload-csv-to-table
-title: Snowflake Template - Upload CSV to Table
+id: snowflake-upload-csv-to-table-(testing-version)
+title: Snowflake Template - Upload CSV to Table (TESTING Version)
 hide_title: true
-sidebar_label: Upload CSV to Table
-description: Information about Shipyard's low-code Snowflake Upload CSV to Table blueprint. Upload a CSV file to any table in Snowflake. With the file data, you can create a new table, overwrite the existing table, or append to the end of the table.
+sidebar_label: Upload CSV to Table (TESTING Version)
+description: Information about Shipyard's low-code Snowflake Upload CSV to Table (TESTING Version) blueprint. Upload a CSV file to any table in Snowflake. With the file data, you can create a new table, overwrite the existing table, or append to the end of the table.
 keywords:
     - snowflake
     - blueprint
     - template
 ---
 
-# Snowflake - Upload CSV to Table
+# Snowflake - Upload CSV to Table (TESTING Version)
 
 ## Overview
 
@@ -61,7 +61,7 @@ Below is the YAML template for this Blueprint and can be used in the Fleet [YAML
 
 ```yaml
 source:
-  blueprint: Snowflake - Upload CSV to Table
+  blueprint: Snowflake - Upload CSV to Table (TESTING Version)
   inputs:
     SNOWFLAKE_USERNAME: null ## REQUIRED
     SNOWFLAKE_PASSWORD: null ## REQUIRED
