@@ -176,6 +176,8 @@ module.exports = {
 					"blueprint-library/amazon-s3/amazon-s3-overview",
 					"blueprint-library/amazon-s3/amazon-s3-authorization",
 					"blueprint-library/amazon-s3/amazon-s3-download-files",
+					"blueprint-library/amazon-s3/amazon-s3-move-or-rename-files",
+					"blueprint-library/amazon-s3/amazon-s3-remove-files",
 					"blueprint-library/amazon-s3/amazon-s3-upload-files",
 				],
 				"Azure Blob Storage": [
