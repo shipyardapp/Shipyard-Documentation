@@ -24,6 +24,14 @@ _All timing of feature development is estimated and subject to change_
 
 - Credential Management (Late Q4)
 
+## 11/03/2022
+
+### Enhancements
+- Blocked on your Python script? Never fear, AI is here! You can now get a jump start on any Python-based Vessel or Blueprint by describing what you want and letting our robo-friend generate some rough code for you. Plus, he's kinda adorable.
+![Photo of Settings API page](./.gitbook/assets/change_log_release_v0_314_2.png)
+
+- Now you can start a Fleet in YAML (maybe by copying a sweet [WordsToWorkflows](https://www.wordstoworkflows.com) Fleet into the Editor) and flip to the Visual Editor to tweak and connect your Vessels.
+
 ## 11/01/2022
 
 ### Bug Fixes
