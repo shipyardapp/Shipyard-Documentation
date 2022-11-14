@@ -38,7 +38,7 @@ Check the job status of a dataset that has recently been refreshed in Domo.
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 
 ```yaml
 source:
