@@ -21,6 +21,8 @@ For information on how to set up these Blueprints successfully, please read thro
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available:
 - [Download Files](google-cloud-storage-download-files.md)
+- [Move or Rename Files](google-cloud-storage-move-or-rename-files.md)
+- [Remove Files](google-cloud-storage-remove-files.md)
 - [Upload Files](google-cloud-storage-upload-files.md)
 
 ## Open Source Code

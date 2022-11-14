@@ -20,7 +20,9 @@ For information on how to set up these Blueprints successfully, please read thro
 
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available:
+- [Delete Files](sftp-delete-files.md)
 - [Download Files](sftp-download-files.md)
+- [Move Or Rename Files](sftp-move-or-rename-files.md)
 - [Upload Files](sftp-upload-files.md)
 
 ## Open Source Code

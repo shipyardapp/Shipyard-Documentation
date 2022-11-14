@@ -359,9 +359,9 @@ module.exports = {
 					"blueprint-library/sftp/sftp-upload-files",
 				],
 				"Shipyard API": [
+					"blueprint-library/shipyard-api/shipyard-api-overview",
 					"blueprint-library/shipyard-api/shipyard-api-authorization",
-					"blueprint-library/shipyard-api/shipyard-api-export-logs",
-					"blueprint-library/shipyard-api/shipyard-api-overview"
+					"blueprint-library/shipyard-api/shipyard-api-export-logs"
 				],
 				Slack: [
 					"blueprint-library/slack/slack-overview",

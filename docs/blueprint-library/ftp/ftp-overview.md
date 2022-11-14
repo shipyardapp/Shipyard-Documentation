@@ -21,6 +21,8 @@ For information on how to set up these Blueprints successfully, please read thro
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available:
 - [Download Files](ftp-download-files.md)
+- [Move or Rename Files](ftp-move-or-rename-files.md)
+- [Remove Files](ftp-remove-files.md)
 - [Upload Files](ftp-upload-files.md)
 
 ## Open Source Code
