@@ -1,8 +1,8 @@
 ---
-id: google-cloud-storage-remove-file
-title: Google Cloud Storage Template - Remove File
+id: google-cloud-storage-remove-files
+title: Google Cloud Storage Template - Remove Files
 hide_title: true
-sidebar_label: Remove File
+sidebar_label: Remove Files
 description: Information about Shipyard's low-code Google Cloud Storage Remove File blueprint. Quickly remove one or more files from a Google Cloud Storage (GCS) bucket or folder
 keywords:
     - google cloud storage
@@ -10,7 +10,7 @@ keywords:
     - template
 ---
 
-# Google Cloud Storage - Remove File
+# Google Cloud Storage - Remove Files
 
 ## Overview
 
@@ -36,7 +36,7 @@ Below is the YAML template for this Blueprint and can be used in the Fleet [YAML
 
 ```yaml
 source:
-  blueprint: Google Cloud Storage - Remove File
+  blueprint: Google Cloud Storage - Remove Files
   inputs:
     GCS_SOURCE_BUCKET_NAME: null ## REQUIRED
     GCS_SOURCE_FOLDER_NAME: null 

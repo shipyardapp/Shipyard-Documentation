@@ -184,6 +184,8 @@ module.exports = {
 					"blueprint-library/azure-blob-storage/azure-blob-storage-overview",
 					"blueprint-library/azure-blob-storage/azure-blob-storage-authorization",
 					"blueprint-library/azure-blob-storage/azure-blob-storage-download-files",
+					"blueprint-library/azure-blob-storage/azure-blob-storage-move-or-rename-files",
+					"blueprint-library/azure-blob-storage/azure-blob-storage-remove-files",
 					"blueprint-library/azure-blob-storage/azure-blob-storage-upload-files",
 				],
 				"bit.io": [
@@ -264,6 +266,8 @@ module.exports = {
 					"blueprint-library/ftp/ftp-overview",
 					"blueprint-library/ftp/ftp-authorization",
 					"blueprint-library/ftp/ftp-download-files",
+					"blueprint-library/ftp/ftp-move-or-rename-files",
+					"blueprint-library/ftp/ftp-remove-files",
 					"blueprint-library/ftp/ftp-upload-files",
 				],
 				"Google BigQuery": [
@@ -278,6 +282,8 @@ module.exports = {
 					"blueprint-library/google-cloud-storage/google-cloud-storage-overview",
 					"blueprint-library/google-cloud-storage/google-cloud-storage-authorization",
 					"blueprint-library/google-cloud-storage/google-cloud-storage-download-files",
+					"blueprint-library/google-cloud-storage/google-cloud-storage-move-or-rename-files",
+					"blueprint-library/google-cloud-storage/google-cloud-storage-remove-files",
 					"blueprint-library/google-cloud-storage/google-cloud-storage-upload-files",
 				],
 				"Google Drive": [
@@ -347,8 +353,15 @@ module.exports = {
 				SFTP: [
 					"blueprint-library/sftp/sftp-overview",
 					"blueprint-library/sftp/sftp-authorization",
+					"blueprint-library/sftp/sftp-delete-files",
 					"blueprint-library/sftp/sftp-download-files",
+					"blueprint-library/sftp/sftp-move-or-rename-files",
 					"blueprint-library/sftp/sftp-upload-files",
+				],
+				"Shipyard API": [
+					"blueprint-library/shipyard-api/shipyard-api-authorization",
+					"blueprint-library/shipyard-api/shipyard-api-export-logs",
+					"blueprint-library/shipyard-api/shipyard-api-overview"
 				],
 				Slack: [
 					"blueprint-library/slack/slack-overview",
