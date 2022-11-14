@@ -36,7 +36,11 @@ Quickly delete a file or multiple files within an Amazon S3 bucket. Once success
 
 ## YAML
 
+<<<<<<< HEAD
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+=======
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+>>>>>>> docs-blueprint-libaray-update-20221114.349751248
 
 ```yaml
 source:

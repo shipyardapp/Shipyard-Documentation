@@ -1,22 +1,22 @@
 ---
-id: ftp-remove-files
-title: FTP Template - Remove Files
+id: ftp-move-or-rename-files
+title: FTP Template - Move or Rename Files
 hide_title: true
-sidebar_label: Remove Files
-description: Information about Shipyard's low-code FTP Remove Files blueprint. Quickly remove one or more files from an FTP Server. 
+sidebar_label: Move or Rename Files
+description: Information about Shipyard's low-code FTP Move or Rename Files blueprint. Quickly move or rename one or more files from an FTP Server. Once the files have moved, transfer them to another service or run another Vessel against the data.
 keywords:
     - ftp
     - blueprint
     - template
 ---
 
-# FTP - Remove Files
+# FTP - Move or Rename Files
 
 ## Overview
 
 > ## **First time using this Blueprint? Make sure you follow our [FTP authorization guide](https://www.shipyardapp.com/docs/blueprint-library/ftp/ftp-authorization/)**.
 
-Quickly remove one or more files from an FTP Server. The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
+Quickly move one or more files from an FTP Server. The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
 
 This Blueprint requires _read_ permissions in order to download from the FTP server.
 
@@ -30,38 +30,30 @@ This Blueprint requires _read_ permissions in order to download from the FTP ser
 | Port | FTP_PORT | Integer | :white_check_mark: | 21 | - | Number for the port to connect to. `21` is used by default. |
 | Username | FTP_USERNAME | Alphanumeric | :heavy_minus_sign: | - | - | Value of the configured username in the FTP server. |
 | Password | FTP_PASSWORD | Password | :heavy_minus_sign: | - | - | Value of the configured password associated to the username on the FTP server. |
-<<<<<<< HEAD
-| FTP Folder Name | FTP_SOURCE_FOLDER_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the folder where the file is stored in the FTP server. |
-=======
-| FTP Folder Name | FTP_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the folder where the file is stored in the FTP server. |
->>>>>>> docs-blueprint-libaray-update-20221114.349751248
-| FTP File Name Match Type | FTP_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in "FTP File Name" will look for one file with exact match, or multiple files using regex. |
+| FTP Folder Name | FTP_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the folder where the file is stored in the FTP server. If left blank, will look in the root directory. |
+| FTP File Name Match Type | FTP_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in "FTP File Name" will look for one file with exact match, or multiple files using regex. |
 | FTP File Name | FTP_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file in the FTP server. Can be regex if "Match Type" is set accordingly. |
+| FTP Destination Folder Name | FTP_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | The name of the folder where the target file will be moved. If blank, will use the root directory |
+| FTP New File Name | FTP_DESTINATION_FILE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the file for the target file once it is moved. If blank will use the source file name |
 
 
 ## YAML
 
-<<<<<<< HEAD
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
-=======
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
->>>>>>> docs-blueprint-libaray-update-20221114.349751248
 
 ```yaml
 source:
-  blueprint: FTP - Remove Files
+  blueprint: FTP - Move or Rename Files
   inputs:
     FTP_HOST: null ## REQUIRED
     FTP_PORT: 21 ## REQUIRED
     FTP_USERNAME: null 
     FTP_PASSWORD: null 
-<<<<<<< HEAD
-    FTP_SOURCE_FOLDER_NAME: null ## REQUIRED
-=======
     FTP_SOURCE_FOLDER_NAME: null 
->>>>>>> docs-blueprint-libaray-update-20221114.349751248
-    FTP_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
+    FTP_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
     FTP_SOURCE_FILE_NAME: null ## REQUIRED
+    FTP_DESTINATION_FOLDER_NAME: null 
+    FTP_DESTINATION_FILE_NAME: null 
   type: BLUEPRINT
 guardrails:
   retry_count: 1
