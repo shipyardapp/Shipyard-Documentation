@@ -233,6 +233,8 @@ module.exports = {
 					"blueprint-library/domo/domo-refresh-dataset",
 					"blueprint-library/domo/domo-check-refresh-status",
 					"blueprint-library/domo/domo-download-card",
+					"blueprint-library/domo/domo-download-dataset",
+					"blueprint-library/domo/domo-upload-csv-as-dataset"
 				],
 				Dropbox: [
 					"blueprint-library/dropbox/dropbox-overview",
