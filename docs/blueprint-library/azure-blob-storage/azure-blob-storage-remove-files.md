@@ -32,7 +32,8 @@ Quickly remove one or more files in an Azure Blob container. The [match type](ht
 
 
 ## YAML
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
