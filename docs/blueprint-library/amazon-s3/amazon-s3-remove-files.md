@@ -37,6 +37,7 @@ Quickly delete a file or multiple files within an Amazon S3 bucket. Once success
 ## YAML
 
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+
 ```yaml
 source:
   blueprint: Amazon S3 - Remove Files
