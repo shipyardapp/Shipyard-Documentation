@@ -37,7 +37,9 @@ Quickly and seamlessly move a file within an S3 bucket to another bucket or fold
 
 
 ## YAML
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+
 ```yaml
 source:
   blueprint: Amazon S3 - Move or Rename Files

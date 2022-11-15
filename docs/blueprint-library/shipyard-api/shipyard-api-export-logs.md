@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-> ## **First time using this Blueprint? Make sure you follow our [Shipyard API authorization guide](shipyard-api-authorization.md)**.
+> ## **First time using this Blueprint? Make sure you follow our [Shipyard API authorization guide](https://www.shipyardapp.com/docs/blueprint-library/shipyard-api/authorization/)**.
 
 Quickly download the logs of your Shipyard Organization. The file contents will be downloaded and available as a CSV to use in another vessel.
 
@@ -31,7 +31,7 @@ Quickly download the logs of your Shipyard Organization. The file contents will 
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
