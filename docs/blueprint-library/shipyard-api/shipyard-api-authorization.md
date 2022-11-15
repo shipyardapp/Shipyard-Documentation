@@ -25,7 +25,9 @@ In order to interact with the API, an **API key** is required.
 
 4. Copy the generated API key value - _this is the **only time** the value will be available_
 
-![API keys generated API key value](../../.gitbook/assets/api-keys-generated-api-key-value.png)
+<!-- ![API keys generated API key value](../../.gitbook/assets/api-keys-generated-api-key-value.png) -->
+
+![API keys generated API key value](../../.gitbook/assets/shipyard_2022_11_14_21_38_45.png)
 
 :::caution
 

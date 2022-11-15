@@ -13,7 +13,7 @@ keywords:
 
 # Shipyard API Blueprints Overview
 
-Shipyard's low-code Shipyard API blueprints allow users to connect their data in Hex to the rest of their modern data stack.
+Shipyard's low-code Shipyard API blueprints allow users to connect to the Shipyard API.
 
 ## How to Use
 For information on how to set up these Blueprints successfully, please read through the [Shipyard API Authorization guide](shipyard-api-authorization.md).
