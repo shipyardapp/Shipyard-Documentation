@@ -39,7 +39,8 @@ In order to interact with the API, an **API key** is required.
 
 4. Copy the generated API key value - _this is the **only time** the value will be available_
 
-![API keys generated API key value](../.gitbook/assets/api-keys-generated-api-key-value.png)
+![API keys generated API key value](../.gitbook/assets/shipyard_2022_11_14_21_38_45.png)
+
 
 :::caution
 
@@ -60,7 +61,7 @@ The response code snippets have been truncated for brevity.
 #### Request
 
 ```bash
-curl https://api.app.shipyardapp.com/orgs --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
+curl https://api.app.shipyardapp.com/orgs --header "X-Shipyard-API-Key: <api-key>"
 ```
 
 #### Response
@@ -84,7 +85,7 @@ curl https://api.app.shipyardapp.com/orgs --header "X-Shipyard-API-Key: p1yfkloJ
 #### Request
 
 ```bash
-curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/fleets --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
+curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/fleets --header "X-Shipyard-API-Key: <api-key>"
 ```
 
 #### Response
@@ -120,7 +121,7 @@ curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/f
 #### Request
 
 ```bash
-curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets/33333333-3333-3333-3333-333333333333 --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
+curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets/33333333-3333-3333-3333-333333333333 --header "X-Shipyard-API-Key: <api key>"
 ```
 
 #### Response
@@ -139,7 +140,7 @@ vessels:
 #### Request
 
 ```bash
-curl -X PUT https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets --data-binary @fleet.yaml -header "Content-type: application/yaml" --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
+curl -X PUT https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets --data-binary @fleet.yaml -header "Content-type: application/yaml" --header "X-Shipyard-API-Key: <api-key>"
 ```
 
 The contents of `fleet.yaml` would be in the required [FAC format](fleets/yaml-editor.md).
@@ -162,7 +163,7 @@ vessels:
 #### Request
 
 ```bash
-curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets/33333333-3333-3333-3333-333333333333/runs --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
+curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets/33333333-3333-3333-3333-333333333333/runs --header "X-Shipyard-API-Key: <api-key>"
 ```
 
 #### Response
@@ -197,7 +198,7 @@ Below is a reference table for the Fleet Runs CSV.
 This request returns all of the Voyages in the requested Organization.
 
 ```bash
-curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/voyages --header "X-Shipyard-API-Key: p1yfkloJnpVnS7VZRDLrw5reU3PNKlDKMel9GAny8lQ="
+curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/voyages --header "X-Shipyard-API-Key: <api-key>"
 ```
 
 #### Response
