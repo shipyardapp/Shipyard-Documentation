@@ -21,6 +21,8 @@ For information on how to set up these Blueprints successfully, please read thro
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available:
 - [Download Files](azure-blob-storage-download-files.md)
+- [Move Or Rename Files](azure-blob-storage-move-or-rename-files.md)
+- [Remove Files](azure-blob-storage-remove-files.md)
 - [Upload Files](azure-blob-storage-upload-files.md)
 
 ## Open Source Code

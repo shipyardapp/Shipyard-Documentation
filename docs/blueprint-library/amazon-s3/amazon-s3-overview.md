@@ -21,6 +21,8 @@ For information on how to set up these Blueprints successfully, please read thro
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available:
 - [Download Files](amazon-s3-download-files.md)
+- [Move Or Rename Files](amazon-s3-move-or-rename-files.md)
+- [Remove Files](amazon-s3-remove-files.md)
 - [Upload Files](amazon-s3-upload-files.md)
 
 ## Open Source Code
