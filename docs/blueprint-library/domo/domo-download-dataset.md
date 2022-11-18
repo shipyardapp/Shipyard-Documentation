@@ -29,8 +29,8 @@ Either a username/password or an access token should be provided. If both are pr
 | Client ID | DOMO_CLIENT_ID | Password | :white_check_mark: | - | - | Client ID is generated in the Domo Developer Portal. The ID should have the following scope: data, workflow, user, account, dashboard |
 | Secret Key | DOMO_SECRET_KEY | Password | :white_check_mark: | - | - | The secret attached to the generated Client ID |
 | DOMO Dataset ID | DOMO_DATASET_ID | Alphanumeric | :white_check_mark: | - | - | The id of the dataset desired to be replaced. Can be acquired from the url of the dataset |
-| Local File Name | DOMO_DESTINATION_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | The name for the csv file once it is downloaded |
 | Local Destination Folder Name | DOMO_DESTINATION_FOLDER | Alphanumeric | :heavy_minus_sign: | - | - | The file path of where the csv should be downloaded to. If left blank, then the file will be saved in the current working directory. |
+| Local File Name | DOMO_DESTINATION_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | The name for the csv file once it is downloaded |
 
 
 ## YAML
@@ -44,8 +44,8 @@ source:
     DOMO_CLIENT_ID: null ## REQUIRED
     DOMO_SECRET_KEY: null ## REQUIRED
     DOMO_DATASET_ID: null ## REQUIRED
-    DOMO_DESTINATION_FILE_NAME: null ## REQUIRED
     DOMO_DESTINATION_FOLDER: null 
+    DOMO_DESTINATION_FILE_NAME: null ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 0
