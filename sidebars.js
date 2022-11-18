@@ -325,6 +325,14 @@ module.exports = {
 					"blueprint-library/microsoft-sql-server/microsoft-sql-server-store-query-results-as-csv",
 					"blueprint-library/microsoft-sql-server/microsoft-sql-server-upload-csv-to-table",
 				],
+				Looker: [
+					"blueprint-library/looker/looker-overview",
+					"blueprint-library/looker/looker-authorization",
+					"blueprint-library/looker/looker-create-sql-runner-query",
+					"blueprint-library/looker/looker-download-dashboard-as-file",
+					"blueprint-library/looker/looker-download-look-as-file",
+					"blueprint-library/looker/looker-download-sql-query-as-file"
+				],
 				Mode: [
 					"blueprint-library/mode/mode-overview",
 					"blueprint-library/mode/mode-authorization",
