@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-> ## **First time using this Blueprint? Make sure you follow our [Looker authorization guide](https://www.shipyardapp.com/docs/blueprint-library/looker/looker-download-look-as-file/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Looker authorization guide](looker-authorization.md)**.
 
 Quickly download a Look from Looker as a variety of file types.
 
