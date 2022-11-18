@@ -16,7 +16,7 @@ keywords:
 
 > ## **First time using this Blueprint? Make sure you follow our [Looker authorization guide](https://www.shipyardapp.com/docs/blueprint-library/looker/looker-create-sql-runner-query/)**.
 
-Quickly create a SQL query (stored as a `slug`) to be run in a downstream vessel. This works best when paired with `Looker - Run SQL Query` blueprint.
+Quickly create a SQL query (stored as a `slug`) to be run in a downstream vessel. This works best when paired with `Looker - Download SQL Query as File` blueprint.
 
 
 
