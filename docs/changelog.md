@@ -24,6 +24,15 @@ _All timing of feature development is estimated and subject to change_
 
 - Credential Management (Late Q4)
 
+## 11/21/2022
+
+### Enhancements
+- Still haven't built a Fleet? We noticed! To ensure you're properly guided, you'll land on the *How to Use* panel when you visit the Fleet Builder until you get your sea legs.
+- We've added a header on the Usage Dashboard with a link to our new **Shipyard API - Export Logs** Blueprint. If you want more granular detail than the dashboard provides, this new Blueprint can get it for you.
+
+### Bug Fixes
+- Switching from the YAML to the Visual Editor was causing unexpected damage to Vessels using GitHub integration. Luckily (and because we fixed it), this is no longer the case.
+
 ## 11/03/2022
 
 ### Enhancements
