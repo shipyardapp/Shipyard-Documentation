@@ -12,6 +12,16 @@ keywords:
 
 # Glossary of Terms
 
+## What's in a name?
+Our goal with Shipyard is to choose syntax that helps users intuitively understand the connections between entities by using real-world equivalents.
+
+- A **Shipyard** is where you build and launch Vessels (ships). 
+- **Vessels** come in all shapes and sizes (tugboat, sailboat, yacht, freighter, etc.) and each Vessel is used for a specific purpose. 
+- When you have a Vessel that you need to build repeatedly, you use a **Blueprint**.
+- When multiple Vessels travel together on a single mission, they become a **Fleet**.
+- When Fleets travel, they go on **Voyages**.
+- When a Voyage is complete, a record of the travel is stored in the **Log** book.
+
 ## Definitions
 
 [**Blueprint Library**](reference/blueprints/blueprint-library/blueprint-library-overview.md) is a location for pre-made Blueprints developed by Shipyard staff.
