@@ -146,6 +146,7 @@ module.exports = {
 		],
 		"🎯 Tutorials": [
 			"tutorials/advanced-code-vessel",
+			"tutorials/github-vessel",
 			"tutorials/non-native-language-vessels",
 			"tutorials/referencing-fleet-webhook-parameters",
 			"tutorials/create-fleets-with-yaml",
