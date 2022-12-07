@@ -19,6 +19,7 @@ import TabItem from '@theme/TabItem';
 
 In this tutorial, you'll walk through the steps required to set up a Vessel that runs a Python script from GitHub.
 
+
 By the end of the tutorial, you'll be able to:
 
 - Connect your GitHub account to Shipyard.
@@ -28,20 +29,98 @@ By the end of the tutorial, you'll be able to:
 
 ## Setup
 
-:::caution
-For the sake of the this tutorial, we are assuming that you have a GitHub account. If you do not, head over to [GitHub](https://github.com/join) and create an account.
-:::
+We will be picking up from our Getting Started Tutorial: [Building Your First Fleet with Low-Code Library Blueprints](../getting-started/first-fleet.md). The script that we will run from GitHub is the same script that is found in the third [Getting Started Tutorial](../getting-started/first-vessel-with-code.md).
 
-The Python script that we will use in this tutorial takes a CSV and averages a column by date. To follow along, you will need to clone this [repository](https://github.com/smjohnsonShipyard/GitHub-demos). 
+If you'd like to follow along, you can work through the first two tutorials or you can create a starting point with this YAML code:
 
-If you need help cloning a repository, GitHub has you covered with a [tutorial](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) on how to do just that. Once you have that repository cloned, we are ready to get started!
+```
+name: Download File from Webpage and Email to User
+vessels:
+    Download Slinky Dog Dash Ride Data:
+        source:
+            blueprint: HTTP - Download File from URL
+            inputs:
+                HTTP_CUSTOM_HEADERS: null
+                HTTP_DESTINATION_FILE_NAME: slinky_dog_dash.csv
+                HTTP_DESTINATION_FOLDER_NAME: disney_world_wait_times
+                HTTP_FILE_URL: https://cdn.touringplans.com/datasets/slinky_dog.csv
+            type: BLUEPRINT
+        guardrails:
+            retry_count: 1
+            retry_wait: 0s
+            runtime_cutoff: 4h0m0s
+        notifications:
+            emails:
+                - steven.johnson@shipyardapp.com
+            after_error: true
+            after_on_demand: false
+    Email Slinky Dog Dash Ride Data:
+        source:
+            blueprint: Email - Send Message with File
+            inputs:
+                EMAIL_BCC: null
+                EMAIL_CC: null
+                EMAIL_INCLUDE_SHIPYARD_FOOTER: true
+                EMAIL_MESSAGE: Here are the wait times for Slinky Dog Dash
+                EMAIL_PASSWORD: SHIPYARD_HIDDEN
+                EMAIL_SEND_METHOD: tls
+                EMAIL_SENDER_ADDRESS: ${EMAIL_USERNAME}
+                EMAIL_SENDER_NAME: null
+                EMAIL_SMTP_HOST: smtp.gmail.com
+                EMAIL_SMTP_PORT: "587"
+                EMAIL_SOURCE_FILE_NAME: slinky_dog_dash_with_hours.csv
+                EMAIL_SOURCE_FILE_NAME_MATCH_TYPE: exact_match
+                EMAIL_SOURCE_FOLDER_NAME: disney_world_wait_times
+                EMAIL_SUBJECT: Slinky Dog Dash Ride Data
+                EMAIL_TO: steven.johnson@shipyardapp.com
+                EMAIL_USERNAME: shipyardapptest@gmail.com
+            type: BLUEPRINT
+        guardrails:
+            retry_count: 1
+            retry_wait: 0s
+            runtime_cutoff: 4h0m0s
+        notifications:
+            emails:
+                - steven.johnson@shipyardapp.com
+            after_error: true
+            after_on_demand: false
+connections:
+    Download Slinky Dog Dash Ride Data:
+        Email Slinky Dog Dash Ride Data: SUCCESS
+notifications:
+    emails:
+        - steven.johnson@shipyardapp.com
+    after_error: true
+    after_on_demand: false
+```
 
 ## Steps
 
-### Step 1: Connecting GitHub to Shipyard
+### Step 1: Fork Repository
+:::note
+This tutorial assumes that you have a GitHub account. If you do not have an account, head [here](https://github.com/join) and create one
+:::
 
-1. Using the sidebar, click on **Admin** to access the drop-down menu.
-2. Under Admin, select **Integrations**.
+1. Head to this [repository](https://github.com/shipyardapp/github-demos)
+
+:::info
+The Python scripts in this repository take a ride data CSV and convert the wait time column from minutes to hours. Feel free to read the code before continuing.
+:::
+
+2. Click the **Fork** button on the top right corner of the webpage.
+   
+![](../.gitbook/assets/shipyard_2022_12_07_11_47_26.png)
+
+3. Under **Repository Name**, enter `shipyard_github_tutorial`.
+4. Click **Create Fork**. This will redirect you to the forked repository on your GitHub account.
+
+![](../.gitbook/assets/shipyard_2022_12_07_11_52_30.png)
+
+### Step 2: Connecting GitHub to Shipyard
+
+1. Head over to [Shipyard](https://www.shipyardapp.com/) and sign in.
+2. Using the sidebar, click on **Admin** to access the drop-down menu.
+3. Under Admin, select **Integrations**.
 
 ![](../.gitbook/assets/shipyard_2022_12_05_10_51_57.png)
 
@@ -50,7 +129,7 @@ If you need help cloning a repository, GitHub has you covered with a [tutorial](
 
 ![](../.gitbook/assets/shipyard_2022_12_05_10_54_20.png)
 
-1. Sign into GitHub if you haven't already. If you are signed in, you will be taken to GitHub to select which GitHub organization you want to connect to Shipyard. Choose the organization where you cloned the repository from earlier.
+5. Sign into GitHub if you haven't already. If you are signed in, you will be taken to GitHub to select which GitHub organization you want to connect to Shipyard. Choose the organization where you cloned the repository from earlier.
 
 ![](../.gitbook/assets/shipyard_2022_12_05_10_56_52.png)
 
@@ -58,86 +137,5 @@ If you need help cloning a repository, GitHub has you covered with a [tutorial](
 7. Click **Install**. This will redirect you back to the Admin page on Shipyard where you will be able to see your GitHub connection on the right side of the page.
 
 ![](../.gitbook/assets/shipyard_2022_12_05_11_22_14.png)
-
-### Step 2: Creating a Fleet to Download a File from a URL
-
-1. Using the sidebar, click on **New Fleet**.
-2. Using the dropdown menu, select the Project that you want to build this example in. 
-   
-![](../.gitbook/assets/shipyard_2022_12_05_11_30_09.png)
-
-3. Click **Select Project**. This will take you to the Fleet Builder.
-4. Under Add Vessel, enter `HTTP` to search for our HTTP Blueprints.
-5. Click **Download File from URL**. This will create a Vessel for you in the Fleet Builder.
-   
-![](../.gitbook/assets/shipyard_2022_12_05_11_34_07.png)
-
-6. Under **Vessel Name**, enter `Download Ride Data`.
-7. Under **File URL**, enter `https://cdn.touringplans.com/datasets/slinky_dog.csv`.
-8. Under **File Name**, enter `slinky_dog_dash.csv`.
-
-![](../.gitbook/assets/shipyard_2022_12_05_11_37_23.png)
-
-
-### Step 3: Creating a Vessel with Code from GitHub
-
-1. Click the Plus sign on the side of the Fleet Builder to add another Vessel.
-2. Click **Python**. This will create a second Vessel for you in the Fleet Builder.
-3. Under **Vessel Name**, enter `Average Wait Time by Day`.
-4. Under **File to Run**, enter `http_slinky_dog_dash_average.py`.
-5. Select **Git**.
-6. Under **Repo**, select the repository where you cloned the code from earlier.
-7. Under **Code Source**, select `Main`.
-8. Under **Git Clone Location**, select `Unpack into Current Working Directory`.
-
-:::info
-Choosing this option will dump all of the files into the working directory in Shipyard. If you choose the default option, the files will be dumped into a folder with the same name as the repo.
-:::
-
-9.  Connect the Download Ride Data Vessel to the Average Wait Time by Day Vessel.
-
-![](../.gitbook/assets/shipyard_2022_12_05_11_56_07.png)
-
-:::note
-Generally a code Vessel would require installing [Python packages](../reference/packages/external-package-dependencies.md). You are able to do that manually if you wish, however Shipyard will parse your repository for a requirements.txt file and install the required packages automatically.
-:::
-
-### Step 4: Creating a Vessel to Send the New File with Email
-
-1. Click the Plus sign on the side of the Fleet Builder to add another Vessel.
-2. Under Add Vessel, enter `Email` to search for our Email Blueprints.
-3. Click **Send Message with File** to add a new Vessel. 
-   
-![](../.gitbook/assets/shipyard_2022_12_06_10_24_49.png)
-   
-4. Under **Vessel Name**, enter `Send Daily Average by Email`.
-5. Under **SMTP Host**, enter `smtp.gmail.com`
-6. Under **SMTP Port**, enter `587`.
-7. Leave **Username**, **Password**, and **Sender Address** with their default values to use our test email for this example.
-8. Under **To**, enter your email.
-9. Under **Subject**, enter `Daily Ride Wait Time Average`.
-10. Under **Message**, enter `Here is Slinky Dog Dash's Daily Wait Time Average`.
-11. Under **File Name**, enter `daily_average_for_slinky_dog_dash.csv`.
-12. Connect **Average Wait Time by Day** to **Send Daily Average by Email**.
-    
-Your finished Fleet should look like this: 
-![](../.gitbook/assets/shipyard_2022_12_05_14_17_31.png)
-
-13. Click **Save & Finish** on the bottom right of your screen. This will take you to a page letting you know that your Fleet has been created successfully.
-14. Click **Run Your Fleet** which will take you to the [Fleet Log](../reference/logs/fleet-logs.md).
-
-
-Wait for all three Vessels to turn green to indicate that they finished running successfully. 
-
-![](../.gitbook/assets/shipyard_2022_12_05_14_45_53.png)
-
-Once they are finished, you should have an email that shows the daily average CSV that our Python script from GitHub created.
-
-![](../.gitbook/assets/shipyard_2022_12_05_14_46_56.png)
-
-:::tip Success
-You've successfully integrated GitHub with Shipyard and used your first script from GitHub in a Fleet!
-:::
-
 
 
