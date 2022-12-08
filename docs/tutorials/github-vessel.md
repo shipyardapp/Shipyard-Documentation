@@ -25,13 +25,12 @@ By the end of the tutorial, you'll be able to:
 - Connect your GitHub account to Shipyard.
 - Create a [Vessel](../reference/vessels.md) with a script from GitHub.
 - Install [package dependencies](../reference/packages/external-package-dependencies.md) for your solution.
-- Check [Logs](../reference/logs/logs-overview.md) to verify that a Vessel ran successfully.
+- Check [Logs](../reference/logs/logs-overview.md) to verify that your Fleet ran successfully.
 
 ## Setup
 
-We will be picking up from our Getting Started Tutorial: [Building Your First Fleet with Low-Code Library Blueprints](../getting-started/first-fleet.md). The script that we will run from GitHub is the same script that is found in the third [Getting Started Tutorial](../getting-started/first-vessel-with-code.md).
+We will be picking up with the Fleet that was created in our Getting Started Tutorial: [Building Your First Fleet with Low-Code Library Blueprints](../getting-started/first-fleet.md). If you'd like to follow along, you can work through the first two installments of the Getting Started Tutorial Series or you can create a starting point with this YAML code: 
 
-If you'd like to follow along, you can work through the first two tutorials or you can create a starting point with this YAML code:
 
 ```
 name: Download File from Webpage and Email to User
@@ -94,6 +93,8 @@ notifications:
     after_on_demand: false
 ```
 
+The script that we will run from GitHub is the same script that is found in the third [Getting Started Tutorial](../getting-started/first-vessel-with-code.md).
+
 ## Steps
 
 ### Step 1: Fork Repository
@@ -104,7 +105,7 @@ This tutorial assumes that you have a GitHub account. If you do not have an acco
 1. Head to this [repository](https://github.com/shipyardapp/github-demos)
 
 :::info
-The Python scripts in this repository take a ride data CSV and convert the wait time column from minutes to hours. Feel free to read the code before continuing.
+The Python scripts in this repository take a CSV with wait time data from Slinky Dog Dash at Walt Disney World and convert the wait time column from minutes to hours. Feel free to read the code before continuing.
 :::
 
 2. Click the **Fork** button on the top right corner of the webpage.
@@ -129,7 +130,7 @@ The Python scripts in this repository take a ride data CSV and convert the wait 
 
 ![](../.gitbook/assets/shipyard_2022_12_05_10_54_20.png)
 
-5. Sign into GitHub if you haven't already. If you are signed in, you will be taken to GitHub to select which GitHub organization you want to connect to Shipyard. Choose the organization where you cloned the repository from earlier.
+5. You'll be taken to GitHub to sign in then to the GitHub Installations page. Choose the organization where you cloned the repository from earlier.
 
 ![](../.gitbook/assets/shipyard_2022_12_05_10_56_52.png)
 
@@ -137,5 +138,46 @@ The Python scripts in this repository take a ride data CSV and convert the wait 
 7. Click **Install**. This will redirect you back to the Admin page on Shipyard where you will be able to see your GitHub connection on the right side of the page.
 
 ![](../.gitbook/assets/shipyard_2022_12_05_11_22_14.png)
+
+### Step 3: Add GitHub Code Vessel to Fleet
+
+1. On the Shipyard sidebar, select **Projects**.
+2. Select the **Testing** project where the Getting Started tutorial Fleet lives.
+3. Select the Fleet named `Download File from Webpage and Email to User`.
+4. Select **Fleet Builder** from the top of the page.
+
+![](../.gitbook/assets/shipyard_2022_12_08_11_31_42.png)
+
+5. Select **Python** to add a code Vessel to the Fleet.
+6. Under **Vessel Name**, enter `Convert Minutes to Hours`.
+7. Under **File to Run**, enter `vessel/slinky_dog_dash_convert.py`.
+8. Select **Git**.
+9. Under **Repo**, enter the name of your forked repository.
+10. Under **Code Source**, select `main`.
+11. Under **Git Clone Location**, select `Unpack into Current Working Directory`.
+    
+:::info Pro-Tip
+When running a code Vessel from GitHub, Shipyard parses the repository for a requirements.txt file. The packages in the file will automatically be installed for you.
+:::
+
+12. Delete the existing connection between the original two Vessels. 
+13. Connect `Download Slinky Dog Dash Ride Data` to `Convert Minutes to Hours`.
+14. Connect `Convert Minutes to Hours` to `Email Slinky Dog Dash Ride Data`.
+    
+![](../.gitbook/assets/shipyard_2022_12_08_11_43_33.png)
+
+15. Click **Save** on the bottom right corner of your screen.
+16. Click **Run Now**. This will start an on-demand run of the Fleet and take you to the [Fleet Log](../reference/logs/fleet-logs.md).
+17. After the Fleet completes running, you should see a status of Success and the Vessels all being green on the gantt chart.
+    
+![](../.gitbook/assets/shipyard_2022_12_08_12_27_51.png)
+
+18. In your email, you are able to see the file with wait time in hours and minutes.
+
+![](../.gitbook/assets/shipyard_2022_12_08_12_28_29.png)
+
+:::tip Success
+You've successfully integrated GitHub with Shipyard and used your first script from GitHub in a Fleet!
+:::
 
 
