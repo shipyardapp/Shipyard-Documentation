@@ -131,6 +131,7 @@ module.exports = {
 				Vessels: [
 					"how-tos/vessels/build-vessel-code",
 					"how-tos/vessels/build-vessel-blueprint",
+					"how-tos/vessels/use-dates-in-fields",
 					"how-tos/vessels/remove-vessel",
 					"how-tos/vessels/edit-vessel",
 					"how-tos/vessels/duplicate-vessel",

@@ -8,6 +8,9 @@ keywords:
   - troubleshoot
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 ## Module Not Found
 
 `ModuleNotFoundError: No module named 'xxxx'`
@@ -45,3 +48,38 @@ If this error appears printed at the beginning of your output and your Vessel ap
 If this error appears towards the end of your output and your Vessel appears to have run partially, the likely culprit is that your code is referencing the wrong file name or location.
 
 It is sometimes difficult to remember all of the files that would be available to your Vessels in a Fleet. We recommend this guide to [list all available files](how-tos/fleets/see-all-files.md) so you can better visualize the file names.
+
+## Reasons You May Be Having Weird Issues
+If you are having weird performance issues in Shipyard, we have a few steps you can try to rectify those issues. 
+
+1. Perform a hard refresh of your browser. Click your specific browser below for the key strokes needed to perform a hard refresh.
+
+<Tabs
+defaultValue="chrome"
+values={[
+{label: 'Google Chrome', value: 'chrome'},
+{label: 'Firefox', value: 'firefox'},
+{label: 'Microsoft Edge', value: 'edge'},
+]}>
+<TabItem value="chrome">
+
+Hold down Ctrl (Control) + Shift and click R
+
+</TabItem>
+
+<TabItem value="firefox">
+
+Hold down Ctrl (Control) + Shift and click R.
+
+</TabItem>
+
+<TabItem value="edge">
+
+Hold Ctrl (Control) + Fn + F5 on your keyboard.
+
+</TabItem>
+
+</Tabs>
+
+2. Some browser extensions cause weird bugs to occur in Shipyard. Try disabling extensions to see if that fixes your issue.
+3. Try a different browser.
