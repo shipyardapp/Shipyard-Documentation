@@ -29,10 +29,10 @@ By the end of the tutorial, you'll be able to:
 
 ## Setup
 
-We will be picking up with the Fleet that was created in our Getting Started Tutorial: [Building Your First Fleet with Low-Code Library Blueprints](../getting-started/first-fleet.md). If you'd like to follow along, you can work through the first two installments of the Getting Started Tutorial Series or you can create a starting point with this YAML code: 
+We will be picking up with the Fleet that was created in our Getting Started Tutorial: [Building Your First Fleet with Low-Code Library Blueprints](../getting-started/first-fleet.md). If you'd like to follow along, you can work through the first two installments of the Getting Started Tutorial Series or you can [create a starting point](create-fleets-with-yaml.md) with this YAML code: 
 
 
-```
+```yaml [](edited-with-Axolo)
 name: Download File from Webpage and Email to User
 vessels:
     Download Slinky Dog Dash Ride Data:
@@ -50,7 +50,7 @@ vessels:
             runtime_cutoff: 4h0m0s
         notifications:
             emails:
-                - steven.johnson@shipyardapp.com
+                - YOUR_EMAIL_HERE
             after_error: true
             after_on_demand: false
     Email Slinky Dog Dash Ride Data:
@@ -61,7 +61,7 @@ vessels:
                 EMAIL_CC: null
                 EMAIL_INCLUDE_SHIPYARD_FOOTER: true
                 EMAIL_MESSAGE: Here are the wait times for Slinky Dog Dash
-                EMAIL_PASSWORD: SHIPYARD_HIDDEN
+                EMAIL_PASSWORD: hlgyecgskabctidf
                 EMAIL_SEND_METHOD: tls
                 EMAIL_SENDER_ADDRESS: ${EMAIL_USERNAME}
                 EMAIL_SENDER_NAME: null
@@ -71,7 +71,7 @@ vessels:
                 EMAIL_SOURCE_FILE_NAME_MATCH_TYPE: exact_match
                 EMAIL_SOURCE_FOLDER_NAME: disney_world_wait_times
                 EMAIL_SUBJECT: Slinky Dog Dash Ride Data
-                EMAIL_TO: steven.johnson@shipyardapp.com
+                EMAIL_TO: YOUR_EMAIL_HERE
                 EMAIL_USERNAME: shipyardapptest@gmail.com
             type: BLUEPRINT
         guardrails:
@@ -80,7 +80,7 @@ vessels:
             runtime_cutoff: 4h0m0s
         notifications:
             emails:
-                - steven.johnson@shipyardapp.com
+                - YOUR_EMAIL_HERE
             after_error: true
             after_on_demand: false
 connections:
@@ -88,10 +88,12 @@ connections:
         Email Slinky Dog Dash Ride Data: SUCCESS
 notifications:
     emails:
-        - steven.johnson@shipyardapp.com
+        - YOUR_EMAIL_HERE
     after_error: true
     after_on_demand: false
 ```
+
+Replace every instance of YOUR_EMAIL_HERE with your email to get email notifications for the Fleet along with the CSV file being sent to you.
 
 The script that we will run from GitHub is the same script that is found in the third [Getting Started Tutorial](../getting-started/first-vessel-with-code.md).
 
@@ -102,11 +104,8 @@ The script that we will run from GitHub is the same script that is found in the 
 This tutorial assumes that you have a GitHub account. If you do not have an account, head [here](https://github.com/join) and create one
 :::
 
-1. Head to this [repository](https://github.com/shipyardapp/github-demos)
+1. Head to this [repository](https://github.com/shipyardapp/github-demos). The Python scripts in this repository take a CSV with wait time data from Slinky Dog Dash at Walt Disney World and convert the wait time column from minutes to hours. Feel free to read the code before continuing.
 
-:::info
-The Python scripts in this repository take a CSV with wait time data from Slinky Dog Dash at Walt Disney World and convert the wait time column from minutes to hours. Feel free to read the code before continuing.
-:::
 
 2. Click the **Fork** button on the top right corner of the webpage.
    
@@ -130,11 +129,11 @@ The Python scripts in this repository take a CSV with wait time data from Slinky
 
 ![](../.gitbook/assets/shipyard_2022_12_05_10_54_20.png)
 
-5. You'll be taken to GitHub to sign in then to the GitHub Installations page. Choose the organization where you cloned the repository from earlier.
+5. You'll be taken to GitHub to sign in then to the GitHub Installations page. Choose the organization where you forked the repository from earlier.
 
 ![](../.gitbook/assets/shipyard_2022_12_05_10_56_52.png)
 
-6. Choose to allow Shipyard to have access to all repositories or just the cloned repository from earlier. 
+6. Choose to allow Shipyard to have access to all repositories or just the forked repository from earlier. 
 7. Click **Install**. This will redirect you back to the Admin page on Shipyard where you will be able to see your GitHub connection on the right side of the page.
 
 ![](../.gitbook/assets/shipyard_2022_12_05_11_22_14.png)
@@ -142,7 +141,7 @@ The Python scripts in this repository take a CSV with wait time data from Slinky
 ### Step 3: Add GitHub Code Vessel to Fleet
 
 1. On the Shipyard sidebar, select **Projects**.
-2. Select the **Testing** project where the Getting Started tutorial Fleet lives.
+2. Select the **Testing** project where the Getting Started tutorial Fleet lives or the project where you created a new Fleet from the YAML starting point.
 3. Select the Fleet named `Download File from Webpage and Email to User`.
 4. Select **Fleet Builder** from the top of the page.
 
@@ -151,8 +150,13 @@ The Python scripts in this repository take a CSV with wait time data from Slinky
 5. Select **Python** to add a code Vessel to the Fleet.
 6. Under **Vessel Name**, enter `Convert Minutes to Hours`.
 7. Under **File to Run**, enter `vessel/slinky_dog_dash_convert.py`.
+
+:::info
+For the file name, we had to include the folder where the file was located in GitHub. The repository will be put into the Shipyard working directory with the GitHub folder structure in tact.
+:::
+
 8. Select **Git**.
-9. Under **Repo**, enter the name of your forked repository.
+9.  Under **Repo**, enter the name of your forked repository.
 10. Under **Code Source**, select `main`.
 11. Under **Git Clone Location**, select `Unpack into Current Working Directory`.
     
@@ -160,7 +164,10 @@ The Python scripts in this repository take a CSV with wait time data from Slinky
 When running a code Vessel from GitHub, Shipyard parses the repository for a requirements.txt file. The packages in the file will automatically be installed for you.
 :::
 
-12. Delete the existing connection between the original two Vessels. 
+12. Delete the existing connection between the original two Vessels by hovering over the connection and clicking the red X.
+
+![](../.gitbook/assets/shipyard_2022_12_09_11_32_28.png)
+
 13. Connect `Download Slinky Dog Dash Ride Data` to `Convert Minutes to Hours`.
 14. Connect `Convert Minutes to Hours` to `Email Slinky Dog Dash Ride Data`.
     
