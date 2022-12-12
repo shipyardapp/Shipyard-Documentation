@@ -53,7 +53,7 @@ You are now ready to add a code Vessel to your existing Fleet
 2. Name your Vessel **Add Time in Hours** under Vessel Name.
 
 :::note
-Shipyard allows you to provide code in three different ways: write the code in the UI, upload the code as a file, or clone the code from a GitHub repository. This tutorial will focus on writing the code in the UI and uploading the code as a file. GitHub integration is covered in the documentation. 
+Shipyard allows you to provide code in three different ways: write the code in the UI, upload the code as a file, or clone the code from a GitHub repository. This tutorial will focus on writing the code in the UI and uploading the code as a file. Running code from GitHub is covered in [this tutorial](../tutorials/github-vessel.md).
 :::
 
 <Tabs
