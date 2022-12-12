@@ -30,7 +30,7 @@ _All timing of feature development is estimated and subject to change_
 - Seconds, years, hours, epochs! We have a lot of time on our hands. So, check out our new [time-related Shipyard Environment Variables](https://www.shipyardapp.com/docs/reference/environment-variables/shipyard-environment-variables/) and start referencing your Fleet and Vessel times in your code. 
 
 ### Bug Fixes
-- Sometimes the Visual Editor develop a blindshot for your mouse clicks but now its back to being an easy touch.
+- Sometimes the Visual Editor would develop a blindspot for your mouse clicks but now its back to being an easy touch.
 
 ## 11/21/2022
 
