@@ -36,6 +36,14 @@ These environment variables can help your scripts be context-aware as they run, 
 | `SHIPYARD_CLONE_LOCATION` | `/home/shipyard/example-repo`          | Set to the directory where the Git repository root was cloned. **Only set when the Vessel is connected to Git**.           |
 | `SHIPYARD_VESSEL_START_TIME` | `2021-03-12T21:22:47Z` | The time at which the Vessel started running. Formatted using the [RFC3339](https://tools.ietf.org/html/rfc3339) standard.
 | `SHIPYARD_VESSEL_SCHEDULED_TIME` | `2021-03-12T21:22:00Z` | The time at which the Vessel started running. Formatted using the [RFC3339](https://tools.ietf.org/html/rfc3339) standard.
+| `SHIPYARD_VESSEL_START_TIME_YEAR` | `2022` | The year of the Vessel start time.
+| `SHIPYARD_VESSEL_START_TIME_MONTH` | `12` | The month of the Vessel start time in format 01-12.
+| `SHIPYARD_VESSEL_START_TIME_DAY` | `07` | The day of the Vessel start time in format 01-31.
+| `SHIPYARD_VESSEL_START_TIME_HOUR` | `14` | The hour of the Vessel start time in format 0-23.
+| `SHIPYARD_VESSEL_START_TIME_MINUTE` | `34` | The minute of the Vessel start time in format 0-59.
+| `SHIPYARD_VESSEL_START_TIME_SECOND` | `12` | The second of the Vessel start time in format 0-59.
+| `SHIPYARD_VESSEL_START_TIME_MILLISECOND` | `434` | The millisecond of the Vessel start time in format 0-999.
+| `SHIPYARD_VESSEL_START_TIME_EPOCH` | `1670443778` | The number of seconds since the Unix epoch.
 
 ### Fleet Environment Variables
 
@@ -58,5 +66,13 @@ When a Vessel is run as part of a Fleet, the following Environment Variables wil
 | `SHIPYARD_FLEET_DOWNSTREAM_VESSEL_IDS`    | `8934f43f-413a-4bc9-b267-0924035e3459,aa0c6a42-c61d-4f15-b54a-75247c4281da` | A comma-separated list of Vessel IDs from Vessels that will run downstream. The order of the IDs will match the corresponding downstream environment variables, but may change with every run.                 |
 | `SHIPYARD_FLEET_START_TIME` | `2021-03-12T21:22:47Z` | The time at which the Vessel started running. Formatted using the [RFC3339](https://tools.ietf.org/html/rfc3339) standard. |
 | `SHIPYARD_FLEET_SCHEDULED_TIME` | `2021-03-12T21:22:00Z` | The time at which the Vessel started running. Formatted using the [RFC3339](https://tools.ietf.org/html/rfc3339) standard. |
+| `SHIPYARD_FLEET_START_TIME_YEAR` | `2022` | The year of the Fleet start time.
+| `SHIPYARD_FLEET_START_TIME_MONTH` | `12` | The month of the Fleet start time in format 01-12.
+| `SHIPYARD_FLEET_START_TIME_DAY` | `07` | The day of the Fleet start time in format 01-31.
+| `SHIPYARD_FLEET_START_TIME_HOUR` | `14` | The hour of the Fleet start time in format 0-23.
+| `SHIPYARD_FLEET_START_TIME_MINUTE` | `34` | The minute of the Fleet start time in format 0-59.
+| `SHIPYARD_FLEET_START_TIME_SECOND` | `12` | The second of the Fleet start time in format 0-59.
+| `SHIPYARD_FLEET_START_TIME_MILLISECOND` | `434` | The millisecond of the Fleet start time in format 0-999.
+| `SHIPYARD_FLEET_START_TIME_EPOCH` | `1670443778` | The number of seconds since the Unix epoch.
 | `SHIPYARD_WEBHOOK_HEADERS_FILE` | `/home/shipyard/2560137a-5360-4561-8bfb-810280dce3f0.webhook_headers` | The path to the file that will be optionally created if headers are provided in the webhook invocation. |
 | `SHIPYARD_WEBHOOK_BODY_FILE` | `/home/shipyard/2560137a-5360-4561-8bfb-810280dce3f0.webhook_body` | The path to the file that will be optionally created if a body is provided in the webhook invocation. |
