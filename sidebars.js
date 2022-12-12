@@ -145,12 +145,12 @@ module.exports = {
 			},
 		],
 		"🎯 Tutorials": [
-			"tutorials/advanced-code-vessel",
+			"tutorials/github-vessel",
 			"tutorials/non-native-language-vessels",
 			"tutorials/referencing-fleet-webhook-parameters",
 			"tutorials/create-fleets-with-yaml",
 			"tutorials/create-blueprint",
-			"tutorials/upload-local-file"
+			"tutorials/upload-local-file",
 		],
 		"📦 Library Blueprints": [
 			{
@@ -234,7 +234,7 @@ module.exports = {
 					"blueprint-library/domo/domo-check-refresh-status",
 					"blueprint-library/domo/domo-download-card",
 					"blueprint-library/domo/domo-download-dataset",
-					"blueprint-library/domo/domo-upload-csv-as-dataset"
+					"blueprint-library/domo/domo-upload-csv-as-dataset",
 				],
 				Dropbox: [
 					"blueprint-library/dropbox/dropbox-overview",
@@ -301,11 +301,11 @@ module.exports = {
 					"blueprint-library/google-sheets/google-sheets-upload-csv-to-sheet",
 					"blueprint-library/google-sheets/google-sheets-clear-data-from-sheet",
 				],
-				"Hex": [
+				Hex: [
 					"blueprint-library/hex/hex-overview",
 					"blueprint-library/hex/hex-authorization",
 					"blueprint-library/hex/hex-run-project",
-					"blueprint-library/hex/hex-check-run-status"
+					"blueprint-library/hex/hex-check-run-status",
 				],
 				Hightouch: [
 					"blueprint-library/hightouch/hightouch-overview",
@@ -331,7 +331,7 @@ module.exports = {
 					"blueprint-library/looker/looker-create-sql-runner-query",
 					"blueprint-library/looker/looker-download-dashboard-as-file",
 					"blueprint-library/looker/looker-download-look-as-file",
-					"blueprint-library/looker/looker-download-sql-query-as-file"
+					"blueprint-library/looker/looker-download-sql-query-as-file",
 				],
 				Mode: [
 					"blueprint-library/mode/mode-overview",
@@ -371,7 +371,7 @@ module.exports = {
 				"Shipyard API": [
 					"blueprint-library/shipyard-api/shipyard-api-overview",
 					"blueprint-library/shipyard-api/shipyard-api-authorization",
-					"blueprint-library/shipyard-api/shipyard-api-export-logs"
+					"blueprint-library/shipyard-api/shipyard-api-export-logs",
 				],
 				Slack: [
 					"blueprint-library/slack/slack-overview",
