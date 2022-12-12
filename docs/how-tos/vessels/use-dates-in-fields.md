@@ -6,6 +6,7 @@ description: Quick how-to guide to insert a date into a field.
 keywords:
   - dates
   - vessel
+  - timestamp
 ---
 
 # How to Insert a Date into any Field
@@ -17,18 +18,24 @@ When you are sending a report to a stakeholder or automate uploading a file, you
 ## Steps
 
 1. Navigate to a Vessel with a field that you want to include a date.
-2. In the field, enter `${SHIPYARD_FLEET_START_TIME_MONTH}-${SHIPYARD_FLEET_START_TIME_DAY}-${SHIPYARD_FLEET_START_TIME_YEAR}`. This will name the file as month-day-year. Feel free to add any other information before or after the date setup.
+2. In the field, [reference the Shipyard environment variables](how-tos/../../environment-variables/access-environment-variables-in-ui.md) related to the Fleet or Vessel's Start Time. A full list of Shipyard environment variables can be found [here](../../reference/environment-variables/shipyard-environment-variables.md).
+
+**Ex.**  `${SHIPYARD_FLEET_START_TIME_YEAR}-${SHIPYARD_FLEET_START_TIME_MONTH}-${SHIPYARD_FLEET_START_TIME_DAY}`. This will return a string with year-month-date. Feel free to add any other information before or after the date setup, but never inside the `${}` environment variable reference.
+
+:::info Pro-Tip
+If you need to reference the file name again downstream, we recommend using FLEET_START_TIME variables because these times will be unchanging throughout the current run.
+
+If you want the time to be different for every Vessel, use the VESSEL_START_TIME variables. This will require you to use [regex match](../../reference/blueprints/blueprint-library/match-type.md#regex-match) to find the file name downstream in the same Fleet.
+:::
 
 ## Other Date Examples
-For a list of all environment variables that you can use to name your files, head [here](../../reference/environment-variables/shipyard-environment-variables.md).
-
 Here are some other general use-cases:
 
 | Example Output   | Field Entry                                                                                                                                                                      |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 09-12-2022       | ${SHIPYARD_VESSEL_START_TIME_DAY}-${SHIPYARD_VESSEL_START_TIME_MONTH}-${SHIPYARD_VESSEL_START_TIME_YEAR}                                                                         |
-| 12/2022          | ${SHIPYARD_VESSEL_START_TIME_MONTH}/${SHIPYARD_VESSEL_START_TIME_YEAR}                                                                                                           |
-| 1670443778       | ${SHIPYARD_VESSEL_START_TIME_EPOCH}                                                                                                                                              |
-| Wales            | 2.133333                                                                                                                                                                         |
-| 09-12-2022_14:07 | ${SHIPYARD_VESSEL_START_TIME_DAY}-${SHIPYARD_VESSEL_START_TIME_MONTH}-${SHIPYARD_VESSEL_START_TIME_YEAR}_${SHIPYARD_VESSEL_START_TIME_HOUR}:${SHIPYARD_VESSEL_START_TIME_MINUTE} |
-| 14:07.34         | ${SHIPYARD_VESSEL_START_TIME_HOUR}:${SHIPYARD_VESSEL_START_TIME_MINUTE}.${SHIPYARD_VESSEL_START_TIME_SECOND} 
+| report_09-21-2022.csv       | report\_`${SHIPYARD_VESSEL_START_TIME_MONTH}`-`${SHIPYARD_VESSEL_START_TIME_DAY}`-`${SHIPYARD_VESSEL_START_TIME_YEAR}`.csv                                                                         |
+| 2022/09/report.csv          | `${SHIPYARD_VESSEL_START_TIME_YEAR}`/`${SHIPYARD_VESSEL_START_TIME_MONTH}`/report.csv                                                                                                       |
+| 1663769254_report.csv       | `${SHIPYARD_VESSEL_START_TIME_EPOCH}`\_report.csv                                                                                                                                              |
+| report_09-21-2022_14:07.csv | report\_`${SHIPYARD_VESSEL_START_TIME_MONTH}`-`${SHIPYARD_VESSEL_START_TIME_DAY}`-`${SHIPYARD_VESSEL_START_TIME_YEAR}`\_`${SHIPYARD_VESSEL_START_TIME_HOUR}`:`${SHIPYARD_VESSEL_START_TIME_MINUTE}` |
+| report(14:07:34).csv        | report(`${SHIPYARD_VESSEL_START_TIME_HOUR}`:`${SHIPYARD_VESSEL_START_TIME_MINUTE}`:`${SHIPYARD_VESSEL_START_TIME_SECOND}`).csv 
+
