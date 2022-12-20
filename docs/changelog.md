@@ -8,21 +8,34 @@ keywords:
   - updates
 ---
 
-# Changelog
 
-Below is an ordered list of changes that we have made to Shipyard. Changes include but are not limited to: new features, feature enhancements, bug fixes, or other usability updates. Some changes may be omitted, such as changes that do not affect the user-facing experience.
+# Changelog: Feb 2020 -  Dec 2022
+:::info
+This changelog, though extremely lovable, has been retired. Please head to [Canny](https://shipyard.canny.io/) to view our new changlog, provide feedback, make a feature request, or check out Shipyard's roadmap!
+:::
+
+Below is an ordered list of changes that we have made to Shipyard from its inception through December 2022. Changes include but are not limited to: new features, feature enhancements, bug fixes, or other usability updates. Some changes may be omitted, such as changes that do not affect the user-facing experience.
 
 The purpose of this changelog is to publicly document the updates we are continuously making to improve the [Shipyard](https://www.shipyardapp.com) platform. We hope this is useful to our users to know exactly what parts of the product are being actively worked on.
 
-:::info
-Have a feature request, a bug report, a suggestion or an interesting use case? We'd love to hear it! Let us know at support@shipyardapp.com!
-:::
+## 12/19/2022
 
-## Bigger Features On Deck
+**Enhancements**
+- Canny is continuing to complement our compelling course! You Cann now make feature requests right from the application main side menu.
+![Screen Shot 2022-12-20 at 9](https://canny.io/images/54d1981bdd627e2e51a67379cb169421.png)
 
-_All timing of feature development is estimated and subject to change_
+**Bug Fixes**
+- Just because you ain't paying us, doesn't mean we don't love you. We've made sure Dev Plan users get their full compliment of runtime hours at the start of each 30-day cycle.
+- Our Fleet Builder is studying to be a magician and specialized in making Node and Python packages disappear. While we are so proud of its efforts, we put the kibosh on that. Your packages will remain safely nestled in your Vessels.
 
-- Credential Management (Late Q4)
+## 12/15/2022
+
+**Enhancements**
+- We got the impression that you just wanna build your Fleet and figure out the Vessel details later. Well, now you can! We've eliminated those multiple pesky error notifications and consolidated them into one place so you can move between Vessels at will. Just make sure you get them all addressed before saving!
+![change_log-release-v0_319_0](https://canny.io/images/71056e7493240986738a45d44c510577.png)
+
+- It is un-Canny how sharp-eyed and keen-minded y’all are! Thanks for helping us track down bugs and come up with new features. Now, you can track all the improvements you’ve inspired by clicking the Canny bell at the top of the app.
+![change_log-release-v0_319_1](https://canny.io/images/47d222cd253658410c1df9cd80641ccb.png)
 
 ## 12/08/2022
 
