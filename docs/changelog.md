@@ -18,6 +18,12 @@ Below is an ordered list of changes that we have made to Shipyard from its incep
 
 The purpose of this changelog is to publicly document the updates we are continuously making to improve the [Shipyard](https://www.shipyardapp.com) platform. We hope this is useful to our users to know exactly what parts of the product are being actively worked on.
 
+## 12/21/2022
+
+**Enhancements**
+- Python is ending its support for version 3.7 in June 2023. We know, it *is* sad! But don't let this language barrier get in the way of communicating. New Vessels and Blueprints built with Python will now default to version 3.9. Plus, you can update any of your Vessels and Blueprints to use 3.7 or 3.9. But we highly recommend you make the switch to 3.9 before too long.
+![Python version selection](https://ci3.googleusercontent.com/proxy/evrfuVajjsfHLbtYqY7DLxrFPoOVXKcaEq1nDyUzRDwDPEyqevh5VcU9KHEuj1xX71xO5gN0rPRakOQDIYLtyWJpnNRHTA_0e72_nSjfHtLS9nxOBDJeDYEb6hscmnMF3K6u4osOD-wIzG9y5PTIXHmv2P-UjoHwyFPZlduzv7BD4d_Drq0rlZpz8ABZeeN-Ow=s0-d-e1-ft#https://hs-19584742.f.hubspotstarter.net/hub/19584742/hubfs/python_version.gif?width=1120&upscale=true&name=python_version.gif)
+
 ## 12/19/2022
 
 **Enhancements**
