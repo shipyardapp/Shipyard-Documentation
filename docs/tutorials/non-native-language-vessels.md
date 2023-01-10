@@ -83,27 +83,14 @@ Feel free to review the code in both `run.sh` and `script.go` to see what each i
 
 ## Steps
 
-### Step 1 - Vessel Type
+### Step 1 - Build a Fleet with a Bash Vessel
 
-1. Using the sidebar, click on **Projects** to expand the list of projects.
-2. Click on either the *Playground* or *Testing* Project. You'll be directed to the Vessels tab for this project.
-3. Hover over the **+ New** button in the top-right corner of the screen and click **New Vessel**.
+1. Click the **+ New Fleet** button on the left sidebar.
+2. Select either the *Playground* or *Testing* Project and then click **Select**.
+3. Click the plus icon along the left side of the Fleet Builder sidebar.
+4. Click on the **Bash** option under Code Vessels.
 
-![](../.gitbook/assets/shipyard_2021_03_16_16_23_03.png)
-
-4. A modal will pop up asking you how you would like to build your Vessel. On the left side of the modal, you'll see an option for a **With Code**. Click this option.
-
-![](../.gitbook/assets/shipyard_2021_03_16_16_24_01.png)
-
-:::tip success
-You've successfully started the setup flow for building a Vessel with code.
-:::
-
-### Step 2 - Language
-
-1. Click on the **Bash** option. You'll be immediately redirected to the next step.
-
-### Step 3 - Code
+### Step 2 - Fill Out Details
 
 <Tabs
 groupId="languages"
@@ -114,85 +101,47 @@ values={[
 ]}>
 <TabItem value="ruby">
 
-1. In the radio button options, select **Upload**.
-2. Click on the grey square with the text **"Click or drag file to this area to upload"** and upload the previously downloaded `non_native_language_ruby.zip` file.
-3. Type `run.sh` into the **File to Run** field.
-4. Click **Next Step**.
+#### Information Panel
+1. Give your Vessel the name of `Non-Native Language - Ruby`.
+
+#### Code Panel
+1. Type `run.sh` into the **File to Run** field.
+2. In the radio button options, select **Upload**.
+3. Click on the grey square with the text **"Click or drag file to this area to upload"** and upload the previously downloaded `non_native_language_ruby.zip` file.
+
+#### Bash Packages Panel
+1. Click the **+ Add Bash Package** button add a new package.
+2. In the **Package Name** field, type `ruby-full`.
 
 </TabItem>
 <TabItem value="go">
 
-1. In the radio button options, select **Upload**.
-2. Click on the grey square with the text **"Click or drag file to this area to upload"** and upload the previously downloaded `non_native_language_go.zip` file.
-3. Type `run.sh` into the **File to Run** field.
-4. Click **Next Step**.
+#### Information Panel
+1. Give your Vessel the name of `Non-Native Language - Go`.
+
+#### Code Panel
+1. Type `run.sh` into the **File to Run** field.
+2. In the radio button options, select **Upload**.
+3. Click on the grey square with the text **"Click or drag file to this area to upload"** and upload the previously downloaded `non_native_language_go.zip` file.
+
+#### Bash Packages Panel
+1. Click the **+ Add Bash Package** button add a new package.
+2. In the **Package Name** field, type `golang`.
+
 
 </TabItem>
 </Tabs>
 
-### Step 4 - Requirements
+Once all of the above information has been filled in, click the **Save & Finish** button at the bottom of the screen.
 
-#### Environment Variables
 
-1. No environment variables are needed for this tutorial
+### Step 3 - Run the Fleet
 
-#### Packages
-
-<Tabs
-groupId="languages"
-defaultValue="ruby"
-values={[
-{label: 'Ruby', value: 'ruby'},
-{label: 'Go', value: 'go'},
-]}>
-<TabItem value="ruby">
-
-1. Click the **+** icon next to Packages to add a new package.
-2. In the **Package Name** field on the left-hand side, type `ruby-full`.
-3. Click **Next Step**.
-
-</TabItem>
-<TabItem value="go">
-
-1. Click the **+** icon next to Packages to add a new package.
-2. In the **Package Name** field on the left-hand side, type `golang`.
-3. Click **Next Step**.
-
-</TabItem>
-</Tabs>
-
-### Step 5 - Settings
-
-<Tabs
-groupId="languages"
-defaultValue="ruby"
-values={[
-{label: 'Ruby', value: 'ruby'},
-{label: 'Go', value: 'go'},
-]}>
-<TabItem value="ruby">
-
-1. Under the Information section, give your Vessel the name of `Non-Native Language - Ruby`.
-2. Under the notifications section, make sure that your email is listed. It should be added by default.
-3. Under the Guardrails section, set the **Number of Retries** to 2x and the **Time Between Retries** to 5m.
-4. Click the **Save & Finish** button at the bottom of the screen.
-
-</TabItem>
-<TabItem value="go">
-
-1. Under the Information section, give your Vessel the name of `Non-Native Language - Go`.
-2. Under the notifications section, make sure that your email is listed. It should be added by default.
-3. Under the Guardrails section, set the **Number of Retries** to 2x and the **Time Between Retries** to 5m.
-4. Click the **Save & Finish** button at the bottom of the screen.
-
-</TabItem>
-</Tabs>
-
-### Step 6 - Running the Vessel On-Demand
-
-1. Click the blue **Run your Vessel** button. This will schedule your Vessel to run immediately and redirect you to the [Vessel Log](../reference/logs/vessel-logs.md) page.
+1. Click the **Run your Fleet** button. This will kick off an [On Demand trigger](../reference/triggers/on-demand-triggers.md) and redirect you to the [Fleet Log](../reference/logs/fleet-logs.md) page.
 
 ![](../.gitbook/assets/vessel-built-successfully.png)
+
+2. Click into the [Vessel Log](../reference/logs/vessel-logs.md) by clicking the gantt chart or clicking the Vessel Log ID in the table.
 
 You should see the following page that shows you all of the details about the specific Log.
 
