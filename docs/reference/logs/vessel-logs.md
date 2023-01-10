@@ -59,6 +59,5 @@ Once the Vessel has finished running, the page will no longer automatically refr
 
 ## Additional Notes
 
-1. Logs cannot currently be exported from Shipyard for analysis. If you need access to this data, reach out to [support](mailto:support@shipyardapp.com).
-2. The Log Output does not contain any information pertaining to the process of installing [external package dependencies](../packages/external-package-dependencies.md)
-3. The Live Update feature of the Log Output only updates every time there are 256 additional bytes of data. In some instances where very little data is sent to the output, it may look like the Vessel is not actually showing any new data.
+1. The Log Output does not contain any information pertaining to the process of installing [external package dependencies](../packages/external-package-dependencies.md)
+2. The Live Update feature of the Log Output only updates every time there are 256 additional bytes of data. In some instances where very little data is sent to the output, it may look like the Vessel is not actually showing any new data.

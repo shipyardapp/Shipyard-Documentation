@@ -31,10 +31,14 @@ Log data is routinely deleted from our system to decrease storage costs. The amo
 
 ### Log Data
 
-The data contained within a Log differs slightly for Vessels and Fleetsv. Explore them in depth below.
+The data contained within a Log differs slightly for Vessels and Fleets. Explore them in depth below.
 
 - [Vessel Logs](vessel-logs.md)
 - [Fleet Logs](fleet-logs.md)
+
+:::tip Pro Tip
+You can export your logs with our [API endpoint](http://localhost:3000/docs/reference/api/#list-voyages). You can also use our [Library Blueprint](http://localhost:3000/docs/blueprint-library/shipyard-api/shipyard-api-export-logs/) to accomplish the same thing.
+:::
 
 ## Additional Notes
 
