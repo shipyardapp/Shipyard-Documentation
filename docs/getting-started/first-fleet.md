@@ -86,12 +86,12 @@ There are two options for creating a new Fleet: The **Visual** editor and the **
 | BCC | |
 | Subject | Slinky Dog Dash Wait Times |
 | Message | Here's the most recent wait times for Slinky Dog Dash! |
-| File Name Match Type | Exact Match|
+| File Name Match Type | Exact|
 | File Name | slinky_dog_dash.csv |
 | Folder Name | disney_world_wait_times |
 | Include Shipyard Footer? | ✅|
 
-5. Click and drag from a circle on the **Download Slinky Dog Dash Ride Data** Vessel towards a circle on the **Send Slinky Dog Dash Data via Email** Vessel. 
+1. Click and drag from a circle on the **Download Slinky Dog Dash Ride Data** Vessel towards a circle on the **Send Slinky Dog Dash Data via Email** Vessel. 
 
 ![Connect Vessels](../gitbook/assets/../../.gitbook/assets/connecting_vessels.gif)
 
@@ -119,7 +119,7 @@ This will connect the two Vessels, allowing one to be triggered by the other. Ad
    Notice that the project is pre-selected from our actions in Step 1 above. 
 3. Click the **Save & Finish** button at the bottom. You should now see the following screen:
 
-![Fleet Success Screen](../.gitbook/assets/shipyard_2022_05_13_09_55_44.png)
+![Fleet Success Screen](../.gitbook/assets/shipyard_2023_01_10_09_36_38.png)
 
 :::note
 By default, every Fleet and every Vessel you create will send error notifications to your email. You can always update this as needed.
@@ -138,15 +138,15 @@ After a Vessel is added to a Fleet and saved, the project **cannot** be changed.
 
 3. Click on the Log ID or the bar graph for the **Download Slinky Dog Dash Ride Data** Vessel. Your Log ID will be different than the one shown below.
 
-![](../.gitbook/assets/shipyard_2022_05_04_16_27_25.png)
+![Click on a Log](../.gitbook/assets/shipyard_2023_01_10_09_38_39.png)
 
 4. In the output, you should be able to see that the file was successfully downloaded and the size of the downloaded file. 
 
-![](../.gitbook/assets/shipyard_2022_05_04_16_28_42.png)
+![Successful Log Output](../.gitbook/assets/shipyard_2023_01_10_09_39_49.png)
 
 5. Go check your email. You should also see a message that contains the ride data.
 
-![](../.gitbook/assets/shipyard_2022_05_04_16_30_10.png)
+![Successful Email](../.gitbook/assets/shipyard_2022_05_04_16_30_10.png)
 
 :::tip success
 You've successfully created and verified a Fleet that shares files between two Vessels built with a Blueprint!
