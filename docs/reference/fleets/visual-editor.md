@@ -77,12 +77,9 @@ If your Vessel is built with Code, you will see the following panels:
 
 Clicking on a panel will either expand or collapse its contents. Each panel can be edited independently and you can switch between multiple panels or multiple Vessels.
 
-During the process of making edits, if any panel's contents are invalid, you will receive an error notification specifying what panel needs to be updated. This error will need to be immediately resolved in order to continue editing. While a panel has errors:
-- You will not be able to collapse the affected panel 
-- You will not be able to switch tabs on the sidebar
-- You will not be able to select another Vessel to edit
-- You will not be able to add another Vessel to the Fleet
-- You will not be able to change any underlying Vessels
+During the process of making edits, if any panel's contents are invalid, the number of invalid inputs will be shown directly on the panel. You will also see an error message specifying which inputs need to be updated. 
+
+Any unresolved errors will be shown in the Error Bank. This feature shows you all of the fields that need to be updated across all of your Vessels before you will be able to save your Fleet. Each Vessel name in the Error Bank can be expanded for more details, and the Vessel name itself can be clicked to navigate directly to that Vessel.
 
 All changes are "soft-saved" as you work in the Fleet Builder. You can make as many edits as you'd like and these changes will be continue to be shown in the UI as long as you don't leave the Fleet Builder tab or refresh the page. Once you're finished making all of your edits, you **must** click the Save button at the bottom to officially save all of your changes.
 
