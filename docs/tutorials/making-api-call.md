@@ -54,8 +54,8 @@ values={[
 5. Under **Method**, select **POST**.
 6. Under **URL**, enter `https://api.github.com/repos/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME/issues` and insert your username and repository name in the marked spots.
 7. Under **Content Type**, select **application/x-www-form-urlencoded**.
-8. Under **Authorization Header**, enter `token YOUR_API_CREDENTIAL` and insert your api credential from GitHub.
-9. Under **Message**, enter `{"title":"YOUR_REPOSITORY_NAME","body":"Test Issue"}` and insert your repository name.
+8. Under **Authorization Header**, enter `token YOUR_API_CREDENTIAL`, replacing YOUR_API_CREDENTIAL with your actual API credential from GitHub.
+9. Under **Message**, enter `{"title":"YOUR_REPOSITORY_NAME","body":"Test Issue"}`, replacing YOUR_REPOSITORY_NAME with your actual repository name.
 
 ![](../.gitbook/assets/shipyard_2022_12_13_09_51_19.png)
 
@@ -79,7 +79,7 @@ You can connect a Vessel to the Request Vessel to receive the API response by se
 import requests
 import os
 
-token = os.environ.get('api_token')
+token = os.environ.get('API_TOKEN')
 
 headers = {
     'Authorization': f'token {token}',
@@ -95,14 +95,13 @@ print(response.text)
 ```
 ![](../.gitbook/assets/shipyard_2022_12_12_14_50_12.png)
 
-7. In the code, you will need to replace the title of the data field with your specific repository name.
-8. Also in the code, you will need to place your GitHub username and repository name into the API URL in the request.
-9. Click **Environment Variables**.
-10. Click **Add Enivronment Variable**.
-11. In the **name** field, enter `api_token`
+7. In the code, you will need to replace the instance of `YOUR_REPOSITORY_NAME` with your specific repository name and `YOUR_GITHUB_USERNAME` with your GitHub name.
+8. Click **Environment Variables**.
+9.  Click **Add Enivronment Variable**.
+10. In the **name** field, enter `API_TOKEN`
 
 :::info
-The environment variable that we just created is accessed in the code using the line os.environ.get('api_token').
+The environment variable that we just created is accessed in the code using the line os.environ.get('API_TOKEN').
 :::
 
 12. In the **hidden** field, enter the API Token that you generated earlier from GitHub.
@@ -128,6 +127,7 @@ values={[
 {label: 'Code', value: 'code'},
 ]}>
 <TabItem value="native">
+
 1. Once the Fleet has finished running successfully, click the green rectangle from the gantt chart to view the Vessel log.
 2. The Vessel log confirms that the request was successfully sent to the API.
 
