@@ -82,6 +82,7 @@ values={[
 source:
   type: CODE
   language: PYTHON
+  version: "3.9"
   file:
     name: script.py
     content: |
@@ -119,6 +120,7 @@ source:
 source:
   type: CODE
   language: PYTHON
+  version: "3.9"
   git:
     repository: owner/repo
     checkout_point: master
@@ -312,6 +314,8 @@ vessels:
             language: PYTHON # (required) "PYTHON", "NODE", or "BASH" values allowed
             # name and content define the file holding "CODE" Vessel code to execute
             # multiline strings are supported using the YAML "|" syntax
+            version: "3.9" # (optional) "3.7" or "3.9" allowed.
+            # If not included, will use the latest version of the language.
             file:
                 name: script.py 
                 content: |
