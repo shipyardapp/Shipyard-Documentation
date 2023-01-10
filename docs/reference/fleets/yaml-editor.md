@@ -20,12 +20,12 @@ import TabItem from '@theme/TabItem';
 
 ## Definition
 
-In addition to the graph UI, the Fleet Builder also has a YAML editor to directly edit the Fleet configuration. This system allows for users to take a more code-based approach to constructing their workflow definitions. Additionally, it makes it easier for users to share their configured workflows with teammates and other developers.
+In addition to the visual editor, the Fleet Builder also has a YAML editor to directly edit the Fleet configuration. This system allows for users to take a more code-based approach to constructing their workflow definitions. Additionally, it makes it easier for users to share their configured workflows with teammates and other developers.
 
 In order to access the YAML editor, ensure that your Fleet is saved.
 
 - **Click** "Save" if the option is available
-- **Click** the text icon in the top right corner of the graph editor
+- **Click** the text icon in the top right corner of the visual editor
 - **Edit** code in-line
 - **Click** "Save" to save your changes
 
@@ -231,7 +231,7 @@ vessel_name:
 
 ### connections
 
-`connections` is a top-level field that defines the graph of how the Vessels defined in the `vessels` section are connected.
+`connections` is a top-level field that defines how the Vessels, defined in the `vessels` section, are connected together.
 
 Each key in the object is a Vessel name value (if provided) representing the "from" Vessel and the value is an object that contains the "to" Vessel(s) and the connection type. See below for an example.
 
@@ -246,7 +246,7 @@ connections:
 
 This example indicates that if `vessel_one` succeeds, it will invoke `vessel_two` and if `vessel_two` succeeds, it will invoke `vessel_three`. If `vessel_two` fails, it will invoke `vessel_four`.
 
-Below is what the YAML configuration above would look like in the graph editor.
+Below is what the YAML configuration above would look like in the visual editor.
 
 ![FAC Fleet connections](../../.gitbook/assets/fac-fleet-connections-example.png)
 

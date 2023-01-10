@@ -45,7 +45,7 @@ We recommend you create a **Training** project before beginning this tutorial. T
 
 ### Step 2 - Building the Fleet
 
-There are two options for creating a new Fleet: **Graph** (a visual editor) and **YAML** (a text editor). This tutorial will focus on using the **Graph** method. The YAML Editor will be addressed in a different set of tutorials.
+There are two options for creating a new Fleet: The **Visual** editor and the **YAML** editor. This tutorial will focus on using the **Visual** method. The YAML Editor will be addressed in a different set of tutorials.
 
 #### Build Vessel to Download File via HTTP
 
