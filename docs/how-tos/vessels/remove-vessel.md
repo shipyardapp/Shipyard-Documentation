@@ -31,3 +31,7 @@ When a Vessel is removed, it is always available again under the Project Vessel 
 :::tip success
 You've now successfully removed the Vessel from the Fleet
 :::
+
+:::warning
+Project Vessels will be removed from the application soon. We do not recommend relying on these and suggest that if you need to keep this information around, you build a Fleet with a single Vessel.
+:::
