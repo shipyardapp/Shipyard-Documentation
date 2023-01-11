@@ -116,6 +116,7 @@ module.exports = {
 					"how-tos/fleets/delete-fleet",
 					"how-tos/fleets/edit-fleet",
 					"how-tos/fleets/duplicate-fleet",
+					"how-tos/fleets/search-for-fleet",
 					"how-tos/fleets/see-all-files",
 					"how-tos/fleets/assess-fleet-performance",
 				],

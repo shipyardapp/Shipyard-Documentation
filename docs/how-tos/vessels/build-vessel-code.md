@@ -10,7 +10,7 @@ keywords:
   - setup
 ---
 
-# How to Build a New Vessel using a Code Blueprint
+# How to Build a New Vessel using Code
 
 ## Overview
 
@@ -21,7 +21,7 @@ Every unique solution you create will require you to build a [Vessel](../../refe
 ### Step 1 - Initial Setup
 
 1. Navigate to the Fleets tab underneath a project.
-2. Hover over the **+ New** button in the top-right and click **New Fleet**.
+2. Click the **+ New Fleet** button in the top right corner of your page.
 3. Click the plus icon along the left side of the Fleet Builder sidebar.
 4. Select any option under Code Vessels.
 

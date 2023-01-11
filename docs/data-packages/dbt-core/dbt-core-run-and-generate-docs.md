@@ -27,7 +27,7 @@ In part 4 of the dbt Core guide, we will run the dbt model that was created in p
 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_31_11_16_55.png)
 
-2. Hover over the **+ New** button in the top right corner of your page and click **New Fleet**.
+1. Click the **+ New Fleet** button in the top right corner of your page.
 2. Click the gear icon on the sidebar of the Fleet Builder to open **Fleet Settings**.
 3. Under **Fleet Name**, enter `dbt Run and Download Documents`. 
 4. Click the plus sign on the Fleet Builder sidebar to begin adding Vessels.

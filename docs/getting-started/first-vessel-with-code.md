@@ -36,9 +36,9 @@ For the sake of the this tutorial, we suggest starting off by building the Fleet
 
   ![](../.gitbook/assets/shipyard_2022_05_05_09_41_15.png)
 2. Click on the **Testing** project.
-3. Find the **Download File from Webpage and Email to User** Fleet and click the **Edit** button under Actions.
+3. Find the **Download File from Webpage and Email to User** Fleet and either click on the Fleet Name or hover over the Actions vertical-dot menu and select **Edit**.
    
-  ![](../.gitbook/assets/shipyard_2022_05_05_09_44_43.png)
+![](../.gitbook/assets/shipyard_2023_01_10_09_45_12.png)
 
 :::tip success
 You are now ready to add a code Vessel to your existing Fleet
@@ -65,8 +65,9 @@ values={[
 ]}>
 <TabItem value="write">
 
-1. Under **File to Run**, enter **add_wait_times_in_hours.py**
-2. Under **Code**, paste this code block:
+1. Leave Python Version as 3.9
+2. Under **File to Run**, enter **add_wait_times_in_hours.py**
+3. Under **Code**, paste this code block:
 
 ```python
 import pandas as pd
@@ -81,8 +82,9 @@ Your setup should look like this:
 </TabItem>
 <TabItem value="upload">
 
-1. Under **File to Run**, enter **add_wait_times_in_hours.py**
-2. Change the code method from write to **upload**
+1. Leave Python Version as 3.9
+2. Under **File to Run**, enter **add_wait_times_in_hours.py**
+3. Change the code method from write to **upload**
 
   ![](../.gitbook/assets/shipyard_2022_05_05_14_22_19.png)
 

@@ -24,6 +24,10 @@ Every Vessel is either built with code or with a Blueprint that contains the des
 ### Project Vessel
 A Project Vessel is a Vessel that has been previously built in a Fleet but is now disconnected from any Fleet. You can turn any existing Vessel into a Project Vessel by removing it from a Fleet and saving the Fleet. Project Vessels are an easy way to move a Vessel from one Fleet to another or to store the contents of a Fleet for later.
 
+:::warning
+Project Vessels will be removed from the application soon. We do not recommend relying on these and suggest that if you need to keep this information around, you build a Fleet with a single Vessel.
+:::
+
 ## Setup
 
 ### With Code
