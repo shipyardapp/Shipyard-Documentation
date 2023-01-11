@@ -91,7 +91,7 @@ There are two options for creating a new Fleet: The **Visual** editor and the **
 | Folder Name | disney_world_wait_times |
 | Include Shipyard Footer? | ✅|
 
-1. Click and drag from a circle on the **Download Slinky Dog Dash Ride Data** Vessel towards a circle on the **Send Slinky Dog Dash Data via Email** Vessel. 
+5. Click and drag from a circle on the **Download Slinky Dog Dash Ride Data** Vessel towards a circle on the **Send Slinky Dog Dash Data via Email** Vessel. 
 
 ![Connect Vessels](../gitbook/assets/../../.gitbook/assets/connecting_vessels.gif)
 

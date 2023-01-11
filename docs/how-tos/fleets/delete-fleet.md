@@ -21,7 +21,7 @@ Deleting a Fleet will permanently remove all Vessels in the Fleet as well as all
 
 ## Steps
 1. Navigate to the project where your Fleet lives.
-2. Hover over the actions hamburger menu.
+2. Hover over the actions vertical-dot menu.
 3. Click the red **Delete** text.
 4. Confirm that you want to delete the Fleet.
 
