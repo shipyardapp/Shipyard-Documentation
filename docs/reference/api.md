@@ -140,7 +140,7 @@ vessels:
 #### Request
 
 ```bash
-curl -X PUT https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets --data-binary @fleet.yaml -header "Content-type: application/yaml" --header "X-Shipyard-API-Key: <api-key>"
+curl -X PUT https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets --data-binary @fleet.yaml --header "Content-type: application/yaml" --header "X-Shipyard-API-Key: <api-key>"
 ```
 
 The contents of `fleet.yaml` would be in the required [FAC format](fleets/yaml-editor.md).
