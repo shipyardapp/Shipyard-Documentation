@@ -151,6 +151,7 @@ module.exports = {
 			"tutorials/non-native-language-vessels",
 			"tutorials/referencing-fleet-webhook-parameters",
 			"tutorials/making-api-call",
+			"tutorials/create-fleet-with-api",
 			"tutorials/create-fleets-with-yaml",
 			"tutorials/create-blueprint",
 			"tutorials/upload-local-file",
