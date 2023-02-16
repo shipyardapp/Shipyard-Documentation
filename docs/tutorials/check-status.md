@@ -62,15 +62,17 @@ When connecting a check status Blueprint to an execute task Blueprint, you do no
 5. Under `Number of Retries`, select **24x**.
 6. Under `Time Between Retries`, select **5m**.
 
-:::note
+:::caution
 If there are values under the **Exclude Exit Code Ranges** option, leave these alone! These tell Shipyard to not retry if a final status of an error is found.
 :::
 
-:::caution
-The guardrail setup above will wait for up to 2 hours (5m*24 retries) for something to complete. For longer runs, you may need to increase the **Time Between Retries**. For shorter runs, you can adjust the **Time Between Retries** to be **ASAP** (~30s).
-:::
+
 
 ![](../.gitbook/assets/shipyard_2023_02_09_11_29_03.png)
+
+:::info Pro Tip
+The guardrail setup above will wait for up to 2 hours (5m*24 retries) for something to complete. For longer runs, you may need to increase the **Time Between Retries**. For shorter runs, you can adjust the **Time Between Retries** to be **ASAP** (~30s).
+:::
 
 7. Connect the Execute Fivetran Sync Vessel to the Check Fivetran Sync Status Vessel.
 
