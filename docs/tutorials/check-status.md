@@ -1,28 +1,42 @@
 ---
 id: check-status
-title: Using Guardrails to Make Check Status Vessels Run More Efficiently 
+title: Efficiently Check Status with Guardrails
 hide_title: true
 description: In-depth tutorial to walk you through the steps needed to set up a check status Vessel efficiently.
 keywords:
   - guardrails
-  - check-status
+  - check status
+  - refresh
+  - status
 ---
 
-# Using Guardrails to Make Check Status Vessels Run More Efficiently 
+# Efficiently Check Status with Guardrails
 
 ## Overview
-
-In this tutorial, we will walk through the steps to setup [guardrails](../reference/guardrails.md) in a check status Vessel to allow downstream processes to run more quickly.
+In this tutorial, we will walk through the steps to set up [guardrails](../reference/guardrails.md) for a Check Status Vessel to ensure that downstream processes don't run until an upstream job finishes.
 
 By the end of the tutorial, you'll be able to:
 
-- Set up a [Vessel](../reference/vessels.md) using a check status Blueprint.
+- Set up a [Vessel](../reference/vessels.md) using a Check Status Blueprint.
 - Set up [guardrails](../reference/guardrails.md) to make the Vessel run efficiently.
+
+### Background
+Shipyard's Check Status Blueprints are designed to quickly ping the desired vendor, asking "What's the status of job X?". If job X is incomplete, the Vessel will fail - by design. Vessels built with these Blueprints were designed to be used together with [guardrails](../reference/guardrails.md), which automatically retry a Vessel after seeing a failure.
+
+With guardrails in place, Shipyard will retry after a specified period of time and once again ask the vendor "What's the status of job X?". Once the vendor returns with any answer other than *incomplete*
+- If the answer is *success*, the Vessel will finish successfully.
+- If the answer is *errored*, *canceled*, or any other negative response, a unique exit code will be generated and the Vessel will error. If this exit code is found in the list of [exclusions](https://www.shipyardapp.com/docs/reference/guardrails/#exclude-exit-code-ranges) the Vessel will no longer be retried.
+
+With this strategy, Vessels built with the Check Status Blueprint will check the status the minimum number of times until a final answer is received. Since the time between retries is not part of [billable runtime](https://www.shipyardapp.com/docs/faqs/#how-do-you-calculate-billable-runtime) this is both a cost-effective and time-efficient strategy.
+
+Without this strategy there are two outcomes:
+- The Check Status Blueprint ends prematurely with an error, before the job has completed on the vendor's service.
+- Your Fleet runs without regard to a previously kicked off job's status.
 
 ## Setup
 
 :::note
-This tutorial will use the Check Sync Status Blueprint from Fivetran. The steps in this tutorial will work with any Integration that has a check status Blueprint such as dbt Cloud or Tableau.
+This tutorial will use the Check Sync Status Blueprint from Fivetran. The steps in this tutorial will work with any Integration that has a **Check Status** Blueprint such as dbt Cloud or Tableau.
 :::
 
 1. Create a new Fleet.
@@ -45,14 +59,15 @@ When connecting a check status Blueprint to an execute task Blueprint, you do no
 :::
 
 4. Expand the Guardrails menu
-
-![](../.gitbook/assets/shipyard_2023_02_09_11_27_16.png)
-
 5. Under `Number of Retries`, select **24x**.
-6. Under `Time Between Retries`, select **ASAP**.
+6. Under `Time Between Retries`, select **5m**.
+
+:::note
+If there are values under the **Exclude Exit Code Ranges** option, leave these alone! These tell Shipyard to not retry if a final status of an error is found.
+:::
 
 :::caution
-The guardrail setup above will not work for processes that run for longer than an hour. For longer runs, you will need to change the Time Between Retries to 5, 10, or 15 minutes. 
+The guardrail setup above will wait for up to 2 hours (5m*24 retries) for something to complete. For longer runs, you may need to increase the **Time Between Retries**. For shorter runs, you can adjust the **Time Between Retries** to be **ASAP** (~30s).
 :::
 
 ![](../.gitbook/assets/shipyard_2023_02_09_11_29_03.png)
