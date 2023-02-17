@@ -20,11 +20,8 @@ By the end of this tutorial, you'll be able to:
 
 ## Setup
 
-:::note
-The calls to the Shipyard API will be completed in Hex in this tutorial. However, the steps can be completed in any Python coding environment.
-:::
 
-First, download the [yaml code](https://drive.google.com/file/d/1HKUaep0Jeh-RXVLkhtU-ewd6SKzUIDoq/view?usp=sharing) named `tutorial.yaml`. This is the YAML file that will create the Fleet in Shipyard.
+First, download the [YAML configuration file](https://drive.google.com/file/d/1HKUaep0Jeh-RXVLkhtU-ewd6SKzUIDoq/view?usp=sharing) named `tutorial.yaml`. This configuration file contains all of the details for a Fleet in Shipyard.
 
 Feel free to peruse this YAML beforehand so you understand everything that it's doing. The YAML creates three Vessels in a Fleet:
 1. Execute Fivetran Sync
@@ -32,12 +29,12 @@ Feel free to peruse this YAML beforehand so you understand everything that it's 
 3. Trigger Tableau Datasource Refresh
 
 :::tip
-The YAML as created does not have any inputs for the Fleet. If you have inputs for the three services in the example, feel free to input values for the Blueprints.
+The YAML as created does not have any inputs filled out. If you have inputs for the three services in the example, feel free to replace `<your_value>` with actual values for the Blueprints.
 :::
 
 ## Steps
 
-1. Copy and paste the following code into your coding environment: 
+1. Copy and paste the following code into your development environment: 
 
 ```python
 import requests
@@ -58,17 +55,14 @@ response = requests.put(
 
 print(response.text)
 ```
+2. Ensure that the `requests` package is installed by running `pip install requests` or `pip3 install requests`.  
 
-```note
-The python script above uses the Python Requests module to send the YAML to Shipyard to create a Fleet.
-```
-
-2. Insert your Shipyard API Key, Organization ID, and Project ID into the code that you pasted. 
-3. Run the script. You will receive the YAML printed back to you with the print statement at the end of the script if the API call is successful. 
+3. Insert your Shipyard API Key, Organization ID, and Project ID into the code that you pasted. 
+4. Run the script. If the API call is successful, you will receive the YAML printed back to you with the print statement at the end of the script.
 
 ![](../.gitbook/assets/shipyard_2023_02_13_10_29_49.png)
 
-4. Head into Shipyard and the specific Project from the ID you inputted into the Python script earlier. You should see the Fleet listed in the Project now.
+4. Head into Shipyard and the specific Project whose ID you added into the Python script earlier. You should see the Fleet listed in the Project now.
 
 ![](../.gitbook/assets/shipyard_2023_02_13_10_34_28.png)
 
