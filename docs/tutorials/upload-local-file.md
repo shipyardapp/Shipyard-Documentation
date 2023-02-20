@@ -5,6 +5,10 @@ hide_title: true
 description: In-depth tutorial to walk you through how to upload a local file to use in your Fleet
 keywords:
   - tutorial
+  - local
+  - file
+  - upload
+  - RSA
 ---
 
 
@@ -12,7 +16,7 @@ keywords:
 
 ## Overview
 
-In this tutorial, you'll learn how to upload a file from your computer to Shipyard that can be used in a Fleet. This can be helpful to upload static credential or reference files.
+In this tutorial, you'll learn how to upload a file from your computer to Shipyard that can be used in a Fleet. This can be helpful to upload static credential or reference files, such as RSA keys.
 
 By the end of the tutorial, you'll be able to:
 
