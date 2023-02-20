@@ -154,6 +154,7 @@ module.exports = {
 			"tutorials/create-fleets-with-yaml",
 			"tutorials/create-blueprint",
 			"tutorials/upload-local-file",
+			"tutorials/check-status",
 		],
 		"📦 Library Blueprints": [
 			{
