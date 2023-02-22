@@ -10,6 +10,9 @@ keywords:
   - logs
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # API
 
 ## Overview
@@ -60,9 +63,36 @@ The response code snippets have been truncated for brevity.
 
 #### Request
 
+<Tabs
+groupId="languages"
+defaultValue="bash"
+values={[
+{label: 'Bash', value: 'bash'},
+{label: 'Python', value: 'python'},
+]}>
+<TabItem value="bash">
+
 ```bash
 curl https://api.app.shipyardapp.com/orgs --header "X-Shipyard-API-Key: <api-key>"
 ```
+
+</TabItem>
+<TabItem value="python">
+
+```python
+import requests
+
+headers = {
+    'X-Shipyard-API-Key': '<api-key>',
+}
+
+response = requests.get('https://api.app.shipyardapp.com/orgs', headers=headers)
+```
+
+</TabItem>
+</Tabs>
+
+
 
 #### Response
 
@@ -84,9 +114,35 @@ curl https://api.app.shipyardapp.com/orgs --header "X-Shipyard-API-Key: <api-key
 
 #### Request
 
+<Tabs
+groupId="languages"
+defaultValue="bash"
+values={[
+{label: 'Bash', value: 'bash'},
+{label: 'Python', value: 'python'},
+]}>
+<TabItem value="bash">
+
 ```bash
 curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/fleets --header "X-Shipyard-API-Key: <api-key>"
 ```
+
+</TabItem>
+<TabItem value="python">
+
+```python
+import requests
+
+headers = {
+    'X-Shipyard-API-Key': '<api-key>',
+}
+
+response = requests.get('https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/fleets', headers=headers)
+```
+
+</TabItem>
+</Tabs>
+
 
 #### Response
 
@@ -120,9 +176,38 @@ curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/f
 
 #### Request
 
+<Tabs
+groupId="languages"
+defaultValue="bash"
+values={[
+{label: 'Bash', value: 'bash'},
+{label: 'Python', value: 'python'},
+]}>
+<TabItem value="bash">
+
 ```bash
 curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets/33333333-3333-3333-3333-333333333333 --header "X-Shipyard-API-Key: <api key>"
 ```
+
+</TabItem>
+<TabItem value="python">
+
+```python
+import requests
+
+headers = {
+    'X-Shipyard-API-Key': '<api key>',
+}
+
+response = requests.get(
+    'https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets/33333333-3333-3333-3333-333333333333',
+    headers=headers,
+)
+```
+
+</TabItem>
+</Tabs>
+
 
 #### Response
 
@@ -139,9 +224,43 @@ vessels:
 
 #### Request
 
+<Tabs
+groupId="languages"
+defaultValue="bash"
+values={[
+{label: 'Bash', value: 'bash'},
+{label: 'Python', value: 'python'},
+]}>
+<TabItem value="bash">
+
 ```bash
 curl -X PUT https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets --data-binary @fleet.yaml --header "Content-type: application/yaml" --header "X-Shipyard-API-Key: <api-key>"
 ```
+
+</TabItem>
+<TabItem value="python">
+
+```python
+import requests
+
+headers = {
+    'Content-type': 'application/yaml',
+    'X-Shipyard-API-Key': '<api-key>',
+}
+
+with open('fleet.yaml', 'rb') as f:
+    data = f.read()
+
+response = requests.put(
+    'https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets',
+    headers=headers,
+    data=data,
+)
+```
+
+</TabItem>
+</Tabs>
+
 
 The contents of `fleet.yaml` would be in the required [FAC format](fleets/yaml-editor.md).
 
@@ -162,9 +281,38 @@ vessels:
 
 #### Request
 
+<Tabs
+groupId="languages"
+defaultValue="bash"
+values={[
+{label: 'Bash', value: 'bash'},
+{label: 'Python', value: 'python'},
+]}>
+<TabItem value="bash">
+
 ```bash
 curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets/33333333-3333-3333-3333-333333333333/runs --header "X-Shipyard-API-Key: <api-key>"
 ```
+
+</TabItem>
+<TabItem value="python">
+
+```python
+import requests
+
+headers = {
+    'X-Shipyard-API-Key': '<api-key>',
+}
+
+response = requests.get(
+    'https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets/33333333-3333-3333-3333-333333333333/runs',
+    headers=headers,
+)
+```
+
+</TabItem>
+</Tabs>
+
 
 #### Response
 
@@ -197,9 +345,35 @@ Below is a reference table for the Fleet Runs CSV.
 
 This request returns all of the Voyages in the requested Organization.
 
+<Tabs
+groupId="languages"
+defaultValue="bash"
+values={[
+{label: 'Bash', value: 'bash'},
+{label: 'Python', value: 'python'},
+]}>
+<TabItem value="bash">
+
 ```bash
 curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/voyages --header "X-Shipyard-API-Key: <api-key>"
 ```
+
+</TabItem>
+<TabItem value="python">
+
+```python
+import requests
+
+headers = {
+    'X-Shipyard-API-Key': '<api-key>',
+}
+
+response = requests.get('https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/voyages', headers=headers)
+```
+
+</TabItem>
+</Tabs>
+
 
 #### Response
 

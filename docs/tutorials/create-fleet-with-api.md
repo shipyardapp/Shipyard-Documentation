@@ -32,6 +32,12 @@ Feel free to peruse this YAML beforehand so you understand everything that it's 
 The YAML as created does not have any inputs filled out. If you have inputs for the three services in the example, feel free to replace `<your_value>` with actual values for the Blueprints.
 :::
 
+The API call that we will use in this tutorial requires that you have the following: 
+- [Shipyard API Key](../blueprint-library/shipyard-api/shipyard-api-authorization.md)
+- [Org ID](org-id-with-api.md)
+
+Once we have those two values, we are ready to get started.
+
 ## Steps
 
 1. Copy and paste the following code into your development environment: 
@@ -57,7 +63,9 @@ print(response.text)
 ```
 2. Ensure that the `requests` package is installed by running `pip install requests` or `pip3 install requests`.  
 
-3. Insert your Shipyard API Key, Organization ID, and Project ID into the code that you pasted. 
+3. Insert your Shipyard API Key, Organization ID, and Project ID into the code that you pasted. You can find your Project ID in the URL in Shipyard: app.shipyardapp.com/Shipyard%20Tutorials/projects/`d93de112-5d5a-40a9-b1cd-f329d504ab82`/fleets
+
+
 4. Run the script. If the API call is successful, you will receive the YAML printed back to you with the print statement at the end of the script.
 
 ![](../.gitbook/assets/shipyard_2023_02_13_10_29_49.png)

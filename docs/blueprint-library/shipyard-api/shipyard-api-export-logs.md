@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-> ## **First time using this Blueprint? Make sure you follow our [Shipyard API authorization guide](https://www.shipyardapp.com/docs/blueprint-library/shipyard-api/authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Shipyard API authorization guide](shipyard-api-authorization.md)**.
 
 Quickly download the logs of your Shipyard Organization. The file contents will be downloaded and available as a CSV to use in another vessel.
 
