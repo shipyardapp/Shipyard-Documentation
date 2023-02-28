@@ -78,6 +78,7 @@ module.exports = {
 			},
 			"reference/notifications",
 			"reference/guardrails",
+			"reference/credentials",
 			{
 				Logs: [
 					"reference/logs/logs-overview",
