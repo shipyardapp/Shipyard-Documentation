@@ -11,7 +11,7 @@ keywords:
   - api keys
 ---
 
-# Command
+# Credentials
 
 ## Definition
 
