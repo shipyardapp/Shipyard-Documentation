@@ -212,6 +212,10 @@ module.exports = {
 					"blueprint-library/census/census-trigger-sync",
 					"blueprint-library/census/census-check-sync-status",
 				],
+				ChatGPT: [
+					"blueprint-library/chatgpt/chatgpt-overview",
+					"blueprint-library/chatgpt/chatgpt-authorization"
+				],
 				Databricks: [
 					"blueprint-library/databricks/databricks-overview",
 					"blueprint-library/databricks/databricks-authorization",
@@ -402,6 +406,10 @@ module.exports = {
 					"blueprint-library/tableau/tableau-check-refresh-status",
 					"blueprint-library/tableau/tableau-download-view",
 				],
+				Whisper: [
+					"blueprint-library/whisper/whisper-overview",
+					"blueprint-library/whisper/whisper-authorization"
+				]
 			},
 		],
 		"🗂 Data Packages": [
