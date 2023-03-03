@@ -13,7 +13,7 @@ keywords:
 
 # Whisper Blueprints Overview
 
-Shipyard's low-code Whisper blueprints allow users to transcribe and translate audio files
+Shipyard's low-code Whisper blueprints allow users to transcribe and translate audio files.
 
 ## How to Use
 For information on how to set up these Blueprints successfully, please read through the [Whisper Authorization guide](whisper-authorization.md).
