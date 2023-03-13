@@ -3,7 +3,7 @@ id: chatgpt-overview
 title: ChatGPT Blueprints Overview
 hide_title: true
 sidebar_label: Overview
-description: Information about Shipyard's low-code Census templates.
+description: Information about Shipyard's low-code ChatGPT templates.
 keywords:
   - chatgpt
   - blueprint
