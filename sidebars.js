@@ -216,6 +216,10 @@ module.exports = {
 					"blueprint-library/chatgpt/chatgpt-overview",
 					"blueprint-library/chatgpt/chatgpt-authorization"
 				],
+				DallE: [
+					"blueprint-library/dalle/dalle-overview",
+					"blueprint-library/dalle/dalle-authorization"
+				],
 				Databricks: [
 					"blueprint-library/databricks/databricks-overview",
 					"blueprint-library/databricks/databricks-authorization",
