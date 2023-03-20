@@ -46,6 +46,12 @@ Our goal with Shipyard is to choose syntax that helps users intuitively understa
 
 [**Organizations**](reference/organization.md) contain all of your Projects and Blueprints. This is the highest grouping structure in the platform that users can control.
 
+[**Credentials**](reference/credentials.md) - A way in the Shipyard application to store secret values that can be referenced by other Fleets and Vessels securely.
+
+Credential Group - A collection of one or more credential items.
+
+Credential Item - A very specific key/value pair of information. These are effectively equivalent to an environment variable.
+
 **Element** is a generic term used to refer to any of the above bolded words.
 
 **Platform** refers to the Shipyard application as a whole. Elements that live under the Platform level are controlled and managed by Shipyard staff.

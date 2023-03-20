@@ -78,6 +78,7 @@ module.exports = {
 			},
 			"reference/notifications",
 			"reference/guardrails",
+			"reference/credentials",
 			{
 				Logs: [
 					"reference/logs/logs-overview",
@@ -156,6 +157,7 @@ module.exports = {
 			"tutorials/create-blueprint",
 			"tutorials/org-id",
 			"tutorials/upload-local-file",
+			"tutorials/check-status",
 		],
 		"📦 Library Blueprints": [
 			{
@@ -211,6 +213,14 @@ module.exports = {
 					"blueprint-library/census/census-authorization",
 					"blueprint-library/census/census-trigger-sync",
 					"blueprint-library/census/census-check-sync-status",
+				],
+				ChatGPT: [
+					"blueprint-library/chatgpt/chatgpt-overview",
+					"blueprint-library/chatgpt/chatgpt-authorization"
+				],
+				DallE: [
+					"blueprint-library/dalle/dalle-overview",
+					"blueprint-library/dalle/dalle-authorization"
 				],
 				Databricks: [
 					"blueprint-library/databricks/databricks-overview",
@@ -402,6 +412,10 @@ module.exports = {
 					"blueprint-library/tableau/tableau-check-refresh-status",
 					"blueprint-library/tableau/tableau-download-view",
 				],
+				Whisper: [
+					"blueprint-library/whisper/whisper-overview",
+					"blueprint-library/whisper/whisper-authorization"
+				]
 			},
 		],
 		"🗂 Data Packages": [
