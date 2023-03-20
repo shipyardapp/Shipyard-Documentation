@@ -73,7 +73,7 @@ values={[
 <TabItem value="bash">
 
 ```bash
-curl https://api.app.shipyardapp.com/orgs --header "X-Shipyard-API-Key: <api-key>"
+curl https://api.app.shipyardapp.com/orgs --header "X-Shipyard-API-Key: <api_key>"
 ```
 
 </TabItem>
@@ -83,7 +83,7 @@ curl https://api.app.shipyardapp.com/orgs --header "X-Shipyard-API-Key: <api-key
 import requests
 
 headers = {
-    'X-Shipyard-API-Key': '<api-key>',
+    'X-Shipyard-API-Key': '<api_key>',
 }
 
 response = requests.get('https://api.app.shipyardapp.com/orgs', headers=headers)
@@ -101,7 +101,7 @@ response = requests.get('https://api.app.shipyardapp.com/orgs', headers=headers)
 	"data_kind": "organizations",
 	"data": [
 		{
-			"id": "11111111-1111-1111-1111-111111111111",
+			"id": "<org_id>",
 			"name": "example organization",
 			"created_at": "2019-08-22T21:53:30.095954Z",
 			...
@@ -124,7 +124,7 @@ values={[
 <TabItem value="bash">
 
 ```bash
-curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/fleets --header "X-Shipyard-API-Key: <api-key>"
+curl https://api.app.shipyardapp.com/orgs/<org_id>/fleets --header "X-Shipyard-API-Key: <api_key>"
 ```
 
 </TabItem>
@@ -134,10 +134,10 @@ curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/f
 import requests
 
 headers = {
-    'X-Shipyard-API-Key': '<api-key>',
+    'X-Shipyard-API-Key': '<api_key>',
 }
 
-response = requests.get('https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/fleets', headers=headers)
+response = requests.get('https://api.app.shipyardapp.com/orgs/<org_id>/fleets', headers=headers)
 ```
 
 </TabItem>
@@ -151,16 +151,16 @@ response = requests.get('https://api.app.shipyardapp.com/orgs/11111111-1111-1111
 	"data_kind": "fleets",
 	"data": [
 		{
-			"org_id": "11111111-1111-1111-1111-111111111111",
-			"id": "33333333-3333-3333-3333-333333333333",
+			"org_id": "<org_id>",
+			"id": "<fleet_id>",
 			"name": "confident_oyster",
 			"pallet_ids": [
-				"44444444-4444-4444-4444-444444444444"
+				"<vessel_id>"
 			],
 			"created_at": "2022-07-21T21:37:30.623386Z",
 			"vessel_dag": {
 				"vertices": [
-					"44444444-4444-4444-4444-444444444444"
+					"<vessel_id>"
 				],
 				"versions": [
 					1
@@ -186,7 +186,7 @@ values={[
 <TabItem value="bash">
 
 ```bash
-curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets/33333333-3333-3333-3333-333333333333 --header "X-Shipyard-API-Key: <api key>"
+curl https://api.app.shipyardapp.com/orgs/<org_id>/projects/<project_id>/fleets/<fleet_id> --header "X-Shipyard-API-Key: <api key>"
 ```
 
 </TabItem>
@@ -200,7 +200,7 @@ headers = {
 }
 
 response = requests.get(
-    'https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets/33333333-3333-3333-3333-333333333333',
+    'https://api.app.shipyardapp.com/orgs/<org_id>/projects/<project_id>/fleets/<fleet_id>',
     headers=headers,
 )
 ```
@@ -234,7 +234,7 @@ values={[
 <TabItem value="bash">
 
 ```bash
-curl -X PUT https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets --data-binary @fleet.yaml --header "Content-type: application/yaml" --header "X-Shipyard-API-Key: <api-key>"
+curl -X PUT https://api.app.shipyardapp.com/orgs/<org_id>/projects/<project_id>/fleets --data-binary @fleet.yaml --header "Content-type: application/yaml" --header "X-Shipyard-API-Key: <api_key>"
 ```
 
 </TabItem>
@@ -245,14 +245,14 @@ import requests
 
 headers = {
     'Content-type': 'application/yaml',
-    'X-Shipyard-API-Key': '<api-key>',
+    'X-Shipyard-API-Key': '<api_key>',
 }
 
 with open('fleet.yaml', 'rb') as f:
     data = f.read()
 
 response = requests.put(
-    'https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets',
+    'https://api.app.shipyardapp.com/orgs/<org_id>/projects/<project_id>/fleets',
     headers=headers,
     data=data,
 )
@@ -291,7 +291,7 @@ values={[
 <TabItem value="bash">
 
 ```bash
-curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets/33333333-3333-3333-3333-333333333333/runs --header "X-Shipyard-API-Key: <api-key>"
+curl https://api.app.shipyardapp.com/orgs/<org_id>/projects/<project_id>/fleets/<fleet_id>/runs --header "X-Shipyard-API-Key: <api_key>"
 ```
 
 </TabItem>
@@ -301,11 +301,11 @@ curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/p
 import requests
 
 headers = {
-    'X-Shipyard-API-Key': '<api-key>',
+    'X-Shipyard-API-Key': '<api_key>',
 }
 
 response = requests.get(
-    'https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets/33333333-3333-3333-3333-333333333333/runs',
+    'https://api.app.shipyardapp.com/orgs/<org_id>/projects/<project_id>/fleets/<fleet_id>/runs',
     headers=headers,
 )
 ```
@@ -355,7 +355,7 @@ values={[
 <TabItem value="bash">
 
 ```bash
-curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/voyages --header "X-Shipyard-API-Key: <api-key>"
+curl https://api.app.shipyardapp.com/orgs/<org_id>/voyages --header "X-Shipyard-API-Key: <api_key>"
 ```
 
 </TabItem>
@@ -365,10 +365,10 @@ curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/v
 import requests
 
 headers = {
-    'X-Shipyard-API-Key': '<api-key>',
+    'X-Shipyard-API-Key': '<api_key>',
 }
 
-response = requests.get('https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/voyages', headers=headers)
+response = requests.get('https://api.app.shipyardapp.com/orgs/<org_id>/voyages', headers=headers)
 ```
 
 </TabItem>
@@ -421,7 +421,7 @@ values={[
 <TabItem value="bash">
 
 ```bash
-curl -X POST https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/temporary_external_files --header "X-Shipyard-API-Key: <api-key>" -F file=@script.py
+curl -X POST https://api.app.shipyardapp.com/orgs/<org_id>/temporary_external_files --header "X-Shipyard-API-Key: <api_key>" -F file=@script.py
 ```
 
 </TabItem>
@@ -431,13 +431,13 @@ curl -X POST https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111
 import requests
 
 headers = {
-    'X-Shipyard-API-Key': '<api-key>',
+    'X-Shipyard-API-Key': '<api_key>',
 }
 
 script_file = open('script.py', 'rb')
 
 response = requests.post(
-    'https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/temporary_external_files',
+    'https://api.app.shipyardapp.com/orgs/<org_id>/temporary_external_files',
     headers=headers,
     files={'script.py': script_file},
 )
@@ -460,8 +460,8 @@ The response is returned in JSON format.
 ```json
 {
 	"data":{
-		"RequestID":"99999999-9999-9999-9999-999999999999",
-		"ExternalFile":"s3://production-shipyard-uploads-tmp/tmp/organizations/11111111-1111-1111-1111-111111111111/requests/99999999-9999-9999-9999-999999999999.sefv2_00000000-0000-0000-0000-000000000000"
+		"RequestID":"<request_id>",
+		"ExternalFile":"s3://production-shipyard-uploads-tmp/tmp/organizations/<org_id>/requests/<request_id>.sefv2_<file_id>"
 	}
 }
 ```
@@ -484,7 +484,7 @@ values={[
 <TabItem value="bash">
 
 ```bash
-curl -X POST https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/blueprints --header "X-Shipyard-API-Key: <api-key>" -d @blueprint.json
+curl -X POST https://api.app.shipyardapp.com/orgs/<org_id>/blueprints --header "X-Shipyard-API-Key: <api_key>" -d @blueprint.json
 ```
 
 </TabItem>
@@ -496,14 +496,14 @@ import json
 import requests
 
 headers = {
-    'X-Shipyard-API-Key': '<api-key>',
+    'X-Shipyard-API-Key': '<api_key>',
 }
 
 blueprint_file = open('blueprint.json')
 blueprint_data = json.load(blueprint_file)
 
 response = requests.post(
-    'https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/blueprints',
+    'https://api.app.shipyardapp.com/orgs/<org_id>/blueprints',
     headers=headers,
     json=blueprint_data,
 )
@@ -530,8 +530,8 @@ As an example, the contents of `blueprint.json` are:
         "external_file": {
             "temp": {
                 "file_name": "script.py",
-                "id": "99999999-9999-9999-9999-999999999999",
-                "url": "s3://production-shipyard-uploads-tmp/tmp/organizations/11111111-1111-1111-1111-111111111111/requests/99999999-9999-9999-9999-999999999999.sefv2_00000000-0000-0000-0000-000000000000"
+                "id": "<request_id>",
+                "url": "s3://production-shipyard-uploads-tmp/tmp/organizations/<org_id>/requests/<request_id>.sefv2_<file_id>"
             }
         }
     },
@@ -604,7 +604,7 @@ values={[
 <TabItem value="bash">
 
 ```bash
-curl -X POST https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/blueprints/22222222-2222-2222-2222-222222222222 --header "X-Shipyard-API-Key: <api-key>" -d @blueprint_updates.json
+curl -X POST https://api.app.shipyardapp.com/orgs/<org_id>/blueprints/<blueprint_id> --header "X-Shipyard-API-Key: <api_key>" -d @blueprint_updates.json
 ```
 
 </TabItem>
@@ -616,14 +616,14 @@ import json
 import requests
 
 headers = {
-    'X-Shipyard-API-Key': '<api-key>',
+    'X-Shipyard-API-Key': '<api_key>',
 }
 
 blueprint_file = open('blueprint_updates.json')
 blueprint_data = json.load(blueprint_file)
 
 response = requests.post(
-    'https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/blueprints/22222222-2222-2222-2222-222222222222',
+    'https://api.app.shipyardapp.com/orgs/<org_id>/blueprints/<blueprint_id>',
     headers=headers,
     json=blueprint_data,
 )
