@@ -230,3 +230,34 @@ Below is a reference table for the Fleet Runs CSV.
 | Vessel End Time | The time the Vessel ended |
 | Duration | The length of time the Fleet ran for |
 | Billable Runtime | The length of time the Fleet ran the customer will be billed for |
+
+### Create External File
+
+#### Request
+
+This request is used to upload a file containing the code to be executed as part of a Vessel. Note that it is a prerequisite for **Create Blueprint** and optionally **Updated Blueprint** endpoints below.
+
+```bash
+curl -X POST https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/temporary_external_files --header "X-Shipyard-API-Key: <api-key>" -F file=@script.py
+```
+
+As an example, the contents of `script.py` are:
+
+```python
+print('hello, world!')
+```
+
+#### Response
+
+The response is returned in JSON format.
+
+```json
+{
+	"data":{
+		"RequestID":"99999999-9999-9999-9999-999999999999",
+		"ExternalFile":"s3://production-shipyard-uploads-tmp/tmp/organizations/11111111-1111-1111-1111-111111111111/requests/99999999-9999-9999-9999-999999999999.sefv2_00000000-0000-0000-0000-000000000000"
+	}
+}
+```
+
+The request ID and external file URL will both be used in subsequent requests to the API.
