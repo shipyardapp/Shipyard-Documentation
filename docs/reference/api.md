@@ -360,7 +360,7 @@ curl -X POST https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111
 
 The same `blueprint.json` payload options in **Create Blueprint** maybe be used in **Update Blueprint** however `pallet_type` cannot change and the `pallet_config` field `temp` may be updated with new `id` and `url` values if a new external file has been generated via **Create External File** above.
 
-Any fields omitted from `blueprint.json` will not be updated in the request.
+Any fields omitted from `blueprint.json` will not be updated in the request. The exception is `spec_list` which is a _full replace_ of any existing values.
 
 #### Response
 
