@@ -411,9 +411,41 @@ Below is a reference table for the Fleet Runs CSV.
 
 This request is used to upload a file containing the code to be executed as part of a Vessel. Note that it is a prerequisite for **Create Blueprint** and optionally **Updated Blueprint** endpoints below.
 
+<Tabs
+groupId="languages"
+defaultValue="bash"
+values={[
+{label: 'Bash', value: 'bash'},
+{label: 'Python', value: 'python'},
+]}>
+<TabItem value="bash">
+
 ```bash
 curl -X POST https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/temporary_external_files --header "X-Shipyard-API-Key: <api-key>" -F file=@script.py
 ```
+
+</TabItem>
+<TabItem value="python">
+
+```python
+import requests
+
+headers = {
+    'X-Shipyard-API-Key': '<api-key>',
+}
+
+script_file = open('script.py', 'rb')
+
+response = requests.post(
+    'https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/temporary_external_files',
+    headers=headers,
+    files={'script.py': script_file},
+)
+```
+
+</TabItem>
+</Tabs>
+
 
 As an example, the contents of `script.py` are:
 
@@ -442,9 +474,43 @@ The request ID and external file URL will both be used in subsequent requests to
 
 The request creates a new [Organization Blueprint](reference/blueprints/blueprints-overview.md) under the specified Organization. 
 
+<Tabs
+groupId="languages"
+defaultValue="bash"
+values={[
+{label: 'Bash', value: 'bash'},
+{label: 'Python', value: 'python'},
+]}>
+<TabItem value="bash">
+
 ```bash
 curl -X POST https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/blueprints --header "X-Shipyard-API-Key: <api-key>" -d @blueprint.json
 ```
+
+</TabItem>
+<TabItem value="python">
+
+```python
+import json
+
+import requests
+
+headers = {
+    'X-Shipyard-API-Key': '<api-key>',
+}
+
+blueprint_file = open('blueprint.json')
+blueprint_data = json.load(blueprint_file)
+
+response = requests.post(
+    'https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/blueprints',
+    headers=headers,
+    json=blueprint_data,
+)
+```
+
+</TabItem>
+</Tabs>
 
 As an example, the contents of `blueprint.json` are:
 
@@ -528,13 +594,47 @@ After a successful create, the `DependencyCount` will be `0` since it has not be
 
 This updates an existing Blueprint and has many similarities with the **Create Blueprint** endpoint above.
 
+<Tabs
+groupId="languages"
+defaultValue="bash"
+values={[
+{label: 'Bash', value: 'bash'},
+{label: 'Python', value: 'python'},
+]}>
+<TabItem value="bash">
+
 ```bash
-curl -X POST https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/blueprints/22222222-2222-2222-2222-222222222222 --header "X-Shipyard-API-Key: <api-key>" -d @blueprint.json
+curl -X POST https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/blueprints/22222222-2222-2222-2222-222222222222 --header "X-Shipyard-API-Key: <api-key>" -d @blueprint_updates.json
 ```
+
+</TabItem>
+<TabItem value="python">
+
+```python
+import json
+
+import requests
+
+headers = {
+    'X-Shipyard-API-Key': '<api-key>',
+}
+
+blueprint_file = open('blueprint_updates.json')
+blueprint_data = json.load(blueprint_file)
+
+response = requests.post(
+    'https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/blueprints/22222222-2222-2222-2222-222222222222',
+    headers=headers,
+    json=blueprint_data,
+)
+```
+
+</TabItem>
+</Tabs>
 
 The same `blueprint.json` payload options in **Create Blueprint** maybe be used in **Update Blueprint** however `pallet_type` cannot change and the `pallet_config` field `temp` may be updated with new `id` and `url` values if a new external file has been generated via **Create External File** above.
 
-Any fields omitted from `blueprint.json` will not be updated in the request. The exception is `spec_list` which is a _full replace_ of any existing values.
+Any fields omitted from `blueprint_updates.json` will not be updated in the request. The exception is `spec_list` which is a _full replace_ of any existing values.
 
 #### Response
 
