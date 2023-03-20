@@ -261,3 +261,87 @@ The response is returned in JSON format.
 ```
 
 The request ID and external file URL will both be used in subsequent requests to the API.
+
+### Create Blueprint
+
+#### Request
+
+The request creates a new [Organization Blueprint](reference/blueprints/blueprints-overview.md) under the specified Organization. 
+
+```bash
+curl -X POST https://staging.shipyardapp.io/orgs/11111111-1111-1111-1111-111111111111/blueprints --header "X-Shipyard-API-Key: <api-key>" -d @blueprint.json
+```
+
+As an example, the contents of `blueprint.json` are:
+
+```json
+{
+    "name": "test blueprint",
+    "synopsis": "example synopsis",
+    "description": "example description",
+    "state": 3,
+    "pallet_type": 2,
+    "pallet_config": {
+        "version": "3.7",
+        "command": {
+            "program": "python3",
+            "file_to_run": "script.py"
+        },
+        "external_file": {
+            "temp": {
+                "file_name": "script.py",
+                "id": "99999999-9999-9999-9999-999999999999",
+                "url": "s3://production-shipyard-uploads-tmp/tmp/organizations/11111111-1111-1111-1111-111111111111/requests/99999999-9999-9999-9999-999999999999.sefv2_00000000-0000-0000-0000-000000000000"
+            }
+        }
+    },
+    "spec_list": [
+		{
+            "display_name": "First Input",
+            "name": "FIRST_INPUT",
+            "type": 1,
+            "required": false,
+            "placeholder": "Enter a first input",
+            "description": "A first input",
+            "default": "example_value",
+            "type_spec": {
+                "multiline": false
+            }
+        }
+	],
+    "retry_strategy": {
+        "number_of_retries": 3,
+        "ttr": 900
+    },
+    "runtime_timeout": 2700,
+    "exclude_exit_code_ranges": [
+		[1,1],
+		[3,5],
+	]
+}
+```
+
+There are several things to note regarding the `blueprint.json` payload.
+
+1. `state` value options are `1` (Disabled), `2` (Draft), and `3` (Enabled).
+2. `pallet_type` value options are `2` (Python), `3` (Bash), and `7` (Node).
+3. `program` value options are `python3`, `bash`, and `node` and should correspond with `pallet_type`.
+4. `type` for a `spec_list` object value options are `1` (String), `2` (Integer), `3` (Floating), `4` (Boolean), `5` (Date), `6` (Select), `7` (Password), `8` (External file).
+5. `number_of_retries` can be between `0` and `24`.
+6. `ttr` can be between `0` and `3600` in increments of `300`.
+7. `runtime_timeout` can be between `300` and `3600`.
+8. `exclude_exit_code_ranges` may contain an array of arrays each with two integers between `1` and `255` - in the example above, the exit codes `1`, `3`, `4`, and `5` are ignored.
+9. `external_file` holds a `temp` field with an object with `id` and `url` keys - these are populated using the `RequestID` and `ExternalFile` values from the **Create External File** response above in this example.
+
+#### Response
+
+The response is returned in JSON format.
+
+```json
+{
+	"data":{
+		"DependencyCount":0,
+		"CategoryIds":null
+	}
+}
+```
