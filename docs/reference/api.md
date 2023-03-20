@@ -269,7 +269,7 @@ The request ID and external file URL will both be used in subsequent requests to
 The request creates a new [Organization Blueprint](reference/blueprints/blueprints-overview.md) under the specified Organization. 
 
 ```bash
-curl -X POST https://staging.shipyardapp.io/orgs/11111111-1111-1111-1111-111111111111/blueprints --header "X-Shipyard-API-Key: <api-key>" -d @blueprint.json
+curl -X POST https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/blueprints --header "X-Shipyard-API-Key: <api-key>" -d @blueprint.json
 ```
 
 As an example, the contents of `blueprint.json` are:
@@ -316,7 +316,7 @@ As an example, the contents of `blueprint.json` are:
     "runtime_timeout": 2700,
     "exclude_exit_code_ranges": [
 		[1,1],
-		[3,5],
+		[3,5]
 	]
 }
 ```
@@ -355,7 +355,7 @@ After a successful create, the `DependencyCount` will be `0` since it has not be
 This updates an existing Blueprint and has many similarities with the **Create Blueprint** endpoint above.
 
 ```bash
-curl -X POST https://staging.shipyardapp.io/orgs/11111111-1111-1111-1111-111111111111/blueprints/22222222-2222-2222-2222-222222222222 --header "X-Shipyard-API-Key: <api-key>" -d @blueprint.json
+curl -X POST https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/blueprints/22222222-2222-2222-2222-222222222222 --header "X-Shipyard-API-Key: <api-key>" -d @blueprint.json
 ```
 
 The same `blueprint.json` payload options in **Create Blueprint** maybe be used in **Update Blueprint** however `pallet_type` cannot change and the `pallet_config` field `temp` may be updated with new `id` and `url` values if a new external file has been generated via **Create External File** above.
