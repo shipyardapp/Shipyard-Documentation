@@ -340,8 +340,39 @@ The response is returned in JSON format.
 ```json
 {
 	"data":{
-		"DependencyCount":0,
-		"CategoryIds":null
+		"DependencyCount": 0,
+		"CategoryIds": null
 	}
 }
 ```
+
+After a successful create, the `DependencyCount` will be `0` since it has not been included in a Vessel yet.
+
+### Update Blueprint
+
+#### Request
+
+This updates an existing Blueprint and has many similarities with the **Create Blueprint** endpoint above.
+
+```bash
+curl -X POST https://staging.shipyardapp.io/orgs/11111111-1111-1111-1111-111111111111/blueprints/22222222-2222-2222-2222-222222222222 --header "X-Shipyard-API-Key: <api-key>" -d @blueprint.json
+```
+
+The same `blueprint.json` payload options in **Create Blueprint** maybe be used in **Update Blueprint** however `pallet_type` cannot change and the `pallet_config` field `temp` may be updated with new `id` and `url` values if a new external file has been generated via **Create External File** above.
+
+Any fields omitted from `blueprint.json` will not be updated in the request.
+
+#### Response
+
+The response is returned in JSON format.
+
+```json
+{
+	"data":{
+		"DependencyCount": 0,
+		"CategoryIds": null
+	}
+}
+```
+
+After a successful update, the `DependencyCount` will be show a count of however many Vessels have been created using the Blueprint.
