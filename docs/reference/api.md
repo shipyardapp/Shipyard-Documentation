@@ -434,12 +434,14 @@ headers = {
     'X-Shipyard-API-Key': '<api_key>',
 }
 
-script_file = open('script.py', 'rb')
+files = {
+    'file': open('script.py', 'rb'),
+}
 
 response = requests.post(
     'https://api.app.shipyardapp.com/orgs/<org_id>/temporary_external_files',
     headers=headers,
-    files={'script.py': script_file},
+    files=files,
 )
 ```
 
@@ -491,21 +493,20 @@ curl -X POST https://api.app.shipyardapp.com/orgs/<org_id>/blueprints --header "
 <TabItem value="python">
 
 ```python
-import json
-
 import requests
 
 headers = {
     'X-Shipyard-API-Key': '<api_key>',
+    'Content-Type': 'application/x-www-form-urlencoded',
 }
 
 blueprint_file = open('blueprint.json')
-blueprint_data = json.load(blueprint_file)
+blueprint_data = blueprint_file.read().replace('\n', '').replace('\r', '').encode()
 
 response = requests.post(
     'https://api.app.shipyardapp.com/orgs/<org_id>/blueprints',
     headers=headers,
-    json=blueprint_data,
+    data=blueprint_data,
 )
 ```
 
@@ -611,21 +612,20 @@ curl -X POST https://api.app.shipyardapp.com/orgs/<org_id>/blueprints/<blueprint
 <TabItem value="python">
 
 ```python
-import json
-
 import requests
 
 headers = {
     'X-Shipyard-API-Key': '<api_key>',
+    'Content-Type': 'application/x-www-form-urlencoded',
 }
 
-blueprint_file = open('blueprint_updates.json')
-blueprint_data = json.load(blueprint_file)
+blueprint_file = open('blueprint.json')
+blueprint_data = blueprint_file.read().replace('\n', '').replace('\r', '').encode()
 
 response = requests.post(
     'https://api.app.shipyardapp.com/orgs/<org_id>/blueprints/<blueprint_id>',
     headers=headers,
-    json=blueprint_data,
+    data=blueprint_data,
 )
 ```
 
