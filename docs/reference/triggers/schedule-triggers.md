@@ -50,7 +50,7 @@ Selecting a schedule of `Monthly` on the 31st will only result in a run being sc
 3. There is currently no way to create a schedule that is tied to an irregular mix of dates and times. Some examples of schedules we don't natively support, but are still possible to create within Shipyard:
    1. A schedule that only runs on specific dates, like holidays.
    2. A schedule that runs every hour except on specific days.
-   3. A schedule that can be described as "every other" or "every nth"
+   3. A schedule that can be described as "every other" or "every nth".
 4. Fleets may not run at exactly their scheduled time, as there is still time associated with entering a job queue, spinning up servers, and installing any [external package dependencies](../packages/external-package-dependencies.md).
 
 ## Learn More

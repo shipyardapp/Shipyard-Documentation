@@ -4,7 +4,7 @@ title: Glossary of Terms
 hide_title: true
 description: Glossary of all the terms used throughout our application and documentation.
 keywords:
-  - gloassary
+  - glossary
   - syntax
   - definition
   - meaning
@@ -48,9 +48,9 @@ Our goal with Shipyard is to choose syntax that helps users intuitively understa
 
 [**Credentials**](reference/credentials.md) - A way in the Shipyard application to store secret values that can be referenced by other Fleets and Vessels securely.
 
-Credential Group - A collection of one or more credential items.
+**Credential Group** - A collection of one or more credential items.
 
-Credential Item - A very specific key/value pair of information. These are effectively equivalent to an environment variable.
+**Credential Item** - A very specific key/value pair of information. These are effectively equivalent to an environment variable.
 
 **Element** is a generic term used to refer to any of the above bolded words.
 

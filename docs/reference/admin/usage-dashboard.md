@@ -33,7 +33,7 @@ For these 3 primary metrics, you can visualize the data in 4 different ways:
 In addition, the usage dashboard will show you:
 
 - The date range of the current billing period.
-- The % of the current billing period that has already passed
+- The % of the current billing period that has already passed.
 - The last date the data was updated.
 - The approximate invoice total for the current billing period.
 

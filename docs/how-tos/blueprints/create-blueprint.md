@@ -16,7 +16,7 @@ keywords:
 
 ## Overview
 
-When you use a solution over and over again, it's a good idea to turn it into a Blueprint. This how to guide will walk you through the steps needed to create a repeatable solution as a [Blueprint](../../reference/blueprints/blueprints-overview.md)
+When you use a solution over and over again, it's a good idea to turn it into a Blueprint. This how to guide will walk you through the steps needed to create a repeatable solution as a [Blueprint](../../reference/blueprints/blueprints-overview.md).
 
 ## Steps
 

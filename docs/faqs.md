@@ -29,13 +29,13 @@ For additional access, subscribe to one of our paid plans in your [billing](refe
 
 ## How do I submit feedback or a feature request?
 
-We love to hear what our users would like to see out of our product. Feel free to reach us at any time through intercom (the chat bubble on the right) or by sending an email directly to [support@shipyardapp.com](mailto:support@shipyardapp.com)
+We love to hear what our users would like to see out of our product. Feel free to reach us at any time through intercom (the chat bubble on the right) or by sending an email directly to [support@shipyardapp.com](mailto:support@shipyardapp.com).
 
 ## What programming languages do you support?
 
 We currently natively support the creation of solutions using Python 3.7, Node 14.15, and Bash.
 
-Bash allows us to support any language non-natively, where the right language packages just need to be manually installed by the user as an [external package](reference/packages/external-package-dependencies.md)
+Bash allows us to support any language non-natively, where the correct language packages just need to be manually installed by the user as an [external package](reference/packages/external-package-dependencies.md).
 
 SQL can be used natively with some Blueprints found in the [Blueprint Library](reference/blueprints/blueprint-library/blueprint-library-overview.md).
 

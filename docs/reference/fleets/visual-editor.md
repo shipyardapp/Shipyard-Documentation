@@ -75,7 +75,7 @@ If your Vessel is built with Code, you will see the following panels:
 - [Notifications](../notifications.md)
 - [Guardrails](../guardrails.md)
 
-Clicking on a panel will either expand or collapse its contents. Each panel can be edited independently and you can switch between multiple panels or multiple Vessels.
+Clicking on a panel will either expand or collapse its contents. Each panel can be edited independently, and you can switch between multiple panels or multiple Vessels.
 
 During the process of making edits, if any panel's contents are invalid, the number of invalid inputs will be shown directly on the panel. You will also see an error message specifying which inputs need to be updated. 
 
