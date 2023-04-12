@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-> ## **First time using this Blueprint? Make sure you follow our [Census authorization guide](https://www.shipyardapp.com/docs/blueprint-library/census/cesnsus-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Census authorization guide](https://www.shipyardapp.com/docs/blueprint-library/census/census-authorization/)**.
 
 Check for the status of a Census sync. The Vessel's exit code and status will match the status of the latest sync.
 

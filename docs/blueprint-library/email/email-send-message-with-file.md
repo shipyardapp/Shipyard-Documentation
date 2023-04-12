@@ -18,7 +18,7 @@ keywords:
 
 Send a message to anyone in the world using email, attaching one or more files.
 
-To upload multiple files, use [Regex Match Type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/).
+To upload multiple files, use [Regex Match Type](https://www.shipyardapp.com/docs/reference/blueprints/blueprint-library/match-type/).
 
 Due to email file size constraints, when the the total file size >10MB, Shipyard will automatically zip the files under the name "Archive.zip".
 

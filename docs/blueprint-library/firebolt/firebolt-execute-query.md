@@ -2,6 +2,7 @@
 id: firebolt-execute-query
 title: Firebolt Template - Execute Query
 hide_title: true
+unlisted: true
 sidebar_label: Execute Query
 description: Information about Shipyard's low-code Firebolt Execute Query blueprint. Execute any SQL query against a Firebolt database. Perfect for creating multi-step SQL jobs, executing DML statements, or running scheduled queries.
 keywords:

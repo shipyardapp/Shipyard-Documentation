@@ -2,6 +2,7 @@
 id: firebolt-store-query-results-as-csv
 title: Firebolt Template - Store Query Results as CSV
 hide_title: true
+unlisted: true
 sidebar_label: Store Query Results as CSV
 description: Information about Shipyard's low-code Firebolt Store Query Results as CSV blueprint. Turn the results of your SQL SELECT statement into a CSV file. Extract your Firebolt data into files for easier delivery to clients and partners.
 keywords:
