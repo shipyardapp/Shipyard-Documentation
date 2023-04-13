@@ -1,0 +1,6 @@
+label: Google Cloud Storage
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: google-cloud-storage-overview

@@ -7,7 +7,7 @@ keywords:
   - input
 ---
 
-# Inputs Overview
+# Inputs
 
 ## Definition
 

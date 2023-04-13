@@ -1,0 +1,6 @@
+label: "🗂 Data Packages"
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: index

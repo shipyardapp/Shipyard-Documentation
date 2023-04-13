@@ -70,7 +70,7 @@ module.exports = {
 					position: "left",
 				},
 				{
-					to: "https://www.shipyardapp.com/blog",
+					to: "https://www.shipyardapp.com/blog/",
 					label: "Blog",
 					position: "left",
 				},
@@ -389,11 +389,19 @@ module.exports = {
 					if (existingPath.includes("bit.io#execute-query")) {
 						return ["/blueprint-library/bitio/bitio-execute-query"];
 					}
-					if (existingPath.includes("bit.io#store-query-results-as-csv")) {
-						return ["/blueprint-library/bitio/bitio-store-query-results-as-csv/"];
+					if (
+						existingPath.includes(
+							"bit.io#store-query-results-as-csv"
+						)
+					) {
+						return [
+							"/blueprint-library/bitio/bitio-store-query-results-as-csv/",
+						];
 					}
 					if (existingPath.includes("bit.io#upload-csv-to-table")) {
-						return ["/blueprint-library/bitio/bitio-upload-csv-to-table/"];
+						return [
+							"/blueprint-library/bitio/bitio-upload-csv-to-table/",
+						];
 					}
 					if (existingPath.includes("box#download-files")) {
 						return ["/blueprint-library/box/box-download-files"];
@@ -402,23 +410,49 @@ module.exports = {
 						return ["/blueprint-library/box/box-upload-files"];
 					}
 					if (existingPath.includes("census#check-sync-status")) {
-						return ["/blueprint-library/census/census-check-sync-status"];
+						return [
+							"/blueprint-library/census/census-check-sync-status",
+						];
 					}
 					if (existingPath.includes("census#trigger-sync")) {
-						return ['/blueprint-library/census/census-trigger-sync'];
+						return [
+							"/blueprint-library/census/census-trigger-sync",
+						];
 					}
 
-					if (existingPath.includes("databricks#download-files-from-dbfs")) {
-						return ["/blueprint-library/databricks/databricks-download-files-from-dbfs"];
+					if (
+						existingPath.includes(
+							"databricks#download-files-from-dbfs"
+						)
+					) {
+						return [
+							"/blueprint-library/databricks/databricks-download-files-from-dbfs",
+						];
 					}
-					if (existingPath.includes("databricks#delete-files-from-dbfs")) {
-						return ["/blueprint-library/databricks/databricks-delete-files-from-dbfs"];
+					if (
+						existingPath.includes(
+							"databricks#delete-files-from-dbfs"
+						)
+					) {
+						return [
+							"/blueprint-library/databricks/databricks-delete-files-from-dbfs",
+						];
 					}
-					if (existingPath.includes("databricks#move-or-rename-files-on-dbfs")) {
-						return ["/blueprint-library/databricks/databricks-move-or-rename-files-on-dbfs"];
+					if (
+						existingPath.includes(
+							"databricks#move-or-rename-files-on-dbfs"
+						)
+					) {
+						return [
+							"/blueprint-library/databricks/databricks-move-or-rename-files-on-dbfs",
+						];
 					}
-					if (existingPath.includes("databricks#upload-files-to-dbfs")) {
-						return ["/blueprint-library/databricks/databricks-upload-files-to-dbfs"];
+					if (
+						existingPath.includes("databricks#upload-files-to-dbfs")
+					) {
+						return [
+							"/blueprint-library/databricks/databricks-upload-files-to-dbfs",
+						];
 					}
 
 					if (
@@ -636,10 +670,14 @@ module.exports = {
 						return ["/blueprint-library/hex/hex-run-project"];
 					}
 					if (existingPath.includes("hightouch#check-sync-status")) {
-						return ["/blueprint-library/hightouch/hightouch-check-sync-status"];
+						return [
+							"/blueprint-library/hightouch/hightouch-check-sync-status",
+						];
 					}
 					if (existingPath.includes("hightouch#trigger-sync")) {
-						return ["/blueprint-library/hightouch/hightouch-trigger-sync"];
+						return [
+							"/blueprint-library/hightouch/hightouch-trigger-sync",
+						];
 					}
 					if (existingPath.includes("http#download-file-from-url")) {
 						return [
@@ -677,13 +715,19 @@ module.exports = {
 						];
 					}
 					if (existingPath.includes("mode#check-run-status")) {
-						return ["/blueprint-library/mode/mode-check-run-status"];
+						return [
+							"/blueprint-library/mode/mode-check-run-status",
+						];
 					}
 					if (existingPath.includes("mode#download-report-as-file")) {
-						return ["/blueprint-library/mode/mode-download-report-as-file"];
+						return [
+							"/blueprint-library/mode/mode-download-report-as-file",
+						];
 					}
 					if (existingPath.includes("mode#trigger-report-refresh")) {
-						return ["/blueprint-library/mode/mode-trigger-report-refresh"];
+						return [
+							"/blueprint-library/mode/mode-trigger-report-refresh",
+						];
 					}
 					if (existingPath.includes("mysql#execute-query")) {
 						return ["/blueprint-library/mysql/mysql-execute-query"];
@@ -724,11 +768,17 @@ module.exports = {
 							"/blueprint-library/postgresql/postgresql-upload-csv-to-table",
 						];
 					}
-					if (existingPath.includes("rudderstack#check-sync-status")) {
-						return ["/blueprint-library/rudderstack/rudderstack-check-sync-status"];
+					if (
+						existingPath.includes("rudderstack#check-sync-status")
+					) {
+						return [
+							"/blueprint-library/rudderstack/rudderstack-check-sync-status",
+						];
 					}
 					if (existingPath.includes("rudderstack#trigger-sync")) {
-						return ["/blueprint-library/rudderstack/rudderstack-trigger-sync"];
+						return [
+							"/blueprint-library/rudderstack/rudderstack-trigger-sync",
+						];
 					}
 					if (existingPath.includes("sftp#download-files")) {
 						return ["/blueprint-library/sftp/sftp-download-files"];
@@ -737,7 +787,9 @@ module.exports = {
 						return ["/blueprint-library/sftp/sftp-upload-files"];
 					}
 					if (existingPath.includes("shipyard-api#export-logs")) {
-						return ["/blueprint-library/shipyard-api/shipyard-api-export-logs"];
+						return [
+							"/blueprint-library/shipyard-api/shipyard-api-export-logs",
+						];
 					}
 					if (existingPath.includes("slack#send-message")) {
 						return ["/blueprint-library/slack/slack-send-message"];
@@ -777,7 +829,6 @@ module.exports = {
 							"/blueprint-library/snowflake/snowflake-upload-csv-to-table",
 						];
 					}
-
 				},
 			},
 		],

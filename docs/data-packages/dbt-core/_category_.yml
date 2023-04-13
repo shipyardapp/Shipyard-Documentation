@@ -1,0 +1,6 @@
+label: dbt Core
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: dbt-core-overview

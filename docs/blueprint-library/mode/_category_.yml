@@ -1,0 +1,6 @@
+label: Mode
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: mode-overview

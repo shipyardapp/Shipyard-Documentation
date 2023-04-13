@@ -3,6 +3,7 @@ id: troubleshooting
 title: Troubleshooting and Debugging
 hide_title: true
 description: A list of common errors and how to debug them.
+sidebar_position: 10
 keywords:
   - debug
   - troubleshoot

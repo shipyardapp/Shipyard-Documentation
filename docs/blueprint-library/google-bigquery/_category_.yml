@@ -1,0 +1,6 @@
+label: Google BigQuery
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: google-bigquery-overview
