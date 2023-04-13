@@ -3,6 +3,7 @@ id: change-password
 title: How do I change my password?
 hide_title: true
 description: How do I change my password?
+hide_table_of_contents: true
 keywords:
   - faq
   - frequently asked questions

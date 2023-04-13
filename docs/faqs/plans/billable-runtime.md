@@ -3,6 +3,7 @@ id: billable-runtime
 title: How do you calculate billable runtime?
 hide_title: true
 description: How do you calculate billable runtime?
+hide_table_of_contents: true
 keywords:
   - faq
   - frequently asked questions
@@ -15,7 +16,7 @@ keywords:
 
 Shipyard charges for the cumulative time that your scripts take to run on our infrastructure, regardless of the final status of the job. This is distinct from the duration.
 
-You are not charged for any time delays between [automatic retries](reference/guardrails.md), but each retry will have its own billable runtime associated to it. You are not charged for any time delay between two Vessels in a Fleet. On your invoice, we bill per second, with each Vessel's billable runtime rounded up to the nearest second. Below are a few examples to demonstrate this calculation.
+You are not charged for any time delays between [automatic retries](../../reference/guardrails.md), but each retry will have its own billable runtime associated to it. You are not charged for any time delay between two Vessels in a Fleet. On your invoice, we bill per second, with each Vessel's billable runtime rounded up to the nearest second. Below are a few examples to demonstrate this calculation.
 
 Assumptions:
 - Process A always takes 1hr
