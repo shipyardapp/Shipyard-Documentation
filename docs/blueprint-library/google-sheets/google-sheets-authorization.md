@@ -1,5 +1,6 @@
 ---
 id: google-sheets-authorization
+sidebar_position: 1
 title: Google Sheets Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization

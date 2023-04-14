@@ -1,5 +1,6 @@
 ---
 id: tableau-authorization
+sidebar_position: 1
 title: Tableau Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization

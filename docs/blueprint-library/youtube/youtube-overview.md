@@ -11,7 +11,7 @@ keywords:
   - overview
 ---
 
-# VENDOR Blueprints Overview
+# YouTube Blueprints Overview
 
 Shipyard's low-code YouTube blueprints allow users to connect their data in YouTube to the rest of their modern data stack.
 

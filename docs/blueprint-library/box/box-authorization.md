@@ -1,5 +1,6 @@
 ---
 id: box-authorization
+sidebar_position: 1
 title: Box Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization

@@ -1,5 +1,6 @@
 ---
 id: whisper-authorization
+sidebar_position: 1
 title: Whisper Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization

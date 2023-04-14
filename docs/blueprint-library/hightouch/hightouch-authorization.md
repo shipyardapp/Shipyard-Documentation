@@ -1,5 +1,6 @@
 ---
 id: hightouch-authorization
+sidebar_position: 1
 title: Hightouch Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization

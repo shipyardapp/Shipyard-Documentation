@@ -1,5 +1,6 @@
 ---
 id: azure-blob-storage-authorization
+sidebar_position: 1
 title: Azure Blob Storage Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization

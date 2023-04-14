@@ -1,5 +1,6 @@
 ---
 id: dropbox-authorization
+sidebar_position: 1
 title: Dropbox Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization

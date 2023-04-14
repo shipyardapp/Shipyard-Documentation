@@ -1,5 +1,6 @@
 ---
 id: google-drive-authorization
+sidebar_position: 1
 title: Google Drive Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization

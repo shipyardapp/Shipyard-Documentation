@@ -1,5 +1,6 @@
 ---
 id: bitio-authorization
+sidebar_position: 1
 title: bit.io Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization

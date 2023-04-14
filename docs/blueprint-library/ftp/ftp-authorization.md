@@ -1,5 +1,6 @@
 ---
 id: ftp-authorization
+sidebar_position: 1
 title: FTP Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
