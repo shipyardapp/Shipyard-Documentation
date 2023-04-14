@@ -28,3 +28,6 @@ Deleting a Fleet will permanently remove all Vessels in the Fleet as well as all
 :::tip success
 You've now successfully deleted a Fleet.
 :::
+
+<div dangerouslySetInnerHTML={{ __html: `<div style="position: relative; padding-bottom: calc(66.66666666666666% + 41px); height: 0;"><iframe src="https://demo.arcade.software/DIBhKDLy61Ml70RRaQRx?embed" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;color-scheme: light;" title="How to Delete a Fleet"></iframe></div>` }} />
+

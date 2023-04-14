@@ -137,7 +137,6 @@ module.exports = {
 					"how-tos/vessels/remove-vessel",
 					"how-tos/vessels/edit-vessel",
 					"how-tos/vessels/duplicate-vessel",
-					"how-tos/vessels/search-for-vessel",
 					"how-tos/vessels/assess-vessel-performance",
 				],
 				Code: ["how-tos/code/download-code"],
