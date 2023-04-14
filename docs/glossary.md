@@ -67,7 +67,7 @@ Credential Item - A very specific key/value pair of information. These are effec
 
 **Duration** refers to the total length of real time that a Vessel or Fleet took to be completed.
 
-[**Billable Runtime**](faqs/faqs-list.md#how-do-you-calculate-billable-runtime) refers to the cumulative length of execution time that a Vessel or Fleet took while running. For Fleets with high concurrency, it is possible for the billable runtime to exceed duration. For Vessels with retries, it is possible for the billable runtime to be less than duration.
+[**Billable Runtime**](faqs/plans/billable-runtime.md) refers to the cumulative length of execution time that a Vessel or Fleet took while running. For Fleets with high concurrency, it is possible for the billable runtime to exceed duration. For Vessels with retries, it is possible for the billable runtime to be less than duration.
 
 **Fleet Builder** refers to the interface used to connect Vessels together as a Fleet. The Fleet Builder can either be accessed with the Visual Editor or the YAML Editor.
 

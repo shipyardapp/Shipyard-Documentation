@@ -13,7 +13,7 @@ slug: /
 
 # Introduction
 
-![](../.gitbook/assets/logo-and-name-purple-1.png)
+![](.gitbook/assets/logo-and-name-purple-1.png)
 
 ## Welcome!
 
