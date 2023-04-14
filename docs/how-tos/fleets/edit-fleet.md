@@ -19,8 +19,8 @@ If you find yourself needing add/remove Vessels from a Fleet, update what the Ve
 ### Step 1 - Find the Fleet
 
 1. Navigate to the Project where your Fleet lives.
-2. Find the Fleet that you want to edit and click its name.
-3. Click on the **Fleet Builder** tab to begin editing.
+2. Find the Fleet that you want to edit and hover over the actions vertical-dot menu.
+3. Click **Edit**. 
 
 ### Step 2 - Make Edits
 
@@ -31,6 +31,9 @@ On the Fleet builder tab, you'll be able to
 3. Once all of your changes have been made, click the **Save** button at the bottom of the page.
 
 For more information, read up on our [Visual Fleet Builder](../../reference/fleets/fleets-overview.md#visual-editor) or our [YAML Editor](../../reference/fleets/fleets-overview.md#yaml-editor).
+
+<div dangerouslySetInnerHTML={{ __html: `<div style="position: relative; padding-bottom: calc(66.66666666666666% + 41px); height: 0;"><iframe src="https://demo.arcade.software/G1mFjGGxMKgoSOGOgdiB?embed" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;color-scheme: light;" title="How to Edit a Fleet"></iframe></div>
+` }} />
 
 :::tip success
 You've now successfully edited a Fleet.

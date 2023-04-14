@@ -19,8 +19,9 @@ Sometimes, you'll want to re-use the existing components of a Vessel with only a
 
 ### Step 1 - Navigate to the Vessel
 1. Navigate to the Project where your Vessel lives.
-2. Find the Fleet that your Vessel lives in and click it.
-3. Find the Vessel that you want to edit. Hover over the Vessel block and select the "copy" icon.
+2. Find the Fleet that your Vessel lives in and hover over the Action menu.
+3. Click **Edit**.
+4. Find the Vessel that you want to duplicate. Hover over the Vessel block and select the "copy" icon.
 
 :::tip success
 You've now successfully duplicated the Vessel and are editing the copy.
@@ -33,3 +34,6 @@ While the Vessel has been successfully duplicated, it contains a less readable n
 2. [Edit the Vessel](edit-vessel.md) to make any other minor tweaks you want.
 3. Connect the Vessel to at least one other Vessel in the Fleet.
 4. Click **Save**.
+
+<div dangerouslySetInnerHTML={{ __html: `<div style="position: relative; padding-bottom: calc(66.66666666666666% + 41px); height: 0;"><iframe src="https://demo.arcade.software/NKkASOPDSRCo6qBWYxcQ?embed" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;color-scheme: light;" title="How to Duplicate a Vessel"></iframe></div>` }} />
+

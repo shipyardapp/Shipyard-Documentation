@@ -39,3 +39,5 @@ Here are some other general use-cases:
 | report_09-21-2022_14:07.csv | report\_`${SHIPYARD_VESSEL_START_TIME_MONTH}`-`${SHIPYARD_VESSEL_START_TIME_DAY}`-`${SHIPYARD_VESSEL_START_TIME_YEAR}`\_`${SHIPYARD_VESSEL_START_TIME_HOUR}`:`${SHIPYARD_VESSEL_START_TIME_MINUTE}` |
 | report(14:07:34).csv        | report(`${SHIPYARD_VESSEL_START_TIME_HOUR}`:`${SHIPYARD_VESSEL_START_TIME_MINUTE}`:`${SHIPYARD_VESSEL_START_TIME_SECOND}`).csv 
 
+<div dangerouslySetInnerHTML={{ __html: `<div style="position: relative; padding-bottom: calc(66.66666666666666% + 41px); height: 0;"><iframe src="https://demo.arcade.software/Nyw0QeB25kX2n4NTlqLP?embed" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;color-scheme: light;" title="How to Insert a Date into any Field"></iframe></div>` }} />
+
