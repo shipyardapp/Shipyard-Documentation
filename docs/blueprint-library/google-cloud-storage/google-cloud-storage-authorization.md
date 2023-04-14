@@ -1,5 +1,6 @@
 ---
 id: google-cloud-storage-authorization
+sidebar_position: 1
 title: Google Cloud Storage Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization

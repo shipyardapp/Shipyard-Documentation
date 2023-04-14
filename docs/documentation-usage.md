@@ -3,6 +3,7 @@ id: documentation-usage
 title: How to Use the Documentation
 hide_title: true
 description: Quick guide to help you understand how the Shipyard documentation is laid out.
+sidebar_position: 2
 keywords:
   - documentation
   - overview
@@ -11,6 +12,10 @@ keywords:
 # How to Use the Documentation
 
 All of our documentation is organized into 4 core sections that help you find exactly what you're looking for whether you're just starting out, have been using the platform for a while, or are interested in diving deeper before making the decision to use Shipyard.
+
+## ❓ Frequently Asked Questions
+
+Jumpstart your research on Shipyard by exploring the questions we get most often.
 
 ## 🚀 Getting Started
 

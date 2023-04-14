@@ -1,5 +1,6 @@
 ---
 id: amazon-s3-authorization
+sidebar_position: 1
 title: Amazon S3 Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization

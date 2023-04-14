@@ -2,6 +2,7 @@
 id: dbt-core-set-up-dbt
 title: dbt Core Tutorial Part 2 - Setting Up dbt on GitHub
 sidebar_label: Part 2 - Setting Up dbt on GitHub
+sidebar_position: 2
 hide_title: true
 description: Set up the necessary components on GitHub for dbt core to run. Part two of a three part series on running dbt Core in the cloud.
 keywords:

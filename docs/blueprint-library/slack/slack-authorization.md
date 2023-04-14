@@ -1,5 +1,6 @@
 ---
 id: slack-authorization
+sidebar_position: 1
 title: Slack Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization

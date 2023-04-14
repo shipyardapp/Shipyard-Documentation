@@ -2,6 +2,7 @@
 id: first-project
 title: Building Your First Project
 hide_title: true
+sidebar_position: 1
 description: In-depth tutorial to walk you through the steps needed to set up your first test project.
 keywords:
   - project

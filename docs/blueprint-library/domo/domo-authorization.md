@@ -1,5 +1,6 @@
 ---
 id: domo-authorization
+sidebar_position: 1
 title: Domo Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization

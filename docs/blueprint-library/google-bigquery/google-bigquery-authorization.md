@@ -1,5 +1,6 @@
 ---
 id: google-bigquery-authorization
+sidebar_position: 1
 title: Google BigQuery Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization

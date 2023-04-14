@@ -2,6 +2,7 @@
 id: dbt-core-set-up-shipyard
 title: dbt Core Tutorial Part 2 - Setting Up dbt on Shipyard
 sidebar_label: Part 3 - Setting Up dbt on Shipyard
+sidebar_position: 3
 hide_title: true
 description: Set up the necessary components on GitHub for dbt core to run. Part two of a three part series on running dbt Core in the cloud.
 keywords:

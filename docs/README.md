@@ -2,6 +2,7 @@
 id: introduction
 title: Introduction to Shipyard
 hide_title: true
+sidebar_position: 1
 description: Introduction to the Shipyard platform.
 keywords:
   - intro

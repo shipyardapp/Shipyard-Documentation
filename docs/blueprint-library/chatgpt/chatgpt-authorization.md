@@ -1,5 +1,6 @@
 ---
 id: chatgpt-authorization
+sidebar_position: 1
 title: ChatGPT Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization

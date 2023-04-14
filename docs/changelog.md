@@ -3,6 +3,7 @@ id: changelog
 title: Changelog
 hide_title: true
 description: Running list of all the changes that have been made to the Shipyard application, alongside a brief overview of features being planned.
+unlisted: true
 keywords:
   - changelog
   - updates
@@ -139,7 +140,7 @@ It's a Blueprint-palooza this week, with lots of new data vendors to integrate w
 
 ### Bug Fixes
 
-- We were taking it a wee bit personally when a user cancelled. Organizations with a previously cancelled [Team Plan](https://www.shipyardapp.com/pricing) weren't able to access anything. They now get all the perks of our [Developer Plan](faqs.md/#how-does-the-developer-plan-work). See, we forgive you.
+- We were taking it a wee bit personally when a user cancelled. Organizations with a previously cancelled [Team Plan](https://www.shipyardapp.com/pricing) weren't able to access anything. They now get all the perks of our [Developer Plan](faqs/plans/developer-plan.md). See, we forgive you.
 
 ## 07/20/2022
 

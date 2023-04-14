@@ -2,6 +2,7 @@
 id: advanced-code-vessel
 title: Building a More Advanced Code Vessel
 hide_title: true
+unlisted: true
 description: In-depth tutorial to walk you through the steps needed to set up a more advanced Code Vessel.
 keywords:
   - code

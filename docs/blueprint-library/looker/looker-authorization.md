@@ -1,5 +1,6 @@
 ---
 id: looker-authorization
+sidebar_position: 1
 title: Looker Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization

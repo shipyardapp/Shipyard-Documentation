@@ -3,6 +3,7 @@ id: first-vessel-with-code
 title: Expand Your Fleet with a Code Vessel - Python + Pandas
 hide_title: true
 sidebar_label: Expand Your Fleet with a Code Vessel
+sidebar_position: 3
 description: In-depth tutorial to walk you through the steps needed to set up a Code Vessel that uses Python and Pandas.
 keywords:
   - python

@@ -1,5 +1,6 @@
 ---
 id: dbt-cloud-authorization
+sidebar_position: 1
 title: dbt Cloud Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization

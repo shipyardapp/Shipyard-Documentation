@@ -1,5 +1,6 @@
 ---
 id: sftp-authorization
+sidebar_position: 1
 title: SFTP Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization

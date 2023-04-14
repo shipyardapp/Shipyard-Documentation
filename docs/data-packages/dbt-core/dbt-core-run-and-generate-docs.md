@@ -3,6 +3,7 @@ id: dbt-core-run-and-generate-docs
 title: dbt Core Tutorial Part 4 - Run dbt and Upload Documentation
 hide_title: true
 sidebar_label: Part 4 - Run dbt, Generate Docs, and Upload
+sidebar_position: 4
 description: Run dbt, generate documentation, and upload the contents to cloud storage. Part three of a three part series on running dbt Core in the cloud.
 keywords:
   - dbt

@@ -16,7 +16,7 @@ keywords:
 
 Convert one or more CSV files into a TSV, PSV, XLSX, Parquet, DTA, or HDF5 file.
 
-The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
+The [match type](https://www.shipyardapp.com/docs/reference/blueprints/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
 
 This Blueprint uses built-in Pandas methods to read in a CSV file and output it as another file type.
 

@@ -11,6 +11,8 @@ keywords:
   - template
   - overview
 ---
+import DocCardList from '@theme/DocCardList';
+
 
 # Airtable Blueprints Overview
 
@@ -23,7 +25,7 @@ For information on how to set up these Blueprints successfully, please read thro
 ## Available Blueprints
 
 Shipyard currently has the following Blueprints readily available:
-- [Download Table or View to CSV](airtable-download-table-or-view-to-csv.md)
+- [Download Table or View to CSV](./airtable-download-table-or-view-to-csv.md)
 
 ## Open Source Code
 The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/airtable-blueprints), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.

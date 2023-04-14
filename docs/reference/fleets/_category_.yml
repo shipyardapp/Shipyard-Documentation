@@ -1,0 +1,6 @@
+label: Fleets
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: fleets-overview

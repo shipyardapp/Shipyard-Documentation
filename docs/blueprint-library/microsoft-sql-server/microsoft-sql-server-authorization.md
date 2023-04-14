@@ -1,5 +1,6 @@
 ---
 id: microsoft-sql-server-authorization
+sidebar_position: 1
 title: Microsoft SQL Server Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
@@ -15,7 +16,7 @@ keywords:
 
 Connecting Microsoft SQL Server to Shipyard requires you to have:
 1. A Microsoft SQL Server user with read/write access to the database and all associated tables/views you wish to access. We recommend setting up an account specifically for Shipyard access, although you can use an existing user.
-2. Shipyard [IP Addresses whitelisted](../../faqs.md#how-can-shipyard-access-my-secure-database)
+2. Shipyard [IP Addresses whitelisted](../../faqs/security/ip-whitelist.md)
 
 ## Creating a New User
 

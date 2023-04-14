@@ -1,5 +1,6 @@
 ---
 id: databricks-authorization
+sidebar_position: 1
 title: Databricks Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
