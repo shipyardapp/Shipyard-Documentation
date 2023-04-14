@@ -18,4 +18,4 @@ If you have proprietary business logic needs, you will likely need at least one 
 
 Shipyard is a workflow automation platform built for semi-technical team members. As long as you know how to write a little bit of code in SQL, Python, Bash, or Node.js, you can build and launch almost any solution that doesn't need a UI to function. We've made the platform as easy as possible for you to take your existing coding skills, no matter how advanced they are, and solve problems at scale.
 
-If you have an idea of something you want to solve, and you're not sure if it's possible with Shipyard, reach out to us!
+If you have an idea of something you want to solve, and you're not sure if it's possible with Shipyard, [reach out to us](mailto:support@shipyardapp.com)!

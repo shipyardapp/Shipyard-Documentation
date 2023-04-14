@@ -35,5 +35,5 @@ The team plan comes with all of the features of our free [Developer plan](develo
 Our Enterprise plan starts at $50k/year and includes additional security features like SSO and granular permission control. Additionally, the plan is fully customizable for your needs. 
 - Want predictable pricing? You can purchase users and hours upfront for a discount. 
 - Want longer retention for logs and version control? We can customize that value.
-- Need more memory or specific resources under the hood? 
+- Need more memory or specific resources under the hood? We can customize those for your organization.
 - Want dedicated support and onboarding? We can arrange that!
