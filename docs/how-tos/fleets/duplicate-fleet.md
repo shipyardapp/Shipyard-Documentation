@@ -19,9 +19,8 @@ Sometimes, you'll want to re-use the existing components of a Fleet with only a 
 
 ### Step 1 - Navigate to the Fleet
 1. Navigate to the Project where your Fleet lives.
-2. Click on the **Fleet Name**.
-3. Click on the **Fleet Builder** tab.
-4. Click the **Duplicate** button at the bottom.
+2. Find the Fleet that you want to edit and hover over the actions vertical-dot menu.
+3. Click **Duplicate**. 
 
 :::tip success
 You've now successfully duplicated the Fleet and are viewing the copy.
@@ -34,3 +33,6 @@ While the Fleet has been successfully duplicated, it contains a less readable na
 2. Improve all of the Vessel names.
 3. Edit the Fleet to make any other minor tweaks you want. 
 4. Click **Save**.
+
+
+<div dangerouslySetInnerHTML={{ __html: `<div style="position: relative; padding-bottom: calc(66.66666666666666% + 41px); height: 0;"><iframe src="https://demo.arcade.software/B4rESOVG4wpMiGoWdkOF?embed" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;color-scheme: light;" title="How to Duplicate a Fleet"></iframe></div>` }} />

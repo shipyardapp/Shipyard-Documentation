@@ -47,7 +47,7 @@ values={[
 ]}>
 <TabItem value="ruby">
 
-First, [download this zipped Ruby code](../.gitbook/assets/non_native_language_ruby.zip), named `non_native_language_ruby.zip` to your computer without making any changes.
+First, [download this zipped Ruby code](https://drive.google.com/file/d/1kPO76_I6RlJoRvmFTR3hEZ253wp56Qi-/view?usp=share_link), named `non_native_language_ruby.zip` to your computer without making any changes.
 
 Feel free to review the code in both `run.sh` and `script.rb` to see what each is doing. Here's a brief overview:
 
@@ -64,7 +64,7 @@ Feel free to review the code in both `run.sh` and `script.rb` to see what each i
 </TabItem>
 <TabItem value="go">
 
-First, [download this zipped Go code](../.gitbook/assets/non_native_language_go.zip), named `non_native_language_go.zip` to your computer without making any changes.
+First, [download this zipped Go code](https://drive.google.com/file/d/1mKQiWWLSWYQmBuHVVla5wNms6osbTCB-/view?usp=share_link), named `non_native_language_go.zip` to your computer without making any changes.
 
 Feel free to review the code in both `run.sh` and `script.go` to see what each is doing. Here's a brief overview:
 
