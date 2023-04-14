@@ -1,5 +1,6 @@
 ---
 id: email-troubleshooting
+sidebar_position: 20
 title: Email Blueprint Troubleshooting
 hide_title: true
 sidebar_label: Troubleshooting

@@ -1,5 +1,6 @@
 ---
 id: VENDOR-troubleshooting
+sidebar_position: 20
 title: VENDOR Blueprint Troubleshooting
 hide_title: true
 sidebar_label: Troubleshooting

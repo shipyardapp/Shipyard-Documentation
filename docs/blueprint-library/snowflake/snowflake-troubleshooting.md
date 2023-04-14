@@ -1,5 +1,6 @@
 ---
 id: snowflake-troubleshooting
+sidebar_position: 20
 title: Snowflake Blueprint Troubleshooting
 hide_title: true
 sidebar_label: Troubleshooting
