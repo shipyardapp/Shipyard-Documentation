@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-> ## **First time using this Blueprint? Make sure you follow our [Looker authorization guide](looker-authorization.md)**.
+> ## **First time using this Blueprint? Make sure you follow our [Looker authorization guide](https://www.shipyardapp.com/docs/blueprint-library/looker/looker-download-look-as-file/)**.
 
 Quickly download a Look from Looker as a variety of file types.
 
@@ -35,7 +35,7 @@ Quickly download a Look from Looker as a variety of file types.
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:

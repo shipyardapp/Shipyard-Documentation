@@ -16,7 +16,7 @@ keywords:
 
 > ## **First time using this Blueprint? Make sure you follow our [FTP authorization guide](https://www.shipyardapp.com/docs/blueprint-library/ftp/ftp-authorization/)**.
 
-Quickly remove one or more files from an FTP Server. The [match type](https://www.shipyardapp.com/docs/reference/blueprints/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
+Quickly remove one or more files from an FTP Server. The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
 
 This Blueprint requires _read_ permissions in order to download from the FTP server.
 
@@ -37,7 +37,7 @@ This Blueprint requires _read_ permissions in order to download from the FTP ser
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:

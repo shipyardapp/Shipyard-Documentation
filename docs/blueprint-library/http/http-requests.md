@@ -26,7 +26,7 @@ For downloading large files, we recommend using the *HTTP - Download File from U
 |:---|:---|:---|:---|:---|:---|:---|
 | Method | HTTP_METHOD | Select | :white_check_mark: | `GET` | `GET`, `POST`, `PUT`, `PATCH` | Request method to use against the URL. Shipyard supports GET, POST, PUT, and PATCH. |
 | URL | HTTP_URL | Alphanumeric | :white_check_mark: | - | - | URL to run a request against. |
-| Content Type | HTTP_CONTENT_TYPE | Select | :white_check_mark: | `application/json` | `application/json`, `application/xml`, `text/plain`, `text/html` | The type of content provided by the server. The API you run a request against may state that a specific content-type should be chosen. |
+| Content Type | HTTP_CONTENT_TYPE | Select | :white_check_mark: | `application/json` | `application/json`, `application/xml`, `text/plain`, `text/html`, `application/x-www-form-urlencoded` | The type of content provided by the server. The API you run a request against may state that a specific content-type should be chosen. |
 | Authorization Header | HTTP_AUTHORIZATION_HEADER | Password | :heavy_minus_sign: | - | - | Credentials to access an API should be provided in the authorization header. |
 | Message | HTTP_MESSAGE | Alphanumeric | :heavy_minus_sign: | - | - | The data to be sent to the API. Also known as the body of the request. |
 | Destination Folder Name | HTTP_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | The folder where the returned response should be stored. If left blank, defaults to the home directory. |
@@ -36,7 +36,7 @@ For downloading large files, we recommend using the *HTTP - Download File from U
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:

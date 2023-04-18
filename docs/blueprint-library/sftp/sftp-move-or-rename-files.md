@@ -16,7 +16,7 @@ keywords:
 
 > ## **First time using this Blueprint? Make sure you follow our [SFTP authorization guide](https://www.shipyardapp.com/docs/blueprint-library/sftp/sftp-authorization/)**.
 
-Quickly move or rename one or more files from an SFTP Server. The [match type](https://www.shipyardapp.com/docs/reference/blueprints/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
+Quickly move or rename one or more files from an SFTP Server. The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
 
 This Blueprint requires _write_ permissions in order to move objects from the SFTP server.
 
@@ -40,7 +40,7 @@ This Blueprint requires _write_ permissions in order to move objects from the SF
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:

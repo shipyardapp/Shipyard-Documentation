@@ -16,7 +16,7 @@ keywords:
 
 > ## **First time using this Blueprint? Make sure you follow our [FTP authorization guide](https://www.shipyardapp.com/docs/blueprint-library/ftp/ftp-authorization/)**.
 
-Easily import one or more files directly into an FTP Server, no matter how big they are. The [match type](https://www.shipyardapp.com/docs/reference/blueprints/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
+Easily import one or more files directly into an FTP Server, no matter how big they are. The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
 
 This Blueprint requires _write_ permissions in order to upload to the FTP server. 
 
@@ -46,7 +46,7 @@ This Blueprint requires _write_ permissions in order to upload to the FTP server
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:

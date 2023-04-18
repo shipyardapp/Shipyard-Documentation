@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-> ## **First time using this Blueprint? Make sure you follow our [Looker authorization guide](looker-authorization.md)**.
+> ## **First time using this Blueprint? Make sure you follow our [Looker authorization guide](https://www.shipyardapp.com/docs/blueprint-library/looker/looker-create-sql-runner-query/)**.
 
 Quickly create a SQL query (stored as a `slug`) to be run in a downstream vessel. This works best when paired with `Looker - Download SQL Query as File` blueprint.
 
@@ -34,7 +34,7 @@ Quickly create a SQL query (stored as a `slug`) to be run in a downstream vessel
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:

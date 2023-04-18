@@ -53,11 +53,12 @@ In all instances, if the table name does not already exist, a new table will be 
 | File Name | SNOWFLAKE_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the file to upload to the specified table |
 | Table Name | SNOWFLAKE_TABLE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the table where you want data inserted |
 | Insertion Method | SNOWFLAKE_INSERT_METHOD | Select | :white_check_mark: | `append` | Append Data: `append`<br></br><br></br>Replace Data: `replace`<br></br><br></br>Add Data Only if Table is Empty: `fail` | Determines how the data in your file will be added to the table |
+| Snowflake Data Types | SNOWFLAKE_DATA_TYPES | Alphanumeric | :heavy_minus_sign: | - | - | The option to declare the Snowflake datatypes. The input needs to be similar to a list of lists, which will be used to form a CREATE OR REPLACE TABLE statement. For more information on Snowflake data types, visit https://docs.snowflake.com/en/sql-reference/intro-summary-data-types.html |
 
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
@@ -74,6 +75,7 @@ source:
     SNOWFLAKE_SOURCE_FILE_NAME: null ## REQUIRED
     SNOWFLAKE_TABLE_NAME: null ## REQUIRED
     SNOWFLAKE_INSERT_METHOD: append ## REQUIRED
+    SNOWFLAKE_DATA_TYPES: null 
   type: BLUEPRINT
 guardrails:
   retry_count: 1
