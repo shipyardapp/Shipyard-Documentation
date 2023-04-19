@@ -22,10 +22,10 @@ Execute any Standard SQL query against a Google BigQuery database. Perfect for c
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:---|:---|:---|:---|:---|:---|:---|
-| Query | BIGQUERY_QUERY | Alphanumeric | :white_check_mark: | - | - | Standard SQL query to be executed against BigQuery. Does not support Legacy SQL. |
-| Service Account | GOOGLE_APPLICATION_CREDENTIALS | Password | :white_check_mark: | - | - | JSON from a Google Cloud Service account key. |
+| Name            | Reference                      | Type         | Required           | Default | Options | Description                                                                      |
+|:----------------|:-------------------------------|:-------------|:-------------------|:--------|:--------|:---------------------------------------------------------------------------------|
+| Query           | BIGQUERY_QUERY                 | Alphanumeric | :white_check_mark: | -       | -       | Standard SQL query to be executed against BigQuery. Does not support Legacy SQL. |
+| Service Account | GOOGLE_APPLICATION_CREDENTIALS | Password     | :white_check_mark: | -       | -       | JSON from a Google Cloud Service account key.                                    |
 
 
 ## YAML

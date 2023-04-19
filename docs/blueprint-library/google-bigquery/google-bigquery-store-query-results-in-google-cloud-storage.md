@@ -26,13 +26,13 @@ Ex. If you provide a file name of `data.csv` and your data is 2.4GB in total, 3 
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:---|:---|:---|:---|:---|:---|:---|
-| Query | BIGQUERY_QUERY | Alphanumeric | :white_check_mark: | - | - | Standard SQL query to be executed against BigQuery. Does not support Legacy SQL. |
-| Bucket Name | BIGQUERY_BUCKET_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the GCS bucket to store the results file(s) in. |
-| Bucket File Name | BIGQUERY_DESTINATION_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of file to be generated with the results. Should be `.csv` extension. If the file size is >1GB, file name will be enumerated with `_#` before the extension. |
-| Bucket Folder Name | BIGQUERY_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the file(s) should be uploaded. Leaving blank will place the file in the root directory. |
-| Service Account | GOOGLE_APPLICATION_CREDENTIALS | Password | :white_check_mark: | - | - | JSON from a Google Cloud Service account key. |
+| Name               | Reference                        | Type         | Required           | Default | Options | Description                                                                                                                                                       |
+|:-------------------|:---------------------------------|:-------------|:-------------------|:--------|:--------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Query              | BIGQUERY_QUERY                   | Alphanumeric | :white_check_mark: | -       | -       | Standard SQL query to be executed against BigQuery. Does not support Legacy SQL.                                                                                  |
+| Bucket Name        | BIGQUERY_BUCKET_NAME             | Alphanumeric | :white_check_mark: | -       | -       | Name of the GCS bucket to store the results file(s) in.                                                                                                           |
+| Bucket File Name   | BIGQUERY_DESTINATION_FILE_NAME   | Alphanumeric | :white_check_mark: | -       | -       | Name of file to be generated with the results. Should be `.csv` extension. If the file size is >1GB, file name will be enumerated with `_#` before the extension. |
+| Bucket Folder Name | BIGQUERY_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | -       | -       | Folder where the file(s) should be uploaded. Leaving blank will place the file in the root directory.                                                             |
+| Service Account    | GOOGLE_APPLICATION_CREDENTIALS   | Password     | :white_check_mark: | -       | -       | JSON from a Google Cloud Service account key.                                                                                                                     |
 
 
 ## YAML

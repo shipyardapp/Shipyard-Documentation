@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-> ## **First time using this Blueprint? Make sure you follow our [Looker authorization guide](looker-authorization.md)**.
+> ## **First time using this Blueprint? Make sure you follow our [Looker authorization guide](https://www.shipyardapp.com/docs/blueprint-library/looker/looker-create-sql-runner-query/)**.
 
 Quickly create a SQL query (stored as a `slug`) to be run in a downstream vessel. This works best when paired with `Looker - Download SQL Query as File` blueprint.
 
@@ -22,14 +22,14 @@ Quickly create a SQL query (stored as a `slug`) to be run in a downstream vessel
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:---|:---|:---|:---|:---|:---|:---|
-| Looker Url | LOOKER_URL | Alphanumeric | :white_check_mark: | - | - | The base URL of your organization's looker instance. Include https:// |
-| Looker Client ID | LOOKER_CLIENT_ID | Password | :white_check_mark: | - | - | The Client ID generated from Looker for API access |
-| Looker Client Secret | LOOKER_CLIENT_SECRET | Password | :white_check_mark: | - | - | The secret key generated from Looker for API access |
-| Looker Connection Type | LOOKER_CONNECTION_TYPE | Select | :white_check_mark: | `connection_name` | Connection Name: `connection_name`<br></br><br></br>Model Name: `model_name` | The type of connection to form the SQL runner query. This is either by connecting to a specific connection, or a model |
-| Looker Connection Value | LOOKER_CONNECTION_VALUE | Alphanumeric | :heavy_minus_sign: | - | - | Depending the selection in the Looker Connection Type argument, this will either be the name of the connection or the name of the model |
-| Looker SQL Query | LOOKER_SQL_QUERY | Alphanumeric | :white_check_mark: | - | - | The SQL query you would like to store |
+| Name                    | Reference               | Type         | Required           | Default           | Options                                                                      | Description                                                                                                                             |
+|:------------------------|:------------------------|:-------------|:-------------------|:------------------|:-----------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------|
+| Looker Url              | LOOKER_URL              | Alphanumeric | :white_check_mark: | -                 | -                                                                            | The base URL of your organization's looker instance. Include https://                                                                   |
+| Looker Client ID        | LOOKER_CLIENT_ID        | Password     | :white_check_mark: | -                 | -                                                                            | The Client ID generated from Looker for API access                                                                                      |
+| Looker Client Secret    | LOOKER_CLIENT_SECRET    | Password     | :white_check_mark: | -                 | -                                                                            | The secret key generated from Looker for API access                                                                                     |
+| Looker Connection Type  | LOOKER_CONNECTION_TYPE  | Select       | :white_check_mark: | `connection_name` | Connection Name: `connection_name`<br></br><br></br>Model Name: `model_name` | The type of connection to form the SQL runner query. This is either by connecting to a specific connection, or a model                  |
+| Looker Connection Value | LOOKER_CONNECTION_VALUE | Alphanumeric | :heavy_minus_sign: | -                 | -                                                                            | Depending the selection in the Looker Connection Type argument, this will either be the name of the connection or the name of the model |
+| Looker SQL Query        | LOOKER_SQL_QUERY        | Alphanumeric | :white_check_mark: | -                 | -                                                                            | The SQL query you would like to store                                                                                                   |
 
 
 ## YAML

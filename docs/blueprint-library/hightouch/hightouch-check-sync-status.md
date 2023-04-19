@@ -33,11 +33,11 @@ The response for this request will always be stored at `shipyard-artifacts/hight
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:---|:---|:---|:---|:---|:---|:---|
-| API Key | HIGHTOUCH_API_KEY | Password | :white_check_mark: | - | - | The API Key associated with your Hightouch account. |
-| Sync ID | HIGHTOUCH_SYNC_ID | Alphanumeric | :white_check_mark: | - | - | The ID of the Hightouch sync you want to refresh. |
-| Sync Run ID | HIGHTOUCH_SYNC_RUN_ID | Alphanumeric | :heavy_minus_sign: | - | - | The sync run ID that you want to check the status of. Leave blank if connected to another Vessel that will Trigger Sync. |
+| Name        | Reference             | Type         | Required           | Default | Options | Description                                                                                                              |
+|:------------|:----------------------|:-------------|:-------------------|:--------|:--------|:-------------------------------------------------------------------------------------------------------------------------|
+| API Key     | HIGHTOUCH_API_KEY     | Password     | :white_check_mark: | -       | -       | The API Key associated with your Hightouch account.                                                                      |
+| Sync ID     | HIGHTOUCH_SYNC_ID     | Alphanumeric | :white_check_mark: | -       | -       | The ID of the Hightouch sync you want to refresh.                                                                        |
+| Sync Run ID | HIGHTOUCH_SYNC_RUN_ID | Alphanumeric | :heavy_minus_sign: | -       | -       | The sync run ID that you want to check the status of. Leave blank if connected to another Vessel that will Trigger Sync. |
 
 
 ## YAML

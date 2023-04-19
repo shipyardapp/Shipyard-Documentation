@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-> ## **First time using this Blueprint? Make sure you follow our [Census authorization guide](https://www.shipyardapp.com/docs/blueprint-library/census/cesnsus-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Census authorization guide](https://www.shipyardapp.com/docs/blueprint-library/census/census-authorization/)**.
 
 Immediately execute a Census snyc. The sync must already be set up within the Census interface.
 
@@ -30,10 +30,10 @@ This Blueprint will only kick off the sync and will almost always return a statu
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:---|:---|:---|:---|:---|:---|:---|
-| API Key | CENSUS_API_KEY | Password | :white_check_mark: | - | - | The API Key associated with your Census account. |
-| Sync ID | CENSUS_SYNC_ID | Alphanumeric | :white_check_mark: | - | - | The ID of the Census sync you want to refresh. |
+| Name    | Reference      | Type         | Required           | Default | Options | Description                                      |
+|:--------|:---------------|:-------------|:-------------------|:--------|:--------|:-------------------------------------------------|
+| API Key | CENSUS_API_KEY | Password     | :white_check_mark: | -       | -       | The API Key associated with your Census account. |
+| Sync ID | CENSUS_SYNC_ID | Alphanumeric | :white_check_mark: | -       | -       | The ID of the Census sync you want to refresh.   |
 
 
 ## YAML

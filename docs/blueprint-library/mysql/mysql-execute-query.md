@@ -22,15 +22,15 @@ Execute any SQL query against a MySQL database, without returning any of the res
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:---|:---|:---|:---|:---|:---|:---|
-| Host | MYSQL_HOST | Alphanumeric | :white_check_mark: | - | - | The domain or the IP address of the database you want to connect to. |
-| Port | MYSQL_PORT | Integer | :white_check_mark: | 3306 | - | Number for the database port to connect to. Defaults to 3306. |
-| Username | MYSQL_USERNAME | Alphanumeric | :white_check_mark: | - | - | Name of the user to connect to the database with. |
-| Password | MYSQL_PASSWORD | Password | :heavy_minus_sign: | - | - | Password associated to the provided username. |
-| Database | MYSQL_DATABASE | Alphanumeric | :white_check_mark: | - | - | Name of the database in MySQL to connect to. |
-| Extra URL Parameters | MYSQL_URL_PARAMETERS | Alphanumeric | :heavy_minus_sign: | - | - | Extra parameters that will be placed at the end of the connection string, after the "?". Must be separated by "&". |
-| Query | MYSQL_QUERY | Alphanumeric | :white_check_mark: | - | - | Any SQL query that runs a job against the database (CREATE, DROP, INSERT, etc.). Formatting is ignored. |
+| Name                 | Reference            | Type         | Required           | Default | Options | Description                                                                                                        |
+|:---------------------|:---------------------|:-------------|:-------------------|:--------|:--------|:-------------------------------------------------------------------------------------------------------------------|
+| Host                 | MYSQL_HOST           | Alphanumeric | :white_check_mark: | -       | -       | The domain or the IP address of the database you want to connect to.                                               |
+| Port                 | MYSQL_PORT           | Integer      | :white_check_mark: | 3306    | -       | Number for the database port to connect to. Defaults to 3306.                                                      |
+| Username             | MYSQL_USERNAME       | Alphanumeric | :white_check_mark: | -       | -       | Name of the user to connect to the database with.                                                                  |
+| Password             | MYSQL_PASSWORD       | Password     | :heavy_minus_sign: | -       | -       | Password associated to the provided username.                                                                      |
+| Database             | MYSQL_DATABASE       | Alphanumeric | :white_check_mark: | -       | -       | Name of the database in MySQL to connect to.                                                                       |
+| Extra URL Parameters | MYSQL_URL_PARAMETERS | Alphanumeric | :heavy_minus_sign: | -       | -       | Extra parameters that will be placed at the end of the connection string, after the "?". Must be separated by "&". |
+| Query                | MYSQL_QUERY          | Alphanumeric | :white_check_mark: | -       | -       | Any SQL query that runs a job against the database (CREATE, DROP, INSERT, etc.). Formatting is ignored.            |
 
 
 ## YAML

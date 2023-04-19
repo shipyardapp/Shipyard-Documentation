@@ -33,11 +33,11 @@ The response for this request will always be stored at `shipyard-artifacts/fivet
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:---|:---|:---|:---|:---|:---|:---|
-| API Key | FIVETRAN_API_KEY | Password | :white_check_mark: | - | - | Your account's unique API Key for Fivetran. |
-| API Secret | FIVETRAN_API_SECRET | Password | :white_check_mark: | - | - | Your account's unique API Secret for Fivetran. |
-| Connector ID | FIVETRAN_CONNECTOR_ID | Alphanumeric | :white_check_mark: | - | - | The unique ID associated with a connector. Typically two words separated by an underscore. |
+| Name         | Reference             | Type         | Required           | Default | Options | Description                                                                                |
+|:-------------|:----------------------|:-------------|:-------------------|:--------|:--------|:-------------------------------------------------------------------------------------------|
+| API Key      | FIVETRAN_API_KEY      | Password     | :white_check_mark: | -       | -       | Your account's unique API Key for Fivetran.                                                |
+| API Secret   | FIVETRAN_API_SECRET   | Password     | :white_check_mark: | -       | -       | Your account's unique API Secret for Fivetran.                                             |
+| Connector ID | FIVETRAN_CONNECTOR_ID | Alphanumeric | :white_check_mark: | -       | -       | The unique ID associated with a connector. Typically two words separated by an underscore. |
 
 
 ## YAML

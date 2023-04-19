@@ -26,12 +26,12 @@ The file will be downloaded directly to the specified folder using the File Name
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:---|:---|:---|:---|:---|:---|:---|
-| File URL | HTTP_FILE_URL | Alphanumeric | :white_check_mark: | - | - | URL to run a download request against. |
-| Custom Headers | HTTP_CUSTOM_HEADERS | Alphanumeric | :heavy_minus_sign: | - | - | A dictionary of additional headers that you want sent to the URL where the download request is being made. |
-| File Name | HTTP_DESTINATION_FILE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | If left blank, will try to interpret the file name from the URL. |
-| Folder Name | HTTP_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | If left blank, the file will be created in the current working directory. |
+| Name           | Reference                    | Type         | Required           | Default | Options | Description                                                                                                |
+|:---------------|:-----------------------------|:-------------|:-------------------|:--------|:--------|:-----------------------------------------------------------------------------------------------------------|
+| File URL       | HTTP_FILE_URL                | Alphanumeric | :white_check_mark: | -       | -       | URL to run a download request against.                                                                     |
+| Custom Headers | HTTP_CUSTOM_HEADERS          | Alphanumeric | :heavy_minus_sign: | -       | -       | A dictionary of additional headers that you want sent to the URL where the download request is being made. |
+| File Name      | HTTP_DESTINATION_FILE_NAME   | Alphanumeric | :heavy_minus_sign: | -       | -       | If left blank, will try to interpret the file name from the URL.                                           |
+| Folder Name    | HTTP_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | -       | -       | If left blank, the file will be created in the current working directory.                                  |
 
 
 ## YAML

@@ -29,10 +29,10 @@ This Blueprint will only kick off the source and will almost always return a sta
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:---|:---|:---|:---|:---|:---|:---|
-| Access Token | RUDDERSTACK_ACCESS_TOKEN | Password | :white_check_mark: | - | - | The access token associated with your Rudderstack account. |
-| Source ID | RUDDERSTACK_SOURCE_ID | Alphanumeric | :white_check_mark: | - | - | The ID of the Rudderstack source you want to refresh. |
+| Name         | Reference                | Type         | Required           | Default | Options | Description                                                |
+|:-------------|:-------------------------|:-------------|:-------------------|:--------|:--------|:-----------------------------------------------------------|
+| Access Token | RUDDERSTACK_ACCESS_TOKEN | Password     | :white_check_mark: | -       | -       | The access token associated with your Rudderstack account. |
+| Source ID    | RUDDERSTACK_SOURCE_ID    | Alphanumeric | :white_check_mark: | -       | -       | The ID of the Rudderstack source you want to refresh.      |
 
 
 ## YAML
