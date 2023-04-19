@@ -576,18 +576,16 @@ There are several things to note regarding the `blueprint.json` payload.
 
 #### Response
 
-The response is returned in JSON format.
+The response is returned in JSON format. Below is a truncated example of the output.
 
 ```json
 {
-	"data":{
-		"DependencyCount": 0,
-		"CategoryIds": null
-	}
-}
+    "data_kind": "blueprint",
+    "data": {
+        "org_id": "<org_id>",
+        "id": "<blueprint_id>",
+    ...
 ```
-
-After a successful create, the `DependencyCount` will be `0` since it has not been included in a Vessel yet.
 
 ### Update Blueprint
 
@@ -638,15 +636,13 @@ Any fields omitted from `blueprint_updates.json` will not be updated in the requ
 
 #### Response
 
-The response is returned in JSON format.
+The response is returned in JSON format. Below is a truncated example of the output.
 
 ```json
 {
-	"data":{
-		"DependencyCount": 0,
-		"CategoryIds": null
-	}
-}
+    "data_kind": "blueprint",
+    "data": {
+        "org_id": "<org_id>",
+        "id": "<blueprint_id>",
+    ...
 ```
-
-After a successful update, the `DependencyCount` will be show a count of however many Vessels have been created using the Blueprint.
