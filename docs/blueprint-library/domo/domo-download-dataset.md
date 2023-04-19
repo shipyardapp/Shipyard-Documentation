@@ -24,18 +24,18 @@ Either a username/password or an access token should be provided. If both are pr
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:---|:---|:---|:---|:---|:---|:---|
-| Client ID | DOMO_CLIENT_ID | Password | :white_check_mark: | - | - | Client ID is generated in the Domo Developer Portal. The ID should have the following scope: data, workflow, user, account, dashboard |
-| Secret Key | DOMO_SECRET_KEY | Password | :white_check_mark: | - | - | The secret attached to the generated Client ID |
-| DOMO Dataset ID | DOMO_DATASET_ID | Alphanumeric | :white_check_mark: | - | - | The id of the dataset desired to be replaced. Can be acquired from the url of the dataset |
-| Local Destination Folder Name | DOMO_DESTINATION_FOLDER | Alphanumeric | :heavy_minus_sign: | - | - | The file path of where the csv should be downloaded to. If left blank, then the file will be saved in the current working directory. |
-| Local File Name | DOMO_DESTINATION_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | The name for the csv file once it is downloaded |
+| Name                          | Reference                  | Type         | Required           | Default | Options | Description                                                                                                                           |
+|:------------------------------|:---------------------------|:-------------|:-------------------|:--------|:--------|:--------------------------------------------------------------------------------------------------------------------------------------|
+| Client ID                     | DOMO_CLIENT_ID             | Password     | :white_check_mark: | -       | -       | Client ID is generated in the Domo Developer Portal. The ID should have the following scope: data, workflow, user, account, dashboard |
+| Secret Key                    | DOMO_SECRET_KEY            | Password     | :white_check_mark: | -       | -       | The secret attached to the generated Client ID                                                                                        |
+| DOMO Dataset ID               | DOMO_DATASET_ID            | Alphanumeric | :white_check_mark: | -       | -       | The id of the dataset desired to be replaced. Can be acquired from the url of the dataset                                             |
+| Local Destination Folder Name | DOMO_DESTINATION_FOLDER    | Alphanumeric | :heavy_minus_sign: | -       | -       | The file path of where the csv should be downloaded to. If left blank, then the file will be saved in the current working directory.  |
+| Local File Name               | DOMO_DESTINATION_FILE_NAME | Alphanumeric | :white_check_mark: | -       | -       | The name for the csv file once it is downloaded                                                                                       |
 
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 
 ```yaml
 source:
