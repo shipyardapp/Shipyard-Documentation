@@ -632,7 +632,7 @@ response = requests.post(
 
 The same `blueprint.json` payload options in **Create Blueprint** maybe be used in **Update Blueprint** however `pallet_type` cannot change and the `pallet_config` field `temp` may be updated with new `id` and `url` values if a new external file has been generated via **Create External File** above.
 
-Any fields omitted from `blueprint_updates.json` will not be updated in the request. The exception is `spec_list` which is a _full replace_ of any existing values.
+Any fields omitted from `blueprint_updates.json` will not be updated in the request. In order to update the `spec_list`, you will need to include the `id` key and value from the **Create Blueprint** response above in the relevant `spec_list` object. Any `spec_list` objects in the array that do _not_ include an `id` field will be attempted to be added as new input variables.
 
 #### Response
 
