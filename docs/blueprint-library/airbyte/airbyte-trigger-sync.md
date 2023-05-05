@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-> ## **First time using this Blueprint? Make sure you follow our [Airbyte authorization guide](./airbyte-authorization.md)**.
+> ## **First time using this Blueprint? Make sure you follow our [Airbyte authorization guide](https://www.shipyardapp.com/docs/blueprint-library/airbyte/airbyte-authorization/)**.
 
 Execute a sync against an existing connector in the Airbyte interface without waiting for results.
 

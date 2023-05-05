@@ -13,7 +13,7 @@ keywords:
 
 # Airbyte Blueprints Overview
 
-Shipyard's low-code Airbyte blueprints allow users to connect their data in VENDOR to the rest of their modern data stack.
+Shipyard's low-code Airbyte blueprints allow users to connect their data in Airbyte to the rest of their modern data stack.
 
 ## How to Use
 For information on how to set up these Blueprints successfully, please read through the [Airbyte Authorization guide](airbyte-authorization.md).

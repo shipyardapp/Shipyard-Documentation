@@ -41,6 +41,7 @@ Upload a CSV file to any table in Amazon Redshift. With the file data, you can c
 | File Name            | REDSHIFT_SOURCE_FILE_NAME            | Alphanumeric | :white_check_mark: | -             | -                                                                                                                       | Name of the file to upload to the specified table                                                                 |
 | Table Name           | REDSHIFT_TABLE_NAME                  | Alphanumeric | :white_check_mark: | -             | -                                                                                                                       | Name of the table where you want data inserted                                                                    |
 | Insertion Method     | REDSHIFT_INSERT_METHOD               | Select       | :white_check_mark: | `append`      | Append Data: `append`<br></br><br></br>Replace Data: `replace`<br></br><br></br>Add Data Only if Table is Empty: `fail` | Determines how the data in your file will be added to the table                                                   |
+| Schema               | REDSHIFT_SCHEMA                      | Alphanumeric | :heavy_minus_sign: | -             | -                                                                                                                       | The schema to establish a connection with; if omitted this will default to public.                                |
 
 
 ## YAML
@@ -62,11 +63,11 @@ source:
     REDSHIFT_SOURCE_FILE_NAME: null ## REQUIRED
     REDSHIFT_TABLE_NAME: null ## REQUIRED
     REDSHIFT_INSERT_METHOD: append ## REQUIRED
+    REDSHIFT_SCHEMA: null 
   type: BLUEPRINT
 guardrails:
   retry_count: 1
   retry_wait: 0s
   runtime_cutoff: 4h0m0s
   exclude_exit_code_ranges:
-    - "0"
 ```

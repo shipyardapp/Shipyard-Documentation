@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-> ## **First time using this Blueprint? Make sure you follow our [Airbyte authorization guide](airbyte-authorization.md)**.
+> ## **First time using this Blueprint? Make sure you follow our [Airbyte authorization guide](https://www.shipyardapp.com/docs/blueprint-library/airbyte/airbyte-authorization/)**.
 
 Check the status of a specific Airbyte sync run and return with the final status. Best used if run immediately after the Airbyte - Trigger Sync blueprint.
 
