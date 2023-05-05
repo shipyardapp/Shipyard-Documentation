@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-> ## **First time using this Blueprint? Make sure you follow our [Coalesce authorization guide](https://www.shipyardapp.com/docs/blueprint-library/coalesce/coalesce-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Coalesce authorization guide](coalesce-authorization.md)**.
 
 Check the status of a specific Coalesce job and return with the final status. Best used if run immediately after the Coalesce - Start Job blueprint.
 

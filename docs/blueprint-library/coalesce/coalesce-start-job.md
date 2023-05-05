@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-> ## **First time using this Blueprint? Make sure you follow our [Coalesce authorization guide](https://www.shipyardapp.com/docs/blueprint-library/coalesce/coalesce-authorization/)**.
+> ## **First time using this Blueprint? Make sure you follow our [Coalesce authorization guide](coalesce-authorization.md)**.
 
 Trigger the execution of a Coalesce job without waiting for it to complete.
 
