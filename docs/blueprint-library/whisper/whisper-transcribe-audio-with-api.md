@@ -20,17 +20,17 @@ This Blueprint takes in a audio file and transcribes it to a text file.
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:---|:---|:---|:---|:---|:---|:---|
-| API Key | WHISPER_API_KEY | Password | :white_check_mark: | - | - | API Key from OpenAI |
-| File to Transcribe | WHISPER_FILE | Alphanumeric | :white_check_mark: | - | - | - |
-| Transcription File Name | WHISPER_DESTINATION_FILE_NAME | Alphanumeric | :white_check_mark: | transcription.txt | - | File name of transcription |
-| Language | WHISPER_LANGUAGE | Alphanumeric | :white_check_mark: | en | - | Language of the audio file. Should be in ISO-639-1 format.  |
+| Name                    | Reference                     | Type         | Required           | Default           | Options | Description                                                |
+|:------------------------|:------------------------------|:-------------|:-------------------|:------------------|:--------|:-----------------------------------------------------------|
+| API Key                 | WHISPER_API_KEY               | Password     | :white_check_mark: | -                 | -       | API Key from OpenAI                                        |
+| File to Transcribe      | WHISPER_FILE                  | Alphanumeric | :white_check_mark: | -                 | -       | -                                                          |
+| Transcription File Name | WHISPER_DESTINATION_FILE_NAME | Alphanumeric | :white_check_mark: | transcription.txt | -       | File name of transcription                                 |
+| Language                | WHISPER_LANGUAGE              | Alphanumeric | :white_check_mark: | en                | -       | Language of the audio file. Should be in ISO-639-1 format. |
 
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 
 ```yaml
 source:

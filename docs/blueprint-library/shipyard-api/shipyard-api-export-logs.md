@@ -22,16 +22,16 @@ Quickly download the logs of your Shipyard Organization. The file contents will 
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:---|:---|:---|:---|:---|:---|:---|
-| Shipyard API Key | SHIPYARD_API_KEY | Password | :white_check_mark: | - | - | The API key that Shipyard generated for you |
-| File Name | SHIPYARD_FILE_NAME | Alphanumeric | :white_check_mark: | shipyard_logs.csv | - | The name of the csv file you would like the logs to be saved as. |
-| Folder Name | SHIPYARD_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | The name of the folder where the logs will be downloaded to. If left blank, the file will be downloaded in the root directory |
+| Name             | Reference            | Type         | Required           | Default           | Options | Description                                                                                                                   |
+|:-----------------|:---------------------|:-------------|:-------------------|:------------------|:--------|:------------------------------------------------------------------------------------------------------------------------------|
+| Shipyard API Key | SHIPYARD_API_KEY     | Password     | :white_check_mark: | -                 | -       | The API key that Shipyard generated for you                                                                                   |
+| File Name        | SHIPYARD_FILE_NAME   | Alphanumeric | :white_check_mark: | shipyard_logs.csv | -       | The name of the csv file you would like the logs to be saved as.                                                              |
+| Folder Name      | SHIPYARD_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | -                 | -       | The name of the folder where the logs will be downloaded to. If left blank, the file will be downloaded in the root directory |
 
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 
 ```yaml
 source:

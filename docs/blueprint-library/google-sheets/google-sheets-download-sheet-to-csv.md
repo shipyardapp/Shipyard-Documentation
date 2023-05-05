@@ -26,20 +26,20 @@ Content of the downloaded file can be refined by providing a cell range. Otherwi
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:---|:---|:---|:---|:---|:---|:---|
-| Google Spreadsheet Name or ID | SHEETS_SPREADSHEET_ID | Alphanumeric | :white_check_mark: | - | - | Name or ID of the sheet to fetch data from. |
-| Tab Name | SHEETS_TAB_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the tab in the sheet to fetch data from. This field is case sensitive. If left blank, data will be pulled from the first tab. |
-| Shared Drive Name | SHEETS_SHARED_DRIVE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the Shared Drive the sheet exists in. This field is case sensitive. Leave blank if the file does not exist in a Shared Drive. |
-| Local File Name | SHEETS_DESTINATION_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of file to be generated with the results. Should be `.csv` extension. |
-| Local Folder Name | SHEETS_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the file should be downloaded. Leaving blank will place the file in the home directory. |
-| Cell Range | SHEETS_CELL_RANGE | Alphanumeric | :heavy_minus_sign: | - | - | Range to fetch data from in the sheet formatted as `A1:B10`. If left blank the entire contents of the tab will be fetched. |
-| Service Account | GOOGLE_APPLICATION_CREDENTIALS | Password | :white_check_mark: | - | - | JSON from a Google Cloud Service account key. |
+| Name                          | Reference                      | Type         | Required           | Default | Options | Description                                                                                                                           |
+|:------------------------------|:-------------------------------|:-------------|:-------------------|:--------|:--------|:--------------------------------------------------------------------------------------------------------------------------------------|
+| Google Spreadsheet Name or ID | SHEETS_SPREADSHEET_ID          | Alphanumeric | :white_check_mark: | -       | -       | Name or ID of the sheet to fetch data from.                                                                                           |
+| Tab Name                      | SHEETS_TAB_NAME                | Alphanumeric | :heavy_minus_sign: | -       | -       | Name of the tab in the sheet to fetch data from. This field is case sensitive. If left blank, data will be pulled from the first tab. |
+| Shared Drive Name             | SHEETS_SHARED_DRIVE_NAME       | Alphanumeric | :heavy_minus_sign: | -       | -       | Name of the Shared Drive the sheet exists in. This field is case sensitive. Leave blank if the file does not exist in a Shared Drive. |
+| Local File Name               | SHEETS_DESTINATION_FILE_NAME   | Alphanumeric | :white_check_mark: | -       | -       | Name of file to be generated with the results. Should be `.csv` extension.                                                            |
+| Local Folder Name             | SHEETS_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | -       | -       | Folder where the file should be downloaded. Leaving blank will place the file in the home directory.                                  |
+| Cell Range                    | SHEETS_CELL_RANGE              | Alphanumeric | :heavy_minus_sign: | -       | -       | Range to fetch data from in the sheet formatted as `A1:B10`. If left blank the entire contents of the tab will be fetched.            |
+| Service Account               | GOOGLE_APPLICATION_CREDENTIALS | Password     | :white_check_mark: | -       | -       | JSON from a Google Cloud Service account key.                                                                                         |
 
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 
 ```yaml
 source:

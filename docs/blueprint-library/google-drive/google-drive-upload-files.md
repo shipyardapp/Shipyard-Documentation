@@ -28,20 +28,20 @@ Easily import one or more files directly into a Google Drive account. The [match
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:---|:---|:---|:---|:---|:---|:---|
-| Local File Name | DRIVE_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file on Shipyard. Can be regex if "Match Type" is set accordingly. |
-| Local File Name Match Type | DRIVE_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in "Local File Name" will look for one file with exact match, or multiple files using regex. |
-| Local Folder Name | DRIVE_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Shipyard to upload the target file from. If left blank, will look in the home directory. |
-| Shared Drive Name | DRIVE_SHARED_DRIVE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the Shared Drive the file exists in. This field is case sensitive. Leave blank if the file does not exist in a Shared Drive. |
-| Google Drive Folder Name | DRIVE_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the file(s) should be uploaded. Leaving blank will place the file in the root directory of Google Drive which will be inaccessible in the UI. |
-| Google Drive File Name | DRIVE_DESTINATION_FILE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | What to name the file(s) being uploaded. If left blank, defaults to the original file name(s). |
-| Service Account | GOOGLE_APPLICATION_CREDENTIALS | Password | :white_check_mark: | - | - | JSON from a Google Cloud Service account key. |
+| Name                       | Reference                         | Type         | Required           | Default       | Options                                                                | Description                                                                                                                                                |
+|:---------------------------|:----------------------------------|:-------------|:-------------------|:--------------|:-----------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Local File Name            | DRIVE_SOURCE_FILE_NAME            | Alphanumeric | :white_check_mark: | -             | -                                                                      | Name of the target file on Shipyard. Can be regex if "Match Type" is set accordingly.                                                                      |
+| Local File Name Match Type | DRIVE_SOURCE_FILE_NAME_MATCH_TYPE | Select       | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in "Local File Name" will look for one file with exact match, or multiple files using regex.                                        |
+| Local Folder Name          | DRIVE_SOURCE_FOLDER_NAME          | Alphanumeric | :heavy_minus_sign: | -             | -                                                                      | Name of the local folder on Shipyard to upload the target file from. If left blank, will look in the home directory.                                       |
+| Shared Drive Name          | DRIVE_SHARED_DRIVE_NAME           | Alphanumeric | :heavy_minus_sign: | -             | -                                                                      | Name of the Shared Drive the file exists in. This field is case sensitive. Leave blank if the file does not exist in a Shared Drive.                       |
+| Google Drive Folder Name   | DRIVE_DESTINATION_FOLDER_NAME     | Alphanumeric | :heavy_minus_sign: | -             | -                                                                      | Folder where the file(s) should be uploaded. Leaving blank will place the file in the root directory of Google Drive which will be inaccessible in the UI. |
+| Google Drive File Name     | DRIVE_DESTINATION_FILE_NAME       | Alphanumeric | :heavy_minus_sign: | -             | -                                                                      | What to name the file(s) being uploaded. If left blank, defaults to the original file name(s).                                                             |
+| Service Account            | GOOGLE_APPLICATION_CREDENTIALS    | Password     | :white_check_mark: | -             | -                                                                      | JSON from a Google Cloud Service account key.                                                                                                              |
 
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 
 ```yaml
 source:

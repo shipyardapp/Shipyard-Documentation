@@ -21,15 +21,15 @@ Check the status of a specific Coalesce job and return with the final status. Be
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:---|:---|:---|:---|:---|:---|:---|
-| Access Token | COALESCE_ACCESS_TOKEN | Password | :white_check_mark: | - | - | The Coalesce API token |
-| Run ID | COALESCE_RUN_ID | Integer | :heavy_minus_sign: | - | - | The ID of the specific run to query |
+| Name         | Reference             | Type     | Required           | Default | Options | Description                         |
+|:-------------|:----------------------|:---------|:-------------------|:--------|:--------|:------------------------------------|
+| Access Token | COALESCE_ACCESS_TOKEN | Password | :white_check_mark: | -       | -       | The Coalesce API token              |
+| Run ID       | COALESCE_RUN_ID       | Integer  | :heavy_minus_sign: | -       | -       | The ID of the specific run to query |
 
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 
 ```yaml
 source:

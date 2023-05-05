@@ -35,15 +35,15 @@ The response for this request will always be stored at `shipyard-artifacts/rudde
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:---|:---|:---|:---|:---|:---|:---|
-| Access Token | RUDDERSTACK_ACCESS_TOKEN | Password | :white_check_mark: | - | - | The access token associated with your Rudderstack account. |
-| Source ID | RUDDERSTACK_SOURCE_ID | Alphanumeric | :heavy_minus_sign: | - | - | The ID of the Rudderstack source you want to refresh. This should be left blank if connected to an Trigger Sync Blueprint. |
+| Name         | Reference                | Type         | Required           | Default | Options | Description                                                                                                                |
+|:-------------|:-------------------------|:-------------|:-------------------|:--------|:--------|:---------------------------------------------------------------------------------------------------------------------------|
+| Access Token | RUDDERSTACK_ACCESS_TOKEN | Password     | :white_check_mark: | -       | -       | The access token associated with your Rudderstack account.                                                                 |
+| Source ID    | RUDDERSTACK_SOURCE_ID    | Alphanumeric | :heavy_minus_sign: | -       | -       | The ID of the Rudderstack source you want to refresh. This should be left blank if connected to an Trigger Sync Blueprint. |
 
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 
 ```yaml
 source:

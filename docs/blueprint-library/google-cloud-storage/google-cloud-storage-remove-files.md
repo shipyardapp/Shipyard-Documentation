@@ -22,18 +22,18 @@ Quickly remove one or more files from a Google Cloud Storage (GCS) bucket. The [
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:---|:---|:---|:---|:---|:---|:---|
-| GCS Bucket Name | GCS_SOURCE_BUCKET_NAME | Alphanumeric | :white_check_mark: | - | - | The name of the bucket where the target file resides |
-| GCS Folder Name | GCS_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | The name of the folder where the target file resides. If left blank, the root directory will be scanned |
-| GCS File Name Match Type | GCS_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in "GCS File Name" will look for one file with exact match, or multiple files using regex. |
-| GCS File Name | GCS_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file in the GCS bucket. Can be regex if "Match Type" is set accordingly. |
-| Service Account | GOOGLE_APPLICATION_CREDENTIALS | Password | :white_check_mark: | - | - | JSON from a Google Cloud Service account key. |
+| Name                     | Reference                       | Type         | Required           | Default       | Options                                                                | Description                                                                                                       |
+|:-------------------------|:--------------------------------|:-------------|:-------------------|:--------------|:-----------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------|
+| GCS Bucket Name          | GCS_SOURCE_BUCKET_NAME          | Alphanumeric | :white_check_mark: | -             | -                                                                      | The name of the bucket where the target file resides                                                              |
+| GCS Folder Name          | GCS_SOURCE_FOLDER_NAME          | Alphanumeric | :heavy_minus_sign: | -             | -                                                                      | The name of the folder where the target file resides. If left blank, the root directory will be scanned           |
+| GCS File Name Match Type | GCS_SOURCE_FILE_NAME_MATCH_TYPE | Select       | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in "GCS File Name" will look for one file with exact match, or multiple files using regex. |
+| GCS File Name            | GCS_SOURCE_FILE_NAME            | Alphanumeric | :white_check_mark: | -             | -                                                                      | Name of the target file in the GCS bucket. Can be regex if "Match Type" is set accordingly.                       |
+| Service Account          | GOOGLE_APPLICATION_CREDENTIALS  | Password     | :white_check_mark: | -             | -                                                                      | JSON from a Google Cloud Service account key.                                                                     |
 
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 
 ```yaml
 source:

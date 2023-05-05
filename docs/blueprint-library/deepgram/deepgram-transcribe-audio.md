@@ -21,17 +21,17 @@ Transcribe an audio file using Deepgram.
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:---|:---|:---|:---|:---|:---|:---|
-| Deepgram API Key | DG_API_KEY | Password | :white_check_mark: | - | - | - |
-| Mimetype | DG_MIMETYPE | Select | :white_check_mark: | `mp3` | MP3: `mp3`<br></br><br></br>WEBM: `webm`<br></br><br></br>WAV: `wav`<br></br><br></br>FLAC: `flac`<br></br><br></br>AAC: `aac` | The file type of the audio file that you are transcribing |
-| File to Transcribe | DG_AUDIO_FILE | Alphanumeric | :white_check_mark: | - | - | The file name of the audio file that you would like to transcribe |
-| Transcription File Name | DG_TEXT_FILE | Alphanumeric | :white_check_mark: | - | - | - |
+| Name                    | Reference     | Type         | Required           | Default | Options                                                                                                                        | Description                                                       |
+|:------------------------|:--------------|:-------------|:-------------------|:--------|:-------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------|
+| Deepgram API Key        | DG_API_KEY    | Password     | :white_check_mark: | -       | -                                                                                                                              | -                                                                 |
+| Mimetype                | DG_MIMETYPE   | Select       | :white_check_mark: | `mp3`   | MP3: `mp3`<br></br><br></br>WEBM: `webm`<br></br><br></br>WAV: `wav`<br></br><br></br>FLAC: `flac`<br></br><br></br>AAC: `aac` | The file type of the audio file that you are transcribing         |
+| File to Transcribe      | DG_AUDIO_FILE | Alphanumeric | :white_check_mark: | -       | -                                                                                                                              | The file name of the audio file that you would like to transcribe |
+| Transcription File Name | DG_TEXT_FILE  | Alphanumeric | :white_check_mark: | -       | -                                                                                                                              | -                                                                 |
 
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 
 ```yaml
 source:
