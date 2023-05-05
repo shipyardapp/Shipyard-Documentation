@@ -32,17 +32,17 @@ This Blueprint is relatively memory intensive because it loads both file content
 
 ## Variables
 
-| Name          | Reference                         | Type         | Required           | Default | Options | Description                                                                                                       |
-|:--------------|:----------------------------------|:-------------|:-------------------|:--------|:--------|:------------------------------------------------------------------------------------------------------------------|
-| File Name 1   | MANIPULATION_SOURCE_FILE_NAME_1   | Alphanumeric | :white_check_mark: | -       | -       | Name of the target file on Shipyard.                                                                              |
-| Folder Name 1 | MANIPULATION_SOURCE_FOLDER_NAME_1 | Alphanumeric | :heavy_minus_sign: | -       | -       | Name of the local folder on Shipyard where the target file lives. If left blank, will look in the home directory. |
-| File Name 2   | MANIPULATION_SOURCE_FILE_NAME_2   | Alphanumeric | :white_check_mark: | -       | -       | Name of the 2nd target file on Shipyard.                                                                          |
-| Folder Name 2 | MANIPULATION_SOURCE_FOLDER_NAME_2 | Alphanumeric | :heavy_minus_sign: | -       | -       | Name of the local folder on Shipyard where the target file lives. If left blank, will look in the home directory. |
+| Name | Reference | Type | Required | Default | Options | Description |
+|:---|:---|:---|:---|:---|:---|:---|
+| File Name 1 | MANIPULATION_SOURCE_FILE_NAME_1 | Alphanumeric | :white_check_mark: | - | - | Name of the target file on Shipyard. |
+| Folder Name 1 | MANIPULATION_SOURCE_FOLDER_NAME_1 | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Shipyard where the target file lives. If left blank, will look in the home directory. |
+| File Name 2 | MANIPULATION_SOURCE_FILE_NAME_2 | Alphanumeric | :white_check_mark: | - | - | Name of the 2nd target file on Shipyard. |
+| Folder Name 2 | MANIPULATION_SOURCE_FOLDER_NAME_2 | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Shipyard where the target file lives. If left blank, will look in the home directory. |
 
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:

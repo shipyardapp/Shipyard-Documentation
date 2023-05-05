@@ -20,17 +20,17 @@ This Blueprint takes in a text file and translate it to the language that is cho
 
 ## Variables
 
-| Name                   | Reference                     | Type         | Required           | Default | Options | Description                                                                                             |
-|:-----------------------|:------------------------------|:-------------|:-------------------|:--------|:--------|:--------------------------------------------------------------------------------------------------------|
-| API Key                | CHATGPT_API_KEY               | Password     | :white_check_mark: | -       | -       | API Key from OpenAI                                                                                     |
-| Text File to Translate | CHATGPT_TEXT_FILE             | Alphanumeric | :white_check_mark: | -       | -       | The file that you would like to translate                                                               |
-| Language               | CHATGPT_LANGUAGE              | Alphanumeric | :white_check_mark: | -       | -       | The language you would like the text translated to. It should be in ISO 639-1 format for best accuracy. |
-| Translation File Name  | CHATGPT_DESTINATION_FILE_NAME | Alphanumeric | :white_check_mark: | -       | -       | File name of translated text                                                                            |
+| Name | Reference | Type | Required | Default | Options | Description |
+|:---|:---|:---|:---|:---|:---|:---|
+| API Key | CHATGPT_API_KEY | Password | :white_check_mark: | - | - | API Key from OpenAI |
+| Text File to Translate | CHATGPT_TEXT_FILE | Alphanumeric | :white_check_mark: | - | - | The file that you would like to translate |
+| Language | CHATGPT_LANGUAGE | Alphanumeric | :white_check_mark: | - | - | The language you would like the text translated to. It should be in ISO 639-1 format for best accuracy. |
+| Translation File Name | CHATGPT_DESTINATION_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | File name of translated text |
 
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:

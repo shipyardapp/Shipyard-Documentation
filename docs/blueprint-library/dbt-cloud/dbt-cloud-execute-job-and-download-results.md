@@ -35,18 +35,18 @@ Execute Job -> Check Run Status -> Download Artifacts & Logs
 
 ## Variables
 
-| Name                | Reference              | Type         | Required           | Default | Options | Description                                                                                                                                              |
-|:--------------------|:-----------------------|:-------------|:-------------------|:--------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Service Token       | DBT_API_KEY            | Password     | :white_check_mark: | -       | -       | Your unique service token for dbt Cloud. Instructions for how to get this token can be found in the authorization documentation.                         |
-| Account ID          | DBT_ACCOUNT_ID         | Alphanumeric | :white_check_mark: | -       | -       | Your unique Account ID, found in the URL of dbt Cloud. https://cloud.getdbt.com/#/accounts/ACCOUNT_ID/projects/PROJECT_ID/dashboard/                     |
-| Job ID              | DBT_JOB_ID             | Alphanumeric | :white_check_mark: | -       | -       | The ID of a specific job you want to run, found in the URL of dbt Cloud. https://cloud.getdbt.com/#/accounts/ACCOUNT_ID/projects/PROJECT_ID/jobs/JOB_ID/ |
-| Download Artifacts? | DBT_DOWNLOAD_ARTIFACTS | Boolean      | :white_check_mark: | true    | -       | Determines if the artifacts from the run that was generated will be downloaded. Checked by default.                                                      |
-| Download Logs?      | DBT_DOWNLOAD_LOGS      | Boolean      | :white_check_mark: | true    | -       | Determines if the logs from the run that was generated will be downloaded. Checked by default.                                                           |
+| Name | Reference | Type | Required | Default | Options | Description |
+|:---|:---|:---|:---|:---|:---|:---|
+| Service Token | DBT_API_KEY | Password | :white_check_mark: | - | - | Your unique service token for dbt Cloud. Instructions for how to get this token can be found in the authorization documentation. |
+| Account ID | DBT_ACCOUNT_ID | Alphanumeric | :white_check_mark: | - | - | Your unique Account ID, found in the URL of dbt Cloud. https://cloud.getdbt.com/#/accounts/ACCOUNT_ID/projects/PROJECT_ID/dashboard/ |
+| Job ID | DBT_JOB_ID | Alphanumeric | :white_check_mark: | - | - | The ID of a specific job you want to run, found in the URL of dbt Cloud. https://cloud.getdbt.com/#/accounts/ACCOUNT_ID/projects/PROJECT_ID/jobs/JOB_ID/ |
+| Download Artifacts? | DBT_DOWNLOAD_ARTIFACTS | Boolean | :white_check_mark: | true | - | Determines if the artifacts from the run that was generated will be downloaded. Checked by default. |
+| Download Logs? | DBT_DOWNLOAD_LOGS | Boolean | :white_check_mark: | true | - | Determines if the logs from the run that was generated will be downloaded. Checked by default. |
 
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:

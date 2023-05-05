@@ -20,17 +20,17 @@ This Blueprint takes a prompt and creates an image from it.
 
 ## Variables
 
-| Name             | Reference        | Type         | Required           | Default | Options | Description                                 |
-|:-----------------|:-----------------|:-------------|:-------------------|:--------|:--------|:--------------------------------------------|
-| Image Prompt     | photo_prompt     | Alphanumeric | :white_check_mark: | -       | -       | Text sent to OpenAI to generate photos      |
-| File Prefix      | photo_topic      | Alphanumeric | :white_check_mark: | -       | -       | Word used to prefix each of the image files |
-| Number of Images | number_of_photos | Integer      | :white_check_mark: | 1       | -       | Number of images for DALL-E to create       |
-| API Credentials  | api_credentials  | Password     | :white_check_mark: | -       | -       | Your OpenAI API credentials                 |
+| Name | Reference | Type | Required | Default | Options | Description |
+|:---|:---|:---|:---|:---|:---|:---|
+| Image Prompt | photo_prompt | Alphanumeric | :white_check_mark: | - | - | Text sent to OpenAI to generate photos |
+| File Prefix | photo_topic | Alphanumeric | :white_check_mark: | - | - | Word used to prefix each of the image files |
+| Number of Images | number_of_photos | Integer | :white_check_mark: | 1 | - | Number of images for DALL-E to create |
+| API Credentials | api_credentials | Password | :white_check_mark: | - | - | Your OpenAI API credentials |
 
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:

@@ -33,15 +33,15 @@ The response for this request will always be stored at `shipyard-artifacts/censu
 
 ## Variables
 
-| Name        | Reference          | Type         | Required           | Default | Options | Description                                                                                                           |
-|:------------|:-------------------|:-------------|:-------------------|:--------|:--------|:----------------------------------------------------------------------------------------------------------------------|
-| API Key     | CENSUS_API_KEY     | Password     | :white_check_mark: | -       | -       | The API Key associated with your Census account.                                                                      |
-| Sync Run ID | CENSUS_SYNC_RUN_ID | Alphanumeric | :heavy_minus_sign: | -       | -       | The ID of the Census sync run you want to check the status of. If connected to "Trigger Sync" blueprint, leave blank. |
+| Name | Reference | Type | Required | Default | Options | Description |
+|:---|:---|:---|:---|:---|:---|:---|
+| API Key | CENSUS_API_KEY | Password | :white_check_mark: | - | - | The API Key associated with your Census account. |
+| Sync Run ID | CENSUS_SYNC_RUN_ID | Alphanumeric | :heavy_minus_sign: | - | - | The ID of the Census sync run you want to check the status of. If connected to "Trigger Sync" blueprint, leave blank. |
 
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
