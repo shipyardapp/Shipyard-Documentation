@@ -20,16 +20,16 @@ This Blueprint takes in a CSV file and creates a data dictionary.
 
 ## Variables
 
-| Name                      | Reference                     | Type         | Required           | Default | Options | Description                                                              |
-|:--------------------------|:------------------------------|:-------------|:-------------------|:--------|:--------|:-------------------------------------------------------------------------|
-| API Key                   | CHATGPT_API_KEY               | Password     | :white_check_mark: | -       | -       | API Key from OpenAI                                                      |
-| File Name                 | CHATGPT_FILE                  | Alphanumeric | :white_check_mark: | -       | -       | The data that you would like a data dictionary created from in CSV form. |
-| Data Dictionary File Name | CHATGPT_DESTINATION_FILE_NAME | Alphanumeric | :white_check_mark: | -       | -       | The file where the data dictionary will be stored.                       |
+| Name | Reference | Type | Required | Default | Options | Description |
+|:---|:---|:---|:---|:---|:---|:---|
+| API Key | CHATGPT_API_KEY | Password | :white_check_mark: | - | - | API Key from OpenAI |
+| File Name | CHATGPT_FILE | Alphanumeric | :white_check_mark: | - | - | The data that you would like a data dictionary created from in CSV form. |
+| Data Dictionary File Name | CHATGPT_DESTINATION_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | The file where the data dictionary will be stored. |
 
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:

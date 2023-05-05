@@ -22,20 +22,20 @@ Execute any SQL query against a Microsoft SQL Server database, without returning
 
 ## Variables
 
-| Name                 | Reference            | Type         | Required           | Default | Options | Description                                                                                                       |
-|:---------------------|:---------------------|:-------------|:-------------------|:--------|:--------|:------------------------------------------------------------------------------------------------------------------|
-| Host                 | MSSQL_HOST           | Alphanumeric | :white_check_mark: | -       | -       | The domain or the IP address of the database you want to connect to.                                              |
-| Port                 | MSSQL_PORT           | Integer      | :white_check_mark: | 1433    | -       | Number for the database port to connect to. Defaults to 1433.                                                     |
-| Username             | MSSQL_USERNAME       | Alphanumeric | :white_check_mark: | -       | -       | Name of the user to connect to the database with.                                                                 |
-| Password             | MSSQL_PASSWORD       | Password     | :heavy_minus_sign: | -       | -       | Password associated to the provided username.                                                                     |
-| Database             | MSSQL_DATABASE       | Alphanumeric | :white_check_mark: | -       | -       | Name of the database in the Microsoft SQL Server to connect to.                                                   |
-| Extra URL Parameters | MSSQL_URL_PARAMETERS | Alphanumeric | :heavy_minus_sign: | -       | -       | Extra parameters that will be placed at the end of the connection string, after the "?". Must be separated by "&" |
-| Query                | MSSQL_QUERY          | Alphanumeric | :white_check_mark: | -       | -       | Any SQL query that runs a job against the database (CREATE, DROP, INSERT, etc.). Formatting is ignored.           |
+| Name | Reference | Type | Required | Default | Options | Description |
+|:---|:---|:---|:---|:---|:---|:---|
+| Host | MSSQL_HOST | Alphanumeric | :white_check_mark: | - | - | The domain or the IP address of the database you want to connect to. |
+| Port | MSSQL_PORT | Integer | :white_check_mark: | 1433 | - | Number for the database port to connect to. Defaults to 1433. |
+| Username | MSSQL_USERNAME | Alphanumeric | :white_check_mark: | - | - | Name of the user to connect to the database with. |
+| Password | MSSQL_PASSWORD | Password | :heavy_minus_sign: | - | - | Password associated to the provided username. |
+| Database | MSSQL_DATABASE | Alphanumeric | :white_check_mark: | - | - | Name of the database in the Microsoft SQL Server to connect to.  |
+| Extra URL Parameters | MSSQL_URL_PARAMETERS | Alphanumeric | :heavy_minus_sign: | - | - | Extra parameters that will be placed at the end of the connection string, after the "?". Must be separated by "&" |
+| Query | MSSQL_QUERY | Alphanumeric | :white_check_mark: | - | - | Any SQL query that runs a job against the database (CREATE, DROP, INSERT, etc.). Formatting is ignored. |
 
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
