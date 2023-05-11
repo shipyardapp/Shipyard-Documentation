@@ -343,7 +343,8 @@ Below is a reference table for the Fleet Runs CSV.
 
 #### Request
 
-This request triggers a fleet to run with the option to override Environment Variables.
+This request triggers a fleet to run with the option to override Environment Variables. 
+It will always trigger the latest version of the fleet.
 
 <Tabs
 groupId="languages"
@@ -355,7 +356,7 @@ values={[
 <TabItem value="bash">
 
 ```bash
-curl https://api.app.shipyardapp.com/orgs/<org_id>/projects/<project_id>/fleets<fleet_id>/fleetrun --header "X-Shipyard-API-KEY: <api_key> -data {json_data}"
+curl https://api.app.shipyardapp.com/orgs/<org_id>/projects/<project_id>/fleets/<fleet_id>/fleetrun --header "X-Shipyard-API-KEY: <api_key> -data {json_data}"
 ```
 </TabItem>
 <TabItem value="python">
@@ -372,7 +373,7 @@ headers = {
 json_data = {{json_data}}
 
 response = requests.post(
-    'https://api.app.shipyardapp.com/orgs/<org_id>/projects/<project_id>/fleets<fleet_id>/fleetrun',
+    'https://api.app.shipyardapp.com/orgs/<org_id>/projects/<project_id>/fleets/<fleet_id>/fleetrun',
     headers=headers,
     json=json_data,
 )
@@ -416,6 +417,7 @@ There are several things to note regarding the `json` payload.
 4. If the environment variable override value is an empty string `""`, the variable will be overridden and 
    set to empty.
 5. If the environment variable override value is `null`, that value will be ignored and not set.
+6. If the environment variable override is not provided, the value set in the UI will be used.
 
 #### Response
 
