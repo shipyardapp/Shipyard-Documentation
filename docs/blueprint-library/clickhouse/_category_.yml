@@ -1,0 +1,7 @@
+
+label: ClickHouse
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: clickhouse-overview

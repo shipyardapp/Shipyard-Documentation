@@ -1,0 +1,7 @@
+
+label: Metaplane
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: metaplane-overview

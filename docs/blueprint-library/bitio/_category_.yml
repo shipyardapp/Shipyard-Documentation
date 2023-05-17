@@ -1,6 +1,7 @@
-label: Bit.io
+
+label: bit.io
 collapsible: true
 collapsed: true
 link:
     type: doc
-    id: bitio-overview
+    id: bit.io-overview

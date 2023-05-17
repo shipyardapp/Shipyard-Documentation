@@ -1,0 +1,7 @@
+
+label: Select Star
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: select-star-overview

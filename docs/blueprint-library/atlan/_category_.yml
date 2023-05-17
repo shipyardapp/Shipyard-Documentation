@@ -1,0 +1,7 @@
+
+label: Atlan
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: atlan-overview

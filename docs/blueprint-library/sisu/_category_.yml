@@ -1,0 +1,7 @@
+
+label: Sisu
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: sisu-overview

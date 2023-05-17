@@ -6,12 +6,13 @@ hide_title: true
 sidebar_label: Authorization
 description: Instructions on how to authorize PostgreSQL to work with Shipyard's low-code PostgreSQL templates.
 keywords:
-  - postgresql
-  - blueprint
-  - template
-  - authorization
+- postgresql
+- blueprint
+- template
+- authorization
 ---
 
+# PostgreSQL Authorization
 # PostgreSQL Authorization
 
 Connecting PostgreSQL to Shipyard requires you to have:

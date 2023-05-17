@@ -1,0 +1,7 @@
+
+label: Deepnote
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: deepnote-overview

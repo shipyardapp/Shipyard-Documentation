@@ -1,0 +1,7 @@
+
+label: Materialize
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: materialize-overview

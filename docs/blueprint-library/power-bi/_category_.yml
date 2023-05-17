@@ -1,0 +1,7 @@
+
+label: Power BI
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: power-bi-overview

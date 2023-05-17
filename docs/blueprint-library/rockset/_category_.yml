@@ -1,0 +1,7 @@
+
+label: Rockset
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: rockset-overview
