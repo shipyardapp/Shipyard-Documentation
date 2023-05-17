@@ -22,21 +22,21 @@ Download a report from Mode as a CSV, PDF, or JSON file. Typically used for pull
 
 ## Variables
 
-| Name           | Reference                    | Type         | Required           | Default | Options                                                                 | Description                                                                                                        |
-|:---------------|:-----------------------------|:-------------|:-------------------|:--------|:------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------|
-| Token ID       | MODE_TOKEN_ID                | Password     | :white_check_mark: | -       | -                                                                       | The ID of the Token used to authenticate with Mode.                                                                |
-| Token Password | MODE_TOKEN_PASSWORD          | Password     | :white_check_mark: | -       | -                                                                       | The Token Password associated to the Token ID used to authenticate with Mode.                                      |
-| Workspace Name | MODE_WORKSPACE_NAME          | Alphanumeric | :white_check_mark: | -       | -                                                                       | Typically found in the URL structure as https://app.mode.com/ACCOUNT_NAME/                                         |
-| Report ID      | MODE_REPORT_ID               | Alphanumeric | :white_check_mark: | -       | -                                                                       | Numeric ID of the report you want to download, typically found at the end of the URL.                              |
-| Run ID         | MODE_RUN_ID                  | Alphanumeric | :heavy_minus_sign: | -       | -                                                                       | The ID of the Run you want to download. If left blank, the most recent successful run for the report will be used. |
-| Download As    | MODE_FILE_TYPE               | Select       | :white_check_mark: | `csv`   | .csv: `csv`<br></br><br></br>.pdf: `pdf`<br></br><br></br>.json: `json` | File format to download the specified report as.                                                                   |
-| File Name      | MODE_DESTINATION_FILE_NAME   | Alphanumeric | :white_check_mark: | -       | -                                                                       | File name that will be created for the card being downloaded. Include the extension.                               |
-| Folder Name    | MODE_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | -       | -                                                                       | Folder where the file will be created. Leave blank to store in the current working directory                       |
+| Name | Reference | Type | Required | Default | Options | Description |
+|:---|:---|:---|:---|:---|:---|:---|
+| Token ID | MODE_TOKEN_ID | Password | :white_check_mark: | - | - | The ID of the Token used to authenticate with Mode. |
+| Token Password | MODE_TOKEN_PASSWORD | Password | :white_check_mark: | - | - | The Token Password associated to the Token ID used to authenticate with Mode. |
+| Workspace Name | MODE_WORKSPACE_NAME | Alphanumeric | :white_check_mark: | - | - | Typically found in the URL structure as https://app.mode.com/ACCOUNT_NAME/ |
+| Report ID | MODE_REPORT_ID | Alphanumeric | :white_check_mark: | - | - | Numeric ID of the report you want to download, typically found at the end of the URL. |
+| Run ID | MODE_RUN_ID | Alphanumeric | :heavy_minus_sign: | - | - | The ID of the Run you want to download. If left blank, the most recent successful run for the report will be used. |
+| Download As | MODE_FILE_TYPE | Select | :white_check_mark: | `csv` | .csv: `csv`<br></br><br></br>.pdf: `pdf`<br></br><br></br>.json: `json` | File format to download the specified report as. |
+| File Name | MODE_DESTINATION_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | File name that will be created for the card being downloaded. Include the extension. |
+| Folder Name | MODE_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the file will be created. Leave blank to store in the current working directory |
 
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:

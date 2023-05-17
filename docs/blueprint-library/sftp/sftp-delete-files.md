@@ -24,21 +24,21 @@ This Blueprint requires _write_ permissions in order to remove objects from the 
 
 ## Variables
 
-| Name                      | Reference                        | Type         | Required           | Default       | Options                                                                | Description                                                                                                                      |
-|:--------------------------|:---------------------------------|:-------------|:-------------------|:--------------|:-----------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------|
-| Host                      | SFTP_HOST                        | Alphanumeric | :white_check_mark: | -             | -                                                                      | The domain or the IP address of the FTP Server you want to connect to.                                                           |
-| Port                      | SFTP_PORT                        | Integer      | :white_check_mark: | 21            | -                                                                      | Number for the port to connect to. `21` is used by default.                                                                      |
-| Username                  | SFTP_USERNAME                    | Alphanumeric | :heavy_minus_sign: | -             | -                                                                      | Value of the configured username in the FTP server. Can be left blank if the RSA Key is provided                                 |
-| Password                  | SFTP_PASSWORD                    | Password     | :heavy_minus_sign: | -             | -                                                                      | Value of the configured password associated to the username on the FTP server. Can be left blank if the RSA Key file is provided |
-| RSA Key File              | SFTP_RSK_KEY                     | Alphanumeric | :heavy_minus_sign: | -             | -                                                                      | The private key file used to authenticate via ssh into the SFTP server. Can be used in place of the Username and Password.       |
-| SFTP Folder Name          | SFTP_SOURCE_FOLDER_NAME          | Alphanumeric | :heavy_minus_sign: | -             | -                                                                      | Name of the folder where the file is stored in the SFTP server.                                                                  |
-| SFTP File Name Match Type | SFTP_SOURCE_FILE_NAME_MATCH_TYPE | Select       | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in "FTP File Name" will look for one file with exact match, or multiple files using regex.                |
-| SFTP File Name            | SFTP_SOURCE_FILE_NAME            | Alphanumeric | :white_check_mark: | -             | -                                                                      | Name of the target file in the FTP server. Can be regex if "Match Type" is set accordingly.                                      |
+| Name | Reference | Type | Required | Default | Options | Description |
+|:---|:---|:---|:---|:---|:---|:---|
+| Host | SFTP_HOST | Alphanumeric | :white_check_mark: | - | - | The domain or the IP address of the FTP Server you want to connect to. |
+| Port | SFTP_PORT | Integer | :white_check_mark: | 21 | - | Number for the port to connect to. `21` is used by default. |
+| Username | SFTP_USERNAME | Alphanumeric | :heavy_minus_sign: | - | - | Value of the configured username in the FTP server. Can be left blank if the RSA Key is provided |
+| Password | SFTP_PASSWORD | Password | :heavy_minus_sign: | - | - | Value of the configured password associated to the username on the FTP server. Can be left blank if the RSA Key file is provided |
+| RSA Key File | SFTP_RSA_KEY_FILE | Alphanumeric | :heavy_minus_sign: | - | - | The private key file used to authenticate via ssh into the SFTP server. Can be used in place of the Username and Password. |
+| SFTP Folder Name | SFTP_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the folder where the file is stored in the SFTP server. |
+| SFTP File Name Match Type | SFTP_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match` | Determines if the text in "FTP File Name" will look for one file with exact match, or multiple files using regex. |
+| SFTP File Name | SFTP_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file in the FTP server. Can be regex if "Match Type" is set accordingly. |
 
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
@@ -48,7 +48,7 @@ source:
     SFTP_PORT: 21 ## REQUIRED
     SFTP_USERNAME: null 
     SFTP_PASSWORD: null 
-    SFTP_RSK_KEY: null 
+    SFTP_RSA_KEY_FILE: null 
     SFTP_SOURCE_FOLDER_NAME: null 
     SFTP_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
     SFTP_SOURCE_FILE_NAME: null ## REQUIRED

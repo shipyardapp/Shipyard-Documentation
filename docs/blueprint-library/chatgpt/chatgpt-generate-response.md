@@ -20,18 +20,18 @@ Sends a prompt to ChatGPT and returns the message. The results will be printed i
 
 ## Variables
 
-| Name                | Reference                     | Type           | Required           | Default | Options | Description                                                                                                                                                                          |
-|:--------------------|:------------------------------|:---------------|:-------------------|:--------|:--------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| API Key             | CHATGPT_API_KEY               | Password       | :white_check_mark: | -       | -       | API Key from OpenAI                                                                                                                                                                  |
-| Number of Responses | CHATGPT_RESPONSES             | Integer        | :white_check_mark: | 1       | -       | The number of chat completion choices to generate for each input message. Defaults to 1                                                                                              |
-| Randomness          | CHATGPT_RANDOMNESS            | Floating Point | :heavy_minus_sign: | 1       | -       | What sampling temperature to use, between 0 and 2. Higher values like 1.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic. |
-| Prompt              | CHATGPT_PROMPT                | Alphanumeric   | :white_check_mark: | -       | -       | Prompt that will be sent to ChatGPT                                                                                                                                                  |
-| Local File Name     | CHATGPT_DESTINATION_FILE_NAME | Alphanumeric   | :white_check_mark: | -       | -       | The name for the txt file once it is generated. If more than one response is generated, the files will have counted suffixes (file.txt, file_1.txt,...)                              |
+| Name | Reference | Type | Required | Default | Options | Description |
+|:---|:---|:---|:---|:---|:---|:---|
+| API Key | CHATGPT_API_KEY | Password | :white_check_mark: | - | - | API Key from OpenAI |
+| Number of Responses | CHATGPT_RESPONSES | Integer | :white_check_mark: | 1 | - | The number of chat completion choices to generate for each input message. Defaults to 1 |
+| Randomness | CHATGPT_RANDOMNESS | Floating Point | :heavy_minus_sign: | 1 | - | What sampling temperature to use, between 0 and 2. Higher values like 1.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic. |
+| Prompt | CHATGPT_PROMPT | Alphanumeric | :white_check_mark: | - | - | Prompt that will be sent to ChatGPT |
+| Local File Name | CHATGPT_DESTINATION_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | The name for the txt file once it is generated. If more than one response is generated, the files will have counted suffixes (file.txt, file_1.txt,...) |
 
 
 ## YAML
 
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets.md#yaml-editor).
 
 ```yaml
 source:
