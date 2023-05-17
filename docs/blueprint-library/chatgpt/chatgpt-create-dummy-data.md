@@ -20,12 +20,12 @@ Takes in a comma separated list of columns and creates a user-specified number o
 
 ## Variables
 
-| Name            | Reference                     | Type         | Required           | Default | Options | Description                                                                             |
-|:----------------|:------------------------------|:-------------|:-------------------|:--------|:--------|:----------------------------------------------------------------------------------------|
-| API Key         | CHATGPT_API_KEY               | Password     | :white_check_mark: | -       | -       | API Key from OpenAI                                                                     |
-| Number of Rows  | CHATGPT_NUMBER_OF_ROWS        | Integer      | :white_check_mark: | 10      | -       | The number of rows of dummy data                                                        |
-| List of Columns | CHATGPT_COLUMNS               | Alphanumeric | :white_check_mark: | -       | -       | The columns for the dummy data. The columns should be listed in a column separate list. |
-| Data File Name  | CHATGPT_DESTINATION_FILE_NAME | Alphanumeric | :white_check_mark: | -       | -       | Name of the file for the dummy data                                                     |
+| Name | Reference | Type | Required | Default | Options | Description |
+|:---|:---|:---|:---|:---|:---|:---|
+| API Key | CHATGPT_API_KEY | Password | :white_check_mark: | - | - | API Key from OpenAI |
+| Number of Rows | CHATGPT_NUMBER_OF_ROWS | Integer | :white_check_mark: | 10 | - | The number of rows of dummy data |
+| List of Columns | CHATGPT_COLUMNS | Alphanumeric | :white_check_mark: | - | - | The columns for the dummy data. The columns should be listed in a column separate list. |
+| Data File Name | CHATGPT_DESTINATION_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the file for the dummy data |
 
 
 ## YAML

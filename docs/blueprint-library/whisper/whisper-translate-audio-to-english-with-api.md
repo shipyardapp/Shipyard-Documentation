@@ -20,11 +20,11 @@ This Blueprint takes in an audio file and translate it to English.
 
 ## Variables
 
-| Name                    | Reference                     | Type         | Required           | Default | Options | Description                                                |
-|:------------------------|:------------------------------|:-------------|:-------------------|:--------|:--------|:-----------------------------------------------------------|
-| API Key                 | WHISPER_API_KEY               | Password     | :white_check_mark: | -       | -       | API Key from OpenAI                                        |
-| Audio File              | WHISPER_FILE                  | Alphanumeric | :white_check_mark: | -       | -       | The audio file that you would like to translate to English |
-| Transcription File Name | WHISPER_DESTINATION_FILE_NAME | Alphanumeric | :white_check_mark: | -       | -       | The name of the text file where the transcription will go  |
+| Name | Reference | Type | Required | Default | Options | Description |
+|:---|:---|:---|:---|:---|:---|:---|
+| API Key | WHISPER_API_KEY | Password | :white_check_mark: | - | - | API Key from OpenAI |
+| Audio File | WHISPER_FILE | Alphanumeric | :white_check_mark: | - | - | The audio file that you would like to translate to English |
+| Transcription File Name | WHISPER_DESTINATION_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | The name of the text file where the transcription will go |
 
 
 ## YAML

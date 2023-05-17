@@ -30,10 +30,10 @@ This Blueprint will only kick off the sync and will almost always return a statu
 
 ## Variables
 
-| Name    | Reference      | Type         | Required           | Default | Options | Description                                      |
-|:--------|:---------------|:-------------|:-------------------|:--------|:--------|:-------------------------------------------------|
-| API Key | CENSUS_API_KEY | Password     | :white_check_mark: | -       | -       | The API Key associated with your Census account. |
-| Sync ID | CENSUS_SYNC_ID | Alphanumeric | :white_check_mark: | -       | -       | The ID of the Census sync you want to refresh.   |
+| Name | Reference | Type | Required | Default | Options | Description |
+|:---|:---|:---|:---|:---|:---|:---|
+| API Key | CENSUS_API_KEY | Password | :white_check_mark: | - | - | The API Key associated with your Census account. |
+| Sync ID | CENSUS_SYNC_ID | Alphanumeric | :white_check_mark: | - | - | The ID of the Census sync you want to refresh. |
 
 
 ## YAML

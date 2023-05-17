@@ -20,10 +20,10 @@ This Blueprint takes in an audio file and transcribes it to a text file.
 
 ## Variables
 
-| Name                    | Reference                     | Type         | Required           | Default | Options | Description                                        |
-|:------------------------|:------------------------------|:-------------|:-------------------|:--------|:--------|:---------------------------------------------------|
-| Audio File              | WHISPER_FILE                  | Alphanumeric | :white_check_mark: | -       | -       | Name of audio file that you would like transcribed |
-| Transcription File Name | WHISPER_DESTINATION_FILE_NAME | Alphanumeric | :white_check_mark: | -       | -       | Name of text file that will have transcription     |
+| Name | Reference | Type | Required | Default | Options | Description |
+|:---|:---|:---|:---|:---|:---|:---|
+| Audio File | WHISPER_FILE | Alphanumeric | :white_check_mark: | - | - | Name of audio file that you would like transcribed |
+| Transcription File Name | WHISPER_DESTINATION_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of text file that will have transcription |
 
 
 ## YAML

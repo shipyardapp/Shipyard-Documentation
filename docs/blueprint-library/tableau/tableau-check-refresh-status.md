@@ -27,14 +27,14 @@ Check the job status of a workbook or datasource that has recently been refreshe
 
 ## Variables
 
-| Name                          | Reference              | Type         | Required           | Default             | Options                                                                                | Description                                                                                                                                                  |
-|:------------------------------|:-----------------------|:-------------|:-------------------|:--------------------|:---------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Authentication Method         | TABLEAU_SIGN_IN_METHOD | Select       | :white_check_mark: | `username_password` | Username & Password: `username_password`<br></br><br></br>Access Token: `access_token` | Determine which authentication method to use when connecting to Tableau.                                                                                     |
-| Username or Access Token Name | TABLEAU_USERNAME       | Alphanumeric | :white_check_mark: | -                   | -                                                                                      | Your personal username or the name of the access token that you use to log in with Tableau.                                                                  |
-| Password or Access Token      | TABLEAU_PASSWORD       | Password     | :white_check_mark: | -                   | -                                                                                      | The password associated with the provided username OR the access token associated with the provided access token name.                                       |
-| Server URL                    | TABLEAU_SERVER_URL     | Alphanumeric | :white_check_mark: | -                   | -                                                                                      | The scheme, subdomain, domain, and top-level domain (TLD) of your Tableau URL.                                                                               |
-| Site ID                       | TABLEAU_SITE_ID        | Alphanumeric | :white_check_mark: | -                   | -                                                                                      | Typically found in the URL as /site/YOURSITEID/                                                                                                              |
-| Job ID                        | TABLEAU_JOB_ID         | Alphanumeric | :heavy_minus_sign: | -                   | -                                                                                      | The ID of a specific job you check the status of. If left blank, will try to find the job ID from an "Refresh Workbook/Datasource" Vessel that ran upstream. |
+| Name | Reference | Type | Required | Default | Options | Description |
+|:---|:---|:---|:---|:---|:---|:---|
+| Authentication Method | TABLEAU_SIGN_IN_METHOD | Select | :white_check_mark: | `username_password` | Username & Password: `username_password`<br></br><br></br>Access Token: `access_token` | Determine which authentication method to use when connecting to Tableau. |
+| Username or Access Token Name | TABLEAU_USERNAME | Alphanumeric | :white_check_mark: | - | - | Your personal username or the name of the access token that you use to log in with Tableau. |
+| Password or Access Token | TABLEAU_PASSWORD | Password | :white_check_mark: | - | - | The password associated with the provided username OR the access token associated with the provided access token name. |
+| Server URL | TABLEAU_SERVER_URL | Alphanumeric | :white_check_mark: | - | - | The scheme, subdomain, domain, and top-level domain (TLD) of your Tableau URL. |
+| Site ID | TABLEAU_SITE_ID | Alphanumeric | :white_check_mark: | - | - | Typically found in the URL as /site/YOURSITEID/ |
+| Job ID | TABLEAU_JOB_ID | Alphanumeric | :heavy_minus_sign: | - | - | The ID of a specific job you check the status of. If left blank, will try to find the job ID from an "Refresh Workbook/Datasource" Vessel that ran upstream. |
 
 
 ## YAML
