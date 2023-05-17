@@ -1,0 +1,7 @@
+
+label: Scrapy
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: scrapy-overview

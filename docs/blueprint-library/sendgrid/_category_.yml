@@ -1,0 +1,7 @@
+
+label: SendGrid
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: sendgrid-overview
