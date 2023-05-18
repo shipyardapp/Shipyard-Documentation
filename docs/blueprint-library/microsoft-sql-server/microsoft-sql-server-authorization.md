@@ -6,12 +6,13 @@ hide_title: true
 sidebar_label: Authorization
 description: Instructions on how to authorize Microsoft SQL Server to work with Shipyard's low-code Microsoft SQL Server templates.
 keywords:
-  - microsoft sql server
-  - blueprint
-  - template
-  - authorization
+- microsoft sql server
+- blueprint
+- template
+- authorization
 ---
 
+# Microsoft SQL Server Authorization
 # Microsoft SQL Server Authorization
 
 Connecting Microsoft SQL Server to Shipyard requires you to have:
