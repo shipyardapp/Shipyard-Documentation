@@ -6,12 +6,13 @@ hide_title: true
 sidebar_label: Authorization
 description: Instructions on how to authorize MySQL to work with Shipyard's low-code MySQL templates.
 keywords:
-  - mysql
-  - blueprint
-  - template
-  - authorization
+- mysql
+- blueprint
+- template
+- authorization
 ---
 
+# MySQL Authorization
 # MySQL Authorization
 
 Connecting MySQL to Shipyard requires you to have:

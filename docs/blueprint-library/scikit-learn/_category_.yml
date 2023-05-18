@@ -1,0 +1,7 @@
+
+label: Scikit-learn
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: scikit-learn-overview

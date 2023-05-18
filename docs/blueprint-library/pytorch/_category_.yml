@@ -1,0 +1,7 @@
+
+label: PyTorch
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: pytorch-overview

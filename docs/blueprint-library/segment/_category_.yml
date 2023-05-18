@@ -1,0 +1,7 @@
+
+label: Segment
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: segment-overview

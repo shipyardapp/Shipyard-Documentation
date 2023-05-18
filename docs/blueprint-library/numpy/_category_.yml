@@ -1,0 +1,7 @@
+
+label: NumPy
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: numpy-overview
