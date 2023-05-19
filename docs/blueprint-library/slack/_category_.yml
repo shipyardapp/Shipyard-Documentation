@@ -1,0 +1,7 @@
+
+label: Slack
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: slack-overview
