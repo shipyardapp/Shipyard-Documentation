@@ -1,0 +1,7 @@
+
+label: Jira
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: jira-overview
