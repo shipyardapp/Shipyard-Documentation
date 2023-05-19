@@ -1,0 +1,7 @@
+
+label: PostgreSQL
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: postgresql-overview
