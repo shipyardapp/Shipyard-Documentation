@@ -1,0 +1,7 @@
+
+label: Looker
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: looker-overview
