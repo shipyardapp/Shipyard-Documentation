@@ -1,0 +1,6 @@
+label: Shipyard API
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: shipyard-api-overview
