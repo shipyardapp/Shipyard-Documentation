@@ -1,6 +1,0 @@
-label: Amazon S3
-collapsible: true
-collapsed: true
-link:
-    type: doc
-    id: amazon-s3-overview
