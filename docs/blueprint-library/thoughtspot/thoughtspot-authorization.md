@@ -1,12 +1,12 @@
 ---
-id: Thoughtspot-authorization
+id: thoughtspot-authorization
 sidebar_position: 1
 title: Thoughtspot Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
 description: Instructions on how to authorize Coalesce to work with Shipyard's low-code Thoughtspot templates.
 keywords:
-  - Thoughtspot
+  - thoughtspot
   - blueprint
   - template
   - authorization
