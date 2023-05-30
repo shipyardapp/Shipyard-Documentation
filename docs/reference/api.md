@@ -386,13 +386,13 @@ As an example, the contents of `json_data` are:
 
 <Tabs
 groupId="languages"
-defaultValue="json"
+defaultValue="bash"
 values={[
-{label: 'JSON', value: 'json'},
+{label: 'Bash', value: 'bash'},
 {label: 'Python', value: 'python'},
 ]}>
 
-<TabItem value="json">
+<TabItem value="bash">
 
 ```json
 {
@@ -431,7 +431,7 @@ values={[
         "ENV_VAR_2": "Two",
         "ENV_VAR_3": "Three",
         "explicit_empty": "",
-        "explicit_do_not_set": none
+        "explicit_do_not_set": None
       }
     },
     {
