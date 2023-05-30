@@ -339,6 +339,150 @@ Below is a reference table for the Fleet Runs CSV.
 | Vessels Count | The number of Vessels in the associated Fleet |
 | Trigger | The method the Fleet Run was started by |
 
+### Trigger Fleet Runs
+
+#### Request
+
+This request triggers a fleet to run with the option to override environment variables. 
+It will always trigger the latest version of the fleet.
+
+<Tabs
+groupId="languages"
+defaultValue="bash"
+values={[
+{label: 'Bash', value: 'bash'},
+{label: 'Python', value: 'python'},
+]}>
+<TabItem value="bash">
+
+```bash
+curl -X POST https://api.app.shipyardapp.com/orgs/<org_id>/projects/<project_id>/fleets/<fleet_id>/fleetruns --header "X-Shipyard-API-KEY: <api_key>" -data '{json_data}'
+```
+</TabItem>
+<TabItem value="python">
+
+```python
+import requests
+
+headers = {
+    'Accept': 'application/json',
+    'X-Shipyard-API-Key': '<api_key>',
+    'Content-Type': 'application/json',
+}
+
+json_data = {{json_data}}
+
+response = requests.post(
+    'https://api.app.shipyardapp.com/orgs/<org_id>/projects/<project_id>/fleets/<fleet_id>/fleetruns',
+    headers=headers,
+    json=json_data,
+)
+```
+
+</TabItem>
+</Tabs>
+
+As an example, the contents of `json_data` are:
+
+<Tabs
+groupId="languages"
+defaultValue="bash"
+values={[
+{label: 'Bash', value: 'bash'},
+{label: 'Python', value: 'python'},
+]}>
+
+<TabItem value="bash">
+
+```json
+{
+  "vessel_overrides": [
+    {
+      "name": "Vessel A",
+      "environment_variable_overrides": {
+        "ENV_VAR_1": "One",
+        "ENV_VAR_2": "Two",
+        "ENV_VAR_3": "Three",
+        "explicit_empty": "",
+        "explicit_do_not_set": null
+      }
+    },
+    {
+      "name": "Vessel B",
+      "environment_variable_overrides": {
+        "ENV_VAR_A": "Apple",
+        "ENV_VAR_B": "Blossom",
+        "ENV_VAR_C": "Chai"
+      }
+    }
+  ]
+}
+```
+</TabItem>
+<TabItem value="python">
+
+```python
+{
+  "vessel_overrides": [
+    {
+      "name": "Vessel A",
+      "environment_variable_overrides": {
+        "ENV_VAR_1": "One",
+        "ENV_VAR_2": "Two",
+        "ENV_VAR_3": "Three",
+        "explicit_empty": "",
+        "explicit_do_not_set": None
+      }
+    },
+    {
+      "name": "Vessel B",
+      "environment_variable_overrides": {
+        "ENV_VAR_A": "Apple",
+        "ENV_VAR_B": "Blossom",
+        "ENV_VAR_C": "Chai"
+      }
+    }
+  ]
+}
+```
+
+</TabItem>
+</Tabs>
+
+There are several things to note regarding the `json` payload.
+
+1. The `name` value is the name of the Vessel that you'd like to override.
+2. `environment_variable_overrides` are the environment variables you'd like to override.
+3. Replace the left-hand side with the name of the environment variable you'd like to override and the 
+   right-hand side with the new value.
+   
+   *Note:* This is case sensitive.
+4. If the environment variable override value is an empty string `""`, the variable will be overridden and 
+   set to empty.
+5. If the environment variable override value is `null` or `none`, that value will be ignored and not set.
+6. If the environment variable override is not provided, the value set in the UI will be used.
+
+#### Response
+
+The response is returned in JSON format.
+
+```json
+{
+   "request" : {
+      "id" : "955939cc-2b90-4b8e-bf23-7375cd87822b"
+   },
+   "data" : {
+      "fleet_id" : "cc3737df-06ee-431a-8f87-1e79f1eed6d6",
+      "project_id" : "d1680f76-3b3c-420e-bbf3-9d62c6a2b450",
+      "org_id" : "2d52c575-989e-4642-bc63-c63408ee3fd8",
+      "fleet_run_id" : "ad4d4655-91fd-4499-9a1a-06d6e8a433d4"
+   },
+   "log": "https://api.app.shipyardapp.com/<org_name>/projects/<project_id>/fleets/<fleet_id>/logs/<fleet_run_id>"
+}
+```
+
+After a successful Fleet run trigger, the Fleet will run with the environment variables defined in the payload being overridden. 
+
 ### List Voyages
 
 #### Request
