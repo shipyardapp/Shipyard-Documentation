@@ -1,7 +1,6 @@
-
-label: File System
+label: Shipyard API
 collapsible: true
 collapsed: true
 link:
     type: doc
-    id: file-system-overview
+    id: shipyard-api-overview

@@ -18,6 +18,3 @@ Shipyard's low-code YouTube blueprints allow users to connect their data in YouT
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available: 
 - [Download Video to Shipyard](youtube-download-video.md)
-
-## Open Source Code
-The code that powers these Blueprints is [available on our Github](None), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.

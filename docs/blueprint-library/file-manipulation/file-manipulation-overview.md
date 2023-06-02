@@ -1,23 +1,21 @@
 ---
-id: file-system-overview
-title: File System Blueprints Overview
+id: file-manipulation-overview
+title: File Manipulation Blueprints Overview
 hide_title: true
 sidebar_label: Overview
-description: Information about Shipyard's low-code File System templates.
+description: Information about Shipyard's low-code File Manipulation templates.
 keywords:
-- file system
-- blueprint
-- template
-- overview
+  - file manipulation
+  - blueprint
+  - template
+  - overview
 ---
-
-# File System Blueprints Overview
+# File Manipulation Blueprints Overview
 
 Shipyard's low-code File System blueprints allow users to connect their data in File System to the rest of their modern data stack.
 
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available: 
-- [Compare Datasets](file-manipulation-compare-datasets.md)
 - [Compress Files](file-manipulation-compress-files.md)
 - [Convert CSV](file-manipulation-convert-csv.md)
 - [Decompress Files](file-manipulation-decompress-files.md)
