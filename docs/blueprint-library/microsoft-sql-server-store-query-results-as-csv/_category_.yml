@@ -1,0 +1,7 @@
+
+label: Microsoft SQL Server - Download Query Results to Shipyard
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: microsoft-sql-server-store-query-results-as-csv-overview
