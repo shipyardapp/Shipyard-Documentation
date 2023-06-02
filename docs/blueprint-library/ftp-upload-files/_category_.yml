@@ -1,0 +1,7 @@
+
+label: FTP - Upload Files from Shipyard
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: ftp-upload-files-overview
