@@ -1,0 +1,7 @@
+
+label: SFTP - Download Files to Shipyard
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: sftp-download-files-overview
