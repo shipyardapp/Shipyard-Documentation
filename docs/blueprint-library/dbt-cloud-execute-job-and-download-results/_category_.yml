@@ -1,0 +1,7 @@
+
+label: dbt Cloud - Execute Job and Download Results to Shipyard
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: dbt-cloud-execute-job-and-download-results-overview
