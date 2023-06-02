@@ -1,0 +1,7 @@
+
+label: Dropbox - Upload Files from Shipyard
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: dropbox-upload-files-overview
