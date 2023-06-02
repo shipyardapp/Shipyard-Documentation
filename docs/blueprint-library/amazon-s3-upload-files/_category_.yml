@@ -1,0 +1,7 @@
+
+label: Amazon S3 - Upload Files from Shipyard
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: amazon-s3-upload-files-overview
