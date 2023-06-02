@@ -1,0 +1,7 @@
+
+label: MySQL - Upload File to Table from Shipyard
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: mysql-upload-csv-to-table-overview
