@@ -1,0 +1,7 @@
+
+label: Databricks - Upload Files to DBFS from Shipyard
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: databricks-upload-files-to-dbfs-overview
