@@ -3,7 +3,7 @@ id: census-trigger-sync
 title: Census Template - Trigger Sync
 hide_title: true
 sidebar_label: Trigger Sync
-description: Information about Shipyard's low-code Census Trigger Sync blueprint. Immediately trigger a Census sync.
+description: Information about Shipyard's low-code Census Trigger Sync blueprint. Immediately trigger a Census sync. 
 keywords:
     - census
     - blueprint
@@ -13,9 +13,6 @@ keywords:
 # Census - Trigger Sync
 
 ## Overview
-
-> ## **First time using this Blueprint? Make sure you follow our [Census authorization guide](https://www.shipyardapp.com/docs/blueprint-library/census/census-authorization/)**.
-
 Immediately execute a Census snyc. The sync must already be set up within the Census interface.
 
 If a sync is already running for the specified connector, it will be stopped and restarted.
@@ -27,19 +24,16 @@ This Blueprint will only kick off the sync and will almost always return a statu
 2. The Census Sync being triggered should not have any other schedules set in the Census UI to avoid conflicting runs.
 
 
-
 ## Variables
 
-| Name    | Reference      | Type         | Required           | Default | Options | Description                                      |
-|:--------|:---------------|:-------------|:-------------------|:--------|:--------|:-------------------------------------------------|
-| API Key | CENSUS_API_KEY | Password     | :white_check_mark: | -       | -       | The API Key associated with your Census account. |
-| Sync ID | CENSUS_SYNC_ID | Alphanumeric | :white_check_mark: | -       | -       | The ID of the Census sync you want to refresh.   |
+| Name | Reference | Type | Required | Default | Options | Description |
+|:-----|:----------|:-----|:---------|:--------|:--------|:------------|
+| API Key | CENSUS_API_KEY  | Password |:white_check_mark: | - | - | The API Key associated with your Census account. |
+| Sync ID | CENSUS_SYNC_ID  | Alphanumeric |:white_check_mark: | - | - | The ID of the Census sync you want to refresh. |
 
 
 ## YAML
-
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
-
 ```yaml
 source:
   blueprint: Census - Trigger Sync
@@ -50,7 +44,7 @@ source:
 guardrails:
   retry_count: 1
   retry_wait: 0s
-  runtime_cutoff: 4h0m0s
+  runtime_cutoff: 1h0m0s
   exclude_exit_code_ranges:
     - "200"
 ```

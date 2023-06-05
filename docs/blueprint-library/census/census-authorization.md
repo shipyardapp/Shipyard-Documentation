@@ -6,21 +6,22 @@ hide_title: true
 sidebar_label: Authorization
 description: Instructions on how to authorize Census to work with Shipyard's low-code Census templates.
 keywords:
-  - census
-  - blueprint
-  - template
-  - authorization
+- census
+- blueprint
+- template
+- authorization
 ---
 
 # Census Authorization
-
 To get started with any Census Blueprints, you will need to create an API Key. This API Key is a secure way for Shipyard to access Census and will be required for **every** Census Blueprint. Additionally, you'll need a Sync ID.
 
 ## Creating a Census API Key
 
 1. Log in to [Census](https://app.getcensus.com/)
 2. Select **Settings** on the sidebar and then click API on the top navigation.
-![Census Settings](../../.gitbook/assets/shipyard_2022_08_14_22_07_14.png)
+
+![Census Settings](https://cdn.sanity.io/images/2xyydva6/production/9eefa77304eb6f4b1f1a999c86c04c3e9899d853-1339x447.png?w=450)
+
 3. Click the button that either says **Generate Key** or **Regenerate Key**.
 4. Click the button that says "**Click to Show**"
 5. Copy the API Key and store it somewhere safe. This value will be used for every Census Blueprint.

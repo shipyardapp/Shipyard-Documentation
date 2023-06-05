@@ -6,14 +6,13 @@ hide_title: true
 sidebar_label: Authorization
 description: Instructions on how to authorize SFTP to work with Shipyard's low-code SFTP templates.
 keywords:
-  - sftp
-  - blueprint
-  - template
-  - authorization
+- sftp
+- blueprint
+- template
+- authorization
 ---
 
 # SFTP Authorization
-
 In order to get started with SFTP Blueprints, a user and password with read and write access is required, or and RSA Key.
 
 ## Username and Password

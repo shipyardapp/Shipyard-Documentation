@@ -1,7 +1,7 @@
 
-label: Thoughtspot
+label: OpenAI DALL-E 2
 collapsible: true
 collapsed: true
 link:
     type: doc
-    id: thoughtspot-overview
+    id: dall-e-overview

@@ -10,20 +10,15 @@ keywords:
   - template
   - overview
 ---
-
 # File Manipulation Blueprints Overview
 
-Shipyard's low-code file manipulation blueprints allow users to turn their data into different formats.
+Shipyard's low-code File System blueprints allow users to connect their data in File System to the rest of their modern data stack.
 
 ## Available Blueprints
-Shipyard currently has the following Blueprints readily available:
+Shipyard currently has the following Blueprints readily available: 
 - [Compress Files](file-manipulation-compress-files.md)
-- [Decompress Files](file-manipulation-decompress-files.md)
 - [Convert CSV](file-manipulation-convert-csv.md)
+- [Decompress Files](file-manipulation-decompress-files.md)
 
 ## Open Source Code
-The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/filemanipulation-blueprints), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.
-
-## Helpful File Manipulation Links
-- [Python Compression Methods](https://docs.python.org/3.7/library/archiving.html)  
-- [Pandas to\_{format} Modules](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_csv.html)
+The code that powers these Blueprints is [available on our Github](https://docs.shipyardapp.com/blueprint-library/file-system), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.

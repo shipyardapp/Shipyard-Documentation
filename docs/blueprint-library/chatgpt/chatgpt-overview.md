@@ -1,20 +1,30 @@
 ---
 id: chatgpt-overview
-title: ChatGPT Blueprints Overview
+title: OpenAI ChatGPT Blueprints Overview
 hide_title: true
 sidebar_label: Overview
-description: Information about Shipyard's low-code ChatGPT templates.
+description: Information about Shipyard's low-code OpenAI ChatGPT templates.
 keywords:
-  - chatgpt
-  - blueprint
-  - template
-  - overview
+- openai chatgpt
+- blueprint
+- template
+- overview
 ---
 
-# ChatGPT Blueprints Overview
+# OpenAI ChatGPT Blueprints Overview
 
-Shipyard's low-code ChatGPT blueprints allow users send prompts to ChatGPT and receive responses back.
+Shipyard's low-code OpenAI ChatGPT blueprints allow users to connect their data in OpenAI ChatGPT to the rest of their modern data stack.
+
 
 ## How to Use
-For information on how to set up these Blueprints successfully, please read through the [ChatGPT Authorization guide](chatgpt-authorization.md).
- 
+For information on how to set up these Blueprints successfully, please read through the [OpenAI ChatGPT Authorization guide](chatgpt-authorization.md).
+
+
+## Available Blueprints
+Shipyard currently has the following Blueprints readily available: 
+- [Generate Response](chatgpt-generate-response.md)
+- [Create Data Dictionary](chatgpt-create-data-dictionary.md)
+- [Create Dummy Data](chatgpt-create-dummy-data.md)
+- [Add Comments to Code](chatgpt-add-comments-to-code.md)
+- [Translate a Text File](chatgpt-translate-a-text-file.md)
+- [Generate Message](chatgpt-generate-message.md)

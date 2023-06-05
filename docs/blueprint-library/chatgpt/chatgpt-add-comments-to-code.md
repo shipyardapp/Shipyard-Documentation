@@ -1,47 +1,51 @@
 ---
-id: chatgpt-create-data-dictionary
-title: OpenAI ChatGPT Template - Create Data Dictionary
+id: chatgpt-add-comments-to-code
+title: OpenAI ChatGPT Template - Add Comments to Code
 hide_title: true
-sidebar_label: Create Data Dictionary
-description: Information about Shipyard's low-code OpenAI ChatGPT Create Data Dictionary blueprint. This Blueprint takes in a CSV file and creates a data dictionary. 
+sidebar_label: Add Comments to Code
+description: Information about Shipyard's low-code OpenAI ChatGPT Add Comments to Code blueprint. Adds comments to code scripts. 
 keywords:
     - openai chatgpt
     - blueprint
     - template
 ---
 
-# ChatGPT - Create Data Dictionary
+# ChatGPT - Add Comments to Code
 
 ## Overview
 > ## **First time using this Blueprint? Make sure you follow our [ChatGPT authorization guide](https://www.shipyardapp.com/docs/blueprint-library/chatgpt/chatgpt-authorization/)**.
 
-This Blueprint takes in a CSV file and creates a data dictionary.
+
+Takes in a script as a file or typed out and returns a script as a file with comments in the code to help with readability. 
 
 ## Variables
 
 | Name | Reference | Type | Required | Default | Options | Description |
 |:-----|:----------|:-----|:---------|:--------|:--------|:------------|
 | API Key | CHATGPT_API_KEY  | Password |:white_check_mark: | - | - | API Key from OpenAI |
-| File Name | CHATGPT_FILE  | Alphanumeric |:white_check_mark: | - | - | The data that you would like a data dictionary created from in CSV form. |
-| Data Dictionary File Name | CHATGPT_DESTINATION_FILE_NAME  | Alphanumeric |:white_check_mark: | - | - | The file where the data dictionary will be stored. |
+| Initial Code Script | CHATGPT_SCRIPT  | Alphanumeric |:heavy_minus_sign: | - | - | Original code script that needs commenting |
+| Initial Code Script Typed Out | CHATGPT_SCRIPT_TYPED  | Alphanumeric |:heavy_minus_sign: | - | - | Typed out code script |
+| Exported Code Script Name | CHATGPT_EXPORTED_FILE_NAME  | Alphanumeric |:white_check_mark: | - | - | Script name of commented code |
 
 
 ## YAML
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 ## Paste this code under 'vessels' and then connect it to other vessels under 'connections'
-    'dry_speedboat':
+    'unsinkable_commander':
         source:
             type: BLUEPRINT
-            blueprint: 'ChatGPT - Create Data Dictionary'
+            blueprint: 'ChatGPT - Add Comments to Code '
             inputs: 
                 ## CHATGPT_API_KEY: API Key from OpenAI
-                ## CHATGPT_FILE: The data that you would like a data dictionary created from in CSV form.
-                ## CHATGPT_DESTINATION_FILE_NAME: The file where the data dictionary will be stored.
-                ## For more detailed setup information, visit https://www.shipyardapp.com/docs/blueprint-library/chatgpt#create-data-dictionary-blueprint
+                ## CHATGPT_SCRIPT: Original code script that needs commenting
+                ## CHATGPT_SCRIPT_TYPED: Typed out code script
+                ## CHATGPT_EXPORTED_FILE_NAME: Script name of commented code
+                ## For more detailed setup information, visit https://www.shipyardapp.com/docs/blueprint-library/chatgpt#add-comments-to-code-blueprint
                 'CHATGPT_API_KEY': ## REQUIRED
-                'CHATGPT_FILE': ## REQUIRED ## ie. data.csv
-                'CHATGPT_DESTINATION_FILE_NAME': ## REQUIRED ## ie. data_dictionary.txt
+                'CHATGPT_SCRIPT': ## ie. code.py
+                'CHATGPT_SCRIPT_TYPED': ## ie. import pandas  print('hello sailor!')
+                'CHATGPT_EXPORTED_FILE_NAME': ## REQUIRED ## ie. code_with_script.py
         guardrails:
         ## Set how your Vessel should handle errors and retries.
             retry_count: 0

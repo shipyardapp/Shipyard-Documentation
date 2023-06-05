@@ -1,6 +1,7 @@
-label: DALL-E
+
+label: Deepgram
 collapsible: true
 collapsed: true
 link:
     type: doc
-    id: dalle-overview
+    id: deepgram-overview
