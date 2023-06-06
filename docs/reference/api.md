@@ -711,7 +711,7 @@ There are several things to note regarding the `blueprint.json` payload.
 1. `state` value options are `1` (Disabled), `2` (Draft), and `3` (Enabled).
 2. `pallet_type` value options are `2` (Python), `3` (Bash), and `7` (Node).
 3. `program` value options are `python3`, `bash`, and `node` and should correspond with `pallet_type`.
-4. `type` for a `spec_list` object value options are `1` (String), `2` (Integer), `3` (Floating), `4` (Boolean), `5` (Date), `6` (Select), `7` (Password), `8` (External file).
+4. `type` for a `spec_list` object value options are `1` (String), `2` (Integer), `3` (Floating), `4` (Boolean), `5` (Date), `6` (Select), `7` (Password), `8` (External file). For `select` input types, the `type_spec` field will be an array of objects containing `name` and `value` fields and a `default` selection must be made corresponding to one of the object `name` fields.
 5. `number_of_retries` can be between `0` and `24`.
 6. `ttr` can be between `0` and `3600` in increments of `300`.
 7. `runtime_timeout` can be between `300` and `3600`.
@@ -720,18 +720,16 @@ There are several things to note regarding the `blueprint.json` payload.
 
 #### Response
 
-The response is returned in JSON format.
+The response is returned in JSON format. Below is a truncated example of the output.
 
 ```json
 {
-	"data":{
-		"DependencyCount": 0,
-		"CategoryIds": null
-	}
-}
+    "data_kind": "blueprint",
+    "data": {
+        "org_id": "<org_id>",
+        "id": "<blueprint_id>",
+    ...
 ```
-
-After a successful create, the `DependencyCount` will be `0` since it has not been included in a Vessel yet.
 
 ### Update Blueprint
 
@@ -778,19 +776,17 @@ response = requests.post(
 
 The same `blueprint.json` payload options in **Create Blueprint** maybe be used in **Update Blueprint** however `pallet_type` cannot change and the `pallet_config` field `temp` may be updated with new `id` and `url` values if a new external file has been generated via **Create External File** above.
 
-Any fields omitted from `blueprint_updates.json` will not be updated in the request. The exception is `spec_list` which is a _full replace_ of any existing values.
+Any fields omitted from `blueprint_updates.json` will not be updated in the request. In order to update the `spec_list`, you will need to include the `id` key and value from the **Create Blueprint** response above in the relevant `spec_list` object. Any `spec_list` objects in the array that do _not_ include an `id` field will be attempted to be added as new input variables.
 
 #### Response
 
-The response is returned in JSON format.
+The response is returned in JSON format. Below is a truncated example of the output.
 
 ```json
 {
-	"data":{
-		"DependencyCount": 0,
-		"CategoryIds": null
-	}
-}
+    "data_kind": "blueprint",
+    "data": {
+        "org_id": "<org_id>",
+        "id": "<blueprint_id>",
+    ...
 ```
-
-After a successful update, the `DependencyCount` will be show a count of however many Vessels have been created using the Blueprint.
