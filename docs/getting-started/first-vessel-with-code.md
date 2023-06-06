@@ -127,14 +127,17 @@ In the previous tutorial, we created two vessels: **Download Slinky Dog Dash Rid
 
   ![](../.gitbook/assets/shipyard_2022_05_05_14_52_10.png)
 
-4. Click **Save** in the bottom right corner of the screen.
+### Step 5 - Edit Email Vessel
 
+1. Click on the **Send Slinky Dog Dash Data via Email** Vessel to open the Vessel menu.
+2. Change the **File Name** to **slinky_dog_dash_with_hours.csv**.
+3. Click **Save** in the bottom right corner of the screen.
 
-### Step 5 - Running the Vessel
+### Step 6 - Running the Vessel
 
 In the top right corner of the Fleet builder, click the **Run Now** button. This will schedule your Fleet to run immediately and redirect you to [Fleet Log](../reference/logs/fleet-logs.md) page.
 
-### Step 6 - Checking the Logs
+### Step 7 - Checking the Logs
 
 You should have been redirected to the following page that shows you all of the details about the specific Log you clicked.
 
