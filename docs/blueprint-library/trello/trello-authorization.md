@@ -41,7 +41,7 @@ To generate your access token and API keys, follow these steps:
 
 **Step 7:** Generate a token by selecting the "Token" hyperlink to the right of where your API Key is.
 
-![](../../.gitbook/assets/shipyard_2023-06-07-15-46-11.png)
+![](../../.gitbook/assets/shipyard_2023-06-07-20-19-02.png)
 
 **Step 8:** Click on "Allow"
 
@@ -49,6 +49,6 @@ To generate your access token and API keys, follow these steps:
 
 **Step 9:** Copy your Access Token
 
-![](../../.gitbook/assets/shipyard_2023-06-07-15-49-33.png)
+![](../../.gitbook/assets/shipyard_2023-06-07-20-20-43.png)
 
 
