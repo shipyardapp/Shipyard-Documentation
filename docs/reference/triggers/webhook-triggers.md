@@ -32,6 +32,11 @@ When a webhook has been created, you will be given 3 options:
 You can use webhooks to dynamically pass data to your Vessels at runtime. Check out our [tutorial](../../tutorials/referencing-fleet-webhook-parameters.md) to better understand this functionality.
 :::
 
+Webhook triggers differ from API triggers in the following ways:
+- Webhook triggers will work without authentication for anyone that has access to the URL.
+- Webhooks can accept ANY data, while API triggers require a specific JSON payload.
+- Data received by the webhook has to be interpreted by custom code that you write, so it can't be used for Blueprint Library inputs.
+
 ## Webhook Status Codes
 
 No matter which language or service you use to run the POST request, you will see the following status codes returned.
