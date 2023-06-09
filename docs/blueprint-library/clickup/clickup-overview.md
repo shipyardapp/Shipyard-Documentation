@@ -27,4 +27,4 @@ Shipyard currently has the following Blueprints readily available:
 - [Edit Task](clickup-edit-task.md)
 
 ## Open Source Code
-The code that powers these Blueprints is [available on our Github](https://www.shipyardapp.com/docs/blueprint-library/clickup/clickup-overview/), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.
+The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/shipyard-blueprints/tree/main/shipyard_blueprints/clickup), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.
