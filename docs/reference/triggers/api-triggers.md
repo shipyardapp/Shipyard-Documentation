@@ -2,7 +2,7 @@
 id: api-triggers
 title: API Triggers
 hide_title: true
-description: Information about api triggers that can be executed through external systems.
+description: Information about API triggers that can be executed through external systems.
 keywords:
   - api
   - webhook
@@ -14,15 +14,15 @@ keywords:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Webhook Triggers
+# API Triggers
 
 ## Definition
 
-Every Fleet can be triggered by our [API](../api.md#trigger-fleet-runs). API triggers enable you to programmatically execute a Fleet in Shipyard by running a POST request from any service. When you run the POST request, your Fleet will be scheduled to run immediately.
+Every Fleet can be triggered by our [Trigger Fleet Runs API endpoint](../api.md#trigger-fleet-runs). API triggers enable you to programmatically execute a Fleet in Shipyard by running a POST request from any service. When you run the POST request, your Fleet will be scheduled to run immediately.
 
 Additionally, API triggers can be used to dynamically pass environment variable overrides to your Vessels at runtime. This allows you to build out Fleets that act as a "shell" for your Vessels, with the ability to pass in different variables to change their behavior every time they run.
 
-API triggers differ from Webhook triggers in the following ways:
+API triggers differ from [Webhook triggers](webhook-triggers.md) in the following ways:
 - API triggers require authentication with an API key.
 - While webhooks accept ANY data, API triggers require a specific JSON payload.
 - Data received by the API endpoint is automatically parsed and passed to your Vessels as environment variables, so it can be used for Blueprint Library inputs.

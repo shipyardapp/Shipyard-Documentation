@@ -21,7 +21,7 @@ A log is created under the following conditions:
 -  When the **Run Now** button is clicked, resulting in an [On-Demand Trigger](../triggers/on-demand-triggers.md)
 -  When the [scheduler](../triggers/schedule-triggers.md#timing-of-scheduling) runs
 -  When an external service or script calls a [Webhook](../triggers/webhook-triggers.md)
--  When an external service or script calls our [API](../api.md#trigger-fleet-runs) endpoint
+-  When an external service or script calls our [Trigger Fleet Runs API endpoint](../api.md#trigger-fleet-runs)
 
 ### Log Retention
 
@@ -38,7 +38,7 @@ The data contained within a Log differs slightly for Vessels and Fleets. Explore
 - [Fleet Logs](fleet-logs.md)
 
 :::tip Pro Tip
-You can export your logs with our [API endpoint](../api.md#list-voyages). You can also use our [Library Blueprint](../../blueprint-library/shipyard-api/shipyard-api-overview.md) to accomplish the same thing.
+You can export your logs with our [List Voyages API endpoint](../api.md#list-voyages). You can also use our [Library Blueprint](../../blueprint-library/shipyard-api/shipyard-api-overview.md) to accomplish the same thing.
 :::
 
 ## Additional Notes
