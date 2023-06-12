@@ -155,6 +155,9 @@ module.exports = {
 					changefreq: "weekly",
 					priority: 0.5,
 				},
+				googleTagManager: {
+					containerId: "GTM-WBTKTML",
+				},
 			},
 		],
 	],
