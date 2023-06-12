@@ -19,7 +19,7 @@ Shipyard supports an unlimited number of GitHub connections to multiple differen
 
 ### Setup
 
-By clicking **Add Connection** you can choose to sync Shipyard to any GitHub organization that your GitHub account has access to. This setup flow allows you to specify whether to give Shipyard access to all repositories \(including newly created ones\) or only specific repositories. By default, Shipyard will have read-only access to the contents of the repositories you select.
+By clicking **Add Connection**, you can choose to sync Shipyard to any GitHub organization that your GitHub account has access to. This setup flow allows you to specify whether to give Shipyard access to all repositories \(including newly created ones\) or only specific repositories. By default, Shipyard will have read-only access to the contents of the repositories you select.
 
 Once a connection has been set up, you can always change the level of access after the fact. The **edit** button will redirect you to the GitHub application page where you can change repository access or delete the connection altogether.
 

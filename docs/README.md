@@ -48,7 +48,7 @@ If you're interested in getting access to the platform, just send us a note at [
 
 ## Custom Shipyard Solutions
 
-While we're focused on building out our platform to make it easier for everyone to focus on creating amazing business solutions, we know that not everyone is in the position to do so or may have trouble getting started. Sometimes it's due to a lack of development resources and other times, it's due to not knowing what is, or isn't, possible.
+While we're focused on building out our platform to make it easier for everyone to focus on creating amazing business solutions, we know that not everyone is in the position to do so or may have trouble getting started. Sometimes it's due to a lack of development resources, and other times it's due to not knowing what is or isn't possible.
 
 :::tip Success
 If you have a problem that you think can be automated, but you aren't quite sure, please reach out to us. We'll gladly work with you to tackle the problem.

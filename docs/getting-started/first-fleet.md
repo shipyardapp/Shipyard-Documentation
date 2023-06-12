@@ -32,7 +32,7 @@ By the end of the tutorial, you will know how to:
 * Use a Fleet to access files created upstream
 
 :::caution
-We recommend you create a **Training** project before beginning this tutorial. The steps to create that project are located in [here](first-project.md).
+We recommend you create a **Testing** project before beginning this tutorial. The steps to create that project are located in [here](first-project.md).
 :::
 ## Steps
 

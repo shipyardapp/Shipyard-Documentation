@@ -31,11 +31,11 @@ Step-by-step guides for accomplishing key tasks within Shipyard.
 
 ## 🎯 Tutorials
 
-Take the knowledge from the **Getting Started** section to the next level! Includes tutorials for specific use cases.
+Take the knowledge from the **Getting Started** section to the next level! This includes tutorials for specific use cases.
 
 ## 📦 Blueprint Library
 
-Detailed overviews of every Blueprint that exists in the Blueprint Library. Includes instructions for getting the proper authorization, as well as explanations of how to run the blueprints on Shipyard.
+Detailed overviews of every Blueprint that exists in the Blueprint Library. This includes instructions for getting the proper authorization, as well as explanations of how to run the blueprints on Shipyard.
 
 ## 🗂 Data Packages
 
