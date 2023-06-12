@@ -1,0 +1,7 @@
+
+label: OpenAI Whisper
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: whisper-overview

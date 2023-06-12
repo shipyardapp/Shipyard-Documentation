@@ -3,7 +3,7 @@ id: fivetran-execute-sync
 title: Fivetran Template - Execute Sync
 hide_title: true
 sidebar_label: Execute Sync
-description: Information about Shipyard's low-code Fivetran Execute Sync blueprint. Execute a sync against an existing connector in the Fivetran interface without waiting for results.
+description: Information about Shipyard's low-code Fivetran Execute Sync blueprint. Execute a sync against an existing connector in the Fivetran interface without waiting for results. 
 keywords:
     - fivetran
     - blueprint
@@ -13,9 +13,6 @@ keywords:
 # Fivetran - Execute Sync
 
 ## Overview
-
-> ## **First time using this Blueprint? Make sure you follow our [Fivetran authorization guide](https://www.shipyardapp.com/docs/blueprint-library/fivetran/fivetran-authorization/)**.
-
 Immediately execute a sync of a Fivetran connector. The connector must already be set up within the Fivetran interface.
 
 If a sync is already running for the specified connector, it will be stopped and restarted.
@@ -29,21 +26,17 @@ The response for this request will always be stored at `shipyard-artifacts/fivet
 1. Before using this Blueprint on a connector, we strongly recommend first setting your connector to a manual schedule, using the **Update Connector** Blueprint. This setting **cannot** be updated in the Fivetran UI. This will ensure that Fivetran only syncs the connector when Shipyard kicks it off. Without this setting in place, it is possible to have conflicting syncs.
 2. This Vessel should be immediately followed by a Vessel built from the **Check Sync Status** Blueprint so you can verify the status and completion of your sync.
 
-
-
 ## Variables
 
 | Name | Reference | Type | Required | Default | Options | Description |
-|:---|:---|:---|:---|:---|:---|:---|
-| API Key | FIVETRAN_API_KEY | Password | :white_check_mark: | - | - | Your account's unique API Key for Fivetran. |
-| API Secret | FIVETRAN_API_SECRET | Password | :white_check_mark: | - | - | Your account's unique API Secret for Fivetran. |
-| Connector ID | FIVETRAN_CONNECTOR_ID | Alphanumeric | :white_check_mark: | - | - | The unique ID associated with a connector. Typically two words separated by an underscore. |
+|:-----|:----------|:-----|:---------|:--------|:--------|:------------|
+| API Key | FIVETRAN_API_KEY  | Password |:white_check_mark: | - | - | Your account's unique API Key for Fivetran. |
+| API Secret | FIVETRAN_API_SECRET  | Password |:white_check_mark: | - | - | Your account's unique API Secret for Fivetran. |
+| Connector ID | FIVETRAN_CONNECTOR_ID  | Alphanumeric |:white_check_mark: | - | - | The unique ID associated with a connector. Typically two words separated by an underscore. |
 
 
 ## YAML
-
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
-
 ```yaml
 source:
   blueprint: Fivetran - Execute Sync
@@ -55,7 +48,7 @@ source:
 guardrails:
   retry_count: 1
   retry_wait: 0s
-  runtime_cutoff: 4h0m0s
+  runtime_cutoff: 1h0m0s
   exclude_exit_code_ranges:
     - "0"
 ```

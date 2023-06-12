@@ -10,6 +10,9 @@ keywords:
   - logs
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # API
 
 ## Overview
@@ -60,9 +63,36 @@ The response code snippets have been truncated for brevity.
 
 #### Request
 
+<Tabs
+groupId="languages"
+defaultValue="bash"
+values={[
+{label: 'Bash', value: 'bash'},
+{label: 'Python', value: 'python'},
+]}>
+<TabItem value="bash">
+
 ```bash
-curl https://api.app.shipyardapp.com/orgs --header "X-Shipyard-API-Key: <api-key>"
+curl https://api.app.shipyardapp.com/orgs --header "X-Shipyard-API-Key: <api_key>"
 ```
+
+</TabItem>
+<TabItem value="python">
+
+```python
+import requests
+
+headers = {
+    'X-Shipyard-API-Key': '<api_key>',
+}
+
+response = requests.get('https://api.app.shipyardapp.com/orgs', headers=headers)
+```
+
+</TabItem>
+</Tabs>
+
+
 
 #### Response
 
@@ -71,7 +101,7 @@ curl https://api.app.shipyardapp.com/orgs --header "X-Shipyard-API-Key: <api-key
 	"data_kind": "organizations",
 	"data": [
 		{
-			"id": "11111111-1111-1111-1111-111111111111",
+			"id": "<org_id>",
 			"name": "example organization",
 			"created_at": "2019-08-22T21:53:30.095954Z",
 			...
@@ -84,9 +114,35 @@ curl https://api.app.shipyardapp.com/orgs --header "X-Shipyard-API-Key: <api-key
 
 #### Request
 
+<Tabs
+groupId="languages"
+defaultValue="bash"
+values={[
+{label: 'Bash', value: 'bash'},
+{label: 'Python', value: 'python'},
+]}>
+<TabItem value="bash">
+
 ```bash
-curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/fleets --header "X-Shipyard-API-Key: <api-key>"
+curl https://api.app.shipyardapp.com/orgs/<org_id>/fleets --header "X-Shipyard-API-Key: <api_key>"
 ```
+
+</TabItem>
+<TabItem value="python">
+
+```python
+import requests
+
+headers = {
+    'X-Shipyard-API-Key': '<api_key>',
+}
+
+response = requests.get('https://api.app.shipyardapp.com/orgs/<org_id>/fleets', headers=headers)
+```
+
+</TabItem>
+</Tabs>
+
 
 #### Response
 
@@ -95,16 +151,16 @@ curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/f
 	"data_kind": "fleets",
 	"data": [
 		{
-			"org_id": "11111111-1111-1111-1111-111111111111",
-			"id": "33333333-3333-3333-3333-333333333333",
+			"org_id": "<org_id>",
+			"id": "<fleet_id>",
 			"name": "confident_oyster",
 			"pallet_ids": [
-				"44444444-4444-4444-4444-444444444444"
+				"<vessel_id>"
 			],
 			"created_at": "2022-07-21T21:37:30.623386Z",
 			"vessel_dag": {
 				"vertices": [
-					"44444444-4444-4444-4444-444444444444"
+					"<vessel_id>"
 				],
 				"versions": [
 					1
@@ -120,9 +176,38 @@ curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/f
 
 #### Request
 
+<Tabs
+groupId="languages"
+defaultValue="bash"
+values={[
+{label: 'Bash', value: 'bash'},
+{label: 'Python', value: 'python'},
+]}>
+<TabItem value="bash">
+
 ```bash
-curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets/33333333-3333-3333-3333-333333333333 --header "X-Shipyard-API-Key: <api key>"
+curl https://api.app.shipyardapp.com/orgs/<org_id>/projects/<project_id>/fleets/<fleet_id> --header "X-Shipyard-API-Key: <api key>"
 ```
+
+</TabItem>
+<TabItem value="python">
+
+```python
+import requests
+
+headers = {
+    'X-Shipyard-API-Key': '<api key>',
+}
+
+response = requests.get(
+    'https://api.app.shipyardapp.com/orgs/<org_id>/projects/<project_id>/fleets/<fleet_id>',
+    headers=headers,
+)
+```
+
+</TabItem>
+</Tabs>
+
 
 #### Response
 
@@ -139,9 +224,43 @@ vessels:
 
 #### Request
 
+<Tabs
+groupId="languages"
+defaultValue="bash"
+values={[
+{label: 'Bash', value: 'bash'},
+{label: 'Python', value: 'python'},
+]}>
+<TabItem value="bash">
+
 ```bash
-curl -X PUT https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets --data-binary @fleet.yaml --header "Content-type: application/yaml" --header "X-Shipyard-API-Key: <api-key>"
+curl -X PUT https://api.app.shipyardapp.com/orgs/<org_id>/projects/<project_id>/fleets --data-binary @fleet.yaml --header "Content-type: application/yaml" --header "X-Shipyard-API-Key: <api_key>"
 ```
+
+</TabItem>
+<TabItem value="python">
+
+```python
+import requests
+
+headers = {
+    'Content-type': 'application/yaml',
+    'X-Shipyard-API-Key': '<api_key>',
+}
+
+with open('fleet.yaml', 'rb') as f:
+    data = f.read()
+
+response = requests.put(
+    'https://api.app.shipyardapp.com/orgs/<org_id>/projects/<project_id>/fleets',
+    headers=headers,
+    data=data,
+)
+```
+
+</TabItem>
+</Tabs>
+
 
 The contents of `fleet.yaml` would be in the required [FAC format](fleets/yaml-editor.md).
 
@@ -162,9 +281,38 @@ vessels:
 
 #### Request
 
+<Tabs
+groupId="languages"
+defaultValue="bash"
+values={[
+{label: 'Bash', value: 'bash'},
+{label: 'Python', value: 'python'},
+]}>
+<TabItem value="bash">
+
 ```bash
-curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/projects/22222222-2222-2222-2222-222222222222/fleets/33333333-3333-3333-3333-333333333333/runs --header "X-Shipyard-API-Key: <api-key>"
+curl https://api.app.shipyardapp.com/orgs/<org_id>/projects/<project_id>/fleets/<fleet_id>/runs --header "X-Shipyard-API-Key: <api_key>"
 ```
+
+</TabItem>
+<TabItem value="python">
+
+```python
+import requests
+
+headers = {
+    'X-Shipyard-API-Key': '<api_key>',
+}
+
+response = requests.get(
+    'https://api.app.shipyardapp.com/orgs/<org_id>/projects/<project_id>/fleets/<fleet_id>/runs',
+    headers=headers,
+)
+```
+
+</TabItem>
+</Tabs>
+
 
 #### Response
 
@@ -191,15 +339,185 @@ Below is a reference table for the Fleet Runs CSV.
 | Vessels Count | The number of Vessels in the associated Fleet |
 | Trigger | The method the Fleet Run was started by |
 
+### Trigger Fleet Runs
+
+#### Request
+
+This request triggers a fleet to run with the option to override environment variables. 
+It will always trigger the latest version of the fleet.
+
+<Tabs
+groupId="languages"
+defaultValue="bash"
+values={[
+{label: 'Bash', value: 'bash'},
+{label: 'Python', value: 'python'},
+]}>
+<TabItem value="bash">
+
+```bash
+curl -X POST https://api.app.shipyardapp.com/orgs/<org_id>/projects/<project_id>/fleets/<fleet_id>/fleetruns --header "X-Shipyard-API-KEY: <api_key>" -data '{json_data}'
+```
+</TabItem>
+<TabItem value="python">
+
+```python
+import requests
+
+headers = {
+    'Accept': 'application/json',
+    'X-Shipyard-API-Key': '<api_key>',
+    'Content-Type': 'application/json',
+}
+
+json_data = {{json_data}}
+
+response = requests.post(
+    'https://api.app.shipyardapp.com/orgs/<org_id>/projects/<project_id>/fleets/<fleet_id>/fleetruns',
+    headers=headers,
+    json=json_data,
+)
+```
+
+</TabItem>
+</Tabs>
+
+As an example, the contents of `json_data` are:
+
+<Tabs
+groupId="languages"
+defaultValue="bash"
+values={[
+{label: 'Bash', value: 'bash'},
+{label: 'Python', value: 'python'},
+]}>
+
+<TabItem value="bash">
+
+```json
+{
+  "vessel_overrides": [
+    {
+      "name": "Vessel A",
+      "environment_variable_overrides": {
+        "ENV_VAR_1": "One",
+        "ENV_VAR_2": "Two",
+        "ENV_VAR_3": "Three",
+        "explicit_empty": "",
+        "explicit_do_not_set": null
+      }
+    },
+    {
+      "name": "Vessel B",
+      "environment_variable_overrides": {
+        "ENV_VAR_A": "Apple",
+        "ENV_VAR_B": "Blossom",
+        "ENV_VAR_C": "Chai"
+      }
+    }
+  ]
+}
+```
+</TabItem>
+<TabItem value="python">
+
+```python
+{
+  "vessel_overrides": [
+    {
+      "name": "Vessel A",
+      "environment_variable_overrides": {
+        "ENV_VAR_1": "One",
+        "ENV_VAR_2": "Two",
+        "ENV_VAR_3": "Three",
+        "explicit_empty": "",
+        "explicit_do_not_set": None
+      }
+    },
+    {
+      "name": "Vessel B",
+      "environment_variable_overrides": {
+        "ENV_VAR_A": "Apple",
+        "ENV_VAR_B": "Blossom",
+        "ENV_VAR_C": "Chai"
+      }
+    }
+  ]
+}
+```
+
+</TabItem>
+</Tabs>
+
+There are several things to note regarding the `json` payload.
+
+1. The `name` value is the name of the Vessel that you'd like to override.
+2. `environment_variable_overrides` are the environment variables you'd like to override.
+3. Replace the left-hand side with the name of the environment variable you'd like to override and the 
+   right-hand side with the new value.
+   
+   *Note:* This is case sensitive.
+4. If the environment variable override value is an empty string `""`, the variable will be overridden and 
+   set to empty.
+5. If the environment variable override value is `null` or `none`, that value will be ignored and not set.
+6. If the environment variable override is not provided, the value set in the UI will be used.
+
+#### Response
+
+The response is returned in JSON format.
+
+```json
+{
+   "request" : {
+      "id" : "955939cc-2b90-4b8e-bf23-7375cd87822b"
+   },
+   "data" : {
+      "fleet_id" : "cc3737df-06ee-431a-8f87-1e79f1eed6d6",
+      "project_id" : "d1680f76-3b3c-420e-bbf3-9d62c6a2b450",
+      "org_id" : "2d52c575-989e-4642-bc63-c63408ee3fd8",
+      "fleet_run_id" : "ad4d4655-91fd-4499-9a1a-06d6e8a433d4"
+   },
+   "log": "https://api.app.shipyardapp.com/<org_name>/projects/<project_id>/fleets/<fleet_id>/logs/<fleet_run_id>"
+}
+```
+
+After a successful Fleet run trigger, the Fleet will run with the environment variables defined in the payload being overridden. 
+
 ### List Voyages
 
 #### Request
 
 This request returns all of the Voyages in the requested Organization.
 
+<Tabs
+groupId="languages"
+defaultValue="bash"
+values={[
+{label: 'Bash', value: 'bash'},
+{label: 'Python', value: 'python'},
+]}>
+<TabItem value="bash">
+
 ```bash
-curl https://api.app.shipyardapp.com/orgs/11111111-1111-1111-1111-111111111111/voyages --header "X-Shipyard-API-Key: <api-key>"
+curl https://api.app.shipyardapp.com/orgs/<org_id>/voyages --header "X-Shipyard-API-Key: <api_key>"
 ```
+
+</TabItem>
+<TabItem value="python">
+
+```python
+import requests
+
+headers = {
+    'X-Shipyard-API-Key': '<api_key>',
+}
+
+response = requests.get('https://api.app.shipyardapp.com/orgs/<org_id>/voyages', headers=headers)
+```
+
+</TabItem>
+</Tabs>
+
 
 #### Response
 
@@ -230,3 +548,245 @@ Below is a reference table for the Fleet Runs CSV.
 | Vessel End Time | The time the Vessel ended |
 | Duration | The length of time the Fleet ran for |
 | Billable Runtime | The length of time the Fleet ran the customer will be billed for |
+
+### Create External File
+
+#### Request
+
+This request is used to upload a file containing the code to be executed as part of a Vessel. Note that it is a prerequisite for **Create Blueprint** and optionally **Updated Blueprint** endpoints below.
+
+<Tabs
+groupId="languages"
+defaultValue="bash"
+values={[
+{label: 'Bash', value: 'bash'},
+{label: 'Python', value: 'python'},
+]}>
+<TabItem value="bash">
+
+```bash
+curl -X POST https://api.app.shipyardapp.com/orgs/<org_id>/temporary_external_files --header "X-Shipyard-API-Key: <api_key>" -F file=@script.py
+```
+
+</TabItem>
+<TabItem value="python">
+
+```python
+import requests
+
+headers = {
+    'X-Shipyard-API-Key': '<api_key>',
+}
+
+files = {
+    'file': open('script.py', 'rb'),
+}
+
+response = requests.post(
+    'https://api.app.shipyardapp.com/orgs/<org_id>/temporary_external_files',
+    headers=headers,
+    files=files,
+)
+```
+
+</TabItem>
+</Tabs>
+
+
+As an example, the contents of `script.py` are:
+
+```python
+print('hello, world!')
+```
+
+#### Response
+
+The response is returned in JSON format.
+
+```json
+{
+	"data":{
+		"RequestID":"<request_id>",
+		"ExternalFile":"s3://production-shipyard-uploads-tmp/tmp/organizations/<org_id>/requests/<request_id>.sefv2_<file_id>"
+	}
+}
+```
+
+The request ID and external file URL will both be used in subsequent requests to the API.
+
+### Create Blueprint
+
+#### Request
+
+The request creates a new [Organization Blueprint](reference/blueprints/blueprints-overview.md) under the specified Organization. 
+
+<Tabs
+groupId="languages"
+defaultValue="bash"
+values={[
+{label: 'Bash', value: 'bash'},
+{label: 'Python', value: 'python'},
+]}>
+<TabItem value="bash">
+
+```bash
+curl -X POST https://api.app.shipyardapp.com/orgs/<org_id>/blueprints --header "X-Shipyard-API-Key: <api_key>" -d @blueprint.json
+```
+
+</TabItem>
+<TabItem value="python">
+
+```python
+import requests
+
+headers = {
+    'X-Shipyard-API-Key': '<api_key>',
+    'Content-Type': 'application/x-www-form-urlencoded',
+}
+
+blueprint_file = open('blueprint.json')
+blueprint_data = blueprint_file.read().replace('\n', '').replace('\r', '').encode()
+
+response = requests.post(
+    'https://api.app.shipyardapp.com/orgs/<org_id>/blueprints',
+    headers=headers,
+    data=blueprint_data,
+)
+```
+
+</TabItem>
+</Tabs>
+
+As an example, the contents of `blueprint.json` are:
+
+```json
+{
+    "name": "test blueprint",
+    "synopsis": "example synopsis",
+    "description": "example description",
+    "state": 3,
+    "pallet_type": 2,
+    "pallet_config": {
+        "version": "3.7",
+        "command": {
+            "program": "python3",
+            "file_to_run": "script.py"
+        },
+        "external_file": {
+            "temp": {
+                "file_name": "script.py",
+                "id": "<request_id>",
+                "url": "s3://production-shipyard-uploads-tmp/tmp/organizations/<org_id>/requests/<request_id>.sefv2_<file_id>"
+            }
+        }
+    },
+    "spec_list": [
+		{
+            "display_name": "First Input",
+            "name": "FIRST_INPUT",
+            "type": 1,
+            "required": false,
+            "placeholder": "Enter a first input",
+            "description": "A first input",
+            "default": "example_value",
+            "type_spec": {
+                "multiline": false
+            }
+        }
+	],
+    "retry_strategy": {
+        "number_of_retries": 3,
+        "ttr": 900
+    },
+    "runtime_timeout": 2700,
+    "exclude_exit_code_ranges": [
+		[1,1],
+		[3,5]
+	]
+}
+```
+
+There are several things to note regarding the `blueprint.json` payload.
+
+1. `state` value options are `1` (Disabled), `2` (Draft), and `3` (Enabled).
+2. `pallet_type` value options are `2` (Python), `3` (Bash), and `7` (Node).
+3. `program` value options are `python3`, `bash`, and `node` and should correspond with `pallet_type`.
+4. `type` for a `spec_list` object value options are `1` (String), `2` (Integer), `3` (Floating), `4` (Boolean), `5` (Date), `6` (Select), `7` (Password), `8` (External file). For `select` input types, the `type_spec` field will be an array of objects containing `name` and `value` fields and a `default` selection must be made corresponding to one of the object `name` fields.
+5. `number_of_retries` can be between `0` and `24`.
+6. `ttr` can be between `0` and `3600` in increments of `300`.
+7. `runtime_timeout` can be between `300` and `3600`.
+8. `exclude_exit_code_ranges` may contain an array of arrays each with two integers between `1` and `255` - in the example above, the exit codes `1`, `3`, `4`, and `5` are ignored.
+9. `external_file` holds a `temp` field with an object with `id` and `url` keys - these are populated using the `RequestID` and `ExternalFile` values from the **Create External File** response above in this example.
+
+#### Response
+
+The response is returned in JSON format. Below is a truncated example of the output.
+
+```json
+{
+    "data_kind": "blueprint",
+    "data": {
+        "org_id": "<org_id>",
+        "id": "<blueprint_id>",
+    ...
+```
+
+### Update Blueprint
+
+#### Request
+
+This updates an existing Blueprint and has many similarities with the **Create Blueprint** endpoint above.
+
+<Tabs
+groupId="languages"
+defaultValue="bash"
+values={[
+{label: 'Bash', value: 'bash'},
+{label: 'Python', value: 'python'},
+]}>
+<TabItem value="bash">
+
+```bash
+curl -X POST https://api.app.shipyardapp.com/orgs/<org_id>/blueprints/<blueprint_id> --header "X-Shipyard-API-Key: <api_key>" -d @blueprint_updates.json
+```
+
+</TabItem>
+<TabItem value="python">
+
+```python
+import requests
+
+headers = {
+    'X-Shipyard-API-Key': '<api_key>',
+    'Content-Type': 'application/x-www-form-urlencoded',
+}
+
+blueprint_file = open('blueprint.json')
+blueprint_data = blueprint_file.read().replace('\n', '').replace('\r', '').encode()
+
+response = requests.post(
+    'https://api.app.shipyardapp.com/orgs/<org_id>/blueprints/<blueprint_id>',
+    headers=headers,
+    data=blueprint_data,
+)
+```
+
+</TabItem>
+</Tabs>
+
+The same `blueprint.json` payload options in **Create Blueprint** maybe be used in **Update Blueprint** however `pallet_type` cannot change and the `pallet_config` field `temp` may be updated with new `id` and `url` values if a new external file has been generated via **Create External File** above.
+
+Any fields omitted from `blueprint_updates.json` will not be updated in the request. In order to update the `spec_list`, you will need to include the `id` key and value from the **Create Blueprint** response above in the relevant `spec_list` object. Any `spec_list` objects in the array that do _not_ include an `id` field will be attempted to be added as new input variables.
+
+#### Response
+
+The response is returned in JSON format. Below is a truncated example of the output.
+
+```json
+{
+    "data_kind": "blueprint",
+    "data": {
+        "org_id": "<org_id>",
+        "id": "<blueprint_id>",
+    ...
+```

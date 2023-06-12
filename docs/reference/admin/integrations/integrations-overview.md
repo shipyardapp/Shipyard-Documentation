@@ -6,6 +6,7 @@ description: Information about the 3rd party integrations Shipyard has.
 keywords:
   - integration
 ---
+import DocCardList from '@theme/DocCardList';
 
 # Integrations
 
@@ -15,7 +16,7 @@ The integrations tab shows a list of all the external services you can integrate
 
 Current integrations include:
 
-- [GitHub](github-integration.md)
+<DocCardList />
 
 For a list of services for which you can build a solution using a low-code template, see [Blueprint Library](../../blueprints/blueprint-library/blueprint-library-overview.md).
 

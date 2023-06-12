@@ -2,6 +2,7 @@
 id: dbt-core-set-up-data-warehouse
 title: dbt Core Tutorial Part 1 - Setting Up Your Data Warehouse
 sidebar_label: Part 1 - Setting Up Your Data Warehouse
+sidebar_position: 1
 hide_title: true
 description: Set up data in your data warehouse of choice (Snowflake, Databricks, BigQuery, or Redshift) to begin using dbt Core. Part one of a three part series on running dbt Core in the cloud.
 keywords:

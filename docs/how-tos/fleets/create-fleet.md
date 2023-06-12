@@ -33,5 +33,8 @@ If you want multiple [Vessels](../../reference/vessels.md) to work together for 
 
 For more information, read up on our [Visual Fleet Builder](../../reference/fleets/fleets-overview.md#visual-editor) or our [YAML Editor](../../reference/fleets/fleets-overview.md#yaml-editor).
 
+<div dangerouslySetInnerHTML={{ __html: `<div style="position: relative; padding-bottom: calc(66.66666666666666% + 41px); height: 0;"><iframe src="https://demo.arcade.software/dMZN0q6FjLV79hqwLVwX?embed" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;color-scheme: light;" title="How to Create a Fleet"></iframe></div>` }} />
+
+
 :::tip success
 You've now successfully created a Fleet.

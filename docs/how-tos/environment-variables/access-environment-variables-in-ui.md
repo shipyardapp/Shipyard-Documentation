@@ -27,6 +27,8 @@ For this example, our environment variable will be named `OPERATOR_A`.
 2. In any input field, other than code, write `${OPERATOR_A}`.
 3. Save the Vessel.
 
+<div dangerouslySetInnerHTML={{ __html: `<div style="position: relative; padding-bottom: calc(61.916666666666664% + 41px); height: 0;"><iframe src="https://demo.arcade.software/bIvB2NzGSZ3lGuSPkEar?embed" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;color-scheme: light;" title="How to Access Environment Variables in the UI"></iframe></div>
+` }} />
 
 :::tip success
 You've now successfully accessed an environment variable in the UI.

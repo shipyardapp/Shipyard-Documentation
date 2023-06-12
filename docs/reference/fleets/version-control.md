@@ -9,7 +9,7 @@ keywords:
   - versioning
 ---
 
-# Version Control Overview
+# Version Control
 
 ## Definition
 

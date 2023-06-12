@@ -1,0 +1,6 @@
+label: Blueprints
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: blueprints-overview

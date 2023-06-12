@@ -1,5 +1,6 @@
 ---
 id: VENDOR-authorization
+sidebar_position: 1
 title: VENDOR Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization

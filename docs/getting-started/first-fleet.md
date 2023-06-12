@@ -3,6 +3,7 @@ id: first-fleet
 title: Building Your First Fleet with Low-Code Library Blueprints
 hide_title: true
 sidebar_label: Building your First Fleet with Library Blueprints
+sidebar_position: 2
 description: In-depth tutorial to walk you through the steps needed to build your first Fleet with low-code Library Blueprints.
 keywords:
   - fleet

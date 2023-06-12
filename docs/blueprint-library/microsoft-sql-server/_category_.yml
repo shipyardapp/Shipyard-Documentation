@@ -1,0 +1,7 @@
+
+label: Microsoft SQL Server
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: microsoft-sql-server-overview

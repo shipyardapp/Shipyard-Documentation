@@ -5,28 +5,27 @@ hide_title: true
 sidebar_label: Overview
 description: Information about Shipyard's low-code SFTP templates.
 keywords:
-  - SFTP
-  - blueprint
-  - template
-  - overview
+- sftp
+- blueprint
+- template
+- overview
 ---
 
 # SFTP Blueprints Overview
 
 Shipyard's low-code SFTP blueprints allow users to connect their data in SFTP to the rest of their modern data stack.
 
+
 ## How to Use
 For information on how to set up these Blueprints successfully, please read through the [SFTP Authorization guide](sftp-authorization.md).
 
+
 ## Available Blueprints
-Shipyard currently has the following Blueprints readily available:
+Shipyard currently has the following Blueprints readily available: 
+- [Download Files to Shipyard](sftp-download-files.md)
+- [Upload Files from Shipyard](sftp-upload-files.md)
+- [Move or Rename Files](sftp-move-or-rename-files.md)
 - [Delete Files](sftp-delete-files.md)
-- [Download Files](sftp-download-files.md)
-- [Move Or Rename Files](sftp-move-or-rename-files.md)
-- [Upload Files](sftp-upload-files.md)
 
 ## Open Source Code
-The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/sftp-blueprints), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.
-
-## Helpful SFTP Links
-- [Paramiko Documentation](http://docs.paramiko.org/en/stable/) 
+The code that powers these Blueprints is [available on our Github](https://www.shipyardapp.com/docs/blueprint-library/sftp), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.

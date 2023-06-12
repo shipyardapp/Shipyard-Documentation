@@ -17,10 +17,13 @@ If you find yourself needing to change [timezones](../../reference/other-functio
 ## Steps
 
 1. On the sidebar, click **Projects** then **View All Projects**.
-2. Click on the individual Project that you want to edit.
-3. Click the **Settings** tab at the top.
-4. Edit your Project name or change your project's timeone.
-5. Click the **Save** button at the bottom of the page.
+2. Find the individual Project that you want to edit and click the **cog** next to the Project name.
+3. Edit your Project name or change your project's timezone.
+4. Click the **Save** button at the bottom of the page.
+
+<div dangerouslySetInnerHTML={{ __html: `<div style="position: relative; padding-bottom: calc(66.66666666666666% + 41px); height: 0;"><iframe src="https://demo.arcade.software/sxsmZ3PzPR948g3IipsQ?embed" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;color-scheme: light;" title="How to Edit a Project"></iframe></div>` }} />
+
+
 
 :::tip success
 You've now successfully edited a project.

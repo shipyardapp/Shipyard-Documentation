@@ -72,7 +72,6 @@ Building a Vessel with a Blueprint allows you to run scripts without needing to 
 - [How to Build a New Vessel using a Code Blueprint](../how-tos/vessels/build-vessel-code.md)
 - [How to Build a New Vessel using a Custom Blueprint](../how-tos/vessels/build-vessel-blueprint.md)
 - [How to Duplicate a Vessel](../how-tos/vessels/duplicate-vessel.md)
-- [How to Search for Vessels](../how-tos/vessels/search-for-vessel.md)
 - [How to Delete a Vessel](../how-tos/vessels/remove-vessel.md)
 - [How to Edit a Vessel](../how-tos/vessels/edit-vessel.md)
 - [How to Assess Vessel Performance](../how-tos/vessels/assess-vessel-performance.md)

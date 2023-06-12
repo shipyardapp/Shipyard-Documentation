@@ -20,7 +20,16 @@ import TabItem from '@theme/TabItem';
 
 On the Trigger tab for every Fleet, you are provided with a section for creating and managing Webhook Triggers.
 
-Webhook Triggers enable you to programmatically execute a Fleet in Shipyard by running a POST request from any service. When you run the POST request, your Fleet will be scheduled to run immediately.
+Webhook Triggers enable you to programmatically execute a Fleet in Shipyard by running a POST request from any service. When you run the POST request, your Fleet will be scheduled to run immediately. You can also use webhooks to dynamically pass data to your Vessels at runtime.
+
+Webhook triggers differ from [API triggers](api-triggers.md) in the following ways:
+- Webhook triggers will work without authentication for anyone that has access to the URL.
+- Webhooks can accept ANY data, while API triggers require a specific JSON payload.
+- Data received by the webhook has to be interpreted by custom code that you write, so it can't be used for Blueprint Library inputs.
+
+:::tip Pro Tip
+Check out our [tutorial](../../tutorials/referencing-fleet-webhook-parameters.md) to better understand how to pass data using Webhook Parameters!
+:::
 
 When a webhook has been created, you will be given 3 options:
 
@@ -28,9 +37,6 @@ When a webhook has been created, you will be given 3 options:
 - Replace the current webhook URL with a new webhook URL
 - Remove the webhook URL from existence
 
-:::tip Pro Tip
-You can use webhooks to dynamically pass data to your Vessels at runtime. Check out our [tutorial](../../tutorials/referencing-fleet-webhook-parameters.md) to better understand this functionality.
-:::
 
 ## Webhook Status Codes
 

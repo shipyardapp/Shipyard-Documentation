@@ -31,7 +31,7 @@ For more information, read [our blog post](https://www.shipyardapp.com/blog/gett
 For the sake of the this tutorial, we suggest starting off by building a Vessel inside of a Project called "Playground". You can follow [**this tutorial** ](../../getting-started/first-project.md) to set that up.
 :::
 
-Download the [following file](../../.gitbook/assets/great_expectations_demo.zip) to your computer, without changing the file name. It's a .zip containing a single python file and a Great Expectations directory structure with JSON expectation suites and a YML setup file. We'll use this throughout the tutorial.
+Download the [following file](https://drive.google.com/file/d/1eQPfrCMHYGpRH1mgqFbbugra1gtR57IR/view?usp=share_link) to your computer, without changing the file name. It's a .zip containing a single python file and a Great Expectations directory structure with JSON expectation suites and a YML setup file. We'll use this throughout the tutorial.
 
 Feel free to peruse this script beforehand so you understand everything that it's doing. The main script is accomplishing the following things:
 
