@@ -28,11 +28,6 @@ module.exports = {
 			async: false,
 			"data-cookieyes": "cookieyes-analytics",
 		},
-		{
-			src: BASE_URL + "js/clearbit.js",
-			async: false,
-			"data-cookieyes": "cookieyes-analytics",
-		},
 	],
 	themeConfig: {
 		algolia:
