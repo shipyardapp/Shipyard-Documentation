@@ -18,14 +18,15 @@ keywords:
 Logs include historical records of how a Vessel or Fleet ran in Shipyard at a specific point in time and upcoming scheduled runs. They can be referenced by their UUIDv4 and contain metadata pertaining to one individual voyage or run.
 
 A log is created under the following conditions:
--  As soon as the **Run Now** button is clicked, resulting in an [On-Demand Trigger](../triggers/on-demand-triggers.md)
--  As soon as the [scheduler](../triggers/schedule-triggers.md#timing-of-scheduling) runs
--  As soon an external service calls a [Webhook](../triggers/webhook-triggers.md)
+-  When the **Run Now** button is clicked, resulting in an [On-Demand Trigger](../triggers/on-demand-triggers.md)
+-  When the [scheduler](../triggers/schedule-triggers.md#timing-of-scheduling) runs
+-  When an external service or script calls a [Webhook](../triggers/webhook-triggers.md)
+-  When an external service or script calls our [Trigger Fleet Runs API endpoint](../api.md#trigger-fleet-runs)
 
 ### Log Retention
 
 Log data is routinely deleted from our system to decrease storage costs. The amount of time we'll hold onto your logs is determined by the pricing tier that you're currently subscribed to. Currently, we keep logs around for a minimum of 90 days.
-- Developer Plan has access to 7 days of logs.
+- Developer Plan has access to 72 hours of logs.
 - Team Plan has access to 30 days of logs.
 - Enterprise plan has access to a custom amount of logs.
 
@@ -37,7 +38,7 @@ The data contained within a Log differs slightly for Vessels and Fleets. Explore
 - [Fleet Logs](fleet-logs.md)
 
 :::tip Pro Tip
-You can export your logs with our [API endpoint](http://localhost:3000/docs/reference/api/#list-voyages). You can also use our [Library Blueprint](http://localhost:3000/docs/blueprint-library/shipyard-api/shipyard-api-export-logs/) to accomplish the same thing.
+You can export your logs with our [List Voyages API endpoint](../api.md#list-voyages). You can also use our [Library Blueprint](../../blueprint-library/shipyard-api/shipyard-api-overview.md) to accomplish the same thing.
 :::
 
 ## Additional Notes
