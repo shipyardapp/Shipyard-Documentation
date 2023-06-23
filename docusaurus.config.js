@@ -14,9 +14,12 @@ module.exports = {
 	trailingSlash: true,
 	scripts: [
 		{
-			src: BASE_URL + "js/segment.js",
+			src: BASE_URL + "js/onetrust.js",
 			async: false,
-			"data-cookieyes": "cookieyes-analytics",
+		},
+		{
+			src: BASE_URL + "js/onetrust-segment.js",
+			async: false,
 		},
 	],
 	themeConfig: {
@@ -137,11 +140,6 @@ module.exports = {
 					editUrl:
 						"https://github.com/shipyardapp/Shipyard-Documentation/edit/main/",
 				},
-				// Removing this in favor of manually inserting the script with cookieyes permissions.
-				// googleAnalytics: {
-				// 	trackingID: "UA-142749850-1",
-				// 	anonymizeIP: true,
-				// },
 				blog: {
 					showReadingTime: true,
 					// Please change this to your repo.
