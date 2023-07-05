@@ -487,7 +487,7 @@ After a successful Fleet run trigger, the Fleet will run with the environment va
 
 #### Request
 
-This request returns all of the Voyages in the requested Organization.
+This request returns 3 days of the Voyages in the requested Organization.
 
 <Tabs
 groupId="languages"
