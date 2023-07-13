@@ -49,7 +49,7 @@ All of the following panels are optional.
 2. Update the [guardrails](../../reference/guardrails.md) if you want your Vessel to retry in the event of an error.
 3. Click **Save & Finish** once you're done.
 
-<div dangerouslySetInnerHTML={{ __html: `<div style="position: relative; padding-bottom: calc(66.66666666666666% + 41px); height: 0;"><iframe src="https://demo.arcade.software/Pg2h93kxOq91H4enVGva?embed" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;color-scheme: light;" title="How to Build a New Vessel using a Custom Blueprint"></iframe></div>` }} />
+<div dangerouslySetInnerHTML={{ __html: `<div style="position: relative; padding-bottom: calc(66.66666666666666% + 41px); height: 0;"><iframe src="https://demo.arcade.software/JuCQfLxrbdut0HtZd8ZG?embed" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;color-scheme: light;" title="How to Build a New Vessel using a Custom Blueprint"></iframe></div>` }} />
 
 :::tip success
 You've now successfully built a Vessel with a Blueprint as part of a Fleet.
