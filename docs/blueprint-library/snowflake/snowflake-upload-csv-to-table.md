@@ -36,9 +36,9 @@ In all instances, if the table name does not already exist, a new table will be 
 
 | Name | Reference | Type | Required | Default | Options | Description |
 |:-----|:----------|:-----|:---------|:--------|:--------|:------------|
-| Username | SNOWFLAKE_USERNAME  | Alphanumeric |:white_check_mark: | - | - |  |
-| Password | SNOWFLAKE_PASSWORD  | Password |:white_check_mark: | - | - | Password for the provided username |
-| Account Name | SNOWFLAKE_ACCOUNT  | Alphanumeric |:white_check_mark: | - | - |  |
+| Username | SNOWFLAKE_USERNAME  | Alphanumeric |:white_check_mark: | - | - | The Snowflake Username that has access to the table, schema, and warehouse that you want to use. |
+| Password | SNOWFLAKE_PASSWORD  | Password |:heavy_minus_sign: | - | - | Password for the provided username |
+| Account Name | SNOWFLAKE_ACCOUNT  | Alphanumeric |:white_check_mark: | - | - | Typically found in the URL you use to access Snowflake, before `.snowflakecomputing.com`. |
 | Warehouse | SNOWFLAKE_WAREHOUSE  | Alphanumeric |:heavy_minus_sign: | - | - |  |
 | Database | SNOWFLAKE_DATABASE  | Alphanumeric |:white_check_mark: | - | - |  |
 | Schema | SNOWFLAKE_SCHEMA  | Alphanumeric |:heavy_minus_sign: | - | - |  |
@@ -48,6 +48,9 @@ In all instances, if the table name does not already exist, a new table will be 
 | Table Name | SNOWFLAKE_TABLE_NAME  | Alphanumeric |:white_check_mark: | - | - | Name of the table where you want data inserted |
 | Insertion Method | SNOWFLAKE_INSERT_METHOD  | Select |:white_check_mark: | `append` | Append Data: `append`<br></br><br></br>Replace Data: `replace`<br></br><br></br>Add Data Only if Table is Empty: `fail`<br></br><br></br> | Determines how the data in your file will be added to the table |
 | Snowflake Data Types | SNOWFLAKE_DATA_TYPES  | Alphanumeric |:heavy_minus_sign: | - | - | The option to declare the Snowflake datatypes. The input needs to be similar to a list of lists, which will be used to form a CREATE OR REPLACE TABLE statement. For more information on Snowflake data types, visit https://docs.snowflake.com/en/sql-reference/intro-summary-data-types.html |
+| User Role | SNOWFLAKE_USER_ROLE  | Alphanumeric |:heavy_minus_sign: | - | - | The optional role for the database user |
+| Private Key | SNOWFLAKE_PRIVATE_KEY  | Alphanumeric |:heavy_minus_sign: | - | - | The optional private key to use for authentication |
+| Private Key Passphrase | SNOWFLAKE_PRIVATE_KEY_PASSPHRASE  | Password |:heavy_minus_sign: | - | - | The passphrase for the private key file. Is required only if authenticating with a private key |
 
 
 ## YAML

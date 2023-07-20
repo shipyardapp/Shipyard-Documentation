@@ -21,13 +21,16 @@ This Blueprint is limited to executing a single query. You cannot run multiple q
 
 | Name | Reference | Type | Required | Default | Options | Description |
 |:-----|:----------|:-----|:---------|:--------|:--------|:------------|
-| Username | SNOWFLAKE_USERNAME  | Alphanumeric |:white_check_mark: | - | - | The Snowflake Username that has access to the table, schema, and warehouse that you want to execute a query against. |
-| Password | SNOWFLAKE_PASSWORD  | Password |:white_check_mark: | - | - | The password associated with your Username. |
+| Username | SNOWFLAKE_USERNAME  | Alphanumeric |:white_check_mark: | - | - | The Snowflake Username that has access to the table, schema, and warehouse that you want to use. |
+| Password | SNOWFLAKE_PASSWORD  | Password |:heavy_minus_sign: | - | - | The password associated with your Username. |
 | Account Name | SNOWFLAKE_ACCOUNT  | Alphanumeric |:white_check_mark: | - | - | Typically found in the URL you use to access Snowflake, before `.snowflakecomputing.com` |
 | Warehouse | SNOWFLAKE_WAREHOUSE  | Alphanumeric |:heavy_minus_sign: | - | - | If left blank, will use the default warehouse associated with the provided username. |
 | Database | SNOWFLAKE_DATABASE  | Alphanumeric |:white_check_mark: | - | - | The name of the Database that you want to run a query against. |
 | Schema | SNOWFLAKE_SCHEMA  | Alphanumeric |:heavy_minus_sign: | - | - | The name of the Schema you want to run a query against. If left blank, it's expected that your query will include the schema in it. |
 | Query | SNOWFLAKE_QUERY  | Alphanumeric |:white_check_mark: | - | - | The contents of the SQL query that you want to run. Does not support running multiple queries separated by `;` |
+| User Role | SNOWFLAKE_USER_ROLE  | Alphanumeric |:heavy_minus_sign: | - | - | The optional role for the database user |
+| Private Key | SNOWFLAKE_PRIVATE_KEY  | Alphanumeric |:heavy_minus_sign: | - | - | The optional private key to use for authentication |
+| Private Key Passphrase | SNOWFLAKE_PRIVATE_KEY_PASSPHRASE  | Password |:heavy_minus_sign: | - | - | The passphrase for the private key file. Is required only if authenticating with a private key |
 
 
 ## YAML
