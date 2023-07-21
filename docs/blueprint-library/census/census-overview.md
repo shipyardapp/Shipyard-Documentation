@@ -26,4 +26,4 @@ Shipyard currently has the following Blueprints readily available:
 - [Check Sync Status](census-check-sync-status.md)
 
 ## Open Source Code
-The code that powers these Blueprints is [available on our Github](https://docs.getcensus.com/basics/triggering-syncs#sync-trigger-api), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.
+The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/census-blueprints), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.

@@ -21,4 +21,4 @@ Shipyard currently has the following Blueprints readily available:
 - [Download File from URL to Shipyard](http-download-file-from-url.md)
 
 ## Open Source Code
-The code that powers these Blueprints is [available on our Github](https://docs.shipyardapp.com/blueprint-library/http), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.
+The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/httprequest-blueprints), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.

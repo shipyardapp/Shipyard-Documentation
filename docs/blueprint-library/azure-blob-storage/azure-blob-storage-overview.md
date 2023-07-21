@@ -28,4 +28,4 @@ Shipyard currently has the following Blueprints readily available:
 - [Remove Files](azure-blob-storage-remove-files.md)
 
 ## Open Source Code
-The code that powers these Blueprints is [available on our Github](https://www.shipyardapp.com/docs/blueprint-library/azure-blob-storage), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.
+The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/azurestorage-blueprints), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.
