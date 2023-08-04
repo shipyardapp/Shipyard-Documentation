@@ -15,6 +15,8 @@ keywords:
 ## Overview
 Send a message to anyone in the world using email.
 
+To have Shipyard dynamically parse and output the contents of a file, you can include the filename in this format: `{{text:file.txt}}`
+
 
 ## Variables
 
@@ -31,7 +33,7 @@ Send a message to anyone in the world using email.
 | CC | EMAIL_CC  | Alphanumeric |:heavy_minus_sign: | - | - | The email(s) that you want your message to be carbon copied (CCed) to. Can be comma-separated to include multiple email addresses. |
 | BCC | EMAIL_BCC  | Alphanumeric |:heavy_minus_sign: | - | - | The email(s) that you want to be blind carbon copied (BCCed) to. Can be comma-separated to include multiple email addresses. Emails in this field will receive the email, but will not have their email exposed to all other recipients. |
 | Subject | EMAIL_SUBJECT  | Alphanumeric |:heavy_minus_sign: | - | - | The subject of the email that you want to send. |
-| Message | EMAIL_MESSAGE  | Alphanumeric |:white_check_mark: | - | - | The body of the email, containing your main message. This field supports plain text as well as HTML. |
+| Message | EMAIL_MESSAGE  | Alphanumeric |:white_check_mark: | - | - | The body of the email, containing your main message. This field supports plain text as well as HTML. To have Shipyard dynamically parse and output the contents of a file, you can include the filename in this format: {{text:file.txt}} |
 | Include Shipyard Footer? | EMAIL_INCLUDE_SHIPYARD_FOOTER  | Boolean |:white_check_mark: | `True` | - | Determines if a footer should be sent with the email that links back to the originating Vessel or Fleet. |
 
 
@@ -39,26 +41,27 @@ Send a message to anyone in the world using email.
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: Email - Send Message
-  inputs:
-    EMAIL_SEND_METHOD: tls ## REQUIRED
-    EMAIL_SMTP_HOST: null ## REQUIRED
-    EMAIL_SMTP_PORT: null ## REQUIRED
-    EMAIL_USERNAME: null ## REQUIRED
-    EMAIL_PASSWORD: hlgyecgskabctidf ## REQUIRED
-    EMAIL_SENDER_ADDRESS: null ## REQUIRED
-    EMAIL_SENDER_NAME: null 
-    EMAIL_TO: null 
-    EMAIL_CC: null 
-    EMAIL_BCC: null 
-    EMAIL_SUBJECT: null 
-    EMAIL_MESSAGE: null ## REQUIRED
-    EMAIL_INCLUDE_SHIPYARD_FOOTER: true ## REQUIRED
-  type: BLUEPRINT
+    blueprint: Email - Send Message
+    inputs:
+        EMAIL_SEND_METHOD: tls  ## REQUIRED
+        EMAIL_SMTP_HOST: null ## REQUIRED
+        EMAIL_SMTP_PORT: null ## REQUIRED
+        EMAIL_USERNAME: null ## REQUIRED
+        EMAIL_PASSWORD: hlgyecgskabctidf ## REQUIRED
+        EMAIL_SENDER_ADDRESS: null ## REQUIRED
+        EMAIL_SENDER_NAME: null
+        EMAIL_TO: null
+        EMAIL_CC: null
+        EMAIL_BCC: null
+        EMAIL_SUBJECT: null
+        EMAIL_MESSAGE: null  ## REQUIRED
+        EMAIL_INCLUDE_SHIPYARD_FOOTER: true ## REQUIRED
+    type: BLUEPRINT
 guardrails:
-  retry_count: 1
-  retry_wait: 0s
-  runtime_cutoff: 1h0m0s
-  exclude_exit_code_ranges:
-    - "0"
+    retry_count: 1
+    retry_wait: 0h0m0s
+    runtime_cutoff: 1h0m0s
+    exclude_exit_code_ranges:
+    -   '0'
+
 ```
