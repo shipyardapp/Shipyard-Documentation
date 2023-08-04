@@ -15,6 +15,9 @@ keywords:
 ## Overview
 Send a message to anyone in the world using email, attaching one or more files.
 
+To have Shipyard dynamically parse and output the contents of a file, you can include the filename in this format: `{{text:file.txt}}`
+
+
 To upload multiple files, use [Regex Match Type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/).
 
 Due to email file size constraints, when the the total file size >10MB, Shipyard will automatically zip the files under the name "Archive.zip".
@@ -41,7 +44,7 @@ Due to email file size constraints, when the the total file size >10MB, Shipyard
 | CC | EMAIL_CC  | Alphanumeric |:heavy_minus_sign: | - | - | The email(s) that you want your message to be carbon copied (CCed) to. Can be comma-separated to include multiple email addresses. |
 | BCC | EMAIL_BCC  | Alphanumeric |:heavy_minus_sign: | - | - | The email(s) that you want to be blind carbon copied (BCCed) to. Can be comma-separated to include multiple email addresses. Emails in this field will receive the email, but will not have their email exposed to all other recipients. |
 | Subject | EMAIL_SUBJECT  | Alphanumeric |:heavy_minus_sign: | - | - | The subject of the email that you want to send. |
-| Message | EMAIL_MESSAGE  | Alphanumeric |:white_check_mark: | - | - | The body of the email, containing your main message. This field supports plain text as well as HTML. |
+| Message | EMAIL_MESSAGE  | Alphanumeric |:white_check_mark: | - | - | The body of the email, containing your main message. This field supports plain text as well as HTML. To have Shipyard dynamically parse and output the contents of a file, you can include the filename in this format: {{text:file.txt}} |
 | Send Messages Only When | EMAIL_CONDITIONAL_SEND  | Select |:white_check_mark: | `file_exists` | File(s) Exist: `file_exists`<br></br><br></br>File(s) Don't Exist: `file_dne`<br></br><br></br> | Determines what condition needs to be met for a message to send.  File(s) Exist - Send the message only if a file can be found using the provided folder/filename.ext combination.  File(s) Don't Exist - Send the message only if a file cannot found using the provided folder/filename.ext combination. |
 | File Name Match Type | EMAIL_SOURCE_FILE_NAME_MATCH_TYPE  | Select |:white_check_mark: | `exact_match` | Regex: `regex_match`<br></br><br></br>Exact: `exact_match`<br></br><br></br> | Determines if the text in "File Name" will look for one file with exact match, or multiple files using regex. |
 | File Name | EMAIL_SOURCE_FILE_NAME  | Alphanumeric |:heavy_minus_sign: | - | - | Name of the target file on Shipyard. Can be regex if "Match Type" is set accordingly |
@@ -53,30 +56,31 @@ Due to email file size constraints, when the the total file size >10MB, Shipyard
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: Email - Send Message Conditionally
-  inputs:
-    EMAIL_SEND_METHOD: tls ## REQUIRED
-    EMAIL_SMTP_HOST: null ## REQUIRED
-    EMAIL_SMTP_PORT: null ## REQUIRED
-    EMAIL_USERNAME: null ## REQUIRED
-    EMAIL_PASSWORD: null ## REQUIRED
-    EMAIL_SENDER_ADDRESS: null ## REQUIRED
-    EMAIL_SENDER_NAME: null 
-    EMAIL_TO: null 
-    EMAIL_CC: null 
-    EMAIL_BCC: null 
-    EMAIL_SUBJECT: null 
-    EMAIL_MESSAGE: null ## REQUIRED
-    EMAIL_CONDITIONAL_SEND: file_exists ## REQUIRED
-    EMAIL_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
-    EMAIL_SOURCE_FILE_NAME: null 
-    EMAIL_SOURCE_FOLDER_NAME: null 
-    EMAIL_INCLUDE_SHIPYARD_FOOTER: true ## REQUIRED
-  type: BLUEPRINT
+    blueprint: Email - Send Message Conditionally
+    inputs:
+        EMAIL_SEND_METHOD: tls  ## REQUIRED
+        EMAIL_SMTP_HOST: null ## REQUIRED
+        EMAIL_SMTP_PORT: null ## REQUIRED
+        EMAIL_USERNAME: null ## REQUIRED
+        EMAIL_PASSWORD: null ## REQUIRED
+        EMAIL_SENDER_ADDRESS: null ## REQUIRED
+        EMAIL_SENDER_NAME: null
+        EMAIL_TO: null
+        EMAIL_CC: null
+        EMAIL_BCC: null
+        EMAIL_SUBJECT: null
+        EMAIL_MESSAGE: null  ## REQUIRED
+        EMAIL_CONDITIONAL_SEND: file_exists ## REQUIRED
+        EMAIL_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
+        EMAIL_SOURCE_FILE_NAME: null
+        EMAIL_SOURCE_FOLDER_NAME: null
+        EMAIL_INCLUDE_SHIPYARD_FOOTER: true  ## REQUIRED
+    type: BLUEPRINT
 guardrails:
-  retry_count: 1
-  retry_wait: 0s
-  runtime_cutoff: 1h0m0s
-  exclude_exit_code_ranges:
-    - "0"
+    retry_count: 1
+    retry_wait: 0h0m0s
+    runtime_cutoff: 1h0m0s
+    exclude_exit_code_ranges:
+    -   '0'
+
 ```
