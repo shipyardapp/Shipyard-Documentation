@@ -42,5 +42,5 @@ Staying inline with programming best practices, we recommend that all of your en
 
 1. Previously stored environment variables can never be viewed.
 2. Leaving an existing Name's value as blank will result in the value not updating. If you need to set a value to be blank, you will need to delete it, save the Vessel, then recreate the environment variable with a blank value.
-3. Because Vessels are containerized, the environment variables you set will only be available for that Vessel.
+3. Because Vessels are containerized, environment variables you set cannot be shared across a Fleet and will only be available for the Vessel where they are set.
 
