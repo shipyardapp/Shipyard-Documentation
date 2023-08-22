@@ -24,7 +24,7 @@ For information on how to set up these Blueprints successfully, please read thro
 Shipyard currently has the following Blueprints readily available: 
 - [Download Logs and Artifacts to Shipyard](dbt-cloud-download-logs-and-artifacts.md)
 - [Execute Job and Download Results to Shipyard](dbt-cloud-execute-job-and-download-results.md)
-- [Execute Job](dbt-cloud-execute-job.md)
+- [Trigger Job](dbt-cloud-trigger-job.md)
 - [Check Run Status](dbt-cloud-check-run-status.md)
 
 ## Open Source Code
