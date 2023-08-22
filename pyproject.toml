@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "sanity-loader"
+version = "0.1.0"
+description = "A collection of helper clients and scripts for Shipyard Development"
+authors = ["wrp801 <wespoulsen@gmail.com>"]
+readme = "README.md"
+packages = [{include = "sanity_loader"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+nanoid = "^2.0.0"
+requests = "2.31"
+pyyaml = "^6.0.1"
+pandas = "^2.0.3"
+ruamel-yaml = "^0.17.32"
+ndjson = "^0.3.1"
+js2py = "^0.74"
+pygithub = "^1.59.1"
+
+
+[tool.poetry.scripts]
+sanship = "sanity_loader.cli:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
