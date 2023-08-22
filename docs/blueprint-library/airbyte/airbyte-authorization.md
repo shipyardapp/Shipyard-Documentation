@@ -49,4 +49,3 @@ In order to get started with the Airbyte Blueprints, you will need an API token 
   "jobType": "sync"
 }
 ```
-
