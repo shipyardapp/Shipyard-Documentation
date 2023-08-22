@@ -1,0 +1,210 @@
+[
+    {
+        "display_name": "Bucket Name",
+        "name": "S3_BUCKET_NAME",
+        "default": null,
+        "type": 1,
+        "required": true,
+        "description": "Name of the S3 bucket to upload the file(s) to.",
+        "type_spec": {
+            "multiline": false
+        }
+    },
+    {
+        "display_name": "Shipyard Folder Name",
+        "name": "S3_SOURCE_FOLDER_NAME",
+        "default": null,
+        "type": 1,
+        "required": false,
+        "description": "Name of the local folder on Shipyard to upload the target file from. If left blank, will look in the home directory.",
+        "type_spec": {
+            "multiline": false
+        }
+    },
+    {
+        "display_name": "Shipyard File Name Match Type",
+        "name": "S3_SOURCE_FILE_NAME_MATCH_TYPE",
+        "default": "exact_match",
+        "type": 6,
+        "required": true,
+        "description": "Determines if the text in \"Local File Name\" will look for one file with exact match, or multiple files using regex.",
+        "type_spec": [
+            {
+                "name": "Exact Match",
+                "value": "exact_match"
+            },
+            {
+                "name": "Regex Match",
+                "value": "regex_match"
+            }
+        ]
+    },
+    {
+        "display_name": "Shipyard File Name",
+        "name": "S3_SOURCE_FILE_NAME",
+        "default": null,
+        "type": 1,
+        "required": true,
+        "description": "Name of the target file on Shipyard. Can be regex if \"Match Type\" is set accordingly",
+        "type_spec": {
+            "multiline": false
+        }
+    },
+    {
+        "display_name": "S3 Folder Name",
+        "name": "S3_DESTINATION_FOLDER_NAME",
+        "default": null,
+        "type": 1,
+        "required": false,
+        "description": "Folder in the S3 bucket to upload the file(s) to. If left blank, will upload to the root directory.",
+        "type_spec": {
+            "multiline": false
+        }
+    },
+    {
+        "display_name": "S3 File Name",
+        "name": "S3_DESTINATION_FILE_NAME",
+        "default": null,
+        "type": 1,
+        "required": false,
+        "description": "What to name the file(s) being uploaded. If left blank, defaults to the original file name(s).",
+        "type_spec": {
+            "multiline": false
+        }
+    },
+    {
+        "display_name": "Access Key ID",
+        "name": "S3_AWS_ACCESS_KEY_ID",
+        "default": null,
+        "type": 7,
+        "required": true,
+        "description": "The access key ID for programmatic IAM user used to download the file. See Authorization documentation for more information.",
+        "type_spec": {
+            "multiline": false
+        }
+    },
+    {
+        "display_name": "Secret Access Key",
+        "name": "S3_AWS_SECRET_ACCESS_KEY",
+        "default": null,
+        "type": 7,
+        "required": true,
+        "description": "The secret access key for programmatic IAM user used to download the file. See Authorization documentation for more information.",
+        "type_spec": {
+            "multiline": false
+        }
+    },
+    {
+        "display_name": "Region",
+        "name": "S3_AWS_DEFAULT_REGION",
+        "default": "us-east-2",
+        "type": 6,
+        "required": true,
+        "description": "The AWS region for the S3 bucket and IAM user.",
+        "type_spec": [
+            {
+                "name": "us-east-2",
+                "value": "us-east-2"
+            },
+            {
+                "name": "us-east-1",
+                "value": "us-east-1"
+            },
+            {
+                "name": "us-west-1",
+                "value": "us-west-1"
+            },
+            {
+                "name": "us-west-2",
+                "value": "us-west-2"
+            },
+            {
+                "name": "af-south-1",
+                "value": "af-south-1"
+            },
+            {
+                "name": "ap-east-1",
+                "value": "ap-east-1"
+            },
+            {
+                "name": "ap-south-1",
+                "value": "ap-south-1"
+            },
+            {
+                "name": "ap-northeast-3",
+                "value": "ap-northeast-3"
+            },
+            {
+                "name": "ap-northeast-2",
+                "value": "ap-northeast-2"
+            },
+            {
+                "name": "ap-southeast-1",
+                "value": "ap-southeast-1"
+            },
+            {
+                "name": "ap-southeast-2",
+                "value": "ap-southeast-2"
+            },
+            {
+                "name": "ap-northeast-1",
+                "value": "ap-northeast-1"
+            },
+            {
+                "name": "ca-central-1",
+                "value": "ca-central-1"
+            },
+            {
+                "name": "cn-north-1",
+                "value": "cn-north-1"
+            },
+            {
+                "name": "cn-northwest-1",
+                "value": "cn-northwest-1"
+            },
+            {
+                "name": "eu-central-1",
+                "value": "eu-central-1"
+            },
+            {
+                "name": "eu-west-1",
+                "value": "eu-west-1"
+            },
+            {
+                "name": "eu-west-2",
+                "value": "eu-west-2"
+            },
+            {
+                "name": "eu-south-1",
+                "value": "eu-south-1"
+            },
+            {
+                "name": "eu-west-3",
+                "value": "eu-west-3"
+            },
+            {
+                "name": "eu-north-1",
+                "value": "eu-north-1"
+            },
+            {
+                "name": "sa-east-1",
+                "value": "sa-east-1"
+            },
+            {
+                "name": "me-south-1",
+                "value": "me-south-1"
+            }
+        ]
+    },
+    {
+        "display_name": "Extra Variables",
+        "name": "S3_EXTRA_ARGS",
+        "default": "{}",
+        "type": 1,
+        "required": false,
+        "description": "Extra arguments that may be passed to the S3 operation.",
+        "type_spec": {
+            "multiline": false
+        }
+    }
+]
