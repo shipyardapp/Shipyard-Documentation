@@ -1,0 +1,41 @@
+Thoughtspot - Download Search Results to CSV -> Thoughtspot - Download Search Results to CSV to Shipyard
+Airtable - Download Table or View to CSV -> Airtable - Download Table or View to CSV to Shipyard
+Amazon S3 - Download Files -> Amazon S3 - Download Files to Shipyard
+Amazon S3 - Upload Files -> Amazon S3 - Upload Files from Shipyard
+Azure Blob Storage - Upload Files -> Azure Blob Storage - Upload Files from Shipyard
+bit.io - Upload CSV to Table -> bit.io - Upload CSV to Table from Shipyard
+Box - Upload Files -> Box - Upload Files from Shipyard
+Databricks - Download Files from DBFS -> Databricks - Download Files from DBFS to Shipyard
+dbt Cloud - Download Logs and Artifacts -> dbt Cloud - Download Logs and Artifacts to Shipyard
+dbt Cloud - Execute Job and Download Results -> dbt Cloud - Execute Job and Download Results to Shipyard
+FTP - Download Files -> FTP - Download Files to Shipyard
+Google BigQuery - Upload CSV to Table -> Google BigQuery - Upload CSV to Table from Shipyard
+Google Drive - Download Files -> Google Drive - Download Files to Shipyard
+Looker - Download Look as File -> Looker - Download Look as File to Shipyard
+Looker - Download SQL Query as File -> Looker - Download SQL Query as File to Shipyard
+Microsoft SQL Server - Upload CSV to Table -> Microsoft SQL Server - Upload CSV to Table from Shipyard
+PostgreSQL - Upload CSV to Table -> PostgreSQL - Upload CSV to Table from Shipyard
+SFTP - Download Files -> SFTP - Download Files to Shipyard
+SFTP - Upload Files -> SFTP - Upload Files from Shipyard
+Tableau - Download View -> Tableau - Download View to Shipyard
+Amazon Redshift - Upload CSV to Table -> Amazon Redshift - Upload CSV to Table from Shipyard
+Box - Download Files -> Box - Download Files to Shipyard
+Domo - Upload CSV as Dataset -> Domo - Upload CSV as Dataset from Shipyard
+FTP - Upload Files -> FTP - Upload Files from Shipyard
+Google Cloud Storage - Upload Files -> Google Cloud Storage - Upload Files from Shipyard
+Google Sheets - Download Sheet to CSV -> Google Sheets - Download Sheet to CSV to Shipyard
+Google Sheets - Upload CSV to Sheet -> Google Sheets - Upload CSV to Sheet from Shipyard
+Mode - Download Report as File -> Mode - Download Report as File to Shipyard
+MySQL - Upload CSV to Table -> MySQL - Upload CSV to Table from Shipyard
+Snowflake - Upload CSV to Table -> Snowflake - Upload CSV to Table from Shipyard
+Azure Blob Storage - Download Files -> Azure Blob Storage - Download Files to Shipyard
+Databricks - Upload Files to DBFS -> Databricks - Upload Files to DBFS from Shipyard
+Domo - Download Card -> Domo - Download Card to Shipyard
+Domo - Download Dataset -> Domo - Download Dataset to Shipyard
+Dropbox - Download Files -> Dropbox - Download Files to Shipyard
+Dropbox - Upload Files -> Dropbox - Upload Files from Shipyard
+Google Cloud Storage - Download Files -> Google Cloud Storage - Download Files to Shipyard
+Google Drive - Upload Files -> Google Drive - Upload Files from Shipyard
+HTTP - Download File from URL -> HTTP - Download File from URL to Shipyard
+Looker - Download Dashboard as File -> Looker - Download Dashboard as File to Shipyard
+Youtube - Download Video -> Youtube - Download Video to Shipyard
