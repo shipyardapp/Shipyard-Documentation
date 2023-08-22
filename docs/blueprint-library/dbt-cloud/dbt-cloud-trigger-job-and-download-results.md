@@ -1,16 +1,16 @@
 ---
-id: dbt-cloud-execute-job-and-download-results
-title: dbt Cloud Template - Execute Job and Download Results to Shipyard
+id: dbt-cloud-trigger-job-and-download-results
+title: dbt Cloud - Trigger Job and Download Results to Shipyard
 hide_title: true
-sidebar_label: Execute Job and Download Results to Shipyard
-description: Information about Shipyard's low-code dbt Cloud Execute Job and Download Results to Shipyard blueprint. Execute an existing job in the dbt Cloud interface, wait for it to finish, and download the resulting logs and artifacts. 
+sidebar_label: Trigger Job and Download Results to Shipyard
+description: Information about Shipyard's low-code dbt Cloud Trigger Job and Download Results to Shipyard blueprint. Trigger an existing job in the dbt Cloud interface, wait for it to finish, and download the resulting logs and artifacts. 
 keywords:
     - dbt cloud
     - blueprint
     - template
 ---
 
-# dbt Cloud - Execute Job and Download Results to Shipyard
+# dbt Cloud - Trigger Job and Download Results to Shipyard
 
 ## Overview
 A Vessel built with this Blueprint will kick off a single job on dbt Cloud and check for the status every 30 seconds. Once the status is confirmed to be completed, Shipyard will attempt to download all of the logs and artifacts.
@@ -26,7 +26,7 @@ The "cause" for an execution triggered via Shipyard will always contain the foll
 
 If you want to reduce the overall runtime you're billed for, you will need to instead set up a Fleet with Vessels built with these blueprints in this order:
 
-Execute Job -> Check Run Status -> Download Artifacts & Logs
+Trigger Job -> Check Run Status -> Download Artifacts & Logs
 
 ## Variables
 
