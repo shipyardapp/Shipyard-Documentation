@@ -28,29 +28,30 @@ The response for this request will always be stored at `shipyard-artifacts/hight
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:-----|:----------|:-----|:---------|:--------|:--------|:------------|
-| API Key | HIGHTOUCH_API_KEY  | Password |:white_check_mark: | - | - | The API Key associated with your Hightouch account. |
-| Sync ID | HIGHTOUCH_SYNC_ID  | Alphanumeric |:white_check_mark: | - | - | The ID of the Hightouch sync you want to refresh. |
-| Sync Run ID | HIGHTOUCH_SYNC_RUN_ID  | Alphanumeric |:heavy_minus_sign: | - | - | The sync run ID that you want to check the status of. Leave blank if connected to another Vessel that will Trigger Sync. |
+| Name        | Reference             | Type         | Required           | Default | Options | Description                                                                                                              |
+|:------------|:----------------------|:-------------|:-------------------|:--------|:--------|:-------------------------------------------------------------------------------------------------------------------------|
+| API Key     | HIGHTOUCH_API_KEY     | Password     | :white_check_mark: | -       | -       | The API Key associated with your Hightouch account.                                                                      |
+| Sync ID     | HIGHTOUCH_SYNC_ID     | Alphanumeric | :white_check_mark: | -       | -       | The ID of the Hightouch sync you want to refresh.                                                                        |
+| Sync Run ID | HIGHTOUCH_SYNC_RUN_ID | Alphanumeric | :heavy_minus_sign: | -       | -       | The sync run ID that you want to check the status of. Leave blank if connected to another Vessel that will Trigger Sync. |
 
 
 ## YAML
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: Hightouch - Check Sync Status
-  inputs:
-    HIGHTOUCH_API_KEY: null ## REQUIRED
-    HIGHTOUCH_SYNC_ID: null ## REQUIRED
-    HIGHTOUCH_SYNC_RUN_ID: null 
-  type: BLUEPRINT
+    blueprint: Hightouch - Check Sync Status
+    inputs:
+        HIGHTOUCH_API_KEY: null  ## REQUIRED
+        HIGHTOUCH_SYNC_ID: null ## REQUIRED
+        HIGHTOUCH_SYNC_RUN_ID: null
+    type: BLUEPRINT
 guardrails:
-  retry_count: 1
-  retry_wait: 0s
-  runtime_cutoff: 1h0m0s
-  exclude_exit_code_ranges:
-    - "200"
-    - "201"
-    - "210"
+    retry_count: 1
+    retry_wait: 0h0m0s
+    runtime_cutoff: 1h0m0s
+    exclude_exit_code_ranges:
+    -   200
+    -   201
+    -   210
+
 ```

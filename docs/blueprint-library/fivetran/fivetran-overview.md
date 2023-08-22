@@ -23,7 +23,7 @@ For information on how to set up these Blueprints successfully, please read thro
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available: 
 - [Check Sync Status](fivetran-check-sync-status.md)
-- [Execute Sync](fivetran-execute-sync.md)
+- [Trigger Sync](fivetran-trigger-sync.md)
 - [Execute Sync and Check Status](fivetran-execute-sync-and-check-status.md)
 - [Update Connector](fivetran-update-connector.md)
 

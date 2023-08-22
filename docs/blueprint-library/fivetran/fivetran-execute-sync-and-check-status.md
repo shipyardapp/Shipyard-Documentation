@@ -26,27 +26,28 @@ Before using this Blueprint on a connector, we strongly recommend first setting 
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:-----|:----------|:-----|:---------|:--------|:--------|:------------|
-| API Key | FIVETRAN_API_KEY  | Password |:white_check_mark: | - | - | Your account's unique API Key for Fivetran. |
-| API Secret | FIVETRAN_API_SECRET  | Password |:white_check_mark: | - | - | Your account's unique API Secret for Fivetran. |
-| Connector ID | FIVETRAN_CONNECTOR_ID  | Alphanumeric |:white_check_mark: | - | - | The unique ID associated with a connector. Typically two words separated by an underscore. |
+| Name         | Reference             | Type         | Required           | Default | Options | Description                                                                                |
+|:-------------|:----------------------|:-------------|:-------------------|:--------|:--------|:-------------------------------------------------------------------------------------------|
+| API Key      | FIVETRAN_API_KEY      | Password     | :white_check_mark: | -       | -       | Your account's unique API Key for Fivetran.                                                |
+| API Secret   | FIVETRAN_API_SECRET   | Password     | :white_check_mark: | -       | -       | Your account's unique API Secret for Fivetran.                                             |
+| Connector ID | FIVETRAN_CONNECTOR_ID | Alphanumeric | :white_check_mark: | -       | -       | The unique ID associated with a connector. Typically two words separated by an underscore. |
 
 
 ## YAML
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: Fivetran - Execute Sync and Check Status
-  inputs:
-    FIVETRAN_API_KEY: null ## REQUIRED
-    FIVETRAN_API_SECRET: null ## REQUIRED
-    FIVETRAN_CONNECTOR_ID: null ## REQUIRED
-  type: BLUEPRINT
+    blueprint: Fivetran - Execute Sync and Check Status
+    inputs:
+        FIVETRAN_API_KEY: null  ## REQUIRED
+        FIVETRAN_API_SECRET: null ## REQUIRED
+        FIVETRAN_CONNECTOR_ID: null ## REQUIRED
+    type: BLUEPRINT
 guardrails:
-  retry_count: 1
-  retry_wait: 0s
-  runtime_cutoff: 1h0m0s
-  exclude_exit_code_ranges:
-    - "0"
+    retry_count: 1
+    retry_wait: 0h0m0s
+    runtime_cutoff: 1h0m0s
+    exclude_exit_code_ranges:
+    -   '0'
+
 ```
