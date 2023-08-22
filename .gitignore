@@ -1,24 +1,25 @@
-# Dependencies
-/node_modules
+.vscode/
+*.json
+add_ids.py
+.env
+env
+__pycache__/
 
-# Production
-/build
+change_names.py
+update_application.py
+names.txt
+*_blueprints.sh
+*.log
+shipyard_to_sanity.py
+add_bp_ids.py
+runner.py
+test_file.py
 
-# Generated files
-.docusaurus
-.cache-loader
+webflow_runner.py
 
-# Misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.sourcery.yaml
-.idea
 
-# Local Configuration
-/etc
+# directories
+scripts/
+application/
+
+
