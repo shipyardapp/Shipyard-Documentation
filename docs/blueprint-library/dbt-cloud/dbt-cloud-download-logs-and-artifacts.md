@@ -27,30 +27,31 @@ The steps of each run can be variable so we combine the log data from every step
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:-----|:----------|:-----|:---------|:--------|:--------|:------------|
-| Service Token | DBT_API_KEY  | Password |:white_check_mark: | - | - | Your unique service token for dbt Cloud. Instructions for how to get this token can be found in the authorization documentation. |
-| Account ID | DBT_ACCOUNT_ID  | Alphanumeric |:white_check_mark: | - | - | Your unique Account ID, found in the URL of dbt Cloud. https://cloud.getdbt.com/#/accounts/ACCOUNT_ID/projects/PROJECT_ID/dashboard/ |
-| Run ID | DBT_RUN_ID  | Alphanumeric |:heavy_minus_sign: | - | - | The ID of a specific job you want to run, found in the URL of dbt Cloud. https://cloud.getdbt.com/#/accounts/ACCOUNT_ID/projects/PROJECT_ID/runs/RUN_ID/. If left blank, will try to find the run ID from an "Execute Job" Vessel that ran upstream. |
+| Name          | Reference      | Type         | Required           | Default | Options | Description                                                                                                                                                                                                                                          |
+|:--------------|:---------------|:-------------|:-------------------|:--------|:--------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Service Token | DBT_API_KEY    | Password     | :white_check_mark: | -       | -       | Your unique service token for dbt Cloud. Instructions for how to get this token can be found in the authorization documentation.                                                                                                                     |
+| Account ID    | DBT_ACCOUNT_ID | Alphanumeric | :white_check_mark: | -       | -       | Your unique Account ID, found in the URL of dbt Cloud. https://cloud.getdbt.com/#/accounts/ACCOUNT_ID/projects/PROJECT_ID/dashboard/                                                                                                                 |
+| Run ID        | DBT_RUN_ID     | Alphanumeric | :heavy_minus_sign: | -       | -       | The ID of a specific job you want to run, found in the URL of dbt Cloud. https://cloud.getdbt.com/#/accounts/ACCOUNT_ID/projects/PROJECT_ID/runs/RUN_ID/. If left blank, will try to find the run ID from an "Execute Job" Vessel that ran upstream. |
 
 
 ## YAML
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: dbt Cloud - Download Logs and Artifacts
-  inputs:
-    DBT_API_KEY: null ## REQUIRED
-    DBT_ACCOUNT_ID: null ## REQUIRED
-    DBT_RUN_ID: null 
-  type: BLUEPRINT
+    blueprint: dbt Cloud - Download Logs and Artifacts to Shipyard
+    inputs:
+        DBT_API_KEY: null  ## REQUIRED
+        DBT_ACCOUNT_ID: null ## REQUIRED
+        DBT_RUN_ID: null
+    type: BLUEPRINT
 guardrails:
-  retry_count: 1
-  retry_wait: 0s
-  runtime_cutoff: 1h0m0s
-  exclude_exit_code_ranges:
-    - "200"
-    - "201"
-    - "211"
-    - "212"
+    retry_count: 1
+    retry_wait: 0h0m0s
+    runtime_cutoff: 1h0m0s
+    exclude_exit_code_ranges:
+    -   200
+    -   201
+    -   211
+    -   212
+
 ```

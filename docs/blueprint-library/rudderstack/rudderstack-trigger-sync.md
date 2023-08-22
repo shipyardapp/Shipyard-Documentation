@@ -17,34 +17,35 @@ Immediately execute a sync of a Rudderstack source. This can kick off either an 
 
 If a sync is already running for the specified connector, it will be stopped and restarted.
 
-This Blueprint will only kick off the source and will almost always return a status of success. It will not wait around to verify if the created sync was successfully completed, but it will create and store the source ID used to `shipyard-artifacts/rudderstack-blueprints/variables/source_id.pickle`
+This Blueprint will create and store the source ID used to `shipyard-artifacts/rudderstack-blueprints/variables/source_id.pickle`
 
-**Recommended Setup:**
-1. This Vessel should be immediately followed by a Vessel built from the Check Sync Status Blueprint so you can verify the status and completion of your sync.
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:-----|:----------|:-----|:---------|:--------|:--------|:------------|
-| Access Token | RUDDERSTACK_ACCESS_TOKEN  | Password |:white_check_mark: | - | - | The access token associated with your Rudderstack account. |
-| Source ID | RUDDERSTACK_SOURCE_ID  | Alphanumeric |:white_check_mark: | - | - | The ID of the Rudderstack source you want to refresh. |
+| Name                | Reference                | Type         | Required           | Default | Options | Description                                                                                                                                               |
+|:--------------------|:-------------------------|:-------------|:-------------------|:--------|:--------|:----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Access Token        | RUDDERSTACK_ACCESS_TOKEN | Password     | :white_check_mark: | -       | -       | The access token associated with your Rudderstack account.                                                                                                |
+| Source ID           | RUDDERSTACK_SOURCE_ID    | Alphanumeric | :white_check_mark: | -       | -       | The ID of the Rudderstack source you want to refresh.                                                                                                     |
+| Wait For Completion | RUDDERSTACK_WAIT         | Boolean      | :heavy_minus_sign: | `FALSE` | -       | Enable if you want the vessel to wait until the sync job is successfully completed. Otherwise, the vessel will only initiate the sync job without waiting |
 
 
 ## YAML
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: RudderStack - Trigger Sync
-  inputs:
-    RUDDERSTACK_ACCESS_TOKEN: null ## REQUIRED
-    RUDDERSTACK_SOURCE_ID: null ## REQUIRED
-  type: BLUEPRINT
+    blueprint: RudderStack - Trigger Sync
+    inputs:
+        RUDDERSTACK_ACCESS_TOKEN: null  ## REQUIRED
+        RUDDERSTACK_SOURCE_ID: null ## REQUIRED
+        RUDDERSTACK_WAIT: 'FALSE'
+    type: BLUEPRINT
 guardrails:
-  retry_count: 1
-  retry_wait: 0s
-  runtime_cutoff: 1h0m0s
-  exclude_exit_code_ranges:
-    - "200"
-    - "203"
-    - "204"
+    retry_count: 1
+    retry_wait: 0h0m0s
+    runtime_cutoff: 1h0m0s
+    exclude_exit_code_ranges:
+    -   200
+    -   203
+    -   204
+
 ```
