@@ -22,7 +22,7 @@ For information on how to set up these Blueprints successfully, please read thro
 
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available: 
-- [Run Project](hex-run-project.md)
+- [Trigger Project](hex-trigger-project.md)
 - [Check Run Status](hex-check-run-status.md)
 
 ## Open Source Code
