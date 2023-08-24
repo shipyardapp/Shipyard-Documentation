@@ -19,16 +19,16 @@ This Blueprint will kick off the refresh and will almost always return a status 
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:-----|:----------|:-----|:---------|:--------|:--------|:------------|
+| Name | Reference | Type | Required | Default             | Options | Description |
+|:-----|:----------|:-----|:---------|:--------------------|:--------|:------------|
 | Authentication Method | TABLEAU_SIGN_IN_METHOD  | Select |:white_check_mark: | `username_password` | Username & Password: `username_password`<br></br><br></br>Access Token: `access_token`<br></br><br></br> | Determine which authentication method to use when connecting to Tableau. |
-| Username or Access Token Name | TABLEAU_USERNAME  | Alphanumeric |:white_check_mark: | - | - | Your personal username or the name of the access token that you use to log in with Tableau. |
-| Password or Access Token | TABLEAU_PASSWORD  | Password |:white_check_mark: | - | - | The password associated with the provided username OR the access token associated with the provided access token name. |
-| Server URL | TABLEAU_SERVER_URL  | Alphanumeric |:white_check_mark: | - | - | The scheme, subdomain, domain, and top-level domain (TLD) of your Tableau URL. |
-| Site ID | TABLEAU_SITE_ID  | Alphanumeric |:white_check_mark: | `default` | - | Typically found in the URL as /site/YOURSITEID/ |
-| Project Name | TABLEAU_PROJECT_NAME  | Alphanumeric |:white_check_mark: | - | - | The project name that the Datasource belongs to. |
-| Datasource Name | TABLEAU_DATASOURCE_NAME  | Alphanumeric |:white_check_mark: | - | - | Name of the published datasource you want to refresh. |
-| Wait For Completion | TABLEAU_WAIT  | Boolean |:heavy_minus_sign: | - | - | None |
+| Username or Access Token Name | TABLEAU_USERNAME  | Alphanumeric |:white_check_mark: | -                   | - | Your personal username or the name of the access token that you use to log in with Tableau. |
+| Password or Access Token | TABLEAU_PASSWORD  | Password |:white_check_mark: | -                   | - | The password associated with the provided username OR the access token associated with the provided access token name. |
+| Server URL | TABLEAU_SERVER_URL  | Alphanumeric |:white_check_mark: | -                   | - | The scheme, subdomain, domain, and top-level domain (TLD) of your Tableau URL. |
+| Site ID | TABLEAU_SITE_ID  | Alphanumeric |:white_check_mark: | `default`           | - | Typically found in the URL as /site/YOURSITEID/ |
+| Project Name | TABLEAU_PROJECT_NAME  | Alphanumeric |:white_check_mark: | -                   | - | The project name that the Datasource belongs to. |
+| Datasource Name | TABLEAU_DATASOURCE_NAME  | Alphanumeric |:white_check_mark: | -                   | - | Name of the published datasource you want to refresh. |
+| Wait For Completion | TABLEAU_WAIT  | Boolean |:heavy_minus_sign: | 'FALSE'             | - | Enable if you wish for the vessel to wait for the resource to complete loading before exiting |
 
 
 ## YAML
@@ -44,6 +44,7 @@ source:
         TABLEAU_SITE_ID: default ## REQUIRED
         TABLEAU_PROJECT_NAME: null ## REQUIRED
         TABLEAU_DATASOURCE_NAME: null ## REQUIRED
+        TABLEAU_WAIT: 'FALSE'
     type: BLUEPRINT
 guardrails:
     retry_count: 1
