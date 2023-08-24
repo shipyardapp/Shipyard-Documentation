@@ -15,11 +15,9 @@ keywords:
 ## Overview
 Manually trigger a refresh of a workbook in Tableau.
 
-This Blueprint will only kick off the refresh and will almost always return a status of success. It will not wait around to verify if the created refresh job was successfully completed, but it will create and store the generated job ID to _shipyard-artifacts/tableau-blueprints/variables/job_id.pickle_
+This Blueprint will kick off the refresh and will almost always return a status of success. It will create and store the generated job ID to _shipyard-artifacts/tableau-blueprints/variables/job_id.pickle_
 
-**Recommended Setup:**
 
-1. A Vessel built with the _Tableau - Check Refresh Status_ Blueprint should be run immediately after this Vessel. This will ensure that you build your Fleet to act on the final status of your refresh.
 
 ## Variables
 
@@ -29,29 +27,36 @@ This Blueprint will only kick off the refresh and will almost always return a st
 | Username or Access Token Name | TABLEAU_USERNAME  | Alphanumeric |:white_check_mark: | - | - | Your personal username or the name of the access token that you use to log in with Tableau. |
 | Password or Access Token | TABLEAU_PASSWORD  | Password |:white_check_mark: | - | - | The password associated with the provided username OR the access token associated with the provided access token name. |
 | Server URL | TABLEAU_SERVER_URL  | Alphanumeric |:white_check_mark: | - | - | The scheme, subdomain, domain, and top-level domain (TLD) of your Tableau URL. |
-| Site ID | TABLEAU_SITE_ID  | Alphanumeric |:white_check_mark: | - | - | Typically found in the URL as /site/YOURSITEID/ |
+| Site ID | TABLEAU_SITE_ID  | Alphanumeric |:white_check_mark: | `default` | - | Typically found in the URL as /site/YOURSITEID/ |
 | Project Name | TABLEAU_PROJECT_NAME  | Alphanumeric |:white_check_mark: | - | - | The project name that the Datasource belongs to. |
 | Workbook Name | TABLEAU_WORKBOOK_NAME  | Alphanumeric |:white_check_mark: | - | - | Name of the published workbook you want to refresh. |
+| Wait For Completion | TABLEAU_WAIT  | Boolean |:heavy_minus_sign: | `FALSE` | - | Enable if you wish for the vessel to wait for the resource to finish loading before exiting  |
 
 
 ## YAML
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: Tableau - Trigger Workbook Refresh
-  inputs:
-    TABLEAU_SIGN_IN_METHOD: username_password ## REQUIRED
-    TABLEAU_USERNAME: null ## REQUIRED
-    TABLEAU_PASSWORD: null ## REQUIRED
-    TABLEAU_SERVER_URL: null ## REQUIRED
-    TABLEAU_SITE_ID: null ## REQUIRED
-    TABLEAU_PROJECT_NAME: null ## REQUIRED
-    TABLEAU_WORKBOOK_NAME: null ## REQUIRED
-  type: BLUEPRINT
+    blueprint: Tableau - Trigger Workbook Refresh
+    inputs:
+        TABLEAU_SIGN_IN_METHOD: username_password  ## REQUIRED
+        TABLEAU_USERNAME: null ## REQUIRED
+        TABLEAU_PASSWORD: null ## REQUIRED
+        TABLEAU_SERVER_URL: null ## REQUIRED
+        TABLEAU_SITE_ID: default ## REQUIRED
+        TABLEAU_PROJECT_NAME: null ## REQUIRED
+        TABLEAU_WORKBOOK_NAME: null ## REQUIRED
+    type: BLUEPRINT
 guardrails:
-  retry_count: 1
-  retry_wait: 0s
-  runtime_cutoff: 1h0m0s
-  exclude_exit_code_ranges:
-    - "200-205"
+    retry_count: 1
+    retry_wait: 0h0m0s
+    runtime_cutoff: 1h0m0s
+    exclude_exit_code_ranges:
+    -   200
+    -   201
+    -   202
+    -   203
+    -   204
+    -   205
+
 ```
