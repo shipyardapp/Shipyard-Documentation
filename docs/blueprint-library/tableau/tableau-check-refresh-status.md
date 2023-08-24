@@ -29,7 +29,7 @@ Check the job status of a workbook or datasource that has recently been refreshe
 | Username or Access Token Name | TABLEAU_USERNAME  | Alphanumeric |:white_check_mark: | - | - | Your personal username or the name of the access token that you use to log in with Tableau. |
 | Password or Access Token | TABLEAU_PASSWORD  | Password |:white_check_mark: | - | - | The password associated with the provided username OR the access token associated with the provided access token name. |
 | Server URL | TABLEAU_SERVER_URL  | Alphanumeric |:white_check_mark: | - | - | The scheme, subdomain, domain, and top-level domain (TLD) of your Tableau URL. |
-| Site ID | TABLEAU_SITE_ID  | Alphanumeric |:white_check_mark: | - | - | Typically found in the URL as /site/YOURSITEID/ |
+| Site ID | TABLEAU_SITE_ID  | Alphanumeric |:white_check_mark: | `default` | - | Typically found in the URL as /site/YOURSITEID/ |
 | Job ID | TABLEAU_JOB_ID  | Alphanumeric |:heavy_minus_sign: | - | - | The ID of a specific job you check the status of. If left blank, will try to find the job ID from an "Refresh Workbook/Datasource" Vessel that ran upstream. |
 
 
@@ -37,21 +37,27 @@ Check the job status of a workbook or datasource that has recently been refreshe
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: Tableau - Check Refresh Status
-  inputs:
-    TABLEAU_SIGN_IN_METHOD: username_password ## REQUIRED
-    TABLEAU_USERNAME: null ## REQUIRED
-    TABLEAU_PASSWORD: null ## REQUIRED
-    TABLEAU_SERVER_URL: null ## REQUIRED
-    TABLEAU_SITE_ID: null ## REQUIRED
-    TABLEAU_JOB_ID: null 
-  type: BLUEPRINT
+    blueprint: Tableau - Check Refresh Status
+    inputs:
+        TABLEAU_SIGN_IN_METHOD: username_password  ## REQUIRED
+        TABLEAU_USERNAME: null ## REQUIRED
+        TABLEAU_PASSWORD: null ## REQUIRED
+        TABLEAU_SERVER_URL: null ## REQUIRED
+        TABLEAU_SITE_ID: default ## REQUIRED
+        TABLEAU_JOB_ID: null
+    type: BLUEPRINT
 guardrails:
-  retry_count: 12
-  retry_wait: 5m0s
-  runtime_cutoff: 1h0m0s
-  exclude_exit_code_ranges:
-    - "200-205"
-    - "210"
-    - "211"
+    retry_count: 12
+    retry_wait: 0h5m0s
+    runtime_cutoff: 1h0m0s
+    exclude_exit_code_ranges:
+    -   200
+    -   201
+    -   202
+    -   203
+    -   204
+    -   205
+    -   210
+    -   211
+
 ```
