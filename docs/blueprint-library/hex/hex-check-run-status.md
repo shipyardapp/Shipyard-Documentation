@@ -47,18 +47,25 @@ The response for this request will be stored at `shipyard-artifacts/hex-blueprin
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: Hex - Check Run Status
-  inputs:
-    HEX_PROJECT_ID: null ## REQUIRED
-    HEX_API_TOKEN: null 
-    HEX_RUN_ID: null 
-  type: BLUEPRINT
+    blueprint: Hex - Check Run Status
+    inputs:
+        HEX_PROJECT_ID: null  ## REQUIRED
+        HEX_API_TOKEN: null
+        HEX_RUN_ID: null
+    type: BLUEPRINT
 guardrails:
-  retry_count: 4
-  retry_wait: 5m0s
-  runtime_cutoff: 5m0s
-  exclude_exit_code_ranges:
-    - "201-207"
-    - "222"
-    - "224"
+    retry_count: 4
+    retry_wait: 0h5m0s
+    runtime_cutoff: 0h5m0s
+    exclude_exit_code_ranges:
+    -   201
+    -   202
+    -   203
+    -   204
+    -   205
+    -   206
+    -   207
+    -   222
+    -   224
+
 ```
