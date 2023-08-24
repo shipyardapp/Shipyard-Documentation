@@ -31,10 +31,11 @@ This Blueprint will create and store the source ID used to `shipyard-artifacts/h
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Hex - Run Project
+    blueprint: Hex - Trigger Project
     inputs:
         HEX_PROJECT_ID: null  ## REQUIRED
         HEX_API_TOKEN: null ## REQUIRED
+        HEX_WAIT: 'FALSE'
     type: BLUEPRINT
 guardrails:
     retry_count: 1
