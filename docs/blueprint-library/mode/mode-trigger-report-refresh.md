@@ -38,6 +38,7 @@ source:
         MODE_TOKEN_PASSWORD: null ## REQUIRED
         MODE_WORKSPACE_NAME: null ## REQUIRED
         MODE_REPORT_ID: null ## REQUIRED
+        MODE_WAIT: 'FALSE'
     type: BLUEPRINT
 guardrails:
     retry_count: 1
