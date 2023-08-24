@@ -43,22 +43,23 @@ The response for this request will always be stored at `shipyard-artifacts/mode-
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: Mode - Check Run Status
-  inputs:
-    MODE_TOKEN_ID: null ## REQUIRED
-    MODE_TOKEN_PASSWORD: null ## REQUIRED
-    MODE_WORKSPACE_NAME: null ## REQUIRED
-    MODE_REPORT_ID: null ## REQUIRED
-    MODE_RUN_ID: null 
-  type: BLUEPRINT
+    blueprint: Mode - Check Run Status
+    inputs:
+        MODE_TOKEN_ID: null  ## REQUIRED
+        MODE_TOKEN_PASSWORD: null ## REQUIRED
+        MODE_WORKSPACE_NAME: null ## REQUIRED
+        MODE_REPORT_ID: null ## REQUIRED
+        MODE_RUN_ID: null
+    type: BLUEPRINT
 guardrails:
-  retry_count: 1
-  retry_wait: 0s
-  runtime_cutoff: 1h0m0s
-  exclude_exit_code_ranges:
-    - "200"
-    - "203"
-    - "204"
-    - "211"
-    - "213"
+    retry_count: 1
+    retry_wait: 0h0m0s
+    runtime_cutoff: 1h0m0s
+    exclude_exit_code_ranges:
+    -   200
+    -   203
+    -   204
+    -   211
+    -   213
+
 ```
