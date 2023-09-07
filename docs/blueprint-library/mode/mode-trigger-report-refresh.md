@@ -19,13 +19,13 @@ This Blueprint will kick off the refresh. It will create and store the generated
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:-----|:----------|:-----|:---------|:--------|:--------|:------------|
-| Token ID | MODE_TOKEN_ID  | Password |:white_check_mark: | - | - | The ID of the Token used to authenticate with Mode. |
-| Token Password | MODE_TOKEN_PASSWORD  | Password |:white_check_mark: | - | - | The Token Password associated to the Token ID used to authenticate with Mode. |
-| Workspace Name | MODE_WORKSPACE_NAME  | Alphanumeric |:white_check_mark: | - | - | Typically found in the URL structure as https://app.mode.com/ACCOUNT_NAME/ |
-| Report ID | MODE_REPORT_ID  | Alphanumeric |:white_check_mark: | - | - | Numeric ID of the report you want to download, typically found at the end of the URL. |
-| Wait For Completion | Wait For Completion  | Boolean |:heavy_minus_sign: | `FALSE` | - | Enable if you want this vessel to wait for the report to refresh before exiting |
+| Name                | Reference           | Type         | Required           | Default | Options | Description                                                                           |
+|:--------------------|:--------------------|:-------------|:-------------------|:--------|:--------|:--------------------------------------------------------------------------------------|
+| Token ID            | MODE_TOKEN_ID       | Password     | :white_check_mark: | -       | -       | The ID of the Token used to authenticate with Mode.                                   |
+| Token Password      | MODE_TOKEN_PASSWORD | Password     | :white_check_mark: | -       | -       | The Token Password associated to the Token ID used to authenticate with Mode.         |
+| Workspace Name      | MODE_WORKSPACE_NAME | Alphanumeric | :white_check_mark: | -       | -       | Typically found in the URL structure as https://app.mode.com/ACCOUNT_NAME/            |
+| Report ID           | MODE_REPORT_ID      | Alphanumeric | :white_check_mark: | -       | -       | Numeric ID of the report you want to download, typically found at the end of the URL. |
+| Wait For Completion | MODE_WAIT           | Boolean      | :heavy_minus_sign: | `FALSE` | -       | Enable if you want this vessel to wait for the report to refresh before exiting       |
 
 
 ## YAML
