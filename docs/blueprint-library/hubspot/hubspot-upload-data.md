@@ -38,11 +38,26 @@ The blueprint will ask for the filename, so keep the file accessible and know it
 | Source File Name Match Type  | HUBSPOT_SOURCE_MATCH_TYPE  | Select |:white_check_mark: | `exact_match` | Exact: `exact_match`<br></br><br></br>Regex: `regex_match`<br></br><br></br> | Method for matching the source file name. Choose 'Exact' for exact names or 'Regex' for regular expression patterns. |
 | File Format | HUBSPOT_FILE_FORMAT  | Select |:heavy_minus_sign: | `CSV` | `CSV`,Excel Spreadsheet: `SPREADSHEET`<br></br><br></br> | Specify the format of the file being imported |
 
-
 ## YAML
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
-from shipyard_hubspot.cli import upload_contacts
-
-upload_contacts.main()
+source:
+  type: BLUEPRINT
+  blueprint: 'Hubspot - Upload Data'
+  inputs:
+    'HUBSPOT_ACCESS_TOKEN': ## REQUIRED
+    'HUBSPOT_IMPORT_NAME': ## REQUIRED
+    'HUBSPOT_IMPORT_OPERATION': 'UPSERT' ## REQUIRED
+    'HUBSPOT_SOURCE_FILE_NAME': ## REQUIRED
+    'HUBSPOT_FILE_FORMAT': 'CSV' ## REQUIRED
+    'HUBSPOT_SOURCE_FOLDER_NAME': '.'
+    'HUBSPOT_SOURCE_MATCH_TYPE': 'exact_match' ## REQUIRED
+guardrails:
+  retry_count: 0
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - "201"
+    - "202"
+    - "206"
 ```

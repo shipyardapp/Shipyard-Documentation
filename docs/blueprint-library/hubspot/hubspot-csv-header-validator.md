@@ -36,3 +36,22 @@ Review the logs. If you provided a CSV, it would indicate whether all headers ar
 | Hubspot Data Type | HUBSPOT_OBJECT_TYPE  | Select |:white_check_mark: | `contacts` | Contacts: `contacts`<br></br><br></br>Companies: `companies`<br></br><br></br>Deals: `deals`<br></br><br></br> | None |
 
 
+## YAML
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+```yaml
+source:
+  type: BLUEPRINT
+  blueprint: 'Hubspot - CSV Header Validator'
+  inputs:
+    'HUBSPOT_ACCESS_TOKEN': ## REQUIRED
+    'HUBSPOT_CSV_FILE':
+    'HUBSPOT_OBJECT_TYPE': 'contacts' ## REQUIRED
+guardrails:
+  retry_count: 0
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - "201"
+    - "202"
+    - "206"
+```
