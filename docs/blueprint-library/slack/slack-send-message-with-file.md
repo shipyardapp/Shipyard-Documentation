@@ -37,6 +37,7 @@ To have Shipyard dynamically parse and output the contents of a file, you can in
 | File Name Match Type | SLACK_SOURCE_FILE_NAME_MATCH_TYPE  | Select |:white_check_mark: | `exact_match` | Regex: `regex_match`<br></br><br></br>Exact: `exact_match`<br></br><br></br> | Determines if the text in "File Name" will look for one file with exact match, or multiple files using regex. |
 | Folder Name | SLACK_SOURCE_FOLDER_NAME  | Alphanumeric |:heavy_minus_sign: | - | - | The folder that the file can be found in. Unless specified elsewhere, starts by looking in the current working directory. Can contain leading, trailing, or no slashes (if only looking for the file in a single folder).  |
 | Slack Token | SLACK_TOKEN  | Password |:white_check_mark: | - | - | The Bot User Oauth Token that is used to programmatically send messages by your specific application. Read Authorization documentation for more information. |
+| Include File In Thread | SLACK_INCLUDE_FILE_IN_THREAD  | Select |:heavy_minus_sign: | `yes` | Yes: `yes`<br></br><br></br>No: `no`<br></br><br></br> | Determines whether the file will be included in the main message, or as a reply in the thread. Default setting is a reply in the thread |
 
 
 ## YAML
@@ -54,6 +55,7 @@ source:
         SLACK_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
         SLACK_SOURCE_FOLDER_NAME: null
         SLACK_TOKEN: null ## REQUIRED
+        SLACK_INCLUDE_FILE_IN_THREAD: yes
     type: BLUEPRINT
 guardrails:
     retry_count: 1
