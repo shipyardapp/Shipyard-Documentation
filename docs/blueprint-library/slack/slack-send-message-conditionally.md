@@ -42,6 +42,7 @@ Works primarily when used as part of a Fleet, where a File can be generated or d
 | Folder Name | SLACK_SOURCE_FOLDER_NAME  | Alphanumeric |:heavy_minus_sign: | - | - | The folder that the file can be found in. Unless specified elsewhere, starts by looking in the current working directory. Can contain leading, trailing, or no slashes (if only looking for the file in a single folder).  This field is not required and the folder name can technically be provided as part of the File Name.If left blank, will look for the file in the current working directory. |
 | Upload File to Slack? | SLACK_UPLOAD_FILE  | Select |:white_check_mark: | `no` | Yes: `yes`<br></br><br></br>No: `no`<br></br><br></br> | Determines whether or not the file(s) you're looking for to conditionally send the message should get uploaded to Slack. Defaults to no. |
 | Slack Token | SLACK_TOKEN  | Password |:white_check_mark: | - | - | The Bot User Oauth Token that is used to programmatically send messages by your specific application. See Authorization documentation for more information. |
+| Include File In Thread | SLACK_INCLUDE_FILE_IN_THREAD  | Select |:heavy_minus_sign: | `yes` | Yes: `yes`<br></br><br></br>No: `no`<br></br><br></br> | Determines whether the file will be included in the main message, or as a reply in the thread. Default setting is a reply in the thread |
 
 
 ## YAML
@@ -61,6 +62,7 @@ source:
         SLACK_SOURCE_FOLDER_NAME: null
         SLACK_UPLOAD_FILE: no ## REQUIRED
         SLACK_TOKEN: null ## REQUIRED
+        SLACK_INCLUDE_FILE_IN_THREAD: yes
     type: BLUEPRINT
 guardrails:
     retry_count: 1
