@@ -40,18 +40,20 @@ Review the logs. If you provided a CSV, it would indicate whether all headers ar
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  type: BLUEPRINT
-  blueprint: 'Hubspot - CSV Header Validator'
-  inputs:
-    'HUBSPOT_ACCESS_TOKEN': ## REQUIRED
-    'HUBSPOT_CSV_FILE':
-    'HUBSPOT_OBJECT_TYPE': 'contacts' ## REQUIRED
+    blueprint: Hubspot - CSV Header Validator
+    inputs:
+        HUBSPOT_ACCESS_TOKEN: null  ## REQUIRED
+        HUBSPOT_CSV_FILE: null
+        HUBSPOT_OBJECT_TYPE: contacts ## REQUIRED
+    type: BLUEPRINT
 guardrails:
-  retry_count: 0
-  retry_wait: 0h0m0s
-  runtime_cutoff: 1h0m0s
-  exclude_exit_code_ranges:
-    - "201"
-    - "202"
-    - "206"
+    retry_count: 1
+    retry_wait: 0h0m0s
+    runtime_cutoff: 1h0m0s
+    exclude_exit_code_ranges:
+    -   102
+    -   201
+    -   202
+    -   206
+
 ```
