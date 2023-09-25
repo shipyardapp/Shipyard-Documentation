@@ -35,7 +35,7 @@ The blueprint will ask for the filename, so keep the file accessible and know it
 | Upload Operation Type | HUBSPOT_IMPORT_OPERATION  | Select |:white_check_mark: | `UPSERT` | Create: `CREATE`<br></br><br></br>Update: `UPDATE`<br></br><br></br>Upsert: `UPSERT`<br></br><br></br> | Choose the type of import operation (e.g., create, update). |
 | Hubspot Data Type | HUBSPOT_OBJECT_TYPE  | Select |:white_check_mark: | `contacts` | Contacts: `contacts`<br></br><br></br>Companies: `companies`<br></br><br></br>Deals: `deals`<br></br><br></br> | Select which data object is being affected by the upload. |
 | Source Folder Name | HUBSPOT_SOURCE_FOLDER_NAME  | Alphanumeric |:white_check_mark: | - | - | Directory where the blueprint will search for files to import. |
-| Filename for Import | HUBSPOT_SOURCE_FILE_NAME  | Alphanumeric |:white_check_mark: | - | - | Exact name or regex pattern to identify the files for import. |
+| Filename or Match Pattern | HUBSPOT_SOURCE_FILE_NAME  | Alphanumeric |:white_check_mark: | - | - | Exact name or regex pattern to identify the files for import. |
 | Source File Name Match Type  | HUBSPOT_SOURCE_MATCH_TYPE  | Select |:white_check_mark: | `exact_match` | Exact: `exact_match`<br></br><br></br>Regex: `regex_match`<br></br><br></br> | Method for matching the source file name. Choose 'Exact' for exact names or 'Regex' for regular expression patterns. |
 | File Format | HUBSPOT_FILE_FORMAT  | Select |:white_check_mark: | `CSV` | `CSV`,Excel Spreadsheet: `SPREADSHEET`<br></br><br></br> | Specify the format of the file being imported |
 
@@ -60,9 +60,10 @@ guardrails:
     retry_wait: 0h0m0s
     runtime_cutoff: 1h0m0s
     exclude_exit_code_ranges:
+    -   102
+    -   107
     -   201
     -   202
     -   206
-    -   102
 
 ```

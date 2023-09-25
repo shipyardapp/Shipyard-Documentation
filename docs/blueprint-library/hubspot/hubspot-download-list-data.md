@@ -48,6 +48,7 @@ Initiate the blueprint. It will start the export process, monitor the status, an
 | ILS List ID | HUBSPOT_LIST_ID  | Alphanumeric |:white_check_mark: | - | - | The unique ID of the Hubspot list you wish to export. Ensure the list exists in your Hubspot account. |
 | Object Properties to Export | HUBSPOT_OBJECT_PROPERTIES  | Alphanumeric |:heavy_minus_sign: | - | - | Comma-separated list of object properties from the Hubspot list that you want to export. Ensure these properties exist for the specified list. |
 | Destination Filename | HUBSPOT_DESTINATION_FILENAME  | Alphanumeric |:white_check_mark: | - | - | The desired filename for the exported data. The file will be saved with a .csv extension. |
+| Hubspot Data Type | HUBSPOT_OBJECT_TYPE  | Select |:white_check_mark: | `contacts` | Contacts: `contacts`<br></br><br></br>Companies: `companies`<br></br><br></br>Deals: `deals`<br></br><br></br> | Select which data object is that is included in the list. |
 
 
 ## YAML
@@ -59,8 +60,9 @@ source:
         HUBSPOT_ACCESS_TOKEN: null  ## REQUIRED
         HUBSPOT_EXPORT_NAME: null ## REQUIRED
         HUBSPOT_LIST_ID: null ## REQUIRED
-        HUBSPOT_OBJECT_PROPERTIES: null
+        HUBSPOT_OBJECT_PROPERTIES: null ## REQUIRED
         HUBSPOT_DESTINATION_FILENAME: null ## REQUIRED
+        HUBSPOT_OBJECT_TYPE: contacts ## REQUIRED
     type: BLUEPRINT
 guardrails:
     retry_count: 1
@@ -68,6 +70,7 @@ guardrails:
     runtime_cutoff: 1h0m0s
     exclude_exit_code_ranges:
     -   102
+    -   201
     -   202
     -   206
 
