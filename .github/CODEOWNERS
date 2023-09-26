@@ -1,5 +1,5 @@
-/* @shipyardapp/ShipyardDocumentation
+/docs/ @shipyardapp/Shipyard-Documentation
 
-/docs/ @blakeburch
+/.github/ @ericelsken
 
-/docs/changelog.md @ericelsken
+/.github/CODEOWNERS @ericelsken
