@@ -25,12 +25,14 @@ To get started with the Salesforce Blueprints, you will need an access token or 
 ## Setting Up a Connected App (Recommended)
 1. **Navigate to App Manager**
    - Go to Setup.
+   
    ![](../../.gitbook/assets/shipyard_2023-09-29-11-08-12.png)
    - Enter "App Manager" in the Quick Find box.
    - Select App Manager from the results.
    ![](../../.gitbook/assets/shipyard_2023-09-29-11-09-28.png)
 2. **Initiate App Creation**
    - Click on "New Connected App".
+   
    ![](../../.gitbook/assets/shipyard_2023-09-29-11-10-02.png)
 3. **Input App Details**
    - **Connected App Name**: Shipyard
@@ -43,6 +45,7 @@ To get started with the Salesforce Blueprints, you will need an access token or 
          - `Perform requests at any time (refresh_token, offline_access)`
          - `Manage user data via APIs`
    inputs should look similar to the below
+        
    ![](../../.gitbook/assets/shipyard_2023-09-29-11-14-05.png)
 4. **Save and Continue**
    - Click "Save".
