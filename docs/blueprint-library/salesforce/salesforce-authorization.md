@@ -25,22 +25,25 @@ To get started with the Salesforce Blueprints, you will need an access token or 
 ## Setting Up a Connected App (Recommended)
 1. **Navigate to App Manager**
    - Go to Setup.
+   ![](../../.gitbook/assets/shipyard_2023-09-29-11-08-12.png)
    - Enter "App Manager" in the Quick Find box.
    - Select App Manager from the results.
-
+   ![](../../.gitbook/assets/shipyard_2023-09-29-11-09-28.png)
 2. **Initiate App Creation**
    - Click on "New Connected App".
-
+   ![](../../.gitbook/assets/shipyard_2023-09-29-11-10-02.png)
 3. **Input App Details**
    - **Connected App Name**: Shipyard
    - **API Name**: Shipyard
    - **Contact Email**: [Your email address]
-   - **Enabled OAuth Settings**: Ensure this is checked.
-   - **Callback URL**: If you lack a callback URL, enter `no:callbackurl`.
-   - **Selected OAuth Scopes**: This might vary based on your use case. However, commonly you'll select:
-     - `Perform requests at any time (refresh_token, offline_access)`
-     - `Manage user data via APIs`
-
+   - **API (Enable OAuth Settings) Section** 
+      - **Enabled OAuth Settings**: Ensure this is checked.
+      - **Callback URL**: If you lack a callback URL, enter `no:callbackurl`.
+      - **Selected OAuth Scopes**: This might vary based on your use case. However, commonly you'll select:
+         - `Perform requests at any time (refresh_token, offline_access)`
+         - `Manage user data via APIs`
+   inputs should look similar to the below
+   ![](../../.gitbook/assets/shipyard_2023-09-29-11-14-05.png)
 4. **Save and Continue**
    - Click "Save".
    - Click "Continue".
@@ -49,7 +52,7 @@ To get started with the Salesforce Blueprints, you will need an access token or 
    - Click on the app you've just created.
    - Navigate to "Manage Consumer Details".
    - Copy the "Consumer Key" and "Consumer Secret" and store them securely for future use.
-
+   ![](../../.gitbook/assets/shipyard_2023-09-29-11-15-04.png)
 > **Note**: Ensure that the "Username-Password Flow" isn't restricted for your organization. Go to the setup console, search for `OAuth and OpenID Connect Settings`, and verify that `Allow OAuth Username-Password Flows` is enabled.
 
 
