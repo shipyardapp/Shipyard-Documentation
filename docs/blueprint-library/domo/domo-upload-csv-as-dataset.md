@@ -28,39 +28,40 @@ Create a Domo dataset by uploading a csv to Domo. If the `Domo Dataset Name` alr
 | Schema in Domo | DOMO_SCHEMA  | Alphanumeric |:heavy_minus_sign: | - | - | The Domo data types of the dataset that is to be loaded. This is an optional argument, and is only recommended if the number of columns and types is known beforehand. If left blank, the data types will be inferred by sampling the entire dataset. |
 | Insert Method | DOMO_INSERT_METHOD  | Select |:white_check_mark: | `REPLACE` | Replace: `REPLACE`<br></br><br></br>Append: `APPEND`<br></br><br></br> | The option to replace the entire data set with new data, or add to the existing rows |
 | Dataset Id | DOMO_DATASET_ID  | Alphanumeric |:heavy_minus_sign: | - | - | The ID associated with the desired dataset. This is only necessary if modifying an existing dataset, not creating a new one. |
-| File Name Match Type | FILE_NAME_MATCH_TYPE  | Select |:white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match`<br></br><br></br> | None |
+| File Name Match Type | FILE_NAME_MATCH_TYPE  | Select |:white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match`<br></br><br></br> | Type of search pattern matching you wish to use |
 
 
 ## YAML
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: Domo - Upload CSV as Dataset
-  inputs:
-    DOMO_CLIENT_ID: null ## REQUIRED
-    DOMO_SECRET_KEY: null ## REQUIRED
-    DOMO_FOLDER_NAME: null 
-    FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
-    DOMO_FILE: null ## REQUIRED
-    DOMO_DATASET_NAME: null ## REQUIRED
-    DOMO_DATASET_DESCRIPTION: null 
-    DOMO_SCHEMA: null 
-    DOMO_INSERT_METHOD: REPLACE ## REQUIRED
-    DOMO_DATASET_ID: null 
-  type: BLUEPRINT
+    blueprint: Domo - Upload File as Dataset from Shipyard
+    inputs:
+        DOMO_CLIENT_ID: null  ## REQUIRED
+        DOMO_SECRET_KEY: null ## REQUIRED
+        DOMO_FOLDER_NAME: null
+        DOMO_FILE: null ## REQUIRED
+        DOMO_DATASET_NAME: null ## REQUIRED
+        DOMO_DATASET_DESCRIPTION: null
+        DOMO_SCHEMA: null
+        DOMO_INSERT_METHOD: REPLACE ## REQUIRED
+        DOMO_DATASET_ID: null
+        FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
+    type: BLUEPRINT
 guardrails:
-  retry_count: 1
-  retry_wait: 0s
-  runtime_cutoff: 1h0m0s
-  exclude_exit_code_ranges:
-    - "200"
-    - "201"
-    - "203"
-    - "204"
-    - "205"
-    - "210"
-    - "211"
-    - "214"
-    - "215"
-    - "216-220"
+    retry_count: 1
+    retry_wait: 0h0m0s
+    runtime_cutoff: 1h0m0s
+    exclude_exit_code_ranges:
+    -   200
+    -   201
+    -   203
+    -   204
+    -   205
+    -   210
+    -   211
+    -   214
+    -   215
+    -   216
+
 ```
