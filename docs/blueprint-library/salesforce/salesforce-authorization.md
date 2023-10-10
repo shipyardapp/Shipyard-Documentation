@@ -13,21 +13,25 @@ keywords:
 ---
 
 # Salesforce Authorization
-To get started with the Salesforce Blueprints, you will need an access token or following items from Salesforce:
+To get started with the Salesforce Blueprints, you will need your Salesforce Domain URL. Depending on your authentication approach, you might require:
 
-- **Domain**
-- **Consumer Key**
-- **Consumer Secret**
-- **Username**
-- **Password**
-- **Security Token** (This might be required based on your organization's security policies.)
+To initiate the Salesforce Blueprints:
+
+- **Domain**: Essential for all methods.
+- **Connected App Details** (Recommended):
+  - Consumer Key
+  - Consumer Secret
+  - Username
+  - Password
+  - Security Token (may be needed based on organizational policies)
+- **Access Token** (Alternative method)
 
 ## Setting Up a Connected App (Recommended)
 1. **Navigate to App Manager**
    - Go to Setup.
    
    ![](../../.gitbook/assets/shipyard_2023-09-29-11-08-12.png)
-   - Enter "App Manager" in the Quick Find box.
+   - Type "App Manager" in the Quick Find box.
    - Select App Manager from the results.
    ![](../../.gitbook/assets/shipyard_2023-09-29-11-09-28.png)
 2. **Initiate App Creation**
@@ -52,12 +56,14 @@ To get started with the Salesforce Blueprints, you will need an access token or 
    - Click "Continue".
 
 5. **Retrieve Consumer Details**
-   - Click on the app you've just created.
+   - Click the recently created app.
    - Navigate to "Manage Consumer Details".
    - Copy the "Consumer Key" and "Consumer Secret" and store them securely for future use.
    ![](../../.gitbook/assets/shipyard_2023-09-29-11-15-04.png)
-> **Note**: Ensure that the "Username-Password Flow" isn't restricted for your organization. Go to the setup console, search for `OAuth and OpenID Connect Settings`, and verify that `Allow OAuth Username-Password Flows` is enabled.
+> **Note**: If your organization requires you to use a security token, you can reset it from your personal settings.From your personal settings, in the Quick Find box, enter Reset, and then select Reset My Security Token.
+Click Reset Security Token. The new security token is sent to the email address in your Salesforce personal settings.
 
+> **Note**: Ensure that the "Username-Password Flow" isn't restricted for your organization. Go to the setup console, search for `OAuth and OpenID Connect Settings`, and verify that `Allow OAuth Username-Password Flows` is enabled.
 
 
 ## Obtaining an Access Token Using Salesforce CLI
