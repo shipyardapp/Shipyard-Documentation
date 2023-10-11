@@ -26,7 +26,7 @@ Shipyard currently has the following Blueprints readily available:
 - [Upload File as Dataset from Shipyard](domo-upload-csv-as-dataset.md)
 - [Download Card to Shipyard](domo-download-card.md)
 - [Download Dataset to Shipyard](domo-download-dataset.md)
-- [Refresh Dataset](domo-refresh-dataset.md)
+- [Trigger Dataset Refresh](domo-refresh-dataset.md)
 
 ## Open Source Code
 The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/domo-blueprints), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.
