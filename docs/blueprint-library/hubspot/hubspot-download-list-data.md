@@ -1,16 +1,16 @@
 ---
 id: hubspot-download-list-data
-title: Hubspot Template - Download List Data
+title: Hubspot Template - Download List Data to Shipyard
 hide_title: true
-sidebar_label: Download List Data
-description: Information about Shipyard's low-code Hubspot Download List Data blueprint. Exports specified Hubspot list data based on given object properties and saves it to a designated file 
+sidebar_label: Download List Data to Shipyard
+description: Information about Shipyard's low-code Hubspot Download List Data to Shipyard blueprint. Exports specified Hubspot list data based on given object properties and saves it to a designated file 
 keywords:
     - hubspot
     - blueprint
     - template
 ---
 
-# Hubspot - Download List Data
+# Hubspot - Download List Data to Shipyard
 
 ## Overview
 Preparation:
@@ -48,7 +48,7 @@ Initiate the blueprint. It will start the export process, monitor the status, an
 | ILS List ID | HUBSPOT_LIST_ID  | Alphanumeric |:white_check_mark: | - | - | The unique ID of the Hubspot list you wish to export. Ensure the list exists in your Hubspot account. |
 | Object Properties to Export | HUBSPOT_OBJECT_PROPERTIES  | Alphanumeric |:heavy_minus_sign: | - | - | Comma-separated list of object properties from the Hubspot list that you want to export. Ensure these properties exist for the specified list. |
 | Destination Filename | HUBSPOT_DESTINATION_FILENAME  | Alphanumeric |:white_check_mark: | - | - | The desired filename for the exported data. The file will be saved with a .csv extension. |
-| Hubspot Data Type | HUBSPOT_OBJECT_TYPE  | Select |:white_check_mark: | `contacts` | Contacts: `contacts`<br></br><br></br>Companies: `companies`<br></br><br></br>Deals: `deals`<br></br><br></br> | Select which data object is that is included in the list. |
+| Hubspot Data Type | HUBSPOT_OBJECT_TYPE  | Select |:white_check_mark: | `contacts` | Contacts: `contacts`<br></br><br></br>Company: `companies`<br></br><br></br>Deals: `deals`<br></br><br></br> | Select which data object is that is included in the list. |
 
 
 ## YAML
