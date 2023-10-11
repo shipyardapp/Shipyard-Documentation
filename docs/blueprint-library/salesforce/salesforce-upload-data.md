@@ -38,7 +38,7 @@ keywords:
 | Security Token | SALESFORCE_SECURITY_TOKEN  | Password |:heavy_minus_sign: | - | - | Additional security token for Salesforce access. |
 | Consumer Key | SALESFORCE_CONSUMER_KEY  | Alphanumeric |:heavy_minus_sign: | - | - | None |
 | Consumer Secret | SALESFORCE_CONSUMER_SECRET  | Password |:heavy_minus_sign: | - | - | Secret associated with the consumer key. |
-| Salesforce Object Type | SALESFORCE_OBJECT_TYPE  | Alphanumeric |:white_check_mark: | `Account` | - | None |
+| Object Type | SALESFORCE_OBJECT_TYPE  | Alphanumeric |:white_check_mark: | `Account` | - | The type of Salesforce record you're updating. For example Account, Opportunity, Customer, etc. This name must match Salesforce's API Name from their object manager view. |
 | Search Type | SALESFORCE_SOURCE_MATCH_TYPE  | Select |:white_check_mark: | `exact_match` | Exact: `exact_match`<br></br><br></br>RegEx: `regex_match`<br></br><br></br> | Method for matching the source file name. Choose 'Exact' for exact names or 'Regex' for regular expression patterns. |
 | Data File Location | SALESFORCE_SOURCE_FOLDER_NAME  | Alphanumeric |:white_check_mark: | `.` | - | None |
 | Data File Name or Pattern | SALESFORCE_SOURCE_FILE_NAME  | Alphanumeric |:white_check_mark: | - | - | Exact name or pattern to identify files for import. |

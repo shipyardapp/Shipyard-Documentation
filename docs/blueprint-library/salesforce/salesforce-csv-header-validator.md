@@ -63,6 +63,8 @@ In short, this blueprint ensures your CSV data aligns with Salesforce, paving th
 | Password | SALESFORCE_PASSWORD  | Password |:heavy_minus_sign: | - | - | Your Salesforce account's password. |
 | Security Token | SALESFORCE_SECURITY_TOKEN  | Password |:heavy_minus_sign: | - | - | Additional security token provided by Salesforce to enhance protection. |
 | CSV Filename | SALESFORCE_CSV_FILE  | Alphanumeric |:heavy_minus_sign: | - | - | The name/path of the CSV file you want to validate against Salesforce properties. |
+| Object Type | SALESFORCE_OBJECT_TYPE  | Alphanumeric |:heavy_minus_sign: | - | - | The specific Salesforce object type (e.g., Account, Customer) you want to validate against. This name must match Salesforce's API Name from their object manager view. |
+
 
 
 ## YAML
