@@ -16,7 +16,9 @@ keywords:
 ## Generating Access Token
 * In your HubSpot account, click the settings icon in the main navigation bar.
 * In the left sidebar menu, navigate to Integrations > Private Apps.
+![](../../.gitbook/assets/shipyard_2023-09-12-09-45-07.png)
 * Click Create private app.
+![](../../.gitbook/assets/shipyard_2023-09-12-09-45-40.png)
   * On the Basic Info tab, configure the details of your app:
   * Enter your app's name.
   * Hover over the placeholder logo and click the upload icon to upload a square image that will serve as the logo for your app.
@@ -26,4 +28,5 @@ keywords:
 * After you're done configuring your app, click Create app in the top right.
 
 ## Finding List ID
-Navigate to Contacts > Lists, hover over the list in the table, then click Details. In 
+Navigate to Contacts > Lists, hover over the list in the table, then click Details. 
+![](../../.gitbook/assets/shipyard_2023-09-12-09-53-08.png)

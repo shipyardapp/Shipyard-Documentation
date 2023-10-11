@@ -13,32 +13,7 @@ keywords:
 # Hubspot - Download List Data to Shipyard
 
 ## Overview
-Preparation:
-
-Ensure you have a Hubspot Access Token. This is a requirement for authenticating and accessing your Hubspot data. If you don’t have one, you can obtain it via the Hubspot API settings in your account.
-
-Identify the Hubspot List ID of the list you intend to export. This ID can usually be found in the list’s URL or details page on Hubspot.
-
-Decide on the object properties you want to export. These are the specific fields or columns of data you wish to extract from the list.
-
-Choose a destination filename where the exported data will be saved.
-
-Using the Blueprint:
-
-Launch the "Hubspot - Export List Data" blueprint on the Shipyard platform.
-
-Input the Hubspot Access Token into the designated field.
-
-Provide the Export Job Name. This is a unique identifier for this export operation, allowing you to track or reference it later.
-
-Input the Hubspot List ID.
-
-Enter the object properties you decided on, separated by commas. For example: firstname,lastname,email.
-
-Specify the destination filename. Remember, the blueprint will append .csv to whatever name you provide.
-
-Initiate the blueprint. It will start the export process, monitor the status, and download the file once the export is ready.
-
+The "Hubspot - Download List Data to Shipyard" blueprint on Shipyard allows you to export selected data fields from a specific Hubspot list. Simply provide your Hubspot Access Token, specify the list ID and desired data fields, set a filename (which will auto-append .csv), and initiate the process. 
 ## Variables
 
 | Name | Reference | Type | Required | Default | Options | Description |
