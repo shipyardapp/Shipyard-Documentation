@@ -15,7 +15,7 @@ keywords:
 ## Overview
 Preparation:
 
-Have your Hubspot Access Token ready. This token is essential for accessing the list of available Hubspot contact properties.
+Have your Hubspot Access Token ready. This token is essential for accessing the list of available Hubspot properties.
 Prepare the CSV file you want to validate. Make sure it's accessible and you know its path.
 Using the Blueprint:
 
@@ -31,7 +31,7 @@ Review the logs. If you provided a CSV, it would indicate whether all headers ar
 
 | Name | Reference | Type | Required | Default | Options | Description |
 |:-----|:----------|:-----|:---------|:--------|:--------|:------------|
-| Access Token | Access Token  | Password |:white_check_mark: | - | - | Token for authenticating with Hubspot. This ensures secure access to the Hubspot account for exporting data. |
+| Access Token | HUBSPOT_ACCESS_TOKEN  | Password |:white_check_mark: | - | - | Token for authenticating with Hubspot. This ensures secure access to the Hubspot account for exporting data. |
 | CSV File Path (Optional) | HUBSPOT_CSV_FILE  | Alphanumeric |:heavy_minus_sign: | - | - | Path to the CSV file you want to validate. If not provided, the blueprint will log available Hubspot properties. |
 | Hubspot Data Type | HUBSPOT_OBJECT_TYPE  | Select |:white_check_mark: | `contacts` | Contacts: `contacts`<br></br><br></br>Companies: `companies`<br></br><br></br>Deals: `deals`<br></br><br></br> | None |
 

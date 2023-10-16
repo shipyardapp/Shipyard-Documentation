@@ -23,7 +23,7 @@ For information on how to set up these Blueprints successfully, please read thro
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available: 
 - [CSV Header Validator](hubspot-csv-header-validator.md)
-- [Download List Data](hubspot-download-list-data.md)
+- [Download List Data to Shipyard](hubspot-download-list-data.md)
 - [Upload Data](hubspot-upload-data.md)
 
 ## Open Source Code
