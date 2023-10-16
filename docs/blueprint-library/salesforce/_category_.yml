@@ -1,0 +1,7 @@
+
+label: Salesforce
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: salesforce-overview
