@@ -43,6 +43,7 @@ Slack Blueprints rely on users to have the Slack token of a working Slack app th
    - groups:read
    - users:read
    - users:read.email
+   - files:write
 
 ![](https://cdn.sanity.io/images/2xyydva6/production/3ce7b954e013f671104be84c5fd590b32a1f280f-668x585.png?w=450)
 
