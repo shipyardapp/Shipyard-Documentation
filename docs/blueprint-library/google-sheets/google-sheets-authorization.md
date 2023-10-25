@@ -66,6 +66,8 @@ In order to get started with the Google Sheets Blueprints, a service account wit
 
 15. In the popup modal select "**JSON**"  and click "**CREATE**"
 16. Copy the downloaded file JSON contents and save for safe keeping. The contents of this file can be pasted into the "**Service Account**" input for all Google Sheets Blueprints.
+17. Enable the Google Drive API [here](https://console.developers.google.com/apis/api/drive.googleapis.com/overview)
+![](https://cdn.sanity.io/images/2xyydva6/production/1a558dc0e2c2f739aa92fd43ecbe9c1899938a3d-568x223.png?w=450)
 
 ## Inviting a Service Account to a Google Sheet
 
