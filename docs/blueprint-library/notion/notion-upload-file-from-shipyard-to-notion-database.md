@@ -20,14 +20,16 @@ Quickly upload a file to a Notion Database. Unsupported Notion datatypes for upl
 - Relation
 - Formula
 
-1. If you have an existing database that you wish to add additional rows to, select the `Append` option. 
+When uploading a file to a database in Notion, you have two options from Shipyard: to replace an existing database or to append to an existing database. 
 
-2. If you have an existing database that you wish to overwrite with new data, select the `Replace` option
+#### Replace
+When the `Replace` insert method is selected, this will do one of two things: 1) create a new database or 2) overwrite an existing database. The inputs provided will determine the behaviour. For instance, if the `Database ID` is provided, the blueprint will attempt to overwrite that existing database. If the `Database ID` is not provided, the blueprint will attempt to create a new database, but in order to do so the `Page ID` of where the new database will live is required. 
 
-3. If you wish to create a new database on a parent page, select the `Replace` option provided with the `Page ID` and optionally the `Database Name`. 
+#### Append
+When the `Append` insert method is selected, the blueprint will attempt to add new rows to an existing database. In order to do so, the `Database ID` is required, failing to provide it will result in an error.
+
 
 **NOTE** - existing schemas and datatypes are strictly enforced. If there is a mismatch in datatypes for data being loaded, it will fail.
-
 ## Variables
 
 | Name               | Reference            | Type         | Required           | Default  | Options                                                                | Description                                                                                                                                                    |
