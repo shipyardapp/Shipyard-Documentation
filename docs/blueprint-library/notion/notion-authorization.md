@@ -11,8 +11,7 @@ keywords:
 - template
 - authorization
 ---
-
-# Notion Authorization
+## Notion Authorization 
 In order to connect Shipyard to Notion, you will need:
 
 1. A Notion Access Token
@@ -32,11 +31,18 @@ In order to obtain an access token, you must create an integration within Notion
 4. Copy the Integration Secret Value to use as the `Notion Access Token` input
 ![](https://cdn.sanity.io/images/2xyydva6/dev/9f94086bea34f71a12a1f7c7b880824b50ac852e-936x293.png?w=450)
 
+## Connecting the Integration
+In order to make API calls to Notion with the access token created in the previous steps, you must create a parent page where the database will reside and establish a connection with your Integration
+1. Navigate to a page where your database either currently resides or will reside
+2. In the top right hand corner, select the settings (`...`) icon and toward the bottom select the `Add Connections` option
+![](https://cdn.sanity.io/images/2xyydva6/production/0e8b665da073d76ced9430118a10f81f1347d7bf-474x960.png?w=450)
+3. Search for your integration and select `confirm` to establish a connection
+![](https://cdn.sanity.io/images/2xyydva6/production/66d131cc4c34d732a4460464bdcc8de83780b479-470x237.png?w=450)
+
 ## Database ID
 To obtain the Database ID, you need to simply access a database within the Notion UI and copy the trailing portion of the URL
 
-![](https://cdn.sanity.io/images/2xyydva6/dev/cb5f3a5244843d736bdcfa978739f30f546ed30f-1776x770.png?w=450)
-
+![](https://cdn.sanity.io/images/2xyydva6/production/b39ea4b0eeefcac4219b562c04a016f1f8449f61-719x199.png?w=450)
 ## Page ID
 
 To obtain the Page ID:
