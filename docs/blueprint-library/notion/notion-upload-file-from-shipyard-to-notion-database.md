@@ -23,7 +23,7 @@ Quickly upload a file to a Notion Database. Unsupported Notion datatypes for upl
 When uploading a file to a database in Notion, you have two options from Shipyard: to replace an existing database or to append to an existing database. 
 
 #### Replace
-When the `Replace` insert method is selected, this will do one of two things: 1) create a new database or 2) overwrite an existing database. The inputs provided will determine the behaviour. For instance, if the `Database ID` is provided, the blueprint will attempt to overwrite that existing database. If the `Database ID` is not provided, the blueprint will attempt to create a new database, but in order to do so the `Page ID` of where the new database will live is required. 
+When the `Replace` insert method is selected, this will do one of two things: 1) create a new database or 2) overwrite an existing database. The inputs provided will determine the behaviour. For instance, if the `Database ID` is provided, the blueprint will attempt to overwrite that existing database. If the `Database ID` is not provided, the blueprint will attempt to create a new database, but in order to do so the `Page ID` of where the new database will live is required. Additionally, when creating a new database, you can optionally provide the `Database Name`, not providing the `Database Name` will result in the created database being named "Untitled."
 
 #### Append
 When the `Append` insert method is selected, the blueprint will attempt to add new rows to an existing database. In order to do so, the `Database ID` is required, failing to provide it will result in an error.
