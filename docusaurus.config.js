@@ -64,7 +64,7 @@ module.exports = {
 				},
 				{
 					to: "https://www.shipyardapp.com/demo",
-					label: "Watch a Demo",
+					label: "Get a Demo",
 					position: "left",
 				},
 				{
@@ -78,6 +78,16 @@ module.exports = {
 				//   position: 'right',
 				// },
 			],
+		},
+		zoom: {
+			selector: "img",
+			config: {
+				// options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+				background: {
+					light: "rgb(255, 255, 255)",
+					dark: "rgb(50, 50, 50)",
+				},
+			},
 		},
 		footer: {
 			style: "dark",
@@ -147,7 +157,7 @@ module.exports = {
 						"https://github.com/facebook/docusaurus/edit/master/website/blog/",
 				},
 				theme: {
-					customCss: require.resolve("./src/css/custom.css"),
+					customCss: ["./src/css/custom.css"],
 				},
 				sitemap: {
 					changefreq: "weekly",
@@ -160,7 +170,8 @@ module.exports = {
 		],
 	],
 	plugins: [
-		"plugin-image-zoom",
+		// "plugin-image-zoom",
+		require.resolve("docusaurus-plugin-image-zoom"),
 		[
 			"@docusaurus/plugin-client-redirects",
 			{

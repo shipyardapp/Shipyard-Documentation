@@ -17,6 +17,7 @@
 		"@docusaurus/plugin-client-redirects": "^3.0.0",
 		"@docusaurus/plugin-google-analytics": "^3.0.0",
 		"@docusaurus/plugin-google-tag-manager": "^3.0.0",
+		"@docusaurus/plugin-ideal-image": "^3.0.0",
 		"@docusaurus/plugin-sitemap": "^3.0.0",
 		"@docusaurus/preset-classic": "^3.0.0",
 		"@docusaurus/utils": "^3.0.0",
@@ -25,7 +26,7 @@
 		"clsx": "^1.1.1",
 		"docusaurus": "^1.14.7",
 		"docusaurus-plugin-auto-sidebars": "^1.0.7",
-		"plugin-image-zoom": "ataft/plugin-image-zoom",
+		"docusaurus-plugin-image-zoom": "^1.0.1",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"trim": "^1.0.1"
