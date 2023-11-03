@@ -29,3 +29,6 @@ Examples:
 - You run three instances of Process A, in parallel, but still only need to run Process B once after both Process A jobs have completed. If you run Process A three times at 2:00pm, all instances would complete at 3:00pm and kick off Process B which would finish at 3:10pm. Total billable runtime is calculated as 3h 10m, even though the Fleet only had a duration of 1h 10m.
 - You run Process C with guardrails to retry itself 10x upon failure, with 5m between each retry. Process C starts running at 8:00am and fails every time. Process C finishes running at 8:55am, with a total billable runtime of 10m.
 - You run Process C with guardrails to retry itself 10x upon failure, with 5m between each retry. Process C starts running at 8:00am and succeeds after the 3rd time. Process C finishes running at 8:13am, with a total runtime of 3m.
+
+:::note
+Shipyard's Blueprints with "Trigger" in the name run free of charge. Read more about this distinction in our [product announcement](https://www.shipyardapp.com/blog/orchestrate-data-tools-free/)
