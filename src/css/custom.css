@@ -97,3 +97,7 @@ html[data-theme="dark"] .header-github-link:before {
 .row .col.col--3 {
 	--ifm-col-width: calc(2 / 12 * 100%);
 }
+img {
+	max-height: 600px;
+	width: auto; /* To maintain aspect ratio */
+  }
