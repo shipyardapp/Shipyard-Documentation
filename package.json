@@ -26,8 +26,8 @@
 		"docusaurus": "^1.14.7",
 		"docusaurus-plugin-auto-sidebars": "^1.0.7",
 		"plugin-image-zoom": "ataft/plugin-image-zoom",
-		"react": "^16.8.4",
-		"react-dom": "^16.8.4",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
 		"trim": "^1.0.1"
 	},
 	"browserslist": {
