@@ -13,7 +13,7 @@ slug: /
 
 # Introduction
 
-![](.gitbook/assets/logo-and-name-purple-1.png)
+![Shipyard Purple Logo](https://cdn.sanity.io/images/2xyydva6/production/790964148785622a9de131f6e935c20f21ee7d89-4000x1000.png?fit=max&w=600&h=600)
 
 ## Welcome!
 
