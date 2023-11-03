@@ -216,7 +216,7 @@ ALLOWED_IP_LIST = ('54.190.66.63', '52.42.73.100', '44.231.239.186', '44.225.245
 
 1. Log into your Snowflake Account.
 2. Open a new worksheet.
-3. Paste the following script in the worksheet, updating <code>{policy_name}</code> with the correct value.
+3. Paste the following script in the worksheet, updating `{policy_name}` with the correct value.
 
 ```sql
 ALTER NETWORK POLICY {policy_name}

@@ -70,7 +70,7 @@ If your Vessel is built with Code, you will see the following panels:
 - [Code](../code/code-overview.md)
 - [Arguments](../arguments.md)
 - [Environment Variables](../environment-variables/environment-variables-overview.md)
-- [{Language} Packages](../packages/external-package-dependencies.md)
+- [`{Language}` Packages](../packages/external-package-dependencies.md)
 - [System Packages](../packages/system-package-dependencies.md)
 - [Notifications](../notifications.md)
 - [Guardrails](../guardrails.md)

@@ -111,7 +111,7 @@ For this tutorial, we don't have any [environment variables](../reference/enviro
 ![](../.gitbook/assets/shipyard_2022_05_05_14_40_16.png)
 
 :::info
-The version field can accept many types of arguments including: >, <, ==, >=. <=, etc. You can use learn more about how to define package versions in our documentation [here](../reference/packages/external-package-dependencies.md) 
+The version field can accept many types of arguments including: `>`, `<`, `==`, `>=`. `<=`, etc. You can use learn more about how to define package versions in our documentation [here](../reference/packages/external-package-dependencies.md) 
 :::
 
 ### Step 4 - Connect Vessels

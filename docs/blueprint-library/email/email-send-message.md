@@ -33,7 +33,7 @@ To have Shipyard dynamically parse and output the contents of a file, you can in
 | CC | EMAIL_CC  | Alphanumeric |:heavy_minus_sign: | - | - | The email(s) that you want your message to be carbon copied (CCed) to. Can be comma-separated to include multiple email addresses. |
 | BCC | EMAIL_BCC  | Alphanumeric |:heavy_minus_sign: | - | - | The email(s) that you want to be blind carbon copied (BCCed) to. Can be comma-separated to include multiple email addresses. Emails in this field will receive the email, but will not have their email exposed to all other recipients. |
 | Subject | EMAIL_SUBJECT  | Alphanumeric |:heavy_minus_sign: | - | - | The subject of the email that you want to send. |
-| Message | EMAIL_MESSAGE  | Alphanumeric |:white_check_mark: | - | - | The body of the email, containing your main message. This field supports plain text as well as HTML. To have Shipyard dynamically parse and output the contents of a file, you can include the filename in this format: {{text:file.txt}} |
+| Message | EMAIL_MESSAGE  | Alphanumeric |:white_check_mark: | - | - | The body of the email, containing your main message. This field supports plain text as well as HTML. To have Shipyard dynamically parse and output the contents of a file, you can include the filename in this format: `{{text:file.txt}}` |
 | Include Shipyard Footer? | EMAIL_INCLUDE_SHIPYARD_FOOTER  | Boolean |:white_check_mark: | `True` | - | Determines if a footer should be sent with the email that links back to the originating Vessel or Fleet. |
 
 

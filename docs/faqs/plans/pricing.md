@@ -15,7 +15,7 @@ keywords:
 Shipyard has two paid plans, Team and Enterprise.
 
 The goal with our pricing is to be more advantageous for you than:
-- Running and maintaining your own servers 24/7, even though you might only end up using those servers <10% of the time.
+- Running and maintaining your own servers 24/7, even though you might only end up using those servers less than 10% of the time.
 - Employing DevOps to manage your data team's infrastructure
 
 For a more detailed overview, you can look at the [latest plans](https://www.shipyardapp.com/pricing).

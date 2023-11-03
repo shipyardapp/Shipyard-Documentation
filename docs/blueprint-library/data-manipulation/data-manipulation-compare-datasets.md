@@ -20,9 +20,9 @@ Compare two CSV files and return files that show the rows with differing and ove
 - Have the same column names
 
 After comparing data in the two files, the following files _may_ be generated:
-- {File Name 1}_only.csv (contains only rows found in `File Name 1`)
-- {File Name 2}_only.csv (contains only rows found in `File Name 2`)
-- {File Name 1}_overlap.csv (contains rows found in both `File Name 1` AND `File Name 2`)
+- `{File Name 1}_only.csv` (contains only rows found in `File Name 1`)
+- `{File Name 2}_only.csv` (contains only rows found in `File Name 2`)
+- `{File Name 1}_overlap.csv` (contains rows found in both `File Name 1` AND `File Name 2`)
 
 If there is no unique data, a file with the `_only` will not be created. If there is no overlapping data, the `_overlap` file will not be created.
 
