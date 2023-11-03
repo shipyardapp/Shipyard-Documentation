@@ -11,6 +11,8 @@ keywords:
 - template
 - authorization
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # Snowflake Authorization
 Connecting Snowflake to Shipyard requires you to have:
