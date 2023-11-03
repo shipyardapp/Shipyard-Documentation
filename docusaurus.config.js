@@ -21,6 +21,10 @@ module.exports = {
 			src: BASE_URL + "js/onetrust-segment.js",
 			async: false,
 		},
+		{
+			src: BASE_URL + "js/segment-run.js",
+			async: false,
+		},
 	],
 	themeConfig: {
 		algolia:
