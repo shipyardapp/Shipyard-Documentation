@@ -150,6 +150,7 @@ function OptanonWrapper() {
 			window.analytics.load(SEGMENT_WRITE_KEY, {
 				integrations: destinationPreferences,
 			});
+			window.analytics.page();
 		} else {
 			console.log("No groups other than strictly necessary consented to");
 		}
