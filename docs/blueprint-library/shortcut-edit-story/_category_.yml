@@ -1,0 +1,7 @@
+
+label: Shortcut - Edit Story
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: shortcut-edit-story-overview
