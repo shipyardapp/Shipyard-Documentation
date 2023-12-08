@@ -1,0 +1,7 @@
+
+label: SFTP - Delete Files
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: sftp-delete-files-overview
