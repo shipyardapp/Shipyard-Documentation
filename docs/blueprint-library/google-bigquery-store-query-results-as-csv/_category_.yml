@@ -1,0 +1,7 @@
+
+label: Google BigQuery - Download Query Results to Shipyard
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: google-bigquery-store-query-results-as-csv-overview

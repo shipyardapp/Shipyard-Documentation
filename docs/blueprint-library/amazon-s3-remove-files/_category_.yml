@@ -1,0 +1,7 @@
+
+label: Amazon S3 - Delete Files
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: amazon-s3-remove-files-overview

@@ -1,0 +1,7 @@
+
+label: Amazon S3 - Download Files to Shipyard
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: amazon-s3-download-files-overview

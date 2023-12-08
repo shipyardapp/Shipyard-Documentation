@@ -1,0 +1,7 @@
+
+label: Census - Check Sync Status (Deprecated)
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: census-check-sync-status-overview

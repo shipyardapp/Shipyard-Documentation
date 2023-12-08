@@ -1,0 +1,7 @@
+
+label: Salesforce - Download Data to Shipyard
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: salesforce-download-data-overview

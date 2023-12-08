@@ -1,0 +1,7 @@
+
+label: Databricks - Download Files from DBFS to Shipyard
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: databricks-download-files-from-dbfs-overview

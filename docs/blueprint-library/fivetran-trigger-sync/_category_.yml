@@ -1,0 +1,7 @@
+
+label: Fivetran - Trigger Sync
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: fivetran-trigger-sync-overview

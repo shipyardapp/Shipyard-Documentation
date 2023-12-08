@@ -1,0 +1,7 @@
+
+label: Box - Upload Files from Shipyard
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: box-upload-files-overview

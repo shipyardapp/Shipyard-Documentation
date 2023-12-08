@@ -1,0 +1,7 @@
+
+label: Trello - Edit Card
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: trello-edit-card-overview

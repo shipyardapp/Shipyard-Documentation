@@ -1,0 +1,7 @@
+
+label: Amazon Redshift - Upload File to Table from Shipyard
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: amazon-redshift-upload-csv-to-table-overview

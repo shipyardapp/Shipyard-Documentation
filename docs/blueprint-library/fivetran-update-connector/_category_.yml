@@ -1,0 +1,7 @@
+
+label: Fivetran - Update Connector
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: fivetran-update-connector-overview

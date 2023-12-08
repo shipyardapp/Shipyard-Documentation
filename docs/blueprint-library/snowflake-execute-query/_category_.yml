@@ -1,0 +1,7 @@
+
+label: Snowflake - Execute Query
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: snowflake-execute-query-overview

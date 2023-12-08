@@ -1,7 +1,0 @@
-
-label: Azure Blob Storage
-collapsible: true
-collapsed: true
-link:
-    type: doc
-    id: azure-blob-storage-overview

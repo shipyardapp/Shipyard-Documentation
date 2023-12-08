@@ -1,0 +1,7 @@
+
+label: ChatGPT - Generate Response
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: chatgpt-generate-response-overview

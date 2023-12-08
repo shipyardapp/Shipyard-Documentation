@@ -1,0 +1,7 @@
+
+label: Microsoft Teams - Post Message
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: microsoft-teams-post-message-overview

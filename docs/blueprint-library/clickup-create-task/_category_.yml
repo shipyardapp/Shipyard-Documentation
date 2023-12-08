@@ -1,0 +1,7 @@
+
+label: Clickup - Create Task
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: clickup-create-task-overview

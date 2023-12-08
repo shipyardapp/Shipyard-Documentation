@@ -1,0 +1,7 @@
+
+label: Coalesce - Trigger Job
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: coalesce-trigger-job-overview

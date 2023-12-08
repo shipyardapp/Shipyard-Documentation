@@ -1,0 +1,7 @@
+
+label: Airbyte - Check Sync Status (Deprecated)
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: airbyte-check-sync-status-overview

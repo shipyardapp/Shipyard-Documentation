@@ -1,0 +1,7 @@
+
+label: FTP - Delete Files
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: ftp-remove-files-overview

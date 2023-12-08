@@ -1,0 +1,7 @@
+
+label: dbt Cloud - Check Run Status (Deprecated)
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: dbt-cloud-check-run-status-overview

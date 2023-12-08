@@ -1,0 +1,7 @@
+
+label: dbt Cloud - Trigger Job
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: dbt-cloud-trigger-job-overview

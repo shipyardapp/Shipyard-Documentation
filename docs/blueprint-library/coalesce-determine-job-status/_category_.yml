@@ -1,0 +1,7 @@
+
+label: Coalesce - Check Job Status (Deprecated)
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: coalesce-determine-job-status-overview

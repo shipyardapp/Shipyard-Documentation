@@ -1,0 +1,7 @@
+
+label: Dall-E - Generate Images
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: dall-e-generate-images-overview
