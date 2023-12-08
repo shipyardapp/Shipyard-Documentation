@@ -1,0 +1,7 @@
+
+label: dbt Cloud - Download Logs and Artifacts to Shipyard
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: dbt-cloud-download-logs-and-artifacts-overview
