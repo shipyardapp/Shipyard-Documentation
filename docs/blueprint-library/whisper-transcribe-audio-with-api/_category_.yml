@@ -1,0 +1,7 @@
+
+label: Whisper - Transcribe Audio with API
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: whisper-transcribe-audio-with-api-overview
