@@ -1,0 +1,7 @@
+
+label: Google Cloud Storage - Upload Files from Shipyard
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: google-cloud-storage-upload-files-overview
