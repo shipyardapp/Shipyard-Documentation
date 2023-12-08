@@ -1,0 +1,7 @@
+
+label: Jira - Edit Ticket
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: jira-edit-ticket-overview
