@@ -1,0 +1,7 @@
+
+label: ChatGPT - Generate Message
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: chatgpt-generate-message-overview
