@@ -1,0 +1,7 @@
+
+label: PostgreSQL - Execute Query
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: postgresql-execute-query-overview
