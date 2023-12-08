@@ -1,0 +1,7 @@
+
+label: Airbyte - Trigger Sync
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: airbyte-trigger-sync-overview
