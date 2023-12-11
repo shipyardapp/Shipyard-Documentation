@@ -1,0 +1,34 @@
+---
+id: databricks-sql-warehouse-authorization
+sidebar_position: 1
+title: Databricks SQL Warehouse Blueprint Authorization
+hide_title: true
+sidebar_label: Authorization
+description: Instructions on how to authorize Databricks SQL Warehouse to work with Shipyard's low-code Databricks SQL Warehouse templates.
+keywords:
+- databricks sql warehouse
+- blueprint
+- template
+- authorization
+---
+
+# Databricks SQL Warehouse Authorization
+In order to get started with the Databricks SQL Warehouse Blueprints, you will need generate an access token for programatic SQL access. Additionally, you will need to obtain the Server Host address as well as the HTTP Path for the SQL warehouse. This guide will outline how to obtain all necessary fields. 
+
+## Obtaining an Access Token
+1. On the sidebar, navigate to the SQL Warehouses tab. This will pull up the active warehouses in your workspace.
+![](https://cdn.sanity.io/images/2xyydva6/dev/2584b49c2e4587117537a6dadd5e6919368cc88a-196x779.png?w=450)
+2. Select the Warehouse that the blueprints will be connecting to
+![](https://cdn.sanity.io/images/2xyydva6/dev/64bab1fdc25752d3c01e7c3006ce6a47e46dd98a-841x213.png?w=450)
+3. In bottom right corner of the `Connection details` tab, select the `Create a personal access token` link, then select `Generate new token`
+![](https://cdn.sanity.io/images/2xyydva6/dev/c0d3b9979688dbc3bed690cf1692e80840bd7827-289x222.png?w=450)
+
+![](https://cdn.sanity.io/images/2xyydva6/dev/baac94bcd0ab4a9d9ccbfec8820c4c2f12b463da-772x194.png?w=450)
+4. This will prompt you to specify a comment and a lifetime. For the comment, you can put **Shipyard Blueprints**, and the lifetime can be left blank (meaning no expiration)
+![](https://cdn.sanity.io/images/2xyydva6/dev/cdf2a395e30ef5919d06e23c920fee20cfab4884-519x299.png?w=450)
+5. Be sure to copy the access token and save it a secure location
+
+## Obtaining the Server Host and HTTP Path
+Both the Server Host and HTTP can be found in the **Connection details** of a SQL Warehouse. 
+
+![](https://cdn.sanity.io/images/2xyydva6/dev/115f5091bf47625f75fa2f9e658dd09a4bcb2ca2-768x460.png?w=450)

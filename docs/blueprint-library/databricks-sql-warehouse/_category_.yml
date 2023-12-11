@@ -1,0 +1,7 @@
+
+label: Databricks SQL Warehouse
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: databricks-sql-warehouse-overview
