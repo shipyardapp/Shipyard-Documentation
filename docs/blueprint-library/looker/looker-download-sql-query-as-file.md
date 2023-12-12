@@ -32,20 +32,27 @@ Quickly download a Look from Looker as a variety of file types.
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: Looker - Download SQL Query as File
-  inputs:
-    LOOKER_URL: null ## REQUIRED
-    LOOKER_CLIENT_ID: null ## REQUIRED
-    LOOKER_CLIENT_SECRET: null ## REQUIRED
-    LOOKER_SLUG: null 
-    LOOKER_FILE_TYPE: csv ## REQUIRED
-    LOOKER_DESTINATION_FOLDER_NAME: null 
-    LOOKER_DESTINATION_FILE_NAME: null ## REQUIRED
-  type: BLUEPRINT
+    blueprint: Looker - Download SQL Query as File to Shipyard
+    inputs:
+        LOOKER_URL: null  ## REQUIRED
+        LOOKER_CLIENT_ID: null ## REQUIRED
+        LOOKER_CLIENT_SECRET: null ## REQUIRED
+        LOOKER_SLUG: null
+        LOOKER_FILE_TYPE: csv  ## REQUIRED
+        LOOKER_DESTINATION_FOLDER_NAME: null
+        LOOKER_DESTINATION_FILE_NAME: null  ## REQUIRED
+    type: BLUEPRINT
 guardrails:
-  retry_count: 1
-  retry_wait: 0s
-  runtime_cutoff: 1h0m0s
-  exclude_exit_code_ranges:
-    - "203-209"
+    retry_count: 1
+    retry_wait: 0h0m0s
+    runtime_cutoff: 1h0m0s
+    exclude_exit_code_ranges:
+    -   203
+    -   204
+    -   205
+    -   206
+    -   207
+    -   208
+    -   209
+
 ```

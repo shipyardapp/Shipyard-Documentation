@@ -33,22 +33,26 @@ Easily import one or more files from Shipyard to your Databricks File System (DB
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: Databricks - Upload Files to DBFS
-  inputs:
-    DATABRICKS_SOURCE_FOLDER_NAME: null 
-    DATABRICKS_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
-    DATABRICKS_SOURCE_FILE_NAME: null ## REQUIRED
-    DATABRICKS_DESTINATION_FOLDER_NAME: null 
-    DATABRICKS_DESTINATION_FILE_NAME: null 
-    DATABRICKS_INSTANCE_URL: null ## REQUIRED
-    DATABRICKS_ACCESS_TOKEN: null ## REQUIRED
-  type: BLUEPRINT
+    blueprint: Databricks - Upload Files to DBFS from Shipyard
+    inputs:
+        DATABRICKS_SOURCE_FOLDER_NAME: null
+        DATABRICKS_SOURCE_FILE_NAME_MATCH_TYPE: exact_match  ## REQUIRED
+        DATABRICKS_SOURCE_FILE_NAME: null ## REQUIRED
+        DATABRICKS_DESTINATION_FOLDER_NAME: null
+        DATABRICKS_DESTINATION_FILE_NAME: null
+        DATABRICKS_INSTANCE_URL: null  ## REQUIRED
+        DATABRICKS_ACCESS_TOKEN: null ## REQUIRED
+    type: BLUEPRINT
 guardrails:
-  retry_count: 1
-  retry_wait: 0s
-  runtime_cutoff: 1h0m0s
-  exclude_exit_code_ranges:
-    - "200-203"
-    - "212"
-    - "214"
+    retry_count: 1
+    retry_wait: 0h0m0s
+    runtime_cutoff: 1h0m0s
+    exclude_exit_code_ranges:
+    -   200
+    -   201
+    -   202
+    -   203
+    -   212
+    -   214
+
 ```

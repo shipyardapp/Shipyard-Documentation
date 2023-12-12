@@ -22,7 +22,7 @@ For information on how to set up these Blueprints successfully, please read thro
 
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available: 
-- [Add Comment](jira-add-comment.md)
+- [Add Comment To Ticket](jira-add-comment-to-ticket.md)
 - [Create Ticket](jira-create-ticket.md)
 - [Edit Ticket](jira-edit-ticket.md)
 

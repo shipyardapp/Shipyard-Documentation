@@ -25,7 +25,7 @@ Shipyard currently has the following Blueprints readily available:
 - [Download Files to Shipyard](ftp-download-files.md)
 - [Move or Rename Files](ftp-move-or-rename-files.md)
 - [Upload Files from Shipyard](ftp-upload-files.md)
-- [Remove Files](ftp-remove-files.md)
+- [Delete Files](ftp-remove-files.md)
 
 ## Open Source Code
 The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/ftp-blueprints), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.

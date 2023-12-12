@@ -31,7 +31,7 @@ Triggers the execution to create a ticket in Jira.
 | Assignee | JIRA_ASSIGNEE  | Alphanumeric |:heavy_minus_sign: | - | - | Email address of the User you want to assign the ticket to. If you would like for this to be the default assignee for the project use -1 |
 | Labels | JIRA_LABELS  | Alphanumeric |:heavy_minus_sign: | - | - | Labels to tag and categorize the ticket. Multiple labels can be assigned by separating them with commas. |
 | Components | JIRA_COMPONENTS  | Alphanumeric |:heavy_minus_sign: | - | - | Components of the Jira project to associate with the ticket. |
-| Due Date | JIRA_DUE_DATE  | Alphanumeric |:heavy_minus_sign: | - | - | None |
+| Due Date | JIRA_DUE_DATE  | Alphanumeric |:heavy_minus_sign: | - | - | The due date you wish to assign the ticket |
 | Priority | JIRA_PRIORITY  | Alphanumeric |:heavy_minus_sign: | - | - | The priority level of the ticket, indicating its importance or urgency. |
 
 
@@ -39,25 +39,27 @@ Triggers the execution to create a ticket in Jira.
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: Jira - Create Ticket
-  inputs:
-    JIRA_ACCESS_TOKEN: null ## REQUIRED
-    JIRA_EMAIL: null ## REQUIRED
-    JIRA_DOMAIN: null ## REQUIRED
-    JIRA_PROJECT_KEY: null ## REQUIRED
-    JIRA_PARENT_TICKET_KEY: null 
-    JIRA_SUMMARY: null ## REQUIRED
-    JIRA_DESCRIPTION: null 
-    JIRA_ISSUE_TYPE: Task ## REQUIRED
-    JIRA_ASSIGNEE: null 
-    JIRA_LABELS: null 
-    JIRA_COMPONENTS: null 
-    JIRA_DUE_DATE: null 
-    JIRA_PRIORITY: null 
-  type: BLUEPRINT
+    blueprint: Jira - Create Ticket
+    inputs:
+        JIRA_ACCESS_TOKEN: null  ## REQUIRED
+        JIRA_EMAIL: null ## REQUIRED
+        JIRA_DOMAIN: null ## REQUIRED
+        JIRA_PROJECT_KEY: null ## REQUIRED
+        JIRA_PARENT_TICKET_KEY: null
+        JIRA_SUMMARY: null ## REQUIRED
+        JIRA_DESCRIPTION: null
+        JIRA_ISSUE_TYPE: Task ## REQUIRED
+        JIRA_ASSIGNEE: null
+        JIRA_LABELS: null
+        JIRA_COMPONENTS: null
+        JIRA_DUE_DATE: null
+        JIRA_PRIORITY: null
+    type: BLUEPRINT
 guardrails:
-  retry_count: 1
-  retry_wait: 0s
-  runtime_cutoff: 1h0m0s
-  exclude_exit_code_ranges:
+    retry_count: 1
+    retry_wait: 0h0m0s
+    runtime_cutoff: 1h0m0s
+    exclude_exit_code_ranges:
+    -   '0'
+
 ```

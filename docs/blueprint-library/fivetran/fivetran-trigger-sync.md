@@ -3,7 +3,7 @@ id: fivetran-trigger-sync
 title: Fivetran Template - Trigger Sync
 hide_title: true
 sidebar_label: Trigger Sync
-description: Information about Shipyard's low-code Fivetran Trigger Sync blueprint. Execute a sync against an existing connector in the Fivetran interface without waiting for results. 
+description: Information about Shipyard's low-code Fivetran Trigger Sync blueprint. Execute a sync against an existing connector in the Fivetran interface. 
 keywords:
     - fivetran
     - blueprint
@@ -24,13 +24,13 @@ The response for this request will always be stored at `shipyard-artifacts/fivet
 
 ## Variables
 
-| Name                | Reference             | Type         | Required           | Default | Options                                                              | Description                                                                                                                                               |
-|:--------------------|:----------------------|:-------------|:-------------------|:--------|:---------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| API Key             | FIVETRAN_API_KEY      | Password     | :white_check_mark: | -       | -                                                                    | Your account's unique API Key for Fivetran.                                                                                                               |
-| API Secret          | FIVETRAN_API_SECRET   | Password     | :white_check_mark: | -       | -                                                                    | Your account's unique API Secret for Fivetran.                                                                                                            |
-| Connector ID        | FIVETRAN_CONNECTOR_ID | Alphanumeric | :white_check_mark: | -       | -                                                                    | The unique ID associated with a connector. Typically two words separated by an underscore.                                                                |
-| Force Sync          | FIVETRAN_FORCE        | Select       | :white_check_mark: | `TRUE`  | Enabled: `TRUE`<br></br><br></br>Disabled: `FALSE`<br></br><br></br> | Enabling this feature will interrupt any current running jobs                                                                                             |
-| Wait For Completion | FIVETRAN_WAIT         | Boolean      | :heavy_minus_sign: | `FALSE` | Enabled: `TRUE`<br></br><br></br>Disabled: `FALSE`<br></br><br></br> | Enable if you want the vessel to wait until the sync job is successfully completed. Otherwise, the vessel will only initiate the sync job without waiting |
+| Name | Reference | Type | Required | Default | Options | Description |
+|:-----|:----------|:-----|:---------|:--------|:--------|:------------|
+| API Key | FIVETRAN_API_KEY  | Password |:white_check_mark: | - | - | Your account's unique API Key for Fivetran. |
+| API Secret | FIVETRAN_API_SECRET  | Password |:white_check_mark: | - | - | Your account's unique API Secret for Fivetran. |
+| Connector ID | FIVETRAN_CONNECTOR_ID  | Alphanumeric |:white_check_mark: | - | - | The unique ID associated with a connector. Typically two words separated by an underscore. |
+| Force Sync | FIVETRAN_FORCE  | Select |:white_check_mark: | `TRUE` | Enabled: `TRUE`<br></br><br></br>Disabled: `FALSE`<br></br><br></br> | Enabling this feature will interrupt any current running jobs |
+| Wait For Completion | FIVETRAN_WAIT  | Boolean |:heavy_minus_sign: | `TRUE` | Enabled: `TRUE`<br></br><br></br>Disabled: `FALSE`<br></br><br></br> | Enable if you want the vessel to wait until the sync job is successfully completed. Otherwise, the vessel will only initiate the sync job without waiting |
 
 
 ## YAML
@@ -43,7 +43,7 @@ source:
         FIVETRAN_API_SECRET: null ## REQUIRED
         FIVETRAN_CONNECTOR_ID: null ## REQUIRED
         FIVETRAN_FORCE: 'TRUE' ## REQUIRED
-        FIVETRAN_WAIT: 'FALSE'
+        FIVETRAN_WAIT: 'TRUE'
     type: BLUEPRINT
 guardrails:
     retry_count: 1

@@ -55,7 +55,7 @@ In short, this blueprint ensures your CSV data aligns with Salesforce, paving th
 
 | Name | Reference | Type | Required | Default | Options | Description |
 |:-----|:----------|:-----|:---------|:--------|:--------|:------------|
-| Domain | SALESFORCE_DOMAIN  | Alphanumeric |:heavy_minus_sign: | - | - | Your Salesforce domain URL. Typically is before .my.salesforce.com |
+| Domain URL | SALESFORCE_DOMAIN  | Alphanumeric |:white_check_mark: | - | - | The domain used to access your Salesforce instance. |
 | Access Token | SALESFORCE_ACCESS_TOKEN  | Password |:heavy_minus_sign: | - | - | Token provided by Salesforce to securely authenticate and access their API. |
 | Consumer Key | SALESFORCE_CONSUMER_KEY  | Alphanumeric |:heavy_minus_sign: | - | - | Unique key to identify and authenticate your application's integration. |
 | Consumer Secret | SALESFORCE_CONSUMER_SECRET  | Password |:heavy_minus_sign: | - | - | Secret key used in tandem with the consumer key to authenticate your application. |
@@ -63,8 +63,7 @@ In short, this blueprint ensures your CSV data aligns with Salesforce, paving th
 | Password | SALESFORCE_PASSWORD  | Password |:heavy_minus_sign: | - | - | Your Salesforce account's password. |
 | Security Token | SALESFORCE_SECURITY_TOKEN  | Password |:heavy_minus_sign: | - | - | Additional security token provided by Salesforce to enhance protection. |
 | CSV Filename | SALESFORCE_CSV_FILE  | Alphanumeric |:heavy_minus_sign: | - | - | The name/path of the CSV file you want to validate against Salesforce properties. |
-| Object Type | SALESFORCE_OBJECT_TYPE  | Alphanumeric |:heavy_minus_sign: | - | - | The specific Salesforce object type (e.g., Account, Customer) you want to validate against. This name must match Salesforce's API Name from their object manager view. |
-
+| Object Type | SALESFORCE_OBJECT_TYPE  | Alphanumeric |:white_check_mark: | - | - | The specific Salesforce object type (e.g., Account, Customer) you want to validate against. This name must match Salesforce's API Name from their object manager view. |
 
 
 ## YAML
@@ -73,15 +72,15 @@ Below is the YAML template for this Blueprint and can be used in the Fleet [YAML
 source:
     blueprint: Salesforce - CSV Header Validator
     inputs:
+        SALESFORCE_DOMAIN: null  ## REQUIRED
         SALESFORCE_ACCESS_TOKEN: null
         SALESFORCE_CONSUMER_KEY: null
         SALESFORCE_CONSUMER_SECRET: null
         SALESFORCE_USERNAME: null
         SALESFORCE_PASSWORD: null
         SALESFORCE_SECURITY_TOKEN: null
-        SALESFORCE_DOMAIN: null
         SALESFORCE_CSV_FILE: null
-        SALESFORCE_OBJECT_TYPE: null  ## REQUIRED
+        SALESFORCE_OBJECT_TYPE: null ## REQUIRED
     type: BLUEPRINT
 guardrails:
     retry_count: 1

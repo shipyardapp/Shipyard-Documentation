@@ -14,6 +14,7 @@ keywords:
 
 ## Overview
 The "Hubspot - Download List Data to Shipyard" blueprint on Shipyard allows you to export selected data fields from a specific Hubspot list. Simply provide your Hubspot Access Token, specify the list ID and desired data fields, set a filename (which will auto-append .csv), and initiate the process. 
+
 ## Variables
 
 | Name | Reference | Type | Required | Default | Options | Description |
@@ -30,12 +31,12 @@ The "Hubspot - Download List Data to Shipyard" blueprint on Shipyard allows you 
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Hubspot - Download List Data
+    blueprint: Hubspot - Download List Data to Shipyard
     inputs:
         HUBSPOT_ACCESS_TOKEN: null  ## REQUIRED
         HUBSPOT_EXPORT_NAME: null ## REQUIRED
         HUBSPOT_LIST_ID: null ## REQUIRED
-        HUBSPOT_OBJECT_PROPERTIES: null ## REQUIRED
+        HUBSPOT_OBJECT_PROPERTIES: null
         HUBSPOT_DESTINATION_FILENAME: null ## REQUIRED
         HUBSPOT_OBJECT_TYPE: contacts ## REQUIRED
     type: BLUEPRINT

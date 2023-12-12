@@ -43,22 +43,23 @@ This Blueprint requires _write_ permissions in order to upload to the FTP server
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: FTP - Upload Files
-  inputs:
-    FTP_HOST: null ## REQUIRED
-    FTP_PORT: 21 ## REQUIRED
-    FTP_USERNAME: null 
-    FTP_PASSWORD: null 
-    FTP_SOURCE_FOLDER_NAME: null 
-    FTP_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
-    FTP_SOURCE_FILE_NAME: null ## REQUIRED
-    FTP_DESTINATION_FOLDER_NAME: null 
-    FTP_DESTINATION_FILE_NAME: null 
-  type: BLUEPRINT
+    blueprint: FTP - Upload Files from Shipyard
+    inputs:
+        FTP_HOST: null  ## REQUIRED
+        FTP_PORT: '21' ## REQUIRED
+        FTP_USERNAME: null
+        FTP_PASSWORD: null
+        FTP_SOURCE_FOLDER_NAME: null
+        FTP_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
+        FTP_SOURCE_FILE_NAME: null ## REQUIRED
+        FTP_DESTINATION_FOLDER_NAME: null
+        FTP_DESTINATION_FILE_NAME: null
+    type: BLUEPRINT
 guardrails:
-  retry_count: 1
-  retry_wait: 0s
-  runtime_cutoff: 1h0m0s
-  exclude_exit_code_ranges:
-    - "0"
+    retry_count: 1
+    retry_wait: 0h0m0s
+    runtime_cutoff: 1h0m0s
+    exclude_exit_code_ranges:
+    -   '0'
+
 ```

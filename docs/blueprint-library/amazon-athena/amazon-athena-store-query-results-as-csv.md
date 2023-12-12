@@ -35,22 +35,23 @@ Turn the results of your SQL SELECT statement into a CSV file. Extract your Amaz
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: Amazon Athena - Store Query Results as CSV
-  inputs:
-    ATHENA_DATABASE: null ## REQUIRED
-    ATHENA_QUERY: null ## REQUIRED
-    ATHENA_BUCKET_NAME: null ## REQUIRED
-    ATHENA_LOG_FOLDER: null 
-    ATHENA_DESTINATION_FILE_NAME: output.csv ## REQUIRED
-    ATHENA_DESTINATION_FOLDER_NAME: null 
-    AWS_ACCESS_KEY_ID: null ## REQUIRED
-    AWS_SECRET_ACCESS_KEY: null ## REQUIRED
-    AWS_DEFAULT_REGION: us-east-2 ## REQUIRED
-  type: BLUEPRINT
+    blueprint: Amazon Athena - Download Query Results to Shipyard
+    inputs:
+        ATHENA_DATABASE: null  ## REQUIRED
+        ATHENA_QUERY: null ## REQUIRED
+        ATHENA_BUCKET_NAME: null ## REQUIRED
+        ATHENA_LOG_FOLDER: null
+        ATHENA_DESTINATION_FILE_NAME: output.csv ## REQUIRED
+        ATHENA_DESTINATION_FOLDER_NAME: null
+        AWS_ACCESS_KEY_ID: null ## REQUIRED
+        AWS_SECRET_ACCESS_KEY: null ## REQUIRED
+        AWS_DEFAULT_REGION: us-east-2 ## REQUIRED
+    type: BLUEPRINT
 guardrails:
-  retry_count: 1
-  retry_wait: 0s
-  runtime_cutoff: 4h0m0s
-  exclude_exit_code_ranges:
-    - "0"
+    retry_count: 1
+    retry_wait: 0h0m0s
+    runtime_cutoff: 1h0m0s
+    exclude_exit_code_ranges:
+    -   '0'
+
 ```

@@ -23,3 +23,6 @@ For information on how to set up these Blueprints successfully, please read thro
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available: 
 - [Generate Images](dall-e-generate-images.md)
+
+## Open Source Code
+The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/dalle-blueprints/tree/main/dalle_blueprints), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.

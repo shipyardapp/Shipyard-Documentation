@@ -1,18 +1,20 @@
 ---
 id: mode-check-run-status
-title: Mode Template - Check Run Status
+title: Mode Template - Check Run Status (Deprecated)
 hide_title: true
-sidebar_label: Check Run Status
-description: Information about Shipyard's low-code Mode Check Run Status blueprint. Verify the status of a recently triggered Mode report. 
+sidebar_label: Check Run Status (Deprecated)
+description: Information about Shipyard's low-code Mode Check Run Status (Deprecated) blueprint. Verify the status of a recently triggered Mode report. 
 keywords:
     - mode
     - blueprint
     - template
 ---
 
-# Mode - Check Run Status
+# Mode - Check Run Status (Deprecated)
 
 ## Overview
+This Blueprint has been deprecated. Please use the vendor's "Trigger" Blueprint and set the "Wait for Completion" option to "True". Using this new option is free, more stable, and will complete faster. Read more about this change [here](https://www.shipyardapp.com/blog/orchestrate-data-tools-free).
+
 Check for the status of a single report run on Mode. The Vessel's exit code and status will match the status of the Mode run.
 
 - If the run is not completed, the Vessel will return an exit code of 210, an error.
@@ -43,7 +45,7 @@ The response for this request will always be stored at `shipyard-artifacts/mode-
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Mode - Check Run Status
+    blueprint: Mode - Check Run Status (Deprecated)
     inputs:
         MODE_TOKEN_ID: null  ## REQUIRED
         MODE_TOKEN_PASSWORD: null ## REQUIRED

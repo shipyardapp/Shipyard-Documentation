@@ -43,28 +43,31 @@ In all instances, if the table name does not already exist, a new table will be 
 | Service Account | GOOGLE_APPLICATION_CREDENTIALS  | Password |:white_check_mark: | - | - | JSON from a Google Cloud Service account key. |
 | Schema | BIGQUERY_SCHEMA  | Alphanumeric |:heavy_minus_sign: | - | - | Schema for the uploaded dataset, formatted as a double-nested list. If left blank, it will be auto-detected. |
 | Header Rows to Skip | BIGQUERY_SKIP_HEADER_ROWS  | Integer |:heavy_minus_sign: | `0` | - | Number of header rows to skip when inserting data. Only required if provided custom schema. |
+| Quoted Newline | BIGQUERY_QUOTED_NEWLINE  | Boolean |:heavy_minus_sign: | `false` | - | Allow quoted data containing newline characters |
 
 
 ## YAML
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: Google BigQuery - Upload CSV to Table
-  inputs:
-    BIGQUERY_DATASET_NAME: null ## REQUIRED
-    BIGQUERY_TABLE_NAME: null ## REQUIRED
-    BIGQUERY_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
-    BIGQUERY_SOURCE_FILE_NAME: null ## REQUIRED
-    BIGQUERY_SOURCE_FOLDER_NAME: null 
-    BIGQUERY_UPLOAD_TYPE: append ## REQUIRED
-    GOOGLE_APPLICATION_CREDENTIALS: null ## REQUIRED
-    BIGQUERY_SCHEMA: null 
-    BIGQUERY_SKIP_HEADER_ROWS: null 
-  type: BLUEPRINT
+    blueprint: Google BigQuery - Upload File to Table from Shipyard
+    inputs:
+        BIGQUERY_DATASET_NAME: null  ## REQUIRED
+        BIGQUERY_TABLE_NAME: null ## REQUIRED
+        BIGQUERY_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
+        BIGQUERY_SOURCE_FILE_NAME: null ## REQUIRED
+        BIGQUERY_SOURCE_FOLDER_NAME: null
+        BIGQUERY_UPLOAD_TYPE: append ## REQUIRED
+        GOOGLE_APPLICATION_CREDENTIALS: null ## REQUIRED
+        BIGQUERY_SCHEMA: null
+        BIGQUERY_SKIP_HEADER_ROWS: 0
+        BIGQUERY_QUOTED_NEWLINE: 'false'
+    type: BLUEPRINT
 guardrails:
-  retry_count: 1
-  retry_wait: 0s
-  runtime_cutoff: 1h0m0s
-  exclude_exit_code_ranges:
-    - "0"
+    retry_count: 1
+    retry_wait: 0h0m0s
+    runtime_cutoff: 1h0m0s
+    exclude_exit_code_ranges:
+    -   '0'
+
 ```

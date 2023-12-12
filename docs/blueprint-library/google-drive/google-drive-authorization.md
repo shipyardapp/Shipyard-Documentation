@@ -99,7 +99,6 @@ In order to get started with the Google Drive Blueprints, a service account with
 **_INFO:_** Pro Tip
 Want to access multiple files with the same credentials? You can also share Google Drive folders with the Service Account Email, causing every file in that folder and its subfolders to be accessible.
 
-
 ## Drive and Folder ID's
 When providing the `Shared Drive` or the `Google Drive Folder`, you have the option to either provide the name of the Drive/Folder or the ID. It is recommended to provide the ID, since that is unique. Both the ID's can be found from the URL. 
 
@@ -110,5 +109,3 @@ All Drive ID's start with `0A` and can be found by navigating to the root of the
 ##### Folder ID
 All Folder ID's start with a 1 and are 33 characters long. It can be found by selecting the folder and accessing it from the URL:
 ![](https://cdn.sanity.io/images/2xyydva6/production/49ef1377c7bdd99db61f84f27f9a5791efe740e9-835x217.png?w=450)
-
-

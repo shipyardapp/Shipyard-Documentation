@@ -34,18 +34,19 @@ If you leave the tab name blank, the data will be cleared from the first tab.
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: Google Sheets - Clear Data from Sheet
-  inputs:
-    SHEETS_SPREADSHEET_ID: null ## REQUIRED
-    SHEETS_TAB_NAME: null 
-    SHEETS_SHARED_DRIVE_NAME: null 
-    SHEETS_CELL_RANGE: null 
-    GOOGLE_APPLICATION_CREDENTIALS: null ## REQUIRED
-  type: BLUEPRINT
+    blueprint: Google Sheets - Clear Data from Sheet
+    inputs:
+        SHEETS_SPREADSHEET_ID: null  ## REQUIRED
+        SHEETS_TAB_NAME: null
+        SHEETS_SHARED_DRIVE_NAME: null
+        SHEETS_CELL_RANGE: null
+        GOOGLE_APPLICATION_CREDENTIALS: null  ## REQUIRED
+    type: BLUEPRINT
 guardrails:
-  retry_count: 1
-  retry_wait: 0s
-  runtime_cutoff: 1h0m0s
-  exclude_exit_code_ranges:
-    - "0"
+    retry_count: 1
+    retry_wait: 0h0m0s
+    runtime_cutoff: 1h0m0s
+    exclude_exit_code_ranges:
+    -   '0'
+
 ```

@@ -20,6 +20,7 @@ Easily import one or more files directly into a Google Drive account. The [match
 **Recommended Setup:**
 
 1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Shipyard or generates a file with code. 
+2. This blueprint supports providing either the name of the Folder/Shared Drive or the ID itself. The ID is the recommended approach because it is unique and can be copied from the URL, see the [authorization guide](https://www.shipyardapp.com/docs/blueprint-library/google-drive/google-drive-authorization/) for details.
 
 ## Variables
 
@@ -38,20 +39,30 @@ Easily import one or more files directly into a Google Drive account. The [match
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: Google Drive - Upload Files
-  inputs:
-    DRIVE_SOURCE_FILE_NAME: null ## REQUIRED
-    DRIVE_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
-    DRIVE_SOURCE_FOLDER_NAME: null 
-    DRIVE_SHARED_DRIVE_NAME: null 
-    DRIVE_DESTINATION_FOLDER_NAME: null 
-    DRIVE_DESTINATION_FILE_NAME: null 
-    GOOGLE_APPLICATION_CREDENTIALS: null ## REQUIRED
-  type: BLUEPRINT
+    blueprint: Google Drive - Upload Files from Shipyard
+    inputs:
+        DRIVE_SOURCE_FILE_NAME: null  ## REQUIRED
+        DRIVE_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
+        DRIVE_SOURCE_FOLDER_NAME: null
+        DRIVE_SHARED_DRIVE_NAME: null
+        DRIVE_DESTINATION_FOLDER_NAME: null
+        DRIVE_DESTINATION_FILE_NAME: null
+        GOOGLE_APPLICATION_CREDENTIALS: null ## REQUIRED
+    type: BLUEPRINT
 guardrails:
-  retry_count: 1
-  retry_wait: 0s
-  runtime_cutoff: 1h0m0s
-  exclude_exit_code_ranges:
-    - "0"
+    retry_count: 1
+    retry_wait: 0h0m0s
+    runtime_cutoff: 1h0m0s
+    exclude_exit_code_ranges:
+    -   202
+    -   203
+    -   204
+    -   205
+    -   206
+    -   207
+    -   208
+    -   209
+    -   210
+    -   249
+
 ```

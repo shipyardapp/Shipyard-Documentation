@@ -37,25 +37,26 @@ This Blueprint requires _write_ permissions in order to move objects from the SF
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: SFTP - Move or Rename Files
-  inputs:
-    SFTP_HOST: null ## REQUIRED
-    SFTP_PORT: 21 ## REQUIRED
-    SFTP_USERNAME: null 
-    SFTP_PASSWORD: null 
-    SFTP_SOURCE_FOLDER_NAME: null 
-    SFTP_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
-    SFTP_SOURCE_FILE_NAME: null ## REQUIRED
-    SFTP_DESTINATION_FOLDER_NAME: null 
-    SFTP_DESTINATION_FILE_NAME: null 
-    SFTP_RSK_KEY: null 
-  type: BLUEPRINT
+    blueprint: SFTP - Move or Rename Files
+    inputs:
+        SFTP_HOST: null  ## REQUIRED
+        SFTP_PORT: '22' ## REQUIRED
+        SFTP_USERNAME: null
+        SFTP_PASSWORD: null
+        SFTP_SOURCE_FOLDER_NAME: null
+        SFTP_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
+        SFTP_SOURCE_FILE_NAME: null ## REQUIRED
+        SFTP_DESTINATION_FOLDER_NAME: null
+        SFTP_DESTINATION_FILE_NAME: null
+        SFTP_RSK_KEY: null
+    type: BLUEPRINT
 guardrails:
-  retry_count: 1
-  retry_wait: 0s
-  runtime_cutoff: 1h0m0s
-  exclude_exit_code_ranges:
-    - "3"
-    - "200"
-    - "201"
+    retry_count: 1
+    retry_wait: 0h0m0s
+    runtime_cutoff: 1h0m0s
+    exclude_exit_code_ranges:
+    -   3
+    -   200
+    -   201
+
 ```

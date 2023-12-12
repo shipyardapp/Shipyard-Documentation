@@ -17,13 +17,13 @@ Allows for quick and seamless download of a Notion Database to Shipyard. Results
 
 ## Variables
 
-| Name                    | Reference           | Type         | Required           | Default | Options                                                    | Description                                          |
-|:------------------------|:--------------------|:-------------|:-------------------|:--------|:-----------------------------------------------------------|:-----------------------------------------------------|
-| Access Token            | NOTION_ACCESS_TOKEN | Password     | :white_check_mark: | -       | -                                                          | The access token assigned to the integration created |
-| Database ID             | NOTION_DATABASE_ID  | Alphanumeric | :white_check_mark: | -       | -                                                          | The ID of the notion database found in the URL       |
-| Destination File Name   | NOTION_DEST_FILE    | Alphanumeric | :white_check_mark: | -       | -                                                          | The name of the file to save the downloaded data     |
-| Destination Folder Name | NOTION_DEST_FOLDER  | Alphanumeric | :heavy_minus_sign: | -       | -                                                          | The optional folder to store the downloaded data     |
-| File Type               | NOTION_FILE_TYPE    | Select       | :heavy_minus_sign: | `csv`   | CSV: `csv`<br></br><br></br>JSON: `json`<br></br><br></br> | The file type to store results                       |
+| Name | Reference | Type | Required | Default | Options | Description |
+|:-----|:----------|:-----|:---------|:--------|:--------|:------------|
+| Access Token | NOTION_ACCESS_TOKEN  | Password |:white_check_mark: | - | - | The access token assigned to the integration created |
+| Database ID | NOTION_DATABASE_ID  | Alphanumeric |:white_check_mark: | - | - | The ID of the notion database found in the URL |
+| Destination File Name | NOTION_DEST_FILE  | Alphanumeric |:white_check_mark: | - | - | The name of the file to save the downloaded data |
+| Destination Folder Name | NOTION_DEST_FOLDER  | Alphanumeric |:heavy_minus_sign: | - | - | The optional folder to store the downloaded data |
+| File Type | NOTION_FILE_TYPE  | Select |:heavy_minus_sign: | `csv` | CSV: `csv`<br></br><br></br>JSON: `json`<br></br><br></br> | The file type to store results |
 
 
 ## YAML

@@ -1,18 +1,20 @@
 ---
 id: rudderstack-check-sync-status
-title: Rudderstack Template - Check Sync Status
+title: Rudderstack Template - Check Sync Status (Deprecated)
 hide_title: true
-sidebar_label: Check Sync Status
-description: Information about Shipyard's low-code Rudderstack Check Sync Status blueprint. Check for the status of a Rudderstack source. The Vessel's exit code and status will match the status of the latest sync. 
+sidebar_label: Check Sync Status (Deprecated)
+description: Information about Shipyard's low-code Rudderstack Check Sync Status (Deprecated) blueprint. Check for the status of a Rudderstack source. The Vessel's exit code and status will match the status of the latest sync. 
 keywords:
     - rudderstack
     - blueprint
     - template
 ---
 
-# RudderStack - Check Sync Status
+# RudderStack - Check Sync Status (Deprecated)
 
 ## Overview
+This Blueprint has been deprecated. Please use the vendor's "Trigger" Blueprint and set the "Wait for Completion" option to "True". Using this new option is free, more stable, and will complete faster. Read more about this change [here](https://www.shipyardapp.com/blog/orchestrate-data-tools-free).
+
 Check for the status of a Rudderstack source. The Vessel's exit code and status will match the status of the latest sync.
 
 ## Status Codes
@@ -31,17 +33,17 @@ The response for this request will always be stored at `shipyard-artifacts/rudde
 
 ## Variables
 
-| Name         | Reference                | Type         | Required           | Default | Options | Description                                                                                                                |
-|:-------------|:-------------------------|:-------------|:-------------------|:--------|:--------|:---------------------------------------------------------------------------------------------------------------------------|
-| Access Token | RUDDERSTACK_ACCESS_TOKEN | Password     | :white_check_mark: | -       | -       | The access token associated with your Rudderstack account.                                                                 |
-| Source ID    | RUDDERSTACK_SOURCE_ID    | Alphanumeric | :heavy_minus_sign: | -       | -       | The ID of the Rudderstack source you want to refresh. This should be left blank if connected to an Trigger Sync Blueprint. |
+| Name | Reference | Type | Required | Default | Options | Description |
+|:-----|:----------|:-----|:---------|:--------|:--------|:------------|
+| Access Token | RUDDERSTACK_ACCESS_TOKEN  | Password |:white_check_mark: | - | - | The access token associated with your Rudderstack account. |
+| Source ID | RUDDERSTACK_SOURCE_ID  | Alphanumeric |:heavy_minus_sign: | - | - | The ID of the Rudderstack source you want to refresh. This should be left blank if connected to an Trigger Sync Blueprint. |
 
 
 ## YAML
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: RudderStack - Check Sync Status
+    blueprint: RudderStack - Check Sync Status (Deprecated)
     inputs:
         RUDDERSTACK_ACCESS_TOKEN: null  ## REQUIRED
         RUDDERSTACK_SOURCE_ID: null

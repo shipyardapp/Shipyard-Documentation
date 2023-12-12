@@ -30,17 +30,18 @@ When the `Append` insert method is selected, the blueprint will attempt to add n
 
 
 **NOTE** - existing schemas and datatypes are strictly enforced. If there is a mismatch in datatypes for data being loaded, it will fail.
+
 ## Variables
 
-| Name               | Reference            | Type         | Required           | Default  | Options                                                                | Description                                                                                                                                                    |
-|:-------------------|:---------------------|:-------------|:-------------------|:---------|:-----------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Access Token       | NOTION_ACCESS_TOKEN  | Password     | :white_check_mark: | -        | -                                                                      | The access token assigned to the integration created                                                                                                           |
-| Database ID        | NOTION_DATABASE_ID   | Alphanumeric | :heavy_minus_sign: | -        | -                                                                      | The ID of the notion database found in the URL. Is necessary if `Append` is selected                                                                           |
-| Page ID            | NOTION_PAGE_ID       | Alphanumeric | :heavy_minus_sign: | -        | -                                                                      | The parent page ID where the Database will reside. Is only necessary if `Replace` is selected and the database doesn't exist.                                  |
-| Database Name      | NOTION_DATABASE_NAME | Alphanumeric | :heavy_minus_sign: | -        | -                                                                      | The optional name of the database to be created. If `Replace` is selected and the database doesn't exist, this will provide a name for the one that is created |
-| Source File Name   | NOTION_FILE_NAME     | Alphanumeric | :heavy_minus_sign: | -        | -                                                                      | The name of the file to load to Notion                                                                                                                         |
-| Source Folder Name | NOTION_FOLDER_NAME   | Alphanumeric | :heavy_minus_sign: | -        | -                                                                      | The optional name of the folder containing the file to load to Notion                                                                                          |
-| Insert Method      | NOTION_INSERT_METHOD | Select       | :heavy_minus_sign: | `append` | Append: `append`<br></br><br></br>Replace: `replace`<br></br><br></br> | The option to overwrite an existing database, or append additional rows                                                                                        |
+| Name | Reference | Type | Required | Default | Options | Description |
+|:-----|:----------|:-----|:---------|:--------|:--------|:------------|
+| Access Token | NOTION_ACCESS_TOKEN  | Password |:white_check_mark: | - | - | The access token assigned to the integration created |
+| Database ID | NOTION_DATABASE_ID  | Alphanumeric |:heavy_minus_sign: | - | - | The ID of the notion database found in the URL. Is necessary if `Append` is selected |
+| Page ID | NOTION_PAGE_ID  | Alphanumeric |:heavy_minus_sign: | - | - | The parent page ID where the Database will reside. Is only necessary if `Replace` is selected and the database doesn't exist. |
+| Database Name | NOTION_DATABASE_NAME  | Alphanumeric |:heavy_minus_sign: | - | - | The optional name of the database to be created. If `Replace` is selected and the database doesn't exist, this will provide a name for the one that is created |
+| Source File Name | NOTION_FILE_NAME  | Alphanumeric |:heavy_minus_sign: | - | - | The name of the file to load to Notion |
+| Source Folder Name | NOTION_FOLDER_NAME  | Alphanumeric |:heavy_minus_sign: | - | - | The optional name of the folder containing the file to load to Notion |
+| Insert Method | NOTION_INSERT_METHOD  | Select |:heavy_minus_sign: | `append` | Append: `append`<br></br><br></br>Replace: `replace`<br></br><br></br> | The option to overwrite an existing database, or append additional rows |
 
 
 ## YAML

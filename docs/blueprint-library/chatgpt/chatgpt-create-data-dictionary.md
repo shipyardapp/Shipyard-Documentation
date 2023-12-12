@@ -29,30 +29,18 @@ This Blueprint takes in a CSV file and creates a data dictionary.
 ## YAML
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
-## Paste this code under 'vessels' and then connect it to other vessels under 'connections'
-    'dry_speedboat':
-        source:
-            type: BLUEPRINT
-            blueprint: 'ChatGPT - Create Data Dictionary'
-            inputs: 
-                ## CHATGPT_API_KEY: API Key from OpenAI
-                ## CHATGPT_FILE: The data that you would like a data dictionary created from in CSV form.
-                ## CHATGPT_DESTINATION_FILE_NAME: The file where the data dictionary will be stored.
-                ## For more detailed setup information, visit https://www.shipyardapp.com/docs/blueprint-library/chatgpt#create-data-dictionary-blueprint
-                'CHATGPT_API_KEY': ## REQUIRED
-                'CHATGPT_FILE': ## REQUIRED ## ie. data.csv
-                'CHATGPT_DESTINATION_FILE_NAME': ## REQUIRED ## ie. data_dictionary.txt
-        guardrails:
-        ## Set how your Vessel should handle errors and retries.
-            retry_count: 0
-            retry_wait: 0h0m0s
-            runtime_cutoff: 1h0m0s
-            exclude_exit_code_ranges: ## Exit code values(s) that will not be retried if encountered during a Voyage.
-                # - 0-255
-        notifications: 
-        ## Set emails to be alerted when specific conditions are met.
-            emails:
-                - steven.johnson@shipyardapp.com
-            after_error: true
-            after_on_demand: false
+source:
+    blueprint: ChatGPT - Create Data Dictionary
+    inputs:
+        CHATGPT_API_KEY: null  ## REQUIRED
+        CHATGPT_FILE: null ## REQUIRED
+        CHATGPT_DESTINATION_FILE_NAME: null ## REQUIRED
+    type: BLUEPRINT
+guardrails:
+    retry_count: 1
+    retry_wait: 0h0m0s
+    runtime_cutoff: 1h0m0s
+    exclude_exit_code_ranges:
+    -   '0'
+
 ```

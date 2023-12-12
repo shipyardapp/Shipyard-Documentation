@@ -25,3 +25,6 @@ Shipyard currently has the following Blueprints readily available:
 - [Translate Audio to English with API](whisper-translate-audio-to-english-with-api.md)
 - [Transcribe Audio with API](whisper-transcribe-audio-with-api.md)
 - [Transcribe Audio](whisper-transcribe-audio.md)
+
+## Open Source Code
+The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/whisper-blueprints/tree/main/whisper_blueprints), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.

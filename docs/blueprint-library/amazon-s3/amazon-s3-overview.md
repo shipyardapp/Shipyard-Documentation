@@ -25,7 +25,7 @@ Shipyard currently has the following Blueprints readily available:
 - [Download Files to Shipyard](amazon-s3-download-files.md)
 - [Upload Files from Shipyard](amazon-s3-upload-files.md)
 - [Move or Rename Files](amazon-s3-move-or-rename-files.md)
-- [Remove Files](amazon-s3-remove-files.md)
+- [Delete Files](amazon-s3-remove-files.md)
 
 ## Open Source Code
 The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/amazons3-blueprints), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.

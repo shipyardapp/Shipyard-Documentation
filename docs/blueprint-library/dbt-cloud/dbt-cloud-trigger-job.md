@@ -1,9 +1,9 @@
 ---
 id: dbt-cloud-trigger-job
-title: dbt Cloud - Trigger Job
+title: dbt Cloud Template - Trigger Job
 hide_title: true
 sidebar_label: Trigger Job
-description: Information about Shipyard's low-code dbt Cloud Trigger Job blueprint. Execute an existing job in the dbt Cloud interface without waiting for results. 
+description: Information about Shipyard's low-code dbt Cloud Trigger Job blueprint. Execute an existing job in the dbt Cloud interface. 
 keywords:
     - dbt cloud
     - blueprint
@@ -28,12 +28,12 @@ The response for this request will always be stored at _shipyard-artifacts/dbtcl
 
 ## Variables
 
-| Name                | Reference      | Type         | Required           | Default | Options | Description                                                                                                                                               |
-|:--------------------|:---------------|:-------------|:-------------------|:--------|:--------|:----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Service Token       | DBT_API_KEY    | Password     | :white_check_mark: | -       | -       | Your unique service token for dbt Cloud. Instructions for how to get this token can be found in the authorization documentation.                          |
-| Account ID          | DBT_ACCOUNT_ID | Alphanumeric | :white_check_mark: | -       | -       | Your unique Account ID, found in the URL of dbt Cloud. https://cloud.getdbt.com/#/accounts/ACCOUNT_ID/projects/PROJECT_ID/dashboard/                      |
-| Job ID              | DBT_JOB_ID     | Alphanumeric | :white_check_mark: | -       | -       | The ID of a specific job you want to run, found in the URL of dbt Cloud. https://cloud.getdbt.com/#/accounts/ACCOUNT_ID/projects/PROJECT_ID/jobs/JOB_ID/  |
-| Wait For Completion | DBT_WAIT       | Boolean      | :heavy_minus_sign: | `FALSE` | -       | Enable if you want the vessel to wait until the sync job is successfully completed. Otherwise, the vessel will only initiate the sync job without waiting |
+| Name | Reference | Type | Required | Default | Options | Description |
+|:-----|:----------|:-----|:---------|:--------|:--------|:------------|
+| Service Token | DBT_API_KEY  | Password |:white_check_mark: | - | - | Your unique service token for dbt Cloud. Instructions for how to get this token can be found in the authorization documentation. |
+| Account ID | DBT_ACCOUNT_ID  | Alphanumeric |:white_check_mark: | - | - | Your unique Account ID, found in the URL of dbt Cloud. https://cloud.getdbt.com/#/accounts/ACCOUNT_ID/projects/PROJECT_ID/dashboard/ |
+| Job ID | DBT_JOB_ID  | Alphanumeric |:white_check_mark: | - | - | The ID of a specific job you want to run, found in the URL of dbt Cloud. https://cloud.getdbt.com/#/accounts/ACCOUNT_ID/projects/PROJECT_ID/jobs/JOB_ID/ |
+| Wait For Completion | DBT_WAIT  | Boolean |:heavy_minus_sign: | `TRUE` | - | Enable if you want the vessel to wait until the sync job is successfully completed. Otherwise, the vessel will only initiate the sync job without waiting |
 
 
 ## YAML
@@ -45,7 +45,7 @@ source:
         DBT_API_KEY: null  ## REQUIRED
         DBT_ACCOUNT_ID: null ## REQUIRED
         DBT_JOB_ID: null ## REQUIRED
-        DBT_WAIT: 'FALSE'
+        DBT_WAIT: 'TRUE'
     type: BLUEPRINT
 guardrails:
     retry_count: 1

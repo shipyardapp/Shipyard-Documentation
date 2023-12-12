@@ -28,3 +28,6 @@ Shipyard currently has the following Blueprints readily available:
 - [Add Comments to Code](chatgpt-add-comments-to-code.md)
 - [Translate a Text File](chatgpt-translate-a-text-file.md)
 - [Generate Message](chatgpt-generate-message.md)
+
+## Open Source Code
+The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/chatgpt-blueprints/tree/main/chatgpt_blueprints), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.

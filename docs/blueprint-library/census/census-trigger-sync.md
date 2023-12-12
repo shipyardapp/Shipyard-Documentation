@@ -25,12 +25,11 @@ The Census Sync being triggered should not have any other schedules set in the C
 
 ## Variables
 
-| Name                | Reference      | Type         | Required           | Default | Options | Description                                                                                                                                               |
-|:--------------------|:---------------|:-------------|:-------------------|:--------|:--------|:----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| API Key             | CENSUS_API_KEY | Password     | :white_check_mark: | -       | -       | The API Key associated with your Census account.                                                                                                          |
-| Sync ID             | CENSUS_SYNC_ID | Alphanumeric | :white_check_mark: | -       | -       | The ID of the Census sync you want to refresh.                                                                                                            |
-| Wait For Completion | CENSUS_WAIT    | Boolean      | :heavy_minus_sign: | `FALSE` | -       | Enable if you want the vessel to wait until the sync job is successfully completed. Otherwise, the vessel will only initiate the sync job without waiting |
-| Poke Interval       | CENSUS_POKE    | Integer      | :heavy_minus_sign: | `1`     | -       | How frequently, in minutes, should we check if the job is completed?                                                                                      |
+| Name | Reference | Type | Required | Default | Options | Description |
+|:-----|:----------|:-----|:---------|:--------|:--------|:------------|
+| API Key | CENSUS_API_KEY  | Password |:white_check_mark: | - | - | The API Key associated with your Census account. |
+| Sync ID | CENSUS_SYNC_ID  | Alphanumeric |:white_check_mark: | - | - | The ID of the Census sync you want to refresh. |
+| Wait For Completion | CENSUS_WAIT  | Boolean |:heavy_minus_sign: | `TRUE` | - | Enable if you want the vessel to wait until the sync job is successfully completed. Otherwise, the vessel will only initiate the sync job without waiting |
 
 
 ## YAML
@@ -41,8 +40,7 @@ source:
     inputs:
         CENSUS_API_KEY: null  ## REQUIRED
         CENSUS_SYNC_ID: null ## REQUIRED
-        CENSUS_WAIT: 'FALSE'
-        CENSUS_POKE: 1
+        CENSUS_WAIT: 'TRUE'
     type: BLUEPRINT
 guardrails:
     retry_count: 1

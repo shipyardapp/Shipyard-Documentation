@@ -45,24 +45,26 @@ Upload a CSV file to any table in Amazon Redshift. With the file data, you can c
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: Amazon Redshift - Upload CSV to Table
-  inputs:
-    REDSHIFT_HOST: null ## REQUIRED
-    REDSHIFT_PORT: 5439 ## REQUIRED
-    REDSHIFT_USERNAME: null ## REQUIRED
-    REDSHIFT_PASSWORD: null 
-    REDSHIFT_DATABASE: null ## REQUIRED
-    REDSHIFT_URL_PARAMETERS: null 
-    REDSHIFT_SOURCE_FOLDER_NAME: null 
-    REDSHIFT_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
-    REDSHIFT_SOURCE_FILE_NAME: null ## REQUIRED
-    REDSHIFT_TABLE_NAME: null ## REQUIRED
-    REDSHIFT_INSERT_METHOD: append ## REQUIRED
-    REDSHIFT_SCHEMA: null 
-  type: BLUEPRINT
+    blueprint: Amazon Redshift - Upload File to Table from Shipyard
+    inputs:
+        REDSHIFT_HOST: null  ## REQUIRED
+        REDSHIFT_PORT: '5439' ## REQUIRED
+        REDSHIFT_USERNAME: null ## REQUIRED
+        REDSHIFT_PASSWORD: null
+        REDSHIFT_DATABASE: null  ## REQUIRED
+        REDSHIFT_URL_PARAMETERS: null
+        REDSHIFT_SOURCE_FOLDER_NAME: null
+        REDSHIFT_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
+        REDSHIFT_SOURCE_FILE_NAME: null ## REQUIRED
+        REDSHIFT_TABLE_NAME: null ## REQUIRED
+        REDSHIFT_INSERT_METHOD: append ## REQUIRED
+        REDSHIFT_SCHEMA: null
+    type: BLUEPRINT
 guardrails:
-  retry_count: 1
-  retry_wait: 0s
-  runtime_cutoff: 4h0m0s
-  exclude_exit_code_ranges:
+    retry_count: 1
+    retry_wait: 0h0m0s
+    runtime_cutoff: 1h0m0s
+    exclude_exit_code_ranges:
+    -   '0'
+
 ```

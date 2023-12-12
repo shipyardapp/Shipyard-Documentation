@@ -1,18 +1,20 @@
 ---
 id: domo-check-refresh-status
-title: Domo Template - Check Refresh Status
+title: Domo Template - Check Refresh Status (Deprecated)
 hide_title: true
-sidebar_label: Check Refresh Status
-description: Information about Shipyard's low-code Domo Check Refresh Status blueprint. Check the status of a recently refreshed dataset in Domo. 
+sidebar_label: Check Refresh Status (Deprecated)
+description: Information about Shipyard's low-code Domo Check Refresh Status (Deprecated) blueprint. Check the status of a recently refreshed dataset in Domo. 
 keywords:
     - domo
     - blueprint
     - template
 ---
 
-# Domo - Check Refresh Status
+# Domo - Check Refresh Status (Deprecated)
 
 ## Overview
+This Blueprint has been deprecated. Please use the vendor's "Trigger" Blueprint and set the "Wait for Completion" option to "True". Using this new option is free, more stable, and will complete faster. Read more about this change [here](https://www.shipyardapp.com/blog/orchestrate-data-tools-free).
+
 Check the job status of a dataset that has recently been refreshed in Domo.
 
 **Recommended Setup:**
@@ -36,7 +38,7 @@ Check the job status of a dataset that has recently been refreshed in Domo.
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Domo - Check Refresh Status
+    blueprint: Domo - Check Refresh Status (Deprecated)
     inputs:
         DOMO_CLIENT_ID: null  ## REQUIRED
         DOMO_SECRET_KEY: null ## REQUIRED

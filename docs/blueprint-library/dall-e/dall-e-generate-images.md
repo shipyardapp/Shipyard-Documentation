@@ -28,32 +28,19 @@ This Blueprint takes a prompt and creates an image from it.
 ## YAML
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
-## Paste this code under 'vessels' and then connect it to other vessels under 'connections'
-    'steadfast_tackle':
-        source:
-            type: BLUEPRINT
-            blueprint: 'Dall-E - Generate Images'
-            inputs: 
-                ## photo_prompt: Text sent to OpenAI to generate photos
-                ## photo_topic: Word used to prefix each of the image files
-                ## number_of_photos: Number of images for DALL-E to create
-                ## api_credentials: Your OpenAI API credentials
-                ## For more detailed setup information, visit https://www.shipyardapp.com/docs/blueprint-library/
-                'photo_prompt': ## REQUIRED ## ie. A ship crashing on the ocean in an abstract style.
-                'photo_topic': ## REQUIRED ## ie. ship
-                'number_of_photos': 1 ## REQUIRED
-                'api_credentials': ## REQUIRED
-        guardrails:
-        ## Set how your Vessel should handle errors and retries.
-            retry_count: 0
-            retry_wait: 0h0m0s
-            runtime_cutoff: 1h0m0s
-            exclude_exit_code_ranges: ## Exit code values(s) that will not be retried if encountered during a Voyage.
-                # - 0-255
-        notifications: 
-        ## Set emails to be alerted when specific conditions are met.
-            emails:
-                - steven.johnson@shipyardapp.com
-            after_error: true
-            after_on_demand: false
+source:
+    blueprint: Dall-E - Generate Images
+    inputs:
+        photo_prompt: null  ## REQUIRED
+        photo_topic: null ## REQUIRED
+        number_of_photos: '1' ## REQUIRED
+        api_credentials: null ## REQUIRED
+    type: BLUEPRINT
+guardrails:
+    retry_count: 1
+    retry_wait: 0h0m0s
+    runtime_cutoff: 1h0m0s
+    exclude_exit_code_ranges:
+    -   '0'
+
 ```

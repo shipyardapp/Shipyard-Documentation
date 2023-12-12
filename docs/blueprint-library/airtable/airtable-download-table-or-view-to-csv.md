@@ -1,16 +1,16 @@
 ---
 id: airtable-download-table-or-view-to-csv
-title: Airtable Template - Download Table or View  CSV to Shipyard
+title: Airtable Template - Download Table or View to Shipyard
 hide_title: true
-sidebar_label: Download Table or View  CSV to Shipyard
-description: Information about Shipyard's low-code Airtable Download Table or View  CSV to Shipyard blueprint. Quickly export your data from an Airtable Table or View.  
+sidebar_label: Download Table or View to Shipyard
+description: Information about Shipyard's low-code Airtable Download Table or View to Shipyard blueprint. Quickly export your data from an Airtable Table or View.  
 keywords:
     - airtable
     - blueprint
     - template
 ---
 
-# Airtable - Download Table or View  CSV to Shipyard
+# Airtable - Download Table or View to Shipyard
 
 ## Overview
 Quickly export data from a single table on an Airtable base to a CSV. 
@@ -37,20 +37,24 @@ Content of the downloaded file can be further refined by providing a view. Other
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: Airtable - Download Table or View to CSV
-  inputs:
-    AIRTABLE_BASE_ID: null ## REQUIRED
-    AIRTABLE_TABLE_NAME: null ## REQUIRED
-    AIRTABLE_VIEW_NAME: null 
-    AIRTABLE_INCLUDE_RECORD_ID: true ## REQUIRED
-    AIRTABLE_API_KEY: null ## REQUIRED
-    AIRTABLE_DESTINATION_FILE_NAME: null ## REQUIRED
-    AIRTABLE_DESTINATION_FOLDER_NAME: null 
-  type: BLUEPRINT
+    blueprint: Airtable - Download Table or View to Shipyard
+    inputs:
+        AIRTABLE_BASE_ID: null  ## REQUIRED
+        AIRTABLE_TABLE_NAME: null ## REQUIRED
+        AIRTABLE_VIEW_NAME: null
+        AIRTABLE_INCLUDE_RECORD_ID: true ## REQUIRED
+        AIRTABLE_API_KEY: null ## REQUIRED
+        AIRTABLE_DESTINATION_FILE_NAME: null ## REQUIRED
+        AIRTABLE_DESTINATION_FOLDER_NAME: null
+    type: BLUEPRINT
 guardrails:
-  retry_count: 1
-  retry_wait: 0s
-  runtime_cutoff: 4h0m0s
-  exclude_exit_code_ranges:
-    - "200-203"
+    retry_count: 1
+    retry_wait: 0h0m0s
+    runtime_cutoff: 1h0m0s
+    exclude_exit_code_ranges:
+    -   200
+    -   201
+    -   202
+    -   203
+
 ```

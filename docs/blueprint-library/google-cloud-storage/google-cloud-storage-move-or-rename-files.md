@@ -33,23 +33,24 @@ Quickly move and rename one or more files from a Google Cloud Storage (GCS) buck
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: Google Cloud Storage - Move or Rename Files
-  inputs:
-    GCS_SOURCE_BUCKET_NAME: null ## REQUIRED
-    GCS_SOURCE_FOLDER_NAME: null 
-    GCS_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
-    GCS_SOURCE_FILE_NAME: null ## REQUIRED
-    GCS_DESTINATION_BUCKET_NAME: null ## REQUIRED
-    GCS_DESTINATION_FOLDER_NAME: null 
-    GCS_DESTINATION_FILE_NAME: null 
-    GOOGLE_APPLICATION_CREDENTIALS: null ## REQUIRED
-  type: BLUEPRINT
+    blueprint: Google Cloud Storage - Move or Rename Files
+    inputs:
+        GCS_SOURCE_BUCKET_NAME: null  ## REQUIRED
+        GCS_SOURCE_FOLDER_NAME: null
+        GCS_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
+        GCS_SOURCE_FILE_NAME: null ## REQUIRED
+        GCS_DESTINATION_BUCKET_NAME: null ## REQUIRED
+        GCS_DESTINATION_FOLDER_NAME: null
+        GCS_DESTINATION_FILE_NAME: null
+        GOOGLE_APPLICATION_CREDENTIALS: null ## REQUIRED
+    type: BLUEPRINT
 guardrails:
-  retry_count: 0
-  retry_wait: 0s
-  runtime_cutoff: 1h0m0s
-  exclude_exit_code_ranges:
-    - "200"
-    - "201"
-    - "205"
+    retry_count: 1
+    retry_wait: 0h0m0s
+    runtime_cutoff: 1h0m0s
+    exclude_exit_code_ranges:
+    -   200
+    -   201
+    -   205
+
 ```

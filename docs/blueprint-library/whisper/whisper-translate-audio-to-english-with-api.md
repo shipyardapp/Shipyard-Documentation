@@ -29,30 +29,18 @@ This Blueprint takes in an audio file and translate it to English.
 ## YAML
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
-## Paste this code under 'vessels' and then connect it to other vessels under 'connections'
-    'beautiful_tanker':
-        source:
-            type: BLUEPRINT
-            blueprint: 'Whisper - Translate Audio to English with API'
-            inputs: 
-                ## WHISPER_API_KEY: API Key from OpenAI
-                ## WHISPER_FILE: The audio file that you would like to translate to English
-                ## WHISPER_DESTINATION_FILE_NAME: The name of the text file where the transcription will go
-                ## For more detailed setup information, visit https://www.shipyardapp.com/docs/blueprint-library/whisper#translate-audio-to-english-with-api-blueprint
-                'WHISPER_API_KEY': ## REQUIRED
-                'WHISPER_FILE': ## REQUIRED
-                'WHISPER_DESTINATION_FILE_NAME': ## REQUIRED
-        guardrails:
-        ## Set how your Vessel should handle errors and retries.
-            retry_count: 0
-            retry_wait: 0h0m0s
-            runtime_cutoff: 1h0m0s
-            exclude_exit_code_ranges: ## Exit code values(s) that will not be retried if encountered during a Voyage.
-                # - 0-255
-        notifications: 
-        ## Set emails to be alerted when specific conditions are met.
-            emails:
-                - steven.johnson@shipyardapp.com
-            after_error: true
-            after_on_demand: false
+source:
+    blueprint: Whisper - Translate Audio to English with API
+    inputs:
+        WHISPER_API_KEY: null  ## REQUIRED
+        WHISPER_FILE: null ## REQUIRED
+        WHISPER_DESTINATION_FILE_NAME: null ## REQUIRED
+    type: BLUEPRINT
+guardrails:
+    retry_count: 1
+    retry_wait: 0h0m0s
+    runtime_cutoff: 1h0m0s
+    exclude_exit_code_ranges:
+    -   '0'
+
 ```

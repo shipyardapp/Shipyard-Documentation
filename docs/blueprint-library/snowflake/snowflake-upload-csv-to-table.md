@@ -57,25 +57,36 @@ In all instances, if the table name does not already exist, a new table will be 
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: Snowflake - Upload CSV to Table
-  inputs:
-    SNOWFLAKE_USERNAME: null ## REQUIRED
-    SNOWFLAKE_PASSWORD: null ## REQUIRED
-    SNOWFLAKE_ACCOUNT: null ## REQUIRED
-    SNOWFLAKE_WAREHOUSE: null 
-    SNOWFLAKE_DATABASE: null ## REQUIRED
-    SNOWFLAKE_SCHEMA: null 
-    SNOWFLAKE_SOURCE_FOLDER_NAME: null 
-    SNOWFLAKE_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
-    SNOWFLAKE_SOURCE_FILE_NAME: null ## REQUIRED
-    SNOWFLAKE_TABLE_NAME: null ## REQUIRED
-    SNOWFLAKE_INSERT_METHOD: append ## REQUIRED
-    SNOWFLAKE_DATA_TYPES: null 
-  type: BLUEPRINT
+    blueprint: Snowflake - Upload File to Table from Shipyard
+    inputs:
+        SNOWFLAKE_USERNAME: null  ## REQUIRED
+        SNOWFLAKE_PASSWORD: null
+        SNOWFLAKE_ACCOUNT: null  ## REQUIRED
+        SNOWFLAKE_WAREHOUSE: null
+        SNOWFLAKE_DATABASE: null  ## REQUIRED
+        SNOWFLAKE_SCHEMA: null
+        SNOWFLAKE_SOURCE_FOLDER_NAME: null
+        SNOWFLAKE_SOURCE_FILE_NAME_MATCH_TYPE: exact_match  ## REQUIRED
+        SNOWFLAKE_SOURCE_FILE_NAME: null ## REQUIRED
+        SNOWFLAKE_TABLE_NAME: null ## REQUIRED
+        SNOWFLAKE_INSERT_METHOD: append ## REQUIRED
+        SNOWFLAKE_DATA_TYPES: null
+        SNOWFLAKE_USER_ROLE: null
+        SNOWFLAKE_PRIVATE_KEY: null
+        SNOWFLAKE_PRIVATE_KEY_PASSPHRASE: null
+    type: BLUEPRINT
 guardrails:
-  retry_count: 1
-  retry_wait: 0s
-  runtime_cutoff: 1h0m0s
-  exclude_exit_code_ranges:
-    - "200-207"
+    retry_count: 1
+    retry_wait: 0h0m0s
+    runtime_cutoff: 1h0m0s
+    exclude_exit_code_ranges:
+    -   200
+    -   201
+    -   202
+    -   203
+    -   204
+    -   205
+    -   206
+    -   207
+
 ```

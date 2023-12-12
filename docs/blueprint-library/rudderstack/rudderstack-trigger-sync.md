@@ -22,11 +22,11 @@ This Blueprint will create and store the source ID used to `shipyard-artifacts/r
 
 ## Variables
 
-| Name                | Reference                | Type         | Required           | Default | Options | Description                                                                                                                                               |
-|:--------------------|:-------------------------|:-------------|:-------------------|:--------|:--------|:----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Access Token        | RUDDERSTACK_ACCESS_TOKEN | Password     | :white_check_mark: | -       | -       | The access token associated with your Rudderstack account.                                                                                                |
-| Source ID           | RUDDERSTACK_SOURCE_ID    | Alphanumeric | :white_check_mark: | -       | -       | The ID of the Rudderstack source you want to refresh.                                                                                                     |
-| Wait For Completion | RUDDERSTACK_WAIT         | Boolean      | :heavy_minus_sign: | `FALSE` | -       | Enable if you want the vessel to wait until the sync job is successfully completed. Otherwise, the vessel will only initiate the sync job without waiting |
+| Name | Reference | Type | Required | Default | Options | Description |
+|:-----|:----------|:-----|:---------|:--------|:--------|:------------|
+| Access Token | RUDDERSTACK_ACCESS_TOKEN  | Password |:white_check_mark: | - | - | The access token associated with your Rudderstack account. |
+| Source ID | RUDDERSTACK_SOURCE_ID  | Alphanumeric |:white_check_mark: | - | - | The ID of the Rudderstack source you want to refresh. |
+| Wait For Completion | RUDDERSTACK_WAIT  | Boolean |:heavy_minus_sign: | `TRUE` | - | Enable if you want the vessel to wait until the sync job is successfully completed. Otherwise, the vessel will only initiate the sync job without waiting |
 
 
 ## YAML
@@ -37,7 +37,7 @@ source:
     inputs:
         RUDDERSTACK_ACCESS_TOKEN: null  ## REQUIRED
         RUDDERSTACK_SOURCE_ID: null ## REQUIRED
-        RUDDERSTACK_WAIT: 'FALSE'
+        RUDDERSTACK_WAIT: 'TRUE'
     type: BLUEPRINT
 guardrails:
     retry_count: 1

@@ -1,9 +1,9 @@
 ---
 id: dbt-cloud-trigger-job-and-download-results
-title: dbt Cloud - Trigger Job and Download Results to Shipyard
+title: dbt Cloud Template - Trigger Job and Download Results to Shipyard
 hide_title: true
 sidebar_label: Trigger Job and Download Results to Shipyard
-description: Information about Shipyard's low-code dbt Cloud Trigger Job and Download Results to Shipyard blueprint. Trigger an existing job in the dbt Cloud interface, wait for it to finish, and download the resulting logs and artifacts. 
+description: Information about Shipyard's low-code dbt Cloud Trigger Job and Download Results to Shipyard blueprint. Execute an existing job in the dbt Cloud interface, wait for it to finish, and download the resulting logs and artifacts. 
 keywords:
     - dbt cloud
     - blueprint
@@ -26,24 +26,24 @@ The "cause" for an execution triggered via Shipyard will always contain the foll
 
 If you want to reduce the overall runtime you're billed for, you will need to instead set up a Fleet with Vessels built with these blueprints in this order:
 
-Trigger Job -> Check Run Status -> Download Artifacts & Logs
+Execute Job -> Check Run Status -> Download Artifacts & Logs
 
 ## Variables
 
-| Name                | Reference              | Type         | Required           | Default  | Options | Description                                                                                                                                              |
-|:--------------------|:-----------------------|:-------------|:-------------------|:---------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Service Token       | DBT_API_KEY            | Password     | :white_check_mark: | -        | -       | Your unique service token for dbt Cloud. Instructions for how to get this token can be found in the authorization documentation.                         |
-| Account ID          | DBT_ACCOUNT_ID         | Alphanumeric | :white_check_mark: | -        | -       | Your unique Account ID, found in the URL of dbt Cloud. https://cloud.getdbt.com/#/accounts/ACCOUNT_ID/projects/PROJECT_ID/dashboard/                     |
-| Job ID              | DBT_JOB_ID             | Alphanumeric | :white_check_mark: | -        | -       | The ID of a specific job you want to run, found in the URL of dbt Cloud. https://cloud.getdbt.com/#/accounts/ACCOUNT_ID/projects/PROJECT_ID/jobs/JOB_ID/ |
-| Download Artifacts? | DBT_DOWNLOAD_ARTIFACTS | Boolean      | :white_check_mark: | `"true"` | -       | Determines if the artifacts from the run that was generated will be downloaded. Checked by default.                                                      |
-| Download Logs?      | DBT_DOWNLOAD_LOGS      | Boolean      | :white_check_mark: | `"true"` | -       | Determines if the logs from the run that was generated will be downloaded. Checked by default.                                                           |
+| Name | Reference | Type | Required | Default | Options | Description |
+|:-----|:----------|:-----|:---------|:--------|:--------|:------------|
+| Service Token | DBT_API_KEY  | Password |:white_check_mark: | - | - | Your unique service token for dbt Cloud. Instructions for how to get this token can be found in the authorization documentation. |
+| Account ID | DBT_ACCOUNT_ID  | Alphanumeric |:white_check_mark: | - | - | Your unique Account ID, found in the URL of dbt Cloud. https://cloud.getdbt.com/#/accounts/ACCOUNT_ID/projects/PROJECT_ID/dashboard/ |
+| Job ID | DBT_JOB_ID  | Alphanumeric |:white_check_mark: | - | - | The ID of a specific job you want to run, found in the URL of dbt Cloud. https://cloud.getdbt.com/#/accounts/ACCOUNT_ID/projects/PROJECT_ID/jobs/JOB_ID/ |
+| Download Artifacts? | DBT_DOWNLOAD_ARTIFACTS  | Boolean |:white_check_mark: | `"true"` | - | Determines if the artifacts from the run that was generated will be downloaded. Checked by default. |
+| Download Logs? | DBT_DOWNLOAD_LOGS  | Boolean |:white_check_mark: | `"true"` | - | Determines if the logs from the run that was generated will be downloaded. Checked by default. |
 
 
 ## YAML
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: dbt Cloud - Execute Job and Download Results to Shipyard
+    blueprint: dbt Cloud - Trigger Job and Download Results to Shipyard
     inputs:
         DBT_API_KEY: null  ## REQUIRED
         DBT_ACCOUNT_ID: null ## REQUIRED
