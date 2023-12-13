@@ -32,24 +32,24 @@ Quickly export a Thoughtspot liveboard report into a variety of formats ranging 
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Thoughtspot - Export Liveboard Report
-    inputs:
-        THOUGHTSPOT_TOKEN: null  ## REQUIRED
-        THOUGHTSPOT_METADATA_ID: null ## REQUIRED
-        THOUGHTSPOT_VISUALIZATION_IDS: null
-        THOUGHTSPOT_FILE_FORMAT: csv  ## REQUIRED
-        THOUGHTSPOT_RUNTIME_FILTER: null
-        THOUGHTSPOT_RUNTIME_SORT: null
-        THOUGHTSPOT_FILE_NAME: liveboard
-    type: BLUEPRINT
+  blueprint: Thoughtspot - Export Liveboard Report
+  inputs:
+    THOUGHTSPOT_TOKEN: null  ## REQUIRED
+    THOUGHTSPOT_METADATA_ID: null ## REQUIRED
+    THOUGHTSPOT_VISUALIZATION_IDS: null
+    THOUGHTSPOT_FILE_FORMAT: csv  ## REQUIRED
+    THOUGHTSPOT_RUNTIME_FILTER: null
+    THOUGHTSPOT_RUNTIME_SORT: null
+    THOUGHTSPOT_FILE_NAME: liveboard
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   200
-    -   202
-    -   203
-    -   204
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '200'
+    - '202'
+    - '203'
+    - '204'
 
 ```

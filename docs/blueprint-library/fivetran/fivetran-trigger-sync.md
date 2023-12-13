@@ -37,22 +37,22 @@ The response for this request will always be stored at `shipyard-artifacts/fivet
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Fivetran - Trigger Sync
-    inputs:
-        FIVETRAN_API_KEY: null  ## REQUIRED
-        FIVETRAN_API_SECRET: null ## REQUIRED
-        FIVETRAN_CONNECTOR_ID: null ## REQUIRED
-        FIVETRAN_FORCE: 'TRUE' ## REQUIRED
-        FIVETRAN_WAIT: 'TRUE'
-    type: BLUEPRINT
+  blueprint: Fivetran - Trigger Sync
+  inputs:
+    FIVETRAN_API_KEY: null  ## REQUIRED
+    FIVETRAN_API_SECRET: null ## REQUIRED
+    FIVETRAN_CONNECTOR_ID: null ## REQUIRED
+    FIVETRAN_FORCE: 'TRUE' ## REQUIRED
+    FIVETRAN_WAIT: 'TRUE'
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   200
-    -   201
-    -   204
-    -   299
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '200'
+    - '201'
+    - '204'
+    - '299'
 
 ```

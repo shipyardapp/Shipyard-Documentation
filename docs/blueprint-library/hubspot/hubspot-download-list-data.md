@@ -31,23 +31,23 @@ The "Hubspot - Download List Data to Shipyard" blueprint on Shipyard allows you 
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Hubspot - Download List Data to Shipyard
-    inputs:
-        HUBSPOT_ACCESS_TOKEN: null  ## REQUIRED
-        HUBSPOT_EXPORT_NAME: null ## REQUIRED
-        HUBSPOT_LIST_ID: null ## REQUIRED
-        HUBSPOT_OBJECT_PROPERTIES: null
-        HUBSPOT_DESTINATION_FILENAME: null ## REQUIRED
-        HUBSPOT_OBJECT_TYPE: contacts ## REQUIRED
-    type: BLUEPRINT
+  blueprint: Hubspot - Download List Data to Shipyard
+  inputs:
+    HUBSPOT_ACCESS_TOKEN: null  ## REQUIRED
+    HUBSPOT_EXPORT_NAME: null ## REQUIRED
+    HUBSPOT_LIST_ID: null ## REQUIRED
+    HUBSPOT_OBJECT_PROPERTIES: null
+    HUBSPOT_DESTINATION_FILENAME: null ## REQUIRED
+    HUBSPOT_OBJECT_TYPE: contacts ## REQUIRED
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   102
-    -   201
-    -   202
-    -   206
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '102'
+    - '201'
+    - '202'
+    - '206'
 
 ```

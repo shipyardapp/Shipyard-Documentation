@@ -43,21 +43,21 @@ The full list of settings that can be changed can be found [here](https://fivetr
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Fivetran - Update Connector
-    inputs:
-        FIVETRAN_API_KEY: null  ## REQUIRED
-        FIVETRAN_API_SECRET: null ## REQUIRED
-        FIVETRAN_CONNECTOR_ID: null ## REQUIRED
-        FIVETRAN_SCHEDULE_TYPE: None ## REQUIRED
-        FIVETRAN_PAUSED: None ## REQUIRED
-        FIVETRAN_HISTORICAL_SYNC: None ## REQUIRED
-        FIVETRAN_CUSTOM_UPDATE: null
-    type: BLUEPRINT
+  blueprint: Fivetran - Update Connector
+  inputs:
+    FIVETRAN_API_KEY: null  ## REQUIRED
+    FIVETRAN_API_SECRET: null ## REQUIRED
+    FIVETRAN_CONNECTOR_ID: null ## REQUIRED
+    FIVETRAN_SCHEDULE_TYPE: None ## REQUIRED
+    FIVETRAN_PAUSED: None ## REQUIRED
+    FIVETRAN_HISTORICAL_SYNC: None ## REQUIRED
+    FIVETRAN_CUSTOM_UPDATE: null
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   '0'
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '0'
 
 ```

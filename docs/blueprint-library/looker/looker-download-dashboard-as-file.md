@@ -35,29 +35,29 @@ Quickly download a Looker Dashboard as a  PDF, PNG, or JPG.
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Looker - Download Dashboard as File to Shipyard
-    inputs:
-        LOOKER_URL: null  ## REQUIRED
-        LOOKER_CLIENT_ID: null ## REQUIRED
-        LOOKER_CLIENT_SECRET: null ## REQUIRED
-        LOOKER_DASHBOARD_ID: null ## REQUIRED
-        LOOKER_FILE_TYPE: png ## REQUIRED
-        LOOKER_DESTINATION_FOLDER_NAME: null
-        LOOKER_DESTINATION_FILE_NAME: null  ## REQUIRED
-        LOOKER_OUTPUT_HEIGHT: '800' ## REQUIRED
-        LOOKER_OUTPUT_WIDTH: '800' ## REQUIRED
-    type: BLUEPRINT
+  blueprint: Looker - Download Dashboard as File to Shipyard
+  inputs:
+    LOOKER_URL: null  ## REQUIRED
+    LOOKER_CLIENT_ID: null ## REQUIRED
+    LOOKER_CLIENT_SECRET: null ## REQUIRED
+    LOOKER_DASHBOARD_ID: null ## REQUIRED
+    LOOKER_FILE_TYPE: png ## REQUIRED
+    LOOKER_DESTINATION_FOLDER_NAME: null
+    LOOKER_DESTINATION_FILE_NAME: null  ## REQUIRED
+    LOOKER_OUTPUT_HEIGHT: '800' ## REQUIRED
+    LOOKER_OUTPUT_WIDTH: '800' ## REQUIRED
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   203
-    -   204
-    -   205
-    -   206
-    -   207
-    -   208
-    -   209
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '203'
+    - '204'
+    - '205'
+    - '206'
+    - '207'
+    - '208'
+    - '209'
 
 ```

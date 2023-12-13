@@ -32,21 +32,21 @@ This Blueprint will kick off the refresh. It will create and store the generated
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Mode - Trigger Report Refresh
-    inputs:
-        MODE_TOKEN_ID: null  ## REQUIRED
-        MODE_TOKEN_PASSWORD: null ## REQUIRED
-        MODE_WORKSPACE_NAME: null ## REQUIRED
-        MODE_REPORT_ID: null ## REQUIRED
-        MODE_WAIT: 'TRUE'
-    type: BLUEPRINT
+  blueprint: Mode - Trigger Report Refresh
+  inputs:
+    MODE_TOKEN_ID: null  ## REQUIRED
+    MODE_TOKEN_PASSWORD: null ## REQUIRED
+    MODE_WORKSPACE_NAME: null ## REQUIRED
+    MODE_REPORT_ID: null ## REQUIRED
+    MODE_WAIT: 'TRUE'
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   200
-    -   203
-    -   204
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '200'
+    - '203'
+    - '204'
 
 ```

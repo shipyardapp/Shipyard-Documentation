@@ -30,19 +30,19 @@ Adds a comment to a Jira ticket
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Jira - Add Comment To Ticket
-    inputs:
-        JIRA_TICKET_KEY: null  ## REQUIRED
-        JIRA_COMMENT: null ## REQUIRED
-        JIRA_ACCESS_TOKEN: null ## REQUIRED
-        JIRA_EMAIL_ADDRESS: null ## REQUIRED
-        JIRA_DOMAIN: null ## REQUIRED
-    type: BLUEPRINT
+  blueprint: Jira - Add Comment To Ticket
+  inputs:
+    JIRA_TICKET_KEY: null  ## REQUIRED
+    JIRA_COMMENT: null ## REQUIRED
+    JIRA_ACCESS_TOKEN: null ## REQUIRED
+    JIRA_EMAIL_ADDRESS: null ## REQUIRED
+    JIRA_DOMAIN: null ## REQUIRED
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   '0'
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '0'
 
 ```

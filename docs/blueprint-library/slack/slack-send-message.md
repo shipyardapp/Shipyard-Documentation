@@ -34,20 +34,20 @@ To have Shipyard dynamically parse and output the contents of a file, you can in
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Slack - Send Message
-    inputs:
-        SLACK_DESTINATION_TYPE: channel  ## REQUIRED
-        SLACK_CHANNEL_NAME: null
-        SLACK_USER_LOOKUP_METHOD: email ## REQUIRED
-        SLACK_USERS_TO_NOTIFY: null
-        SLACK_MESSAGE: null ## REQUIRED
-        SLACK_TOKEN: null ## REQUIRED
-    type: BLUEPRINT
+  blueprint: Slack - Send Message
+  inputs:
+    SLACK_DESTINATION_TYPE: channel  ## REQUIRED
+    SLACK_CHANNEL_NAME: null
+    SLACK_USER_LOOKUP_METHOD: email ## REQUIRED
+    SLACK_USERS_TO_NOTIFY: null
+    SLACK_MESSAGE: null ## REQUIRED
+    SLACK_TOKEN: null ## REQUIRED
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   '0'
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '0'
 
 ```

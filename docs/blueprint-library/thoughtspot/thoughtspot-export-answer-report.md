@@ -31,23 +31,23 @@ Quickly export a Thoughtspot  answer into a variety of formats ranging from CSV,
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Thoughtspot - Export Answer Report
-    inputs:
-        THOUGHTSPOT_TOKEN: null  ## REQUIRED
-        THOUGHTSPOT_ANSWER_ID: null ## REQUIRED
-        THOUGHTSPOT_FILE_FORMAT: csv ## REQUIRED
-        THOUGHTSPOT_RUNTIME_FILTER: null
-        THOUGHTSPOT_RUNTIME_SORT: null
-        THOUGHTSPOT_FILE_NAME: answer
-    type: BLUEPRINT
+  blueprint: Thoughtspot - Export Answer Report
+  inputs:
+    THOUGHTSPOT_TOKEN: null  ## REQUIRED
+    THOUGHTSPOT_ANSWER_ID: null ## REQUIRED
+    THOUGHTSPOT_FILE_FORMAT: csv ## REQUIRED
+    THOUGHTSPOT_RUNTIME_FILTER: null
+    THOUGHTSPOT_RUNTIME_SORT: null
+    THOUGHTSPOT_FILE_NAME: answer
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   201
-    -   202
-    -   203
-    -   204
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '201'
+    - '202'
+    - '203'
+    - '204'
 
 ```

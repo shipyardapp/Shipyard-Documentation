@@ -37,25 +37,25 @@ This Blueprint will only kick off the refresh and will almost always return a st
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Domo - Trigger Dataset Refresh
-    inputs:
-        DOMO_CLIENT_ID: null  ## REQUIRED
-        DOMO_SECRET_KEY: null ## REQUIRED
-        DOMO_DATASET_ID: null ## REQUIRED
-        DOMO_WAIT: 'TRUE'
-    type: BLUEPRINT
+  blueprint: Domo - Trigger Dataset Refresh
+  inputs:
+    DOMO_CLIENT_ID: null  ## REQUIRED
+    DOMO_SECRET_KEY: null ## REQUIRED
+    DOMO_DATASET_ID: null ## REQUIRED
+    DOMO_WAIT: 'TRUE'
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   200
-    -   201
-    -   203
-    -   204
-    -   205
-    -   210
-    -   211
-    -   207
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '200'
+    - '201'
+    - '203'
+    - '204'
+    - '205'
+    - '210'
+    - '211'
+    - '207'
 
 ```

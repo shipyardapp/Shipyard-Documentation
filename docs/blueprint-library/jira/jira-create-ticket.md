@@ -39,27 +39,27 @@ Triggers the execution to create a ticket in Jira.
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Jira - Create Ticket
-    inputs:
-        JIRA_ACCESS_TOKEN: null  ## REQUIRED
-        JIRA_EMAIL: null ## REQUIRED
-        JIRA_DOMAIN: null ## REQUIRED
-        JIRA_PROJECT_KEY: null ## REQUIRED
-        JIRA_PARENT_TICKET_KEY: null
-        JIRA_SUMMARY: null ## REQUIRED
-        JIRA_DESCRIPTION: null
-        JIRA_ISSUE_TYPE: Task ## REQUIRED
-        JIRA_ASSIGNEE: null
-        JIRA_LABELS: null
-        JIRA_COMPONENTS: null
-        JIRA_DUE_DATE: null
-        JIRA_PRIORITY: null
-    type: BLUEPRINT
+  blueprint: Jira - Create Ticket
+  inputs:
+    JIRA_ACCESS_TOKEN: null  ## REQUIRED
+    JIRA_EMAIL: null ## REQUIRED
+    JIRA_DOMAIN: null ## REQUIRED
+    JIRA_PROJECT_KEY: null ## REQUIRED
+    JIRA_PARENT_TICKET_KEY: null
+    JIRA_SUMMARY: null ## REQUIRED
+    JIRA_DESCRIPTION: null
+    JIRA_ISSUE_TYPE: Task ## REQUIRED
+    JIRA_ASSIGNEE: null
+    JIRA_LABELS: null
+    JIRA_COMPONENTS: null
+    JIRA_DUE_DATE: null
+    JIRA_PRIORITY: null
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   '0'
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '0'
 
 ```

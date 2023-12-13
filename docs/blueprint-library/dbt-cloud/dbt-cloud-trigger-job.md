@@ -40,21 +40,21 @@ The response for this request will always be stored at _shipyard-artifacts/dbtcl
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: dbt Cloud - Trigger Job
-    inputs:
-        DBT_API_KEY: null  ## REQUIRED
-        DBT_ACCOUNT_ID: null ## REQUIRED
-        DBT_JOB_ID: null ## REQUIRED
-        DBT_WAIT: 'TRUE'
-    type: BLUEPRINT
+  blueprint: dbt Cloud - Trigger Job
+  inputs:
+    DBT_API_KEY: null  ## REQUIRED
+    DBT_ACCOUNT_ID: null ## REQUIRED
+    DBT_JOB_ID: null ## REQUIRED
+    DBT_WAIT: 'TRUE'
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   200
-    -   201
-    -   211
-    -   212
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '200'
+    - '201'
+    - '211'
+    - '212'
 
 ```

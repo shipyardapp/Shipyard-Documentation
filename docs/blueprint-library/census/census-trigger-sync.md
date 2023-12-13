@@ -36,17 +36,17 @@ The Census Sync being triggered should not have any other schedules set in the C
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Census - Trigger Sync
-    inputs:
-        CENSUS_API_KEY: null  ## REQUIRED
-        CENSUS_SYNC_ID: null ## REQUIRED
-        CENSUS_WAIT: 'TRUE'
-    type: BLUEPRINT
+  blueprint: Census - Trigger Sync
+  inputs:
+    CENSUS_API_KEY: null  ## REQUIRED
+    CENSUS_SYNC_ID: null ## REQUIRED
+    CENSUS_WAIT: 'TRUE'
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   200
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '200'
 
 ```

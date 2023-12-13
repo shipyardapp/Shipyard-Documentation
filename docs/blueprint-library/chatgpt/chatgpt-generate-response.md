@@ -32,19 +32,19 @@ Sends a prompt to ChatGPT and returns the message. The results will be printed i
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: ChatGPT - Generate Response
-    inputs:
-        CHATGPT_API_KEY: null  ## REQUIRED
-        CHATGPT_RESPONSES: '1' ## REQUIRED
-        CHATGPT_RANDOMNESS: '1'
-        CHATGPT_PROMPT: null ## REQUIRED
-        CHATGPT_DESTINATION_FILE_NAME: null ## REQUIRED
-    type: BLUEPRINT
+  blueprint: ChatGPT - Generate Response
+  inputs:
+    CHATGPT_API_KEY: null  ## REQUIRED
+    CHATGPT_RESPONSES: '1' ## REQUIRED
+    CHATGPT_RANDOMNESS: '1'
+    CHATGPT_PROMPT: null ## REQUIRED
+    CHATGPT_DESTINATION_FILE_NAME: null ## REQUIRED
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   '0'
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '0'
 
 ```

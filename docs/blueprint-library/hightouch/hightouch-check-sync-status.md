@@ -41,19 +41,19 @@ The response for this request will always be stored at `shipyard-artifacts/hight
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Hightouch - Check Sync Status (Deprecated)
-    inputs:
-        HIGHTOUCH_API_KEY: null  ## REQUIRED
-        HIGHTOUCH_SYNC_ID: null ## REQUIRED
-        HIGHTOUCH_SYNC_RUN_ID: null
-    type: BLUEPRINT
+  blueprint: Hightouch - Check Sync Status (Deprecated)
+  inputs:
+    HIGHTOUCH_API_KEY: null  ## REQUIRED
+    HIGHTOUCH_SYNC_ID: null ## REQUIRED
+    HIGHTOUCH_SYNC_RUN_ID: null
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   200
-    -   201
-    -   210
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '200'
+    - '201'
+    - '210'
 
 ```

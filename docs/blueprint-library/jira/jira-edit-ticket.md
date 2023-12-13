@@ -35,24 +35,24 @@ Trigger the execution to edit some commonly used fields on an existing Jira tick
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Jira - Edit Ticket
-    inputs:
-        JIRA_ACCESS_TOKEN: null  ## REQUIRED
-        JIRA_EMAIL: null ## REQUIRED
-        JIRA_TICKET_KEY: null ## REQUIRED
-        JIRA_SUMMARY: null
-        JIRA_DESCRIPTION: null
-        JIRA_ASSIGNEE: null
-        JIRA_LABELS: null
-        JIRA_COMPONENTS: null
-        JIRA_DUE_DATE: null
-        JIRA_PRIORITY: null
-    type: BLUEPRINT
+  blueprint: Jira - Edit Ticket
+  inputs:
+    JIRA_ACCESS_TOKEN: null  ## REQUIRED
+    JIRA_EMAIL: null ## REQUIRED
+    JIRA_TICKET_KEY: null ## REQUIRED
+    JIRA_SUMMARY: null
+    JIRA_DESCRIPTION: null
+    JIRA_ASSIGNEE: null
+    JIRA_LABELS: null
+    JIRA_COMPONENTS: null
+    JIRA_DUE_DATE: null
+    JIRA_PRIORITY: null
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   '0'
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '0'
 
 ```

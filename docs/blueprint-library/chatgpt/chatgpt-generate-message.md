@@ -35,22 +35,22 @@ Takes input from the user to create a message to send
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: ChatGPT - Generate Message
-    inputs:
-        CHATGPT_API_KEY: null  ## REQUIRED
-        CHATGPT_MESSAGE_TYPE: Email ## REQUIRED
-        CHATGPT_IMPERSONATION: null
-        CHATGPT_TONE: null
-        CHATGPT_RECIPIENT: null
-        CHATGPT_SENDER: null
-        CHATGPT_PROMPT: null ## REQUIRED
-        CHATGPT_DESTINATION_FILE_NAME: null ## REQUIRED
-    type: BLUEPRINT
+  blueprint: ChatGPT - Generate Message
+  inputs:
+    CHATGPT_API_KEY: null  ## REQUIRED
+    CHATGPT_MESSAGE_TYPE: Email ## REQUIRED
+    CHATGPT_IMPERSONATION: null
+    CHATGPT_TONE: null
+    CHATGPT_RECIPIENT: null
+    CHATGPT_SENDER: null
+    CHATGPT_PROMPT: null ## REQUIRED
+    CHATGPT_DESTINATION_FILE_NAME: null ## REQUIRED
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   '0'
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '0'
 
 ```

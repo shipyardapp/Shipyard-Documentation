@@ -49,26 +49,26 @@ Works primarily when used as part of a Fleet, where a File can be generated or d
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Slack - Send Message Conditionally
-    inputs:
-        SLACK_DESTINATION_TYPE: channel  ## REQUIRED
-        SLACK_CHANNEL_NAME: null
-        SLACK_USER_LOOKUP_METHOD: display_name ## REQUIRED
-        SLACK_USERS_TO_NOTIFY: null
-        SLACK_MESSAGE: null ## REQUIRED
-        SLACK_CONDITIONAL_SEND: file_exists ## REQUIRED
-        SLACK_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
-        SLACK_SOURCE_FILE_NAME: null ## REQUIRED
-        SLACK_SOURCE_FOLDER_NAME: null
-        SLACK_UPLOAD_FILE: no ## REQUIRED
-        SLACK_TOKEN: null ## REQUIRED
-        SLACK_INCLUDE_FILE_IN_THREAD: yes
-    type: BLUEPRINT
+  blueprint: Slack - Send Message Conditionally
+  inputs:
+    SLACK_DESTINATION_TYPE: channel  ## REQUIRED
+    SLACK_CHANNEL_NAME: null
+    SLACK_USER_LOOKUP_METHOD: display_name ## REQUIRED
+    SLACK_USERS_TO_NOTIFY: null
+    SLACK_MESSAGE: null ## REQUIRED
+    SLACK_CONDITIONAL_SEND: file_exists ## REQUIRED
+    SLACK_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
+    SLACK_SOURCE_FILE_NAME: null ## REQUIRED
+    SLACK_SOURCE_FOLDER_NAME: null
+    SLACK_UPLOAD_FILE: no ## REQUIRED
+    SLACK_TOKEN: null ## REQUIRED
+    SLACK_INCLUDE_FILE_IN_THREAD: yes
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   '0'
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '0'
 
 ```

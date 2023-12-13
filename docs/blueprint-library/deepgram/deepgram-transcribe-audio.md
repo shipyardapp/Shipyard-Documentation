@@ -29,18 +29,18 @@ To use this Blueprint, you will need an audio file to transcribe. We recommend c
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Deepgram - Transcribe Audio
-    inputs:
-        DG_API_KEY: null  ## REQUIRED
-        DG_MIMETYPE: MP3 ## REQUIRED
-        DG_AUDIO_FILE: null ## REQUIRED
-        DG_TEXT_FILE: null ## REQUIRED
-    type: BLUEPRINT
+  blueprint: Deepgram - Transcribe Audio
+  inputs:
+    DG_API_KEY: null  ## REQUIRED
+    DG_MIMETYPE: MP3 ## REQUIRED
+    DG_AUDIO_FILE: null ## REQUIRED
+    DG_TEXT_FILE: null ## REQUIRED
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   '0'
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '0'
 
 ```

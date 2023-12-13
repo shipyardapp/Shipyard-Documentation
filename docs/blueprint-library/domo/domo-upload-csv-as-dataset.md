@@ -35,33 +35,33 @@ Create a Domo dataset by uploading a csv to Domo. If the `Domo Dataset Name` alr
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Domo - Upload File as Dataset from Shipyard
-    inputs:
-        DOMO_CLIENT_ID: null  ## REQUIRED
-        DOMO_SECRET_KEY: null ## REQUIRED
-        DOMO_FOLDER_NAME: null
-        DOMO_FILE: null ## REQUIRED
-        DOMO_DATASET_NAME: null ## REQUIRED
-        DOMO_DATASET_DESCRIPTION: null
-        DOMO_SCHEMA: null
-        DOMO_INSERT_METHOD: REPLACE ## REQUIRED
-        DOMO_DATASET_ID: null
-        FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
-    type: BLUEPRINT
+  blueprint: Domo - Upload File as Dataset from Shipyard
+  inputs:
+    DOMO_CLIENT_ID: null  ## REQUIRED
+    DOMO_SECRET_KEY: null ## REQUIRED
+    DOMO_FOLDER_NAME: null
+    DOMO_FILE: null ## REQUIRED
+    DOMO_DATASET_NAME: null ## REQUIRED
+    DOMO_DATASET_DESCRIPTION: null
+    DOMO_SCHEMA: null
+    DOMO_INSERT_METHOD: REPLACE ## REQUIRED
+    DOMO_DATASET_ID: null
+    FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   200
-    -   201
-    -   203
-    -   204
-    -   205
-    -   210
-    -   211
-    -   214
-    -   215
-    -   216
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '200'
+    - '201'
+    - '203'
+    - '204'
+    - '205'
+    - '210'
+    - '211'
+    - '214'
+    - '215'
+    - '216'
 
 ```

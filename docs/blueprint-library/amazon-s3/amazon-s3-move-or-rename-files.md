@@ -36,25 +36,25 @@ Quickly and seamlessly move a file within an S3 bucket to another bucket or fold
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Amazon S3 - Move or Rename Files
-    inputs:
-        S3_SOURCE_BUCKET_NAME: null  ## REQUIRED
-        S3_SOURCE_FOLDER_NAME: null
-        S3_FILE_MATCH_TYPE: exact_match  ## REQUIRED
-        S3_SOURCE_FILE_NAME: null ## REQUIRED
-        S3_DESTINATION_BUCKET_NAME: null ## REQUIRED
-        S3_DESTINATION_FOLDER_NAME: null
-        S3_DESTINATION_FILE_NAME: null
-        AWS_DEFAULT_REGION: us-east-2  ## REQUIRED
-        AWS_ACCESS_KEY_ID: null ## REQUIRED
-        AWS_SECRET_ACCESS_KEY: null ## REQUIRED
-    type: BLUEPRINT
+  blueprint: Amazon S3 - Move or Rename Files
+  inputs:
+    S3_SOURCE_BUCKET_NAME: null  ## REQUIRED
+    S3_SOURCE_FOLDER_NAME: null
+    S3_FILE_MATCH_TYPE: exact_match  ## REQUIRED
+    S3_SOURCE_FILE_NAME: null ## REQUIRED
+    S3_DESTINATION_BUCKET_NAME: null ## REQUIRED
+    S3_DESTINATION_FOLDER_NAME: null
+    S3_DESTINATION_FILE_NAME: null
+    AWS_DEFAULT_REGION: us-east-2  ## REQUIRED
+    AWS_ACCESS_KEY_ID: null ## REQUIRED
+    AWS_SECRET_ACCESS_KEY: null ## REQUIRED
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   201
-    -   203
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '201'
+    - '203'
 
 ```

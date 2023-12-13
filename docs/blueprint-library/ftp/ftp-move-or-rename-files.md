@@ -36,26 +36,26 @@ This Blueprint requires _read_ permissions in order to download from the FTP ser
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: FTP - Move or Rename Files
-    inputs:
-        FTP_HOST: null  ## REQUIRED
-        FTP_PORT: '21' ## REQUIRED
-        FTP_USERNAME: null
-        FTP_PASSWORD: null
-        FTP_SOURCE_FOLDER_NAME: null
-        FTP_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
-        FTP_SOURCE_FILE_NAME: null ## REQUIRED
-        FTP_DESTINATION_FOLDER_NAME: null
-        FTP_DESTINATION_FILE_NAME: null
-    type: BLUEPRINT
+  blueprint: FTP - Move or Rename Files
+  inputs:
+    FTP_HOST: null  ## REQUIRED
+    FTP_PORT: '21' ## REQUIRED
+    FTP_USERNAME: null
+    FTP_PASSWORD: null
+    FTP_SOURCE_FOLDER_NAME: null
+    FTP_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
+    FTP_SOURCE_FILE_NAME: null ## REQUIRED
+    FTP_DESTINATION_FOLDER_NAME: null
+    FTP_DESTINATION_FILE_NAME: null
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   3
-    -   200
-    -   201
-    -   202
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '3'
+    - '200'
+    - '201'
+    - '202'
 
 ```

@@ -35,24 +35,24 @@ Turn the results of your SQL SELECT statement into a CSV file. Extract your Post
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: PostgreSQL - Download Query Results to Shipyard
-    inputs:
-        POSTGRES_HOST: null  ## REQUIRED
-        POSTGRES_PORT: '5432' ## REQUIRED
-        POSTGRES_USERNAME: null ## REQUIRED
-        POSTGRES_PASSWORD: null
-        POSTGRES_DATABASE: null  ## REQUIRED
-        POSTGRES_URL_PARAMETERS: null
-        POSTGRES_QUERY: null ## REQUIRED
-        POSTGRES_DESTINATION_FOLDER_NAME: null
-        POSTGRES_DESTINATION_FILE_NAME: output.csv  ## REQUIRED
-        POSTGRES_FILE_HEADER: true ## REQUIRED
-    type: BLUEPRINT
+  blueprint: PostgreSQL - Download Query Results to Shipyard
+  inputs:
+    POSTGRES_HOST: null  ## REQUIRED
+    POSTGRES_PORT: '5432' ## REQUIRED
+    POSTGRES_USERNAME: null ## REQUIRED
+    POSTGRES_PASSWORD: null
+    POSTGRES_DATABASE: null  ## REQUIRED
+    POSTGRES_URL_PARAMETERS: null
+    POSTGRES_QUERY: null ## REQUIRED
+    POSTGRES_DESTINATION_FOLDER_NAME: null
+    POSTGRES_DESTINATION_FILE_NAME: output.csv  ## REQUIRED
+    POSTGRES_FILE_HEADER: true ## REQUIRED
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   '0'
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '0'
 
 ```

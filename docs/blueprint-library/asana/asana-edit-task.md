@@ -33,23 +33,23 @@ This allows for users to edit/update existing fields within an Asana task
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Asana - Edit Task
-    inputs:
-        ASANA_ACCESS_TOKEN: null  ## REQUIRED
-        ASANA_TICKET_ID: null ## REQUIRED
-        ASANA_NAME: null
-        ASANA_RESOURCE_SUBTYPE: default_task ## REQUIRED
-        ASANA_APPROVAL_STATUS: pending ## REQUIRED
-        ASANA_ASSIGNEE: null
-        ASANA_DUE_ON: null
-        ASANA_NOTES: null
-    type: BLUEPRINT
+  blueprint: Asana - Edit Task
+  inputs:
+    ASANA_ACCESS_TOKEN: null  ## REQUIRED
+    ASANA_TICKET_ID: null ## REQUIRED
+    ASANA_NAME: null
+    ASANA_RESOURCE_SUBTYPE: default_task ## REQUIRED
+    ASANA_APPROVAL_STATUS: pending ## REQUIRED
+    ASANA_ASSIGNEE: null
+    ASANA_DUE_ON: null
+    ASANA_NOTES: null
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   201
-    -   202
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '201'
+    - '202'
 
 ```

@@ -50,32 +50,32 @@ keywords:
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Salesforce - Upload Data
-    inputs:
-        SALESFORCE_ACCESS_TOKEN: null
-        SALESFORCE_DOMAIN: null  ## REQUIRED
-        SALESFORCE_USERNAME: null
-        SALESFORCE_PASSWORD: null
-        SALESFORCE_SECURITY_TOKEN: null
-        SALESFORCE_CONSUMER_KEY: null
-        SALESFORCE_CONSUMER_SECRET: null
-        SALESFORCE_OBJECT_TYPE: Account ## REQUIRED
-        SALESFORCE_SOURCE_MATCH_TYPE: exact_match ## REQUIRED
-        SALESFORCE_SOURCE_FOLDER_NAME: . ## REQUIRED
-        SALESFORCE_SOURCE_FILE_NAME: null ## REQUIRED
-        SALESFORCE_IMPORT_OPERATION: insert ## REQUIRED
-        SALESFORCE_ID_FIELD: null
-    type: BLUEPRINT
+  blueprint: Salesforce - Upload Data
+  inputs:
+    SALESFORCE_ACCESS_TOKEN: null
+    SALESFORCE_DOMAIN: null  ## REQUIRED
+    SALESFORCE_USERNAME: null
+    SALESFORCE_PASSWORD: null
+    SALESFORCE_SECURITY_TOKEN: null
+    SALESFORCE_CONSUMER_KEY: null
+    SALESFORCE_CONSUMER_SECRET: null
+    SALESFORCE_OBJECT_TYPE: Account ## REQUIRED
+    SALESFORCE_SOURCE_MATCH_TYPE: exact_match ## REQUIRED
+    SALESFORCE_SOURCE_FOLDER_NAME: . ## REQUIRED
+    SALESFORCE_SOURCE_FILE_NAME: null ## REQUIRED
+    SALESFORCE_IMPORT_OPERATION: insert ## REQUIRED
+    SALESFORCE_ID_FIELD: null
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   102
-    -   103
-    -   106
-    -   201
-    -   202
-    -   206
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '102'
+    - '103'
+    - '106'
+    - '201'
+    - '202'
+    - '206'
 
 ```

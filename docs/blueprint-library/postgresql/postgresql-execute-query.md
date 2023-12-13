@@ -32,21 +32,21 @@ Execute any SQL query against a PostgreSQL database, without returning any of th
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: PostgreSQL - Execute Query
-    inputs:
-        POSTGRES_HOST: null  ## REQUIRED
-        POSTGRES_PORT: '5432' ## REQUIRED
-        POSTGRES_USERNAME: null ## REQUIRED
-        POSTGRES_PASSWORD: null
-        POSTGRES_DATABASE: null  ## REQUIRED
-        POSTGRES_URL_PARAMETERS: null
-        POSTGRES_QUERY: null ## REQUIRED
-    type: BLUEPRINT
+  blueprint: PostgreSQL - Execute Query
+  inputs:
+    POSTGRES_HOST: null  ## REQUIRED
+    POSTGRES_PORT: '5432' ## REQUIRED
+    POSTGRES_USERNAME: null ## REQUIRED
+    POSTGRES_PASSWORD: null
+    POSTGRES_DATABASE: null  ## REQUIRED
+    POSTGRES_URL_PARAMETERS: null
+    POSTGRES_QUERY: null ## REQUIRED
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   '0'
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '0'
 
 ```

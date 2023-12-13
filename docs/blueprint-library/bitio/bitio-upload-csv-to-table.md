@@ -52,22 +52,22 @@ In all instances, if the table name does not already exist, a new table will be 
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: bit.io - Upload File to Table from Shipyard
-    inputs:
-        BITIO_PASSWORD: null  ## REQUIRED
-        BITIO_DATABASE: null ## REQUIRED
-        BITIO_SOURCE_FOLDER_NAME: null
-        BITIO_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
-        BITIO_SOURCE_FILE_NAME: null ## REQUIRED
-        BITIO_SCHEMA: null
-        BITIO_TABLE_NAME: null ## REQUIRED
-        BITIO_INSERT_METHOD: append ## REQUIRED
-    type: BLUEPRINT
+  blueprint: bit.io - Upload File to Table from Shipyard
+  inputs:
+    BITIO_PASSWORD: null  ## REQUIRED
+    BITIO_DATABASE: null ## REQUIRED
+    BITIO_SOURCE_FOLDER_NAME: null
+    BITIO_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
+    BITIO_SOURCE_FILE_NAME: null ## REQUIRED
+    BITIO_SCHEMA: null
+    BITIO_TABLE_NAME: null ## REQUIRED
+    BITIO_INSERT_METHOD: append ## REQUIRED
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   '0'
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '0'
 
 ```

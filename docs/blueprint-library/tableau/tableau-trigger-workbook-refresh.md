@@ -37,27 +37,27 @@ This Blueprint will kick off the refresh and will almost always return a status 
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Tableau - Trigger Workbook Refresh
-    inputs:
-        TABLEAU_SIGN_IN_METHOD: username_password  ## REQUIRED
-        TABLEAU_USERNAME: null ## REQUIRED
-        TABLEAU_PASSWORD: null ## REQUIRED
-        TABLEAU_SERVER_URL: null ## REQUIRED
-        TABLEAU_SITE_ID: default ## REQUIRED
-        TABLEAU_PROJECT_NAME: null ## REQUIRED
-        TABLEAU_WORKBOOK_NAME: null ## REQUIRED
-        TABLEAU_WAIT: 'TRUE'
-    type: BLUEPRINT
+  blueprint: Tableau - Trigger Workbook Refresh
+  inputs:
+    TABLEAU_SIGN_IN_METHOD: username_password  ## REQUIRED
+    TABLEAU_USERNAME: null ## REQUIRED
+    TABLEAU_PASSWORD: null ## REQUIRED
+    TABLEAU_SERVER_URL: null ## REQUIRED
+    TABLEAU_SITE_ID: default ## REQUIRED
+    TABLEAU_PROJECT_NAME: null ## REQUIRED
+    TABLEAU_WORKBOOK_NAME: null ## REQUIRED
+    TABLEAU_WAIT: 'TRUE'
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   200
-    -   201
-    -   202
-    -   203
-    -   204
-    -   205
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '200'
+    - '201'
+    - '202'
+    - '203'
+    - '204'
+    - '205'
 
 ```

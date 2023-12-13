@@ -30,26 +30,26 @@ Allows for quick and seamless download of a Notion Database to Shipyard. Results
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Notion - Download Database to Shipyard
-    inputs:
-        NOTION_ACCESS_TOKEN: null  ## REQUIRED
-        NOTION_DATABASE_ID: null ## REQUIRED
-        NOTION_DEST_FILE: null ## REQUIRED
-        NOTION_DEST_FOLDER: null
-        NOTION_FILE_TYPE: csv
-    type: BLUEPRINT
+  blueprint: Notion - Download Database to Shipyard
+  inputs:
+    NOTION_ACCESS_TOKEN: null  ## REQUIRED
+    NOTION_DATABASE_ID: null ## REQUIRED
+    NOTION_DEST_FILE: null ## REQUIRED
+    NOTION_DEST_FOLDER: null
+    NOTION_FILE_TYPE: csv
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   200
-    -   201
-    -   202
-    -   203
-    -   204
-    -   205
-    -   206
-    -   249
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '200'
+    - '201'
+    - '202'
+    - '203'
+    - '204'
+    - '205'
+    - '206'
+    - '249'
 
 ```

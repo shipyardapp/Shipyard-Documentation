@@ -28,28 +28,28 @@ Execute a sync against an existing connector in the Airbyte interface.
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Airbyte - Trigger Sync
-    inputs:
-        AIRBYTE_CONNECTION_ID: null  ## REQUIRED
-        AIRBYTE_API_TOKEN: null ## REQUIRED
-        AIRBYTE_WAIT: 'TRUE'
-    type: BLUEPRINT
+  blueprint: Airbyte - Trigger Sync
+  inputs:
+    AIRBYTE_CONNECTION_ID: null  ## REQUIRED
+    AIRBYTE_API_TOKEN: null ## REQUIRED
+    AIRBYTE_WAIT: 'TRUE'
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   200
-    -   201
-    -   202
-    -   203
-    -   204
-    -   210
-    -   211
-    -   212
-    -   213
-    -   214
-    -   215
-    -   220
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '200'
+    - '201'
+    - '202'
+    - '203'
+    - '204'
+    - '210'
+    - '211'
+    - '212'
+    - '213'
+    - '214'
+    - '215'
+    - '220'
 
 ```

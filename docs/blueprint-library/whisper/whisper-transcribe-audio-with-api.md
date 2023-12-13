@@ -29,18 +29,18 @@ This Blueprint takes in a audio file and transcribes it to a text file.
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Whisper - Transcribe Audio with API
-    inputs:
-        WHISPER_API_KEY: null  ## REQUIRED
-        WHISPER_FILE: null ## REQUIRED
-        WHISPER_DESTINATION_FILE_NAME: transcription.txt ## REQUIRED
-        WHISPER_LANGUAGE: en ## REQUIRED
-    type: BLUEPRINT
+  blueprint: Whisper - Transcribe Audio with API
+  inputs:
+    WHISPER_API_KEY: null  ## REQUIRED
+    WHISPER_FILE: null ## REQUIRED
+    WHISPER_DESTINATION_FILE_NAME: transcription.txt ## REQUIRED
+    WHISPER_LANGUAGE: en ## REQUIRED
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   '0'
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '0'
 
 ```

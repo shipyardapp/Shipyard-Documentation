@@ -33,21 +33,21 @@ Execute any SQL query against your Redshift database. Perfect for creating multi
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Amazon Redshift - Execute Query
-    inputs:
-        REDSHIFT_HOST: null  ## REQUIRED
-        REDSHIFT_PORT: '5439' ## REQUIRED
-        REDSHIFT_USERNAME: null ## REQUIRED
-        REDSHIFT_PASSWORD: null
-        REDSHIFT_DATABASE: null  ## REQUIRED
-        REDSHIFT_URL_PARAMETERS: null
-        REDSHIFT_QUERY: null ## REQUIRED
-    type: BLUEPRINT
+  blueprint: Amazon Redshift - Execute Query
+  inputs:
+    REDSHIFT_HOST: null  ## REQUIRED
+    REDSHIFT_PORT: '5439' ## REQUIRED
+    REDSHIFT_USERNAME: null ## REQUIRED
+    REDSHIFT_PASSWORD: null
+    REDSHIFT_DATABASE: null  ## REQUIRED
+    REDSHIFT_URL_PARAMETERS: null
+    REDSHIFT_QUERY: null ## REQUIRED
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   '0'
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '0'
 
 ```

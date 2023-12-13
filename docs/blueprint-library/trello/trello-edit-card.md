@@ -33,22 +33,22 @@ Use this blueprint to update information on an existing card
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Trello - Edit Card
-    inputs:
-        TRELLO_ACCESS_TOKEN: null  ## REQUIRED
-        TRELLO_API_KEY: null ## REQUIRED
-        TRELLO_CARD_ID: null ## REQUIRED
-        TRELLO_BOARD_ID: null
-        TRELLO_LIST_NAME: null
-        TRELLO_CARD_NAME: null
-        TRELLO_DESCRIPTION: null
-        TRELLO_DUE_DATE: null
-    type: BLUEPRINT
+  blueprint: Trello - Edit Card
+  inputs:
+    TRELLO_ACCESS_TOKEN: null  ## REQUIRED
+    TRELLO_API_KEY: null ## REQUIRED
+    TRELLO_CARD_ID: null ## REQUIRED
+    TRELLO_BOARD_ID: null
+    TRELLO_LIST_NAME: null
+    TRELLO_CARD_NAME: null
+    TRELLO_DESCRIPTION: null
+    TRELLO_DUE_DATE: null
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   200
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '200'
 
 ```

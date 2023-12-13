@@ -32,21 +32,21 @@ Execute any SQL query against a MySQL database, without returning any of the res
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: MySQL - Execute Queries
-    inputs:
-        MYSQL_HOST: null  ## REQUIRED
-        MYSQL_PORT: '3306' ## REQUIRED
-        MYSQL_USERNAME: null ## REQUIRED
-        MYSQL_PASSWORD: null
-        MYSQL_DATABASE: null  ## REQUIRED
-        MYSQL_URL_PARAMETERS: null
-        MYSQL_QUERY: null ## REQUIRED
-    type: BLUEPRINT
+  blueprint: MySQL - Execute Queries
+  inputs:
+    MYSQL_HOST: null  ## REQUIRED
+    MYSQL_PORT: '3306' ## REQUIRED
+    MYSQL_USERNAME: null ## REQUIRED
+    MYSQL_PASSWORD: null
+    MYSQL_DATABASE: null  ## REQUIRED
+    MYSQL_URL_PARAMETERS: null
+    MYSQL_QUERY: null ## REQUIRED
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   '0'
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '0'
 
 ```

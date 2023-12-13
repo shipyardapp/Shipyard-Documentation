@@ -31,18 +31,18 @@ Takes in a comma separated list of columns and creates a user-specified number o
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: ChatGPT - Create Dummy Data
-    inputs:
-        CHATGPT_API_KEY: null  ## REQUIRED
-        CHATGPT_NUMBER_OF_ROWS: '10' ## REQUIRED
-        CHATGPT_COLUMNS: null ## REQUIRED
-        CHATGPT_DESTINATION_FILE_NAME: null ## REQUIRED
-    type: BLUEPRINT
+  blueprint: ChatGPT - Create Dummy Data
+  inputs:
+    CHATGPT_API_KEY: null  ## REQUIRED
+    CHATGPT_NUMBER_OF_ROWS: '10' ## REQUIRED
+    CHATGPT_COLUMNS: null ## REQUIRED
+    CHATGPT_DESTINATION_FILE_NAME: null ## REQUIRED
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   '0'
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '0'
 
 ```

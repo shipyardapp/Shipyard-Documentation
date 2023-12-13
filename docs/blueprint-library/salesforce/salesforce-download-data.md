@@ -49,28 +49,28 @@ Should there be any issues with authentication or data extraction, the blueprint
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Salesforce - Download Data to Shipyard
-    inputs:
-        SALESFORCE_DOMAIN: null  ## REQUIRED
-        SALESFORCE_ACCESS_TOKEN: null
-        SALESFORCE_CONSUMER_KEY: null
-        SALESFORCE_CONSUMER_SECRET: null
-        SALESFORCE_USERNAME: null
-        SALESFORCE_PASSWORD: null
-        SALESFORCE_SECURITY_TOKEN: null
-        SALESFORCE_FILENAME: output.csv ## REQUIRED
-        SALESFORCE_FIELD_NAMES: null ## REQUIRED
-        SALESFORCE_OBJECT_TYPE: null ## REQUIRED
-    type: BLUEPRINT
+  blueprint: Salesforce - Download Data to Shipyard
+  inputs:
+    SALESFORCE_DOMAIN: null  ## REQUIRED
+    SALESFORCE_ACCESS_TOKEN: null
+    SALESFORCE_CONSUMER_KEY: null
+    SALESFORCE_CONSUMER_SECRET: null
+    SALESFORCE_USERNAME: null
+    SALESFORCE_PASSWORD: null
+    SALESFORCE_SECURITY_TOKEN: null
+    SALESFORCE_FILENAME: output.csv ## REQUIRED
+    SALESFORCE_FIELD_NAMES: null ## REQUIRED
+    SALESFORCE_OBJECT_TYPE: null ## REQUIRED
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   102
-    -   103
-    -   201
-    -   202
-    -   206
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '102'
+    - '103'
+    - '201'
+    - '202'
+    - '206'
 
 ```

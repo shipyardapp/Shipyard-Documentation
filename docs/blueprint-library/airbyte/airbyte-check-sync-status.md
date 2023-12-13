@@ -29,21 +29,21 @@ Check the status of a specific Airbyte sync run and return with the final status
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Airbyte - Check Sync Status (Deprecated)
-    inputs:
-        AIRBYTE_API_TOKEN: null  ## REQUIRED
-        AIRBYTE_JOB_ID: null
-    type: BLUEPRINT
+  blueprint: Airbyte - Check Sync Status (Deprecated)
+  inputs:
+    AIRBYTE_API_TOKEN: null  ## REQUIRED
+    AIRBYTE_JOB_ID: null
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   201
-    -   210
-    -   211
-    -   212
-    -   213
-    -   215
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '201'
+    - '210'
+    - '211'
+    - '212'
+    - '213'
+    - '215'
 
 ```

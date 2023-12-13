@@ -42,24 +42,24 @@ Easily import one or more files directly into an Amazon S3 bucket, no matter how
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Amazon S3 - Upload Files from Shipyard
-    inputs:
-        S3_BUCKET_NAME: null  ## REQUIRED
-        S3_SOURCE_FOLDER_NAME: null
-        S3_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
-        S3_SOURCE_FILE_NAME: null ## REQUIRED
-        S3_DESTINATION_FOLDER_NAME: null
-        S3_DESTINATION_FILE_NAME: null
-        AWS_ACCESS_KEY_ID: null  ## REQUIRED
-        AWS_SECRET_ACCESS_KEY: null ## REQUIRED
-        AWS_DEFAULT_REGION: us-east-2 ## REQUIRED
-        S3_EXTRA_ARGS: '{}'
-    type: BLUEPRINT
+  blueprint: Amazon S3 - Upload Files from Shipyard
+  inputs:
+    S3_BUCKET_NAME: null  ## REQUIRED
+    S3_SOURCE_FOLDER_NAME: null
+    S3_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
+    S3_SOURCE_FILE_NAME: null ## REQUIRED
+    S3_DESTINATION_FOLDER_NAME: null
+    S3_DESTINATION_FILE_NAME: null
+    AWS_ACCESS_KEY_ID: null  ## REQUIRED
+    AWS_SECRET_ACCESS_KEY: null ## REQUIRED
+    AWS_DEFAULT_REGION: us-east-2 ## REQUIRED
+    S3_EXTRA_ARGS: '{}'
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   '0'
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '0'
 
 ```

@@ -30,22 +30,22 @@ Quickly remove one or more files in an Azure Blob container. The [match type](ht
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Azure Blob Storage - Delete Files
-    inputs:
-        AZURE_CONTAINER_NAME: null  ## REQUIRED
-        AZURE_SOURCE_FOLDER_NAME: null
-        AZURE_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
-        AZURE_SOURCE_FILE_NAME: null ## REQUIRED
-        AZURE_STORAGE_CONNECTION_STRING: null ## REQUIRED
-    type: BLUEPRINT
+  blueprint: Azure Blob Storage - Delete Files
+  inputs:
+    AZURE_CONTAINER_NAME: null  ## REQUIRED
+    AZURE_SOURCE_FOLDER_NAME: null
+    AZURE_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
+    AZURE_SOURCE_FILE_NAME: null ## REQUIRED
+    AZURE_STORAGE_CONNECTION_STRING: null ## REQUIRED
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   3
-    -   200
-    -   201
-    -   202
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '3'
+    - '200'
+    - '201'
+    - '202'
 
 ```

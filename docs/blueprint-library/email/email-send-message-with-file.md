@@ -55,30 +55,30 @@ To have
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Email - Send Message with File
-    inputs:
-        EMAIL_SEND_METHOD: tls  ## REQUIRED
-        EMAIL_SMTP_HOST: null ## REQUIRED
-        EMAIL_SMTP_PORT: null ## REQUIRED
-        EMAIL_USERNAME: shipyardapptest@gmail.com ## REQUIRED
-        EMAIL_PASSWORD: hlgyecgskabctidf ## REQUIRED
-        EMAIL_SENDER_ADDRESS: ${EMAIL_USERNAME} ## REQUIRED
-        EMAIL_SENDER_NAME: null
-        EMAIL_TO: null
-        EMAIL_CC: null
-        EMAIL_BCC: null
-        EMAIL_SUBJECT: null
-        EMAIL_MESSAGE: null  ## REQUIRED
-        EMAIL_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
-        EMAIL_SOURCE_FILE_NAME: null ## REQUIRED
-        EMAIL_SOURCE_FOLDER_NAME: null
-        EMAIL_INCLUDE_SHIPYARD_FOOTER: true  ## REQUIRED
-    type: BLUEPRINT
+  blueprint: Email - Send Message with File
+  inputs:
+    EMAIL_SEND_METHOD: tls  ## REQUIRED
+    EMAIL_SMTP_HOST: null ## REQUIRED
+    EMAIL_SMTP_PORT: null ## REQUIRED
+    EMAIL_USERNAME: shipyardapptest@gmail.com ## REQUIRED
+    EMAIL_PASSWORD: hlgyecgskabctidf ## REQUIRED
+    EMAIL_SENDER_ADDRESS: ${EMAIL_USERNAME} ## REQUIRED
+    EMAIL_SENDER_NAME: null
+    EMAIL_TO: null
+    EMAIL_CC: null
+    EMAIL_BCC: null
+    EMAIL_SUBJECT: null
+    EMAIL_MESSAGE: null  ## REQUIRED
+    EMAIL_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
+    EMAIL_SOURCE_FILE_NAME: null ## REQUIRED
+    EMAIL_SOURCE_FOLDER_NAME: null
+    EMAIL_INCLUDE_SHIPYARD_FOOTER: true  ## REQUIRED
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   '0'
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '0'
 
 ```

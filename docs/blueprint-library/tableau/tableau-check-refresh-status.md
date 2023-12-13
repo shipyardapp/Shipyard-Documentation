@@ -39,27 +39,27 @@ Check the job status of a workbook or datasource that has recently been refreshe
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Tableau - Check Refresh Status (Deprecated)
-    inputs:
-        TABLEAU_SIGN_IN_METHOD: username_password  ## REQUIRED
-        TABLEAU_USERNAME: null ## REQUIRED
-        TABLEAU_PASSWORD: null ## REQUIRED
-        TABLEAU_SERVER_URL: null ## REQUIRED
-        TABLEAU_SITE_ID: default ## REQUIRED
-        TABLEAU_JOB_ID: null
-    type: BLUEPRINT
+  blueprint: Tableau - Check Refresh Status (Deprecated)
+  inputs:
+    TABLEAU_SIGN_IN_METHOD: username_password  ## REQUIRED
+    TABLEAU_USERNAME: null ## REQUIRED
+    TABLEAU_PASSWORD: null ## REQUIRED
+    TABLEAU_SERVER_URL: null ## REQUIRED
+    TABLEAU_SITE_ID: default ## REQUIRED
+    TABLEAU_JOB_ID: null
+  type: BLUEPRINT
 guardrails:
-    retry_count: 12
-    retry_wait: 0h5m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   200
-    -   201
-    -   202
-    -   203
-    -   204
-    -   205
-    -   210
-    -   211
+  retry_count: 12
+  retry_wait: 0h5m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '200'
+    - '201'
+    - '202'
+    - '203'
+    - '204'
+    - '205'
+    - '210'
+    - '211'
 
 ```

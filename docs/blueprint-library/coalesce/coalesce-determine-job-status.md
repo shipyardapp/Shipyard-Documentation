@@ -29,22 +29,22 @@ Check the status of a specific Coalesce job and return with the final status. Be
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Coalesce - Check Job Status (Deprecated)
-    inputs:
-        COALESCE_ACCESS_TOKEN: null  ## REQUIRED
-        COALESCE_RUN_ID: null
-    type: BLUEPRINT
+  blueprint: Coalesce - Check Job Status (Deprecated)
+  inputs:
+    COALESCE_ACCESS_TOKEN: null  ## REQUIRED
+    COALESCE_RUN_ID: null
+  type: BLUEPRINT
 guardrails:
-    retry_count: 4
-    retry_wait: 0h5m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   214
-    -   210
-    -   213
-    -   201
-    -   200
-    -   213
-    -   202
+  retry_count: 4
+  retry_wait: 0h5m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '214'
+    - '210'
+    - '213'
+    - '201'
+    - '200'
+    - '213'
+    - '202'
 
 ```

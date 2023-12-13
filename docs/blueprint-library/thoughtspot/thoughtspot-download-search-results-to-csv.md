@@ -30,19 +30,19 @@ Quickly download a natural language Thoughtspot query to a csv
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Thoughtspot - Download Search Results to Shipyard
-    inputs:
-        THOUGHTSPOT_TOKEN: null  ## REQUIRED
-        THOUGHTSPOT_QUERY: null ## REQUIRED
-        THOUGHTSPOT_TABLE_ID: null ## REQUIRED
-        THOUGHTSPOT_ROWS: null
-        THOUGHTSPOT_FILE_NAME: search_data.csv
-    type: BLUEPRINT
+  blueprint: Thoughtspot - Download Search Results to Shipyard
+  inputs:
+    THOUGHTSPOT_TOKEN: null  ## REQUIRED
+    THOUGHTSPOT_QUERY: null ## REQUIRED
+    THOUGHTSPOT_TABLE_ID: null ## REQUIRED
+    THOUGHTSPOT_ROWS: null
+    THOUGHTSPOT_FILE_NAME: search_data.csv
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   202
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '202'
 
 ```

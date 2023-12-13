@@ -38,24 +38,24 @@ Check the job status of a dataset that has recently been refreshed in Domo.
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Domo - Check Refresh Status (Deprecated)
-    inputs:
-        DOMO_CLIENT_ID: null  ## REQUIRED
-        DOMO_SECRET_KEY: null ## REQUIRED
-        DOMO_DATASET_ID: null ## REQUIRED
-        DOMO_EXECUTION_ID: null
-    type: BLUEPRINT
+  blueprint: Domo - Check Refresh Status (Deprecated)
+  inputs:
+    DOMO_CLIENT_ID: null  ## REQUIRED
+    DOMO_SECRET_KEY: null ## REQUIRED
+    DOMO_DATASET_ID: null ## REQUIRED
+    DOMO_EXECUTION_ID: null
+  type: BLUEPRINT
 guardrails:
-    retry_count: 12
-    retry_wait: 0h5m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   200
-    -   201
-    -   203
-    -   204
-    -   205
-    -   210
-    -   211
+  retry_count: 12
+  retry_wait: 0h5m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '200'
+    - '201'
+    - '203'
+    - '204'
+    - '205'
+    - '210'
+    - '211'
 
 ```

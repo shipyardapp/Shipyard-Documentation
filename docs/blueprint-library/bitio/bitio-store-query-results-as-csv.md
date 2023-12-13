@@ -31,20 +31,20 @@ Turn the results of your SQL SELECT statement into a CSV file. Extract your bit.
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: bit.io - Download Query Results to Shipyard
-    inputs:
-        BITIO_PASSWORD: null  ## REQUIRED
-        BITIO_DATABASE: null ## REQUIRED
-        BITIO_QUERY: null ## REQUIRED
-        BITIO_DESTINATION_FOLDER_NAME: null
-        BITIO_DESTINATION_FILE_NAME: output.csv  ## REQUIRED
-        BITIO_FILE_HEADER: true ## REQUIRED
-    type: BLUEPRINT
+  blueprint: bit.io - Download Query Results to Shipyard
+  inputs:
+    BITIO_PASSWORD: null  ## REQUIRED
+    BITIO_DATABASE: null ## REQUIRED
+    BITIO_QUERY: null ## REQUIRED
+    BITIO_DESTINATION_FOLDER_NAME: null
+    BITIO_DESTINATION_FILE_NAME: output.csv  ## REQUIRED
+    BITIO_FILE_HEADER: true ## REQUIRED
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   '0'
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '0'
 
 ```

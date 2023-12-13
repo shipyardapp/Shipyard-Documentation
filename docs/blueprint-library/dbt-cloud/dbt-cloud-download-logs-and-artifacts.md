@@ -38,20 +38,20 @@ The steps of each run can be variable so we combine the log data from every step
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: dbt Cloud - Download Logs and Artifacts to Shipyard
-    inputs:
-        DBT_API_KEY: null  ## REQUIRED
-        DBT_ACCOUNT_ID: null ## REQUIRED
-        DBT_RUN_ID: null
-    type: BLUEPRINT
+  blueprint: dbt Cloud - Download Logs and Artifacts to Shipyard
+  inputs:
+    DBT_API_KEY: null  ## REQUIRED
+    DBT_ACCOUNT_ID: null ## REQUIRED
+    DBT_RUN_ID: null
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   200
-    -   201
-    -   211
-    -   212
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '200'
+    - '201'
+    - '211'
+    - '212'
 
 ```

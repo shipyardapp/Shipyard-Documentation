@@ -48,28 +48,28 @@ When the `Append` insert method is selected, the blueprint will attempt to add n
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Notion - Upload File from Shipyard to Notion Database
-    inputs:
-        NOTION_ACCESS_TOKEN: null  ## REQUIRED
-        NOTION_DATABASE_ID: null
-        NOTION_PAGE_ID: null
-        NOTION_DATABASE_NAME: null
-        NOTION_FILE_NAME: null
-        NOTION_FOLDER_NAME: null
-        NOTION_INSERT_METHOD: append
-    type: BLUEPRINT
+  blueprint: Notion - Upload File from Shipyard to Notion Database
+  inputs:
+    NOTION_ACCESS_TOKEN: null  ## REQUIRED
+    NOTION_DATABASE_ID: null
+    NOTION_PAGE_ID: null
+    NOTION_DATABASE_NAME: null
+    NOTION_FILE_NAME: null
+    NOTION_FOLDER_NAME: null
+    NOTION_INSERT_METHOD: append
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   200
-    -   201
-    -   202
-    -   203
-    -   204
-    -   205
-    -   206
-    -   249
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '200'
+    - '201'
+    - '202'
+    - '203'
+    - '204'
+    - '205'
+    - '206'
+    - '249'
 
 ```

@@ -54,17 +54,17 @@ The response for this request will always be stored at `shipyard-artifacts/fivet
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Fivetran - Check Sync Status (Deprecated)
-    inputs:
-        FIVETRAN_API_KEY: null  ## REQUIRED
-        FIVETRAN_API_SECRET: null ## REQUIRED
-        FIVETRAN_CONNECTOR_ID: null
-    type: BLUEPRINT
+  blueprint: Fivetran - Check Sync Status (Deprecated)
+  inputs:
+    FIVETRAN_API_KEY: null  ## REQUIRED
+    FIVETRAN_API_SECRET: null ## REQUIRED
+    FIVETRAN_CONNECTOR_ID: null
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h5m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   '0'
+  retry_count: 1
+  retry_wait: 0h5m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '0'
 
 ```

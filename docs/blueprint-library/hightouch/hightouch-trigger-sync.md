@@ -36,20 +36,20 @@ This Blueprint will only kick off the sync and will almost always return a statu
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Hightouch - Trigger Sync
-    inputs:
-        HIGHTOUCH_API_KEY: null  ## REQUIRED
-        HIGHTOUCH_SYNC_ID: null ## REQUIRED
-        HIGHTOUCH_FULL_RESYNC: false ## REQUIRED
-        HIGHTOUCH_WAIT: 'TRUE'
-    type: BLUEPRINT
+  blueprint: Hightouch - Trigger Sync
+  inputs:
+    HIGHTOUCH_API_KEY: null  ## REQUIRED
+    HIGHTOUCH_SYNC_ID: null ## REQUIRED
+    HIGHTOUCH_FULL_RESYNC: false ## REQUIRED
+    HIGHTOUCH_WAIT: 'TRUE'
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   200
-    -   201
-    -   210
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '200'
+    - '201'
+    - '210'
 
 ```

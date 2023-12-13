@@ -44,21 +44,21 @@ This Blueprint is still subject to [Google's limitations](https://support.google
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Google Sheets - Upload File to Sheet from Shipyard
-    inputs:
-        SHEETS_SPREADSHEET_ID: null  ## REQUIRED
-        SHEETS_TAB_NAME: null
-        SHEETS_SHARED_DRIVE_NAME: null
-        SHEETS_SOURCE_FILE_NAME: null  ## REQUIRED
-        SHEETS_SOURCE_FOLDER_NAME: null
-        SHEETS_STARTING_CELL: null
-        GOOGLE_APPLICATION_CREDENTIALS: null  ## REQUIRED
-    type: BLUEPRINT
+  blueprint: Google Sheets - Upload File to Sheet from Shipyard
+  inputs:
+    SHEETS_SPREADSHEET_ID: null  ## REQUIRED
+    SHEETS_TAB_NAME: null
+    SHEETS_SHARED_DRIVE_NAME: null
+    SHEETS_SOURCE_FILE_NAME: null  ## REQUIRED
+    SHEETS_SOURCE_FOLDER_NAME: null
+    SHEETS_STARTING_CELL: null
+    GOOGLE_APPLICATION_CREDENTIALS: null  ## REQUIRED
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   '0'
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '0'
 
 ```
