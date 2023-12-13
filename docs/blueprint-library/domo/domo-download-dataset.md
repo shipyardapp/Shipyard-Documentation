@@ -32,27 +32,27 @@ Either a username/password or an access token should be provided. If both are pr
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Domo - Download Dataset to Shipyard
-    inputs:
-        DOMO_CLIENT_ID: null  ## REQUIRED
-        DOMO_SECRET_KEY: null ## REQUIRED
-        DOMO_DATASET_ID: null ## REQUIRED
-        DOMO_DESTINATION_FOLDER: null
-        DOMO_DESTINATION_FILE_NAME: null ## REQUIRED
-    type: BLUEPRINT
+  blueprint: Domo - Download Dataset to Shipyard
+  inputs:
+    DOMO_CLIENT_ID: null  ## REQUIRED
+    DOMO_SECRET_KEY: null ## REQUIRED
+    DOMO_DATASET_ID: null ## REQUIRED
+    DOMO_DESTINATION_FOLDER: null
+    DOMO_DESTINATION_FILE_NAME: null ## REQUIRED
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   200
-    -   201
-    -   203
-    -   204
-    -   205
-    -   210
-    -   211
-    -   214
-    -   215
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '200'
+    - '201'
+    - '203'
+    - '204'
+    - '205'
+    - '210'
+    - '211'
+    - '214'
+    - '215'
 
 ```

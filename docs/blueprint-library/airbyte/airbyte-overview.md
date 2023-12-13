@@ -22,7 +22,7 @@ For information on how to set up these Blueprints successfully, please read thro
 
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available: 
-- [Check Sync Status](airbyte-check-sync-status.md)
+- [Check Sync Status (Deprecated)](airbyte-check-sync-status.md)
 - [Trigger Sync](airbyte-trigger-sync.md)
 
 ## Open Source Code

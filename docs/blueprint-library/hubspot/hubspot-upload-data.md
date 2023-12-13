@@ -44,26 +44,26 @@ The blueprint will ask for the filename, so keep the file accessible and know it
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Hubspot - Upload Data
-    inputs:
-        HUBSPOT_ACCESS_TOKEN: null  ## REQUIRED
-        HUBSPOT_IMPORT_NAME: null ## REQUIRED
-        HUBSPOT_IMPORT_OPERATION: UPSERT ## REQUIRED
-        HUBSPOT_OBJECT_TYPE: contacts ## REQUIRED
-        HUBSPOT_SOURCE_FOLDER_NAME: . ## REQUIRED
-        HUBSPOT_SOURCE_FILE_NAME: null ## REQUIRED
-        HUBSPOT_SOURCE_MATCH_TYPE: exact_match ## REQUIRED
-        HUBSPOT_FILE_FORMAT: CSV ## REQUIRED
-    type: BLUEPRINT
+  blueprint: Hubspot - Upload Data
+  inputs:
+    HUBSPOT_ACCESS_TOKEN: null  ## REQUIRED
+    HUBSPOT_IMPORT_NAME: null ## REQUIRED
+    HUBSPOT_IMPORT_OPERATION: UPSERT ## REQUIRED
+    HUBSPOT_OBJECT_TYPE: contacts ## REQUIRED
+    HUBSPOT_SOURCE_FOLDER_NAME: null ## REQUIRED
+    HUBSPOT_SOURCE_FILE_NAME: null ## REQUIRED
+    HUBSPOT_SOURCE_MATCH_TYPE: exact_match ## REQUIRED
+    HUBSPOT_FILE_FORMAT: CSV ## REQUIRED
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   102
-    -   107
-    -   201
-    -   202
-    -   206
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '102'
+    - '107'
+    - '201'
+    - '202'
+    - '206'
 
 ```

@@ -35,23 +35,24 @@ Turn the results of your SQL SELECT statement into a CSV file. Extract your MySQ
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: MySQL - Store Query Results as CSV
+  blueprint: MySQL - Download Query Results to Shipyard
   inputs:
-    MYSQL_HOST: null ## REQUIRED
-    MYSQL_PORT: 3306 ## REQUIRED
+    MYSQL_HOST: null  ## REQUIRED
+    MYSQL_PORT: '3306' ## REQUIRED
     MYSQL_USERNAME: null ## REQUIRED
-    MYSQL_PASSWORD: null 
-    MYSQL_DATABASE: null ## REQUIRED
-    MYSQL_URL_PARAMETERS: null 
+    MYSQL_PASSWORD: null
+    MYSQL_DATABASE: null  ## REQUIRED
+    MYSQL_URL_PARAMETERS: null
     MYSQL_QUERY: null ## REQUIRED
-    MYSQL_DESTINATION_FOLDER_NAME: null 
-    MYSQL_DESTINATION_FILE_NAME: output.csv ## REQUIRED
+    MYSQL_DESTINATION_FOLDER_NAME: null
+    MYSQL_DESTINATION_FILE_NAME: output.csv  ## REQUIRED
     MYSQL_FILE_HEADER: true ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1
-  retry_wait: 0s
+  retry_wait: 0h0m0s
   runtime_cutoff: 1h0m0s
   exclude_exit_code_ranges:
-    - "0"
+    - '0'
+
 ```

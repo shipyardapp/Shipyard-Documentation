@@ -30,27 +30,27 @@ Allows for quick and seamless download of a Smartsheet Sheet to Shipyard. Result
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Smartsheet - Download Sheet to Shipyard
-    inputs:
-        SMARTSHEET_ACCESS_TOKEN: null  ## REQUIRED
-        SMARTSHEET_SHEET_ID: null ## REQUIRED
-        SMARTSHEET_DESTINATION_FOLDER_NAME: null
-        SMARTSHEET_DESTINATION_FILE_NAME: null ## REQUIRED
-        SMARTSHEET_FILE_TYPE: csv ## REQUIRED
-    type: BLUEPRINT
+  blueprint: Smartsheet - Download Sheet to Shipyard
+  inputs:
+    SMARTSHEET_ACCESS_TOKEN: null  ## REQUIRED
+    SMARTSHEET_SHEET_ID: null ## REQUIRED
+    SMARTSHEET_DESTINATION_FOLDER_NAME: null
+    SMARTSHEET_DESTINATION_FILE_NAME: null ## REQUIRED
+    SMARTSHEET_FILE_TYPE: csv ## REQUIRED
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   200
-    -   201
-    -   202
-    -   203
-    -   204
-    -   205
-    -   206
-    -   220
-    -   249
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '200'
+    - '201'
+    - '202'
+    - '203'
+    - '204'
+    - '205'
+    - '206'
+    - '220'
+    - '249'
 
 ```

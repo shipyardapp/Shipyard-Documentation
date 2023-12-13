@@ -37,19 +37,20 @@ Below is the YAML template for this Blueprint and can be used in the Fleet [YAML
 source:
   blueprint: HTTP - Requests
   inputs:
-    HTTP_METHOD: GET ## REQUIRED
+    HTTP_METHOD: GET  ## REQUIRED
     HTTP_URL: null ## REQUIRED
     HTTP_CONTENT_TYPE: application/json ## REQUIRED
-    HTTP_AUTHORIZATION_HEADER: null 
-    HTTP_MESSAGE: null 
-    HTTP_DESTINATION_FOLDER_NAME: null 
-    HTTP_DESTINATION_FILE_NAME: response.txt ## REQUIRED
+    HTTP_AUTHORIZATION_HEADER: null
+    HTTP_MESSAGE: null
+    HTTP_DESTINATION_FOLDER_NAME: null
+    HTTP_DESTINATION_FILE_NAME: response.txt  ## REQUIRED
     HTTP_PRINT_RESPONSE: false ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1
-  retry_wait: 0s
+  retry_wait: 0h0m0s
   runtime_cutoff: 1h0m0s
   exclude_exit_code_ranges:
-    - "0"
+    - '0'
+
 ```

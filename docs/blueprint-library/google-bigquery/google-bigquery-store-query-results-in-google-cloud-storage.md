@@ -34,18 +34,19 @@ Ex. If you provide a file name of `data.csv` and your data is 2.4GB in total, 3 
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: Google BigQuery - Store Query Results in Google Cloud Storage
+  blueprint: Google BigQuery - Download Query Results to Google Cloud Storage
   inputs:
-    BIGQUERY_QUERY: null ## REQUIRED
+    BIGQUERY_QUERY: null  ## REQUIRED
     BIGQUERY_BUCKET_NAME: null ## REQUIRED
     BIGQUERY_DESTINATION_FILE_NAME: null ## REQUIRED
-    BIGQUERY_DESTINATION_FOLDER_NAME: null 
+    BIGQUERY_DESTINATION_FOLDER_NAME: null
     GOOGLE_APPLICATION_CREDENTIALS: null ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1
-  retry_wait: 0s
+  retry_wait: 0h0m0s
   runtime_cutoff: 1h0m0s
   exclude_exit_code_ranges:
-    - "0"
+    - '0'
+
 ```

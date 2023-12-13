@@ -43,23 +43,24 @@ This Blueprint requires _write_ permissions in order to upload to the SFTP serve
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: SFTP - Upload Files
+  blueprint: SFTP - Upload Files from Shipyard
   inputs:
-    SFTP_HOST: null ## REQUIRED
-    SFTP_PORT: 22 ## REQUIRED
-    SFTP_USERNAME: null 
-    SFTP_PASSWORD: null 
-    SFTP_RSA_KEY_FILE: null 
-    SFTP_SOURCE_FOLDER_NAME: null 
+    SFTP_HOST: null  ## REQUIRED
+    SFTP_PORT: '22' ## REQUIRED
+    SFTP_USERNAME: null
+    SFTP_PASSWORD: null
+    SFTP_RSA_KEY_FILE: null
+    SFTP_SOURCE_FOLDER_NAME: null
     SFTP_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
     SFTP_SOURCE_FILE_NAME: null ## REQUIRED
-    SFTP_DESTINATION_FOLDER_NAME: null 
-    SFTP_DESTINATION_FILE_NAME: null 
+    SFTP_DESTINATION_FOLDER_NAME: null
+    SFTP_DESTINATION_FILE_NAME: null
   type: BLUEPRINT
 guardrails:
   retry_count: 1
-  retry_wait: 0s
+  retry_wait: 0h0m0s
   runtime_cutoff: 1h0m0s
   exclude_exit_code_ranges:
-    - "0"
+    - '0'
+
 ```

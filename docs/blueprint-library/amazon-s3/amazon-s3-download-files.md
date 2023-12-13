@@ -35,32 +35,23 @@ Quickly export one or more files from an Amazon S3 bucket. Once the files have d
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
+  blueprint: Amazon S3 - Download Files to Shipyard
+  inputs:
+    S3_BUCKET_NAME: null  ## REQUIRED
+    S3_SOURCE_FOLDER_NAME: null
+    S3_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
+    S3_SOURCE_FILE_NAME: null ## REQUIRED
+    S3_DESTINATION_FOLDER_NAME: null
+    S3_DESTINATION_FILE_NAME: null
+    AWS_ACCESS_KEY_ID: null  ## REQUIRED
+    AWS_SECRET_ACCESS_KEY: null ## REQUIRED
+    AWS_DEFAULT_REGION: us-east-2 ## REQUIRED
   type: BLUEPRINT
-  blueprint: 'Amazon S3 - Download Files'
-  inputs: 
-      ## S3_BUCKET_NAME: The target S3 bucket the target file is stored in.
-      ## S3_SOURCE_FOLDER_NAME: Name of the folder where the file is stored in the S3 Bucket. If left blank, looks in the root directory.
-      ## S3_SOURCE_FILE_NAME_MATCH_TYPE: Determines if the text in "S3 File Name" will look for one file with exact match, or multiple files using regex.
-      ## S3_SOURCE_FILE_NAME: Name of the target file in the S3 bucket. Can be regex if "Match Type" is set accordingly.
-      ## S3_DESTINATION_FOLDER_NAME: Folder where the file(s) should be downloaded on Shipyard. Leaving blank will place the file in the home directory.
-      ## S3_DESTINATION_FILE_NAME: What to name the file(s) being downloaded on Shipyard. If left blank, defaults to the original file name(s).
-      ## AWS_ACCESS_KEY_ID: The access key ID for programmatic IAM user used to download the file. See Authorization documentation for more information.
-      ## AWS_SECRET_ACCESS_KEY: The secret access key for programmatic IAM user used to download the file. See Authorization documentation for more information.
-      ## AWS_DEFAULT_REGION: The AWS region for the S3 bucket and IAM user.
-      'S3_BUCKET_NAME': ## REQUIRED ## ie. example-bucket
-      'S3_SOURCE_FOLDER_NAME': ## ie. folder/structure/
-      'S3_SOURCE_FILE_NAME_MATCH_TYPE': 'exact_match' ## REQUIRED
-      'S3_SOURCE_FILE_NAME': ## REQUIRED ## ie. input_file.csv
-      'S3_DESTINATION_FOLDER_NAME': ## ie. folder/structure/
-      'S3_DESTINATION_FILE_NAME': ## ie. output_file.csv
-      'AWS_ACCESS_KEY_ID': ## REQUIRED ## ie. AKIAIOSFODNN7EXAMPLE
-      'AWS_SECRET_ACCESS_KEY': ## REQUIRED ## ie.  wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
-      'AWS_DEFAULT_REGION': 'us-east-2' ## REQUIRED
 guardrails:
-## Set how your Vessel should handle errors and retries.
-  retry_count: 0
+  retry_count: 1
   retry_wait: 0h0m0s
   runtime_cutoff: 1h0m0s
-  exclude_exit_code_ranges: ## Exit code values(s) that will not be retried if encountered during a Voyage.
-      # - 0-255
+  exclude_exit_code_ranges:
+    - '0'
+
 ```

@@ -45,29 +45,29 @@ Only one file can be uploaded at a time.
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Smartsheet - Upload File from Shipyard to Smartsheet
-    inputs:
-        SMARTSHEET_ACCESS_TOKEN: null  ## REQUIRED
-        SMARTSHEET_SHEET_ID: null
-        SMARTSHEET_SHEET_NAME: null
-        SMARTSHEET_SOURCE_FOLDER_NAME: null
-        SMARTSHEET_SOURCE_FILE_NAME: null ## REQUIRED
-        SMARTSHEET_FILE_TYPE: csv ## REQUIRED
-        SMARTSHEET_INSERT_METHOD: replace ## REQUIRED
-    type: BLUEPRINT
+  blueprint: Smartsheet - Upload File from Shipyard to Smartsheet
+  inputs:
+    SMARTSHEET_ACCESS_TOKEN: null  ## REQUIRED
+    SMARTSHEET_SHEET_ID: null
+    SMARTSHEET_SHEET_NAME: null
+    SMARTSHEET_SOURCE_FOLDER_NAME: null
+    SMARTSHEET_SOURCE_FILE_NAME: null ## REQUIRED
+    SMARTSHEET_FILE_TYPE: csv ## REQUIRED
+    SMARTSHEET_INSERT_METHOD: replace ## REQUIRED
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   200
-    -   201
-    -   202
-    -   203
-    -   204
-    -   205
-    -   206
-    -   220
-    -   249
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '200'
+    - '201'
+    - '202'
+    - '203'
+    - '204'
+    - '205'
+    - '206'
+    - '220'
+    - '249'
 
 ```

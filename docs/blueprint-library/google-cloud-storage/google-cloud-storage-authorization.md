@@ -40,7 +40,7 @@ In order to get started with the Google Cloud Storage Blueprints, a service acco
 6. Click "**CREATE AND CONTINUE**"  
 7. Click "**Select a role**" dropdown  
 	a. Scroll down the options and hover over "**Cloud Storage**"  
-	b. Select "**Storage Admin**"  
+	b. Select "**Storage Admin**"  (not Storage _Object_ Admin)
 
 ![](https://cdn.sanity.io/images/2xyydva6/production/f5a7d66197276244e2426bbaca0ec9c766603191-416x383.png?w=450)
 

@@ -25,3 +25,22 @@ Use this blueprint to add a comment to an existing Trello card
 | Comment | TRELLO_COMMENT  | Alphanumeric |:white_check_mark: | - | - | Comment to add to the card |
 
 
+## YAML
+Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+```yaml
+source:
+  blueprint: Trello - Add Comment to Card
+  inputs:
+    TRELLO_ACCESS_TOKEN: null  ## REQUIRED
+    TRELLO_API_KEY: null ## REQUIRED
+    TRELLO_CARD_ID: null ## REQUIRED
+    TRELLO_COMMENT: null ## REQUIRED
+  type: BLUEPRINT
+guardrails:
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '200'
+
+```

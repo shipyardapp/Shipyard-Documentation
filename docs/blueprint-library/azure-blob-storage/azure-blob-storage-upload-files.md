@@ -40,20 +40,21 @@ Easily import one or more files directly into an an Azure Blob Storage container
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: Azure Blob Storage - Upload Files
+  blueprint: Azure Blob Storage - Upload Files from Shipyard
   inputs:
-    AZURE_SOURCE_FOLDER_NAME: null 
-    AZURE_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
+    AZURE_SOURCE_FOLDER_NAME: null
+    AZURE_SOURCE_FILE_NAME_MATCH_TYPE: exact_match  ## REQUIRED
     AZURE_SOURCE_FILE_NAME: null ## REQUIRED
     AZURE_CONTAINER_NAME: null ## REQUIRED
-    AZURE_DESTINATION_FOLDER_NAME: null 
-    AZURE_DESTINATION_FILE_NAME: null 
+    AZURE_DESTINATION_FOLDER_NAME: null
+    AZURE_DESTINATION_FILE_NAME: null
     AZURE_STORAGE_CONNECTION_STRING: null ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1
-  retry_wait: 0s
+  retry_wait: 0h0m0s
   runtime_cutoff: 1h0m0s
   exclude_exit_code_ranges:
-    - "0"
+    - '0'
+
 ```

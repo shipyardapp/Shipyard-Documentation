@@ -24,31 +24,32 @@ This Blueprint will only kick off the sync and will almost always return a statu
 
 ## Variables
 
-| Name                | Reference             | Type         | Required           | Default | Options | Description                                                                                                                                               |
-|:--------------------|:----------------------|:-------------|:-------------------|:--------|:--------|:----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| API Key             | HIGHTOUCH_API_KEY     | Password     | :white_check_mark: | -       | -       | The API Key associated with your Hightouch account.                                                                                                       |
-| Sync ID             | HIGHTOUCH_SYNC_ID     | Alphanumeric | :white_check_mark: | -       | -       | The ID of the Hightouch sync you want to refresh.                                                                                                         |
-| Run a Full Resync?  | HIGHTOUCH_FULL_RESYNC | Boolean      | :white_check_mark: | `False` | -       | If TRUE, will rescync all of the rows in the query, rather than only the new ones.                                                                        |
-| Wait For Completion | HIGHTOUCH_WAIT        | Boolean      | :heavy_minus_sign: | `FALSE` | -       | Enable if you want the vessel to wait until the sync job is successfully completed. Otherwise, the vessel will only initiate the sync job without waiting |
+| Name | Reference | Type | Required | Default | Options | Description |
+|:-----|:----------|:-----|:---------|:--------|:--------|:------------|
+| API Key | HIGHTOUCH_API_KEY  | Password |:white_check_mark: | - | - | The API Key associated with your Hightouch account. |
+| Sync ID | HIGHTOUCH_SYNC_ID  | Alphanumeric |:white_check_mark: | - | - | The ID of the Hightouch sync you want to refresh. |
+| Run a Full Resync? | HIGHTOUCH_FULL_RESYNC  | Boolean |:white_check_mark: | `False` | - | If TRUE, will rescync all of the rows in the query, rather than only the new ones. |
+| Wait For Completion | HIGHTOUCH_WAIT  | Boolean |:heavy_minus_sign: | `TRUE` | - | Enable if you want the vessel to wait until the sync job is successfully completed. Otherwise, the vessel will only initiate the sync job without waiting |
 
 
 ## YAML
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Hightouch - Trigger Sync
-    inputs:
-        HIGHTOUCH_API_KEY: null  ## REQUIRED
-        HIGHTOUCH_SYNC_ID: null ## REQUIRED
-        HIGHTOUCH_FULL_RESYNC: false ## REQUIRED
-        HIGHTOUCH_WAIT: 'FALSE'
-    type: BLUEPRINT
+  blueprint: Hightouch - Trigger Sync
+  inputs:
+    HIGHTOUCH_API_KEY: null  ## REQUIRED
+    HIGHTOUCH_SYNC_ID: null ## REQUIRED
+    HIGHTOUCH_FULL_RESYNC: false ## REQUIRED
+    HIGHTOUCH_WAIT: 'TRUE'
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   200
-    -   201
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '200'
+    - '201'
+    - '210'
 
 ```

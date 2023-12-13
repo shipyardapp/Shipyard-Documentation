@@ -34,31 +34,31 @@ This vessel will not return any files, so if you are looking to fetch data from 
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Databricks SQL Warehouse - Execute Query
-    inputs:
-        DATABRICKS_SQL_ACCESS_TOKEN: null  ## REQUIRED
-        DATABRICKS_SQL_SERVER_HOST: null ## REQUIRED
-        DATABRICKS_SQL_HTTP_PATH: null ## REQUIRED
-        DATABRICKS_SQL_CATALOG: null
-        DATABRICKS_SQL_SCHEMA: null
-        DATABRICKS_SQL_QUERY: null ## REQUIRED
-    type: BLUEPRINT
+  blueprint: Databricks SQL Warehouse - Execute Query
+  inputs:
+    DATABRICKS_SQL_ACCESS_TOKEN: null  ## REQUIRED
+    DATABRICKS_SQL_SERVER_HOST: null ## REQUIRED
+    DATABRICKS_SQL_HTTP_PATH: null ## REQUIRED
+    DATABRICKS_SQL_CATALOG: null
+    DATABRICKS_SQL_SCHEMA: null
+    DATABRICKS_SQL_QUERY: null ## REQUIRED
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   200
-    -   202
-    -   203
-    -   204
-    -   205
-    -   206
-    -   207
-    -   208
-    -   209
-    -   210
-    -   211
-    -   249
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '200'
+    - '202'
+    - '203'
+    - '204'
+    - '205'
+    - '206'
+    - '207'
+    - '208'
+    - '209'
+    - '210'
+    - '211'
+    - '249'
 
 ```

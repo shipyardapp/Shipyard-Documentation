@@ -30,33 +30,34 @@ This Blueprint will kick off the refresh and will almost always return a status 
 | Site ID | TABLEAU_SITE_ID  | Alphanumeric |:white_check_mark: | `default` | - | Typically found in the URL as /site/YOURSITEID/ |
 | Project Name | TABLEAU_PROJECT_NAME  | Alphanumeric |:white_check_mark: | - | - | The project name that the Datasource belongs to. |
 | Workbook Name | TABLEAU_WORKBOOK_NAME  | Alphanumeric |:white_check_mark: | - | - | Name of the published workbook you want to refresh. |
-| Wait For Completion | TABLEAU_WAIT  | Boolean |:heavy_minus_sign: | `FALSE` | - | Enable if you wish for the vessel to wait for the resource to finish loading before exiting  |
+| Wait For Completion | TABLEAU_WAIT  | Boolean |:heavy_minus_sign: | `TRUE` | - | Enable if you wish for the vessel to wait for the resource to finish loading before exiting  |
 
 
 ## YAML
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Tableau - Trigger Workbook Refresh
-    inputs:
-        TABLEAU_SIGN_IN_METHOD: username_password  ## REQUIRED
-        TABLEAU_USERNAME: null ## REQUIRED
-        TABLEAU_PASSWORD: null ## REQUIRED
-        TABLEAU_SERVER_URL: null ## REQUIRED
-        TABLEAU_SITE_ID: default ## REQUIRED
-        TABLEAU_PROJECT_NAME: null ## REQUIRED
-        TABLEAU_WORKBOOK_NAME: null ## REQUIRED
-    type: BLUEPRINT
+  blueprint: Tableau - Trigger Workbook Refresh
+  inputs:
+    TABLEAU_SIGN_IN_METHOD: username_password  ## REQUIRED
+    TABLEAU_USERNAME: null ## REQUIRED
+    TABLEAU_PASSWORD: null ## REQUIRED
+    TABLEAU_SERVER_URL: null ## REQUIRED
+    TABLEAU_SITE_ID: default ## REQUIRED
+    TABLEAU_PROJECT_NAME: null ## REQUIRED
+    TABLEAU_WORKBOOK_NAME: null ## REQUIRED
+    TABLEAU_WAIT: 'TRUE'
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   200
-    -   201
-    -   202
-    -   203
-    -   204
-    -   205
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '200'
+    - '201'
+    - '202'
+    - '203'
+    - '204'
+    - '205'
 
 ```

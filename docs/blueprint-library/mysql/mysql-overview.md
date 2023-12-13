@@ -22,7 +22,7 @@ For information on how to set up these Blueprints successfully, please read thro
 
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available: 
-- [Execute Query](mysql-execute-query.md)
+- [Execute Queries](mysql-execute-query.md)
 - [Download Query Results to Shipyard](mysql-store-query-results-as-csv.md)
 - [Upload File to Table from Shipyard](mysql-upload-csv-to-table.md)
 

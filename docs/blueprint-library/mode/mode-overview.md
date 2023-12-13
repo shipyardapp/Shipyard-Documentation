@@ -22,9 +22,9 @@ For information on how to set up these Blueprints successfully, please read thro
 
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available: 
-- [Check Run Status](mode-check-run-status.md)
+- [Check Run Status (Deprecated)](mode-check-run-status.md)
 - [Download Report as File to Shipyard](mode-download-report-as-file.md)
 - [Trigger Report Refresh](mode-trigger-report-refresh.md)
 
 ## Open Source Code
-The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/mode-blueprints), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.
+The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/mode-blueprints/blob/main/mode_blueprints/run_report.py), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.

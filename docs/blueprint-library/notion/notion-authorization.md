@@ -11,7 +11,8 @@ keywords:
 - template
 - authorization
 ---
-## Notion Authorization 
+
+# Notion Authorization
 In order to connect Shipyard to Notion, you will need:
 
 1. A Notion Access Token

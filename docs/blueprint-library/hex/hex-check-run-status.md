@@ -1,18 +1,20 @@
 ---
 id: hex-check-run-status
-title: Hex Template - Check Run Status
+title: Hex Template - Check Run Status (Deprecated)
 hide_title: true
-sidebar_label: Check Run Status
-description: Information about Shipyard's low-code Hex Check Run Status blueprint. Checks the status of either the latest run or a provided run of a project 
+sidebar_label: Check Run Status (Deprecated)
+description: Information about Shipyard's low-code Hex Check Run Status (Deprecated) blueprint. Checks the status of either the latest run or a provided run of a project 
 keywords:
     - hex
     - blueprint
     - template
 ---
 
-# Hex - Check Run Status
+# Hex - Check Run Status (Deprecated)
 
 ## Overview
+This Blueprint has been deprecated. Please use the vendor's "Trigger" Blueprint and set the "Wait for Completion" option to "True". Using this new option is free, more stable, and will complete faster. Read more about this change [here](https://www.shipyardapp.com/blog/orchestrate-data-tools-free).
+
 Check for the status of a project run on Hex. By default, Hex will return a response that contains the status of the project run (COMPLETED on success)
 
 This Blueprint allows you to verify the status of a specified project run. If this Vessel has an upstream Vessel that runs a Hex project and the Run ID is not provided as an argument, then the Vessel will use the Run ID generated upstream and located in `shipyard-artifacts/hex-blueprints/variables/RUNID.pickle`.
@@ -47,25 +49,25 @@ The response for this request will be stored at `shipyard-artifacts/hex-blueprin
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Hex - Check Run Status
-    inputs:
-        HEX_PROJECT_ID: null  ## REQUIRED
-        HEX_API_TOKEN: null
-        HEX_RUN_ID: null
-    type: BLUEPRINT
+  blueprint: Hex - Check Run Status (Deprecated)
+  inputs:
+    HEX_PROJECT_ID: null  ## REQUIRED
+    HEX_API_TOKEN: null
+    HEX_RUN_ID: null
+  type: BLUEPRINT
 guardrails:
-    retry_count: 4
-    retry_wait: 0h5m0s
-    runtime_cutoff: 0h5m0s
-    exclude_exit_code_ranges:
-    -   201
-    -   202
-    -   203
-    -   204
-    -   205
-    -   206
-    -   207
-    -   222
-    -   224
+  retry_count: 4
+  retry_wait: 0h5m0s
+  runtime_cutoff: 0h5m0s
+  exclude_exit_code_ranges:
+    - '201'
+    - '202'
+    - '203'
+    - '204'
+    - '205'
+    - '206'
+    - '207'
+    - '222'
+    - '224'
 
 ```

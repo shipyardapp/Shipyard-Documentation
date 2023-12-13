@@ -23,7 +23,7 @@ For information on how to set up these Blueprints successfully, please read thro
 ## Available Blueprints
 Shipyard currently has the following Blueprints readily available: 
 - [Export Liveboard Report](thoughtspot-export-liveboard-report.md)
-- [Download Search Results  CSV to Shipyard](thoughtspot-download-search-results-to-csv.md)
+- [Download Search Results to Shipyard](thoughtspot-download-search-results-to-csv.md)
 - [Export Answer Report](thoughtspot-export-answer-report.md)
 
 ## Open Source Code

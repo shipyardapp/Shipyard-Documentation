@@ -1,16 +1,16 @@
 ---
 id: mysql-execute-query
-title: MySQL Template - Execute Query
+title: MySQL Template - Execute Queries
 hide_title: true
-sidebar_label: Execute Query
-description: Information about Shipyard's low-code MySQL Execute Query blueprint. Execute any SQL query against a MySQL database. 
+sidebar_label: Execute Queries
+description: Information about Shipyard's low-code MySQL Execute Queries blueprint. Execute any SQL query against a MySQL database. 
 keywords:
     - mysql
     - blueprint
     - template
 ---
 
-# MySQL - Execute Query
+# MySQL - Execute Queries
 
 ## Overview
 Execute any SQL query against a MySQL database, without returning any of the resulting data. This Blueprint should primarily be used for queries that perform functionality other than SELECT, like multi-step SQL jobs, or DML statements.
@@ -32,20 +32,21 @@ Execute any SQL query against a MySQL database, without returning any of the res
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: MySQL - Execute Query
+  blueprint: MySQL - Execute Queries
   inputs:
-    MYSQL_HOST: null ## REQUIRED
-    MYSQL_PORT: 3306 ## REQUIRED
+    MYSQL_HOST: null  ## REQUIRED
+    MYSQL_PORT: '3306' ## REQUIRED
     MYSQL_USERNAME: null ## REQUIRED
-    MYSQL_PASSWORD: null 
-    MYSQL_DATABASE: null ## REQUIRED
-    MYSQL_URL_PARAMETERS: null 
+    MYSQL_PASSWORD: null
+    MYSQL_DATABASE: null  ## REQUIRED
+    MYSQL_URL_PARAMETERS: null
     MYSQL_QUERY: null ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1
-  retry_wait: 0s
+  retry_wait: 0h0m0s
   runtime_cutoff: 1h0m0s
   exclude_exit_code_ranges:
-    - "0"
+    - '0'
+
 ```

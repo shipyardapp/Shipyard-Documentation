@@ -53,15 +53,15 @@ In all instances, if the table name does not already exist, a new table will be 
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: MySQL - Upload CSV to Table
+  blueprint: MySQL - Upload File to Table from Shipyard
   inputs:
-    MYSQL_HOST: null ## REQUIRED
-    MYSQL_PORT: 3306 ## REQUIRED
+    MYSQL_HOST: null  ## REQUIRED
+    MYSQL_PORT: '3306' ## REQUIRED
     MYSQL_USERNAME: null ## REQUIRED
-    MYSQL_PASSWORD: null 
-    MYSQL_DATABASE: null ## REQUIRED
-    MYSQL_URL_PARAMETERS: null 
-    MYSQL_SOURCE_FOLDER_NAME: null 
+    MYSQL_PASSWORD: null
+    MYSQL_DATABASE: null  ## REQUIRED
+    MYSQL_URL_PARAMETERS: null
+    MYSQL_SOURCE_FOLDER_NAME: null
     MYSQL_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
     MYSQL_SOURCE_FILE_NAME: null ## REQUIRED
     MYSQL_TABLE_NAME: null ## REQUIRED
@@ -69,8 +69,9 @@ source:
   type: BLUEPRINT
 guardrails:
   retry_count: 1
-  retry_wait: 0s
+  retry_wait: 0h0m0s
   runtime_cutoff: 1h0m0s
   exclude_exit_code_ranges:
-    - "0"
+    - '0'
+
 ```

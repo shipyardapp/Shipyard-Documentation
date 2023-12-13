@@ -38,23 +38,33 @@ Turn the results of your SQL SELECT statement into a CSV file. Extract your Snow
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: Snowflake - Store Query Results as CSV
+  blueprint: Snowflake - Download Query Results to Shipyard
   inputs:
-    SNOWFLAKE_USERNAME: null ## REQUIRED
-    SNOWFLAKE_PASSWORD: null ## REQUIRED
-    SNOWFLAKE_ACCOUNT: null ## REQUIRED
-    SNOWFLAKE_WAREHOUSE: null 
-    SNOWFLAKE_DATABASE: null ## REQUIRED
-    SNOWFLAKE_SCHEMA: null 
-    SNOWFLAKE_QUERY: null ## REQUIRED
+    SNOWFLAKE_USERNAME: null  ## REQUIRED
+    SNOWFLAKE_PASSWORD: null
+    SNOWFLAKE_ACCOUNT: null  ## REQUIRED
+    SNOWFLAKE_WAREHOUSE: null
+    SNOWFLAKE_DATABASE: null  ## REQUIRED
+    SNOWFLAKE_SCHEMA: null
+    SNOWFLAKE_QUERY: null  ## REQUIRED
     SNOWFLAKE_DESTINATION_FILE_NAME: null ## REQUIRED
-    SNOWFLAKE_DESTINATION_FOLDER_NAME: null 
-    SNOWFLAKE_FILE_HEADER: true ## REQUIRED
+    SNOWFLAKE_DESTINATION_FOLDER_NAME: null
+    SNOWFLAKE_FILE_HEADER: true  ## REQUIRED
+    SNOWFLAKE_USER_ROLE: null
+    SNOWFLAKE_PRIVATE_KEY: null
+    SNOWFLAKE_PRIVATE_KEY_PASSPHRASE: null
   type: BLUEPRINT
 guardrails:
   retry_count: 1
-  retry_wait: 0s
+  retry_wait: 0h0m0s
   runtime_cutoff: 1h0m0s
   exclude_exit_code_ranges:
-    - "200-206"
+    - '200'
+    - '201'
+    - '202'
+    - '203'
+    - '204'
+    - '205'
+    - '206'
+
 ```

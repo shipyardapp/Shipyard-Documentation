@@ -1,18 +1,20 @@
 ---
 id: fivetran-check-sync-status
-title: Fivetran Template - Check Sync Status
+title: Fivetran Template - Check Sync Status (Deprecated)
 hide_title: true
-sidebar_label: Check Sync Status
-description: Information about Shipyard's low-code Fivetran Check Sync Status blueprint. Check the status of a specific Fivetran connector run and return with the final status. 
+sidebar_label: Check Sync Status (Deprecated)
+description: Information about Shipyard's low-code Fivetran Check Sync Status (Deprecated) blueprint. Check the status of a specific Fivetran connector run and return with the final status. 
 keywords:
     - fivetran
     - blueprint
     - template
 ---
 
-# Fivetran - Check Sync Status
+# Fivetran - Check Sync Status (Deprecated)
 
 ## Overview
+This Blueprint has been deprecated. Please use the vendor's "Trigger" Blueprint and set the "Wait for Completion" option to "True". Using this new option is free, more stable, and will complete faster. Read more about this change [here](https://www.shipyardapp.com/blog/orchestrate-data-tools-free).
+
 Check for the status of a connector on Fivetran. The Vessel's exit code and status will match the status of the latest sync.
 
 Fivetran does not have a synchronous API that allows you to determine if the exact sync you kicked off has finished. Instead, status has to be determined by comparing data to the returned `last_success` and `last_failure` timestamps for a connector. 
@@ -41,28 +43,28 @@ The response for this request will always be stored at `shipyard-artifacts/fivet
 
 ## Variables
 
-| Name         | Reference             | Type         | Required           | Default | Options | Description                                                                                                     |
-|:-------------|:----------------------|:-------------|:-------------------|:--------|:--------|:----------------------------------------------------------------------------------------------------------------|
-| API Key      | FIVETRAN_API_KEY      | Password     | :white_check_mark: | -       | -       | Your account's unique API Key for Fivetran.                                                                     |
-| API Secret   | FIVETRAN_API_SECRET   | Password     | :white_check_mark: | -       | -       | Your account's unique API Secret for Fivetran.                                                                  |
-| Connector ID | FIVETRAN_CONNECTOR_ID | Alphanumeric | :heavy_minus_sign: | -       | -       | The unique ID associated with a connector. This should be left blank if connected to an Execute Sync Blueprint. |
+| Name | Reference | Type | Required | Default | Options | Description |
+|:-----|:----------|:-----|:---------|:--------|:--------|:------------|
+| API Key | FIVETRAN_API_KEY  | Password |:white_check_mark: | - | - | Your account's unique API Key for Fivetran. |
+| API Secret | FIVETRAN_API_SECRET  | Password |:white_check_mark: | - | - | Your account's unique API Secret for Fivetran. |
+| Connector ID | FIVETRAN_CONNECTOR_ID  | Alphanumeric |:heavy_minus_sign: | - | - | The unique ID associated with a connector. This should be left blank if connected to an Execute Sync Blueprint. |
 
 
 ## YAML
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Fivetran - Check Sync Status
-    inputs:
-        FIVETRAN_API_KEY: null  ## REQUIRED
-        FIVETRAN_API_SECRET: null ## REQUIRED
-        FIVETRAN_CONNECTOR_ID: null
-    type: BLUEPRINT
+  blueprint: Fivetran - Check Sync Status (Deprecated)
+  inputs:
+    FIVETRAN_API_KEY: null  ## REQUIRED
+    FIVETRAN_API_SECRET: null ## REQUIRED
+    FIVETRAN_CONNECTOR_ID: null
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h5m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   '0'
+  retry_count: 1
+  retry_wait: 0h5m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '0'
 
 ```

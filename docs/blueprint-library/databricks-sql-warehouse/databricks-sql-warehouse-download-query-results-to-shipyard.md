@@ -40,34 +40,34 @@ This will not download the file to your local computer, but to the home director
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Databricks SQL Warehouse - Download Query Results to Shipyard
-    inputs:
-        DATABRICKS_SQL_ACCESS_TOKEN: null  ## REQUIRED
-        DATABRICKS_SQL_SERVER_HOST: null ## REQUIRED
-        DATABRICKS_SQL_HTTP_PATH: null ## REQUIRED
-        DATABRICKS_SQL_CATALOG: null
-        DATABRICKS_SQL_SCHEMA: null
-        DATABRICKS_SQL_QUERY: null ## REQUIRED
-        DATABRICKS_SQL_FOLDER_NAME: null
-        DATABRICKS_SQL_FILE_NAME: null ## REQUIRED
-        DATABRICKS_SQL_FILE_TYPE: csv ## REQUIRED
-    type: BLUEPRINT
+  blueprint: Databricks SQL Warehouse - Download Query Results to Shipyard
+  inputs:
+    DATABRICKS_SQL_ACCESS_TOKEN: null  ## REQUIRED
+    DATABRICKS_SQL_SERVER_HOST: null ## REQUIRED
+    DATABRICKS_SQL_HTTP_PATH: null ## REQUIRED
+    DATABRICKS_SQL_CATALOG: null
+    DATABRICKS_SQL_SCHEMA: null
+    DATABRICKS_SQL_QUERY: null ## REQUIRED
+    DATABRICKS_SQL_FOLDER_NAME: null
+    DATABRICKS_SQL_FILE_NAME: null ## REQUIRED
+    DATABRICKS_SQL_FILE_TYPE: csv ## REQUIRED
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   200
-    -   202
-    -   203
-    -   204
-    -   205
-    -   206
-    -   207
-    -   208
-    -   209
-    -   210
-    -   211
-    -   249
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '200'
+    - '202'
+    - '203'
+    - '204'
+    - '205'
+    - '206'
+    - '207'
+    - '208'
+    - '209'
+    - '210'
+    - '211'
+    - '249'
 
 ```

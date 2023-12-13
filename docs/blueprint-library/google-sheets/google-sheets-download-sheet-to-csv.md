@@ -1,16 +1,16 @@
 ---
 id: google-sheets-download-sheet-to-csv
-title: Google Sheets Template - Download Sheet  CSV to Shipyard
+title: Google Sheets Template - Download Sheet to Shipyard
 hide_title: true
-sidebar_label: Download Sheet  CSV to Shipyard
-description: Information about Shipyard's low-code Google Sheets Download Sheet  CSV to Shipyard blueprint. Quickly export your data from a Google Sheet. 
+sidebar_label: Download Sheet to Shipyard
+description: Information about Shipyard's low-code Google Sheets Download Sheet to Shipyard blueprint. Quickly export your data from a Google Sheet. 
 keywords:
     - google sheets
     - blueprint
     - template
 ---
 
-# Google Sheets - Download Sheet  CSV to Shipyard
+# Google Sheets - Download Sheet to Shipyard
 
 ## Overview
 Quickly export data from a single tab on a Google Sheet to a CSV. 
@@ -36,20 +36,21 @@ Content of the downloaded file can be refined by providing a cell range. Otherwi
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: Google Sheets - Download Sheet to CSV
+  blueprint: Google Sheets - Download Sheet to Shipyard
   inputs:
-    SHEETS_SPREADSHEET_ID: null ## REQUIRED
-    SHEETS_TAB_NAME: null 
-    SHEETS_SHARED_DRIVE_NAME: null 
-    SHEETS_DESTINATION_FILE_NAME: null ## REQUIRED
-    SHEETS_DESTINATION_FOLDER_NAME: null 
-    SHEETS_CELL_RANGE: null 
-    GOOGLE_APPLICATION_CREDENTIALS: null ## REQUIRED
+    SHEETS_SPREADSHEET_ID: null  ## REQUIRED
+    SHEETS_TAB_NAME: null
+    SHEETS_SHARED_DRIVE_NAME: null
+    SHEETS_DESTINATION_FILE_NAME: null  ## REQUIRED
+    SHEETS_DESTINATION_FOLDER_NAME: null
+    SHEETS_CELL_RANGE: null
+    GOOGLE_APPLICATION_CREDENTIALS: null  ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1
-  retry_wait: 0s
+  retry_wait: 0h0m0s
   runtime_cutoff: 1h0m0s
   exclude_exit_code_ranges:
-    - "0"
+    - '0'
+
 ```

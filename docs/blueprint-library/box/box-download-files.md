@@ -33,19 +33,20 @@ Quickly export one or more files from your company's Box account. Once the files
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: Box - Download Files
+  blueprint: Box - Download Files to Shipyard
   inputs:
-    BOX_SOURCE_FOLDER_NAME: null 
-    BOX_SOURCE_FILE_NAME: null ## REQUIRED
+    BOX_SOURCE_FOLDER_NAME: null
+    BOX_SOURCE_FILE_NAME: null  ## REQUIRED
     BOX_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
-    BOX_DESTINATION_FOLDDER_NAME: null 
-    BOX_DESTINATION_FILE_NAME: null 
-    BOX_APPLICATION_CREDENTIALS:  ## REQUIRED
+    BOX_DESTINATION_FOLDER_NAME: null
+    BOX_DESTINATION_FILE_NAME: null
+    BOX_APPLICATION_CREDENTIALS: null  ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1
-  retry_wait: 0s
+  retry_wait: 0h0m0s
   runtime_cutoff: 1h0m0s
   exclude_exit_code_ranges:
-    - "0"
+    - '0'
+
 ```

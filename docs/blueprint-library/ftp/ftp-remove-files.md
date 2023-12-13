@@ -1,16 +1,16 @@
 ---
 id: ftp-remove-files
-title: FTP Template - Remove Files
+title: FTP Template - Delete Files
 hide_title: true
-sidebar_label: Remove Files
-description: Information about Shipyard's low-code FTP Remove Files blueprint. Quickly remove one or more files from an FTP Server.  
+sidebar_label: Delete Files
+description: Information about Shipyard's low-code FTP Delete Files blueprint. Quickly remove one or more files from an FTP Server.  
 keywords:
     - ftp
     - blueprint
     - template
 ---
 
-# FTP - Remove Files
+# FTP - Delete Files
 
 ## Overview
 Quickly remove one or more files from an FTP Server. The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
@@ -34,23 +34,24 @@ This Blueprint requires _read_ permissions in order to download from the FTP ser
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: FTP - Remove Files
+  blueprint: FTP - Delete Files
   inputs:
-    FTP_HOST: null ## REQUIRED
-    FTP_PORT: 21 ## REQUIRED
-    FTP_USERNAME: null 
-    FTP_PASSWORD: null 
-    FTP_SOURCE_FOLDER_NAME: null 
-    FTP_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
+    FTP_HOST: null  ## REQUIRED
+    FTP_PORT: '21' ## REQUIRED
+    FTP_USERNAME: null
+    FTP_PASSWORD: null
+    FTP_SOURCE_FOLDER_NAME: null
+    FTP_FILE_NAME_MATCH_TYPE: exact_match  ## REQUIRED
     FTP_SOURCE_FILE_NAME: null ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1
-  retry_wait: 0s
+  retry_wait: 0h0m0s
   runtime_cutoff: 1h0m0s
   exclude_exit_code_ranges:
-    - "3"
-    - "200"
-    - "201"
-    - "202"
+    - '3'
+    - '200'
+    - '201'
+    - '202'
+
 ```

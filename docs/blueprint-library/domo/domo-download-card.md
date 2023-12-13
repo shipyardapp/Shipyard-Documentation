@@ -35,29 +35,29 @@ Authentication can be provided with either an access token or a combination of u
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-    blueprint: Domo - Download Card to Shipyard
-    inputs:
-        DOMO_ACCESS_TOKEN: null
-        DOMO_EMAIL: null
-        DOMO_PASSWORD: null
-        DOMO_INSTANCE: null  ## REQUIRED
-        DOMO_CARD_ID: null ## REQUIRED
-        DOMO_FILE_TYPE: csv ## REQUIRED
-        DOMO_DESTINATION_FILE_NAME: null ## REQUIRED
-        DOMO_DESTINATION_FOLDER_NAME: null
-    type: BLUEPRINT
+  blueprint: Domo - Download Card to Shipyard
+  inputs:
+    DOMO_ACCESS_TOKEN: null
+    DOMO_EMAIL: null
+    DOMO_PASSWORD: null
+    DOMO_INSTANCE: null  ## REQUIRED
+    DOMO_CARD_ID: null ## REQUIRED
+    DOMO_FILE_TYPE: csv ## REQUIRED
+    DOMO_DESTINATION_FILE_NAME: null ## REQUIRED
+    DOMO_DESTINATION_FOLDER_NAME: null
+  type: BLUEPRINT
 guardrails:
-    retry_count: 1
-    retry_wait: 0h0m0s
-    runtime_cutoff: 1h0m0s
-    exclude_exit_code_ranges:
-    -   200
-    -   201
-    -   203
-    -   204
-    -   205
-    -   210
-    -   211
-    -   207
+  retry_count: 1
+  retry_wait: 0h0m0s
+  runtime_cutoff: 1h0m0s
+  exclude_exit_code_ranges:
+    - '200'
+    - '201'
+    - '203'
+    - '204'
+    - '205'
+    - '210'
+    - '211'
+    - '207'
 
 ```

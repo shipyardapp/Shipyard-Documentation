@@ -1,16 +1,16 @@
 ---
 id: azure-blob-storage-remove-files
-title: Azure Blob Storage Template - Remove Files
+title: Azure Blob Storage Template - Delete Files
 hide_title: true
-sidebar_label: Remove Files
-description: Information about Shipyard's low-code Azure Blob Storage Remove Files blueprint. Quickly delete one or more files from an Azure Blob Storage container 
+sidebar_label: Delete Files
+description: Information about Shipyard's low-code Azure Blob Storage Delete Files blueprint. Quickly delete one or more files from an Azure Blob Storage container 
 keywords:
     - azure blob storage
     - blueprint
     - template
 ---
 
-# Azure Blob Storage - Remove Files
+# Azure Blob Storage - Delete Files
 
 ## Overview
 Quickly remove one or more files in an Azure Blob container. The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
@@ -30,21 +30,22 @@ Quickly remove one or more files in an Azure Blob container. The [match type](ht
 Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 ```yaml
 source:
-  blueprint: Azure Blob Storage - Remove Files
+  blueprint: Azure Blob Storage - Delete Files
   inputs:
-    AZURE_CONTAINER_NAME: null ## REQUIRED
-    AZURE_SOURCE_FOLDER_NAME: null 
+    AZURE_CONTAINER_NAME: null  ## REQUIRED
+    AZURE_SOURCE_FOLDER_NAME: null
     AZURE_SOURCE_FILE_NAME_MATCH_TYPE: exact_match ## REQUIRED
     AZURE_SOURCE_FILE_NAME: null ## REQUIRED
     AZURE_STORAGE_CONNECTION_STRING: null ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1
-  retry_wait: 0s
+  retry_wait: 0h0m0s
   runtime_cutoff: 1h0m0s
   exclude_exit_code_ranges:
-    - "3"
-    - "200"
-    - "201"
-    - "202"
+    - '3'
+    - '200'
+    - '201'
+    - '202'
+
 ```
