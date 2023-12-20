@@ -179,18 +179,13 @@ Now anyone in your organization can use the Blueprint to test data against your 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2021_03_17_11_35_16.png)
 
 1. Click **Use this Blueprint** on the success screen.
-
-At this point, you should be on a screen that looks like this:
-![](../.gitbook/assets/../../../.gitbook/assets/great_expectations_demo_blueprint_inputs.png)
-
-
 2. Enter `https://s3.amazonaws.com/amazon-reviews-pds/tsv/sample_us.tsv` into the File URL field.
-2. Leave the Bucket Name as is.
-3. Leave the Expectation Suite as is.
-4. Click the gear icon on the sidebar of the Fleet Builder to open **Fleet Settings**.
-5. In this section, name your Fleet `GE - Sample Data - Amazon Reviews`
-6. Click **Save & Finish Fleet**
-7. Immediately Click **Run your Fleet**
+3. Leave the Bucket Name as is.
+4. Leave the Expectation Suite as is.
+5. Click the gear icon on the sidebar of the Fleet Builder to open **Fleet Settings**.
+6. In this section, name your Fleet `GE - Sample Data - Amazon Reviews`
+7. Click **Save & Finish Fleet**
+8. Immediately Click **Run your Fleet**
 
 ### Step 7 - Review the Results
 
