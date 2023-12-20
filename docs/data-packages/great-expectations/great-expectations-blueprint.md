@@ -179,6 +179,11 @@ Now anyone in your organization can use the Blueprint to test data against your 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2021_03_17_11_35_16.png)
 
 1. Click **Use this Blueprint** on the success screen.
+
+You should now be in the Fleet Builder and your screen should look like this:
+![](../.gitbook/assets/../../../.gitbook/assets/great-expectations-01.png)
+
+
 2. Enter `https://s3.amazonaws.com/amazon-reviews-pds/tsv/sample_us.tsv` into the File URL field.
 3. Leave the Bucket Name as is.
 4. Leave the Expectation Suite as is.
@@ -191,7 +196,7 @@ Now anyone in your organization can use the Blueprint to test data against your 
 
 You should be immediately redirected to the actively running Fleet Log. Within the Log you'll be able to see all of the expectations and their output for the sample data.
 
-![](../.gitbook/assets/../../../.gitbook/assets/great_expectations_success_log.png)
+![](../.gitbook/assets/../../../.gitbook/assets/great_expectations_02.png)
 
 You should also be able to see the validation file in your S3 bucket of choice.
 
