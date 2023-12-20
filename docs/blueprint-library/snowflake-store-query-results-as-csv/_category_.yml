@@ -1,0 +1,7 @@
+
+label: Snowflake - Download Query Results to Shipyard
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: snowflake-store-query-results-as-csv-overview
