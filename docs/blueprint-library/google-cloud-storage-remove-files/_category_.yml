@@ -1,0 +1,7 @@
+
+label: Google Cloud Storage - Delete Files
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: google-cloud-storage-remove-files-overview
