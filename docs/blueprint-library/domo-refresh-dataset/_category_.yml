@@ -1,0 +1,7 @@
+
+label: Domo - Trigger Dataset Refresh
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: domo-refresh-dataset-overview
