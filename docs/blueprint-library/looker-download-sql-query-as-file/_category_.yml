@@ -1,0 +1,7 @@
+
+label: Looker - Download SQL Query as File to Shipyard
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: looker-download-sql-query-as-file-overview
