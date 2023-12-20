@@ -1,0 +1,7 @@
+
+label: PostgreSQL - Download Query Results to Shipyard
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: postgresql-store-query-results-as-csv-overview
