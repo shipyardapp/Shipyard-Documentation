@@ -1,0 +1,7 @@
+
+label: HTTP - Download File from URL to Shipyard
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: http-download-file-from-url-overview
