@@ -1,0 +1,7 @@
+
+label: Amazon Athena - Execute Query
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: amazon-athena-execute-query-overview
