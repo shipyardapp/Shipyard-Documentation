@@ -1,0 +1,7 @@
+
+label: Fivetran - Check Sync Status (Deprecated)
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: fivetran-check-sync-status-overview
