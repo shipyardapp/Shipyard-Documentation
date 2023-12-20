@@ -1,0 +1,7 @@
+
+label: MySQL - Execute Queries
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: mysql-execute-query-overview
