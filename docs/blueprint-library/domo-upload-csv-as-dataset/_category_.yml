@@ -1,0 +1,7 @@
+
+label: Domo - Upload File as Dataset from Shipyard
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: domo-upload-csv-as-dataset-overview
