@@ -1,0 +1,7 @@
+
+label: Fivetran - Trigger Sync and Check Status (Deprecated)
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: fivetran-trigger-sync-and-check-status-overview
