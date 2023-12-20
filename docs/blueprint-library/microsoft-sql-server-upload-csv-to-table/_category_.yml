@@ -1,0 +1,7 @@
+
+label: Microsoft SQL Server - Upload File to Table from Shipyard
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: microsoft-sql-server-upload-csv-to-table-overview
