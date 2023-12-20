@@ -1,0 +1,7 @@
+
+label: RudderStack - Trigger Sync
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: rudderstack-trigger-sync-overview
