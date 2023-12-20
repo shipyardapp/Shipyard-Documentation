@@ -1,0 +1,7 @@
+
+label: Google BigQuery - Upload File to Table from Shipyard
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: google-bigquery-upload-csv-to-table-overview
