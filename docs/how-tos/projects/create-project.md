@@ -13,7 +13,7 @@ keywords:
 
 ## Overview
 
-If you find yourself needing to create additional Vessels or Fleets that have a common theme and purpose, you'll likely want to create a new [Project](../../reference/projects.md). This how to guide will walk you through the steps to create a new Project.
+If you find yourself needing to create additional Fleets that have a common theme and purpose, you'll likely want to create a new [Project](../../reference/projects.md). This how to guide will walk you through the steps to create a new Project.
 
 ## Steps
 

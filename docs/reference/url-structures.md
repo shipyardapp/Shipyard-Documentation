@@ -21,12 +21,10 @@ Below is a list of the most common URL structures that may be needed.
 | **View All Projects**                | https://app.shipyardapp.com/{org_name}/projects                                                   |
 | **View all Blueprints**              | https://app.shipyardapp.com/{org_name}/blueprints                                                 |
 | **View a Single Blueprint**          | https://app.shipyardapp.com/{org_name}/blueprints/{blueprint_id}                                 |
-| **View Vessels in Single Project**   | https://app.shipyardapp.com/{org_name}/projects/{project_id}/vessels                             |
 | **View Fleets for a Single Project** | https://app.shipyardapp.com/{org_name}/projects/{project_id}/fleets                              |
 | **View Logs for a Single Fleet**     | https://app.shipyardapp.com/{org_name}/projects/{project_id}/fleets/{fleet_id}/logs             |
-| **View Individual Log for a Fleet**  | https://app.shipyardapp.com/{org_name}/projects/{project_id}/fleets/{fleet_id}/logs/{log_id}   |
-| **View Logs for a Single Vessel**    | https://app.shipyardapp.com/{org_name}/projects/{project_id}/vessels/{vessel_id}/logs           |
-| **View Individual Log for a Vessel** | https://app.shipyardapp.com/{org_name}/projects/{project_id}/vessels/{vessel_id}/logs/{log_id} |
+| **View Individual Log for a Fleet**  | https://app.shipyardapp.com/{org_name}/projects/{project_id}/fleets/{fleet_id}/logs/{fleet_log_id}   |
+| **View Individual Log for a Vessel** | https://app.shipyardapp.com/{org_name}/projects/{project_id}/fleets/{fleet_id}/logs/{fleet_log_id}/{vessel_log_id} |
 
 ## Additional Notes
 

@@ -157,28 +157,21 @@ values={[
 1. Under **Bluprint Name**, enter `dbt - Execute CLI Command`.
 2. Under **Synopsis**, enter `This Blueprint runs a dbt core command.`
 3. Click **Save & Finish**.
-4. On the success screen, click **Use this Blueprint**. This will take you over to the Fleet Builder and prompt you to select a project.
+4. On the success screen, click **Use this Blueprint**. This will take you over to the Fleet Builder.
 
 ### Build dbt Core Fleet
-1. On the **Select a Project** prompt, click the drop down menu to expand it and select `Create a New Project`.
-2. Under project name, enter `dbt Core Testing`.
-3. Under **timezone**, enter your timezone.
-4. Click **Create Project**.
-
-![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_25_13_51_25.png)
-
-5. Make sure `dbt Core Testing` is selected and click **Select Project**. This will create a new Fleet in the project. The Fleet Builder will now be visible with one Vessel located inside of the Fleet, built using your new `dbt - Execute CLI Command` Blueprint. On the left-hand side of your screen, you'll see the settings for the Vessel.
+The Fleet Builder will now be visible with one Vessel located inside of the Fleet, built using your new `dbt - Execute CLI Command` Blueprint. On the left-hand side of your screen, you'll see the settings for the Vessel.
 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_25_13_54_35.png)
 
-6. Under **Vessel Name**, enter `dbt Core CLI Command`.
-7. Under **dbt CLI Command**, enter `dbt debug`.
-8. Click the gear on the sidebar to open Fleet Settings.
+1. Under **Vessel Name**, enter `dbt Core CLI Command`.
+2. Under **dbt CLI Command**, enter `dbt debug`.
+3. Click the gear on the sidebar to open Fleet Settings.
 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_25_13_58_07.png)
 
-9. Under **Fleet Name**, enter `dbt Core`.
-10. Click **Save & Finish** on the bottom right of your screen. This will take you to a page showing that your Fleet was created successfully.
+4. Under **Fleet Name**, enter `dbt Core`.
+5. Click **Save & Finish** on the bottom right of your screen. This will take you to a page showing that your Fleet was created successfully.
 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_25_14_04_35.png)
 

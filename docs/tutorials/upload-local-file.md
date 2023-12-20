@@ -38,10 +38,7 @@ Feel free to peruse this zip file beforehand so you understand the contents and 
 
 ## Steps
 
-1. Using the sidebar, click **+ New Fleet**.
-2. In the dropdown, choose either the *Playground* or *Testing* Project, then click **Select Project**
-
-You'll now be on the Fleet builder canvas. Next we'll walk through the process of building the required Vessel to upload the file to Shipyard
+Using the sidebar, click **+ New Fleet**. You'll now be on the Fleet builder canvas. Next we'll walk through the process of building the required Vessel to upload the file to Shipyard
 
 ### Step 1 - Create a Code Vessel
 

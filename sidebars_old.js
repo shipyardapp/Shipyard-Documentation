@@ -20,7 +20,6 @@ module.exports = {
 		],
 
 		"🚀 Getting Started": [
-			"getting-started/first-project",
 			"getting-started/first-fleet",
 			"getting-started/first-vessel-with-code",
 		],

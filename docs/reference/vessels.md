@@ -21,13 +21,6 @@ Vessels are run in independent docker containers, so underlying code, environmen
 
 Every Vessel is either built with code or with a Blueprint that contains the design specifications that determine what that Vessel will do. New Vessels get built through the process of building a [Fleet](fleets/fleets-overview.md). The options required for creating a New Vessel differ based on the creation method that you select.
 
-### Project Vessel
-A Project Vessel is a Vessel that has been previously built in a Fleet but is now disconnected from any Fleet. You can turn any existing Vessel into a Project Vessel by removing it from a Fleet and saving the Fleet. Project Vessels are an easy way to move a Vessel from one Fleet to another or to store the contents of a Fleet for later.
-
-:::warning
-Project Vessels will be removed from the application soon. We do not recommend relying on these and suggest that if you need to keep this information around, you build a Fleet with a single Vessel.
-:::
-
 ## Setup
 
 ### With Code
@@ -61,11 +54,9 @@ Building a Vessel with a Blueprint allows you to run scripts without needing to 
    
 ## Additional Notes
 
-1. A Vessel can only be tied to one Blueprint, one Project, and one Organization.
+1. A Vessel can only be tied to one Fleet, one Blueprint, one Project, and one Organization.
 2. A Vessel's Blueprint or Code type cannot be changed once it is built.
-3. A Vessel's Project cannot be changed once it is built.
-4. A Project Vessel is _not_ version controlled.
-5. A Fleet Vessel _is_ version controlled. A Vessel's previous configuration within a Fleet is viewable in the Fleet's [Version Control](fleets/version-control.md) tab.
+5. A Vessel is version controlled within its Fleet. A Vessel's previous configuration within a Fleet is viewable in the Fleet's [Version Control](fleets/version-control.md) tab.
 
 ## Learn More
 

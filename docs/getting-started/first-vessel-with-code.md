@@ -36,7 +36,7 @@ For the sake of the this tutorial, we suggest starting off by building the Fleet
 1. Using the sidebar, click on **Projects** to navigate to the All Projects page.
 
   ![](../.gitbook/assets/shipyard_2022_05_05_09_41_15.png)
-2. Click on the **Testing** project.
+2. Click on the **Default** project.
 3. Find the **Download File from Webpage and Email to User** Fleet and either click on the Fleet Name or hover over the Actions vertical-dot menu and select **Edit**.
    
 ![](../.gitbook/assets/shipyard_2023_01_10_09_45_12.png)

@@ -21,9 +21,8 @@ Every unique solution you create will require you to build a Vessel. Vessels can
 ### Step 1 - Initial Setup
 
 1. Click the **+ New Fleet** button in the top left corner of your page.
-2. Choose a Project for your Fleet to go in.
-3. Click the plus icon along the left side of the Fleet Builder sidebar.
-4. Select any option under **Library Blueprints** or **Org Blueprints**.
+2. Click the plus icon along the left side of the Fleet Builder sidebar.
+3. Select any option under **Library Blueprints** or **Org Blueprints**.
 
 At this point, the Vessel editing panels will be opened. You can also completely delete your unfinished progress by clicking the red X in the corner of the Vessel.
 

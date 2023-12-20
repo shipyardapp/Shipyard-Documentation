@@ -24,7 +24,7 @@ In part 4 of the dbt Core guide, we will run the dbt model that was created in p
 
 ## Run dbt model
 
-1. Navigate back to the Project created in Part 2 called `dbt Core Testing`.
+1. Navigate to the `Default` Project under Projects.
 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_31_11_16_55.png)
 
