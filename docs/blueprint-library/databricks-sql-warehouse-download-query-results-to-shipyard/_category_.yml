@@ -1,0 +1,7 @@
+
+label: Databricks SQL Warehouse - Download Query Results to Shipyard
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: databricks-sql-warehouse-download-query-results-to-shipyard-overview
