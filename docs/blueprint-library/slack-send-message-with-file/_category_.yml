@@ -1,0 +1,7 @@
+
+label: Slack - Send Message with File
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: slack-send-message-with-file-overview
