@@ -45,8 +45,6 @@ This section is split into 4 parts:
 
 - [Org Blueprints](../blueprints/blueprints-overview.md)
   
-- [Project Vessels](../vessels.md#project-vessel)
-
 Clicking the Blueprint/Language you want to use will result in a new Vessel being added to the canvas. Hovering over a Blueprint/Language will give you more information about how it can be used.
 
 You can always search for a specific Blueprint using the search bar at the top. This will pre-filter the list to what you're looking for.

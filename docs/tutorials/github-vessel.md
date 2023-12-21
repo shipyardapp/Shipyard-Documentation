@@ -141,7 +141,7 @@ This tutorial assumes that you have a GitHub account. If you do not have an acco
 ### Step 3: Add GitHub Code Vessel to Fleet
 
 1. On the Shipyard sidebar, select **Projects**.
-2. Select the **Testing** project where the Getting Started tutorial Fleet lives or the project where you created a new Fleet from the YAML starting point.
+2. Select the **Default** project where the Getting Started tutorial Fleet lives or the project where you created a new Fleet from the YAML starting point.
 3. Select the Fleet named `Download File from Webpage and Email to User`.
 4. Select **Fleet Builder** from the top of the page.
 

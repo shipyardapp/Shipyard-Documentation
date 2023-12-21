@@ -15,10 +15,6 @@ keywords:
 
 You may have an old Vessel that should no longer be used, or maybe you just set something up the wrong way. This how to guide will walk you through the steps to remove a Vessel.
 
-:::tip pro tip
-When a Vessel is removed, it is always available again under the Project Vessel section.
-:::
-
 ## Steps
 
 ### Step 1 - Navigate to the Vessel
@@ -34,8 +30,4 @@ When a Vessel is removed, it is always available again under the Project Vessel 
 
 :::tip success
 You've now successfully removed the Vessel from the Fleet
-:::
-
-:::warning
-Project Vessels will be removed from the application soon. We do not recommend relying on these and suggest that if you need to keep this information around, you build a Fleet with a single Vessel.
 :::

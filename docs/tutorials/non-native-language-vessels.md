@@ -32,10 +32,6 @@ By the end of the tutorial, you'll be able to:
 
 ## Setup
 
-:::caution
-For the sake of the this tutorial, we suggest starting off by building a *Testing* Project. You can follow [this tutorial](../getting-started/first-project.md) to set that up.
-:::
-
 Getting started with this walkthrough is fairly straight-forward.
 
 <Tabs
@@ -86,9 +82,8 @@ Feel free to review the code in both `run.sh` and `script.go` to see what each i
 ### Step 1 - Build a Fleet with a Bash Vessel
 
 1. Click the **+ New Fleet** button on the left sidebar.
-2. Select either the *Playground* or *Testing* Project and then click **Select**.
-3. Click the plus icon along the left side of the Fleet Builder sidebar.
-4. Click on the **Bash** option under Code Vessels.
+2. Click the plus icon along the left side of the Fleet Builder sidebar.
+3. Click on the **Bash** option under Code Vessels.
 
 ### Step 2 - Fill Out Details
 

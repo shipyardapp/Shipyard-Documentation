@@ -31,18 +31,12 @@ By the end of the tutorial, you will know how to:
 * Connect Vessels together as part of a Fleet
 * Use a Fleet to access files created upstream
 
-:::caution
-We recommend you create a **Testing** project before beginning this tutorial. The steps to create that project are located in [here](first-project.md).
-:::
 ## Steps
 
 ### Step 1 - Accessing the Fleet Builder
 
-1. Using the sidebar, click on **New Fleet** to begin building your new Fleet. This will bring up a prompt that allows you to choose what project you want the Fleet to go into. 
-2. Using the drop down selector, choose the **Testing** project that we created in the previous tutorial. After clicking select project, you will be able to see the Fleet Builder.
-
-    ![](../.gitbook/assets/shipyard_2022_05_04_13_59_56.png)
-
+Using the sidebar, click on **New Fleet** to begin building your new Fleet.
+![](../.gitbook/assets/shipyard_2022_05_04_13_59_56.png)
 
 ### Step 2 - Building the Fleet
 
@@ -117,7 +111,7 @@ This will connect the two Vessels, allowing one to be triggered by the other. Ad
 
 2. Select the Fleet Name field and rename your fleet to **Download File from Webpage and Email to User**. 
    
-   Notice that the project is pre-selected from our actions in Step 1 above. 
+   Notice that the "Default" project is pre-selected. 
 3. Click the **Save & Finish** button at the bottom. You should now see the following screen:
 
 ![Fleet Success Screen](../.gitbook/assets/shipyard_2023_01_10_09_36_38.png)

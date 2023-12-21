@@ -43,7 +43,7 @@ Our goal with Shipyard is to choose syntax that helps users intuitively understa
 
 [**Triggers**](reference/triggers/triggers-overview.md) are the logic that determines when a Vessel or Fleet should begin running.
 
-[**Projects**](reference/projects.md) are used to categorize Vessels and Fleets pertaining to specific teams, functions, or use cases. Each project is associated with its own [timezone](reference/other-functions/timestamps-and-timezones.md) used for [Schedule Triggers](reference/triggers/schedule-triggers.md).
+[**Projects**](reference/projects.md) are used to categorize Fleets pertaining to specific teams, functions, or use cases. Each project is associated with its own [timezone](reference/other-functions/timestamps-and-timezones.md) used for [Schedule Triggers](reference/triggers/schedule-triggers.md).
 
 [**Organizations**](reference/organization.md) contain all of your Projects and Blueprints. This is the highest grouping structure in the platform that users can control.
 

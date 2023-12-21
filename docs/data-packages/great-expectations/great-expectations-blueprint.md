@@ -28,7 +28,7 @@ For more information, read [our blog post](https://www.shipyardapp.com/blog/gett
 ## Setup
 
 :::caution
-For the sake of the this tutorial, we suggest starting off by building a Vessel inside of a Project called "Playground". You can follow [**this tutorial** ](../../getting-started/first-project.md) to set that up.
+For the sake of the this tutorial, we will be building a Fleet inside of a Project called "Default". You can do this by logging into Shipyard and, on the sidebar, click on **New Fleet** to begin.
 :::
 
 Download the [following file](https://drive.google.com/file/d/1eQPfrCMHYGpRH1mgqFbbugra1gtR57IR/view?usp=share_link) to your computer, without changing the file name. It's a .zip containing a single python file and a Great Expectations directory structure with JSON expectation suites and a YML setup file. We'll use this throughout the tutorial.
@@ -174,31 +174,29 @@ You've successfully set up Great Expectations as a Blueprint.
 
 Now anyone in your organization can use the Blueprint to test data against your Expectation Suites. We're going to test our Blueprint to validate that everything runs correctly.
 
-### Step 6 - Setting Up a Vessel
+### Step 6 - Setting Up a Fleet
 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2021_03_17_11_35_16.png)
 
 1. Click **Use this Blueprint** on the success screen.
 
-At this point, you should be on a screen that looks like this:
-![](../.gitbook/assets/../../../.gitbook/assets/great_expectations_demo_blueprint_inputs.png)
+You should now be in the Fleet Builder and your screen should look like this:
+![](../.gitbook/assets/../../../.gitbook/assets/great-expectations-01.png)
 
 
 2. Enter `https://s3.amazonaws.com/amazon-reviews-pds/tsv/sample_us.tsv` into the File URL field.
-2. Leave the Bucket Name as is.
-3. Leave the Expectation Suite as is.
-4. Click **Next Step**.
-5. On the Settings step:
-   1. Name your Vessel `GE - Sample Data - Amazon Reviews`
-   2. Select either *Playground* or *Testing* for the Project
-   3. Click **Save & Finish**
-6. Immediately Click **Run Your Vessel**
+3. Leave the Bucket Name as is.
+4. Leave the Expectation Suite as is.
+5. Click the gear icon on the sidebar of the Fleet Builder to open **Fleet Settings**.
+6. In this section, name your Fleet `GE - Sample Data - Amazon Reviews`
+7. Click **Save & Finish Fleet**
+8. Immediately Click **Run your Fleet**
 
 ### Step 7 - Review the Results
 
-You should be immediately redirected to the actively running Vessel Log. Within the Log you'll be able to see all of the expectations and their output for the sample data.
+You should be immediately redirected to the actively running Fleet Log. Within the Log you'll be able to see all of the expectations and their output for the sample data.
 
-![](../.gitbook/assets/../../../.gitbook/assets/great_expectations_success_log.png)
+![](../.gitbook/assets/../../../.gitbook/assets/great_expectations_02.png)
 
 You should also be able to see the validation file in your S3 bucket of choice.
 

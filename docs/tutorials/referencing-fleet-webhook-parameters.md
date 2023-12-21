@@ -27,10 +27,6 @@ By the end of the tutorial, you'll be able to:
 
 ## Setup
 
-:::caution
-For the sake of the this tutorial, we suggest starting off by building a Vessel inside either the *Playground* Project or a *Testing* Project. You can follow [this tutorial](../getting-started/first-project.md) to set that up.
-:::
-
 First, [download this code](https://drive.google.com/file/d/1TYvbvxNgkaBJkE2mC5A81SzGzSIfLVH4/view?usp=sharing), named `webhook_parameters_reference.zip` to your computer without making any changes.
 
 Feel free to peruse this script beforehand so you understand everything that it's doing. The script is accomplishing four main things:
@@ -43,10 +39,7 @@ In the event that either headers or body are not provided in the webhook invocat
 
 ## Steps
 
-1. Using the sidebar, click **+ New Fleet**.
-2. In the **Select a Project** dropdown, choose either the *Playground* or *Testing* Project.
-
-You'll now be on the Fleet builder canvas. Next we'll walk through the process of building the required Vessel and invoking the Fleet with a webhook.
+Using the sidebar, click **+ New Fleet**. You'll now be on the Fleet builder canvas. Next we'll walk through the process of building the required Vessel and invoking the Fleet with a webhook.
 
 ### Step 1 - Create a Code Vessel
 

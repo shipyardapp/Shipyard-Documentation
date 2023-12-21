@@ -28,14 +28,12 @@ For more information about our YAML Editor, check out this [blog post](https://w
 ### Step 1 - Create New Fleet with YAML Editor
 
 1. Click the **New Fleet** button on the top left corner of the Shipyard webpage.
-2. Choose the **Playground** project. Click **Select Project**.
-![Select Project](../.gitbook/assets/shipyard_2022_08_08_14_48_55.png)
-3. Click the **Use YAML Editor** button on the top right of the Fleet Builder page
+2. Click the **Use YAML Editor** button on the top right of the Fleet Builder page
 
 ![Use YAML Editor Button](../.gitbook/assets/shipyard_2022_08_10_10_46_32.png)
 
-4. Highlight and delete all of the existing YAML.
-5. Copy the following YAML and paste it into the YAML Editor: 
+3. Highlight and delete all of the existing YAML.
+4. Copy the following YAML and paste it into the YAML Editor: 
 ```yaml
 name: Download Slinky Dog Dash Ride Wait Times
 _id: f7cea97e-ee68-4b3e-9eba-76114694e555

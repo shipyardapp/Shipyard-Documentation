@@ -37,8 +37,7 @@ By the end of this tutorial, you'll be able to:
 
 ### Step 2: Calling GitHub's API
 
-1. In Shipyard, click **New Fleet** in the top left corner.
-2. Select a Project for this Fleet to be placed in and click **Select Project**. This will take you to the Fleet Builder.
+1. In Shipyard, click **New Fleet** in the top left corner. This will take you to the Fleet Builder.
 
 <Tabs
 groupId="vessel-type"
@@ -49,13 +48,13 @@ values={[
 ]}>
 <TabItem value="native">
 
-3. Under **HTTP**, select **Requests**. This will create a Vessel for you in the Fleet Builder.
-4. Under **Vessel Name**, enter `Create GitHub Issue`.
-5. Under **Method**, select **POST**.
-6. Under **URL**, enter `https://api.github.com/repos/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME/issues` and insert your username and repository name in the marked spots.
-7. Under **Content Type**, select **application/x-www-form-urlencoded**.
-8. Under **Authorization Header**, enter `token YOUR_API_CREDENTIAL`, replacing YOUR_API_CREDENTIAL with your actual API credential from GitHub.
-9. Under **Message**, enter `{"title":"YOUR_REPOSITORY_NAME","body":"Test Issue"}`, replacing YOUR_REPOSITORY_NAME with your actual repository name.
+2. Under **HTTP**, select **Requests**. This will create a Vessel for you in the Fleet Builder.
+3. Under **Vessel Name**, enter `Create GitHub Issue`.
+4. Under **Method**, select **POST**.
+5. Under **URL**, enter `https://api.github.com/repos/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME/issues` and insert your username and repository name in the marked spots.
+6. Under **Content Type**, select **application/x-www-form-urlencoded**.
+7. Under **Authorization Header**, enter `token YOUR_API_CREDENTIAL`, replacing YOUR_API_CREDENTIAL with your actual API credential from GitHub.
+8. Under **Message**, enter `{"title":"YOUR_REPOSITORY_NAME","body":"Test Issue"}`, replacing YOUR_REPOSITORY_NAME with your actual repository name.
 
 ![](../.gitbook/assets/shipyard_2022_12_13_09_51_19.png)
 
@@ -63,8 +62,8 @@ values={[
 You can connect a Vessel to the Request Vessel to receive the API response by sending response.txt with Slack or Email or storing it in a Cloud Storage Container. 
 :::
 
-10. Click **Save & Finish** on the bottom right of your screen. This will take you to a page letting you know that your Fleet has been created successfully. 
-11. Click **Run Now**. This will take you to the [Fleet Log](../reference/logs/fleet-logs.md) page for your Fleet run.
+9. Click **Save & Finish** on the bottom right of your screen. This will take you to a page letting you know that your Fleet has been created successfully. 
+10. Click **Run Now**. This will take you to the [Fleet Log](../reference/logs/fleet-logs.md) page for your Fleet run.
 
 </TabItem>
 
