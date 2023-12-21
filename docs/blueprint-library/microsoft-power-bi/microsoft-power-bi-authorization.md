@@ -26,12 +26,14 @@ You will need the following from the Service Principal Account
 ![](../../.gitbook/assets/shipyard_2023-12-21-09-31-01.png)
 
  **Step 2:** Click on New Registration
+
 ![](../../.gitbook/assets/shipyard_2023-12-21-09-32-08.png)
 
  **Step 3:** Fill in the Form
 * App Name: Shipyard Power BI (or whatever you want to call it)
 * Supported Account Types: Accounts in this organizational directory only
 * Redirect URI: Leave blank
+
 ![](../../.gitbook/assets/shipyard_2023-12-21-09-33-36.png)
 
 **Step 4:** Click Register
