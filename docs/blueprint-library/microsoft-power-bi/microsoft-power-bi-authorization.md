@@ -21,7 +21,6 @@ You will need the following from the Service Principal Account
 * Client Secret
 
 ## Service Principal Creation
- [Microsoft documentation](https://docs.microsoft.com/en-us/power-bi/developer/embedded/embed-service-principal#register-a-service-principal-in-azure-active-directory).
 
  **Step 1:** Go to the [Azure portal](https://portal.azure.com/) and search for App Registration
 ![](../../.gitbook/assets/shipyard_2023-12-21-09-31-01.png)
@@ -64,17 +63,17 @@ You will need the following from the Service Principal Account
 ![](../../.gitbook/assets/shipyard_2023-12-21-09-39-27.png)
 
 **Step 15:** Click on Application Permissions > Read/Write Tenant Permissions
+
 ![](../../.gitbook/assets/shipyard_2023-12-21-09-40-21.png)
 
 **Step 16:** Click on Add Permissions
 
-**Step 17:** Click on Grant Admin Consent for <Tenant Name>
-Note: If you are not the admin for your orginization your account admin will need to approve the permissions for you.
+**Step 17:** Click on Grant Admin Consent
+Note: If you are not the admin for your organization your account admin will need to approve the permissions for you.
 ![](../../.gitbook/assets/shipyard_2023-12-21-09-41-15.png)
 **Step 18:** Click on Yes
 
 ## Inviting Service Principal to Power BI Workspace
-[Microsoft documentation](https://docs.microsoft.com/en-us/power-bi/developer/embedded/embed-service-principal#add-the-service-principal-to-the-workspace)
 
 **Step 1:** Go to the Power BI Workspace
 
@@ -91,7 +90,6 @@ Note: If you are not the admin for your orginization your account admin will nee
 
 
 ## Enable the Power BI service admin settings
-[Microsoft documentation](https://learn.microsoft.com/en-us/power-bi/developer/embedded/embed-service-principal#step-3---enable-the-power-bi-service-admin-settings)
 
 **Step 1:** Go to the Power BI Workspace
 
