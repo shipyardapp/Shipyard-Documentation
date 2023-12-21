@@ -14,6 +14,7 @@ keywords:
 
 ## Overview
 Shipyard's low-code Microsoft Power BI Trigger Refresh blueprint allows users to refresh a dataset or a dataflow on a Microsoft Power BI workspace.
+The dataset or dataflow must be located in a workspace that the service principal account has access to and cannot be **"My Workspace"**.
 
 Microsoft limits the number of dataflow refreshes that can be triggered to 8 within 24 hours. If you are using this blueprint to refresh a dataflow, please ensure that you are not exceeding this limit.
 ## Variables

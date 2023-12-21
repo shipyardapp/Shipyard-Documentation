@@ -112,6 +112,7 @@ Log into the Power BI workspace and copy the ID from the URL. The ID is the stri
 
 ex: `https://app.powerbi.com/groups/<workspace_id>/list?experience=power-bi`
 
+**Note:** The workspace cannot be "My Workspace" as the service principal does not have access to this workspace.
 ## Finding the Object ID
 Go to the Power BI workspace and click on the dataset or dataflow you want to refresh. The ID is the string of characters after the "datasets/" or "dataflows/" in the URL.
 
