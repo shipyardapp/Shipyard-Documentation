@@ -17,7 +17,8 @@ Quickly upload a file from Shipyard to a SQL table in Databricks.
 
 __Recommended Setup__
 
-This should be used immediately after downloading data from another source. This blueprint cannot upload a file from your local machine.
+This should be used immediately after downloading data from another source. For optimal performance, this should ideally not be used to upload datasets not exceeding 100,000 rows of data. For larger datasets, see the documentation for `Databricks SQL Warehouse - Execute Query` blueprint to perform a `COPY INTO` from cloud storage.
+
 Although they are not required in order to connect, it is recommended that you provide the `Catalog` and the `Schema` that you will query. By not doing so, the connection will resort to the defaults and the uploaded table will reside there. Additionally the [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
 
 **Note**
