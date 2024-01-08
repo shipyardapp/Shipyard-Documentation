@@ -15,8 +15,28 @@ keywords:
 ## Overview
 Quickly execute a SQL within a Databricks SQL Warehouse
 
+### Large File Ingestion
+For larger files (greater than 100,000 rows), this blueprint can be used to ingest the data assuming it is first staged in a cloud storage provider like S3. Assuming that is the case, the data can be ingested into Databricks using a `COPY INTO` statement. An example of this would be:
+
+```sql
+COPY INTO my_json_data
+FROM 's3://my-bucket/jsonData' WITH (
+  CREDENTIAL (AWS_ACCESS_KEY = '...', AWS_SECRET_KEY = '...', AWS_SESSION_TOKEN = '...')
+)
+FILEFORMAT = JSON
+
+COPY INTO my_json_data
+FROM 'abfss://container@storageAccount.dfs.core.windows.net/jsonData' WITH (
+  CREDENTIAL (AZURE_SAS_TOKEN = '...')
+)
+FILEFORMAT = JSON
+```
+
+See [here](https://docs.databricks.com/en/sql/language-manual/delta-copy-into.html) for details. 
+
+
 **NOTE**
-This vessel will not return any files, so if you are looking to fetch data from Databricks, use the `Databricks SQL Warehouse - Download Query Results to Shipyard` Blueprint. Intended use of this blueprint is for queries with no return values (i.e. ALTER TABLE, DELETE TABLE, etc.)
+This vessel will not return any files, so if you are looking to fetch data from Databricks, use the `Databricks SQL Warehouse - Download Query Results to Shipyard` Blueprint. Intended use of this blueprint is for queries with no return values (i.e. ALTER, DELETE/DROP, CREATE, etc.)
 
 ## Variables
 
