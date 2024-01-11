@@ -1,0 +1,15 @@
+on:
+  create:
+
+jobs:
+  on_create_branch:
+    name: On Create
+    if: ${{ github.event.ref_type == 'branch' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: shipyardapp/actions-linear@v0.0.0
+        with:
+          command: on-create-branch
+          on_create_branch: ${{ github.event.ref }}
+        env:
+          LINEAR_API_KEY: ${{ secrets.LINEAR_API_KEY }}
