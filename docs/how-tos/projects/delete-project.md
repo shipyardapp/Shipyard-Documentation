@@ -11,6 +11,10 @@ keywords:
 
 # How to Delete a Project
 
+:::note
+This feature is only available on our Team, Business, and Enterprise plans.
+:::
+
 ## Overview
 
 Sometimes old [Projects](../../reference/projects.md) no longer matter. You can easily delete all of your work within Shipyard. This how to guide will walk you through the steps to delete a Project.
@@ -21,9 +25,9 @@ Deleting a project will permanently remove all Vessels in the project as well as
 
 ## Steps
 
-1. On the sidebar, click **Projects** then **View All Projects**.
+1. On the sidebar, click **Projects**.
 2. Find the individual Project that you want to edit and click the **cog** next to the Project name.
-3. Click the red **Delete** text at the bottom of the page.
+3. Click the red **Delete** text.
 4. Confirm that you really want to delete the project.
 
 <div dangerouslySetInnerHTML={{ __html: `<div style="position: relative; padding-bottom: calc(66.66666666666666% + 41px); height: 0;"><iframe src="https://demo.arcade.software/ns5DB5lZm8mcumyhpjCS?embed" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;color-scheme: light;" title="How to Delete a Project"></iframe></div>` }} />

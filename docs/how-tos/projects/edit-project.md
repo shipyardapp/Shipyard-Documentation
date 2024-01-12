@@ -16,7 +16,7 @@ If you find yourself needing to change [timezones](../../reference/other-functio
 
 ## Steps
 
-1. On the sidebar, click **Projects** then **View All Projects**.
+1. On the sidebar, click **Projects**.
 2. Find the individual Project that you want to edit and click the **cog** next to the Project name.
 3. Edit your Project name or change your project's timezone.
 4. Click the **Save** button at the bottom of the page.
