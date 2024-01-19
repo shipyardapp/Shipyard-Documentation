@@ -69,5 +69,6 @@ This setup allows Vessels to be built to run independent, modular tasks off of n
 - [How to Create a New Fleet](../../how-tos/fleets/create-fleet.md)
 - [How to Edit a Fleet](../../how-tos/fleets/edit-fleet.md)
 - [How to Duplicate a Fleet](../../how-tos/fleets/duplicate-fleet.md)
+- [How to Run a Fleet with Parameters](../../how-tos/fleets/run-with-params.md)
 - [How to Assess Fleet Performance](../../how-tos/fleets/assess-fleet-performance.md)
 - [How to See All Available Files in a Fleet](../../how-tos/fleets/see-all-files.md)
