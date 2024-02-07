@@ -17,21 +17,21 @@ Turn the results of your SQL SELECT statement into a CSV file. Extract your Snow
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:-----|:----------|:-----|:---------|:--------|:--------|:------------|
-| Username | SNOWFLAKE_USERNAME  | Alphanumeric |:white_check_mark: | - | - | The Snowflake Username that has access to the table, schema, and warehouse that you want to use. |
-| Password | SNOWFLAKE_PASSWORD  | Password |:heavy_minus_sign: | - | - | The password associated with your Username. |
-| Account Name | SNOWFLAKE_ACCOUNT  | Alphanumeric |:white_check_mark: | - | - | Typically found in the URL you use to access Snowflake, before `.snowflakecomputing.com`. |
-| Warehouse | SNOWFLAKE_WAREHOUSE  | Alphanumeric |:heavy_minus_sign: | - | - | The name of the Warehouse you want your query to run in. If left blank, will use the default Warehouse associated with the Username. |
-| Database | SNOWFLAKE_DATABASE  | Alphanumeric |:white_check_mark: | - | - | The name of the Database that you want to run a query against. |
-| Schema | SNOWFLAKE_SCHEMA  | Alphanumeric |:heavy_minus_sign: | - | - | The name of the Schema you want to run a query against. If left blank, it's expected that your query will include the schema in it. |
-| Query | SNOWFLAKE_QUERY  | Alphanumeric |:white_check_mark: | - | - | A SQL query with a SELECT statement that returns data. |
-| Shipyard File Name | SNOWFLAKE_DESTINATION_FILE_NAME  | Alphanumeric |:white_check_mark: | - | - | The file name that you want your generated CSV to have. |
-| Shipyard Folder Name | SNOWFLAKE_DESTINATION_FOLDER_NAME  | Alphanumeric |:heavy_minus_sign: | - | - | The folder structure that you want your CSV to be created in. If left blank, the file will be created in the home directory. |
-| Include Column Names as Header? | SNOWFLAKE_FILE_HEADER  | Boolean |:white_check_mark: | `True` | - | If checked, your CSV file will include a header row with column names. |
-| User Role | SNOWFLAKE_USER_ROLE  | Alphanumeric |:heavy_minus_sign: | - | - | The optional role of the database user |
-| Private Key | SNOWFLAKE_PRIVATE_KEY  | Alphanumeric |:heavy_minus_sign: | - | - | The optional private key to use for authentication |
-| Private Key Passphrase | SNOWFLAKE_PRIVATE_KEY_PASSPHRASE  | Password |:heavy_minus_sign: | - | - | The passphrase for the private key file. Is required only if authenticating with private key |
+| Name                            | Reference                         | Type         | Required           | Default | Options | Description                                                                                                                          |
+|:--------------------------------|:----------------------------------|:-------------|:-------------------|:--------|:--------|:-------------------------------------------------------------------------------------------------------------------------------------|
+| Username                        | SNOWFLAKE_USERNAME                | Alphanumeric | :white_check_mark: | -       | -       | The Snowflake Username that has access to the table, schema, and warehouse that you want to use.                                     |
+| Password                        | SNOWFLAKE_PASSWORD                | Password     | :heavy_minus_sign: | -       | -       | The password associated with your Username.                                                                                          |
+| Account Name                    | SNOWFLAKE_ACCOUNT                 | Alphanumeric | :white_check_mark: | -       | -       | Typically found in the URL you use to access Snowflake, before `.snowflakecomputing.com`.                                            |
+| Warehouse                       | SNOWFLAKE_WAREHOUSE               | Alphanumeric | :heavy_minus_sign: | -       | -       | The name of the Warehouse you want your query to run in. If left blank, will use the default Warehouse associated with the Username. |
+| Database                        | SNOWFLAKE_DATABASE                | Alphanumeric | :white_check_mark: | -       | -       | The name of the Database that you want to run a query against.                                                                       |
+| Schema                          | SNOWFLAKE_SCHEMA                  | Alphanumeric | :heavy_minus_sign: | -       | -       | The name of the Schema you want to run a query against. If left blank, it's expected that your query will include the schema in it.  |
+| Query                           | SNOWFLAKE_QUERY                   | Alphanumeric | :white_check_mark: | -       | -       | A SQL query with a SELECT statement that returns data.                                                                               |
+| Shipyard File Name              | SNOWFLAKE_DESTINATION_FILE_NAME   | Alphanumeric | :white_check_mark: | -       | -       | The file name that you want your generated CSV to have.                                                                              |
+| Shipyard Folder Name            | SNOWFLAKE_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | -       | -       | The folder structure that you want your CSV to be created in. If left blank, the file will be created in the home directory.         |
+| Include Column Names as Header? | SNOWFLAKE_FILE_HEADER             | Boolean      | :white_check_mark: | `True`  | -       | If checked, your CSV file will include a header row with column names.                                                               |
+| User Role                       | SNOWFLAKE_USER_ROLE               | Alphanumeric | :heavy_minus_sign: | -       | -       | The optional role of the database user                                                                                               |
+| Private Key                     | SNOWFLAKE_PRIVATE_KEY             | Alphanumeric | :heavy_minus_sign: | -       | -       | The optional private key to use for authentication                                                                                   |
+| Private Key Passphrase          | SNOWFLAKE_PRIVATE_KEY_PASSPHRASE  | Password     | :heavy_minus_sign: | -       | -       | The passphrase for the private key file. Is required only if authenticating with private key                                         |
 
 
 ## YAML
@@ -40,16 +40,16 @@ Below is the YAML template for this Blueprint and can be used in the Fleet [YAML
 source:
   blueprint: Snowflake - Download Query Results to Shipyard
   inputs:
-    SNOWFLAKE_USERNAME: null  ## REQUIRED
+    SNOWFLAKE_USERNAME: null
     SNOWFLAKE_PASSWORD: null
-    SNOWFLAKE_ACCOUNT: null  ## REQUIRED
+    SNOWFLAKE_ACCOUNT: null
     SNOWFLAKE_WAREHOUSE: null
-    SNOWFLAKE_DATABASE: null  ## REQUIRED
+    SNOWFLAKE_DATABASE: null
     SNOWFLAKE_SCHEMA: null
-    SNOWFLAKE_QUERY: null  ## REQUIRED
-    SNOWFLAKE_DESTINATION_FILE_NAME: null ## REQUIRED
+    SNOWFLAKE_QUERY: null
+    SNOWFLAKE_DESTINATION_FILE_NAME: null
     SNOWFLAKE_DESTINATION_FOLDER_NAME: null
-    SNOWFLAKE_FILE_HEADER: true  ## REQUIRED
+    SNOWFLAKE_FILE_HEADER: true
     SNOWFLAKE_USER_ROLE: null
     SNOWFLAKE_PRIVATE_KEY: null
     SNOWFLAKE_PRIVATE_KEY_PASSPHRASE: null
@@ -66,5 +66,15 @@ guardrails:
     - '204'
     - '205'
     - '206'
-
+    - '207'
+    - '208'
+    - '209'
+    - '249'
+    - '101'
+    - '102'
+    - '103'
+    - '104'
+    - '105'
+    - '106'
+    - '107'
 ```

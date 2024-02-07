@@ -226,32 +226,3 @@ SET ALLOWED_IP_LIST = ('54.190.66.63', '52.42.73.100', '44.231.239.186', '44.225
 
 </TabItem>
 </Tabs>
-
-
-### Authenticating with a Private Key
-1. To generate a private key file, run the following in the terminal
-```bash
-openssl genrsa 2048 | openssl pkcs8 -topk8 -inform PEM -out rsa_key.p8
-```
-**_NOTE:_** You will need to generate a passphrase to open the private key file. Be sure to save this passphrase as you will need to pass it as an input in Shipyard
-
-2. Once the private key file is generated, created a corresponding public key by running the following in the terminal
-
-```bash
-openssl rsa -in rsa_key.p8 -pubout -out rsa_key.pub
-```
-3. Assign the public key to appropriate user by running an `ALTER` statement
-
-```sql
-ALTER USER jsmith SET RSA_PUBLIC_KEY='MIIBIjANBgkqh...';
-```
-**_NOTE:_** Only security administrators (i.e. users with the SECURITYADMIN role) or higher can alter a user. Aslo be sure to exclude the public key delimiters in the SQL statement.
-
-4. Verify the User's Public Key Fingerprint by running a DESCRIBE command
- ```sql 
- DESC USER jsmith;
- ```
- The fields `RSA_PUBLIC_KEY` and `RSA_PUBLIC_KEY_FP` should both be populated.
-
-
-For more information, visit the [Snowflake Documentation](https://docs.snowflake.com/en/user-guide/key-pair-auth)
