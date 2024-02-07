@@ -22,7 +22,7 @@ Column names are inferred from the header row of your CSV file. If the table alr
 
 Column names and table names are automatically made into upper case values, a standard for Snowflake.
 
-Data is inserted into the table by PUTing the file on Snowflake temporary staging for the named table, running a COPY INTO function, then purging the file from Snowflake staging. If there are any errors with this method, we revert to a slow but consistent method that creates INSERT statements for 10,000 rows at a time.
+Data is inserted into the table by PUTing the file on Snowflake temporary staging for the named table, running a COPY INTO function, then purging the file from Snowflake staging. 
 
 In all instances, if the table name does not already exist, a new table will be created with datatypes inferred from the CSV contents.
 
@@ -87,6 +87,7 @@ guardrails:
     - '105'
     - '106'
     - '107'
+    - '108'
     - '200'
     - '201'
     - '202'
