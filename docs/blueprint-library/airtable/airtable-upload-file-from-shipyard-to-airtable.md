@@ -27,7 +27,7 @@ Be cautious with the replace option, as it will remove all existing records in t
 | Personal Access Token | AIRTABLE_API_KEY | Password | :white_check_mark: | - | - | Personal Access Token associated with a user that has access to the specified Base, Table, and View listed. |
 | Base | AIRTABLE_BASE_ID | Alphanumeric | :white_check_mark: | - | - | The ID of your Airtable base. Found in the URL of your base and starts with `app` |
 | Table ID | AIRTABLE_TABLE_ID | Alphanumeric | :white_check_mark: | - | - | Can be the Name (case sensitive) or the ID of the table. The ID can be found in the URL and always starts with `tbl`. |
-| Key Fields | AIRTABLE_KEY_FIELDS | Alphanumeric | :white_check_mark: | - | - | List of field names separated by commas that Airtable should use to match records in the input with existing records on the server. |
+| Key Fields | AIRTABLE_KEY_FIELDS | Alphanumeric | :heavy_minus_sign: | - | - | List of field names separated by commas that Airtable should use to match records in the input with existing records on the server. |
 | Typecast | AIRTABLE_TYPECAST | Boolean | :heavy_minus_sign: | `FALSE` | - | If enabled, the Airtable API will perform best-effort automatic data conversion from string values. |
 | Shipyard Folder Name | AIRTABLE_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Shipyard to upload the target file from. If left blank, will look in the home directory. |
 | Source Filename or Pattern | AIRTABLE_FILENAME_OR_PATTERN | Alphanumeric | :white_check_mark: | - | - | The name of the file to upload or search criteria |
