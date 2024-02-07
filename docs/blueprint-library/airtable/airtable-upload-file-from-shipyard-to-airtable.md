@@ -37,8 +37,6 @@ Be cautious with the replace option, as it will remove all existing records in t
 
 
 
-
-
 ## YAML
 
 Below is the YAML template for this Blueprint and can be used in the
