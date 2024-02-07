@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Airtable Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize  to work with Shipyard's low-code  templates.
+description: Instructions on how to authorize Airtable to work with Shipyard's low-code  templates.
 keywords:
   - airtable
   - blueprint
