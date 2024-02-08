@@ -6,26 +6,71 @@ hide_title: true
 sidebar_label: Authorization
 description: Instructions on how to authorize Airtable to work with Shipyard's low-code Airtable templates.
 keywords:
-- airtable
-- blueprint
-- template
-- authorization
+  - airtable
+  - blueprint
+  - template
+  - authorization
 ---
 
-# Airtable Authorization
-In order to get started with the Airtable Blueprints, you will need an API Key with programmatic access. Additionally, you'll need the names/IDs of the Base, Table, and View you would like to access.
+#  Authorization
 
-## Generating an Airtable API Key
+In order to get started with the Airtable Blueprints, you will need a Personal Access Token. Additionally, you'll need the names/IDs of the Base, Table, and View you would like to access.
 
-1. Login to your [Airtable](https://airtable.com/login) 
-2. Navigate to your [account overview](https://airtable.com/account) page.
-3. Select Generate API Key
+## Generating an Airtable Personal Access Token
 
-![Generate API Key](https://cdn.sanity.io/images/2xyydva6/production/1b548cb219eabae4da81cab8a78406775b3d71dd-1506x1068.png?w=450)
+Follow these steps to create a personal access token for Airtable, which you will need for various integrations, such as connecting Airtable to Shipyard.
 
-4. Click into the purple area to reveal your API Key. Copy this somewhere safe!
+### Step 1: Log in to Airtable
 
-![Revealing your Airtable API Key](https://cdn.sanity.io/images/2xyydva6/production/6510c8c452f9487e9f1dbc0d1c4d969ba1802963-1698x478.png?w=450)
+Start by logging into your Airtable account. You can do so by visiting the [Airtable login page](https://airtable.com/login).
+
+### Step 2: Access the Developer Hub
+
+Once logged in, navigate to the [Developer Hub](https://airtable.com/create/tokens). This is where you can manage your API tokens.
+
+### Step 3: Personal Access Token Section
+
+Ensure you are in the **Personal Access Token** section of the Developer Hub. This is crucial as tokens generated here are specific to your personal account and provide access to your bases.
+
+![](https://cdn.sanity.io/images/2xyydva6/dev/4a3423007f48f75f8a4f06df9a66404ae290c229-643x238.png?w=450)
+
+### Step 4: Create a New Token
+
+Click on **Create Token** to start the process of generating a new access token.
+
+![](https://cdn.sanity.io/images/2xyydva6/dev/9acc975d9dd6e58fcc148ebf241ff018782f0fe0-689x208.png?w=450)
+
+> **Note:**  If you already have tokens created "Create a New Token can be found on the top right.
+
+### Step 5: Name Your Token
+
+Give your token a descriptive name that helps you identify its use case. For instance you might name it "Shipyard Integration".
+
+![](https://cdn.sanity.io/images/2xyydva6/dev/d1fb612181c9a2d287ea8c66e3e70781e7f84b58-822x233.png?w=450)
+
+### Step 6: Set Permissions
+
+Assign the necessary permissions to your token. At a minimum, you will need:
+
+- `data.records:read` - This allows the token to read your Airtable records.
+- `data.records:write` - This allows the token to modify your Airtable records.
+
+![](https://cdn.sanity.io/images/2xyydva6/dev/89812054085635e599b3fdb4b2f84db06c3af7da-383x193.png?w=450)
+
+> **Note:** The `data.records:write` permission is only necessary if you intend to use functionalities that modify your data, such as the "Airtable - Upload File from Shipyard to Airtable" blueprint.
+
+### Step 7: Specify Accessible Bases
+
+Under the **Access** section, specify which base(s) you want the token to access. This ensures that your token is only used for its intended purpose and bases.
+
+![](https://cdn.sanity.io/images/2xyydva6/dev/400fc7fca0d75c37479b614fe87f4f436723bdf8-772x172.png?w=450)
+
+> **Note:**  It's best to add only the specific base(s) that the application will use, rather than allowing access to all future bases. This minimizes security risks and ensures tighter control over your data. You can always add more bases to the token's permissions later without needing to regenerate the token.
+
+### Step 8: Secure Your Token
+
+**Important:** Your token will be displayed only once upon creation. Make sure to copy it immediately and store it in a secure location. Treat your token like a password, as it provides direct access to your Airtable data.
+
 
 ## Getting Base, Table, and View IDs
 

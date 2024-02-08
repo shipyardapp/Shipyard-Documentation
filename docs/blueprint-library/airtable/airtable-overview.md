@@ -21,7 +21,9 @@ For information on how to set up these Blueprints successfully, please read thro
 
 
 ## Available Blueprints
-Shipyard currently has the following Blueprints readily available: 
+Shipyard currently has the following Blueprints readily available:
+
+- [Upload File from Shipyard to Airtable](airtable-upload-file-from-shipyard-to-airtable.md)
 - [Download Table or View to Shipyard](airtable-download-table-or-view-to-csv.md)
 
 ## Open Source Code
