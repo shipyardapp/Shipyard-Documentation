@@ -60,10 +60,9 @@ We recommend adding the Shipyard email address `notifications@shipyardapp.com` t
 While Shipyard currently only supports sending notifications via email, most vendors support the ability to send messages to their service with a specialized email address. Check to see if this is the case for the vendor of your choice!
 
 We've verified that this alternative works for:
-- Slack
-- Microsoft Teams
-- Pagerduty
-
+- [Slack](../how-tos/notifications/slack-notification.md)
+- [Microsoft Teams](../how-tos/notifications/microsoft-teams-notification.md)
+- [Pagerduty](../how-tos/notifications/pagerduty-notification.md)
 
 ## Screenshots
 
