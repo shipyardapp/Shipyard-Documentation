@@ -11,7 +11,7 @@ keywords:
   - issue
 ---
 
-# How to Send Slack Notifications
+# How to Send Linear Issue Notifications
 
 ## Overview
 [Notifications](../../reference/notifications.md) allow you to send messages via email to alert team members when your Fleet or Vessel is successful, errors out, or is run manually. Sometimes, you may want your notifications to go to Linear instead of email.
@@ -28,5 +28,5 @@ You've now successfully created a Linear issue notification!
 
 Now, based on the options you chose, you will create an issue directly in the team associated with the email.
 
-
+![Linear Issue Notification](../../.gitbook/assets/linear-notification.png)
 
