@@ -63,6 +63,7 @@ We've verified that this alternative works for:
 - [Slack](../how-tos/notifications/slack-notification.md)
 - [Microsoft Teams](../how-tos/notifications/microsoft-teams-notification.md)
 - [Pagerduty](../how-tos/notifications/pagerduty-notification.md)
+- [Linear](../how-tos/notifications/linear-notification.md)
 
 ## Screenshots
 
