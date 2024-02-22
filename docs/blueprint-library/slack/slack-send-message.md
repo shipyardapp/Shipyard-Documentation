@@ -16,6 +16,8 @@ keywords:
 
 Send a Slack message to any channel or DM, alerting any user in your company.
 
+To have Shipyard dynamically parse and output the contents of a file, you can include the filename in this format: `{{text:file.txt}}`
+
 ## Variables
 
 | Name | Reference | Type | Required | Default | Options | Description             |

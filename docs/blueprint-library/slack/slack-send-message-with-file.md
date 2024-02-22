@@ -16,6 +16,8 @@ keywords:
 
 Send a Slack message with a message attachment to any channel or DM, alerting any user in your company.
 
+To have Shipyard dynamically parse and output the contents of a file, you can include the filename in this format: `{{text:file.txt}}`
+
 **Note:** This Vessel cannot be used to access a local file from your computer.
 
 **Recommended Setup:**

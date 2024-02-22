@@ -16,6 +16,8 @@ keywords:
 
 Send a message to Slack conditionally by determining if a file exists or not.
 
+To have Shipyard dynamically parse and output the contents of a file, you can include the filename in this format: `{{text:file.txt}}`
+
 Vessels built with this Blueprint should never fail, as the presence or lack or presence of the file only indicates whether or not the message should be sent.
 
 Works primarily when used as part of a Fleet, where a File can be generated or downloaded by an upstream Vessel.
