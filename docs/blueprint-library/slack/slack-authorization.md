@@ -6,13 +6,14 @@ hide_title: true
 sidebar_label: Authorization
 description: Instructions on how to authorize Slack to work with Shipyard's low-code Slack templates.
 keywords:
-- slack
-- blueprint
-- template
-- authorization
+  - slack
+  - blueprint
+  - template
+  - authorization
 ---
 
-# Slack Authorization
+#  Authorization
+
 Slack Blueprints rely on users to have the Slack token of a working Slack app that's install to their organization's Workspace with the right permissions. The app must be invited to all channels the user wants to send a message to. Below are the steps of how to accomplish each of these individually.
 
 ## Creating a Slack App
@@ -43,8 +44,7 @@ Slack Blueprints rely on users to have the Slack token of a working Slack app th
    - groups:read
    - users:read
    - users:read.email
-   - files:write
-
+  
 ![](https://cdn.sanity.io/images/2xyydva6/production/3ce7b954e013f671104be84c5fd590b32a1f280f-668x585.png?w=450)
 
 At a high level, here's what these scopes mean for your application:
