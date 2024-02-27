@@ -29,8 +29,8 @@ This section presents data that can be filtered by Period, Project, and Fleet, o
 
 Based on the selected filters, you'll see:
 - **Total Runs**: The cumulative count of the Fleet runs.
-- **Total Runtime**: The total duration of the Fleet runs.
-- **Average Runtime**: The average duration of the Fleet runs.
+- **Total Runtime**: The total billable runtime of the Fleet runs.
+- **Average Runtime**: The average billable runtime of the Fleet runs.
 - **Approximate Total Runtime Cost**: An estimate of the total cost incurred by the runtime usage.
 
 #### Usage Chart
@@ -43,7 +43,8 @@ A detailed table providing metrics for each Fleet under the applied filters, inc
 - **Project Name**: The project to which a Fleet belongs.
 - **Fleet Name**: The name of the Fleet.
 - **Total Runs**: How many times the Fleet has been run.
-- **Total Runtime**: The total operational time of the Fleet.
+- **Total Runtime**: The total billable runtime of the Fleet.
+- **Average Runtime**: The average billable runtime of the Fleet.
 - **Approximate Average Runtime Cost**: The estimated average cost of the Fleet's runtime.
 
 ## Screenshots
