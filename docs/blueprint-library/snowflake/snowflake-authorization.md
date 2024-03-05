@@ -6,13 +6,14 @@ hide_title: true
 sidebar_label: Authorization
 description: Instructions on how to authorize Snowflake to work with Shipyard's low-code Snowflake templates.
 keywords:
-- snowflake
-- blueprint
-- template
-- authorization
+  - snowflake
+  - blueprint
+  - template
+  - authorization
 ---
 
-# Snowflake Authorization
+#  Authorization
+
 Connecting Snowflake to Shipyard requires you to have:
 1. A Snowflake account with read/write access to the database and all associated tables/views you wish to access. We recommend setting up an account specifically for Shipyard access.
 2. A warehouse that the account has access to. We recommend setting up a warehouse specifically for Shipyard queries.
@@ -30,7 +31,7 @@ This guide will walk you through the process required to create a unique role an
 
 ```sql
 BEGIN;
-
+ 
    -- create variables for role, user, and password (values must be in ALL_CAPS)
    SET ROLE_NAME = 'SHIPYARD_ROLE';
    SET USER_NAME = 'SHIPYARD_USER';
@@ -38,18 +39,18 @@ BEGIN;
 
    -- change role to securityadmin for set role and user
    USE ROLE securityadmin;
-
+ 
    -- create role for shipyard
    CREATE ROLE IF NOT EXISTS identifier($role_name);
    GRANT ROLE identifier($role_name) TO ROLE SYSADMIN;
-
+ 
    -- create a user for shipyard
    CREATE USER IF NOT EXISTS identifier($user_name)
    PASSWORD = $user_password
    DEFAULT_ROLE = $role_name;
-
+   
    GRANT ROLE identifier($role_name) TO USER identifier($user_name);
-
+ 
  COMMIT;
 ```
 
@@ -94,7 +95,7 @@ begin;
 
  -- change role to securityadmin for user updates
    use role securityadmin;
-
+   
 -- set default warehouse for shipyard user
    ALTER USER IF EXISTS identifier($user_name)
    SET DEFAULT_WAREHOUSE = $warehouse_name;
@@ -108,7 +109,7 @@ commit;
 
 
 **_CAUTION:_** Using an existing Warehouse may result in Shipyard processes contendending for resources.
-
+ 
 1. Log into your Snowflake Account.
 2. Open a new worksheet. Select the checkbox to run "All Queries".
 3. Paste the following script in the worksheet, changing the variables at the top as needed.
@@ -130,7 +131,7 @@ begin;
 
  -- change role to securityadmin for user updates
    use role securityadmin;
-
+   
 -- set default warehouse for shipyard user
    ALTER USER IF EXISTS identifier($user_name)
    SET DEFAULT_WAREHOUSE = $warehouse_name;
@@ -167,22 +168,22 @@ begin;
    on all tables
    in database identifier($database_name)
    to role identifier($role_name);
-
+   
    grant all
    on all views
    in database identifier($database_name)
    to role identifier($role_name);
-
+   
    grant all
    on future tables
    in database identifier($database_name)
    to role identifier($role_name);
-
+   
    grant all
    on future views
    in database identifier($database_name)
    to role identifier($role_name);
-
+   
 commit;
 ```
 
@@ -226,3 +227,32 @@ SET ALLOWED_IP_LIST = ('54.190.66.63', '52.42.73.100', '44.231.239.186', '44.225
 
 </TabItem>
 </Tabs>
+
+
+### Authenticating with a Private Key
+1. To generate a private key file, run the following in the terminal
+```bash
+openssl genrsa 2048 | openssl pkcs8 -topk8 -inform PEM -out rsa_key.p8
+```
+**_NOTE:_** You will need to generate a passphrase to open the private key file. Be sure to save this passphrase as you will need to pass it as an input in Shipyard
+
+2. Once the private key file is generated, created a corresponding public key by running the following in the terminal
+
+```bash
+openssl rsa -in rsa_key.p8 -pubout -out rsa_key.pub
+```
+3. Assign the public key to appropriate user by running an `ALTER` statement
+
+```sql
+ALTER USER jsmith SET RSA_PUBLIC_KEY='MIIBIjANBgkqh...';
+```
+**_NOTE:_** Only security administrators (i.e. users with the SECURITYADMIN role) or higher can alter a user. Aslo be sure to exclude the public key delimiters in the SQL statement.
+
+4. Verify the User's Public Key Fingerprint by running a DESCRIBE command
+ ```sql 
+ DESC USER jsmith;
+ ```
+ The fields `RSA_PUBLIC_KEY` and `RSA_PUBLIC_KEY_FP` should both be populated.
+
+
+For more information, visit the [Snowflake Documentation](https://docs.snowflake.com/en/user-guide/key-pair-auth)
