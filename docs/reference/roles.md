@@ -2,23 +2,26 @@
 id: roles
 title: Roles
 hide_title: true
-description: Information about pre-defined roles
+description: Information about predefined roles
 keywords:
  - roles
- - pre-definted
+ - predefined
 ---
 
 # Roles
 
-## Pre-defined Roles
+## Predefined Roles
 
 Roles are our new way of assigning and assessing permissions. While organizations on our Business and Enterprise plans have
 the ability to create their own custom roles and control each permission, organizations on our Team plan only have access to our
-pre-defined roles. Below are in-depth definitions of each pre-defined role and the permissions associated with them.
+predefined roles. Below are in-depth definitions of each predefined role and the permissions associated with them.
 
 ### Admin
 
-The **Admin** role is just that - **all access to everything**. That includes **Create**, **Read**, **Update**, and **Delete** permissions for:
+The **Admin** role is just that - **all access to everything**. That includes **View**, **Invite**, **Update**, and **Delete** permissions for:
+- **Users**
+
+As well as **Create**, **Read**, **Update**, and **Delete** permissions for:
 - **Projects**
 - **Blueprints**
 - **Credentials**
@@ -35,10 +38,11 @@ And access to:
 - **User Page** 
 - **Billing Page**
 - **Usage Page**
+- **Roles Page** *(If Organization is on Business or Enterprise plan)*
 
 ### Creator
 
-The **Creator** role is a bit more limiting. This **does not include** access to our **User**, **Billing**, or **Usage** page,
+The **Creator** role is a bit more limited. This **does not include** access to our **User**, **Billing**, or **Usage** page,
 but does provide Create, Read, and Update permissions for:
 - **Projects**
 - **Blueprints**
@@ -61,14 +65,14 @@ and only provides **Read** permissions for:
 - **Integrations**
 - **Fleets**
 
-
-And Trigger Actions for:
-- **Webhook**
-
-
 ### Billing
 
-The **Billing** Role has most of the same limiting permission as our **Viewer** role, however, it **does provide** access to 
-both our **Billing** and **Usage** page. However, the rest of permissions remain the same as the **Viewer** role.
+The **Billing** Role has the same permissions as our **Viewer** role, plus acess to **Billing** and **Usage** information.
 
+## Custom Roles
 
+Users on our **Business** and **Enterprise** plans that have **Role Access Permissions** have the unique ability to create and define their own **Custom Roles**. To do so, simply navigate to the **Roles** admin tab, and select *Add Role*.
+
+There, you will be presented with a modal with all permissions listed with empty checkboxes. Simply name your new custome role, select all the permissions you would like associated with that role, and then click the **Create** button. 
+
+![Role](../.gitbook/assets/add_role_modal.png)
