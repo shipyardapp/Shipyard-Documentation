@@ -53,6 +53,7 @@ but does provide Create, Read, and Update permissions for:
 
 And Trigger Actions for:
 - **On Demand**
+- **Schedule**
 - **Webhook**
 - **API**
 
