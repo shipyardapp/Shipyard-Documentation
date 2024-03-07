@@ -6,6 +6,7 @@ description: Information about predefined roles
 keywords:
  - roles
  - predefined
+ - custom
 ---
 
 # Roles
