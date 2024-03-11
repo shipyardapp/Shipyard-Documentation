@@ -21,7 +21,8 @@ For information on how to set up these Blueprints successfully, please read thro
 
 
 ## Available Blueprints
-Shipyard currently has the following Blueprints readily available: 
+Shipyard currently has the following Blueprints readily available:
+
 - [Send Message](email-send-message.md)
 - [Send Message with File](email-send-message-with-file.md)
 - [Send Message Conditionally](email-send-message-conditionally.md)

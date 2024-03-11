@@ -6,13 +6,14 @@ hide_title: true
 sidebar_label: Authorization
 description: Instructions on how to authorize Email to work with Shipyard's low-code Email templates.
 keywords:
-- email
-- blueprint
-- template
-- authorization
+  - email
+  - blueprint
+  - template
+  - authorization
 ---
 
-# Email Authorization
+#  Authorization
+
 ## Google
 In order to send an email from a Google account, you'll need to use an [application specific password](https://support.google.com/accounts/answer/185833?hl=en).
 
@@ -141,7 +142,7 @@ It's possible that you will run into authentication issues because Microsoft see
 ![](https://cdn.sanity.io/images/2xyydva6/production/8e62e165c946233db3c8c9868c825ef8f4f6f1fb-830x817.png?w=450)
 
 3. Create an identity by verifying a specific email address. You can also verify a domain if that suits your setup better.
-
+   
 ![](https://cdn.sanity.io/images/2xyydva6/production/ceef9c4ddad886ed779da397ff634d5f9eca6d3f-837x822.png?w=450)
 
 4. Navigate to your email and click the confirmation link to confirm that you have access to the right email.
@@ -176,4 +177,3 @@ We recommend the following settings for successfully sending an email with Amazo
 
 **_NOTE:_**
 If your SES instance is running in a region other than `us-west-2`, you'll want to use that region in the SMTP Host.
-
