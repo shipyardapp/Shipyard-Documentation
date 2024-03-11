@@ -6,13 +6,14 @@ hide_title: true
 sidebar_label: Authorization
 description: Instructions on how to authorize Domo to work with Shipyard's low-code Domo templates.
 keywords:
-- domo
-- blueprint
-- template
-- authorization
+  - domo
+  - blueprint
+  - template
+  - authorization
 ---
 
-# Domo Authorization
+#  Authorization
+
 Domo Blueprints rely on users to:
 
 - Provide their username and password or an access token

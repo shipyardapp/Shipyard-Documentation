@@ -6,13 +6,14 @@ hide_title: true
 sidebar_label: Authorization
 description: Instructions on how to authorize Databricks SQL Warehouse to work with Shipyard's low-code Databricks SQL Warehouse templates.
 keywords:
-- databricks sql warehouse
-- blueprint
-- template
-- authorization
+  - databricks sql warehouse
+  - blueprint
+  - template
+  - authorization
 ---
 
-# Databricks SQL Warehouse Authorization
+#  Authorization
+
 In order to get started with the Databricks SQL Warehouse Blueprints, you will need generate an access token for programatic SQL access. Additionally, you will need to obtain the Server Host address as well as the HTTP Path for the SQL warehouse. This guide will outline how to obtain all necessary fields. 
 
 ## Obtaining an Access Token
@@ -57,5 +58,4 @@ GRANT SELECT ON SCHEMA <schema> TO
 
 GRANT MODIFY ON SCHEMA <schema> TO 
 <shipyard-token>;
-
 ```

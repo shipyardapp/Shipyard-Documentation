@@ -3,16 +3,17 @@ id: databricks-sql-warehouse-download-query-results-to-shipyard
 title: Databricks SQL Warehouse Template - Download Query Results to Shipyard
 hide_title: true
 sidebar_label: Download Query Results to Shipyard
-description: Information about Shipyard's low-code Databricks SQL Warehouse Download Query Results to Shipyard blueprint. Quickly download the results of Databricks SQL query to Shipyard 
+description: Information about Shipyard's low-code Databricks SQL Warehouse Download Query Results to Shipyard blueprint. Quickly download the results of Databricks SQL query to Shipyard
 keywords:
-    - databricks sql warehouse
-    - blueprint
-    - template
+  - databricks sql warehouse
+  - blueprint
+  - template
 ---
 
 # Databricks SQL Warehouse - Download Query Results to Shipyard
 
 ## Overview
+
 Quickly download the results of Databricks SQL query to Shipyard. You can choose to output the results as a CSV or a Parquet file. 
 
 __Recommended Setup__
@@ -23,21 +24,26 @@ This will not download the file to your local computer, but to the home director
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:-----|:----------|:-----|:---------|:--------|:--------|:------------|
-| Access Token | DATABRICKS_SQL_ACCESS_TOKEN  | Password |:white_check_mark: | - | - | The access token generated in Databricks for programatic access |
-| Databricks Server Host | DATABRICKS_SQL_SERVER_HOST  | Alphanumeric |:white_check_mark: | - | - | The URL address of the SQL warehouse |
-| Warehouse HTTP Path | DATABRICKS_SQL_HTTP_PATH  | Alphanumeric |:white_check_mark: | - | - | The extended path for the SQL warehouse |
-| Catalog | DATABRICKS_SQL_CATALOG  | Alphanumeric |:heavy_minus_sign: | - | - | The optional catalog to connect to. If none is provided, this will default to Hive Metastore |
-| Schema | DATABRICKS_SQL_SCHEMA  | Alphanumeric |:heavy_minus_sign: | - | - | The optional schema to connect to. If none is provided, the blueprint will connect to the `default` schema |
-| Query | DATABRICKS_SQL_QUERY  | Alphanumeric |:white_check_mark: | - | - | The query to send to Databricks |
-| Shipyard Folder Name | DATABRICKS_SQL_FOLDER_NAME  | Alphanumeric |:heavy_minus_sign: | - | - | The optional name of the folder where the file in Shipyard is located |
-| Shipyard File Name | DATABRICKS_SQL_FILE_NAME  | Alphanumeric |:white_check_mark: | - | - | The name of the outputted file |
-| File Type | DATABRICKS_SQL_FILE_TYPE  | Select |:white_check_mark: | `csv` | CSV: `csv`<br></br><br></br>Parquet: `parquet`<br></br><br></br> | The file type to load |
+| Name | Reference | Type | Required | Default | Options | Description             |
+|:-----|:----------|:-----|:---------|:--------|:--------|:------------------------|
+| Access Token | DATABRICKS_SQL_ACCESS_TOKEN | Password | :white_check_mark: | - | - | The access token generated in Databricks for programatic access |
+| Databricks Server Host | DATABRICKS_SQL_SERVER_HOST | Alphanumeric | :white_check_mark: | - | - | The URL address of the SQL warehouse |
+| Warehouse HTTP Path | DATABRICKS_SQL_HTTP_PATH | Alphanumeric | :white_check_mark: | - | - | The extended path for the SQL warehouse |
+| Catalog | DATABRICKS_SQL_CATALOG | Alphanumeric | :heavy_minus_sign: | - | - | The optional catalog to connect to. If none is provided, this will default to Hive Metastore |
+| Schema | DATABRICKS_SQL_SCHEMA | Alphanumeric | :heavy_minus_sign: | - | - | The optional schema to connect to. If none is provided, the blueprint will connect to the `default` schema |
+| Query | DATABRICKS_SQL_QUERY | Alphanumeric | :white_check_mark: | - | - | The query to send to Databricks |
+| Shipyard Folder Name | DATABRICKS_SQL_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | The optional name of the folder where the file in Shipyard is located |
+| Shipyard File Name | DATABRICKS_SQL_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | The name of the outputted file |
+| File Type | DATABRICKS_SQL_FILE_TYPE | Select | :white_check_mark: | `csv` | CSV: `csv`<br></br><br></br>Parquet: `parquet`<br></br><br></br> | The file type to load |
+
+
 
 
 ## YAML
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+
+Below is the YAML template for this Blueprint and can be used in the
+Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+
 ```yaml
 source:
   blueprint: Databricks SQL Warehouse - Download Query Results to Shipyard
@@ -69,5 +75,6 @@ guardrails:
     - '210'
     - '211'
     - '249'
+ ```
 
-```
+
