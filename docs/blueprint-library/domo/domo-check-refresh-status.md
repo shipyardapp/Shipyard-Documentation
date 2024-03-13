@@ -3,16 +3,17 @@ id: domo-check-refresh-status
 title: Domo Template - Check Refresh Status (Deprecated)
 hide_title: true
 sidebar_label: Check Refresh Status (Deprecated)
-description: Information about Shipyard's low-code Domo Check Refresh Status (Deprecated) blueprint. Check the status of a recently refreshed dataset in Domo. 
+description: Information about Shipyard's low-code Domo Check Refresh Status (Deprecated) blueprint. Check the status of a recently refreshed dataset in Domo.
 keywords:
-    - domo
-    - blueprint
-    - template
+  - domo
+  - blueprint
+  - template
 ---
 
 # Domo - Check Refresh Status (Deprecated)
 
 ## Overview
+
 This Blueprint has been deprecated. Please use the vendor's "Trigger" Blueprint and set the "Wait for Completion" option to "True". Using this new option is free, more stable, and will complete faster. Read more about this change [here](https://www.shipyardapp.com/blog/orchestrate-data-tools-free).
 
 Check the job status of a dataset that has recently been refreshed in Domo.
@@ -26,16 +27,21 @@ Check the job status of a dataset that has recently been refreshed in Domo.
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:-----|:----------|:-----|:---------|:--------|:--------|:------------|
-| Client ID | DOMO_CLIENT_ID  | Alphanumeric |:white_check_mark: | - | - | Client ID of your organization's Domo App. |
-| Secret | DOMO_SECRET_KEY  | Password |:white_check_mark: | - | - | Secret associated with the provided Client ID. |
-| Dataset ID | DOMO_DATASET_ID  | Alphanumeric |:white_check_mark: | - | - | UUID of the dataset you want to download, typically found at the end of the URL. |
-| Execution ID | DOMO_EXECUTION_ID  | Alphanumeric |:heavy_minus_sign: | - | - | The ID of a specific execution you check the status of. If left blank, will try to find the execution ID from an "Refresh Dataset" Vessel that ran upstream. |
+| Name | Reference | Type | Required | Default | Options | Description             |
+|:-----|:----------|:-----|:---------|:--------|:--------|:------------------------|
+| Client ID | DOMO_CLIENT_ID | Alphanumeric | :white_check_mark: | - | - | Client ID of your organization's Domo App. |
+| Secret | DOMO_SECRET_KEY | Password | :white_check_mark: | - | - | Secret associated with the provided Client ID. |
+| Dataset ID | DOMO_DATASET_ID | Alphanumeric | :white_check_mark: | - | - | UUID of the dataset you want to download, typically found at the end of the URL. |
+| Execution ID | DOMO_EXECUTION_ID | Alphanumeric | :heavy_minus_sign: | - | - | The ID of a specific execution you check the status of. If left blank, will try to find the execution ID from an "Refresh Dataset" Vessel that ran upstream. |
+
+
 
 
 ## YAML
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+
+Below is the YAML template for this Blueprint and can be used in the
+Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+
 ```yaml
 source:
   blueprint: Domo - Check Refresh Status (Deprecated)
@@ -57,5 +63,6 @@ guardrails:
     - '205'
     - '210'
     - '211'
+ ```
 
-```
+

@@ -21,7 +21,8 @@ For information on how to set up these Blueprints successfully, please read thro
 
 
 ## Available Blueprints
-Shipyard currently has the following Blueprints readily available: 
+Shipyard currently has the following Blueprints readily available:
+
 - [Upload File to Table](databricks-sql-warehouse-upload-file-to-table.md)
 - [Download Query Results to Shipyard](databricks-sql-warehouse-download-query-results-to-shipyard.md)
 - [Execute Query](databricks-sql-warehouse-execute-query.md)

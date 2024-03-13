@@ -3,55 +3,41 @@ id: databricks-sql-warehouse-execute-query
 title: Databricks SQL Warehouse Template - Execute Query
 hide_title: true
 sidebar_label: Execute Query
-description: Information about Shipyard's low-code Databricks SQL Warehouse Execute Query blueprint. Quickly execute a SQL within a Databricks SQL Warehouse 
+description: Information about Shipyard's low-code Databricks SQL Warehouse Execute Query blueprint. Quickly execute a SQL within a Databricks SQL Warehouse
 keywords:
-    - databricks sql warehouse
-    - blueprint
-    - template
+  - databricks sql warehouse
+  - blueprint
+  - template
 ---
 
 # Databricks SQL Warehouse - Execute Query
 
 ## Overview
+
 Quickly execute a SQL within a Databricks SQL Warehouse
 
-### Large File Ingestion
-For larger files (greater than 100,000 rows), this blueprint can be used to ingest the data assuming it is first staged in a cloud storage provider like S3. Assuming that is the case, the data can be ingested into Databricks using a `COPY INTO` statement. An example of this would be:
-
-```sql
-COPY INTO my_json_data
-FROM 's3://my-bucket/jsonData' WITH (
-  CREDENTIAL (AWS_ACCESS_KEY = '...', AWS_SECRET_KEY = '...', AWS_SESSION_TOKEN = '...')
-)
-FILEFORMAT = JSON
-
-COPY INTO my_json_data
-FROM 'abfss://container@storageAccount.dfs.core.windows.net/jsonData' WITH (
-  CREDENTIAL (AZURE_SAS_TOKEN = '...')
-)
-FILEFORMAT = JSON
-```
-
-See [here](https://docs.databricks.com/en/sql/language-manual/delta-copy-into.html) for details. 
-
-
 **NOTE**
-This vessel will not return any files, so if you are looking to fetch data from Databricks, use the `Databricks SQL Warehouse - Download Query Results to Shipyard` Blueprint. Intended use of this blueprint is for queries with no return values (i.e. ALTER, DELETE/DROP, CREATE, etc.)
+This vessel will not return any files, so if you are looking to fetch data from Databricks, use the `Databricks SQL Warehouse - Download Query Results to Shipyard` Blueprint. Intended use of this blueprint is for queries with no return values (i.e. ALTER TABLE, DELETE TABLE, etc.)
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:-----|:----------|:-----|:---------|:--------|:--------|:------------|
-| Access Token | DATABRICKS_SQL_ACCESS_TOKEN  | Password |:white_check_mark: | - | - | The access token generated in Databricks for programatic access |
-| Databricks Server Host | DATABRICKS_SQL_SERVER_HOST  | Alphanumeric |:white_check_mark: | - | - | The URL address of the SQL warehouse |
-| Warehouse HTTP Path | DATABRICKS_SQL_HTTP_PATH  | Alphanumeric |:white_check_mark: | - | - | The extended path for the SQL warehouse |
-| Catalog | DATABRICKS_SQL_CATALOG  | Alphanumeric |:heavy_minus_sign: | - | - | The optional catalog to connect to. If none is provided, this will default to Hive Metastore |
-| Schema | DATABRICKS_SQL_SCHEMA  | Alphanumeric |:heavy_minus_sign: | - | - | The optional schema to connect to. If none is provided, the blueprint will connect to the `default` schema |
-| Query | DATABRICKS_SQL_QUERY  | Alphanumeric |:white_check_mark: | - | - | The query to send to Databricks |
+| Name | Reference | Type | Required | Default | Options | Description             |
+|:-----|:----------|:-----|:---------|:--------|:--------|:------------------------|
+| Access Token | DATABRICKS_SQL_ACCESS_TOKEN | Password | :white_check_mark: | - | - | The access token generated in Databricks for programatic access |
+| Databricks Server Host | DATABRICKS_SQL_SERVER_HOST | Alphanumeric | :white_check_mark: | - | - | The URL address of the SQL warehouse |
+| Warehouse HTTP Path | DATABRICKS_SQL_HTTP_PATH | Alphanumeric | :white_check_mark: | - | - | The extended path for the SQL warehouse |
+| Catalog | DATABRICKS_SQL_CATALOG | Alphanumeric | :heavy_minus_sign: | - | - | The optional catalog to connect to. If none is provided, this will default to Hive Metastore |
+| Schema | DATABRICKS_SQL_SCHEMA | Alphanumeric | :heavy_minus_sign: | - | - | The optional schema to connect to. If none is provided, the blueprint will connect to the `default` schema |
+| Query | DATABRICKS_SQL_QUERY | Alphanumeric | :white_check_mark: | - | - | The query to send to Databricks |
+
+
 
 
 ## YAML
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+
+Below is the YAML template for this Blueprint and can be used in the
+Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+
 ```yaml
 source:
   blueprint: Databricks SQL Warehouse - Execute Query
@@ -80,5 +66,6 @@ guardrails:
     - '210'
     - '211'
     - '249'
+ ```
 
-```
+

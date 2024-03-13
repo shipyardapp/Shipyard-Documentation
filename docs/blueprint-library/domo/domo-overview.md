@@ -21,7 +21,8 @@ For information on how to set up these Blueprints successfully, please read thro
 
 
 ## Available Blueprints
-Shipyard currently has the following Blueprints readily available: 
+Shipyard currently has the following Blueprints readily available:
+
 - [Check Refresh Status (Deprecated)](domo-check-refresh-status.md)
 - [Upload File as Dataset from Shipyard](domo-upload-csv-as-dataset.md)
 - [Download Card to Shipyard](domo-download-card.md)

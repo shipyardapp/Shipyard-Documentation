@@ -6,13 +6,14 @@ hide_title: true
 sidebar_label: Authorization
 description: Instructions on how to authorize Hex to work with Shipyard's low-code Hex templates.
 keywords:
-- hex
-- blueprint
-- template
-- authorization
+  - hex
+  - blueprint
+  - template
+  - authorization
 ---
 
-# Hex Authorization
+#  Authorization
+
 To get started with the Hex Blueprints, you will need the following items from Hex:
 
 - API Token
