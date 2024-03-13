@@ -11,80 +11,44 @@ keywords:
 
 # Roles
 
-## Predefined Roles
+## Definition
 
-Roles are our new way of assigning and assessing permissions. While organizations on our Business and Enterprise plans have
-the ability to create their own custom roles and control each permission, organizations on our Team plan only have access to our
-predefined roles. Below are in-depth definitions of each predefined role and the permissions associated with them.
+Roles are our new way of assigning and assessing permissions. While previously, all permissions were directly assigned to and associated with a user in an organization, now users will be assigned a role which have a defined set of permissions associated with the role itself. There are two types of Roles, **Predefined** and **Custom**, and there are four **Predefined** Roles:
 
-### Admin
+1. Admin
+2. Creator
+3. Viewer
+4. Billing
 
-The **Admin** role is just that - **all access to everything**. That includes **View**, **Invite**, **Update**, and **Delete** permissions for:
-- **Users**
+:::info
 
-As well as **Create**, **Read**, **Update**, and **Delete** permissions for:
-- **Projects**
-- **Blueprints**
-- **Credentials**
-- **Integrations**
-- **Fleets**
+The ability to View, Create, Edit, and Delete Custom Roles is currently only available to customers who have **Roles** permission and are on the Business or Enterprise plan.
 
-Trigger Actions for:
-- **On Demand**
-- **Schedule**
-- **Webhook**
-- **API**
+:::
 
-And access to:
-- **User Page** 
-- **Billing Page**
-- **Usage Page**
-- **Roles Page** *(If Organization is on Business or Enterprise plan)*
+## Screenshots
 
-### Creator
+**Roles Table**
+![Role](../.gitbook/assets/roles_table.png)
 
-The **Creator** role is a bit more limited. This **does not include** access to our **User**, **Billing**, or **Usage** page,
-but does provide Create, Read, and Update permissions for:
-- **Projects**
-- **Blueprints**
-- **Credentials**
-- **Integrations**
-- **Fleets**
+**Admin Role**
+![Role](../.gitbook/assets/admin_role_permissions.png)
 
-And Trigger Actions for:
-- **On Demand**
-- **Schedule**
-- **Webhook**
-- **API**
+**Creator Role**
+![Role](../.gitbook/assets/creator_role_permissions.png)
 
-### Viewer
+**Viewer Role**
+![Role](../.gitbook/assets/viewer_role_permissions.png)
 
-The **Viewer** role is the most limiting of our roles. This **does not include** access to our **User**, **Billing**, or **Usage**, 
-and only provides **Read** permissions for:
-- **Projects**
-- **Blueprints**
-- **Credentials**
-- **Integrations**
-- **Fleets**
+**Billing Role** 
+![Role](../.gitbook/assets/billing_role_permissions.png)
 
-### Billing
-
-The **Billing** Role has the same permissions as our **Viewer** role, plus acess to **Billing** and **Usage** information.
-
-## Custom Roles
-
-### Creating New Custom Roles
-
-Users on our **Business** and **Enterprise** plans that have **Role Access Permissions** have access to our new Admin **Roles** tab and possess the unique ability to create and define their own **Custom Roles**. To do so, simply navigate to the **Roles** admin tab, and select *Add Role*.
-
-There, you will be presented with a modal with all permissions listed with empty checkboxes. Simply name your new custome role, select all the permissions you would like associated with that role, and then click the **Create** button. 
-
+**Creating a Custom Role**
 ![Role](../.gitbook/assets/add_role_modal.png)
 
-### Editing Custom Roles
 
-Along with creating new **Custom Roles** users with **Role Access Permissions** also have the ability to edit exiting **Custom Roles** that have been created. Clicking the **Edit** button in the action column next to the role will bring up a similar modal as the **Add Role**, but with the exisiting permissions on that role checked. Here you can remove or add permissions. Saving your new edits will update that role. 
+## Limitations
 
-### Deleting Custom Roles
-
-With creating and editing **Custom Roles**, users may also delete roles. However, if you attempt to delete a role that is currently assigned to a user in your organization, you must first **assign that user a new role**. 
+1. The ability to View, Create, Edit, and Delete Custom Roles are currently limited to customers who have **Roles** permission and are on the Business or Enterprise Plan.
+2. Predefined Roles can only be viewed, not edited.
+3. You cannot delete a role that is currently assigned to a user in your organization. You must first assign that user a new role.
