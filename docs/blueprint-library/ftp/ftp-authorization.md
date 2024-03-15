@@ -6,13 +6,14 @@ hide_title: true
 sidebar_label: Authorization
 description: Instructions on how to authorize FTP to work with Shipyard's low-code FTP templates.
 keywords:
-- ftp
-- blueprint
-- template
-- authorization
+  - ftp
+  - blueprint
+  - template
+  - authorization
 ---
 
-# FTP Authorization
+#  Authorization
+
 # FTP Authorization
 
 In order to get started with FTP Blueprints, a user and password with read and write access is required.
