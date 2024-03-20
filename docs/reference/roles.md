@@ -29,22 +29,22 @@ The ability to View, Create, Edit, and Delete Custom Roles is currently only ava
 ## Screenshots
 
 **Roles Table**
-![Role](../.gitbook/assets/roles_table.png)
+![Screenshot of Roles Table](../.gitbook/assets/roles_table.png)
 
 **Admin Role**
-![Role](../.gitbook/assets/admin_role_permissions.png)
+![Screenshot of Admin Role](../.gitbook/assets/admin_role_permissions.png)
 
 **Creator Role**
-![Role](../.gitbook/assets/creator_role_permissions.png)
+![Screenshot of Creator Role](../.gitbook/assets/creator_role_permissions.png)
 
 **Viewer Role**
-![Role](../.gitbook/assets/viewer_role_permissions.png)
+![Screenshot of Viewer Role](../.gitbook/assets/viewer_role_permissions.png)
 
 **Billing Role** 
-![Role](../.gitbook/assets/billing_role_permissions.png)
+![Screenshot of Billing Role](../.gitbook/assets/billing_role_permissions.png)
 
 **Creating a Custom Role**
-![Role](../.gitbook/assets/add_role_modal.png)
+![Screenshot of Custom Role Creation](../.gitbook/assets/add_role_modal.png)
 
 
 ## Limitations
