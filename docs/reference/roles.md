@@ -15,10 +15,10 @@ keywords:
 
 Roles are our new way of assigning and assessing permissions. While previously, all permissions were directly assigned to and associated with a user in an organization, now users will be assigned a role which have a defined set of permissions associated with the role itself. There are two types of Roles, **Predefined** and **Custom**, and there are four **Predefined** Roles:
 
-1. Admin
-2. Creator
-3. Viewer
-4. Billing
+1. Admin: Has all permissions and automatically has access to all projects in the organization.
+2. Creator: Has permissions to view, create, and update elements and cannot view account information.
+3. Viewer: Has view-only access and cannot view account information.
+4. Billing: Has view-only access and can view account information.
 
 :::info
 
