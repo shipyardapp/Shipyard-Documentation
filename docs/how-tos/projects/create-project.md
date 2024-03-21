@@ -21,7 +21,8 @@ If you find yourself needing to create additional Fleets that have a common them
 2. Click the **New Project** button in the top-right corner, or click the dashed card that says New Project.
 3. Give your project a name that's descriptive and easy to understand.
 4. Set your project's [timezone](../../reference/other-functions/timestamps-and-timezones.md). All Vessels created under this project will use this timezone for [Triggers](../../reference/triggers/triggers-overview.md).
-5. Click the **Create** button at the bottom of the page.
+5. If you have permission to update users' roles and project access, you can add users to the project in the *Users with Access* section. If you don't have permission, you will not see this section.
+6. Click the **Create** button at the bottom of the page.
 
 <div dangerouslySetInnerHTML={{ __html: `<div style="position: relative; padding-bottom: calc(66.66666666666666% + 41px); height: 0;"><iframe src="https://demo.arcade.software/noV8rwk2CJ1WRu979m5U?embed" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;color-scheme: light;" title="How to Create a New Project"></iframe></div>` }} />
 

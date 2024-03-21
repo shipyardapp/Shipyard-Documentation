@@ -18,8 +18,9 @@ If you find yourself needing to change [timezones](../../reference/other-functio
 
 1. On the sidebar, click **Projects** then **View All Projects**.
 2. Find the individual Project that you want to edit and click the **cog** next to the Project name.
-3. Edit your Project name or change your project's timezone.
-4. Click the **Save** button at the bottom of the page.
+3. Edit your project's name or change your project's timezone.
+4. If you have permission to update users' roles and project access, you can add or remove users from the project in the *Users with Access* section. If you don't have permission, you will not see this section.
+5. Click the **Save** button at the bottom of the page.
 
 <div dangerouslySetInnerHTML={{ __html: `<div style="position: relative; padding-bottom: calc(66.66666666666666% + 41px); height: 0;"><iframe src="https://demo.arcade.software/sxsmZ3PzPR948g3IipsQ?embed" frameborder="0" loading="lazy" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;color-scheme: light;" title="How to Edit a Project"></iframe></div>` }} />
 
