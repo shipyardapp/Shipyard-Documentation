@@ -67,6 +67,8 @@ guardrails:
   runtime_cutoff: 1h0m0s
   exclude_exit_code_ranges:
     - '202'
+    - '205'
+    - '210'
  ```
 
 

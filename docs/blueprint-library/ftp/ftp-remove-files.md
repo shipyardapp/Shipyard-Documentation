@@ -55,7 +55,9 @@ guardrails:
   retry_wait: 0h0m0s
   runtime_cutoff: 1h0m0s
   exclude_exit_code_ranges:
+    - '101'
     - '202'
+    - '210'
  ```
 
 
