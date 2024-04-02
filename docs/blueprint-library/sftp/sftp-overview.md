@@ -21,7 +21,8 @@ For information on how to set up these Blueprints successfully, please read thro
 
 
 ## Available Blueprints
-Shipyard currently has the following Blueprints readily available: 
+Shipyard currently has the following Blueprints readily available:
+
 - [Download Files to Shipyard](sftp-download-files.md)
 - [Upload Files from Shipyard](sftp-upload-files.md)
 - [Move or Rename Files](sftp-move-or-rename-files.md)
