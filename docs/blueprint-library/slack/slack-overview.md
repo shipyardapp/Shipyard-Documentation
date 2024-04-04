@@ -21,7 +21,8 @@ For information on how to set up these Blueprints successfully, please read thro
 
 
 ## Available Blueprints
-Shipyard currently has the following Blueprints readily available: 
+Shipyard currently has the following Blueprints readily available:
+
 - [Send Message with File](slack-send-message-with-file.md)
 - [Send Message](slack-send-message.md)
 - [Send Message Conditionally](slack-send-message-conditionally.md)
