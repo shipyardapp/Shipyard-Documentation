@@ -21,7 +21,8 @@ For information on how to set up these Blueprints successfully, please read thro
 
 
 ## Available Blueprints
-Shipyard currently has the following Blueprints readily available: 
+Shipyard currently has the following Blueprints readily available:
+
 - [Download Look as File to Shipyard](looker-download-look-as-file.md)
 - [Download SQL Query as File to Shipyard](looker-download-sql-query-as-file.md)
 - [Create SQL Runner Query](looker-create-sql-runner-query.md)

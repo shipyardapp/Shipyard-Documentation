@@ -6,13 +6,14 @@ hide_title: true
 sidebar_label: Authorization
 description: Instructions on how to authorize Looker to work with Shipyard's low-code Looker templates.
 keywords:
-- looker
-- blueprint
-- template
-- authorization
+  - looker
+  - blueprint
+  - template
+  - authorization
 ---
 
-# Looker Authorization
+#  Authorization
+
 ## API Credentials
 
 In order to make use of the Looker API, you will need a Client Id and an associated Client Secret. Follow these steps as a demonstration on how to create those.
