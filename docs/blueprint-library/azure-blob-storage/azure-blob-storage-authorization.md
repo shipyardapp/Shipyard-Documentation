@@ -6,13 +6,14 @@ hide_title: true
 sidebar_label: Authorization
 description: Instructions on how to authorize Azure Blob Storage to work with Shipyard's low-code Azure Blob Storage templates.
 keywords:
-- azure blob storage
-- blueprint
-- template
-- authorization
+  - azure blob storage
+  - blueprint
+  - template
+  - authorization
 ---
 
-# Azure Blob Storage Authorization
+#  Authorization
+
 In order to get started with the Azure Blueprints, an access key connection string tied to the Azure Blob Storage you want to access is required.
 
 ## Access Key Connection String
@@ -28,4 +29,3 @@ In order to get started with the Azure Blueprints, an access key connection stri
 	![Storage accounts search](https://cdn.sanity.io/images/2xyydva6/production/2a2afc81d75764e395cd16f0d43f1131406d4400-716x604.png?w=450)
 6. Click the "**copy**" icon for the "**Connection string**" text field under the `key` option  
 7. Store the "Connection String" value somewhere safe. It will be used for all Azure Blob Storage Blueprints.
-
