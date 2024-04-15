@@ -12,6 +12,10 @@ keywords:
 
 # Portable - Trigger Flow
 
+:::info
+This Blueprint is classified as "Free" and does not incur billable runtime. [Learn more](../../reference/blueprints/blueprint-library/blueprint-library-overview.md#free-blueprints).
+:::
+
 ## Overview
 
 Use this blueprint to trigger a Portable flow to run. It is recommended to leave the `Wait for Completion` option set to `TRUE` so that the vessel exits upon completion of the flow in Portable. If the option is set to `FALSE` the vessel will exit upon successfully triggering the flow.

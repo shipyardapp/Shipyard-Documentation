@@ -12,6 +12,10 @@ keywords:
 
 # Hex - Trigger Project
 
+:::info
+This Blueprint is classified as "Free" and does not incur billable runtime. [Learn more](../../reference/blueprints/blueprint-library/blueprint-library-overview.md#free-blueprints).
+:::
+
 ## Overview
 
 Immediately runs a Hex project. The project must already be set up  and published within the Hex interface.

@@ -12,6 +12,10 @@ keywords:
 
 # Coalesce - Trigger Job
 
+:::info
+This Blueprint is classified as "Free" and does not incur billable runtime. [Learn more](../../reference/blueprints/blueprint-library/blueprint-library-overview.md#free-blueprints).
+:::
+
 ## Overview
 
 Trigger the execution of a Coalesce job. 

@@ -91,7 +91,7 @@ Blueprints are broken down into a few categories with core functionality that sh
 
 #### Integrations
 - [Email](../../../blueprint-library/email/email-overview.md)
-- [Microsoft Teams](../../../blueprint-library/microsoft-teams/microsoft-teams.md)
+- [Microsoft Teams](../../../blueprint-library/microsoft-teams/microsoft-teams-overview.md)
 - [Slack](../../../blueprint-library/slack/slack-overview.md)
 
 #### Actions
@@ -104,7 +104,7 @@ Blueprints are broken down into a few categories with core functionality that sh
 #### Integrations
 - [Domo](../../../blueprint-library/domo/domo-overview.md)
 - [Looker](../../../blueprint-library/looker/looker-overview.md)
-- [Microsoft Power BI](../../../blueprint-library/microsoft-power-bi/microsoft-power-bi.md)
+- [Microsoft Power BI](../../../blueprint-library/microsoft-power-bi/microsoft-power-bi-overview.md)
 - [Mode](../../../blueprint-library/mode/mode-overview.md)
 - [Tableau](../../../blueprint-library/tableau/tableau-overview.md)
 - [Thoughtspot](../../../blueprint-library/thoughtspot/thoughtspot-overview.md)

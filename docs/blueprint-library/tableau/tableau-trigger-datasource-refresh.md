@@ -12,6 +12,10 @@ keywords:
 
 # Tableau - Trigger Datasource Refresh
 
+:::info
+This Blueprint is classified as "Free" and does not incur billable runtime. [Learn more](../../reference/blueprints/blueprint-library/blueprint-library-overview.md#free-blueprints).
+:::
+
 ## Overview
 Manually trigger a refresh of a datasource in Tableau.
 

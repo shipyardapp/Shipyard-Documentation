@@ -12,6 +12,10 @@ keywords:
 
 # Tableau - Trigger Workbook Refresh
 
+:::info
+This Blueprint is classified as "Free" and does not incur billable runtime. [Learn more](../../reference/blueprints/blueprint-library/blueprint-library-overview.md#free-blueprints).
+:::
+
 ## Overview
 Manually trigger a refresh of a workbook in Tableau.
 
