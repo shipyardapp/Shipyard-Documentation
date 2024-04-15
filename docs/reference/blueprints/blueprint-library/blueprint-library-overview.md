@@ -27,7 +27,7 @@ Library Blueprints are immediately available to every user in an organization. T
 
 In an effort to be transparent about how our Blueprints work, we open-source the code and make it available on our [GitHub](https://github.com/shipyardapp). The repositories are broken up by vendor and all end in `-blueprints`. If some functionality isn't working appropriately, you can open an issue in GitHub or submit a pull request with the proposed changes.
 
-## Types of Blueprints
+## Structure of the Blueprint Library
 
 Blueprints are broken down into a few categories with core functionality that should be achieved. The following is a list of the integrations currently built out and the possible actions related to each category.
 
@@ -36,7 +36,6 @@ Blueprints are broken down into a few categories with core functionality that sh
 #### Integrations
 - [Amazon Athena](../../../blueprint-library/amazon-athena/amazon-athena-overview.md)
 - [Amazon Redshift](../../../blueprint-library/amazon-redshift/amazon-redshift-overview.md)
-- [bit.io](../../../blueprint-library/bitio/bitio-overview.md)
 - [Google BigQuery](../../../blueprint-library/google-bigquery/google-bigquery-overview.md)
 - [Microsoft SQL Server](../../../blueprint-library/microsoft-sql-server/microsoft-sql-server-overview.md)
 - [MySQL](../../../blueprint-library/mysql/mysql-overview.md)
@@ -136,6 +135,13 @@ Blueprints are broken down into a few categories with core functionality that sh
 - Decompress Files
 - Convert Files
 - Compare File Contents
+
+## Free Blueprints
+A portion of our Blueprints are 100% free, never incurring [billable runtime](../../../faqs/plans/billable-runtime.md). These Blueprints are marked with "Trigger" in the name and are labeled in the application as "Free".
+
+We choose to make these Blueprints free because the primary function is telling an external service to run a job. The majority of runtime in these instances is spent waiting for the external service to finish running the job, rather than actively processing data on our platform. 
+
+If there's another Blueprint you feel meets this condition that isn't classified as free, please reach out to support.
 
 ## Screenshots
 ![Over 50+ Blueprints to take action on modern data platforms](../../../.gitbook/assets/shipyard_2022_07_27_10_21_09.png)
