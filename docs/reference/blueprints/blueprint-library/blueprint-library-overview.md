@@ -36,6 +36,7 @@ Blueprints are broken down into a few categories with core functionality that sh
 #### Integrations
 - [Amazon Athena](../../../blueprint-library/amazon-athena/amazon-athena-overview.md)
 - [Amazon Redshift](../../../blueprint-library/amazon-redshift/amazon-redshift-overview.md)
+- [Databricks SQL Warehouse](../../../blueprint-library/databricks-sql-warehouse/databricks-sql-warehouse-overview.md)
 - [Google BigQuery](../../../blueprint-library/google-bigquery/google-bigquery-overview.md)
 - [Microsoft SQL Server](../../../blueprint-library/microsoft-sql-server/microsoft-sql-server-overview.md)
 - [MySQL](../../../blueprint-library/mysql/mysql-overview.md)
@@ -71,6 +72,8 @@ Blueprints are broken down into a few categories with core functionality that sh
 #### Integrations
 - [Airtable](../../../blueprint-library/airtable/airtable-overview.md)
 - [Google Sheets](../../../blueprint-library/google-sheets/google-sheets-overview.md)
+- [Notion](../../../blueprint-library/notion/notion-overview.md)
+- [Smartsheet](../../../blueprint-library/smartsheet/smartsheet-overview.md)
 
 #### Actions
 - Download Sheet to a CSV
@@ -81,7 +84,8 @@ Blueprints are broken down into a few categories with core functionality that sh
 
 #### Integrations
 - [Email](../../../blueprint-library/email/email-overview.md)
-- [Slack](../../../blueprint-library/email/email-overview.md)
+- [Microsoft Teams](../../../blueprint-library/microsoft-teams/microsoft-teams.md)
+- [Slack](../../../blueprint-library/slack/slack-overview.md)
 
 #### Actions
 - Send Message
@@ -92,28 +96,59 @@ Blueprints are broken down into a few categories with core functionality that sh
 
 #### Integrations
 - [Domo](../../../blueprint-library/domo/domo-overview.md)
-- [Tableau](../../../blueprint-library/tableau/tableau-overview.md)
+- [Looker](../../../blueprint-library/looker/looker-overview.md)
+- [Microsoft Power BI](../../../blueprint-library/microsoft-power-bi/microsoft-power-bi.md)
 - [Mode](../../../blueprint-library/mode/mode-overview.md)
+- [Tableau](../../../blueprint-library/tableau/tableau-overview.md)
+- [Thoughtspot](../../../blueprint-library/thoughtspot/thoughtspot-overview.md)
 
 #### Actions
 - Download Dashboard/View/Card/Report as File
-- Refresh Dataset
-- Verify Refresh Status
+- Trigger Dataset Refresh
 
-### Data Ingestion, Transformation, Reverse ETL, and Syncing
+### Data Tooling (Ingestion, Transformation, Reverse ETL, and Syncing)
 
 #### Integrations
-- [Fivetran](../../../blueprint-library/fivetran/fivetran-overview.md)
-- [dbt Cloud](../../../blueprint-library/dbt-cloud/dbt-cloud-overview.md)
-- [Rudderstack](../../../blueprint-library/rudderstack/rudderstack-overview.md)
+- [Airbyte](../../../blueprint-library/airbyte/airbyte-overview.md)
 - [Census](../../../blueprint-library/census/census-overview.md)
+- [Coalesce](../../../blueprint-library/coalesce/coalesce-overview.md)
+- [dbt Cloud](../../../blueprint-library/dbt-cloud/dbt-cloud-overview.md)
+- [Fivetran](../../../blueprint-library/fivetran/fivetran-overview.md)
+- [Hex](../../../blueprint-library/hex/hex-overview.md)
 - [Hightouch](../../../blueprint-library/hightouch/hightouch-overview.md)
+- [Portable](../../../blueprint-library/portable/portable-overview.md)
+- [Rudderstack](../../../blueprint-library/rudderstack/rudderstack-overview.md)
+
+
 
 #### Actions
 - Execute Job
 - Check Status of Job
 - Download Results from Job
 - Execute Job, Check Status, and Download Results (All-in-one)
+
+### Project Management
+
+#### Integrations
+- [Asana](../../../blueprint-library/asana/asana-overview.md)
+- [Clickup](../../../blueprint-library/clickup/clickup-overview.md)
+- [Jira](../../../blueprint-library/jira/jira-overview.md)
+- [Shortcut](../../../blueprint-library/shortcut/shortcut-overview.md)
+- [Trello](../../../blueprint-library/trello/trello-overview.md)
+
+#### Actions
+- Create Task
+- Edit Task
+
+### Customer Resource Management (CRM)
+
+#### Integrations
+- [Hubspot](../../../blueprint-library/hubspot/hubspot-overview.md)
+- [Salesforce](../../../blueprint-library/salesforce/salesforce-overview.md)
+
+#### Actions
+- Download Data
+- Upload Data
 
 ### 3rd-Party APIs
 
