@@ -27,9 +27,16 @@ Library Blueprints are immediately available to every user in an organization. T
 
 In an effort to be transparent about how our Blueprints work, we open-source the code and make it available on our [GitHub](https://github.com/shipyardapp). The repositories are broken up by vendor and all end in `-blueprints`. If some functionality isn't working appropriately, you can open an issue in GitHub or submit a pull request with the proposed changes.
 
+## Free Blueprints
+A portion of our Blueprints are 100% free, never incurring [billable runtime](../../../faqs/plans/billable-runtime.md). These Blueprints are marked with "Trigger" in the name and are labeled in the application as "Free".
+
+For example, you may run a job on an external service like dbt Cloud, a process that could take multiple hours to finish. The majority of runtime in these instances is spent waiting for the external service to finish running the job, rather than actively processing data on our platform. Rather than charging customers for this "wait time", we choose to make these Blueprints free because the primary function is orchestrating the external service to run a job.
+
+Our definition of Free Blueprints is always evolving. If there's ever a Blueprint you feel meets this condition that isn't classified as free, please reach out to support. 
+
 ## Structure of the Blueprint Library
 
-Blueprints are broken down into a few categories with core functionality that should be achieved. The following is a list of the integrations currently built out and the possible actions related to each category.
+Blueprints are broken down into a few categories with core functionality that should be achieved. The following is a list of the integrations currently built out and the common actions related to each category.
 
 ### Databases
  
@@ -44,9 +51,9 @@ Blueprints are broken down into a few categories with core functionality that sh
 - [Snowflake](../../../blueprint-library/snowflake/snowflake-overview.md)
 
 #### Actions
-- Execute SQL Queries
-- Store Query Results as a CSV
-- Upload a CSV to a Table
+- Execute SQL Query
+- Download Query Results to Shipyard
+- Upload File to Table from Shipyard
 
 ### Cloud Storage
 
@@ -62,8 +69,8 @@ Blueprints are broken down into a few categories with core functionality that sh
 - [Databricks](../../../blueprint-library/databricks/databricks-overview.md)
 
 #### Actions
-- Upload Files
-- Download Files
+- Download Files to Shipyard
+- Upload Files from Shipyard
 - Move or Rename Files
 - Delete Files
 
@@ -76,8 +83,8 @@ Blueprints are broken down into a few categories with core functionality that sh
 - [Smartsheet](../../../blueprint-library/smartsheet/smartsheet-overview.md)
 
 #### Actions
-- Download Sheet to a CSV
-- Upload CSV to a Sheet
+- Download Sheet to Shipyard
+- Upload File to a Sheet from Shipyard
 - Clear Sheet Contents
 
 ### Messaging
@@ -103,7 +110,7 @@ Blueprints are broken down into a few categories with core functionality that sh
 - [Thoughtspot](../../../blueprint-library/thoughtspot/thoughtspot-overview.md)
 
 #### Actions
-- Download Dashboard/View/Card/Report as File
+- Download Dashboard/View/Card/Report as File to Shipyard
 - Trigger Dataset Refresh
 
 ### Data Tooling (Ingestion, Transformation, Reverse ETL, and Syncing)
@@ -121,11 +128,10 @@ Blueprints are broken down into a few categories with core functionality that sh
 
 
 
-#### Actions
-- Execute Job
-- Check Status of Job
-- Download Results from Job
-- Execute Job, Check Status, and Download Results (All-in-one)
+#### Common Actions
+- Trigger Job
+- Download Results from Job to Shipyard
+- Trigger Job and Download Results to Shipyard (All-in-one)
 
 ### Project Management
 
@@ -147,8 +153,8 @@ Blueprints are broken down into a few categories with core functionality that sh
 - [Salesforce](../../../blueprint-library/salesforce/salesforce-overview.md)
 
 #### Actions
-- Download Data
-- Upload Data
+- Download Data to Shipyard
+- Upload Data from Shipyard
 
 ### 3rd-Party APIs
 
@@ -157,7 +163,7 @@ Blueprints are broken down into a few categories with core functionality that sh
 
 #### Actions
 - HTTP Request
-- Download File from URL
+- Download File from URL to Shipyard
 
 ### File or Data Manipulation
 
@@ -170,13 +176,6 @@ Blueprints are broken down into a few categories with core functionality that sh
 - Decompress Files
 - Convert Files
 - Compare File Contents
-
-## Free Blueprints
-A portion of our Blueprints are 100% free, never incurring [billable runtime](../../../faqs/plans/billable-runtime.md). These Blueprints are marked with "Trigger" in the name and are labeled in the application as "Free".
-
-We choose to make these Blueprints free because the primary function is telling an external service to run a job. The majority of runtime in these instances is spent waiting for the external service to finish running the job, rather than actively processing data on our platform. 
-
-If there's another Blueprint you feel meets this condition that isn't classified as free, please reach out to support.
 
 ## Screenshots
 ![Over 50+ Blueprints to take action on modern data platforms](../../../.gitbook/assets/shipyard_2022_07_27_10_21_09.png)
