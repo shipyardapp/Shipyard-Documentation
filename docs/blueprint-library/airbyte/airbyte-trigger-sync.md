@@ -12,8 +12,15 @@ keywords:
 
 # Airbyte - Trigger Sync
 
+:::info
+This Blueprint is classified as "Free" and does not incur billable runtime. [Learn more](../../reference/blueprints/blueprint-library/blueprint-library-overview.md#free-blueprints).
+:::
+
 ## Overview
+
 Execute a sync against an existing connector in the Airbyte interface.
+
+
 
 ## Variables
 

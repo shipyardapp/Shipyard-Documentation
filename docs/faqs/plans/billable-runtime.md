@@ -30,5 +30,6 @@ Examples:
 - You run Process C with guardrails to retry itself 10x upon failure, with 5m between each retry. Process C starts running at 8:00am and fails every time. Process C finishes running at 8:55am, with a total billable runtime of 10m.
 - You run Process C with guardrails to retry itself 10x upon failure, with 5m between each retry. Process C starts running at 8:00am and succeeds after the 3rd time. Process C finishes running at 8:13am, with a total runtime of 3m.
 
-:::note
-Shipyard's Blueprints with "Trigger" in the name run free of charge. Read more about this distinction in our [product announcement](https://www.shipyardapp.com/blog/orchestrate-data-tools-free/)
+:::info
+Some Blueprints in Shipyard do not charge Billable Runtime and are classified as [Free Blueprints](../../reference/blueprints/blueprint-library/blueprint-library-overview.md#free-blueprints).
+:::

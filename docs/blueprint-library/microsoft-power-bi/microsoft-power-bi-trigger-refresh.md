@@ -12,6 +12,10 @@ keywords:
 
 # Microsoft Power BI - Trigger Refresh
 
+:::info
+This Blueprint is classified as "Free" and does not incur billable runtime. [Learn more](../../reference/blueprints/blueprint-library/blueprint-library-overview.md#free-blueprints).
+:::
+
 ## Overview
 Shipyard's low-code Microsoft Power BI Trigger Refresh blueprint allows users to refresh a dataset or a dataflow on a Microsoft Power BI workspace.
 The dataset or dataflow must be located in a workspace that the service principal account has access to and cannot be **"My Workspace"**.

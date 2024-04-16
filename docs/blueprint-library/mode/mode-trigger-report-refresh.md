@@ -12,6 +12,10 @@ keywords:
 
 # Mode - Trigger Report Refresh
 
+:::info
+This Blueprint is classified as "Free" and does not incur billable runtime. [Learn more](../../reference/blueprints/blueprint-library/blueprint-library-overview.md#free-blueprints).
+:::
+
 ## Overview
 Manually trigger a refresh of a report in Mode.
 

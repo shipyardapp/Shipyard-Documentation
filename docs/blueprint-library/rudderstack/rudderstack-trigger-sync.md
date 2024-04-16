@@ -12,6 +12,10 @@ keywords:
 
 # RudderStack - Trigger Sync
 
+:::info
+This Blueprint is classified as "Free" and does not incur billable runtime. [Learn more](../../reference/blueprints/blueprint-library/blueprint-library-overview.md#free-blueprints).
+:::
+
 ## Overview
 Immediately execute a sync of a Rudderstack source. This can kick off either an ETL or a reverse ETL job. The source must already be set up within the Rudderstack interface.
 

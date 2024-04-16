@@ -12,6 +12,10 @@ keywords:
 
 # Fivetran - Trigger Sync
 
+:::info
+This Blueprint is classified as "Free" and does not incur billable runtime. [Learn more](../../reference/blueprints/blueprint-library/blueprint-library-overview.md#free-blueprints).
+:::
+
 ## Overview
 Immediately execute a sync of a Fivetran connector. The connector must already be set up within the Fivetran interface.
 
