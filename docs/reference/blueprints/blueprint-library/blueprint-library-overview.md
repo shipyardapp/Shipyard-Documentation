@@ -30,7 +30,7 @@ In an effort to be transparent about how our Blueprints work, we open-source the
 ## Free Blueprints
 A portion of our Blueprints are 100% free, never incurring [billable runtime](../../../faqs/plans/billable-runtime.md). These Blueprints are marked with "Trigger" in the name and are labeled in the application as "Free".
 
-For example, you may run a job on an external service like dbt Cloud, a process that could take multiple hours to finish. The majority of runtime in these instances is spent waiting for the external service to finish running the job, rather than actively processing data on our platform. Rather than charging customers for this "wait time", we choose to make these Blueprints free because the primary function is orchestrating the external service to run a job.
+For example, you may run a job on an external service like dbt Cloud, a process that could take multiple hours to finish. The majority of runtime in these instances is spent waiting for the external service to finish running the job rather than actively processing data on our platform. Instead of charging customers for this "wait time", we choose to make these Blueprints free because their primary function is orchestrating the external service to run a job.
 
 Our definition of Free Blueprints is always evolving. If there's ever a Blueprint you feel meets this condition that isn't classified as free, please reach out to support. 
 
