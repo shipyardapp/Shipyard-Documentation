@@ -6,13 +6,14 @@ hide_title: true
 sidebar_label: Authorization
 description: Instructions on how to authorize Google Cloud Storage to work with Shipyard's low-code Google Cloud Storage templates.
 keywords:
-- google cloud storage
-- blueprint
-- template
-- authorization
+  - google cloud storage
+  - blueprint
+  - template
+  - authorization
 ---
 
-# Google Cloud Storage Authorization
+#  Authorization
+
 In order to get started with the Google Cloud Storage Blueprints, a service account with the necessary GCP permissions is required.
 
 ## Creating a Service Account for Google Cloud Storage (GCS)
@@ -34,13 +35,13 @@ In order to get started with the Google Cloud Storage Blueprints, a service acco
 5. Add a service account name  
 	a. Do not edit the ID field which will auto-populate  
 	b. Optionally add a description to the service account
-
+  
 ![](https://cdn.sanity.io/images/2xyydva6/production/db0266cfdb103c716f458e2fd4b4f1c4530900bd-535x352.png?w=450)
 
 6. Click "**CREATE AND CONTINUE**"  
 7. Click "**Select a role**" dropdown  
 	a. Scroll down the options and hover over "**Cloud Storage**"  
-	b. Select "**Storage Admin**"  (not Storage _Object_ Admin)
+	b. Select "**Storage Admin**"  
 
 ![](https://cdn.sanity.io/images/2xyydva6/production/f5a7d66197276244e2426bbaca0ec9c766603191-416x383.png?w=450)
 
