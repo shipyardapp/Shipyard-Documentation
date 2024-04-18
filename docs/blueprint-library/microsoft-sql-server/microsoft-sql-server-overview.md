@@ -1,5 +1,5 @@
 ---
-id: microsoft-sql-server-overview
+id: sql-server-overview
 title: Microsoft SQL Server Blueprints Overview
 hide_title: true
 sidebar_label: Overview
@@ -17,11 +17,12 @@ Shipyard's low-code Microsoft SQL Server blueprints allow users to connect their
 
 
 ## How to Use
-For information on how to set up these Blueprints successfully, please read through the [Microsoft SQL Server Authorization guide](microsoft-sql-server-authorization.md).
+For information on how to set up these Blueprints successfully, please read through the [Microsoft SQL Server Authorization guide](sql-server-authorization.md).
 
 
 ## Available Blueprints
-Shipyard currently has the following Blueprints readily available: 
+Shipyard currently has the following Blueprints readily available:
+
 - [Execute Query](microsoft-sql-server-execute-query.md)
 - [Upload File to Table from Shipyard](microsoft-sql-server-upload-csv-to-table.md)
 - [Download Query Results to Shipyard](microsoft-sql-server-store-query-results-as-csv.md)
