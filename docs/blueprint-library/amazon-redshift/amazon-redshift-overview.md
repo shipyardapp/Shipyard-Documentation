@@ -21,7 +21,8 @@ For information on how to set up these Blueprints successfully, please read thro
 
 
 ## Available Blueprints
-Shipyard currently has the following Blueprints readily available: 
+Shipyard currently has the following Blueprints readily available:
+
 - [Upload File to Table from Shipyard](amazon-redshift-upload-csv-to-table.md)
 - [Execute Query](amazon-redshift-execute-query.md)
 - [Download Query Results to Shipyard](amazon-redshift-store-query-results-as-csv.md)
