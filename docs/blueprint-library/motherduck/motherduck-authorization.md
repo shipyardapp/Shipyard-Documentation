@@ -13,8 +13,6 @@ keywords:
 ---
 
 #  Authorization
-
-# Databricks SQL Authorization Guide
 In order to get started with the MotherDuck Blueprints, you will need obtain the service token from the MotherDuck settings.
 
 ## Obtaining the Service Token
