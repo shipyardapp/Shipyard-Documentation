@@ -6,13 +6,14 @@ hide_title: true
 sidebar_label: Authorization
 description: Instructions on how to authorize Amazon Athena to work with Shipyard's low-code Amazon Athena templates.
 keywords:
-- amazon athena
-- blueprint
-- template
-- authorization
+  - amazon athena
+  - blueprint
+  - template
+  - authorization
 ---
 
-# Amazon Athena Authorization
+#  Authorization
+
 In order to get started with the Athena Blueprints, an IAM user with the required AWS permissions and programmatic access is required.
 
 Additionally, you may need to ensure that Shipyard [IP Addresses are whitelisted](https://www.shipyardapp.com/docs/faqs/security/ip-whitelist/)
@@ -166,4 +167,3 @@ Additionally, you may need to ensure that Shipyard [IP Addresses are whitelisted
     ]
 }
 ```
-
