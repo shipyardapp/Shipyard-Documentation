@@ -3,4 +3,4 @@ collapsible: true
 collapsed: true
 link:
     type: doc
-    id: sql-server-overview
+    id: microsoft-sql-server-overview

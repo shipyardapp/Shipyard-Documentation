@@ -1,5 +1,5 @@
 ---
-id: sql-server-authorization
+id: microsoft-sql-server-authorization
 sidebar_position: 1
 title: Microsoft SQL Server Blueprint Authorization
 hide_title: true
