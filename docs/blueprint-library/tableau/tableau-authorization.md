@@ -6,13 +6,14 @@ hide_title: true
 sidebar_label: Authorization
 description: Instructions on how to authorize Tableau to work with Shipyard's low-code Tableau templates.
 keywords:
-- tableau
-- blueprint
-- template
-- authorization
+  - tableau
+  - blueprint
+  - template
+  - authorization
 ---
 
-# Tableau Authorization
+#  Authorization
+
 Tableau Blueprints rely on users to:
 - Provide their username and password or a Personal Access Token.
 - Provide the Site ID and Server URL
