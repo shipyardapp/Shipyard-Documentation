@@ -20,21 +20,21 @@ To get started with any dbt Cloud Blueprints, you will need to create an Service
 
 ## Create a dbt Cloud Service Token
 1. Navigate to your organization's instance of [dbt Cloud](https://cloud.getdbt.com)
-2. Open the side navigation and select **Account Settings**
+2. Open the side navigation and select **Account Settings** in the top right corner
 
-![dbt Cloud Account Settings](https://cdn.sanity.io/images/2xyydva6/production/e00dcb56fef3936ebfd79ba39812d8ae7a33e15c-309x369.png?w=450)
+![dbt settings](https://cdn.sanity.io/images/2xyydva6/production/cb12091072ea0f9b20bc9062ec8dde0ec75252f8-406x143.png?w=450)
 
 3. Select **Service Tokens** from the menu.
    
-![dbt Cloud Service Tokens](https://cdn.sanity.io/images/2xyydva6/production/2e1c91b6c1d42204d5f8fc204f7154717f9d3914-178x317.png?w=450)
+![dbt service tokens](https://cdn.sanity.io/images/2xyydva6/production/af46e09c47c778b9f147d677154788b069c61dd2-256x414.png?w=450)
 
-4. Select the option to create a **New Token**
+4. Select the option to **Create service token**
 
-![dbt Cloud Create New Token](https://cdn.sanity.io/images/2xyydva6/production/9f993e1318d3af8966b60525a6914ea6c40f12e5-1371x219.png?w=450)
+![create token](https://cdn.sanity.io/images/2xyydva6/production/b32eb62dd2f8b452a45d37fb81f4ed9346537aa0-1617x284.png?w=450)
 
-5. Name your token something descriptive, like "Shipyard", and give it "Account Admin" privileges. Click **Save** once you're finished.
+5. Name your token something descriptive, like "ShipyardToken", and give it "Account Admin" privileges. Click **Save** once you're finished.
 
-![dbt Cloud Token Details](https://cdn.sanity.io/images/2xyydva6/production/07cbbaa5d5a349d2c2d0581a80847afe42c1d6bd-1379x280.png?w=450)
+![](https://cdn.sanity.io/images/2xyydva6/production/1b83e0b7447d58206f7777f2c037b08d31fb33a3-662x433.png?w=450)
 
 6. Copy the generated token to a Password Manager service or somewhere safe. This value will be used in every dbt Cloud Blueprint.
 

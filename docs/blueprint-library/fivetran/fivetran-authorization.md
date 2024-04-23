@@ -6,21 +6,22 @@ hide_title: true
 sidebar_label: Authorization
 description: Instructions on how to authorize Fivetran to work with Shipyard's low-code Fivetran templates.
 keywords:
-- fivetran
-- blueprint
-- template
-- authorization
+  - fivetran
+  - blueprint
+  - template
+  - authorization
 ---
 
-# Fivetran Authorization
+#  Authorization
+
 To get started with any Fivetran Blueprints, you will need to generate an API Key and know how to find a connector ID. The API Key is a secure way for Shipyard to access Fivetran. The Connector ID is a unique generated ID attached to each connector. These two pieces of information will be required for **every** Fivetran Blueprint.
 
 ## Generate an API Key
 
-1. Navigate to the [Settings Tab](https://fivetran.com/account/settings) of your Account.
-2. Scroll down to the API Config Section. Select an option to generate a Key. If you already have a key, skip to the next step.
+1. Navigate to the [API Config Tab](https://fivetran.com/dashboard/user/api-config) of your Account.
+2. Select the option to generate a Key. If you already have a key, skip to the next step.
 
-![](https://cdn.sanity.io/images/2xyydva6/production/061d04fe934fc030da1dfd12af9879d62ca882bd-1578x636.png?w=450)
+![](https://cdn.sanity.io/images/2xyydva6/production/a069c766b60b3b9787701b098f0360cf17050172-779x216.png?w=450)
 
 3. Copy both the API Key and the API Secret somewhere safe.
 
