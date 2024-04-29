@@ -220,7 +220,7 @@ vessel_name:
   notifications:
     emails:
       - example@email.com
-	  - another@email.com
+      - another@email.com
     after_error: true
     after_on_demand: false
 ```
@@ -290,11 +290,11 @@ This is the same object available under the Vessels `notifications` field. If co
 
 ```yaml
 notifications:
-emails:
-	- example@email.com
-	- another@email.com
-after_error: true
-after_on_demand: false
+  emails:
+    - example@email.com
+    - another@email.com
+  after_error: true
+  after_on_demand: false
 ```
 
 ## Examples and Templates
