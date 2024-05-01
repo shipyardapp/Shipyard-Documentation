@@ -11,7 +11,7 @@ keywords:
 
 ## Overview
 
-**Shipyard's** [API](../reference/api.md) gives a user the opportunity to create and edit Fleets along with looking at historical runs. However, every API end point requires an org ID to call them. The only way to access your org ID is through the Shipyard API. 
+**Shipyard's** [API](https://shipyard.readme.io) gives a user the opportunity to create and edit Fleets along with looking at historical runs. However, every API end point requires an org ID to call them. The only way to access your org ID is through the Shipyard API. 
 
 In this tutorial, we will walk through the steps needed to call the Shipyard API to get your org ID.
 

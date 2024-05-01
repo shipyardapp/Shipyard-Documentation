@@ -19,7 +19,7 @@ As part of our free Developer Plan, you get to quickly build data pipelines usin
 - Up to 3 users can use the platform, all with Admin level permissions.
 - All Fleets will exist in a single, default project.
 - Custom Org Blueprints will be unable to be created to reuse and track code usage across your organization.
-- Your organization will be unable to use [Webhooks](../../reference/triggers/webhook-triggers.md) or our [API](../../reference/api.md).
+- Your organization will be unable to use [Webhooks](../../reference/triggers/webhook-triggers.md) or our [API](https://shipyard.readme.io).
 
 For a detailed overview of plan differences, you can look at the [latest plans](https://www.shipyardapp.com/pricing).
 
