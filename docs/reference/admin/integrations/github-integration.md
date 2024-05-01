@@ -15,7 +15,7 @@ keywords:
 
 The GitHub integration allows you to set up [GitHub Code Sync](../../code/git-connection.md) for any of your Vessels or Blueprints.
 
-Shipyard supports an unlimited number of GitHub connections to multiple different organizations. Every repository that is synced with Shipyard will be available to any user in the Organization with _Create_ or _Edit_ [permissions](../user-permissions.md) for Vessels or Blueprints.
+Shipyard supports an unlimited number of GitHub connections to multiple different organizations. Every repository that is synced with Shipyard will be available to any user in the Organization with _Create_ or _Edit_ [permissions](../roles.md) for Vessels or Blueprints.
 
 ### Setup
 

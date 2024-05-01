@@ -32,7 +32,8 @@ module.exports = {
 					"reference/admin/billing",
 					"reference/admin/usage-dashboard",
 					"reference/admin/user-management",
-					"reference/admin/user-permissions",
+					"reference/admin/roles",
+					"reference/admin/audit-logs",
 					{
 						Integrations: [
 							"reference/admin/integrations/integrations-overview",
