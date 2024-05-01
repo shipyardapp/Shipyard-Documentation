@@ -13,4 +13,4 @@ keywords:
 
 ## Can I export my logs?
 
-Yes! You can always export your logs for analysis in your own BI tool by using our [API](../../reference/api.md). Additionally, we [offer a Blueprint](../../blueprint-library/shipyard-api/shipyard-api-export-logs.md) in Shipyard that makes it easy to export your logs and upload the results to external storage.
+Yes! You can always export your logs for analysis in your own BI tool by using our [API](https://shipyard.readme.io). Additionally, we [offer a Blueprint](../../blueprint-library/shipyard-api/shipyard-api-export-logs.md) in Shipyard that makes it easy to export your logs and upload the results to external storage.
