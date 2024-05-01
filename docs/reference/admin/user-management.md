@@ -21,12 +21,11 @@ Multiple users can be invited to the organization at the same time. Invitations 
 
 #### Roles
 
-- **User** - Create, View, and Edit access to all elements except for users.
-- **Admin** - Full access to everything within your organization, as soon as they log in.
+The roles that can be assigned to a user depend on the roles in your organization. This includes all predefined roles, and any custom roles that might have been created if your organization is on the Business or Enterprise plans. For more information on roles, please review our documentation [Roles](roles.md).
 
-### Managing User Permissions
+### Managing User Roles and Project Access
 
-Clicking the **manage** action will lead to the [Permissions Panel](user-permissions.md) for that user.
+Clicking the **Edit** action will open up a modal that will allow you to assign a different role to that user and/or grant and remove access to projects in that organization
 
 ### Removing Users
 
@@ -34,9 +33,17 @@ Clicking the **Remove** action will permanently remove that user's access from t
 
 ## Screenshots
 
-![View all users in the organization.](./UserManagementScreenshot.png)
+**User Management Table** 
 
-![Invite new users to your organization.](../../.gitbook/assets/image_34.png)
+![View all users in the organization.](../../.gitbook/assets/user-management.png)
+
+**Invite**
+
+![Invite new users to your organization.](../../.gitbook/assets/invite-user.png)
+
+**Edit User**
+
+![Change user role and grant project access](../../.gitbook/assets/edit-user.png)
 
 ## Additional Notes
 
