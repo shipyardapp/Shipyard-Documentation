@@ -6,20 +6,21 @@ hide_title: true
 sidebar_label: Authorization
 description: Instructions on how to authorize Google Sheets to work with Shipyard's low-code Google Sheets templates.
 keywords:
-- google sheets
-- blueprint
-- template
-- authorization
+  - google sheets
+  - blueprint
+  - template
+  - authorization
 ---
 
-# Google Sheets Authorization
+#  Authorization
+
 In order to get started with the Google Sheets Blueprints, a service account with the necessary GCP permissions is required. Additionally, this Service account will need to be invited to any Google Sheet you wish to access programatically.
 
 ## Creating a Service Account for Google Sheets
 
 1. Login to your [GCP console](https://console.cloud.google.com/)  
 2. Using the top selector, choose the Project where you want your Google Sheets service accounts to live.
-
+ 
 ![](https://cdn.sanity.io/images/2xyydva6/production/54bfac0aa4bd528b56ef88940946b91c2c119c2c-1634x86.png?w=450)
 
 3. Search for "**Google Sheets API**" in the search bar  
@@ -67,8 +68,6 @@ In order to get started with the Google Sheets Blueprints, a service account wit
 15. In the popup modal select "**JSON**"  and click "**CREATE**"
 16. Copy the downloaded file JSON contents and save for safe keeping. The contents of this file can be pasted into the "**Service Account**" input for all Google Sheets Blueprints.
 
-17. Enable the Google Drive API [here](https://console.developers.google.com/apis/api/drive.googleapis.com/overview)
-![](https://cdn.sanity.io/images/2xyydva6/production/1a558dc0e2c2f739aa92fd43ecbe9c1899938a3d-568x223.png?w=450)
 ## Inviting a Service Account to a Google Sheet
 
 1. Navigate to the [credentials page](https://console.cloud.google.com/apis/api/sheets.googleapis.com/credentials) for the Google Sheets API. 
@@ -111,4 +110,3 @@ b. Copy the ID, found in the URL `https://docs.google.com/spreadsheets/d/`**`she
 
 **_INFO:_** Pro Tip
 The ID of your Spreadsheet will never change, while the Spreadsheet name can be updated. We recommend using the ID where possible.
-
