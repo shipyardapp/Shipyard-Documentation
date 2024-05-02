@@ -21,7 +21,8 @@ For information on how to set up these Blueprints successfully, please read thro
 
 
 ## Available Blueprints
-Shipyard currently has the following Blueprints readily available: 
+Shipyard currently has the following Blueprints readily available:
+
 - [Clear Data from Sheet](google-sheets-clear-data-from-sheet.md)
 - [Download Sheet to Shipyard](google-sheets-download-sheet-to-csv.md)
 - [Upload File to Sheet from Shipyard](google-sheets-upload-csv-to-sheet.md)
