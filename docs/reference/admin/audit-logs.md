@@ -11,6 +11,12 @@ keywords:
 
 # Audit Logs
 
+:::info
+
+The Audit Logs feature is only available to Organizations on our **Enterprise Plan** and to users with the **Audit Logs Access**permission within those Organizations.
+
+:::
+
 ## Definition
 The Audit Logs provide a look into the events and actions of Users in your Organization in Shipyard. These logs provide various pieces of information such as the **Event Name**, **User Email** of the User who performed the event, the **URL** where the event took place, as well as the **Timestamp** of when the event took place. It's designed to help you monitor the actions and events of your Organiztion. In addition to the information above, we offer an expanded view of each event that includes:
 
@@ -20,9 +26,9 @@ The Audit Logs provide a look into the events and actions of Users in your Organ
 - **User Agent** of the User who performed the event
 - **Timezone** in which the event occurred
 
-:::info
+:::warning
 
-The Audit Logs feature is only available to Organizations on our **Enterprise Plan** and to users with the **Audit Logs Access**permission within those Organizations.
+In the current iteration of this feature, Audit Logs require tracking to be enabled in our application. If you use an ad blockers, prevent JS from running, or limit cookie functionality, tracked details may be limited.
 
 :::
 
