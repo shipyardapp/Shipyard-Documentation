@@ -3,20 +3,23 @@ id: fivetran-trigger-sync
 title: Fivetran Template - Trigger Sync
 hide_title: true
 sidebar_label: Trigger Sync
-description: Information about Shipyard's low-code Fivetran Trigger Sync blueprint. Execute a sync against an existing connector in the Fivetran interface. 
+description: Information about Shipyard's low-code Fivetran Trigger Sync blueprint. Execute a sync against an existing connector in the Fivetran interface.
 keywords:
-    - fivetran
-    - blueprint
-    - template
+  - fivetran
+  - blueprint
+  - template
 ---
 
 # Fivetran - Trigger Sync
+
 
 :::info
 This Blueprint is classified as "Free" and does not incur billable runtime. [Learn more](../../reference/blueprints/blueprint-library/blueprint-library-overview.md#free-blueprints).
 :::
 
+
 ## Overview
+
 Immediately execute a sync of a Fivetran connector. The connector must already be set up within the Fivetran interface.
 
 If a sync is already running for the specified connector, it will be stopped and restarted.
@@ -28,17 +31,22 @@ The response for this request will always be stored at `shipyard-artifacts/fivet
 
 ## Variables
 
-| Name | Reference | Type | Required | Default | Options | Description |
-|:-----|:----------|:-----|:---------|:--------|:--------|:------------|
-| API Key | FIVETRAN_API_KEY  | Password |:white_check_mark: | - | - | Your account's unique API Key for Fivetran. |
-| API Secret | FIVETRAN_API_SECRET  | Password |:white_check_mark: | - | - | Your account's unique API Secret for Fivetran. |
-| Connector ID | FIVETRAN_CONNECTOR_ID  | Alphanumeric |:white_check_mark: | - | - | The unique ID associated with a connector. Typically two words separated by an underscore. |
-| Force Sync | FIVETRAN_FORCE  | Select |:white_check_mark: | `TRUE` | Enabled: `TRUE`<br></br><br></br>Disabled: `FALSE`<br></br><br></br> | Enabling this feature will interrupt any current running jobs |
-| Wait For Completion | FIVETRAN_WAIT  | Boolean |:heavy_minus_sign: | `TRUE` | Enabled: `TRUE`<br></br><br></br>Disabled: `FALSE`<br></br><br></br> | Enable if you want the vessel to wait until the sync job is successfully completed. Otherwise, the vessel will only initiate the sync job without waiting |
+| Name | Reference | Type | Required | Default | Options | Description             |
+|:-----|:----------|:-----|:---------|:--------|:--------|:------------------------|
+| API Key | FIVETRAN_API_KEY | Password | :white_check_mark: | - | - | Your account's unique API Key for Fivetran. |
+| API Secret | FIVETRAN_API_SECRET | Password | :white_check_mark: | - | - | Your account's unique API Secret for Fivetran. |
+| Connector ID | FIVETRAN_CONNECTOR_ID | Alphanumeric | :white_check_mark: | - | - | The unique ID associated with a connector. Typically two words separated by an underscore. |
+| Force Sync | FIVETRAN_FORCE | Select | :white_check_mark: | `TRUE` | Enabled: `TRUE`<br></br><br></br>Disabled: `FALSE`<br></br><br></br> | Enabling this feature will interrupt any current running jobs |
+| Wait For Completion | FIVETRAN_WAIT | Boolean | :heavy_minus_sign: | `TRUE` | Enabled: `TRUE`<br></br><br></br>Disabled: `FALSE`<br></br><br></br> | Enable if you want the vessel to wait until the sync job is successfully completed. Otherwise, the vessel will only initiate the sync job without waiting |
+
+
 
 
 ## YAML
-Below is the YAML template for this Blueprint and can be used in the Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+
+Below is the YAML template for this Blueprint and can be used in the
+Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
+
 ```yaml
 source:
   blueprint: Fivetran - Trigger Sync
@@ -57,6 +65,7 @@ guardrails:
     - '200'
     - '201'
     - '204'
-    - '299'
+    - '205'
+ ```
 
-```
+

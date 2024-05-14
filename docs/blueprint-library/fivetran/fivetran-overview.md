@@ -21,7 +21,8 @@ For information on how to set up these Blueprints successfully, please read thro
 
 
 ## Available Blueprints
-Shipyard currently has the following Blueprints readily available: 
+Shipyard currently has the following Blueprints readily available:
+
 - [Check Sync Status (Deprecated)](fivetran-check-sync-status.md)
 - [Trigger Sync](fivetran-trigger-sync.md)
 - [Trigger Sync and Check Status (Deprecated)](fivetran-trigger-sync-and-check-status.md)
