@@ -34,6 +34,7 @@ Log data is routinely deleted from our system to decrease storage costs. The amo
 
 The data contained within a Log differs slightly for Vessels and Fleets. Explore them in depth below.
 
+- [Logbook](logbook.md)
 - [Vessel Logs](vessel-logs.md)
 - [Fleet Logs](fleet-logs.md)
 
