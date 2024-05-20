@@ -61,6 +61,8 @@ This setup allows Vessels to be built to run independent, modular tasks off of n
 2. A Fleet cannot contain any paths that would create a loop.
 3. If you want to have a set of Vessels that aren't connected to the larger group, you will need to create a different Fleet.
 4. You are currently unable to kick off a Fleet starting anywhere in the middle. This prevention is in place because we delete data as soon as a Fleet has finished running, whether it was successful or not. If you ran a Vessel starting from the middle and it relied on data created upstream, it would be unable to find that data and immediately fail.
+4. A fleet can now be kicked off starting in the middle with a few caveats. To learn more about how to accomplish this action, go here: [How to Kick off a Fleet in the Middle](../../how-tos/fleets/kick-off-a-fleet-in-the-middle.md)
+
 5. Each time a Fleet is saved, a version of that Fleet is generated and is accessible in the [Version Control](version-control.md) tab.
 
 ## Learn More
@@ -72,3 +74,4 @@ This setup allows Vessels to be built to run independent, modular tasks off of n
 - [How to Run a Fleet with Parameters](../../how-tos/fleets/run-with-params.md)
 - [How to Assess Fleet Performance](../../how-tos/fleets/assess-fleet-performance.md)
 - [How to See All Available Files in a Fleet](../../how-tos/fleets/see-all-files.md)
+- [How to Kick off a Fleet in the Middle](../../how-tos/fleets/kick-off-a-fleet-in-the-middle.md)
