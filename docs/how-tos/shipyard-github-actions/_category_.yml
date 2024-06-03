@@ -1,0 +1,7 @@
+label: Shipyard GitHub Actions
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: shipyard-actions-overview
+
