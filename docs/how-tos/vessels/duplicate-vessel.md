@@ -28,7 +28,7 @@ You've now successfully duplicated the Vessel and are editing the copy.
 :::
 
 ### Step 2 - Edit the Duplicate
-While the Vessel has been successfully duplicated, it contains a less readable name that indicates the Vessel it was originally a copy of. We recommend making a few adjustments before moving on.
+While the Vessel has been successfully duplicated, it is only differentiated from the original by random digits appended to the end of the name. We recommend making a few adjustments before moving on.
 
 1. Decide on a new Vessel name.
 2. [Edit the Vessel](edit-vessel.md) to make any other minor tweaks you want.
