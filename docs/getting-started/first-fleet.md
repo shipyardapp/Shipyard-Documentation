@@ -52,7 +52,7 @@ There are two options for creating a new Fleet: The **Visual** editor and the **
 
     ![](../.gitbook/assets/fleet_builder_http_vessel_edit_2024-06-20.png)
 
-3. Next to the **HTTP** icon, remove the automatically generated name and type **Download Slinky Dog Dash Ride Data**. 
+3. Next to the **HTTP** icon, click the **pencil** icon and remove the automatically generated name and type **Download Slinky Dog Dash Ride Data**. 
 4. In the **File URL** field type `https://cdn.touringplans.com/datasets/slinky_dog.csv`
 5. In the **File Name** field type `slinky_dog_dash.csv`
 6. In the **Folder Name** field type `disney_world_wait_times`
@@ -65,7 +65,7 @@ There are two options for creating a new Fleet: The **Visual** editor and the **
 
 ![Email Blueprint Options](../.gitbook/assets/shipyard_2022_01_11_17_35_14.png)
 
-3. Next to the **Email** icon, remove the automatically generated name and type **Send Slinky Dog Dash Data via Email**.
+3. Next to the **Email** icon, click the **pencil** icon and remove the automatically generated name and type **Send Slinky Dog Dash Data via Email**.
 4. Fill out fields with the following values:
 
 | Name | Value |
