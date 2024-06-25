@@ -36,7 +36,7 @@ By the end of the tutorial, you will know how to:
 ### Step 1 - Accessing the Fleet Builder
 
 Using the sidebar, click on **New Fleet** to begin building your new Fleet.
-![](../.gitbook/assets/shipyard_2022_05_04_13_59_56.png)
+![](../.gitbook/assets/fleet_builder_blank_canvas_2024-06-20.png)
 
 ### Step 2 - Building the Fleet
 
@@ -46,25 +46,26 @@ There are two options for creating a new Fleet: The **Visual** editor and the **
 
 1. Navigate down to the **HTTP** dropdown and click it. It will expand the Blueprints that are available to use for HTTP. 
    
-   ![](../.gitbook/assets/shipyard_2022_05_04_16_35_45.png)
+   ![](../.gitbook/assets/fleet_builder_http_2024-06-20.png)
 
-2. Click the Vessel named **Download File from URL**. This creates a New Vessel and immediately opens the edit pane for that Vessel on the left side of the screen.
+2. Click the Blueprint named **Download File from URL to Shipyard**. This creates a new Vessel and immediately opens the edit pane for that Vessel on the left side of the screen.
 
-    ![](../.gitbook/assets/shipyard_2022_05_04_14_13_02.png)
+    ![](../.gitbook/assets/fleet_builder_http_vessel_edit_2024-06-20.png)
 
-3. In the **Vessel Name** field, remove the automatically generated name and type **Download Slinky Dog Dash Ride Data**. 
+3. Next to the **HTTP** icon, click the **pencil** icon and remove the automatically generated name and type **Download Slinky Dog Dash Ride Data**. 
 4. In the **File URL** field type `https://cdn.touringplans.com/datasets/slinky_dog.csv`
 5. In the **File Name** field type `slinky_dog_dash.csv`
 6. In the **Folder Name** field type `disney_world_wait_times`
 
 #### Build Vessel to Email a File
 
-1.  Click the `+` icon in the sidebar to add another Vessel to the Fleet.
-2.  Search for **email** using the search bar at the top. Click on **Send Message with File**
+1.  Go to the canvas by clicking off the edit pane.
+2. `+ Add Vessel` to add another Vessel to the Fleet.
+3.  Search for **email** using the search bar at the top. Click on **Send Message with File**
 
 ![Email Blueprint Options](../.gitbook/assets/shipyard_2022_01_11_17_35_14.png)
 
-3. In the **Vessel Name** field, remove the automatically generated name and type **Send Slinky Dog Dash Data via Email**.
+3. Next to the **Email** icon, click the **pencil** icon and remove the automatically generated name and type **Send Slinky Dog Dash Data via Email**.
 4. Fill out fields with the following values:
 
 | Name | Value |
@@ -103,16 +104,12 @@ This will connect the two Vessels, allowing one to be triggered by the other. Ad
 
 
 
-### Step 3 - Adjusting Fleet Settings
+### Step 3 - Update Fleet Name
 
-1. Using the Fleet builder sidebar, click the **gear** icon to navigate to the **Fleet settings**.
-    
-    ![](../.gitbook/assets/shipyard_2022_05_12_11_04_46.png)
-
-2. Select the Fleet Name field and rename your fleet to **Download File from Webpage and Email to User**. 
+1. Click on the **pencil** icon in the header and rename your Fleet to **Download File from Webpage and Email to User**. 
    
    Notice that the "Default" project is pre-selected. 
-3. Click the **Save & Finish** button at the bottom. You should now see the following screen:
+2. Click the **Save & Finish** button at the bottom. You should now see the following screen:
 
 ![Fleet Success Screen](../.gitbook/assets/shipyard_2023_01_10_09_36_38.png)
 

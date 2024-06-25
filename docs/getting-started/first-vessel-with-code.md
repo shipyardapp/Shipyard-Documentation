@@ -35,11 +35,11 @@ For the sake of the this tutorial, we suggest starting off by building the Fleet
 
 1. Using the sidebar, click on **Projects** to navigate to the All Projects page.
 
-  ![](../.gitbook/assets/shipyard_2022_05_05_09_41_15.png)
+  ![View of Projects](../.gitbook/assets/projects_overview_default_2024-06-20.png)
 2. Click on the **Default** project.
-3. Find the **Download File from Webpage and Email to User** Fleet and either click on the Fleet Name or hover over the Actions vertical-dot menu and select **Edit**.
+3. Find the **Download File from Webpage and Email to User** Fleet and hover over the Actions vertical-dot menu and select **Edit**.
    
-![](../.gitbook/assets/shipyard_2023_01_10_09_45_12.png)
+  ![View of Fleets with specific Fleet highlighted](../.gitbook/assets/fleets_overview_slinky_dog_2024-06-20.png)
 
 :::tip success
 You are now ready to add a code Vessel to your existing Fleet
@@ -49,9 +49,9 @@ You are now ready to add a code Vessel to your existing Fleet
 
 1. Using the Fleet Builder sidebar, click on **Python**. This will automatically add a new Vessel to your Fleet.
 
-  ![](../.gitbook/assets/shipyard_2022_05_05_09_55_27.png)
+  ![View of Fleet Builder with Python highlighted](../.gitbook/assets/fleet_builder_canvas_slinky_python_2024-06-20.png)
 
-2. Name your Vessel **Add Time in Hours** under Vessel Name.
+2. Name your Vessel **Add Time in Hours**.
 
 :::note
 Shipyard allows you to provide code in three different ways: write the code in the UI, upload the code as a file, or clone the code from a GitHub repository. This tutorial will focus on writing the code in the UI and uploading the code as a file. Running code from GitHub is covered in [this tutorial](../tutorials/github-vessel.md).
@@ -79,7 +79,7 @@ df.to_csv('disney_world_wait_times/slinky_dog_dash_with_hours.csv',index = None)
 
 Your setup should look like this:
 
-  ![](../.gitbook/assets/shipyard_2022_05_05_14_18_16.png)
+  ![](../.gitbook/assets/fleet_builder_canvas_slinky_python_code_2024-06-20.png)
 </TabItem>
 <TabItem value="upload">
 
@@ -125,7 +125,7 @@ In the previous tutorial, we created two vessels: **Download Slinky Dog Dash Rid
 2. Click and drag from a circle on the **Download Slinky Dog Dash Ride Data** Vessel towards a circle on the **Add Time in Hours** Vessel.
 3. Click and drag from a circle on the **Add Time in Hours** Vessel towards a circle on the **Send Slinky Dog Dash Data via Email** Vessel.
 
-  ![](../.gitbook/assets/shipyard_2022_05_05_14_52_10.png)
+  ![](../.gitbook/assets/fleet_builder_canvas_slinky_dog_fleet_2024-06-20.png)
 
 ### Step 5 - Edit Email Vessel
 

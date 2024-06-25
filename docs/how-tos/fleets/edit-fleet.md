@@ -24,11 +24,11 @@ If you find yourself needing add/remove Vessels from a Fleet, update what the Ve
 
 ### Step 2 - Make Edits
 
-On the Fleet builder tab, you'll be able to 
+In the Fleet Builder, you'll be able to 
 
 1. Add and remove Vessels from the Fleet.
 2. Edit any and all fields that need updating. You can make multiple updates across multiple Vessels.
-3. Once all of your changes have been made, click the **Save** button at the bottom of the page.
+3. Once all of your changes have been made, click the **Save** button.
 
 For more information, read up on our [Visual Fleet Builder](../../reference/fleets/fleets-overview.md#visual-editor) or our [YAML Editor](../../reference/fleets/fleets-overview.md#yaml-editor).
 

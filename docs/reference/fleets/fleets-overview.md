@@ -51,19 +51,20 @@ This setup allows Vessels to be built to run independent, modular tasks off of n
 
 ## Screenshots
 
-![Fleets Overview](../../.gitbook/assets/shipyard_2021_10_19_11_43_30.png)
+![Fleets Overview](../../.gitbook/assets/fleets_overview_2024-06-18.png)
 
-![Editing a Fleet](../../.gitbook/assets/shipyard_2021_10_19_11_41_42.png)
+![Fleet Logs](../../.gitbook/assets/fleet_logs_2024-06-18.png)
+
+![Editing a Fleet - Canvas](../../.gitbook/assets/fleet_builder_canvas_2024-06-18.png)
+
+![Editing a Fleet - Vessel](../../.gitbook/assets/fleet_builder_vessel_edit_2024-06-18.png)
 
 ## Additional Notes
 
-1. A Fleet cannot be set up with Vessels that live across multiple projects. You'll need to make sure that all of the relevant Vessels live within the same project.
-2. A Fleet cannot contain any paths that would create a loop.
-3. If you want to have a set of Vessels that aren't connected to the larger group, you will need to create a different Fleet.
-4. You are currently unable to kick off a Fleet starting anywhere in the middle. This prevention is in place because we delete data as soon as a Fleet has finished running, whether it was successful or not. If you ran a Vessel starting from the middle and it relied on data created upstream, it would be unable to find that data and immediately fail.
-4. A fleet can now be kicked off starting in the middle with a few caveats. To learn more about how to accomplish this action, go here: [How to Kick off a Fleet in the Middle](../../how-tos/fleets/kick-off-a-fleet-in-the-middle.md)
-
-5. Each time a Fleet is saved, a version of that Fleet is generated and is accessible in the [Version Control](version-control.md) tab.
+1. A Fleet cannot contain any paths that would create a loop.
+2. If you want to have a set of Vessels that aren't connected to the larger group, you will need to create a different Fleet.
+3. There is limited functionality for kicking off a Fleet starting anywhere in the middle. This prevention is in place because we delete data as soon as a Fleet has finished running, whether it was successful or not. If you ran a Vessel starting from the middle and it relied on data created upstream, it would be unable to find that data and immediately fail. That said, a Fleet can be kicked off starting in the middle with a few caveats. To learn more about how to accomplish this action, go here: [How to Kick off a Fleet in the Middle](../../how-tos/fleets/kick-off-a-fleet-in-the-middle.md)
+4. Each time a Fleet is saved, a version of that Fleet is generated and is accessible in the [Version Control](version-control.md) tab.
 
 ## Learn More
 
