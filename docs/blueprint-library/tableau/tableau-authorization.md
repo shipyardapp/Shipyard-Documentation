@@ -39,6 +39,8 @@ As a part of every URL on Tableau, you should see a section that says `/site/YOU
 
 For example, if the full URL was `https://10ax.online.tableau.com/#/site/shipyarddevelopmentdev123456/explore`, your Site ID would be `shipyarddevelopmentdev123456`.
 
+In the cases where there is no specific Site ID, `Default` should be used as the inputted Site ID for the credential test or blueprint.
+
 ## Finding the Server URL
 
 The Server URL is the beginning part of the URL, including the subdomain, domain, and TLD.
