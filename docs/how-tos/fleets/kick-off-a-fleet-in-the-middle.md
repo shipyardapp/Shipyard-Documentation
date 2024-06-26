@@ -1,6 +1,6 @@
 ---
 id: kick-off-fleet-in-the-middle
-title: How to Kick Off a Fleet to run in the Middle
+title: How to Kick Off a Fleet to Run in the Middle
 description: Learn how to run a Fleet with custom parameter overrides that will skip vessels and allow the fleet run to start in the middle.
 keywords:
   - run
@@ -30,7 +30,7 @@ Running a Fleet with a specific parameter allows you to override certain vessels
 - Click the button with the parameters symbol `{...}` to open the Parameter Overrides modal.
 
 
-### Step 4 - Providing Parameter Override
+### Step 3 - Providing Parameter Override
 - In the **Parameter Overrides** section, you will see a Vessel overrides JSON structure already created from the Vessels in your Fleet.
 - The JSON structure will include:
     - A `vessel_overrides` key with an array of Vessel objects.
@@ -48,7 +48,7 @@ Running a Fleet with a specific parameter allows you to override certain vessels
     - `"SHIPYARD_OVERRIDE_STATUS": "ERROR"`
     - `"SHIPYARD_OVERRIDE_STATUS": "ERRORED"`
   
-### Step 5 - Check the Logs
+### Step 4 - Check the Logs
 - If a fleet has been skipped/overriden due to the `SHIPYARD_OVERRIDE_STATUS` Environment Variables being set, you will see that vessel be set with a status of "Success",
   and no billable runtime. However, you won't see any of the overriden vessels appear in the graph as well as the **Last Run**, **Retries**, **Billable Runtime**, and **Duration** remaining unset.
 
