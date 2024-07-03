@@ -31,7 +31,7 @@ The file type must be either a CSV or an XLSX.
 | Client Secret | EXCEL_CLIENT_SECRET | Password | :white_check_mark: | - | - | The secret value of the app created in Azure |
 | Tenant | EXCEL_TENANT | Password | :white_check_mark: | - | - | The ID of the tenant associated with the app |
 | User Email | EXCEL_USER_EMAIL | Alphanumeric | :white_check_mark: | - | - | The email address of the user to impersonate |
-| Shipyard Folder Name | EXCEL_LOCAL_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | The optional directory in Shipyard where the file resides |
+| Shipyard Folder Name | EXCEL_LOCAL_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | None |
 | Shipyard File Name | EXCEL_SRC_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | The name of the file to load to Excel (must be either a csv or xlsx file) |
 | OneDrive File Name | EXCEL_ONEDRIVE_FILE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | The name of the file once loaded to OneDrive. If omitted, the original file name will be used |
 | OneDrive Folder | EXCEL_ONEDRIVE_FOLDER | Alphanumeric | :heavy_minus_sign: | - | - | The optional folder name of where to save the Excel workbook in OneDrive. If omitted, the file will be saved in the root |
