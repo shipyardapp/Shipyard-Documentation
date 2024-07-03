@@ -14,7 +14,7 @@ keywords:
 
 #  Authorization
 
-In order to get started with the Excel 365 blueprints, you will need to first register an App in Azure to be able to programatically interface with your OneDrive. This setup is identical to that of the OneDrive blueprints as well.
+In order to get started with the Microsoft 365 Excel blueprints, you will need to first register an App in Azure to be able to programatically interface with your OneDrive. This setup is identical to that of the OneDrive blueprints as well.
 
 It is important to note that these blueprints **only** interact with Excel as a part of Office 365 in the cloud. These blueprints will not work with the desktop application of Excel.
 

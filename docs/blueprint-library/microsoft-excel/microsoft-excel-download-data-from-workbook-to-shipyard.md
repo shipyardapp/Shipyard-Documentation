@@ -10,7 +10,7 @@ keywords:
   - template
 ---
 
-# Microsoft Excel (365) - Download Data from Workbook to Shipyard
+# Microsoft 365 Excel - Download Data from Workbook to Shipyard
 
 
 

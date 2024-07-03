@@ -10,7 +10,7 @@ keywords:
   - template
 ---
 
-# Microsoft Excel (365) - Upload Data to Workbook from Shipyard
+# Microsoft 365 Excel - Upload Data to Workbook from Shipyard
 
 
 
