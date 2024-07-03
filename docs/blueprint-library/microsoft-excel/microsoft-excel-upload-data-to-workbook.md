@@ -10,7 +10,7 @@ keywords:
   - template
 ---
 
-# Microsoft Excel - Upload Data to Workbook from Shipyard
+# Microsoft Excel (365) - Upload Data to Workbook from Shipyard
 
 
 
@@ -22,6 +22,7 @@ This blueprint is used to upload data from Shipyard to a new or exisitng file. O
 
 The file type must be either a CSV or an XLSX.
 
+Additionally, this blueprint cannot be used to upload an excel sheet on your local machine. 
 
 ## Variables
 
@@ -46,7 +47,7 @@ Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 
 ```yaml
 source:
-  blueprint: Microsoft Excel - Upload Data to Workbook from Shipyard
+  blueprint: Microsoft Excel (365) - Upload Data to Workbook from Shipyard
   inputs:
     EXCEL_CLIENT_ID: null  ## REQUIRED
     EXCEL_CLIENT_SECRET: null ## REQUIRED

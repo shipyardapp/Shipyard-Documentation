@@ -29,7 +29,7 @@ This blueprint can be used to download data from an Excel Sheet to Shipyard. The
 | OneDrive Folder | EXCEL_ONEDRIVE_FOLDER | Alphanumeric | :heavy_minus_sign: | - | - | The optional folder name of where to save the Excel workbook in OneDrive. If omitted, the file will be saved in the root |
 | OneDrive File Name | EXCEL_ONEDRIVE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | The name of the file once loaded to OneDrive. If omitted, the original file name will be used |
 | Sheet Name | EXCEL_SHEET_NAME | Alphanumeric | :heavy_minus_sign: | `Sheet1` | - | The name of the sheet containing the data |
-| Shipyard Folder Name | EXCEL_LOCAL_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | The optional directory in Shipyard where the file resides  |
+| Shipyard Folder Name | EXCEL_LOCAL_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | The optional directory in Shipyard where the file resides |
 | Shipyard File Name | EXCEL_SRC_FILE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | The name of the file to load to Excel (must be either a csv or xlsx file) |
 
 
@@ -42,7 +42,7 @@ Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 
 ```yaml
 source:
-  blueprint: Microsoft Excel - Download Data from Workbook to Shipyard
+  blueprint: Microsoft Excel (365) - Download Data from Workbook to Shipyard
   inputs:
     EXCEL_CLIENT_ID: null  ## REQUIRED
     EXCEL_CLIENT_SECRET: null ## REQUIRED
