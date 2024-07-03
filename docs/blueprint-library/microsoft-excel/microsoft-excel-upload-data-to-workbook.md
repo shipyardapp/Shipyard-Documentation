@@ -47,7 +47,7 @@ Fleet [YAML Editor](../../reference/fleets/yaml-editor.md).
 
 ```yaml
 source:
-  blueprint: Microsoft Excel (365) - Upload Data to Workbook from Shipyard
+  blueprint: Microsoft 365 Excel - Upload Data to Workbook from Shipyard
   inputs:
     EXCEL_CLIENT_ID: null  ## REQUIRED
     EXCEL_CLIENT_SECRET: null ## REQUIRED
