@@ -27,7 +27,7 @@ You've now successfully duplicated the Fleet and can see it in the Fleets list.
 :::
 
 ### Step 2 - Edit the Duplicate
-While the Fleet has been successfully duplicated, we recommend editing the new Fleet to make a few adjustments before moving on.
+While the Fleet has been successfully duplicated, it is only differentiated from the original by random digits appended to the end of the name. We recommend making a few adjustments before moving on.
 
 1. Click on the new Fleet's name to open it.
 4. Decide on a new Fleet name.

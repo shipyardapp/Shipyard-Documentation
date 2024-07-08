@@ -28,7 +28,7 @@ You've now successfully duplicated a Blueprint and can see it in the Blueprints 
 :::
 
 ### Step 2 - Edit the Duplicate
-While the Blueprint has been successfully duplicated, we recommend editing the new Blueprint to make a few adjustments before moving on.
+While the Blueprint has been successfully duplicated, it is only differentiated from the original by random digits appended to the end of the name. We recommend making a few adjustments before moving on.
 
 1. Click on the new Blueprint's name to open it.
 2. Click on the **Settings** tab.
