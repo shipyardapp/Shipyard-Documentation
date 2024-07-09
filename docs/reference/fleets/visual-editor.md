@@ -49,7 +49,7 @@ Clicking the Blueprint/Language you want to use will result in a new Vessel bein
 
 You can always search for a specific Blueprint using the search bar at the top. This will pre-filter the list to what you're looking for.
 
-You can also duplicate existing Vessels by hovering over the Vessel and clicking the copy icon in the top right corner. This option requires that the original Vessel first be saved.
+You can also duplicate Vessels by hovering over the Vessel and clicking the copy icon in the top right corner.
 
 ### Editing Vessels
 

@@ -28,7 +28,7 @@ values={[
 
 When a Vessel is duplicated, the following things occur:
 
-1. A new Vessel is immediately created, with the name of `{Old Vessel Name} (Copy) {New Vessel ID}` .
+1. A new Vessel is immediately created. The name of the new Vessel will be the same as the original with three digits appended to the end (eg. the duplicate of `My Vessel` may be named `My Vessel 123`).
 2. The [Code](../code/code-overview.md), [Arguments](../arguments.md), [Environment Variables](../environment-variables/environment-variables-overview.md), [Packages](../packages/external-package-dependencies.md), [Guardrails](../guardrails.md), and [Notifications](../notifications.md) from the old Vessel are transferred to the new Vessel.
 
 </TabItem>
@@ -36,8 +36,8 @@ When a Vessel is duplicated, the following things occur:
 
 When a Fleet is duplicated, the following things occur:
 
-1. A new Fleet is immediately created, with the name of `{Old Fleet Name} (Copy) {New Fleet ID}` .
-2. Every Vessel in the Fleet is recreated with the name of `{Old Vessel Name} (Copy) {New Vessel ID}`, using the same rules when duplicating a Vessel individually.
+1. A new Fleet is immediately created. The name of the new Fleet will be the same as the original with three digits appended to the end (eg. the duplicate of `My Fleet` may be named `My Fleet 123`).
+2. The [Vessels](../vessels/vessels-overview.md) from the old Fleet are mirrored in the new Fleet.
 3. The Fleet's [Triggers](../triggers/triggers-overview.md) are all reset.
 4. The new Fleet starts with 0 logs.
 
@@ -46,7 +46,7 @@ When a Fleet is duplicated, the following things occur:
 
 When a Blueprint is duplicated, the following things occur:
 
-1. A new Blueprint is immediately created, with the name of `{Old Blueprint Name} (Copy) {New Blueprint ID}` .
+1. A new Blueprint is immediately created. The name of the new Blueprint will be the same as the original with three digits appended to the end (eg. the duplicate of `My Blueprint` may be named `My Blueprint 123`).
 2. The [Blueprint Variables](../blueprints/org-blueprints/blueprint-variables.md), [Blueprint Description](../blueprints/org-blueprints/blueprint-description.md), [Code](../code/code-overview.md), Command, [Environment Variables](../environment-variables/environment-variables-overview.md), [Packages](../packages/external-package-dependencies.md), and [Guardrails](../guardrails.md) from the old Blueprint are transferred to the new Blueprint. Effectively, every field gets carried over.
 3. The new Blueprint is set to the Hidden [visibility](../blueprints/org-blueprints/visibility.md).
 
@@ -54,9 +54,9 @@ When a Blueprint is duplicated, the following things occur:
 </Tabs>
 
 :::caution
-Pressing duplicate will immediately create a duplicate without you needing to save anything. You will, however, likely want to change a few settings or create a more readable name.
+Pressing duplicate will immediately create a duplicate without you needing to save anything. You will, however, likely want to change a few settings or create a more distinct name.
 :::
 
 ## Additional Notes
 
-1. You can't duplicate an instance of a Vessel, Blueprint, or Fleet that has been changed since the last save. You must first click save.
+1. You can't duplicate an instance of a Blueprint or Fleet that has been changed since the last save. You must first click save.
