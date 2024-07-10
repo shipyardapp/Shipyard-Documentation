@@ -37,7 +37,7 @@ When a Vessel is duplicated, the following things occur:
 When a Fleet is duplicated, the following things occur:
 
 1. A new Fleet is immediately created. The name of the new Fleet will be the same as the original with three digits appended to the end (eg. the duplicate of `My Fleet` may be named `My Fleet 123`).
-2. The [Vessels](../vessels/vessels-overview.md) from the old Fleet are mirrored in the new Fleet.
+2. The [Vessels](../vessels.md) from the old Fleet are mirrored in the new Fleet.
 3. The Fleet's [Triggers](../triggers/triggers-overview.md) are all reset.
 4. The new Fleet starts with 0 logs.
 

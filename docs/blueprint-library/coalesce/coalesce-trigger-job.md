@@ -12,9 +12,11 @@ keywords:
 
 # Coalesce - Trigger Job
 
+
 :::info
 This Blueprint is classified as "Free" and does not incur billable runtime. [Learn more](../../reference/blueprints/blueprint-library/blueprint-library-overview.md#free-blueprints).
 :::
+
 
 ## Overview
 
@@ -49,6 +51,7 @@ If you provide a value for a parameter that is different than the default value 
 | Parallelism | COALESCE_PARALLELISM | Integer | :heavy_minus_sign: | `16` | - | The maximum number of parallel nodes to run |
 | Wait For Completion | COALESCE_WAIT | Boolean | :heavy_minus_sign: | `TRUE` | - | Enable if you want the vessel to wait until the sync job is successfully completed. Otherwise, the vessel will only initiate the sync job without waiting |
 | Parameters | COALESCE_PARAMETERS | Alphanumeric | :heavy_minus_sign: | - | - | The optional parameters to use which are defined in the Coalesce UI. Format should be JSON where the Key is the name of the parameter and the Value is what the parameter should be.  |
+| Region | COALESCE_REGION | Select | :white_check_mark: | `gcp-us-central-1` | US Primary: `gcp-us-central-1`<br></br><br></br>Europe Primary: `gcp-eu-west-3`<br></br><br></br>Australia Primary: `gcp-austrailia-southeast-1`<br></br><br></br>US AWS East: `aws-us-east-1`<br></br><br></br>US AWS West: `aws-us-west-2`<br></br><br></br>US West 2 Azure: `az-us-west-2`<br></br><br></br>US East 2 Azure: `az-us-east-2`<br></br><br></br> | The region for your Coalesce account. For most US customers, the default will be US Central 1. |
 
 
 
@@ -74,6 +77,7 @@ source:
     COALESCE_PARALLELISM: 16
     COALESCE_WAIT: 'TRUE'
     COALESCE_PARAMETERS: null
+    COALESCE_REGION: gcp-us-central-1 ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1
