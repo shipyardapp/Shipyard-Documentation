@@ -12,6 +12,8 @@ keywords:
 
 # Coalesce - Check Job Status (Deprecated)
 
+
+
 ## Overview
 
 This Blueprint has been deprecated. Please use the vendor's "Trigger" Blueprint and set the "Wait for Completion" option to "True". Using this new option is free, more stable, and will complete faster. Read more about this change [here](https://www.shipyardapp.com/blog/orchestrate-data-tools-free).
