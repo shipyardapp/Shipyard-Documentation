@@ -13,4 +13,4 @@ keywords:
 
 
 ## How do I change my password?
-You can always change your password by filling out the [Forgot My Password](https://app.shipyardapp.com/auth/forgotpassword) form. This will send you a link to a page that lets you set a brand new password for your account.
+You can always change your password by going to our [Login Page](https://app.shipyardapp.com/auth/signout), and clicking **Forgot Password?**. This will send you to a page that lets you set a brand new password for your account.
