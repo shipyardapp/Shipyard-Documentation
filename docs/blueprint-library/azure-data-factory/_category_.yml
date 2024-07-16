@@ -1,0 +1,6 @@
+label: Azure Data Factory
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: azure-data-factory-overview
