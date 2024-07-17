@@ -13,11 +13,50 @@ keywords:
 ---
 
 #  Authorization
-
 Connecting Snowflake to Shipyard requires you to have:
-1. A Snowflake account with read/write access to the database and all associated tables/views you wish to access. We recommend setting up an account specifically for Shipyard access.
-2. A warehouse that the account has access to. We recommend setting up a warehouse specifically for Shipyard queries.
-3. Shipyard [IP Addresses whitelisted](https://www.shipyardapp.com/docs/faqs/security/ip-whitelist/)
+
+1. Shipyard [IP Addresses whitelisted](https://www.shipyardapp.com/docs/faqs/security/ip-whitelist/)
+2. A Snowflake account with read/write access to the database and all associated tables/views you wish to access. We recommend setting up an account specifically for Shipyard access.
+3. A warehouse that the account has access to. We recommend setting up a warehouse specifically for Shipyard queries.
+
+### Whitelisting Shipyard IP Addresses
+
+
+<Tabs
+defaultValue="new"
+values={[
+{label: 'Creating a New Network Policy', value: 'new'},
+{label: 'Updating an Existing Network Policy', value: 'existing'},
+]}>
+<TabItem value="new">
+
+1. Log into your Snowflake Account.
+2. Open a new worksheet.
+3. Paste the following script in the worksheet
+
+```sql
+CREATE NETWORK POLICY SHIPYARD_ACCESS
+ALLOWED_IP_LIST = ('54.190.66.63', '52.42.73.100', '44.231.239.186', '44.225.245.149');
+```
+4. Click Run
+
+</TabItem>
+
+<TabItem value="existing">
+
+1. Log into your Snowflake Account.
+2. Open a new worksheet.
+3. Paste the following script in the worksheet, updating <code>{policy_name}</code> with the correct value.
+
+```sql
+ALTER NETWORK POLICY {policy_name}
+SET ALLOWED_IP_LIST = ('54.190.66.63', '52.42.73.100', '44.231.239.186', '44.225.245.149');
+```
+4. Click Run
+
+</TabItem>
+</Tabs>
+
 
 ## Creating a Snowflake Role and User for Shipyard
 This guide will walk you through the process required to create a unique role and user account for Shipyard to access your Snowflake Database.
@@ -190,43 +229,6 @@ commit;
 **_NOTE:_** You can adjust this script as needed if you want Shipyard to have stricter access to your database.
 
 
-### Whitelisting Shipyard IP Addresses
-
-
-<Tabs
-defaultValue="new"
-values={[
-{label: 'Creating a New Network Policy', value: 'new'},
-{label: 'Updating an Existing Network Policy', value: 'existing'},
-]}>
-<TabItem value="new">
-
-1. Log into your Snowflake Account.
-2. Open a new worksheet.
-3. Paste the following script in the worksheet
-
-```sql
-CREATE NETWORK POLICY SHIPYARD_ACCESS
-ALLOWED_IP_LIST = ('54.190.66.63', '52.42.73.100', '44.231.239.186', '44.225.245.149');
-```
-4. Click Run
-
-</TabItem>
-
-<TabItem value="existing">
-
-1. Log into your Snowflake Account.
-2. Open a new worksheet.
-3. Paste the following script in the worksheet, updating <code>{policy_name}</code> with the correct value.
-
-```sql
-ALTER NETWORK POLICY {policy_name}
-SET ALLOWED_IP_LIST = ('54.190.66.63', '52.42.73.100', '44.231.239.186', '44.225.245.149');
-```
-4. Click Run
-
-</TabItem>
-</Tabs>
 
 
 ### Authenticating with a Private Key
