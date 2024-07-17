@@ -18,14 +18,9 @@ import TabItem from '@theme/TabItem';
 # dbt Core Part 3 - Setting Up dbt on Shipyard
 In part 3 of this guide, we will move into Shipyard to deploy dbt Core in the cloud. First, we will need to create a free developer account for Shipyard. After we have a developer account, we will create a Blueprint that can run dbt Core commands.
 
-### Create Shipyard Developer Account
+### Connect to GitHub
 
-1. Navigate to Shipyard's [sign-up page](https://app.shipyardapp.com/auth/signup).
-
-![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_24_10_49_18.png)
-
-2. Sign up with your email address and organization name.
-3. Connect to your GitHub account by following this [guide](https://www.shipyardapp.com/blog/automate-deployment-github-code/). After connecting your GitHub account, you'll be ready to create your first Blueprint.
+1. Connect to your GitHub account by following this [guide](https://www.shipyardapp.com/blog/automate-deployment-github-code/). After connecting your GitHub account, you'll be ready to create your first Blueprint.
 
 ### Creating dbt Core Blueprint
 1. On the sidebar of Shipyard's website, click **Blueprints**.
