@@ -64,12 +64,7 @@ module.exports = {
 				},
 				{
 					to: "https://www.shipyardapp.com/demo",
-					label: "Watch a Demo",
-					position: "left",
-				},
-				{
-					to: "https://app.shipyardapp.com/auth/signup?ref=documentation",
-					label: "Get Started for Free",
+					label: "Talk to Sales",
 					position: "left",
 				},
 				// {

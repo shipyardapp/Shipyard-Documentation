@@ -14,4 +14,4 @@ keywords:
 
 ## How can I get access to Shipyard?
 
-If you want to start using Shipyard, you can [sign up for free](https://app.shipyardapp.com/auth/signup?ref=docs-faq). Once you sign up, you'll begin on our Developer Plan.
+If you want to start using Shipyard, you can [talk to Sales](https://www.shipyardapp.com/demo). After talking to our sales team, we'll get you started with a proof of concept plan.
