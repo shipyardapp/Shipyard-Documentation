@@ -40,9 +40,9 @@ Additionally, you can configure the Blueprint to wait for the pipeline to finish
 | Tenant ID | AZURE_DATAFACTORY_TENANT_ID | Alphanumeric | :white_check_mark: | - | - | None |
 | Subscription ID | AZURE_DATAFACTORY_SUBSCRIPTION_ID | Alphanumeric | :white_check_mark: | - | - | None |
 | Resource Group Name | AZURE_DATAFACTORY_RESOURCE_GROUP | Alphanumeric | :white_check_mark: | - | - | Can be found by clicking on Switch Data Factory Icon on the top right of your Azure Data Factory portal |
-| Data Factory Name | AZURE_DATAFACTORY_FACTORY_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Can be found by clicking on Switch Data Factory Icon on the top right of your Azure Data Factory portal |
+| Data Factory Name | AZURE_DATAFACTORY_FACTORY_NAME | Alphanumeric | :white_check_mark: | - | - | Can be found by clicking on Switch Data Factory Icon on the top right of your Azure Data Factory portal |
 | Pipeline Name | AZURE_DATAFACTORY_PIPELINE | Alphanumeric | :white_check_mark: | - | - | Can be found by clicking on Switch Data Factory Icon on the top right of your Azure Data Factory portal |
-| Wait For Completion | AZURE_DATAFACTORY_WAIT | Boolean | :heavy_minus_sign: | `1` | - | Whether the Blueprint should wait for the Azure Data Factory pipeline run to finish before proceeding |
+| Wait For Completion | AZURE_DATAFACTORY_WAIT | Boolean | :white_check_mark: | `TRUE` | - | Whether the Blueprint should wait for the Azure Data Factory pipeline run to finish before proceeding |
 
 
 
@@ -61,9 +61,9 @@ source:
     AZURE_DATAFACTORY_TENANT_ID: null ## REQUIRED
     AZURE_DATAFACTORY_SUBSCRIPTION_ID: null ## REQUIRED
     AZURE_DATAFACTORY_RESOURCE_GROUP: null ## REQUIRED
-    AZURE_DATAFACTORY_FACTORY_NAME: null
+    AZURE_DATAFACTORY_FACTORY_NAME: null ## REQUIRED
     AZURE_DATAFACTORY_PIPELINE: null ## REQUIRED
-    AZURE_DATAFACTORY_WAIT: '1'
+    AZURE_DATAFACTORY_WAIT: 'TRUE' ## REQUIRED
   type: BLUEPRINT
 guardrails:
   retry_count: 1
