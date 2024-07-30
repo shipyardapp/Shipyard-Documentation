@@ -1,0 +1,6 @@
+label: Microsoft 365 SharePoint
+collapsible: true
+collapsed: true
+link:
+    type: doc
+    id: microsoft-sharepoint-overview
