@@ -25,8 +25,6 @@ Library Blueprints are designed to:
 
 Library Blueprints are immediately available to every user in an organization. These Blueprints are constantly updated and monitored by our team. If you run into connection issues or general errors, contact [support@shipyardapp.com](mailto:support@shipyardapp.com)
 
-In an effort to be transparent about how our Blueprints work, we open-source the code and make it available in a single repository on our [GitHub](https://github.com/shipyardapp/shipyard-blueprints/tree/main/shipyard_blueprints). The repository is broken up into folders by vendor. If some functionality isn't working appropriately, you can open an issue in GitHub or submit a pull request with the proposed changes.
-
 ## Free Blueprints
 A portion of our Blueprints are 100% free, never incurring [billable runtime](../../../faqs/plans/billable-runtime.md). These Blueprints are marked with "Trigger" in the name and are labeled in the application as "Free".
 

@@ -28,5 +28,3 @@ Platform currently has the following Blueprints readily available:
 - [Download Query Results to Platform](google-bigquery-store-query-results-as-csv.md)
 - [Download Query Results to Google Cloud Storage](google-bigquery-store-query-results-in-google-cloud-storage.md)
 
-## Open Source Code
-The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/shipyard-blueprints/tree/main/shipyard_blueprints/bigquery), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Platform Blueprints by creating issues or submitting PRs.

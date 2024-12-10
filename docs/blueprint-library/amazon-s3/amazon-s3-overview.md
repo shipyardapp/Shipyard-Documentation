@@ -28,5 +28,3 @@ Platform currently has the following Blueprints readily available:
 - [Move or Rename Files](amazon-s3-move-or-rename-files.md)
 - [Delete Files](amazon-s3-remove-files.md)
 
-## Open Source Code
-The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/shipyard-blueprints/tree/main/shipyard_blueprints/s3), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Platform Blueprints by creating issues or submitting PRs.

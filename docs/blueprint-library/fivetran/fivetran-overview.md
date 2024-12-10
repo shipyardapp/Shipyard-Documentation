@@ -28,5 +28,3 @@ Platform currently has the following Blueprints readily available:
 - [Trigger Sync and Check Status (Deprecated)](fivetran-trigger-sync-and-check-status.md)
 - [Update Connector](fivetran-update-connector.md)
 
-## Open Source Code
-The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/shipyard-blueprints/tree/main/shipyard_blueprints/fivetran), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Platform Blueprints by creating issues or submitting PRs.

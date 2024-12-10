@@ -27,5 +27,3 @@ Platform currently has the following Blueprints readily available:
 - [Download Sheet to Platform](google-sheets-download-sheet-to-csv.md)
 - [Upload File to Sheet from Platform](google-sheets-upload-csv-to-sheet.md)
 
-## Open Source Code
-The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/shipyard-blueprints/tree/main/shipyard_blueprints/googlesheets), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Platform Blueprints by creating issues or submitting PRs.

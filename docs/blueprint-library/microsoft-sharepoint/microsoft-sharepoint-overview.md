@@ -28,5 +28,3 @@ Platform currently has the following Blueprints readily available:
 - [Upload Files from Platform to SharePoint](microsoft-365-sharepoint-upload-files-from-shipyard-to-sharepoint.md)
 - [Move or Rename Files in SharePoint](microsoft-365-sharepoint-move-or-rename-files-in-sharepoint.md)
 
-## Open Source Code
-The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/shipyard-blueprints/tree/main/shipyard_blueprints/microsoft-sharepoint), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Platform Blueprints by creating issues or submitting PRs.

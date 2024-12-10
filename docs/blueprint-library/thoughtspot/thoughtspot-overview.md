@@ -26,5 +26,3 @@ Platform currently has the following Blueprints readily available:
 - [Download Search Results to Platform](thoughtspot-download-search-results-to-csv.md)
 - [Export Answer Report](thoughtspot-export-answer-report.md)
 
-## Open Source Code
-The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/shipyard-blueprints/tree/main/shipyard_blueprints/thoughtspot), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Platform Blueprints by creating issues or submitting PRs.
