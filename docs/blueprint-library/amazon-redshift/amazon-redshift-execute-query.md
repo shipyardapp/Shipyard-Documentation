@@ -3,7 +3,7 @@ id: amazon-redshift-execute-query
 title: Amazon Redshift Template - Execute Query
 hide_title: true
 sidebar_label: Execute Query
-description: Information about Shipyard's low-code Amazon Redshift Execute Query blueprint. Execute any SQL query against your Redshift database.
+description: Information about Platform's low-code Amazon Redshift Execute Query blueprint. Execute any SQL query against your Redshift database.
 keywords:
   - amazon redshift
   - blueprint

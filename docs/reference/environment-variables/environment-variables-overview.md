@@ -20,7 +20,7 @@ Environment Variables are set at the beginning of a run for the current Vessel. 
 
 Environment Variables all have a **Name** and a **Value**. By referencing the variable's **Name** in your program, you can retrieve the **Value**. For more information, read our guide on how to access environment variable data [with code](../../how-tos/environment-variables/access-environment-variables-with-code.md) or [using the UI](../../how-tos/environment-variables/access-environment-variables-in-ui.md). 
 
-Environment Variables set in Shipyard are not visible in the UI and are encrypted on the backend. There are 3 distinct ways that your environment variable values can show up.
+Environment Variables set in Platform are not visible in the UI and are encrypted on the backend. There are 3 distinct ways that your environment variable values can show up.
 
 - **Redacted** - By default, anything you type will remain redacted and show as `•••••••`
 - **Visible** - By clicking the eye icon, you can see the text that you just typed in.
@@ -28,10 +28,10 @@ Environment Variables set in Shipyard are not visible in the UI and are encrypte
 
 When you first create Environment Variables, both the **Name** and **Value** fields should be filled out. To set a value as an empty string, type a single character and delete it to show `(empty string)`.
 
-When editing environment variables in the future that show `(hidden)`, leaving the **Value** field blank will result in Shipyard continuing to use the previously set value for that **Name**.
+When editing environment variables in the future that show `(hidden)`, leaving the **Value** field blank will result in Platform continuing to use the previously set value for that **Name**.
 
 :::tip Pro Tip
-Staying inline with programming best practices, we recommend that all of your environment variable names be in ALL CAPS, but Shipyard does not require it.
+Staying inline with programming best practices, we recommend that all of your environment variable names be in ALL CAPS, but Platform does not require it.
 :::
 
 ## Screenshots

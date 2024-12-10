@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Google Drive Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Google Drive to work with Shipyard's low-code Google Drive templates.
+description: Instructions on how to authorize Google Drive to work with Platform's low-code Google Drive templates.
 keywords:
 - google drive
 - blueprint

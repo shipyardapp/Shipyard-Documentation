@@ -2,7 +2,7 @@
 id: fleets-overview
 title: Fleets Overview
 hide_title: true
-description: Information about how to build and work with Fleets in Shipyard.
+description: Information about how to build and work with Fleets in Platform.
 keywords:
   - workflow
   - fleets
@@ -45,7 +45,7 @@ This design is the equivalent of running individual scripts one after another on
 
 By default, all files generated are stored in the home directory, `/home/shipyard/` and all scripts are run from this same directory. To access any generated files, you do not need to include the home directory. However, if you have chosen to create a file in a subdirectory, that subdirectory structure must be included to access a file. To see a list of all files available in a Fleet, [follow this guide](../../how-tos/fleets/see-all-files.md).
 
-Once every Vessel in the Fleet has finished running, all files are immediately wiped from the Shipyard platform.
+Once every Vessel in the Fleet has finished running, all files are immediately wiped from the Platform platform.
 
 This setup allows Vessels to be built to run independent, modular tasks off of newly generated data without needing to change business logic to upload/download files to/from an external storage solution. This setup allows greater flexibility in how you build Vessels and less coding overall when building out your workflows.
 

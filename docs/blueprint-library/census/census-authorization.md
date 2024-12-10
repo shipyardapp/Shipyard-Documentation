@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Census Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Census to work with Shipyard's low-code Census templates.
+description: Instructions on how to authorize Census to work with Platform's low-code Census templates.
 keywords:
 - census
 - blueprint
@@ -13,7 +13,7 @@ keywords:
 ---
 
 # Census Authorization
-To get started with any Census Blueprints, you will need to create an API Key. This API Key is a secure way for Shipyard to access Census and will be required for **every** Census Blueprint. Additionally, you'll need a Sync ID.
+To get started with any Census Blueprints, you will need to create an API Key. This API Key is a secure way for Platform to access Census and will be required for **every** Census Blueprint. Additionally, you'll need a Sync ID.
 
 ## Creating a Census API Key
 

@@ -1,16 +1,16 @@
 ---
 id: mode-download-report-as-file
-title: Mode Template - Download Report as File to Shipyard
+title: Mode Template - Download Report as File to Platform
 hide_title: true
-sidebar_label: Download Report as File to Shipyard
-description: Information about Shipyard's low-code Mode Download Report as File to Shipyard blueprint. Download the contents of a Mode report as a JSON, PDF, or CSV. 
+sidebar_label: Download Report as File to Platform
+description: Information about Platform's low-code Mode Download Report as File to Platform blueprint. Download the contents of a Mode report as a JSON, PDF, or CSV. 
 keywords:
     - mode
     - blueprint
     - template
 ---
 
-# Mode - Download Report as File to Shipyard
+# Mode - Download Report as File to Platform
 
 ## Overview
 Download a report from Mode as a CSV, PDF, or JSON file. Typically used for pulling live data and sending the output to a messaging service, like Email or Slack.

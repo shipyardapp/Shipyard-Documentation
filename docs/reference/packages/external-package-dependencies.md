@@ -18,14 +18,14 @@ import TabItem from '@theme/TabItem';
 
 ## Definition
 
-Every language that Shipyard supports has packages that can be installed to enhance the functionality and simplicity of your scripts. If your script uses an external package, you'll have to tell Shipyard what packages to install before the script can run successfully.
+Every language that Platform supports has packages that can be installed to enhance the functionality and simplicity of your scripts. If your script uses an external package, you'll have to tell Platform what packages to install before the script can run successfully.
 
 There are 2 options in the platform for installing packages. How you enter this information varies by language. 
 
 :::tip Pro Tip
-If you're uploading code directly to Shipyard, we recommend installing packages using the Packages Panel so that team members can quickly view and change the version.
+If you're uploading code directly to Platform, we recommend installing packages using the Packages Panel so that team members can quickly view and change the version.
 
-If you're using a Git connection, we recommend including a packages file in the root directory of your repository. Shipyard will automatically find this file and install dependencies.
+If you're using a Git connection, we recommend including a packages file in the root directory of your repository. Platform will automatically find this file and install dependencies.
 :::
 :::warning
 You must choose one option or the other. Using both simultaneously will result in packages not being installed properly.
@@ -61,7 +61,7 @@ git+git://github.com/pandas-dev/pandas@master
 
 When you build a Vessel or Blueprint with Bash, it runs inside Docker containers running a Debian image. In order for your Vessel to run successfully, you must provide a way to install any Linux packages that you need. These packages can be listed out under the Bash Packages Panel.
 
-Packages should be formatted with the Package Name field filled out. [Use this site](https://www.debian.org/distrib/packages) to find all available packages you can use with Bash in Shipyard.
+Packages should be formatted with the Package Name field filled out. [Use this site](https://www.debian.org/distrib/packages) to find all available packages you can use with Bash in Platform.
 
 ![Example Bash Packages](../../.gitbook/assets/shipyard_2021_03_12_17_33_07.png)
 
@@ -93,7 +93,7 @@ values={[
 ]}>
 <TabItem value="python">
 
-You can also install package dependencies by including a `requirements.txt` file in any directory of the code you upload. Shipyard will automatically find this file and install all of the listed dependencies on it.
+You can also install package dependencies by including a `requirements.txt` file in any directory of the code you upload. Platform will automatically find this file and install all of the listed dependencies on it.
 
 For more information on how `requirements.txt` should be formatted, [read this guide](https://pip.pypa.io/en/stable/user_guide/#requirements-files).
 :::caution
@@ -113,7 +113,7 @@ Bash does not currently have a packages file that we support.
 </TabItem>
 <TabItem value="node">
 
-You can also install package dependencies by including a `package.json` file in the root directory of the code you upload. Shipyard will automatically find this file and install all of the listed dependencies on it.
+You can also install package dependencies by including a `package.json` file in the root directory of the code you upload. Platform will automatically find this file and install all of the listed dependencies on it.
 
 For more information on how `package.json` should be formatted, [read this guide](https://docs.npmjs.com/cli/v7/configuring-npm/package-json).
 

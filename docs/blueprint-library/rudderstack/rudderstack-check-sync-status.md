@@ -3,7 +3,7 @@ id: rudderstack-check-sync-status
 title: Rudderstack Template - Check Sync Status (Deprecated)
 hide_title: true
 sidebar_label: Check Sync Status (Deprecated)
-description: Information about Shipyard's low-code Rudderstack Check Sync Status (Deprecated) blueprint. Check for the status of a Rudderstack source. The Vessel's exit code and status will match the status of the latest sync. 
+description: Information about Platform's low-code Rudderstack Check Sync Status (Deprecated) blueprint. Check for the status of a Rudderstack source. The Vessel's exit code and status will match the status of the latest sync. 
 keywords:
     - rudderstack
     - blueprint

@@ -3,7 +3,7 @@ id: sftp-delete-files
 title: SFTP Template - Delete Files
 hide_title: true
 sidebar_label: Delete Files
-description: Information about Shipyard's low-code SFTP Delete Files blueprint. Quickly delete one or more files from an SFTP Server. Once the vessel has run successfully, the results cannot be undone.
+description: Information about Platform's low-code SFTP Delete Files blueprint. Quickly delete one or more files from an SFTP Server. Once the vessel has run successfully, the results cannot be undone.
 keywords:
   - sftp
   - blueprint

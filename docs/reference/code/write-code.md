@@ -13,7 +13,7 @@ keywords:
 
 ## Definition
 
-The in-app editor allows you to copy and paste your code directly into Shipyard or write your code from scratch, allowing you to make changes directly in the UI as needed. This solution is perfect for smaller code snippets that you may need to change and edit on the fly.
+The in-app editor allows you to copy and paste your code directly into Platform or write your code from scratch, allowing you to make changes directly in the UI as needed. This solution is perfect for smaller code snippets that you may need to change and edit on the fly.
 
 This editor is built using [monaco-editor](https://microsoft.github.io/monaco-editor/), the same underlying base as VSCode. The editor will automatically perform syntax highlighting based on the language you selected. In addition, you can press **ctrl+f** to bring up functionality to find and replace text in your code. 
 

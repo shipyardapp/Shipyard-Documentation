@@ -3,7 +3,7 @@ id: chatgpt-create-data-dictionary
 title: OpenAI ChatGPT Template - Create Data Dictionary
 hide_title: true
 sidebar_label: Create Data Dictionary
-description: Information about Shipyard's low-code OpenAI ChatGPT Create Data Dictionary blueprint. This Blueprint takes in a CSV file and creates a data dictionary. 
+description: Information about Platform's low-code OpenAI ChatGPT Create Data Dictionary blueprint. This Blueprint takes in a CSV file and creates a data dictionary. 
 keywords:
     - openai chatgpt
     - blueprint

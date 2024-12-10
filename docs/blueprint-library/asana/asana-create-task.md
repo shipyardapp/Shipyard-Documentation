@@ -3,7 +3,7 @@ id: asana-create-task
 title: Asana Template - Create Task
 hide_title: true
 sidebar_label: Create Task
-description: Information about Shipyard's low-code Asana Create Task blueprint. Quickly create a new task in Asana 
+description: Information about Platform's low-code Asana Create Task blueprint. Quickly create a new task in Asana 
 keywords:
     - asana
     - blueprint

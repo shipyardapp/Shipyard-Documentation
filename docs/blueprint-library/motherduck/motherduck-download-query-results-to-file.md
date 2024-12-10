@@ -1,20 +1,20 @@
 ---
 id: motherduck-download-query-results-to-file
-title: MotherDuck Template - Download Query Results to Shipyard
+title: MotherDuck Template - Download Query Results to Platform
 hide_title: true
-sidebar_label: Download Query Results to Shipyard
-description: Information about Shipyard's low-code MotherDuck Download Query Results to Shipyard blueprint. Quickly download the results of a DuckDB query to Shipyard
+sidebar_label: Download Query Results to Platform
+description: Information about Platform's low-code MotherDuck Download Query Results to Platform blueprint. Quickly download the results of a DuckDB query to Platform
 keywords:
   - motherduck
   - blueprint
   - template
 ---
 
-# MotherDuck - Download Query Results to Shipyard
+# MotherDuck - Download Query Results to Platform
 
 ## Overview
 
-Quickly download the results of a DuckDB query to Shipyard. The target file can either be a CSV or Parquet file.
+Quickly download the results of a DuckDB query to Platform. The target file can either be a CSV or Parquet file.
 
 ## Variables
 

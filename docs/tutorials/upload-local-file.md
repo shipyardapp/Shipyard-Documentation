@@ -16,11 +16,11 @@ keywords:
 
 ## Overview
 
-In this tutorial, you'll learn how to upload a file from your computer to Shipyard that can be used in a Fleet. This can be helpful to upload static credential or reference files, such as RSA keys.
+In this tutorial, you'll learn how to upload a file from your computer to Platform that can be used in a Fleet. This can be helpful to upload static credential or reference files, such as RSA keys.
 
 By the end of the tutorial, you'll be able to:
 
-- [Upload a script](../reference/code/upload-code.md) to Shipyard.
+- [Upload a script](../reference/code/upload-code.md) to Platform.
 - Check [Logs](../reference/logs/logs-overview.md) to verify that your local file was uploaded.
 
 :::caution
@@ -34,11 +34,11 @@ First, [download this zip file](https://drive.google.com/file/d/1dlxUFR9MxKdtsO-
 Feel free to peruse this zip file beforehand so you understand the contents and purpose. The zip file contains two files:
 
 1. `upload_rsa.sh` - A bash script that prints a success message and returns a 0 exit code.
-2. `id_rsa` - The RSA key file to be uploaded into Shipyard.
+2. `id_rsa` - The RSA key file to be uploaded into Platform.
 
 ## Steps
 
-Using the sidebar, click **+ New Fleet**. You'll now be on the Fleet builder canvas. Next we'll walk through the process of building the required Vessel to upload the file to Shipyard
+Using the sidebar, click **+ New Fleet**. You'll now be on the Fleet builder canvas. Next we'll walk through the process of building the required Vessel to upload the file to Platform
 
 ### Step 1 - Create a Code Vessel
 
@@ -51,10 +51,10 @@ Using the sidebar, click **+ New Fleet**. You'll now be on the Fleet builder can
 ![Vessel Setup](../.gitbook/assets/2022-09-19-14-25-39.png)
 
 :::info Pro Tip
-When you [upload files](../reference/code/upload-code.md) to Shipyard using this method, they will be automatically unzipped. Only a single specified file (in this tutorial, `upload_rsa.sh`) can ever be run per Vessel. Future downstream Vessels can run and access the files in the zipped file.
+When you [upload files](../reference/code/upload-code.md) to Platform using this method, they will be automatically unzipped. Only a single specified file (in this tutorial, `upload_rsa.sh`) can ever be run per Vessel. Future downstream Vessels can run and access the files in the zipped file.
 :::
 
-### Step 2 - Create a Vessel to Check Shipyard File System
+### Step 2 - Create a Vessel to Check Platform File System
 
 1. Click the **Add Vessel** button to add a second Vessel.
 2. Click **Bash** to add a Bash code Vessel.
@@ -68,7 +68,7 @@ When you [upload files](../reference/code/upload-code.md) to Shipyard using this
 ### Step 3 - Name your Fleet
 
 1. Click the cog for **Fleet Settings** on the left side of the Fleet Builder.
-2. Under **Fleet Name**, enter `Upload RSA File to Shipyard`.
+2. Under **Fleet Name**, enter `Upload RSA File to Platform`.
 
 ![](../.gitbook/assets/2022-09-19-14-34-29.png)
 
@@ -86,12 +86,12 @@ When you [upload files](../reference/code/upload-code.md) to Shipyard using this
 ![](../.gitbook/assets/2022-09-19-14-50-08.png)
 
 3. This takes you to the [Vessel Log](../reference/logs/vessel-logs.md).
-4. You are able to see the `id_rsa` file that we wanted to upload from our computer in the Shipyard file system.
+4. You are able to see the `id_rsa` file that we wanted to upload from our computer in the Platform file system.
 
-![Shipyard File System](../.gitbook/assets/shipyard_2022_09_20_16_54_58.png)
+![Platform File System](../.gitbook/assets/shipyard_2022_09_20_16_54_58.png)
 
 :::tip success
-You have successfully created a Fleet with a Vessel that can upload a file to use in Shipyard from your local file system. 
+You have successfully created a Fleet with a Vessel that can upload a file to use in Platform from your local file system. 
 
 Use this process in any of your own Fleets by connecting the "Upload Local File Vessel" before another Vessel.
 :::

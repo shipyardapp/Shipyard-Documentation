@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Deepgram Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Deepgram to work with Shipyard's low-code Deepgram templates.
+description: Instructions on how to authorize Deepgram to work with Platform's low-code Deepgram templates.
 keywords:
 - deepgram
 - blueprint
@@ -13,7 +13,7 @@ keywords:
 ---
 
 # Deepgram Authorization
-To get started with any Deepgram Blueprints, you will need to create an API Key. This API Key is a secure way for Shipyard to access Deepgram and will be required for **every** Deepgram Blueprint.
+To get started with any Deepgram Blueprints, you will need to create an API Key. This API Key is a secure way for Platform to access Deepgram and will be required for **every** Deepgram Blueprint.
 
 ## Creating a Deepgram API Key
 

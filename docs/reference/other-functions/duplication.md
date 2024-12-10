@@ -2,7 +2,7 @@
 id: duplication
 title: Duplication
 hide_title: true
-description: Information about how duplication works in Shipyard.
+description: Information about how duplication works in Platform.
 keywords:
   - copy
   - duplicate
@@ -15,7 +15,7 @@ import TabItem from '@theme/TabItem';
 
 ## Definition
 
-Shipyard allows users to easily duplicate their Vessels, Fleets, Blueprints. This is commonly used to create slight variations or in lieu of built-in versioning.
+Platform allows users to easily duplicate their Vessels, Fleets, Blueprints. This is commonly used to create slight variations or in lieu of built-in versioning.
 
 <Tabs
 defaultValue="vessel"

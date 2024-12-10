@@ -20,7 +20,7 @@ import TabItem from '@theme/TabItem';
 
 On the Trigger tab for every Fleet, you are provided with a section for creating and managing Webhook Triggers.
 
-Webhook Triggers enable you to programmatically execute a Fleet in Shipyard by running a POST request from any service. When you run the POST request, your Fleet will be scheduled to run immediately. You can also use webhooks to dynamically pass data to your Vessels at runtime.
+Webhook Triggers enable you to programmatically execute a Fleet in Platform by running a POST request from any service. When you run the POST request, your Fleet will be scheduled to run immediately. You can also use webhooks to dynamically pass data to your Vessels at runtime.
 
 Webhook triggers differ from [API triggers](api-triggers.md) in the following ways:
 - Webhook triggers will work without authentication for anyone that has access to the URL.

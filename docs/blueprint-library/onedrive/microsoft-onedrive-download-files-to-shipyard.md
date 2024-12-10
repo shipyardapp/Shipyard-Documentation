@@ -1,22 +1,22 @@
 ---
 id: microsoft-onedrive-download-files-to-shipyard
-title: OneDrive Template - Download Files to Shipyard
+title: OneDrive Template - Download Files to Platform
 hide_title: true
-sidebar_label: Download Files to Shipyard
-description: Information about Shipyard's low-code OneDrive Download Files to Shipyard blueprint. Quickly download one or multiple files from Microsoft OneDrive to Shipyard
+sidebar_label: Download Files to Platform
+description: Information about Platform's low-code OneDrive Download Files to Platform blueprint. Quickly download one or multiple files from Microsoft OneDrive to Platform
 keywords:
   - onedrive
   - blueprint
   - template
 ---
 
-# Microsoft OneDrive - Download Files to Shipyard
+# Microsoft OneDrive - Download Files to Platform
 
 
 
 ## Overview
 
-This blueprint can be used to download one or multiple files from OneDrive to Shipyard. 
+This blueprint can be used to download one or multiple files from OneDrive to Platform. 
 
 The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
 
@@ -31,7 +31,7 @@ The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/ma
 | File Match Type | ONEDRIVE_FILE_MATCH_TYPE | Select | :heavy_minus_sign: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match`<br></br><br></br> | The match type used to identify files to load |
 | OneDrive File Name | ONEDRIVE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | The name of the file(s) to download from OneDrive |
 | OneDrive Folder Name | ONEDRIVE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | The folder name within OneDrive where the files reside. If omitted, the blueprint will search within the root directory |
-| Shipyard Folder Name | ONEDRIVE_LOCAL_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | The optional name of the folder where the data should be downloaded to in Shipyard |
+| Shipyard Folder Name | ONEDRIVE_LOCAL_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | The optional name of the folder where the data should be downloaded to in Platform |
 | Shipyard File Name | ONEDRIVE_LOCAL_FILE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | The name of the file(s) once downloaded from OneDrive. If omitted, the original file name will be used |
 
 

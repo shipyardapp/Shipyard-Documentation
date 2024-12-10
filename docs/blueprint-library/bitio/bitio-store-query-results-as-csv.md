@@ -1,16 +1,16 @@
 ---
 id: bitio-store-query-results-as-csv
-title: bit.io Template - Download Query Results to Shipyard
+title: bit.io Template - Download Query Results to Platform
 hide_title: true
-sidebar_label: Download Query Results to Shipyard
-description: Information about Shipyard's low-code bit.io Download Query Results to Shipyard blueprint. Turn the results of your SQL SELECT statement into a CSV file. 
+sidebar_label: Download Query Results to Platform
+description: Information about Platform's low-code bit.io Download Query Results to Platform blueprint. Turn the results of your SQL SELECT statement into a CSV file. 
 keywords:
     - bit.io
     - blueprint
     - template
 ---
 
-# bit.io - Download Query Results to Shipyard
+# bit.io - Download Query Results to Platform
 
 ## Overview
 Turn the results of your SQL SELECT statement into a CSV file. Extract your bit.io data into files for easier delivery to clients and partners.

@@ -3,7 +3,7 @@ id: airbyte-trigger-sync
 title: Airbyte Template - Trigger Sync
 hide_title: true
 sidebar_label: Trigger Sync
-description: Information about Shipyard's low-code Airbyte Trigger Sync blueprint. Execute a sync against an existing connector in the Airbyte interface. 
+description: Information about Platform's low-code Airbyte Trigger Sync blueprint. Execute a sync against an existing connector in the Airbyte interface. 
 keywords:
     - airbyte
     - blueprint

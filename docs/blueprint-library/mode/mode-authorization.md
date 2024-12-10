@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Mode Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Mode to work with Shipyard's low-code Mode templates.
+description: Instructions on how to authorize Mode to work with Platform's low-code Mode templates.
 keywords:
 - mode
 - blueprint
@@ -13,7 +13,7 @@ keywords:
 ---
 
 # Mode Authorization
-To get started with any Mode Blueprints, you will need to create an API Access Token. This API Access Token is a secure way for Shipyard to access Mode and will be required for **every** Mode Blueprint. Additionally, you'll need to find your Workspace Name and your Report ID.
+To get started with any Mode Blueprints, you will need to create an API Access Token. This API Access Token is a secure way for Platform to access Mode and will be required for **every** Mode Blueprint. Additionally, you'll need to find your Workspace Name and your Report ID.
 
 ## Creating a Mode Access Token
 1. Log into [Mode](https://app.mode.com/).
@@ -25,7 +25,7 @@ To get started with any Mode Blueprints, you will need to create an API Access T
 
 ![](https://cdn.sanity.io/images/2xyydva6/production/b58e449da1c44c117e4bd3a88de627af49aac399-285x241.png?w=450)
 
-4. Provide a descriptive New token name like "Shipyard".
+4. Provide a descriptive New token name like "Platform".
 5. Click **Create Token**.
 6. Copy both the Token and Token Password and store them somewhere safe. These values will be used for every Mode Blueprint.
 

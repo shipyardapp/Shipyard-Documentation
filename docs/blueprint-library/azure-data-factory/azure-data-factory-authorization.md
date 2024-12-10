@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Azure Data Factory Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Azure Data Factory to work with Shipyard's low-code Azure Data Factory templates.
+description: Instructions on how to authorize Azure Data Factory to work with Platform's low-code Azure Data Factory templates.
 keywords:
   - azure data factory
   - blueprint

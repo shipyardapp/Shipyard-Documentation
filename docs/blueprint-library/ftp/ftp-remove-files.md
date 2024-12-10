@@ -3,7 +3,7 @@ id: ftp-remove-files
 title: FTP Template - Delete Files
 hide_title: true
 sidebar_label: Delete Files
-description: Information about Shipyard's low-code FTP Delete Files blueprint. Quickly remove one or more files from an FTP Server. 
+description: Information about Platform's low-code FTP Delete Files blueprint. Quickly remove one or more files from an FTP Server. 
 keywords:
   - ftp
   - blueprint

@@ -3,7 +3,7 @@ id: bitio-execute-query
 title: bit.io Template - Execute Query
 hide_title: true
 sidebar_label: Execute Query
-description: Information about Shipyard's low-code bit.io Execute Query blueprint. Execute any SQL query against a bit.io database. 
+description: Information about Platform's low-code bit.io Execute Query blueprint. Execute any SQL query against a bit.io database. 
 keywords:
     - bit.io
     - blueprint

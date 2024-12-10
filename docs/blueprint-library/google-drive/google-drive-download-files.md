@@ -1,16 +1,16 @@
 ---
 id: google-drive-download-files
-title: Google Drive Template - Download Files to Shipyard
+title: Google Drive Template - Download Files to Platform
 hide_title: true
-sidebar_label: Download Files to Shipyard
-description: Information about Shipyard's low-code Google Drive Download Files to Shipyard blueprint. Quickly export one or more files from your Google Drive account. 
+sidebar_label: Download Files to Platform
+description: Information about Platform's low-code Google Drive Download Files to Platform blueprint. Quickly export one or more files from your Google Drive account. 
 keywords:
     - google drive
     - blueprint
     - template
 ---
 
-# Google Drive - Download Files to Shipyard
+# Google Drive - Download Files to Platform
 
 ## Overview
 Quickly export one or more files from your Google Drive account. The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.

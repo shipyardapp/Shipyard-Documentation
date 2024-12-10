@@ -3,7 +3,7 @@ id: salesforce-csv-header-validator
 title: Salesforce Template - CSV Header Validator
 hide_title: true
 sidebar_label: CSV Header Validator
-description: Information about Shipyard's low-code Salesforce CSV Header Validator blueprint. Easily validate CSV headers against Salesforce properties and fetch Salesforce field details. 
+description: Information about Platform's low-code Salesforce CSV Header Validator blueprint. Easily validate CSV headers against Salesforce properties and fetch Salesforce field details. 
 keywords:
     - salesforce
     - blueprint

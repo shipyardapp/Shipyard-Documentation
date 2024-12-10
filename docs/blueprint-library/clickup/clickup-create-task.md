@@ -3,7 +3,7 @@ id: clickup-create-task
 title: Clickup Template - Create Task
 hide_title: true
 sidebar_label: Create Task
-description: Information about Shipyard's low-code Clickup Create Task blueprint. Creates a task 
+description: Information about Platform's low-code Clickup Create Task blueprint. Creates a task 
 keywords:
     - clickup
     - blueprint

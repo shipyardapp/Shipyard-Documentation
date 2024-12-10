@@ -1,16 +1,16 @@
 ---
 id: snowflake-upload-csv-to-table
-title: Snowflake Template - Upload File to Table from Shipyard
+title: Snowflake Template - Upload File to Table from Platform
 hide_title: true
-sidebar_label: Upload File to Table from Shipyard
-description: Information about Shipyard's low-code Snowflake Upload File to Table from Shipyard blueprint. Upload a CSV file to any table in Snowflake.
+sidebar_label: Upload File to Table from Platform
+description: Information about Platform's low-code Snowflake Upload File to Table from Platform blueprint. Upload a CSV file to any table in Snowflake.
 keywords:
   - snowflake
   - blueprint
   - template
 ---
 
-# Snowflake - Upload File to Table from Shipyard
+# Snowflake - Upload File to Table from Platform
 
 ## Overview
 
@@ -31,7 +31,7 @@ In all instances, if the table name does not already exist, a new table will be 
 
 **Recommended Setup:**
 
-1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Shipyard or generates a file with code. 
+1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Platform or generates a file with code. 
 
 ## Variables
 

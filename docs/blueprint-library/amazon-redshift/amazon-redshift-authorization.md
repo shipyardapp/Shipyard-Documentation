@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Amazon Redshift Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Amazon Redshift to work with Shipyard's low-code Amazon Redshift templates.
+description: Instructions on how to authorize Amazon Redshift to work with Platform's low-code Amazon Redshift templates.
 keywords:
   - amazon redshift
   - blueprint
@@ -16,7 +16,7 @@ keywords:
 
 In order to get started with Redshift Blueprints, the cluster access information must be retrieved.
 
-Additionally, you may need to ensure that Shipyard [IP Addresses are whitelisted](https://www.shipyardapp.com/docs/faqs/security/ip-whitelist/)
+Additionally, you may need to ensure that Platform [IP Addresses are whitelisted](https://www.shipyardapp.com/docs/faqs/security/ip-whitelist/)
 
 ## Retrieving Redshift Cluster Info
 

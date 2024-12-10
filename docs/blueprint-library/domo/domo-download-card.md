@@ -1,16 +1,16 @@
 ---
 id: domo-download-card
-title: Domo Template - Download Card to Shipyard
+title: Domo Template - Download Card to Platform
 hide_title: true
-sidebar_label: Download Card to Shipyard
-description: Information about Shipyard's low-code Domo Download Card to Shipyard blueprint. Download the contents of a Domo card as a PPT, CSV, or XLSX file.
+sidebar_label: Download Card to Platform
+description: Information about Platform's low-code Domo Download Card to Platform blueprint. Download the contents of a Domo card as a PPT, CSV, or XLSX file.
 keywords:
   - domo
   - blueprint
   - template
 ---
 
-# Domo - Download Card to Shipyard
+# Domo - Download Card to Platform
 
 ## Overview
 

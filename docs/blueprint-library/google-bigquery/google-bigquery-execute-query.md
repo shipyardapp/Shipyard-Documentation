@@ -3,7 +3,7 @@ id: google-bigquery-execute-query
 title: Google BigQuery Template - Execute Query
 hide_title: true
 sidebar_label: Execute Query
-description: Information about Shipyard's low-code Google BigQuery Execute Query blueprint. Execute any Standard SQL query against a Google BigQuery database.
+description: Information about Platform's low-code Google BigQuery Execute Query blueprint. Execute any Standard SQL query against a Google BigQuery database.
 keywords:
   - google bigquery
   - blueprint

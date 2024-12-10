@@ -3,7 +3,7 @@ id: jira-create-ticket
 title: Jira Template - Create Ticket
 hide_title: true
 sidebar_label: Create Ticket
-description: Information about Shipyard's low-code Jira Create Ticket blueprint. Creates a jira ticket 
+description: Information about Platform's low-code Jira Create Ticket blueprint. Creates a jira ticket 
 keywords:
     - jira
     - blueprint

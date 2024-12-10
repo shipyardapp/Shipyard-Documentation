@@ -1,8 +1,8 @@
 ---
 id: resource-limitations
-title: What resource limitations does Shipyard have?
+title: What resource limitations does Platform have?
 hide_title: true
-description: What resource limitations does Shipyard have?
+description: What resource limitations does Platform have?
 hide_table_of_contents: true
 keywords:
   - faq
@@ -12,7 +12,7 @@ keywords:
   - infrastructure
 ---
 
-# What resource limitations does Shipyard have?
+# What resource limitations does Platform have?
 
 None that you'll likely run into! We designed our platform to scale effectively to handle any data workflow, big or small, without you needing to worry about the infrastructure. Try to build out a proof of concept on our [Developer Plan](../plans/developer-plan.md) and put us to the test!
 

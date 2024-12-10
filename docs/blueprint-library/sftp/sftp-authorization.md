@@ -4,7 +4,7 @@ sidebar_position: 1
 title: SFTP Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize SFTP to work with Shipyard's low-code SFTP templates.
+description: Instructions on how to authorize SFTP to work with Platform's low-code SFTP templates.
 keywords:
   - sftp
   - blueprint

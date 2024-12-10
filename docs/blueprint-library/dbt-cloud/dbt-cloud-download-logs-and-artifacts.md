@@ -1,16 +1,16 @@
 ---
 id: dbt-cloud-download-logs-and-artifacts
-title: dbt Cloud Template - Download Logs and Artifacts to Shipyard
+title: dbt Cloud Template - Download Logs and Artifacts to Platform
 hide_title: true
-sidebar_label: Download Logs and Artifacts to Shipyard
-description: Information about Shipyard's low-code dbt Cloud Download Logs and Artifacts to Shipyard blueprint. Download the logs and artifacts of a specific dbt Cloud run for transfer to another location.
+sidebar_label: Download Logs and Artifacts to Platform
+description: Information about Platform's low-code dbt Cloud Download Logs and Artifacts to Platform blueprint. Download the logs and artifacts of a specific dbt Cloud run for transfer to another location.
 keywords:
   - dbt cloud
   - blueprint
   - template
 ---
 
-# dbt Cloud - Download Logs and Artifacts to Shipyard
+# dbt Cloud - Download Logs and Artifacts to Platform
 
 ## Overview
 

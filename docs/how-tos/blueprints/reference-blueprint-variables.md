@@ -33,7 +33,7 @@ Your Reference Name is case sensitive. Make sure you type it exactly the same.
 <Tabs
 defaultValue="ui"
 values={[
-{label: 'Shipyard UI', value: 'ui'},
+{label: 'Platform UI', value: 'ui'},
 {label: 'Environment Variable', value: 'env'},
 ]}>
 <TabItem value="ui">
@@ -50,10 +50,10 @@ Now, when the Vessel runs, the reference of `${cool_var_name}` will be replaced 
 2. Save and/or re-upload your code depending on your setup.
 
 
-Now, when the Vessel runs in Shipyard, your Environment Variable value for `cool_var_name` will be replaced by whatever the user enters for that variable.
+Now, when the Vessel runs in Platform, your Environment Variable value for `cool_var_name` will be replaced by whatever the user enters for that variable.
 
 :::note
-This way of referencing a Blueprint Variable is less ideal because it will not work the same locally as it does in Shipyard unless you add the necessary environment variables to your local machine.  
+This way of referencing a Blueprint Variable is less ideal because it will not work the same locally as it does in Platform unless you add the necessary environment variables to your local machine.  
 :::
 </TabItem>
 </Tabs>

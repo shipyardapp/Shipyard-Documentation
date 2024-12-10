@@ -16,7 +16,7 @@ keywords:
 
 ## Overview
 
-You may want to increase to security for your Shipyard profile by enabling Multi-factor authentication (MFA)/ Two-factor authentication (2FA). This how to guide will walk you through the steps to enable this feature on your profile, and how it will effect your future login flow. 
+You may want to increase to security for your Platform profile by enabling Multi-factor authentication (MFA)/ Two-factor authentication (2FA). This how to guide will walk you through the steps to enable this feature on your profile, and how it will effect your future login flow. 
 
 ## Steps
 

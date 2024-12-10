@@ -26,7 +26,7 @@ You can paste a comma-separated list of emails into the field and it will automa
 
 ### Notification Content
 
-Every email sent by Shipyard will contain links to the organizational structure of that element. This is designed to help you quickly dig into the platform. Structure included in the email:
+Every email sent by Platform will contain links to the organizational structure of that element. This is designed to help you quickly dig into the platform. Structure included in the email:
 
 **Fleets**
 - Project
@@ -52,12 +52,12 @@ In an error notification, a button will appear to **Investigate Issue**. This wi
 If a Fleet errors out, you will only receive a notification for the Fleet, not every Vessel in the Fleet that errors out or doesn't run. This setup helps reduce notification overload in the event that something goes wrong.
 
 :::tip Pro Tip
-We recommend adding the Shipyard email address `notifications@shipyardapp.com` to your address book to ensure that alerts are never sent to spam.
+We recommend adding the Platform email address `notifications@shipyardapp.com` to your address book to ensure that alerts are never sent to spam.
 :::
 
 ### Alternative Notifications
 
-While Shipyard currently only supports sending notifications via email, most vendors support the ability to send messages to their service with a specialized email address. Check to see if this is the case for the vendor of your choice!
+While Platform currently only supports sending notifications via email, most vendors support the ability to send messages to their service with a specialized email address. Check to see if this is the case for the vendor of your choice!
 
 We've verified that this alternative works for:
 - [Text (SMS/MMS)](../how-tos/notifications/text-notification.md)
@@ -77,7 +77,7 @@ We've verified that this alternative works for:
 ## Additional Notes
 
 1. Notifications can only be sent via email. No other messaging platforms are supported at this time.
-2. Emails provided do not have to have access to Shipyard to receive a notification.
+2. Emails provided do not have to have access to Platform to receive a notification.
 3. Notification settings are the same for every user that is listed.
 4. Notifications are only sent for 2 different event types. These event types cannot be changed at the moment.
 5. Notifications are only applied at the Vessel and Fleet level. You cannot subscribe to notifications for a Blueprint \(and therefore all dependent Vessels\).

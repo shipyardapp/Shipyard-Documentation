@@ -1,16 +1,16 @@
 ---
 id: microsoft-sql-server-store-query-results-as-csv
-title: Microsoft SQL Server Template - Download Query Results to Shipyard
+title: Microsoft SQL Server Template - Download Query Results to Platform
 hide_title: true
-sidebar_label: Download Query Results to Shipyard
-description: Information about Shipyard's low-code Microsoft SQL Server Download Query Results to Shipyard blueprint. Turn the results of your SQL SELECT statement into a CSV file.
+sidebar_label: Download Query Results to Platform
+description: Information about Platform's low-code Microsoft SQL Server Download Query Results to Platform blueprint. Turn the results of your SQL SELECT statement into a CSV file.
 keywords:
   - microsoft sql server
   - blueprint
   - template
 ---
 
-# Microsoft SQL Server - Download Query Results to Shipyard
+# Microsoft SQL Server - Download Query Results to Platform
 
 
 

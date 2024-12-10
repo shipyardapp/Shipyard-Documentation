@@ -1,16 +1,16 @@
 ---
 id: google-sheets-download-sheet-to-csv
-title: Google Sheets Template - Download Sheet to Shipyard
+title: Google Sheets Template - Download Sheet to Platform
 hide_title: true
-sidebar_label: Download Sheet to Shipyard
-description: Information about Shipyard's low-code Google Sheets Download Sheet to Shipyard blueprint. Quickly export your data from a Google Sheet.
+sidebar_label: Download Sheet to Platform
+description: Information about Platform's low-code Google Sheets Download Sheet to Platform blueprint. Quickly export your data from a Google Sheet.
 keywords:
   - google sheets
   - blueprint
   - template
 ---
 
-# Google Sheets - Download Sheet to Shipyard
+# Google Sheets - Download Sheet to Platform
 
 
 

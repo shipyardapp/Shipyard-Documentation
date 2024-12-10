@@ -3,7 +3,7 @@ id: salesforce-overview
 title: Salesforce Blueprints Overview
 hide_title: true
 sidebar_label: Overview
-description: Information about Shipyard's low-code Salesforce templates.
+description: Information about Platform's low-code Salesforce templates.
 keywords:
 - salesforce
 - blueprint
@@ -13,7 +13,7 @@ keywords:
 
 # Salesforce Blueprints Overview
 
-Shipyard's low-code Salesforce blueprints allow users to connect their data in Salesforce to the rest of their modern data stack.
+Platform's low-code Salesforce blueprints allow users to connect their data in Salesforce to the rest of their modern data stack.
 
 
 ## How to Use
@@ -21,10 +21,10 @@ For information on how to set up these Blueprints successfully, please read thro
 
 
 ## Available Blueprints
-Shipyard currently has the following Blueprints readily available: 
-- [Download Data to Shipyard](salesforce-download-data.md)
+Platform currently has the following Blueprints readily available: 
+- [Download Data to Platform](salesforce-download-data.md)
 - [CSV Header Validator](salesforce-csv-header-validator.md)
 - [Upload Data](salesforce-upload-data.md)
 
 ## Open Source Code
-The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/shipyard-blueprints/tree/main/shipyard_blueprints/salesforce), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.
+The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/shipyard-blueprints/tree/main/shipyard_blueprints/salesforce), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Platform Blueprints by creating issues or submitting PRs.

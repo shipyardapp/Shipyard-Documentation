@@ -1,16 +1,16 @@
 ---
 id: azure-blob-storage-download-files
-title: Azure Blob Storage Template - Download Files to Shipyard
+title: Azure Blob Storage Template - Download Files to Platform
 hide_title: true
-sidebar_label: Download Files to Shipyard
-description: Information about Shipyard's low-code Azure Blob Storage Download Files to Shipyard blueprint. Quickly download one or more files from an Azure Blob Storage container.
+sidebar_label: Download Files to Platform
+description: Information about Platform's low-code Azure Blob Storage Download Files to Platform blueprint. Quickly download one or more files from an Azure Blob Storage container.
 keywords:
   - azure blob storage
   - blueprint
   - template
 ---
 
-# Azure Blob Storage - Download Files to Shipyard
+# Azure Blob Storage - Download Files to Platform
 
 ## Overview
 

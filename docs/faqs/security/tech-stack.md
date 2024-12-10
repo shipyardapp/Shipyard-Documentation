@@ -12,7 +12,7 @@ keywords:
 
 ## What Technology Stack do you use?
 
-Shipyard was built from the ground-up using Go for all of the backend code.
+Platform was built from the ground-up using Go for all of the backend code.
 
 Our frontend is entirely designed using Node, React.js, and the Ant Design framework.
 

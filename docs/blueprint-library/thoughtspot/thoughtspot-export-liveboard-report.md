@@ -3,7 +3,7 @@ id: thoughtspot-export-liveboard-report
 title: Thoughtspot Template - Export Liveboard Report
 hide_title: true
 sidebar_label: Export Liveboard Report
-description: Information about Shipyard's low-code Thoughtspot Export Liveboard Report blueprint. Quickly export a Thoughtspot liveboard report into a variety of formats ranging from CSV, PNG, and PDF 
+description: Information about Platform's low-code Thoughtspot Export Liveboard Report blueprint. Quickly export a Thoughtspot liveboard report into a variety of formats ranging from CSV, PNG, and PDF 
 keywords:
     - thoughtspot
     - blueprint

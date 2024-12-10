@@ -3,7 +3,7 @@ id: azure-blob-storage-move-or-rename-files
 title: Azure Blob Storage Template - Move or Rename Files
 hide_title: true
 sidebar_label: Move or Rename Files
-description: Information about Shipyard's low-code Azure Blob Storage Move or Rename Files blueprint. Quickly move or rename one or more files from an Azure Blob Storage container.
+description: Information about Platform's low-code Azure Blob Storage Move or Rename Files blueprint. Quickly move or rename one or more files from an Azure Blob Storage container.
 keywords:
   - azure blob storage
   - blueprint

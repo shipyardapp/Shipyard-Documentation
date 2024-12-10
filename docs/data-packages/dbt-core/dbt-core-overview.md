@@ -3,7 +3,7 @@ id: dbt-core-overview
 title: dbt Core Overview
 hide_title: true
 sidebar_label: Overview
-description: Information on how to run dbt Core on Shipyard
+description: Information on how to run dbt Core on Platform
 keywords:
   - dbt
   - dbt-core
@@ -12,14 +12,14 @@ keywords:
 
 # dbt Core Overview
 
-Shipyard allows you to host dbt Core in the cloud from a GitHub repository. The guides in this section will walk you through the process to be up and running with dbt Core in Shipyard. 
+Platform allows you to host dbt Core in the cloud from a GitHub repository. The guides in this section will walk you through the process to be up and running with dbt Core in Platform. 
 
 ## How to Use
-We have created a three part guide that walks you through the setup process for dbt Core and Shipyard. 
+We have created a three part guide that walks you through the setup process for dbt Core and Platform. 
 
 * [Part 1 - Setting up your Data Warehouse](dbt-core-set-up-data-warehouse.md)
 * [Part 2 - Setting up dbt on GitHub](dbt-core-set-up-dbt.md)
-* [Part 3 - Setting up dbt on Shipyard](dbt-core-set-up-shipyard.md)
+* [Part 3 - Setting up dbt on Platform](dbt-core-set-up-shipyard.md)
 * [Part 4 - Run dbt, Generate Docs, and Upload to Cloud Storage](dbt-core-run-and-generate-docs.md)
 
 ## Cloud Databases Covered in this Guide

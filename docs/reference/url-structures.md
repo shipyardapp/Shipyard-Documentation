@@ -1,18 +1,18 @@
 ---
 id: shipyard-url-structures
-title: Shipyard URL Structures
+title: Platform URL Structures
 hide_title: true
-description: Information about how URLs in the Shipyard platform are automatically generated with IDs.
+description: Information about how URLs in the Platform platform are automatically generated with IDs.
 keywords:
   - urls
   - structure
 ---
 
-# Shipyard URL Structures
+# Platform URL Structures
 
 ## Definition
 
-All URLs within Shipyard follow a consistent format that's built on internal IDs and names. When used in combination with the [Shipyard Environment Variables](environment-variables/environment-variables-overview.md), this can be a useful way to link a user directly to an area of the platform that you want them to view, edit, or run manually.
+All URLs within Platform follow a consistent format that's built on internal IDs and names. When used in combination with the [Platform Environment Variables](environment-variables/environment-variables-overview.md), this can be a useful way to link a user directly to an area of the platform that you want them to view, edit, or run manually.
 
 Below is a list of the most common URL structures that may be needed.
 
@@ -28,4 +28,4 @@ Below is a list of the most common URL structures that may be needed.
 
 ## Additional Notes
 
-1. Shipyard first checks to verify that the user visiting the page has access to the underlying content. If not, they will be redirected to the projects page.
+1. Platform first checks to verify that the user visiting the page has access to the underlying content. If not, they will be redirected to the projects page.

@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Databricks Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Databricks to work with Shipyard's low-code Databricks templates.
+description: Instructions on how to authorize Databricks to work with Platform's low-code Databricks templates.
 keywords:
 - databricks
 - blueprint
@@ -13,7 +13,7 @@ keywords:
 ---
 
 # Databricks Authorization
-To get started with any Databricks Blueprints, you will need to create an Access Token and know your Instance URL. These pieces of information form a secure way for Shipyard to access Databricks and will be required for **every** Databricks Blueprint.
+To get started with any Databricks Blueprints, you will need to create an Access Token and know your Instance URL. These pieces of information form a secure way for Platform to access Databricks and will be required for **every** Databricks Blueprint.
 
 ## Create a Databricks Access Token
 
@@ -29,11 +29,11 @@ To get started with any Databricks Blueprints, you will need to create an Access
 ![](https://cdn.sanity.io/images/2xyydva6/production/1e1cda213bb7bf884ce8f4a4a3cfc0973941418d-1103x253.png?w=450)
 
 4. Click **Generate new token**.
-5. Provide a descriptive name under **Comment** (like "Shipyard")
+5. Provide a descriptive name under **Comment** (like "Platform")
 6. Remove the value under **Lifetime (days)** so that it's blank.
 
 **_CAUTION:_**
-While best practice is typically to have expiring API tokens that rotate, we recommend letting Shipyard tokens run indefinitely to prevent interruption to your Fleets.
+While best practice is typically to have expiring API tokens that rotate, we recommend letting Platform tokens run indefinitely to prevent interruption to your Fleets.
 
 
 7. Click **Generate**.

@@ -3,7 +3,7 @@ id: jira-add-comment-to-ticket
 title: Jira Template - Add Comment To Ticket
 hide_title: true
 sidebar_label: Add Comment To Ticket
-description: Information about Shipyard's low-code Jira Add Comment To Ticket blueprint. This code performs the action of adding a comment to a specific ticket in Jira 
+description: Information about Platform's low-code Jira Add Comment To Ticket blueprint. This code performs the action of adding a comment to a specific ticket in Jira 
 keywords:
     - jira
     - blueprint

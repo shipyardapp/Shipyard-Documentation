@@ -3,7 +3,7 @@ id: slack-send-message
 title: Slack Template - Send Message
 hide_title: true
 sidebar_label: Send Message
-description: Information about Shipyard's low-code Slack Send Message blueprint. Send a Slack message to any channel or DM, alerting any user in your company.
+description: Information about Platform's low-code Slack Send Message blueprint. Send a Slack message to any channel or DM, alerting any user in your company.
 keywords:
   - slack
   - blueprint
@@ -16,7 +16,7 @@ keywords:
 
 Send a Slack message to any channel or DM, alerting any user in your company.
 
-To have Shipyard dynamically parse and output the contents of a file, you can include the filename in this format: `{{text:file.txt}}`
+To have Platform dynamically parse and output the contents of a file, you can include the filename in this format: `{{text:file.txt}}`
 
 ## Variables
 

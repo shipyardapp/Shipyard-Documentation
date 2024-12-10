@@ -3,7 +3,7 @@ id: looker-create-sql-runner-query
 title: Looker Template - Create SQL Runner Query
 hide_title: true
 sidebar_label: Create SQL Runner Query
-description: Information about Shipyard's low-code Looker Create SQL Runner Query blueprint. Quickly create and store a SQL query to be run against a Looker view or model.
+description: Information about Platform's low-code Looker Create SQL Runner Query blueprint. Quickly create and store a SQL query to be run against a Looker view or model.
 keywords:
   - looker
   - blueprint

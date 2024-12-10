@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Airtable Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Airtable to work with Shipyard's low-code Airtable templates.
+description: Instructions on how to authorize Airtable to work with Platform's low-code Airtable templates.
 keywords:
   - airtable
   - blueprint
@@ -18,7 +18,7 @@ In order to get started with the Airtable Blueprints, you will need a Personal A
 
 ## Generating an Airtable Personal Access Token
 
-Follow these steps to create a personal access token for Airtable, which you will need for various integrations, such as connecting Airtable to Shipyard.
+Follow these steps to create a personal access token for Airtable, which you will need for various integrations, such as connecting Airtable to Platform.
 
 ### Step 1: Log in to Airtable
 
@@ -44,7 +44,7 @@ Click on **Create Token** to start the process of generating a new access token.
 
 ### Step 5: Name Your Token
 
-Give your token a descriptive name that helps you identify its use case. For instance you might name it "Shipyard Integration".
+Give your token a descriptive name that helps you identify its use case. For instance you might name it "Platform Integration".
 
 ![](https://cdn.sanity.io/images/2xyydva6/dev/d1fb612181c9a2d287ea8c66e3e70781e7f84b58-822x233.png?w=450)
 
@@ -57,7 +57,7 @@ Assign the necessary permissions to your token. At a minimum, you will need:
 
 ![](https://cdn.sanity.io/images/2xyydva6/dev/89812054085635e599b3fdb4b2f84db06c3af7da-383x193.png?w=450)
 
-> **Note:** The `data.records:write` permission is only necessary if you intend to use functionalities that modify your data, such as the "Airtable - Upload File from Shipyard to Airtable" blueprint.
+> **Note:** The `data.records:write` permission is only necessary if you intend to use functionalities that modify your data, such as the "Airtable - Upload File from Platform to Airtable" blueprint.
 
 ### Step 7: Specify Accessible Bases
 
@@ -74,7 +74,7 @@ Under the **Access** section, specify which base(s) you want the token to access
 
 ## Getting Base, Table, and View IDs
 
-Navigate to the Base/Table you would like to access with Shipyard. Once there, extract the IDs directly from the URL. Airtable builds all of it's URLs as `https://airtable.com/{base_id}/{table_id}/{view_id}`
+Navigate to the Base/Table you would like to access with Platform. Once there, extract the IDs directly from the URL. Airtable builds all of it's URLs as `https://airtable.com/{base_id}/{table_id}/{view_id}`
 
 For example, in the following URL https://airtable.com/apprAb54fnzSbGPqV/tbltgrZ2A5vbSOuDs/viwaqiREptRiFI5un
 

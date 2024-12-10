@@ -3,7 +3,7 @@ id: shortcut-add-comment
 title: Shortcut Template - Add Comment to Story
 hide_title: true
 sidebar_label: Add Comment to Story
-description: Information about Shipyard's low-code Shortcut Add Comment to Story blueprint. Add a comment to an existing shortcut story 
+description: Information about Platform's low-code Shortcut Add Comment to Story blueprint. Add a comment to an existing shortcut story 
 keywords:
     - shortcut
     - blueprint

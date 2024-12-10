@@ -3,7 +3,7 @@ id: dbt-cloud-trigger-job
 title: dbt Cloud Template - Trigger Job
 hide_title: true
 sidebar_label: Trigger Job
-description: Information about Shipyard's low-code dbt Cloud Trigger Job blueprint. Execute an existing job in the dbt Cloud interface
+description: Information about Platform's low-code dbt Cloud Trigger Job blueprint. Execute an existing job in the dbt Cloud interface
 keywords:
   - dbt cloud
   - blueprint
@@ -18,11 +18,11 @@ This Blueprint is classified as "Free" and does not incur billable runtime. [Lea
 
 ## Overview
 
-Execute a single job on dbt Cloud, creating a new run. The job must be set up within the dbt Cloud interface. Shipyard does not support sending override commands to the job at this time.
+Execute a single job on dbt Cloud, creating a new run. The job must be set up within the dbt Cloud interface. Platform does not support sending override commands to the job at this time.
 
 This Blueprint will create and store the generated run ID to _shipyard-artifacts/dbtcloud-blueprints/variables/run_id.pickle_
 
-The "cause" for an execution triggered via Shipyard will always contain the following details:
+The "cause" for an execution triggered via Platform will always contain the following details:
 - Fleet ID
 - Vessel ID
 - Vessel Log ID

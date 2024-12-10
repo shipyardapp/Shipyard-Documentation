@@ -3,7 +3,7 @@ id: azure-blob-storage-remove-files
 title: Azure Blob Storage Template - Delete Files
 hide_title: true
 sidebar_label: Delete Files
-description: Information about Shipyard's low-code Azure Blob Storage Delete Files blueprint. Quickly delete one or more files from an Azure Blob Storage container
+description: Information about Platform's low-code Azure Blob Storage Delete Files blueprint. Quickly delete one or more files from an Azure Blob Storage container
 keywords:
   - azure blob storage
   - blueprint

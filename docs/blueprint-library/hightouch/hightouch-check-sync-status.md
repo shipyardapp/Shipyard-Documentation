@@ -3,7 +3,7 @@ id: hightouch-check-sync-status
 title: Hightouch Template - Check Sync Status (Deprecated)
 hide_title: true
 sidebar_label: Check Sync Status (Deprecated)
-description: Information about Shipyard's low-code Hightouch Check Sync Status (Deprecated) blueprint. Verify the status of a recently triggered Hightouch sync. 
+description: Information about Platform's low-code Hightouch Check Sync Status (Deprecated) blueprint. Verify the status of a recently triggered Hightouch sync. 
 keywords:
     - hightouch
     - blueprint

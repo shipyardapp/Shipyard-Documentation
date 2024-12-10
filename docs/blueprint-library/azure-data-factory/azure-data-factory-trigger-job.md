@@ -3,7 +3,7 @@ id: azure-data-factory-trigger-job
 title: Azure Data Factory Template - Trigger Job
 hide_title: true
 sidebar_label: Trigger Job
-description: Information about Shipyard's low-code Azure Data Factory Trigger Job blueprint. Triggers an Azure Data Factory pipeline run with and waiting for completion if needed.
+description: Information about Platform's low-code Azure Data Factory Trigger Job blueprint. Triggers an Azure Data Factory pipeline run with and waiting for completion if needed.
 keywords:
   - azure data factory
   - blueprint

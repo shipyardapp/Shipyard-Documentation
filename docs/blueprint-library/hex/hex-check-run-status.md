@@ -3,7 +3,7 @@ id: hex-check-run-status
 title: Hex Template - Check Run Status (Deprecated)
 hide_title: true
 sidebar_label: Check Run Status (Deprecated)
-description: Information about Shipyard's low-code Hex Check Run Status (Deprecated) blueprint. Checks the status of either the latest run or a provided run of a project
+description: Information about Platform's low-code Hex Check Run Status (Deprecated) blueprint. Checks the status of either the latest run or a provided run of a project
 keywords:
   - hex
   - blueprint
@@ -23,7 +23,7 @@ This Blueprint allows you to verify the status of a specified project run. If th
 
 The Vessel's exit code and status will match the status of the Hex project run. 
 
-- If the run status is **COMPLETED**, the Vessel will return an exit code of 0, interpreted by Shipyard as successful
+- If the run status is **COMPLETED**, the Vessel will return an exit code of 0, interpreted by Platform as successful
 - If the run status is **PENDING**, the Vessel will return an exit code of 220, an error
 - If the run status is **RUNNING**, the Vessel will return an exit code of 221, an error
 - If the run status is **ERRORED**, the Vessel will return an exit code of 222, an error

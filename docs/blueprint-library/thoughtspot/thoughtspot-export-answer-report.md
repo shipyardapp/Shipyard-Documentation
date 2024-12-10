@@ -3,7 +3,7 @@ id: thoughtspot-export-answer-report
 title: Thoughtspot Template - Export Answer Report
 hide_title: true
 sidebar_label: Export Answer Report
-description: Information about Shipyard's low-code Thoughtspot Export Answer Report blueprint. Quickly export a Thoughtspot answer into a variety of formats ranging from CSV, PNG, PDF, and XLSX 
+description: Information about Platform's low-code Thoughtspot Export Answer Report blueprint. Quickly export a Thoughtspot answer into a variety of formats ranging from CSV, PNG, PDF, and XLSX 
 keywords:
     - thoughtspot
     - blueprint

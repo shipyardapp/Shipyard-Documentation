@@ -3,7 +3,7 @@ id: motherduck-execute-query
 title: MotherDuck Template - Execute Query
 hide_title: true
 sidebar_label: Execute Query
-description: Information about Shipyard's low-code MotherDuck Execute Query blueprint. Quickly execute a SQL query against MotherDuck databases
+description: Information about Platform's low-code MotherDuck Execute Query blueprint. Quickly execute a SQL query against MotherDuck databases
 keywords:
   - motherduck
   - blueprint
@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-Quickly execute a SQL query against MotherDuck databases. This blueprint is intended for DDL queries (i.e. CREATE, ALTER, DROP) as the results are not returned to Shipyard
+Quickly execute a SQL query against MotherDuck databases. This blueprint is intended for DDL queries (i.e. CREATE, ALTER, DROP) as the results are not returned to Platform
 
 ## Variables
 

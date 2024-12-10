@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-Every unique solution you create will require you to build a Vessel. Vessels can only be built as part of a Fleet. Some solutions can be built with no-code [Blueprints](../../reference/blueprints/blueprints-overview.md), designed by other team members or Shipyard staff. This how to guide will walk you through the steps to build a Vessel with a Blueprint.
+Every unique solution you create will require you to build a Vessel. Vessels can only be built as part of a Fleet. Some solutions can be built with no-code [Blueprints](../../reference/blueprints/blueprints-overview.md), designed by other team members or Platform staff. This how to guide will walk you through the steps to build a Vessel with a Blueprint.
 
 ## Steps
 

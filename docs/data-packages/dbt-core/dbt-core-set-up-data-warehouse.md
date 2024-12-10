@@ -22,7 +22,7 @@ import TabItem from '@theme/TabItem';
 
 # dbt Core Tutorial Part 1 - Setting Up Your Data Warehouse
 
-To begin our tutorial for dbt core in Shipyard, we need to setup an example dataset to work with. This guide will follow the steps in dbt's tutorial, however, we will setup the following cloud data warehouses:
+To begin our tutorial for dbt core in Platform, we need to setup an example dataset to work with. This guide will follow the steps in dbt's tutorial, however, we will setup the following cloud data warehouses:
 * [BigQuery](#bigquery)
 * [Databricks](#databricks)
 * [Redshift](#redshift)

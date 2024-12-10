@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Box Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Box to work with Shipyard's low-code Box templates.
+description: Instructions on how to authorize Box to work with Platform's low-code Box templates.
 keywords:
 - box
 - blueprint
@@ -79,7 +79,7 @@ Setting up 2-Step Verification is key to creating a Service Account for your app
 **_NOTE:_**
 You may first be prompted for your 2FA code. If so, enter the code and try generating a Public/Private Keypair again.
 
-1. A file should be downloaded to your computer that contains your app credentials in JSON format. This will be used for every Box Blueprint on Shipyard, so store this somewhere safe.
+1. A file should be downloaded to your computer that contains your app credentials in JSON format. This will be used for every Box Blueprint on Platform, so store this somewhere safe.
 2.  Click **OK**.
 
 If this step was successful, the screen should update to look something like this.

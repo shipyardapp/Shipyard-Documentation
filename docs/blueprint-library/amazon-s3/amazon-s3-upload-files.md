@@ -1,16 +1,16 @@
 ---
 id: amazon-s3-upload-files
-title: Amazon S3 Template - Upload Files from Shipyard
+title: Amazon S3 Template - Upload Files from Platform
 hide_title: true
-sidebar_label: Upload Files from Shipyard
-description: Information about Shipyard's low-code Amazon S3 Upload Files from Shipyard blueprint. Easily import one or more files directly into an Amazon S3 bucket, no matter how big they are.
+sidebar_label: Upload Files from Platform
+description: Information about Platform's low-code Amazon S3 Upload Files from Platform blueprint. Easily import one or more files directly into an Amazon S3 bucket, no matter how big they are.
 keywords:
   - amazon s3
   - blueprint
   - template
 ---
 
-# Amazon S3 - Upload Files from Shipyard
+# Amazon S3 - Upload Files from Platform
 
 ## Overview
 
@@ -20,7 +20,7 @@ Easily import one or more files directly into an Amazon S3 bucket, no matter how
 
 **Recommended Setup:**
 
-1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Shipyard or generates a file with code. 
+1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Platform or generates a file with code. 
 
 
 ## Variables
@@ -28,9 +28,9 @@ Easily import one or more files directly into an Amazon S3 bucket, no matter how
 | Name | Reference | Type | Required | Default | Options | Description             |
 |:-----|:----------|:-----|:---------|:--------|:--------|:------------------------|
 | Bucket Name | S3_BUCKET_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the S3 bucket to upload the file(s) to. |
-| Shipyard Folder Name | S3_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Shipyard to upload the target file from. If left blank, will look in the home directory. |
+| Shipyard Folder Name | S3_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Platform to upload the target file from. If left blank, will look in the home directory. |
 | Shipyard File Name Match Type | S3_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match`<br></br><br></br> | Determines if the text in "Shipyard File Name" will look for one file with exact match, or multiple files using regex. |
-| Shipyard File Name | S3_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file on Shipyard. Can be regex if "Match Type" is set accordingly |
+| Shipyard File Name | S3_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file on Platform. Can be regex if "Match Type" is set accordingly |
 | S3 Folder Name | S3_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Folder in the S3 bucket to upload the file(s) to. If left blank, will upload to the root directory. |
 | S3 File Name | S3_DESTINATION_FILE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | What to name the file(s) being uploaded. If left blank, defaults to the original file name(s). |
 | Access Key ID | AWS_ACCESS_KEY_ID | Password | :white_check_mark: | - | - | The access key ID for programmatic IAM user used to download the file. See Authorization documentation for more information. |

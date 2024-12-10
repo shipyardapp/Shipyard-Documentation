@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Looker Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Looker to work with Shipyard's low-code Looker templates.
+description: Instructions on how to authorize Looker to work with Platform's low-code Looker templates.
 keywords:
   - looker
   - blueprint

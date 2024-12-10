@@ -15,7 +15,7 @@ keywords:
 
 ## Definition
 
-The Blueprint Library is a location for pre-made [Blueprints](../blueprints-overview.md) developed by Shipyard staff. These Blueprints provide an easy way to avoid monotonous development work associated with integrations.
+The Blueprint Library is a location for pre-made [Blueprints](../blueprints-overview.md) developed by Platform staff. These Blueprints provide an easy way to avoid monotonous development work associated with integrations.
 
 Library Blueprints are designed to:
 
@@ -52,8 +52,8 @@ Blueprints are broken down into a few categories with core functionality that sh
 
 #### Actions
 - Execute SQL Query
-- Download Query Results to Shipyard
-- Upload File to Table from Shipyard
+- Download Query Results to Platform
+- Upload File to Table from Platform
 
 ### Cloud Storage
 
@@ -69,8 +69,8 @@ Blueprints are broken down into a few categories with core functionality that sh
 - [Databricks](../../../blueprint-library/databricks/databricks-overview.md)
 
 #### Actions
-- Download Files to Shipyard
-- Upload Files from Shipyard
+- Download Files to Platform
+- Upload Files from Platform
 - Move or Rename Files
 - Delete Files
 
@@ -83,8 +83,8 @@ Blueprints are broken down into a few categories with core functionality that sh
 - [Smartsheet](../../../blueprint-library/smartsheet/smartsheet-overview.md)
 
 #### Actions
-- Download Sheet to Shipyard
-- Upload File to a Sheet from Shipyard
+- Download Sheet to Platform
+- Upload File to a Sheet from Platform
 - Clear Sheet Contents
 
 ### Messaging
@@ -110,7 +110,7 @@ Blueprints are broken down into a few categories with core functionality that sh
 - [Thoughtspot](../../../blueprint-library/thoughtspot/thoughtspot-overview.md)
 
 #### Actions
-- Download Dashboard/View/Card/Report as File to Shipyard
+- Download Dashboard/View/Card/Report as File to Platform
 - Trigger Dataset Refresh
 
 ### Data Tooling (Ingestion, Transformation, Reverse ETL, and Syncing)
@@ -130,8 +130,8 @@ Blueprints are broken down into a few categories with core functionality that sh
 
 #### Common Actions
 - Trigger Job
-- Download Results from Job to Shipyard
-- Trigger Job and Download Results to Shipyard (All-in-one)
+- Download Results from Job to Platform
+- Trigger Job and Download Results to Platform (All-in-one)
 
 ### Project Management
 
@@ -153,8 +153,8 @@ Blueprints are broken down into a few categories with core functionality that sh
 - [Salesforce](../../../blueprint-library/salesforce/salesforce-overview.md)
 
 #### Actions
-- Download Data to Shipyard
-- Upload Data from Shipyard
+- Download Data to Platform
+- Upload Data from Platform
 
 ### 3rd-Party APIs
 
@@ -163,7 +163,7 @@ Blueprints are broken down into a few categories with core functionality that sh
 
 #### Actions
 - HTTP Request
-- Download File from URL to Shipyard
+- Download File from URL to Platform
 
 ### File or Data Manipulation
 

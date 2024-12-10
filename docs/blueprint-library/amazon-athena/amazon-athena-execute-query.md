@@ -3,7 +3,7 @@ id: amazon-athena-execute-query
 title: Amazon Athena Template - Execute Query
 hide_title: true
 sidebar_label: Execute Query
-description: Information about Shipyard's low-code Amazon Athena Execute Query blueprint. Execute any SQL query against Amazon Athena.
+description: Information about Platform's low-code Amazon Athena Execute Query blueprint. Execute any SQL query against Amazon Athena.
 keywords:
   - amazon athena
   - blueprint

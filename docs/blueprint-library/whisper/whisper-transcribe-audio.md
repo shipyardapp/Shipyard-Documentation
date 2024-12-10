@@ -3,7 +3,7 @@ id: whisper-transcribe-audio
 title: OpenAI Whisper Template - Transcribe Audio
 hide_title: true
 sidebar_label: Transcribe Audio
-description: Information about Shipyard's low-code OpenAI Whisper Transcribe Audio blueprint. This Blueprint takes in an audio file and transcribes it to a text file. 
+description: Information about Platform's low-code OpenAI Whisper Transcribe Audio blueprint. This Blueprint takes in an audio file and transcribes it to a text file. 
 keywords:
     - openai whisper
     - blueprint

@@ -14,9 +14,9 @@ keywords:
 # Glossary of Terms
 
 ## What's in a name?
-Our goal with Shipyard is to choose syntax that helps users intuitively understand the connections between entities by using real-world equivalents.
+Our goal with Platform is to choose syntax that helps users intuitively understand the connections between entities by using real-world equivalents.
 
-- A **Shipyard** is where you build and launch Vessels (ships). 
+- A **Platform** is where you build and launch Vessels (ships). 
 - **Vessels** come in all shapes and sizes (tugboat, sailboat, yacht, freighter, etc.) and each Vessel is used for a specific purpose. 
 - When you have a Vessel that you need to build repeatedly, you use a **Blueprint**.
 - When multiple Vessels travel together on a single mission, they become a **Fleet**.
@@ -25,7 +25,7 @@ Our goal with Shipyard is to choose syntax that helps users intuitively understa
 
 ## Definitions
 
-[**Blueprint Library**](reference/blueprints/blueprint-library/blueprint-library-overview.md) is a location for pre-made Blueprints developed by Shipyard staff.
+[**Blueprint Library**](reference/blueprints/blueprint-library/blueprint-library-overview.md) is a location for pre-made Blueprints developed by Platform staff.
 
 [**Blueprints**](/reference/blueprints/blueprints-overview.md) are the foundation of the application. They contain the design specifications for a repeatable task. In other applications, these may be referenced as templates, macros, or operators.
 
@@ -47,7 +47,7 @@ Our goal with Shipyard is to choose syntax that helps users intuitively understa
 
 [**Organizations**](reference/organization.md) contain all of your Projects and Blueprints. This is the highest grouping structure in the platform that users can control.
 
-[**Credentials**](reference/credentials.md) - A way in the Shipyard application to store secret values that can be referenced by other Fleets and Vessels securely.
+[**Credentials**](reference/credentials.md) - A way in the Platform application to store secret values that can be referenced by other Fleets and Vessels securely.
 
 **Credential Group** - A collection of one or more credential items.
 
@@ -55,7 +55,7 @@ Our goal with Shipyard is to choose syntax that helps users intuitively understa
 
 **Element** is a generic term used to refer to any of the above bolded words.
 
-**Platform** refers to the Shipyard application as a whole. Elements that live under the Platform level are controlled and managed by Shipyard staff.
+**Platform** refers to the Platform application as a whole. Elements that live under the Platform level are controlled and managed by Platform staff.
 
 **Home Directory** refers to the default location where scripts and files are saved. By default, this location is `/home/shipyard/` and can be accessed using the environment variable `HOME`.
 
@@ -75,7 +75,7 @@ Our goal with Shipyard is to choose syntax that helps users intuitively understa
 
 [**YAML Editor**](reference/fleets/yaml-editor.md) refers to the code-based interface on the Fleet Builder tab.
 
-[**Version Control**](reference/fleets/version-control.md) refers to Shipyard's automatic storage of the past configuration of a Fleet, displayed as YAML.
+[**Version Control**](reference/fleets/version-control.md) refers to Platform's automatic storage of the past configuration of a Fleet, displayed as YAML.
 
 [**Webhooks**](reference/triggers/webhook-triggers.md) refer to the URL that can be used to trigger a Fleet programatically.
 
@@ -89,9 +89,9 @@ Our goal with Shipyard is to choose syntax that helps users intuitively understa
 
 ## Visuals
 
-### Shipyard Platform Diagram
+### Platform Platform Diagram
 
-![Structural Elements of the Shipyard Platform](.gitbook/assets/image_71.png)
+![Structural Elements of the Platform Platform](.gitbook/assets/image_71.png)
 
 ### Fleet Stream Examples
 

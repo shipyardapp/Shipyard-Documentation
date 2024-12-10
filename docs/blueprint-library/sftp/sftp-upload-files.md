@@ -1,16 +1,16 @@
 ---
 id: sftp-upload-files
-title: SFTP Template - Upload Files from Shipyard
+title: SFTP Template - Upload Files from Platform
 hide_title: true
-sidebar_label: Upload Files from Shipyard
-description: Information about Shipyard's low-code SFTP Upload Files from Shipyard blueprint. Easily import one or more files directly into an SFTP Server, no matter how big they are.
+sidebar_label: Upload Files from Platform
+description: Information about Platform's low-code SFTP Upload Files from Platform blueprint. Easily import one or more files directly into an SFTP Server, no matter how big they are.
 keywords:
   - sftp
   - blueprint
   - template
 ---
 
-# SFTP - Upload Files from Shipyard
+# SFTP - Upload Files from Platform
 
 ## Overview
 
@@ -22,7 +22,7 @@ This Blueprint requires _write_ permissions in order to upload to the SFTP serve
 
 **Recommended Setup:**
 
-1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Shipyard or generates a file with code. 
+1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Platform or generates a file with code. 
 
 ## Variables
 
@@ -34,8 +34,8 @@ This Blueprint requires _write_ permissions in order to upload to the SFTP serve
 | Password | SFTP_PASSWORD | Password | :heavy_minus_sign: | - | - | Value of the configured password associated to the username on the SFTP server. |
 | RSA Key File | SFTP_RSA_KEY_FILE | Alphanumeric | :heavy_minus_sign: | - | - | The file name of an RSA Key that you want to use. |
 | Shipyard File Name Match Type | SFTP_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match`<br></br><br></br> | Determines if the text in "Shipyard File Name" will look for one file with exact match, or multiple files using regex. |
-| Shipyard Folder Name | SFTP_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Shipyard to upload the target file from. IName of the folder where the file is stored in the SFTP server. Leaving blank will default to the root directory. |
-| Shipyard File Name | SFTP_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file on Shipyard. Can be regex if "Match Type" is set accordingly. |
+| Shipyard Folder Name | SFTP_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Platform to upload the target file from. IName of the folder where the file is stored in the SFTP server. Leaving blank will default to the root directory. |
+| Shipyard File Name | SFTP_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file on Platform. Can be regex if "Match Type" is set accordingly. |
 | SFTP Folder Name | SFTP_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the file(s) should be uploaded. Leaving blank will place the file in the root directory of the SFTP. |
 | SFTP File Name | SFTP_DESTINATION_FILE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | What to name the file(s) being uploaded to the SFTP. If left blank, defaults to the original file name(s). |
 

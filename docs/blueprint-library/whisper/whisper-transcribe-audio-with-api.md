@@ -3,7 +3,7 @@ id: whisper-transcribe-audio-with-api
 title: OpenAI Whisper Template - Transcribe Audio with API
 hide_title: true
 sidebar_label: Transcribe Audio with API
-description: Information about Shipyard's low-code OpenAI Whisper Transcribe Audio with API blueprint. This Blueprint takes in a audio file and transcribes it to a text file.  
+description: Information about Platform's low-code OpenAI Whisper Transcribe Audio with API blueprint. This Blueprint takes in a audio file and transcribes it to a text file.  
 keywords:
     - openai whisper
     - blueprint

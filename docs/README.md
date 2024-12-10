@@ -1,9 +1,9 @@
 ---
 id: introduction
-title: Introduction to Shipyard
+title: Introduction to Platform
 hide_title: true
 sidebar_position: 1
-description: Introduction to the Shipyard platform.
+description: Introduction to the Platform platform.
 keywords:
   - intro
   - introduction
@@ -12,8 +12,6 @@ slug: /
 ---
 
 # Introduction
-
-![](.gitbook/assets/logo-and-name-purple-1.png)
 
 ## Welcome!
 
@@ -26,13 +24,13 @@ If taking this step was easy, everyone would be doing it. There are multiple hur
 - Low-code platforms can't handle complex business problems.
 - Data Teams are being tasked with navigating and solving DevOps problems.
 
-We designed Shipyard as a first-class workflow automation platform that tackles these problems head-on, helping data teams get to production faster than ever. Teams can launch, monitor, scale, and share business solutions in less than 5 minutes without ever touching infrastructure.
+We designed Platform as a first-class workflow automation platform that tackles these problems head-on, helping data teams get to production faster than ever. Teams can launch, monitor, scale, and share business solutions in less than 5 minutes without ever touching infrastructure.
 
 In essence, we're helping Data Engineers, Data Scientists, and Data Analysts focus on the parts of the job that they're best at. **Solving problems with data.**
 
-## The Shipyard Platform
+## The Platform Platform
 
-Out of the box, we offer a lot of features that help make Shipyard the easiest platform for launching and experimenting with new business solutions.
+Out of the box, we offer a lot of features that help make Platform the easiest platform for launching and experimenting with new business solutions.
 
 - Projects for organization
 - Built-in notifications and error-handling
@@ -46,7 +44,7 @@ Out of the box, we offer a lot of features that help make Shipyard the easiest p
 
 If you're interested in getting access to the platform, just send us a note at [support@shipyardapp.com ](mailto:support@shipyardapp.com)or click that chat bubble in the bottom right.
 
-## Custom Shipyard Solutions
+## Custom Platform Solutions
 
 While we're focused on building out our platform to make it easier for everyone to focus on creating amazing business solutions, we know that not everyone is in the position to do so or may have trouble getting started. Sometimes it's due to a lack of development resources, and other times it's due to not knowing what is or isn't possible.
 
@@ -58,4 +56,4 @@ Our mission is to help **every** company automate their menial work, saving 30+ 
 
 We're excited to see what solutions you're able to create!
 
--The Shipyard Team
+-The Platform Team

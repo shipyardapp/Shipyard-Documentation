@@ -73,7 +73,7 @@ soccer_538:
       keyfile: "{{ env_var('BIGQUERY_KEYFILE') }}"
 ```
 :::note
-You'll note that the keyfile above is denoted as an environment variable. We will send that in as an environment variable inside of Shipyard to protect it from being seen.
+You'll note that the keyfile above is denoted as an environment variable. We will send that in as an environment variable inside of Platform to protect it from being seen.
 :::
 2. Create a new file in your root directory of your dbt project called `execute_dbt.py`.
 3. Paste this code block for the content of `execute_dbt.py`:
@@ -390,5 +390,5 @@ models:
 In this tutorial, we made changes using the main branch of our GitHub repository. This was done for simplicity sake and is not the best practice.
 :::
 
-We are ready to move into Shipyard to run our process in the cloud.
+We are ready to move into Platform to run our process in the cloud.
 

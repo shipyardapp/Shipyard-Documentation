@@ -1,16 +1,16 @@
 ---
 id: box-download-files
-title: Box Template - Download Files to Shipyard
+title: Box Template - Download Files to Platform
 hide_title: true
-sidebar_label: Download Files to Shipyard
-description: Information about Shipyard's low-code Box Download Files to Shipyard blueprint. Quickly export one or more files from your company's Box account into Shipyard. 
+sidebar_label: Download Files to Platform
+description: Information about Platform's low-code Box Download Files to Platform blueprint. Quickly export one or more files from your company's Box account into Platform. 
 keywords:
     - box
     - blueprint
     - template
 ---
 
-# Box - Download Files to Shipyard
+# Box - Download Files to Platform
 
 ## Overview
 Quickly export one or more files from your company's Box account. Once the files have downloaded, transfer them to another service or run another Vessel against the data.

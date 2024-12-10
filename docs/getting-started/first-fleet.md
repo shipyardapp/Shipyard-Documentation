@@ -48,7 +48,7 @@ There are two options for creating a new Fleet: The **Visual** editor and the **
    
    ![](../.gitbook/assets/fleet_builder_http_2024-06-20.png)
 
-2. Click the Blueprint named **Download File from URL to Shipyard**. This creates a new Vessel and immediately opens the edit pane for that Vessel on the left side of the screen.
+2. Click the Blueprint named **Download File from URL to Platform**. This creates a new Vessel and immediately opens the edit pane for that Vessel on the left side of the screen.
 
     ![](../.gitbook/assets/fleet_builder_http_vessel_edit_2024-06-20.png)
 

@@ -3,7 +3,7 @@ id: microsoft-365-sharepoint-move-or-rename-files-in-sharepoint
 title: Microsoft 365 SharePoint Template - Move or Rename Files in SharePoint
 hide_title: true
 sidebar_label: Move or Rename Files in SharePoint
-description: Information about Shipyard's low-code Microsoft 365 SharePoint Move or Rename Files in SharePoint blueprint. Quickly move or rename one or multiple files in Microsoft SharePoint
+description: Information about Platform's low-code Microsoft 365 SharePoint Move or Rename Files in SharePoint blueprint. Quickly move or rename one or multiple files in Microsoft SharePoint
 keywords:
   - microsoft 365 sharepoint
   - blueprint

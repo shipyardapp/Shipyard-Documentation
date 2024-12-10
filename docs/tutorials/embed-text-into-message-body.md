@@ -20,7 +20,7 @@ In this tutorial, you'll walk through the steps to embed the contents of a text 
 
 ## Setup
 
-This tutorial assumes that you have a text file in Shipyard ready to be embed into an email message. There are a few ways to get a text file into Shipyard:
+This tutorial assumes that you have a text file in Platform ready to be embed into an email message. There are a few ways to get a text file into Platform:
 
 - Download the file from a cloud storage container such as Amazon S3 or Google Drive
 - Generate a text file using a script.

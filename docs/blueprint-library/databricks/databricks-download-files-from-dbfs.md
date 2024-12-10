@@ -1,16 +1,16 @@
 ---
 id: databricks-download-files-from-dbfs
-title: Databricks Template - Download Files from DBFS to Shipyard
+title: Databricks Template - Download Files from DBFS to Platform
 hide_title: true
-sidebar_label: Download Files from DBFS to Shipyard
-description: Information about Shipyard's low-code Databricks Download Files from DBFS to Shipyard blueprint. Quickly export one or more files from your Databricks File System (DBFS).  
+sidebar_label: Download Files from DBFS to Platform
+description: Information about Platform's low-code Databricks Download Files from DBFS to Platform blueprint. Quickly export one or more files from your Databricks File System (DBFS).  
 keywords:
     - databricks
     - blueprint
     - template
 ---
 
-# Databricks - Download Files from DBFS to Shipyard
+# Databricks - Download Files from DBFS to Platform
 
 ## Overview
 Quickly export one or more files from your Databricks File System (DBFS). The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
@@ -23,8 +23,8 @@ Quickly export one or more files from your Databricks File System (DBFS). The [m
 | Databricks Folder Name | DATABRICKS_SOURCE_FOLDER_NAME  | Alphanumeric |:heavy_minus_sign: | - | - | Name of the folder where the file is stored in the Databricks File System (DBFS). If left blank, looks in the /FileStore/. |
 | Databricks File Name Match Type | DATABRICKS_SOURCE_FILE_NAME_MATCH_TYPE  | Select |:white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match`<br></br><br></br> | Determines if the text in "Databricks File Name" will look for one file with exact match, or multiple files using regex. |
 | Databricks File Name | DATABRICKS_SOURCE_FILE_NAME  | Alphanumeric |:white_check_mark: | - | - | Name of the target file in the Databricks File System (DBFS). Can be regex if "Match Type" is set accordingly. |
-| Shipyard Folder Name | DATABRICKS_DESTINATION_FOLDER_NAME  | Alphanumeric |:heavy_minus_sign: | - | - | Folder where the file(s) should be downloaded on Shipyard. Leaving blank will place the file in the home directory. |
-| Shipyard File Name | DATABRICKS_DESTINATION_FILE_NAME  | Alphanumeric |:heavy_minus_sign: | - | - | What to name the file(s) being downloaded on Shipyard. If left blank, defaults to the original file name(s). |
+| Shipyard Folder Name | DATABRICKS_DESTINATION_FOLDER_NAME  | Alphanumeric |:heavy_minus_sign: | - | - | Folder where the file(s) should be downloaded on Platform. Leaving blank will place the file in the home directory. |
+| Shipyard File Name | DATABRICKS_DESTINATION_FILE_NAME  | Alphanumeric |:heavy_minus_sign: | - | - | What to name the file(s) being downloaded on Platform. If left blank, defaults to the original file name(s). |
 | Workspace Instance URL | DATABRICKS_INSTANCE_URL  | Alphanumeric |:white_check_mark: | - | - | The subdomain, domain, and top-level domain (TLD) of your Databricks Workspace URL. |
 | Access Token | DATABRICKS_ACCESS_TOKEN  | Password |:white_check_mark: | - | - | The personal access token associated with the provided Workspace Instance. |
 

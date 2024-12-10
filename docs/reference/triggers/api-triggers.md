@@ -18,7 +18,7 @@ import TabItem from '@theme/TabItem';
 
 ## Definition
 
-Every Fleet can be triggered by our [Trigger Fleet API endpoint](https://shipyard.readme.io/reference/trigger-fleet). API triggers enable you to programmatically execute a Fleet in Shipyard by running a POST request from any service. When you run the POST request, your Fleet will be scheduled to run immediately.
+Every Fleet can be triggered by our [Trigger Fleet API endpoint](https://shipyard.readme.io/reference/trigger-fleet). API triggers enable you to programmatically execute a Fleet in Platform by running a POST request from any service. When you run the POST request, your Fleet will be scheduled to run immediately.
 
 Additionally, API triggers can be used to dynamically pass environment variable overrides to your Vessels at runtime. This allows you to build out Fleets that act as a "shell" for your Vessels, with the ability to pass in different variables to change their behavior every time they run.
 

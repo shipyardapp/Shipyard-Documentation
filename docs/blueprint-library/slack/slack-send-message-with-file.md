@@ -3,7 +3,7 @@ id: slack-send-message-with-file
 title: Slack Template - Send Message with File
 hide_title: true
 sidebar_label: Send Message with File
-description: Information about Shipyard's low-code Slack Send Message with File blueprint. Send a Slack message with a message attachment to any channel or DM, alerting any user in your company.
+description: Information about Platform's low-code Slack Send Message with File blueprint. Send a Slack message with a message attachment to any channel or DM, alerting any user in your company.
 keywords:
   - slack
   - blueprint
@@ -16,13 +16,13 @@ keywords:
 
 Send a Slack message with a message attachment to any channel or DM, alerting any user in your company.
 
-To have Shipyard dynamically parse and output the contents of a file, you can include the filename in this format: `{{text:file.txt}}`
+To have Platform dynamically parse and output the contents of a file, you can include the filename in this format: `{{text:file.txt}}`
 
 **Note:** This Vessel cannot be used to access a local file from your computer.
 
 **Recommended Setup:**
 
-1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Shipyard or generates a file with code. 
+1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Platform or generates a file with code. 
 
 ## Variables
 

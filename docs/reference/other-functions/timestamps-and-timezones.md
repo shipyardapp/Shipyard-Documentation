@@ -2,7 +2,7 @@
 id: timestamps-and-timezones
 title: Timestamps and Timezones
 hide_title: true
-description: Information about how Shipyard displays timestamps and interprets scheduled run times.
+description: Information about how Platform displays timestamps and interprets scheduled run times.
 keywords:
   - time
   - timezone

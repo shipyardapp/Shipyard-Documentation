@@ -3,7 +3,7 @@ id: asana-edit-task
 title: Asana Template - Edit Task
 hide_title: true
 sidebar_label: Edit Task
-description: Information about Shipyard's low-code Asana Edit Task blueprint. Quickly edit a task within Asana 
+description: Information about Platform's low-code Asana Edit Task blueprint. Quickly edit a task within Asana 
 keywords:
     - asana
     - blueprint

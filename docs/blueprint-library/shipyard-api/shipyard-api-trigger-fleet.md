@@ -1,28 +1,28 @@
 ---
 id: shipyard-api-trigger-fleet
-title: Shipyard Template - Trigger Fleet
+title: Platform Template - Trigger Fleet
 hide_title: true
 sidebar_label: Trigger Fleet
-description: Information about Shipyard's low-code Shipyard Trigger Fleet blueprint. Quickly trigger a fleet in Shipyard to run
+description: Information about Platform's low-code Platform Trigger Fleet blueprint. Quickly trigger a fleet in Platform to run
 keywords:
   - shipyard
   - blueprint
   - template
 ---
 
-# Shipyard API - Trigger Fleet
+# Platform API - Trigger Fleet
 
 
 
 ## Overview
 
-Quickly trigger an existing fleet in Shipyard to run without waiting for completion
+Quickly trigger an existing fleet in Platform to run without waiting for completion
 
 ## Variables
 
 | Name | Reference | Type | Required | Default | Options | Description             |
 |:-----|:----------|:-----|:---------|:--------|:--------|:------------------------|
-| Shipyard API Key | SHIPYARD_API_KEY | Password | :white_check_mark: | - | - | The API key that Shipyard generated for you |
+| Shipyard API Key | SHIPYARD_API_KEY | Password | :white_check_mark: | - | - | The API key that Platform generated for you |
 | Project ID | SHIPYARD_API_PROJECT_ID | Alphanumeric | :white_check_mark: | - | - | The project ID where the target fleet resides |
 | Fleet ID | SHIPYARD_API_FLEET_ID | Alphanumeric | :white_check_mark: | - | - | The ID of the fleet to trigger |
 

@@ -13,12 +13,12 @@ keywords:
 
 ## Overview
 
-In this tutorial, you'll walk through the steps required to set up Great Expectations to run in the cloud, on Shipyard. We will be creating a Blueprint that can be re-used by multiple team members and updated in the background. This tutorial is only in Python.
+In this tutorial, you'll walk through the steps required to set up Great Expectations to run in the cloud, on Platform. We will be creating a Blueprint that can be re-used by multiple team members and updated in the background. This tutorial is only in Python.
 
 By the end of the tutorial, you'll be able to:
 
 - Set up a Blueprint using Python
-- Successfully run Great Expectations on Shipyard
+- Successfully run Great Expectations on Platform
 - Share expectations with your organization
 - Run multiple instances of Great Expectations simultaneously
 - Integrate an Expectation Suite into your Fleets
@@ -28,7 +28,7 @@ For more information, read [our blog post](https://www.shipyardapp.com/blog/gett
 ## Setup
 
 :::caution
-For the sake of the this tutorial, we will be building a Fleet inside of a Project called "Default". You can do this by logging into Shipyard and, on the sidebar, click on **New Fleet** to begin.
+For the sake of the this tutorial, we will be building a Fleet inside of a Project called "Default". You can do this by logging into Platform and, on the sidebar, click on **New Fleet** to begin.
 :::
 
 Download the [following file](https://drive.google.com/file/d/1eQPfrCMHYGpRH1mgqFbbugra1gtR57IR/view?usp=share_link) to your computer, without changing the file name. It's a .zip containing a single python file and a Great Expectations directory structure with JSON expectation suites and a YML setup file. We'll use this throughout the tutorial.
@@ -38,7 +38,7 @@ Feel free to peruse this script beforehand so you understand everything that it'
 1. Downloading a file from a public URL.
 2. Decompressing the file if it is a`.gz` file and converting the file into a CSV if it is not one already.
 3. Running Great Expectations against the downloaded file, using the included sample expectation suites.
-4. Uploading the validation output to S3, using a file name structure that reference's Shipyard's [Platform Environment Variables](../../reference/environment-variables/shipyard-environment-variables.md).
+4. Uploading the validation output to S3, using a file name structure that reference's Platform's [Platform Environment Variables](../../reference/environment-variables/shipyard-environment-variables.md).
 5. Printing the validation results to the standard output.
 6. Returning the appropriate exit code based on expectation results.
 

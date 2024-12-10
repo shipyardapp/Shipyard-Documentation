@@ -1,22 +1,22 @@
 ---
 id: microsoft-365-sharepoint-upload-files-from-shipyard-to-sharepoint
-title: Microsoft 365 SharePoint Template - Upload Files from Shipyard to SharePoint
+title: Microsoft 365 SharePoint Template - Upload Files from Platform to SharePoint
 hide_title: true
-sidebar_label: Upload Files from Shipyard to SharePoint
-description: Information about Shipyard's low-code Microsoft 365 SharePoint Upload Files from Shipyard to SharePoint blueprint. Quickly upload one or multiple files to Microsoft SharePoint
+sidebar_label: Upload Files from Platform to SharePoint
+description: Information about Platform's low-code Microsoft 365 SharePoint Upload Files from Platform to SharePoint blueprint. Quickly upload one or multiple files to Microsoft SharePoint
 keywords:
   - microsoft 365 sharepoint
   - blueprint
   - template
 ---
 
-# Microsoft 365 SharePoint - Upload Files from Shipyard to SharePoint
+# Microsoft 365 SharePoint - Upload Files from Platform to SharePoint
 
 
 
 ## Overview
 
-This blueprint can be used to upload one or multiple files to SharePoint from Shipyard. 
+This blueprint can be used to upload one or multiple files to SharePoint from Platform. 
 
 **Note**: Any existing files with the same name will be overwritten. 
 

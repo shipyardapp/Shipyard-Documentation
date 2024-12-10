@@ -1,16 +1,16 @@
 ---
 id: ftp-download-files
-title: FTP Template - Download Files to Shipyard
+title: FTP Template - Download Files to Platform
 hide_title: true
-sidebar_label: Download Files to Shipyard
-description: Information about Shipyard's low-code FTP Download Files to Shipyard blueprint. Quickly export one or more files from an FTP Server.
+sidebar_label: Download Files to Platform
+description: Information about Platform's low-code FTP Download Files to Platform blueprint. Quickly export one or more files from an FTP Server.
 keywords:
   - ftp
   - blueprint
   - template
 ---
 
-# FTP - Download Files to Shipyard
+# FTP - Download Files to Platform
 
 ## Overview
 

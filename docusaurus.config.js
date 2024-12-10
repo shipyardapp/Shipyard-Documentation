@@ -23,27 +23,11 @@ module.exports = {
 		},
 	],
 	themeConfig: {
-		algolia:
-			process.env.NODE_ENV === "production"
-				? {
-						appId: process.env.ALGOLIA_APP_ID,
-						apiKey: process.env.ALGOLIA_API_KEY,
-						indexName: "shipyardapp",
-
-						// Optional: see doc section bellow
-						// contextualSearch: true,
-
-						// Optional: Algolia search parameters
-						searchParameters: {},
-
-						//... other Algolia params
-				  }
-				: void 0,
 		navbar: {
-			title: "Shipyard",
+			title: "Platform",
 			logo: {
-				alt: "Shipyard Logo",
-				src: BASE_URL + "img/logo.svg",
+				alt: "Platform Logo",
+				src: BASE_URL + "img/undraw_docusaurus_react.svg",
 			},
 			items: [
 				{
@@ -51,27 +35,7 @@ module.exports = {
 					activeBasePath: "docs",
 					label: "Documentation",
 					position: "left",
-				},
-				{
-					to: "https://www.shipyardapp.com/",
-					label: "Product",
-					position: "left",
-				},
-				{
-					to: "https://www.shipyardapp.com/blog/",
-					label: "Blog",
-					position: "left",
-				},
-				{
-					to: "https://www.shipyardapp.com/demo",
-					label: "Talk to Sales",
-					position: "left",
-				},
-				// {
-				//   href: 'https://github.com/shipyardapp/Shipyard-Documentation',
-				//   label: 'GitHub',
-				//   position: 'right',
-				// },
+				}
 			],
 		},
 		footer: {

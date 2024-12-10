@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Thoughtspot Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Thoughtspot to work with Shipyard's low-code Thoughtspot templates.
+description: Instructions on how to authorize Thoughtspot to work with Platform's low-code Thoughtspot templates.
 keywords:
 - thoughtspot
 - blueprint
@@ -14,7 +14,7 @@ keywords:
 
 # Thoughtspot Authorization
 # Thoughtpsot Authorization
-An API token is necessary in order for Shipyard to access your Thoughtspot instance. To generate a token, navigate to the API playground which can be found by selecting **Develop** tab of upper selection panel and then the **REST Playground v2.0** tab on the side
+An API token is necessary in order for Platform to access your Thoughtspot instance. To generate a token, navigate to the API playground which can be found by selecting **Develop** tab of upper selection panel and then the **REST Playground v2.0** tab on the side
 ![](https://cdn.sanity.io/images/2xyydva6/production/0903b1ae3a4169b29252f2469604a36bcd194587-948x53.png?w=450)
 
 ![](https://cdn.sanity.io/images/2xyydva6/production/e366ce79519d93f5e43e3ab606def4de0ddebb27-262x758.png?w=450)

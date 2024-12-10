@@ -3,7 +3,7 @@ id: dbt-cloud-check-run-status
 title: dbt Cloud Template - Check Run Status (Deprecated)
 hide_title: true
 sidebar_label: Check Run Status (Deprecated)
-description: Information about Shipyard's low-code dbt Cloud Check Run Status (Deprecated) blueprint. Check the status of a specific dbt Cloud run and return with the final status.
+description: Information about Platform's low-code dbt Cloud Check Run Status (Deprecated) blueprint. Check the status of a specific dbt Cloud run and return with the final status.
 keywords:
   - dbt cloud
   - blueprint
@@ -21,7 +21,7 @@ Check for the status of a single run on dbt Cloud. The Vessel's exit code and st
 - If the run is not completed, the Vessel will return an exit code of 255, an error.
 - If the run has completed with an error, the Vessel will return an exit code of 1, an error.
 - If the run has completed, but was canceled, the Vessel will return an exit code of 2, an error.
-- If the run has completed successfully, the Vessel will return an exit code of 0, interpreted by Shipyard as Successful.
+- If the run has completed successfully, the Vessel will return an exit code of 0, interpreted by Platform as Successful.
 
 The response for this request will always be stored at _shipyard-artifacts/dbtcloud-blueprints/responses/run_RUNID_response.json_
 

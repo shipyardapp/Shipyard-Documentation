@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Rudderstack Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Rudderstack to work with Shipyard's low-code Rudderstack templates.
+description: Instructions on how to authorize Rudderstack to work with Platform's low-code Rudderstack templates.
 keywords:
 - rudderstack
 - blueprint
@@ -13,7 +13,7 @@ keywords:
 ---
 
 # Rudderstack Authorization
-To get started with any RudderStack Blueprints, you will need to create an Access Token. This Access Token is a secure way for Shipyard to access RudderStack and will be required for **every** RudderStack Blueprint. Additionally, you will need to know where to find your Source IDs.
+To get started with any RudderStack Blueprints, you will need to create an Access Token. This Access Token is a secure way for Platform to access RudderStack and will be required for **every** RudderStack Blueprint. Additionally, you will need to know where to find your Source IDs.
 
 ## Create a RudderStack Access Token
 1. Sign in to [RudderStack](https://app.rudderstack.com/)
@@ -26,7 +26,7 @@ To get started with any RudderStack Blueprints, you will need to create an Acces
 
 ![](https://cdn.sanity.io/images/2xyydva6/production/d6bfd437e4642b063015b4b1c507c61a7e32cc0c-1047x363.png?w=450)
 
-5. Provide a descriptive Token name like "**Shipyard**". 
+5. Provide a descriptive Token name like "**Platform**". 
 6. Select the "**Read-Write**" Role.
 7. Click **Generate**.
 

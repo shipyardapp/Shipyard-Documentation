@@ -1,16 +1,16 @@
 ---
 id: ftp-upload-files
-title: FTP Template - Upload Files from Shipyard
+title: FTP Template - Upload Files from Platform
 hide_title: true
-sidebar_label: Upload Files from Shipyard
-description: Information about Shipyard's low-code FTP Upload Files from Shipyard blueprint. Easily import one or more files directly into an FTP Server, no matter how big they are.
+sidebar_label: Upload Files from Platform
+description: Information about Platform's low-code FTP Upload Files from Platform blueprint. Easily import one or more files directly into an FTP Server, no matter how big they are.
 keywords:
   - ftp
   - blueprint
   - template
 ---
 
-# FTP - Upload Files from Shipyard
+# FTP - Upload Files from Platform
 
 ## Overview
 
@@ -22,7 +22,7 @@ This Blueprint requires _write_ permissions in order to upload to the FTP server
 
 **Recommended Setup:**
 
-1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Shipyard or generates a file with code. 
+1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Platform or generates a file with code. 
 
 
 ## Variables
@@ -33,9 +33,9 @@ This Blueprint requires _write_ permissions in order to upload to the FTP server
 | Port | FTP_PORT | Integer | :white_check_mark: | `"21"` | - | Number for the port to connect to. `21` is used by default. |
 | Username | FTP_USERNAME | Alphanumeric | :heavy_minus_sign: | - | - | Value of the configured username in the FTP server. |
 | Password | FTP_PASSWORD | Password | :heavy_minus_sign: | - | - | Value of the configured password associated to the username on the FTP server. |
-| Shipyard Folder Name | FTP_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Shipyard to upload the target file from. If left blank, will look in the home directory. |
+| Shipyard Folder Name | FTP_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Platform to upload the target file from. If left blank, will look in the home directory. |
 | Shipyard File Name Match Type | FTP_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match`<br></br><br></br> | Determines if the text in "Shipyard File Name" will look for one file with exact match, or multiple files using regex. |
-| Shipyard File Name | FTP_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file on Shipyard. Can be regex if "Match Type" is set accordingly. |
+| Shipyard File Name | FTP_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file on Platform. Can be regex if "Match Type" is set accordingly. |
 | FTP Folder Name | FTP_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Folder where the file(s) should be uploaded. Leaving blank will place the file in the root directory of the FTP. |
 | FTP File Name | FTP_DESTINATION_FILE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | What to name the file(s) being uploaded. If left blank, defaults to the original file name(s). |
 

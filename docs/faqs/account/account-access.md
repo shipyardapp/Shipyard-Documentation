@@ -1,8 +1,8 @@
 ---
 id: account-access
-title: How can I get access to Shipyard?
+title: How can I get access to Platform?
 hide_title: true
-description: How to get access to Shipyard
+description: How to get access to Platform
 hide_table_of_contents: true
 keywords:
   - faq
@@ -12,6 +12,6 @@ keywords:
   - sign up
 ---
 
-## How can I get access to Shipyard?
+## How can I get access to Platform?
 
-If you want to start using Shipyard, you can [talk to Sales](https://www.shipyardapp.com/demo). After talking to our sales team, we'll get you started with a proof of concept plan.
+If you want to start using Platform, you can [talk to Sales](https://www.shipyardapp.com/demo). After talking to our sales team, we'll get you started with a proof of concept plan.

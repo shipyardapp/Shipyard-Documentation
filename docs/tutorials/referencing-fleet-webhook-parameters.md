@@ -21,7 +21,7 @@ In this tutorial, you'll learn to build a Fleet that contains a Vessel that can 
 By the end of the tutorial, you'll be able to:
 
 - Set up a [Vessel](../reference/vessels.md) with Code
-- [Upload a script](../reference/code/upload-code.md) to Shipyard.
+- [Upload a script](../reference/code/upload-code.md) to Platform.
 - Reference [platform environment variables](../reference/environment-variables/shipyard-environment-variables.md)
 - Check [Logs](../reference/logs/logs-overview.md) to verify that a Vessel correctly referenced the **webhook parameters**.
 
@@ -31,7 +31,7 @@ First, [download this code](https://drive.google.com/file/d/1TYvbvxNgkaBJkE2mC5A
 
 Feel free to peruse this script beforehand so you understand everything that it's doing. The script is accomplishing four main things:
 
-1. Reads in the Shipyard environment variables for the paths to the conditional headers and body files.
+1. Reads in the Platform environment variables for the paths to the conditional headers and body files.
 2. Conditionally reads in the headers and body files (the body is assumed to be a JSON file in this example).
 3. Loops over the key-value pairs for both files and prints each one out
 
@@ -76,7 +76,7 @@ curl -X POST <webhook_url> -H "Content-Type: application/json" -d '{"action_id":
 
 ### Step 4 - Examing the Webhook Parameters
 
-1. Click on the **Logs** tab on the Shipyard browser tab.
+1. Click on the **Logs** tab on the Platform browser tab.
 2. Click on the Fleet in the **Runtime History** histogram (it may be yellow if running or green if complete).
 3. Click on the Vessel in the **Overview** tab (it may be yellow if running or green if complete).
 4. You'll see the output in the logs showing the headers and body values.

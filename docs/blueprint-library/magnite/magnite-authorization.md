@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Magnite Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Magnite to work with Shipyard's low-code Magnite templates.
+description: Instructions on how to authorize Magnite to work with Platform's low-code Magnite templates.
 keywords:
   - magnite
   - blueprint

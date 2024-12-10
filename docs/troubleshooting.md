@@ -51,7 +51,7 @@ If this error appears towards the end of your output and your Vessel appears to 
 It is sometimes difficult to remember all of the files that would be available to your Vessels in a Fleet. We recommend this guide to [list all available files](how-tos/fleets/see-all-files.md) so you can better visualize the file names.
 
 ## Miscellaneous Issues
-If you are having weird performance issues in Shipyard, we have a few steps you can try to rectify those issues. 
+If you are having weird performance issues in Platform, we have a few steps you can try to rectify those issues. 
 
 1. Perform a hard refresh of your browser. Click your specific browser below for the key strokes needed to perform a hard refresh.
 

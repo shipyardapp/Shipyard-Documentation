@@ -3,7 +3,7 @@ id: jira-edit-ticket
 title: Jira Template - Edit Ticket
 hide_title: true
 sidebar_label: Edit Ticket
-description: Information about Shipyard's low-code Jira Edit Ticket blueprint. Trigger the execution to edit some commonly used fields on an existing Jira ticket 
+description: Information about Platform's low-code Jira Edit Ticket blueprint. Trigger the execution to edit some commonly used fields on an existing Jira ticket 
 keywords:
     - jira
     - blueprint

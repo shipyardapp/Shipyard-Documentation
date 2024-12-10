@@ -1,8 +1,8 @@
 ---
 id: pricing
-title: How much does Shipyard cost?
+title: How much does Platform cost?
 hide_title: true
-description: How much does Shipyard cost?
+description: How much does Platform cost?
 keywords:
   - faq
   - frequently asked questions
@@ -10,11 +10,11 @@ keywords:
   - cost
 ---
 
-# How much does Shipyard cost?
+# How much does Platform cost?
 
-Shipyard has three paid plans: Team, Business, and Enterprise. 
+Platform has three paid plans: Team, Business, and Enterprise. 
 
-These plans consist of a platform fee and a runtime usage fee. The platform fee is a flat fee that covers the cost of using the Shipyard platform. The runtime usage fee is based on the amount of time your Fleets run for.
+These plans consist of a platform fee and a runtime usage fee. The platform fee is a flat fee that covers the cost of using the Platform platform. The runtime usage fee is based on the amount of time your Fleets run for.
 
 Our pricing is extremely competitive and more advantageous than:
 - Running and maintaining your own servers 24/7, when you might only end up using those servers <10% of the time.

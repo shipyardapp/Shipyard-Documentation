@@ -15,7 +15,7 @@ keywords:
 
 ## Overview
 
-In this tutorial, you'll walk through the steps to move a fleet using Shipyard's [YAML Editor](../reference/fleets/yaml-editor.md). 
+In this tutorial, you'll walk through the steps to move a fleet using Platform's [YAML Editor](../reference/fleets/yaml-editor.md). 
 
 By the end of this tutorial, you'll be able to: 
 

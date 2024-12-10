@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Notion Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Notion to work with Shipyard's low-code Notion templates.
+description: Instructions on how to authorize Notion to work with Platform's low-code Notion templates.
 keywords:
 - notion
 - blueprint
@@ -13,7 +13,7 @@ keywords:
 ---
 
 # Notion Authorization
-In order to connect Shipyard to Notion, you will need:
+In order to connect Platform to Notion, you will need:
 
 1. A Notion Access Token
 2. A Notion Database ID

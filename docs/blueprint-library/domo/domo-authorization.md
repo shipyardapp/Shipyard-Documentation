@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Domo Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Domo to work with Shipyard's low-code Domo templates.
+description: Instructions on how to authorize Domo to work with Platform's low-code Domo templates.
 keywords:
   - domo
   - blueprint
@@ -42,7 +42,7 @@ Below are the steps of how to accomplish each of these individually.
 7. Assign the token to a specific user.
 8. Set the access token to expire after 10 years.
 **_CAUTION:_**
-While best practice is typically to have expiring access tokens that rotate, we recommend letting Shipyard tokens run as long as possible to prevent interruption to your Fleets.
+While best practice is typically to have expiring access tokens that rotate, we recommend letting Platform tokens run as long as possible to prevent interruption to your Fleets.
 
 9. Click **Generate**.
 
@@ -72,8 +72,8 @@ While best practice is typically to have expiring access tokens that rotate, we 
 ![](https://cdn.sanity.io/images/2xyydva6/production/bbd86e70d02f27043546b109bc2a3337f5156c44-414x596.png?w=450)
 
 6. On the next screen, fill out the following details:
-- Name as `Shipyard`
-- Description as `Used for Shipyard's Blueprints`
+- Name as `Platform`
+- Description as `Used for Platform's Blueprints`
 - Select `Data` and `Dashboard` scopes.
 
 ![](https://cdn.sanity.io/images/2xyydva6/production/5f93f7af80cd0857e08e85a7ed8173a87d140fe0-1848x1212.png?w=450)

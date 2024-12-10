@@ -3,7 +3,7 @@ id: databricks-delete-files-from-dbfs
 title: Databricks Template - Delete Files from DBFS
 hide_title: true
 sidebar_label: Delete Files from DBFS
-description: Information about Shipyard's low-code Databricks Delete Files from DBFS blueprint. Delete one or more files from your Databricks File System (DBFS). 
+description: Information about Platform's low-code Databricks Delete Files from DBFS blueprint. Delete one or more files from your Databricks File System (DBFS). 
 keywords:
     - databricks
     - blueprint

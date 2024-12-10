@@ -47,7 +47,7 @@ Selecting a schedule of `Monthly` on the 31st will only result in a run being sc
 
 1. A schedule's maximum frequency is every 5 minutes. If you need to run something more frequently, please reach out to [support](mailto:support@shipyardapp.com).
 2. If a schedule is duplicated, the Fleet will be run multiple times concurrently at the scheduled time.
-3. There is currently no way to create a schedule that is tied to an irregular mix of dates and times. Some examples of schedules we don't natively support, but are still possible to create within Shipyard:
+3. There is currently no way to create a schedule that is tied to an irregular mix of dates and times. Some examples of schedules we don't natively support, but are still possible to create within Platform:
    1. A schedule that only runs on specific dates, like holidays.
    2. A schedule that runs every hour except on specific days.
    3. A schedule that can be described as "every other" or "every nth".

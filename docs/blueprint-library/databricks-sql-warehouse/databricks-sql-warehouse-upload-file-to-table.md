@@ -3,7 +3,7 @@ id: databricks-sql-warehouse-upload-file-to-table
 title: Databricks SQL Warehouse Template - Upload File to Table
 hide_title: true
 sidebar_label: Upload File to Table
-description: Information about Shipyard's low-code Databricks SQL Warehouse Upload File to Table blueprint. Quickly upload a file from Shipyard to a SQL table in Databricks
+description: Information about Platform's low-code Databricks SQL Warehouse Upload File to Table blueprint. Quickly upload a file from Platform to a SQL table in Databricks
 keywords:
   - databricks sql warehouse
   - blueprint
@@ -14,14 +14,14 @@ keywords:
 
 ## Overview
 
-Quickly upload a file from Shipyard to a SQL table in Databricks. 
+Quickly upload a file from Platform to a SQL table in Databricks. 
 
 __Recommended Setup__
 
 This should be used immediately after downloading data from another source.
 Although they are not required in order to connect, it is recommended that you provide the `Catalog` and the `Schema` that you will query. By not doing so, the connection will resort to the defaults and the uploaded table will reside there. 
 
-The recommended approach is to provide the volume where the uploaded file will be staged, then copied into the target table. Shipyard will remove the staged file after successfully copying into the target. It is also recommended to use one volume per schema, though this is not strictly enforced. If the volume provided does not exist, Shipyard will create it. 
+The recommended approach is to provide the volume where the uploaded file will be staged, then copied into the target table. Platform will remove the staged file after successfully copying into the target. It is also recommended to use one volume per schema, though this is not strictly enforced. If the volume provided does not exist, Platform will create it. 
 
 Additionally the [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
 
@@ -44,7 +44,7 @@ This blueprint cannot upload a file from your local machine.
 | File Type | DATABRICKS_SQL_FILE_TYPE | Select | :white_check_mark: | `csv` | CSV: `csv`<br></br><br></br>Parquet: `parquet`<br></br><br></br> | The file type to load |
 | Shipyard File Match Type | DATABRICKS_SQL_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Glob Match: `glob_match`<br></br><br></br> | Determines if the text in "Shipyard File Name" will look for one file with exact match, or multiple files using regex. |
 | Shipyard Folder Name | DATABRICKS_SQL_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | The optional name of the folder where the file in Shipyard is located |
-| Shipyard File Name | DATABRICKS_SQL_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | The name of the file in Shipyard to load to Databricks |
+| Shipyard File Name | DATABRICKS_SQL_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | The name of the file in Platform to load to Databricks |
 
 
 

@@ -2,7 +2,7 @@
 id: github-integration
 title: GitHub Integration
 hide_title: true
-description: Connect your Shipyard organization to your GitHub organization.
+description: Connect your Platform organization to your GitHub organization.
 keywords:
   - github
   - integration
@@ -15,11 +15,11 @@ keywords:
 
 The GitHub integration allows you to set up [GitHub Code Sync](../../code/git-connection.md) for any of your Vessels or Blueprints.
 
-Shipyard supports an unlimited number of GitHub connections to multiple different organizations. Every repository that is synced with Shipyard will be available to any user in the Organization with _Create_ or _Edit_ [permissions](../roles.md) for Blueprints.
+Platform supports an unlimited number of GitHub connections to multiple different organizations. Every repository that is synced with Platform will be available to any user in the Organization with _Create_ or _Edit_ [permissions](../roles.md) for Blueprints.
 
 ### Setup
 
-By clicking **Add Connection**, you can choose to sync Shipyard to any GitHub organization that your GitHub account has access to. This setup flow allows you to specify whether to give Shipyard access to all repositories \(including newly created ones\) or only specific repositories. By default, Shipyard will have read-only access to the contents of the repositories you select.
+By clicking **Add Connection**, you can choose to sync Platform to any GitHub organization that your GitHub account has access to. This setup flow allows you to specify whether to give Platform access to all repositories \(including newly created ones\) or only specific repositories. By default, Platform will have read-only access to the contents of the repositories you select.
 
 Once a connection has been set up, you can always change the level of access after the fact. The **edit** button will redirect you to the GitHub application page where you can change repository access or delete the connection altogether.
 
@@ -33,7 +33,7 @@ Once a connection has been set up, you can always change the level of access aft
 
 ## Additional Notes
 
-1. Shipyard has a 1:1 relationship when connecting to GitHub organizations. You cannot sync your personal organization in GitHub with two different organizations in Shipyard.
+1. Platform has a 1:1 relationship when connecting to GitHub organizations. You cannot sync your personal organization in GitHub with two different organizations in Platform.
 
 ## Learn More
 

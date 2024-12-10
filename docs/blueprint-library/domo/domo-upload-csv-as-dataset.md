@@ -1,16 +1,16 @@
 ---
 id: domo-upload-csv-as-dataset
-title: Domo Template - Upload File as Dataset from Shipyard
+title: Domo Template - Upload File as Dataset from Platform
 hide_title: true
-sidebar_label: Upload File as Dataset from Shipyard
-description: Information about Shipyard's low-code Domo Upload File as Dataset from Shipyard blueprint. Uploads a CSV as a Dataset in Domo
+sidebar_label: Upload File as Dataset from Platform
+description: Information about Platform's low-code Domo Upload File as Dataset from Platform blueprint. Uploads a CSV as a Dataset in Domo
 keywords:
   - domo
   - blueprint
   - template
 ---
 
-# Domo - Upload File as Dataset from Shipyard
+# Domo - Upload File as Dataset from Platform
 
 ## Overview
 
@@ -22,7 +22,7 @@ Create a Domo dataset by uploading a csv to Domo. If the `Domo Dataset Name` alr
 |:-----|:----------|:-----|:---------|:--------|:--------|:------------------------|
 | Client ID | DOMO_CLIENT_ID | Password | :white_check_mark: | - | - | Client ID is generated in the Domo Developer Portal. The ID should have the following scope: data, workflow, user, account, dashboard |
 | Secret Key | DOMO_SECRET_KEY | Password | :white_check_mark: | - | - | The secret attached to the generated Client ID |
-| Shipyard Folder Name | DOMO_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | The Shipyard folder name where the file is contained |
+| Shipyard Folder Name | DOMO_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | The Platform folder name where the file is contained |
 | Shipyard File to Load | DOMO_FILE | Alphanumeric | :white_check_mark: | - | - | The name of the csv file that you would like to load into Domo |
 | Domo Dataset Name | DOMO_DATASET_NAME | Alphanumeric | :white_check_mark: | - | - | The name of that the dataset will be given in Domo |
 | Domo Dataset Description | DOMO_DATASET_DESCRIPTION | Alphanumeric | :heavy_minus_sign: | - | - | Optional description of the dataset |

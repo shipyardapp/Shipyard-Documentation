@@ -3,7 +3,7 @@ id: amazon-s3-remove-files
 title: Amazon S3 Template - Delete Files
 hide_title: true
 sidebar_label: Delete Files
-description: Information about Shipyard's low-code Amazon S3 Delete Files blueprint. Quickly remove files within an S3 bucket. Once the action is completed, it cannot be undone.
+description: Information about Platform's low-code Amazon S3 Delete Files blueprint. Quickly remove files within an S3 bucket. Once the action is completed, it cannot be undone.
 keywords:
   - amazon s3
   - blueprint

@@ -3,7 +3,7 @@ id: google-sheets-clear-data-from-sheet
 title: Google Sheets Template - Clear Data from Sheet
 hide_title: true
 sidebar_label: Clear Data from Sheet
-description: Information about Shipyard's low-code Google Sheets Clear Data from Sheet blueprint. Easily wipe data from a Google Sheet so you can start fresh before inserting data.
+description: Information about Platform's low-code Google Sheets Clear Data from Sheet blueprint. Easily wipe data from a Google Sheet so you can start fresh before inserting data.
 keywords:
   - google sheets
   - blueprint

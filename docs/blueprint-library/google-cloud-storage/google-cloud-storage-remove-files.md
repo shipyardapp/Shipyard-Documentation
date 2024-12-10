@@ -3,7 +3,7 @@ id: google-cloud-storage-remove-files
 title: Google Cloud Storage Template - Delete Files
 hide_title: true
 sidebar_label: Delete Files
-description: Information about Shipyard's low-code Google Cloud Storage Delete Files blueprint. Quickly remove one or more files from a Google Cloud Storage (GCS) bucket or folder
+description: Information about Platform's low-code Google Cloud Storage Delete Files blueprint. Quickly remove one or more files from a Google Cloud Storage (GCS) bucket or folder
 keywords:
   - google cloud storage
   - blueprint

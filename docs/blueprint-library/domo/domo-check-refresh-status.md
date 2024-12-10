@@ -3,7 +3,7 @@ id: domo-check-refresh-status
 title: Domo Template - Check Refresh Status (Deprecated)
 hide_title: true
 sidebar_label: Check Refresh Status (Deprecated)
-description: Information about Shipyard's low-code Domo Check Refresh Status (Deprecated) blueprint. Check the status of a recently refreshed dataset in Domo.
+description: Information about Platform's low-code Domo Check Refresh Status (Deprecated) blueprint. Check the status of a recently refreshed dataset in Domo.
 keywords:
   - domo
   - blueprint

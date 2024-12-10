@@ -2,7 +2,7 @@
 id: programming-languages
 title: What programming languages do you support?
 hide_title: true
-description: List of programming languages that are supported by Shipyard.
+description: List of programming languages that are supported by Platform.
 hide_table_of_contents: true
 keywords:
   - faq

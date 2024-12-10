@@ -11,7 +11,7 @@ keywords:
 
 ## Definition
 
-The Code panel contains all of the details necessary to run your scripts as Vessels. Contents of this panel may differ slightly based on the language selected. Shipyard currently supports executing code written in Python, Node, or Bash (which can [effectively install and run any language](../../tutorials/non-native-language-vessels.md)).
+The Code panel contains all of the details necessary to run your scripts as Vessels. Contents of this panel may differ slightly based on the language selected. Platform currently supports executing code written in Python, Node, or Bash (which can [effectively install and run any language](../../tutorials/non-native-language-vessels.md)).
 
 There are 3 different methods to provide code:
 

@@ -1,16 +1,16 @@
 ---
 id: looker-download-sql-query-as-file
-title: Looker Template - Download SQL Query as File to Shipyard
+title: Looker Template - Download SQL Query as File to Platform
 hide_title: true
-sidebar_label: Download SQL Query as File to Shipyard
-description: Information about Shipyard's low-code Looker Download SQL Query as File to Shipyard blueprint. Quickly run a SQL query against a Looker view or model and download the result as a variety of file types. 
+sidebar_label: Download SQL Query as File to Platform
+description: Information about Platform's low-code Looker Download SQL Query as File to Platform blueprint. Quickly run a SQL query against a Looker view or model and download the result as a variety of file types. 
 keywords:
   - looker
   - blueprint
   - template
 ---
 
-# Looker - Download SQL Query as File to Shipyard
+# Looker - Download SQL Query as File to Platform
 
 ## Overview
 

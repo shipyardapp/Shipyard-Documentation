@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Amazon Athena Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Amazon Athena to work with Shipyard's low-code Amazon Athena templates.
+description: Instructions on how to authorize Amazon Athena to work with Platform's low-code Amazon Athena templates.
 keywords:
   - amazon athena
   - blueprint
@@ -16,7 +16,7 @@ keywords:
 
 In order to get started with the Athena Blueprints, an IAM user with the required AWS permissions and programmatic access is required.
 
-Additionally, you may need to ensure that Shipyard [IP Addresses are whitelisted](https://www.shipyardapp.com/docs/faqs/security/ip-whitelist/)
+Additionally, you may need to ensure that Platform [IP Addresses are whitelisted](https://www.shipyardapp.com/docs/faqs/security/ip-whitelist/)
 
 ## Steps
 
@@ -101,7 +101,7 @@ Additionally, you may need to ensure that Shipyard [IP Addresses are whitelisted
 		![Glue read action](https://cdn.sanity.io/images/2xyydva6/production/b2ad1a247941447ef65e9e3b45ec7df2786e9226-804x732.png?w=450)
 
 	c. On the "Resources" dropdown, click "Add ARN"
-		i. Select "Any in this account" or add specific catalog, database, and table values - in our example we use "Any in this account" for all three (the "Any in this account" has not been selected since this overrides the example account ID with the Shipyard account ID)  
+		i. Select "Any in this account" or add specific catalog, database, and table values - in our example we use "Any in this account" for all three (the "Any in this account" has not been selected since this overrides the example account ID with the Platform account ID)  
 
 		![Glue ARN](https://cdn.sanity.io/images/2xyydva6/production/f5cf04f3457960f119a8a0d516a48ea7db321a53-910x295.png?w=450)
 

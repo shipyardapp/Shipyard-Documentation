@@ -22,7 +22,7 @@ In this tutorial, you'll walk through the steps required to set up a Vessel that
 
 By the end of the tutorial, you'll be able to:
 
-- Connect your GitHub account to Shipyard.
+- Connect your GitHub account to Platform.
 - Create a [Vessel](../reference/vessels.md) with a script from GitHub.
 - Install [package dependencies](../reference/packages/external-package-dependencies.md) for your solution.
 - Check [Logs](../reference/logs/logs-overview.md) to verify that your Fleet ran successfully.
@@ -116,9 +116,9 @@ This tutorial assumes that you have a GitHub account. If you do not have an acco
 
 ![](../.gitbook/assets/shipyard_2022_12_07_11_52_30.png)
 
-### Step 2: Connecting GitHub to Shipyard
+### Step 2: Connecting GitHub to Platform
 
-1. Head over to [Shipyard](https://www.shipyardapp.com/) and sign in.
+1. Head over to [Platform](https://www.shipyardapp.com/) and sign in.
 2. Using the sidebar, click on **Admin** to access the drop-down menu.
 3. Under Admin, select **Integrations**.
 
@@ -133,14 +133,14 @@ This tutorial assumes that you have a GitHub account. If you do not have an acco
 
 ![](../.gitbook/assets/shipyard_2022_12_05_10_56_52.png)
 
-6. Choose to allow Shipyard to have access to all repositories or just the forked repository from earlier. 
-7. Click **Install**. This will redirect you back to the Admin page on Shipyard where you will be able to see your GitHub connection on the right side of the page.
+6. Choose to allow Platform to have access to all repositories or just the forked repository from earlier. 
+7. Click **Install**. This will redirect you back to the Admin page on Platform where you will be able to see your GitHub connection on the right side of the page.
 
 ![](../.gitbook/assets/shipyard_2022_12_05_11_22_14.png)
 
 ### Step 3: Add GitHub Code Vessel to Fleet
 
-1. On the Shipyard sidebar, select **Projects**.
+1. On the Platform sidebar, select **Projects**.
 2. Select the **Default** project where the Getting Started tutorial Fleet lives or the project where you created a new Fleet from the YAML starting point.
 3. Select the Fleet named `Download File from Webpage and Email to User`.
 4. Select **Fleet Builder** from the top of the page.
@@ -152,7 +152,7 @@ This tutorial assumes that you have a GitHub account. If you do not have an acco
 7. Under **File to Run**, enter `vessel/slinky_dog_dash_convert.py`.
 
 :::info
-For the file name, we had to include the folder where the file was located in GitHub. The repository will be put into the Shipyard working directory with the GitHub folder structure in tact.
+For the file name, we had to include the folder where the file was located in GitHub. The repository will be put into the Platform working directory with the GitHub folder structure in tact.
 :::
 
 8. Select **Git**.
@@ -161,7 +161,7 @@ For the file name, we had to include the folder where the file was located in Gi
 11. Under **Git Clone Location**, select `Unpack into Current Working Directory`.
     
 :::info Pro-Tip
-When running a code Vessel from GitHub, Shipyard parses the repository for a requirements.txt file. The packages in the file will automatically be installed for you.
+When running a code Vessel from GitHub, Platform parses the repository for a requirements.txt file. The packages in the file will automatically be installed for you.
 :::
 
 12. Delete the existing connection between the original two Vessels by hovering over the connection and clicking the red X.
@@ -184,7 +184,7 @@ When running a code Vessel from GitHub, Shipyard parses the repository for a req
 ![](../.gitbook/assets/shipyard_2022_12_08_12_28_29.png)
 
 :::tip Success
-You've successfully integrated GitHub with Shipyard and used your first script from GitHub in a Fleet!
+You've successfully integrated GitHub with Platform and used your first script from GitHub in a Fleet!
 :::
 
 

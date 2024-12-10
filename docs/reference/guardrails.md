@@ -27,7 +27,7 @@ Indicates the number of times that Vessels should be retried if they error out. 
 
 #### Time Between Retries
 
-After a failure, the amount of time before Shipyard will try to run the Vessel again. By default, the platform will try "As Soon As Possible", but the delay can be set in increments of 5 minutes, with up to a 60 minute delay.
+After a failure, the amount of time before Platform will try to run the Vessel again. By default, the platform will try "As Soon As Possible", but the delay can be set in increments of 5 minutes, with up to a 60 minute delay.
 
 #### Runtime Cutoff
 

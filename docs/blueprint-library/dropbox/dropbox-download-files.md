@@ -1,16 +1,16 @@
 ---
 id: dropbox-download-files
-title: Dropbox Template - Download Files to Shipyard
+title: Dropbox Template - Download Files to Platform
 hide_title: true
-sidebar_label: Download Files to Shipyard
-description: Information about Shipyard's low-code Dropbox Download Files to Shipyard blueprint. Quickly export one or more files from your Dropbox account. 
+sidebar_label: Download Files to Platform
+description: Information about Platform's low-code Dropbox Download Files to Platform blueprint. Quickly export one or more files from your Dropbox account. 
 keywords:
     - dropbox
     - blueprint
     - template
 ---
 
-# Dropbox - Download Files to Shipyard
+# Dropbox - Download Files to Platform
 
 ## Overview
 Quickly export one or more files from Dropbox. The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.

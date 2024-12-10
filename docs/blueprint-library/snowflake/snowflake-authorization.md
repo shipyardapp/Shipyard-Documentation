@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Snowflake Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Snowflake to work with Shipyard's low-code Snowflake templates.
+description: Instructions on how to authorize Snowflake to work with Platform's low-code Snowflake templates.
 keywords:
   - snowflake
   - blueprint
@@ -13,13 +13,13 @@ keywords:
 ---
 
 #  Authorization
-Connecting Snowflake to Shipyard requires you to have:
+Connecting Snowflake to Platform requires you to have:
 
-1. Shipyard [IP Addresses whitelisted](https://www.shipyardapp.com/docs/faqs/security/ip-whitelist/)
-2. A Snowflake account with read/write access to the database and all associated tables/views you wish to access. We recommend setting up an account specifically for Shipyard access.
-3. A warehouse that the account has access to. We recommend setting up a warehouse specifically for Shipyard queries.
+1. Platform [IP Addresses whitelisted](https://www.shipyardapp.com/docs/faqs/security/ip-whitelist/)
+2. A Snowflake account with read/write access to the database and all associated tables/views you wish to access. We recommend setting up an account specifically for Platform access.
+3. A warehouse that the account has access to. We recommend setting up a warehouse specifically for Platform queries.
 
-### Whitelisting Shipyard IP Addresses
+### Whitelisting Platform IP Addresses
 
 
 <Tabs
@@ -58,8 +58,8 @@ SET ALLOWED_IP_LIST = ('54.190.66.63', '52.42.73.100', '44.231.239.186', '44.225
 </Tabs>
 
 
-## Creating a Snowflake Role and User for Shipyard
-This guide will walk you through the process required to create a unique role and user account for Shipyard to access your Snowflake Database.
+## Creating a Snowflake Role and User for Platform
+This guide will walk you through the process required to create a unique role and user account for Platform to access your Snowflake Database.
 
 **_CAUTION:_** You can always use your own credentials, but this gives you less control over security logging and data access.
 
@@ -93,8 +93,8 @@ BEGIN;
  COMMIT;
 ```
 
-## Giving the Shipyard Role Warehouse Access
-This guide will walk you through the process required to either create a unique warehouse for Shipyard to run queries against your Snowflake Database, or give the newly created Shipyard Role access to an existing warehouse.
+## Giving the Platform Role Warehouse Access
+This guide will walk you through the process required to either create a unique warehouse for Platform to run queries against your Snowflake Database, or give the newly created Platform Role access to an existing warehouse.
 
 <Tabs
 defaultValue="new"
@@ -147,7 +147,7 @@ commit;
 <TabItem value="existing">
 
 
-**_CAUTION:_** Using an existing Warehouse may result in Shipyard processes contendending for resources.
+**_CAUTION:_** Using an existing Warehouse may result in Platform processes contendending for resources.
  
 1. Log into your Snowflake Account.
 2. Open a new worksheet. Select the checkbox to run "All Queries".
@@ -184,8 +184,8 @@ commit;
 </TabItem>
 </Tabs>
 
-## Giving Snowflake Database Access to Shipyard User
-This guide will walk you through the process required to give database access to a Shipyard account so you can run queries against it.
+## Giving Snowflake Database Access to Platform User
+This guide will walk you through the process required to give database access to a Platform account so you can run queries against it.
 
 1. Log into your Snowflake Account.
 2. Open a new worksheet.
@@ -226,7 +226,7 @@ begin;
 commit;
 ```
 
-**_NOTE:_** You can adjust this script as needed if you want Shipyard to have stricter access to your database.
+**_NOTE:_** You can adjust this script as needed if you want Platform to have stricter access to your database.
 
 
 
@@ -236,7 +236,7 @@ commit;
 ```bash
 openssl genrsa 2048 | openssl pkcs8 -topk8 -inform PEM -out rsa_key.p8
 ```
-**_NOTE:_** You will need to generate a passphrase to open the private key file. Be sure to save this passphrase as you will need to pass it as an input in Shipyard
+**_NOTE:_** You will need to generate a passphrase to open the private key file. Be sure to save this passphrase as you will need to pass it as an input in Platform
 
 2. Once the private key file is generated, created a corresponding public key by running the following in the terminal
 

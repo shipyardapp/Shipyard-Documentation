@@ -3,7 +3,7 @@ id: census-trigger-sync
 title: Census Template - Trigger Sync
 hide_title: true
 sidebar_label: Trigger Sync
-description: Information about Shipyard's low-code Census Trigger Sync blueprint. Immediately trigger a Census sync. 
+description: Information about Platform's low-code Census Trigger Sync blueprint. Immediately trigger a Census sync. 
 keywords:
     - census
     - blueprint

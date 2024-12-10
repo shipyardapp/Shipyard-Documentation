@@ -23,7 +23,7 @@ Each version is represented by a card. On a version card, you will see a version
 - **Compare to latest**: This will compare the selected version to the latest version. In the code window, you will see the selected version on the left and the latest on the right. Any differences between the two will be highlighted. Red highlighting means something was removed and green means that something was added.
 
 :::note
-The YAML-based definition of a Shipyard Fleet is generated rather than stored as a file. When it is generated, Vessel definitions are sorted by the Vessel name. For this reason, if you rename a Vessel, the entire Vessel definition will appear highlighted even if only the name was changed. *Please see the page for more information about how edits are dealt with when made in the [YAML editor](yaml-editor.md).*
+The YAML-based definition of a Platform Fleet is generated rather than stored as a file. When it is generated, Vessel definitions are sorted by the Vessel name. For this reason, if you rename a Vessel, the entire Vessel definition will appear highlighted even if only the name was changed. *Please see the page for more information about how edits are dealt with when made in the [YAML editor](yaml-editor.md).*
 :::
 
 - **Revert to this version**: This will revert the Fleet's configuration to the selected version. A new version will be generated and will appear at the top of the list as the **latest** version. This will be the version the Fleet Builder will display if you navigate to that tab.

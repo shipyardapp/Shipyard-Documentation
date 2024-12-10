@@ -4,7 +4,7 @@ sidebar_position: 1
 title: dbt Cloud Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize dbt Cloud to work with Shipyard's low-code dbt Cloud templates.
+description: Instructions on how to authorize dbt Cloud to work with Platform's low-code dbt Cloud templates.
 keywords:
   - dbt cloud
   - blueprint
@@ -16,7 +16,7 @@ keywords:
 
 # dbt Cloud Authorization
 
-To get started with any dbt Cloud Blueprints, you will need to create an Service Token. This Service Token is a secure way for Shipyard to access dbt Cloud and will be required for **every** dbt Cloud Blueprint.
+To get started with any dbt Cloud Blueprints, you will need to create an Service Token. This Service Token is a secure way for Platform to access dbt Cloud and will be required for **every** dbt Cloud Blueprint.
 
 ## Create a dbt Cloud Service Token
 1. Navigate to your organization's instance of [dbt Cloud](https://cloud.getdbt.com)
@@ -32,7 +32,7 @@ To get started with any dbt Cloud Blueprints, you will need to create an Service
 
 ![create token](https://cdn.sanity.io/images/2xyydva6/production/b32eb62dd2f8b452a45d37fb81f4ed9346537aa0-1617x284.png?w=450)
 
-5. Name your token something descriptive, like "ShipyardToken", and give it "Account Admin" privileges. Click **Save** once you're finished.
+5. Name your token something descriptive, like "PlatformToken", and give it "Account Admin" privileges. Click **Save** once you're finished.
 
 ![](https://cdn.sanity.io/images/2xyydva6/production/1b83e0b7447d58206f7777f2c037b08d31fb33a3-662x433.png?w=450)
 

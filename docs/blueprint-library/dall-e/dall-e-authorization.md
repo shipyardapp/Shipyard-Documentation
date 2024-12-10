@@ -4,7 +4,7 @@ sidebar_position: 1
 title: OpenAI DALL-E 2 Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize OpenAI DALL-E 2 to work with Shipyard's low-code OpenAI DALL-E 2 templates.
+description: Instructions on how to authorize OpenAI DALL-E 2 to work with Platform's low-code OpenAI DALL-E 2 templates.
 keywords:
 - openai dall-e 2
 - blueprint
@@ -13,7 +13,7 @@ keywords:
 ---
 
 # OpenAI DALL-E 2 Authorization
-To get started with any Dall-E Blueprints, you will need to create an API Key. This API Key is a secure way for Shipyard to access Dall-E and will be required for **every** Dall-E Blueprint.
+To get started with any Dall-E Blueprints, you will need to create an API Key. This API Key is a secure way for Platform to access Dall-E and will be required for **every** Dall-E Blueprint.
 
 ## Creating a Dall-E API Key
 

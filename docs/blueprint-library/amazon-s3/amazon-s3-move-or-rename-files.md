@@ -3,7 +3,7 @@ id: amazon-s3-move-or-rename-files
 title: Amazon S3 Template - Move or Rename Files
 hide_title: true
 sidebar_label: Move or Rename Files
-description: Information about Shipyard's low-code Amazon S3 Move or Rename Files blueprint. Quickly and seamlessly move a file within an S3 bucket to another bucket or folder, or rename a file within an S3 bucket.
+description: Information about Platform's low-code Amazon S3 Move or Rename Files blueprint. Quickly and seamlessly move a file within an S3 bucket to another bucket or folder, or rename a file within an S3 bucket.
 keywords:
   - amazon s3
   - blueprint

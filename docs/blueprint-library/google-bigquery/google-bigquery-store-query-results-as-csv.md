@@ -1,16 +1,16 @@
 ---
 id: google-bigquery-store-query-results-as-csv
-title: Google BigQuery Template - Download Query Results to Shipyard
+title: Google BigQuery Template - Download Query Results to Platform
 hide_title: true
-sidebar_label: Download Query Results to Shipyard
-description: Information about Shipyard's low-code Google BigQuery Download Query Results to Shipyard blueprint. Turn the results of your SQL SELECT statement into a CSV file.
+sidebar_label: Download Query Results to Platform
+description: Information about Platform's low-code Google BigQuery Download Query Results to Platform blueprint. Turn the results of your SQL SELECT statement into a CSV file.
 keywords:
   - google bigquery
   - blueprint
   - template
 ---
 
-# Google BigQuery - Download Query Results to Shipyard
+# Google BigQuery - Download Query Results to Platform
 
 ## Overview
 

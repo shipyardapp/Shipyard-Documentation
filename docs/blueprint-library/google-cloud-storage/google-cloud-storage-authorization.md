@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Google Cloud Storage Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Google Cloud Storage to work with Shipyard's low-code Google Cloud Storage templates.
+description: Instructions on how to authorize Google Cloud Storage to work with Platform's low-code Google Cloud Storage templates.
 keywords:
   - google cloud storage
   - blueprint
