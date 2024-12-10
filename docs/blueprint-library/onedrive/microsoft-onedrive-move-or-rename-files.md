@@ -3,7 +3,7 @@ id: microsoft-onedrive-move-or-rename-files
 title: OneDrive Template - Move or Rename Files
 hide_title: true
 sidebar_label: Move or Rename Files
-description: Information about Shipyard's low-code OneDrive Move or Rename Files blueprint. Quickly move or rename multiple files within Microsoft OneDrive
+description: Information about Platform's low-code OneDrive Move or Rename Files blueprint. Quickly move or rename multiple files within Microsoft OneDrive
 keywords:
   - onedrive
   - blueprint

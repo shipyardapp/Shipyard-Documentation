@@ -1,16 +1,16 @@
 ---
 id: smartsheet-upload-file-from-shipyard-to-smartsheet
-title: Smartsheet Template - Upload File from Shipyard to Smartsheet
+title: Smartsheet Template - Upload File from Platform to Smartsheet
 hide_title: true
-sidebar_label: Upload File from Shipyard to Smartsheet
-description: Information about Shipyard's low-code Smartsheet Upload File from Shipyard to Smartsheet blueprint. Quickly upload a CSV or Excel file to a Sheet in Smartsheet 
+sidebar_label: Upload File from Platform to Smartsheet
+description: Information about Platform's low-code Smartsheet Upload File from Platform to Smartsheet blueprint. Quickly upload a CSV or Excel file to a Sheet in Smartsheet 
 keywords:
     - smartsheet
     - blueprint
     - template
 ---
 
-# Smartsheet - Upload File from Shipyard to Smartsheet
+# Smartsheet - Upload File from Platform to Smartsheet
 
 ## Overview
 Easily import data from a single CSV or Excel file into a single SmartSheet Sheet. If the the Sheet already exists, the data being uploaded will either be appended or will overwrite the existing data based on the `Insert Method`.
@@ -26,7 +26,7 @@ Only one file can be uploaded at a time.
 
 **Recommended Setup:**
 
-1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Shipyard or generates a file with code. 
+1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Platform or generates a file with code. 
 
 ## Variables
 

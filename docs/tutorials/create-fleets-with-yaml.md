@@ -14,7 +14,7 @@ keywords:
 
 ## Overview
 
-In this tutorial, you'll walk through the steps to duplicate a fleet using Shipyard's [YAML Editor](../reference/fleets/yaml-editor.md). 
+In this tutorial, you'll walk through the steps to duplicate a fleet using Platform's [YAML Editor](../reference/fleets/yaml-editor.md). 
 
 By the end of this tutorial, you'll be able to: 
 
@@ -27,7 +27,7 @@ For more information about our YAML Editor, check out this [blog post](https://w
 
 ### Step 1 - Create New Fleet with YAML Editor
 
-1. Click the **New Fleet** button on the top left corner of the Shipyard webpage.
+1. Click the **New Fleet** button on the top left corner of the Platform webpage.
 2. Click the **Use YAML Editor** button on the top right of the Fleet Builder page
 
 ![Use YAML Editor Button](../.gitbook/assets/shipyard_2022_08_10_10_46_32.png)
@@ -130,7 +130,7 @@ notifications:
 
 ![Connection Changes](../.gitbook/assets/shipyard_2022_08_10_11_17_42.png)
 
-7. Find all of the values in the YAML called `_id` and delete the full line. Shipyard will automatically generate new ids for the new Space Mountain Fleet.
+7. Find all of the values in the YAML called `_id` and delete the full line. Platform will automatically generate new ids for the new Space Mountain Fleet.
 
 :::warning
 A YAML with IDs is used when updating an existing Fleet. If you try to create a new Fleet with IDs, it will error out.
@@ -203,7 +203,7 @@ notifications:
     after_on_demand: false
 ```
 
-8.  Click **Save & Finish** on the bottom right corner of the Shipyard webpage. This will take you to a page that says the Fleet has been created successfully.
+8.  Click **Save & Finish** on the bottom right corner of the Platform webpage. This will take you to a page that says the Fleet has been created successfully.
 ![Fleet Created Sucessfully](../.gitbook/assets/shipyard_2022_08_10_10_52_17.png)
 
 :::tip Success

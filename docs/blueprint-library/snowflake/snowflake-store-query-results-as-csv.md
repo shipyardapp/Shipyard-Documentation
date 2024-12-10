@@ -1,16 +1,16 @@
 ---
 id: snowflake-store-query-results-as-csv
-title: Snowflake Template - Download Query Results to Shipyard
+title: Snowflake Template - Download Query Results to Platform
 hide_title: true
-sidebar_label: Download Query Results to Shipyard
-description: Information about Shipyard's low-code Snowflake Download Query Results to Shipyard blueprint. Turn the results of your SQL SELECT statement into a CSV file.
+sidebar_label: Download Query Results to Platform
+description: Information about Platform's low-code Snowflake Download Query Results to Platform blueprint. Turn the results of your SQL SELECT statement into a CSV file.
 keywords:
   - snowflake
   - blueprint
   - template
 ---
 
-# Snowflake - Download Query Results to Shipyard
+# Snowflake - Download Query Results to Platform
 
 ## Overview
 

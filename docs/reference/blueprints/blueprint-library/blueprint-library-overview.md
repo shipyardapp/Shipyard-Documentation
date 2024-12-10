@@ -15,7 +15,7 @@ keywords:
 
 ## Definition
 
-The Blueprint Library is a location for pre-made [Blueprints](../blueprints-overview.md) developed by Shipyard staff. These Blueprints provide an easy way to avoid monotonous development work associated with integrations.
+The Blueprint Library is a location for pre-made [Blueprints](../blueprints-overview.md) developed by Platform staff. These Blueprints provide an easy way to avoid monotonous development work associated with integrations.
 
 Library Blueprints are designed to:
 
@@ -24,8 +24,6 @@ Library Blueprints are designed to:
 - Require no coding
 
 Library Blueprints are immediately available to every user in an organization. These Blueprints are constantly updated and monitored by our team. If you run into connection issues or general errors, contact [support@shipyardapp.com](mailto:support@shipyardapp.com)
-
-In an effort to be transparent about how our Blueprints work, we open-source the code and make it available in a single repository on our [GitHub](https://github.com/shipyardapp/shipyard-blueprints/tree/main/shipyard_blueprints). The repository is broken up into folders by vendor. If some functionality isn't working appropriately, you can open an issue in GitHub or submit a pull request with the proposed changes.
 
 ## Free Blueprints
 A portion of our Blueprints are 100% free, never incurring [billable runtime](../../../faqs/plans/billable-runtime.md). These Blueprints are marked with "Trigger" in the name and are labeled in the application as "Free".
@@ -52,8 +50,8 @@ Blueprints are broken down into a few categories with core functionality that sh
 
 #### Actions
 - Execute SQL Query
-- Download Query Results to Shipyard
-- Upload File to Table from Shipyard
+- Download Query Results to Platform
+- Upload File to Table from Platform
 
 ### Cloud Storage
 
@@ -69,8 +67,8 @@ Blueprints are broken down into a few categories with core functionality that sh
 - [Databricks](../../../blueprint-library/databricks/databricks-overview.md)
 
 #### Actions
-- Download Files to Shipyard
-- Upload Files from Shipyard
+- Download Files to Platform
+- Upload Files from Platform
 - Move or Rename Files
 - Delete Files
 
@@ -83,8 +81,8 @@ Blueprints are broken down into a few categories with core functionality that sh
 - [Smartsheet](../../../blueprint-library/smartsheet/smartsheet-overview.md)
 
 #### Actions
-- Download Sheet to Shipyard
-- Upload File to a Sheet from Shipyard
+- Download Sheet to Platform
+- Upload File to a Sheet from Platform
 - Clear Sheet Contents
 
 ### Messaging
@@ -110,7 +108,7 @@ Blueprints are broken down into a few categories with core functionality that sh
 - [Thoughtspot](../../../blueprint-library/thoughtspot/thoughtspot-overview.md)
 
 #### Actions
-- Download Dashboard/View/Card/Report as File to Shipyard
+- Download Dashboard/View/Card/Report as File to Platform
 - Trigger Dataset Refresh
 
 ### Data Tooling (Ingestion, Transformation, Reverse ETL, and Syncing)
@@ -130,8 +128,8 @@ Blueprints are broken down into a few categories with core functionality that sh
 
 #### Common Actions
 - Trigger Job
-- Download Results from Job to Shipyard
-- Trigger Job and Download Results to Shipyard (All-in-one)
+- Download Results from Job to Platform
+- Trigger Job and Download Results to Platform (All-in-one)
 
 ### Project Management
 
@@ -153,8 +151,8 @@ Blueprints are broken down into a few categories with core functionality that sh
 - [Salesforce](../../../blueprint-library/salesforce/salesforce-overview.md)
 
 #### Actions
-- Download Data to Shipyard
-- Upload Data from Shipyard
+- Download Data to Platform
+- Upload Data from Platform
 
 ### 3rd-Party APIs
 
@@ -163,7 +161,7 @@ Blueprints are broken down into a few categories with core functionality that sh
 
 #### Actions
 - HTTP Request
-- Download File from URL to Shipyard
+- Download File from URL to Platform
 
 ### File or Data Manipulation
 

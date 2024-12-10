@@ -3,7 +3,7 @@ id: data-manipulation-compare-datasets
 title: Data Manipulation Template - Compare Datasets
 hide_title: true
 sidebar_label: Compare Datasets
-description: Information about Shipyard's low-code Data Manipulation Compare Datasets blueprint. Compare two CSV files and return files that show the rows with unique and overlapping information.
+description: Information about Platform's low-code Data Manipulation Compare Datasets blueprint. Compare two CSV files and return files that show the rows with unique and overlapping information.
 keywords:
     - data manipulation
     - blueprint
@@ -34,10 +34,10 @@ This Blueprint is relatively memory intensive because it loads both file content
 
 | Name          | Reference                         | Type         | Required           | Default | Options | Description                                                                                                       |
 |:--------------|:----------------------------------|:-------------|:-------------------|:--------|:--------|:------------------------------------------------------------------------------------------------------------------|
-| File Name 1   | MANIPULATION_SOURCE_FILE_NAME_1   | Alphanumeric | :white_check_mark: | -       | -       | Name of the target file on Shipyard.                                                                              |
-| Folder Name 1 | MANIPULATION_SOURCE_FOLDER_NAME_1 | Alphanumeric | :heavy_minus_sign: | -       | -       | Name of the local folder on Shipyard where the target file lives. If left blank, will look in the home directory. |
-| File Name 2   | MANIPULATION_SOURCE_FILE_NAME_2   | Alphanumeric | :white_check_mark: | -       | -       | Name of the 2nd target file on Shipyard.                                                                          |
-| Folder Name 2 | MANIPULATION_SOURCE_FOLDER_NAME_2 | Alphanumeric | :heavy_minus_sign: | -       | -       | Name of the local folder on Shipyard where the target file lives. If left blank, will look in the home directory. |
+| File Name 1   | MANIPULATION_SOURCE_FILE_NAME_1   | Alphanumeric | :white_check_mark: | -       | -       | Name of the target file on Platform.                                                                              |
+| Folder Name 1 | MANIPULATION_SOURCE_FOLDER_NAME_1 | Alphanumeric | :heavy_minus_sign: | -       | -       | Name of the local folder on Platform where the target file lives. If left blank, will look in the home directory. |
+| File Name 2   | MANIPULATION_SOURCE_FILE_NAME_2   | Alphanumeric | :white_check_mark: | -       | -       | Name of the 2nd target file on Platform.                                                                          |
+| Folder Name 2 | MANIPULATION_SOURCE_FOLDER_NAME_2 | Alphanumeric | :heavy_minus_sign: | -       | -       | Name of the local folder on Platform where the target file lives. If left blank, will look in the home directory. |
 
 
 ## YAML

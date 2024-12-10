@@ -3,7 +3,7 @@ id: motherduck-upload-file-to-motherduck
 title: MotherDuck Template - Upload File to Table
 hide_title: true
 sidebar_label: Upload File to Table
-description: Information about Shipyard's low-code MotherDuck Upload File to Table blueprint. Quickly upload a CSV or parquet file to a a database table in MotherDuck
+description: Information about Platform's low-code MotherDuck Upload File to Table blueprint. Quickly upload a CSV or parquet file to a a database table in MotherDuck
 keywords:
   - motherduck
   - blueprint

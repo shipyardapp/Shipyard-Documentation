@@ -1,19 +1,19 @@
 ---
 id: low-code
-title: Is Shipyard a low-code tool?
+title: Is Platform a low-code tool?
 hide_title: true
-description: Is Shipyard a low-code tool?
+description: Is Platform a low-code tool?
 keywords:
   - faq
   - frequently asked questions
   - low-code
 ---
 
-## Is Shipyard a low-code tool?
+## Is Platform a low-code tool?
 
 Yes, partially.
 
-Shipyard is not inherently a low-code tool, as it's custom-designed for data teams and developers to launch their custom scripted solutions.
+Platform is not inherently a low-code tool, as it's custom-designed for data teams and developers to launch their custom scripted solutions.
 
 However, the platform allows technical teams to turn coded solutions into low-code Blueprints that can be used by anyone in the organization.
 

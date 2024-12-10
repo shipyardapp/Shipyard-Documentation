@@ -18,7 +18,7 @@ import TabItem from '@theme/TabItem';
 
 ## Overview
 
-Once your Fleet is up and running on Shipyard, you'll want to track how it's performing over time, finding ways to prevent errors as they arise. This how to guide will walk you through the steps to assess Fleet performance at multiple levels.
+Once your Fleet is up and running on Platform, you'll want to track how it's performing over time, finding ways to prevent errors as they arise. This how to guide will walk you through the steps to assess Fleet performance at multiple levels.
 
 ## Steps
 

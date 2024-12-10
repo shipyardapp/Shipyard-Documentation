@@ -18,7 +18,7 @@ When you are sending a report to a stakeholder or automate uploading a file, you
 ## Steps
 
 1. Navigate to a Vessel with a field that you want to include a date.
-2. In the field, [reference the Shipyard environment variables](how-tos/../../environment-variables/access-environment-variables-in-ui.md) related to the Fleet or Vessel's Start Time. A full list of Shipyard environment variables can be found [here](../../reference/environment-variables/shipyard-environment-variables.md).
+2. In the field, [reference the Platform environment variables](how-tos/../../environment-variables/access-environment-variables-in-ui.md) related to the Fleet or Vessel's Start Time. A full list of Platform environment variables can be found [here](../../reference/environment-variables/shipyard-environment-variables.md).
 
 **Ex.**  `${SHIPYARD_FLEET_START_TIME_YEAR}-${SHIPYARD_FLEET_START_TIME_MONTH}-${SHIPYARD_FLEET_START_TIME_DAY}`. This will return a string with year-month-date. Feel free to add any other information before or after the date setup, but never inside the `${}` environment variable reference.
 

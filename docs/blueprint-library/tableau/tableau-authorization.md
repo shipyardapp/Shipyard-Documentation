@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Tableau Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Tableau to work with Shipyard's low-code Tableau templates.
+description: Instructions on how to authorize Tableau to work with Platform's low-code Tableau templates.
 keywords:
   - tableau
   - blueprint
@@ -31,7 +31,7 @@ Below are the steps of how to accomplish each of these individually.
 
 ![](https://cdn.sanity.io/images/2xyydva6/production/684577ea2554f682e9968ea5f552d683cce821d4-1029x509.png?w=450)
 
-4. Provide a descriptive name for the token (we suggest `Shipyard`) and click **Create New Token**.
+4. Provide a descriptive name for the token (we suggest `Platform`) and click **Create New Token**.
 5. Click **Copy to Clipboard** and store your Token Secret in a safe location. You will need both the Token Name and the Token Secret for authentication.
 
 ## Finding the Site ID

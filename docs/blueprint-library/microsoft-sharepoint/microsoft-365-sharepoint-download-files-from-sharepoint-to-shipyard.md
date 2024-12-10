@@ -1,22 +1,22 @@
 ---
 id: microsoft-365-sharepoint-download-files-from-sharepoint-to-shipyard
-title: Microsoft 365 SharePoint Template - Download Files from SharePoint to Shipyard
+title: Microsoft 365 SharePoint Template - Download Files from SharePoint to Platform
 hide_title: true
-sidebar_label: Download Files from SharePoint to Shipyard
-description: Information about Shipyard's low-code Microsoft 365 SharePoint Download Files from SharePoint to Shipyard blueprint. Quickly download one or multiple files from Microsoft SharePoint to Shipyard
+sidebar_label: Download Files from SharePoint to Platform
+description: Information about Platform's low-code Microsoft 365 SharePoint Download Files from SharePoint to Platform blueprint. Quickly download one or multiple files from Microsoft SharePoint to Platform
 keywords:
   - microsoft 365 sharepoint
   - blueprint
   - template
 ---
 
-# Microsoft 365 SharePoint - Download Files from SharePoint to Shipyard
+# Microsoft 365 SharePoint - Download Files from SharePoint to Platform
 
 
 
 ## Overview
 
-This blueprint can be used to download one or multiple files from SharePoint to Shipyard. 
+This blueprint can be used to download one or multiple files from SharePoint to Platform. 
 
 The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
 
@@ -32,7 +32,7 @@ The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/ma
 | SharePoint File Name | SHAREPOINT_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | The name of the file to download from SharePoint |
 | SharePoint Folder Name | SHAREPOINT_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | The optional name of the folder where the target file is located. If omitted, the file will be searched in the root directory |
 | Shipyard Folder Name | SHAREPOINT_LOCAL_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | The optional name of the folder where the downloaded data should reside |
-| Shipyard File Name | SHAREPOINT_LOCAL_FILE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | The name of the file to save to Shipyard. If omitted, the original name will be used |
+| Shipyard File Name | SHAREPOINT_LOCAL_FILE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | The name of the file to save to Platform. If omitted, the original name will be used |
 
 
 

@@ -1,16 +1,16 @@
 ---
 id: youtube-download-video
-title: YouTube Template - Download Video to Shipyard
+title: YouTube Template - Download Video to Platform
 hide_title: true
-sidebar_label: Download Video to Shipyard
-description: Information about Shipyard's low-code YouTube Download Video to Shipyard blueprint. Download a single video from YouTube 
+sidebar_label: Download Video to Platform
+description: Information about Platform's low-code YouTube Download Video to Platform blueprint. Download a single video from YouTube 
 keywords:
     - youtube
     - blueprint
     - template
 ---
 
-# Youtube - Download Video to Shipyard
+# Youtube - Download Video to Platform
 
 ## Overview
 Quickly download a video from Youtube

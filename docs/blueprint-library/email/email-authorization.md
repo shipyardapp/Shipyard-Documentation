@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Email Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Email to work with Shipyard's low-code Email templates.
+description: Instructions on how to authorize Email to work with Platform's low-code Email templates.
 keywords:
   - email
   - blueprint
@@ -31,17 +31,17 @@ If you don’t have this option, it might be because:
 - 2-Step Verification is only set up for security keys.
 - Your account is through work, school, or other organization.
 - You turned on Advanced Protection.
-3. At the bottom, click **Select app** and Custom. Name the app `Shipyard` or something easy to remember. Click **Generate**.
+3. At the bottom, click **Select app** and Custom. Name the app `Platform` or something easy to remember. Click **Generate**.
 
 ![](https://cdn.sanity.io/images/2xyydva6/production/9f44decec4d9d483dff85065c83dc5b77da4b71d-716x523.png?w=450)
 
-4. On the following screen, copy the app password, shown with a yellow background, to a secure location. This is the password that you'll need to use when sending emails from your Google account via Shipyard.
+4. On the following screen, copy the app password, shown with a yellow background, to a secure location. This is the password that you'll need to use when sending emails from your Google account via Platform.
 
 ![](https://cdn.sanity.io/images/2xyydva6/production/fe52e64c999c4f950b98ee964a575ede3111aa5d-671x488.png?w=450)
 
 5. Click **Done** once you've saved the password. You'll never be able to see this password again.
 
-### Provide Inputs on Shipyard
+### Provide Inputs on Platform
 We recommend the following settings for successfully sending an email with Google.
 
 |Variable|Value|
@@ -74,9 +74,9 @@ In order to send an email from SendGrid, you'll need to use a Sender Identity an
 
 ![](https://cdn.sanity.io/images/2xyydva6/production/6cc5cb5184587de23ef78db97053e933f5c5c557-1816x1256.png?w=450)
 
-4. On the following screen, copy the API Key to a secure location. This is the password that you'll need to use when sending emails from your SendGrid account via Shipyard.
+4. On the following screen, copy the API Key to a secure location. This is the password that you'll need to use when sending emails from your SendGrid account via Platform.
 
-### Provide Inputs on Shipyard
+### Provide Inputs on Platform
 We recommend the following settings for successfully sending an email with Google.
 
 |Variable|Value|
@@ -93,7 +93,7 @@ The sender address should be the literal text `apikey`. The Password should be y
 
 ## Outlook (Personal)
 
-### Provide Inputs on Shipyard
+### Provide Inputs on Platform
 
 We recommend the following settings for successfully sending an email with Outlook.
 
@@ -114,7 +114,7 @@ It's possible that you will run into authentication issues because Microsoft see
 ### Enable SMTP Authentication
 Follow [this guide](https://docs.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission) to effectively allow for sending emails via SMTP.
 
-### Provide Inputs on Shipyard
+### Provide Inputs on Platform
 
 We recommend the following settings for successfully sending an email with Outlook.
 
@@ -163,7 +163,7 @@ It's possible that you will run into authentication issues because Microsoft see
 
 ![](https://cdn.sanity.io/images/2xyydva6/production/2a190811452279a93296d61c9ce199bcab1ad724-571x213.png?w=450)
 
-### Provide Inputs on Shipyard
+### Provide Inputs on Platform
 
 We recommend the following settings for successfully sending an email with Amazon SES.
 

@@ -1,22 +1,22 @@
 ---
 id: microsoft-excel-download-data-from-workbook-to-shipyard
-title: Microsoft Excel Template - Download Data from Workbook to Shipyard
+title: Microsoft Excel Template - Download Data from Workbook to Platform
 hide_title: true
-sidebar_label: Download Data from Workbook to Shipyard
-description: Information about Shipyard's low-code Microsoft Excel Download Data from Workbook to Shipyard blueprint. Quickly download data from Excel to Shipyard
+sidebar_label: Download Data from Workbook to Platform
+description: Information about Platform's low-code Microsoft Excel Download Data from Workbook to Platform blueprint. Quickly download data from Excel to Platform
 keywords:
   - microsoft excel
   - blueprint
   - template
 ---
 
-# Microsoft 365 Excel - Download Data from Workbook to Shipyard
+# Microsoft 365 Excel - Download Data from Workbook to Platform
 
 
 
 ## Overview
 
-This blueprint can be used to download data from an Excel Sheet to Shipyard. The `Sheet Name` must be specified, otherwise it will default to `Sheet1`. The downloaded file will be a CSV.
+This blueprint can be used to download data from an Excel Sheet to Platform. The `Sheet Name` must be specified, otherwise it will default to `Sheet1`. The downloaded file will be a CSV.
 
 ## Variables
 
@@ -29,7 +29,7 @@ This blueprint can be used to download data from an Excel Sheet to Shipyard. The
 | OneDrive Folder | EXCEL_ONEDRIVE_FOLDER | Alphanumeric | :heavy_minus_sign: | - | - | The optional folder name of where to save the Excel workbook in OneDrive. If omitted, the file will be saved in the root |
 | OneDrive File Name | EXCEL_ONEDRIVE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | The name of the file once loaded to OneDrive. If omitted, the original file name will be used |
 | Sheet Name | EXCEL_SHEET_NAME | Alphanumeric | :heavy_minus_sign: | `Sheet1` | - | The name of the sheet containing the data |
-| Shipyard Folder Name | EXCEL_LOCAL_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | The optional directory in Shipyard where the file resides |
+| Shipyard Folder Name | EXCEL_LOCAL_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | The optional directory in Platform where the file resides |
 | Shipyard File Name | EXCEL_SRC_FILE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | The name of the file to load to Excel (must be either a csv or xlsx file) |
 
 

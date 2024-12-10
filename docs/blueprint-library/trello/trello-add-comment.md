@@ -3,7 +3,7 @@ id: trello-add-comment
 title: Trello Template - Add Comment to Card
 hide_title: true
 sidebar_label: Add Comment to Card
-description: Information about Shipyard's low-code Trello Add Comment to Card blueprint. Add a comment to a Trello card 
+description: Information about Platform's low-code Trello Add Comment to Card blueprint. Add a comment to a Trello card 
 keywords:
     - trello
     - blueprint

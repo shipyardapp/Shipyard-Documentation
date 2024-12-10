@@ -15,7 +15,7 @@ keywords:
 
 ## Definition
 
-Blueprint Variables allow your code to accept user input through the Shipyard UI that gets stored and made available to your code as an [environment variable](../../environment-variables/environment-variables-overview.md).
+Blueprint Variables allow your code to accept user input through the Platform UI that gets stored and made available to your code as an [environment variable](../../environment-variables/environment-variables-overview.md).
 
 A Blueprint can contain as many variables as you want. Blueprint variables can also be re-ordered to make it easier for users to understand.
 

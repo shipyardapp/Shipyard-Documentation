@@ -3,7 +3,7 @@ id: fivetran-trigger-sync-and-check-status
 title: Fivetran Template - Trigger Sync and Check Status (Deprecated)
 hide_title: true
 sidebar_label: Trigger Sync and Check Status (Deprecated)
-description: Information about Shipyard's low-code Fivetran Trigger Sync and Check Status (Deprecated) blueprint. Execute a sync against an existing connector in the Fivetran interface and wait for the sync to finish.
+description: Information about Platform's low-code Fivetran Trigger Sync and Check Status (Deprecated) blueprint. Execute a sync against an existing connector in the Fivetran interface and wait for the sync to finish.
 keywords:
   - fivetran
   - blueprint
@@ -23,11 +23,11 @@ This is considered an "all-in-one" Blueprint that Executes a Sync and checks the
 If you want to reduce the overall runtime you're billed for, you will need to instead set up a Fleet with Vessels built with these Blueprints in this order:
 `Execute Sync` -> `Check Sync Status`
 
-A Vessel built with this Blueprint will sync a connector in Fivetran and check for the status every 30 seconds. Once the status is confirmed to be completed, the script will stop. The final status of this Vessel in Shipyard will reflect the status of the run in Fivetran.
+A Vessel built with this Blueprint will sync a connector in Fivetran and check for the status every 30 seconds. Once the status is confirmed to be completed, the script will stop. The final status of this Vessel in Platform will reflect the status of the run in Fivetran.
 
 **Recommended Setup:**
 
-Before using this Blueprint on a connector, we strongly recommend first setting your connector to a manual schedule, using the **Update Connector** Blueprint. This setting **cannot** be updated in the Fivetran UI. This will ensure that Fivetran only syncs the connector when Shipyard kicks it off. Without this setting in place, it is possible to have conflicting syncs.
+Before using this Blueprint on a connector, we strongly recommend first setting your connector to a manual schedule, using the **Update Connector** Blueprint. This setting **cannot** be updated in the Fivetran UI. This will ensure that Fivetran only syncs the connector when Platform kicks it off. Without this setting in place, it is possible to have conflicting syncs.
 
 ## Variables
 

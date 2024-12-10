@@ -18,7 +18,7 @@ import TabItem from '@theme/TabItem';
 
 ## Overview
 
-In this tutorial, you'll walk through the steps required to set up a Vessel using Pandas to transform data that exists in Shipyard. By the end of the tutorial, you will know how to:
+In this tutorial, you'll walk through the steps required to set up a Vessel using Pandas to transform data that exists in Platform. By the end of the tutorial, you will know how to:
 
 - Set up a Vessel with Code.
 - Write a script directly in the UI.
@@ -54,7 +54,7 @@ You are now ready to add a code Vessel to your existing Fleet
 2. Name your Vessel **Add Time in Hours**.
 
 :::note
-Shipyard allows you to provide code in three different ways: write the code in the UI, upload the code as a file, or clone the code from a GitHub repository. This tutorial will focus on writing the code in the UI and uploading the code as a file. Running code from GitHub is covered in [this tutorial](../tutorials/github-vessel.md).
+Platform allows you to provide code in three different ways: write the code in the UI, upload the code as a file, or clone the code from a GitHub repository. This tutorial will focus on writing the code in the UI and uploading the code as a file. Running code from GitHub is covered in [this tutorial](../tutorials/github-vessel.md).
 :::
 
 <Tabs

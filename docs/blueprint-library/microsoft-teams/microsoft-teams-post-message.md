@@ -3,7 +3,7 @@ id: microsoft-teams-post-message
 title: Microsoft Teams Template - Post Message
 hide_title: true
 sidebar_label: Post Message
-description: Information about Shipyard's low-code Microsoft Teams Post Message blueprint. Sends a message to Microsoft Teams 
+description: Information about Platform's low-code Microsoft Teams Post Message blueprint. Sends a message to Microsoft Teams 
 keywords:
     - microsoft teams
     - blueprint

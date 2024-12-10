@@ -3,7 +3,7 @@ id: databricks-sql-warehouse-execute-query
 title: Databricks SQL Warehouse Template - Execute Query
 hide_title: true
 sidebar_label: Execute Query
-description: Information about Shipyard's low-code Databricks SQL Warehouse Execute Query blueprint. Quickly execute a SQL within a Databricks SQL Warehouse
+description: Information about Platform's low-code Databricks SQL Warehouse Execute Query blueprint. Quickly execute a SQL within a Databricks SQL Warehouse
 keywords:
   - databricks sql warehouse
   - blueprint
@@ -17,7 +17,7 @@ keywords:
 Quickly execute a SQL within a Databricks SQL Warehouse
 
 **NOTE**
-This vessel will not return any files, so if you are looking to fetch data from Databricks, use the `Databricks SQL Warehouse - Download Query Results to Shipyard` Blueprint. Intended use of this blueprint is for queries with no return values (i.e. ALTER TABLE, DELETE TABLE, etc.)
+This vessel will not return any files, so if you are looking to fetch data from Databricks, use the `Databricks SQL Warehouse - Download Query Results to Platform` Blueprint. Intended use of this blueprint is for queries with no return values (i.e. ALTER TABLE, DELETE TABLE, etc.)
 
 ## Variables
 

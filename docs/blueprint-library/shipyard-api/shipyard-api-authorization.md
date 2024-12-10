@@ -1,10 +1,10 @@
 ---
 id: shipyard-api-authorization
 sidebar_position: 1
-title: Shipyard API Blueprint Authorization
+title: Platform API Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize the Shipyard API to work with Shipyard's low code blueprints
+description: Instructions on how to authorize the Platform API to work with Platform's low code blueprints
 keywords:
   - shipyard
   - blueprint

@@ -3,7 +3,7 @@ id: salesforce-upload-data
 title: Salesforce Template - Upload Data
 hide_title: true
 sidebar_label: Upload Data
-description: Information about Shipyard's low-code Salesforce Upload Data blueprint. Uses credentials to access Salesforce, finds files in a folder, then inserts or updates their data. 
+description: Information about Platform's low-code Salesforce Upload Data blueprint. Uses credentials to access Salesforce, finds files in a folder, then inserts or updates their data. 
 keywords:
     - salesforce
     - blueprint

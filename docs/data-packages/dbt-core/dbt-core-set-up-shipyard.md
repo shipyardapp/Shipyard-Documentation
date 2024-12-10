@@ -1,7 +1,7 @@
 ---
 id: dbt-core-set-up-shipyard
-title: dbt Core Tutorial Part 2 - Setting Up dbt on Shipyard
-sidebar_label: Part 3 - Setting Up dbt on Shipyard
+title: dbt Core Tutorial Part 2 - Setting Up dbt on Platform
+sidebar_label: Part 3 - Setting Up dbt on Platform
 sidebar_position: 3
 hide_title: true
 description: Set up the necessary components on GitHub for dbt core to run. Part two of a three part series on running dbt Core in the cloud.
@@ -15,15 +15,15 @@ keywords:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# dbt Core Part 3 - Setting Up dbt on Shipyard
-In part 3 of this guide, we will move into Shipyard to deploy dbt Core in the cloud. First, we will need to create a free developer account for Shipyard. After we have a developer account, we will create a Blueprint that can run dbt Core commands.
+# dbt Core Part 3 - Setting Up dbt on Platform
+In part 3 of this guide, we will move into Platform to deploy dbt Core in the cloud. First, we will need to create a free developer account for Platform. After we have a developer account, we will create a Blueprint that can run dbt Core commands.
 
 ### Connect to GitHub
 
 1. Connect to your GitHub account by following this [guide](https://www.shipyardapp.com/blog/automate-deployment-github-code/). After connecting your GitHub account, you'll be ready to create your first Blueprint.
 
 ### Creating dbt Core Blueprint
-1. On the sidebar of Shipyard's website, click **Blueprints**.
+1. On the sidebar of Platform's website, click **Blueprints**.
 2. Click **Add Blueprint** on the top right of your page.
 3. Select **Python**.
 
@@ -183,4 +183,4 @@ If you scroll to the top of the output, you will see that the environment variab
 
 ![](../.gitbook/assets/../../../.gitbook/assets/shipyard_2022_05_25_14_12_01.png)
 
-If dbt debug succeeds, we are ready to move into part three of the guide. If it fails, please go back to the steps above and make sure everything is setup correctly. Feel free to send an Intercom message to us at anytime using the widget on the bottom right of the Shipyard application. 
+If dbt debug succeeds, we are ready to move into part three of the guide. If it fails, please go back to the steps above and make sure everything is setup correctly. Feel free to send an Intercom message to us at anytime using the widget on the bottom right of the Platform application. 

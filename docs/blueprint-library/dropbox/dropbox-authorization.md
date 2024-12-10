@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Dropbox Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Dropbox to work with Shipyard's low-code Dropbox templates.
+description: Instructions on how to authorize Dropbox to work with Platform's low-code Dropbox templates.
 keywords:
 - dropbox
 - blueprint
@@ -13,7 +13,7 @@ keywords:
 ---
 
 # Dropbox Authorization
-To get started with any Dropbox Blueprints, you will need to create have a Dropbox app and a Service Token for that app. This Service Token is a secure way for Shipyard to access Dropbox and will be required for **every** Dropbox Blueprint.
+To get started with any Dropbox Blueprints, you will need to create have a Dropbox app and a Service Token for that app. This Service Token is a secure way for Platform to access Dropbox and will be required for **every** Dropbox Blueprint.
 
 This service token will usually be tied directly to your user account, giving our Dropbox Blueprints access to any file you have access to.
 

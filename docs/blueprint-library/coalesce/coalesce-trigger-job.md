@@ -3,7 +3,7 @@ id: coalesce-trigger-job
 title: Coalesce Template - Trigger Job
 hide_title: true
 sidebar_label: Trigger Job
-description: Information about Shipyard's low-code Coalesce Trigger Job blueprint. Trigger the execution of a Coalesce job
+description: Information about Platform's low-code Coalesce Trigger Job blueprint. Trigger the execution of a Coalesce job
 keywords:
   - coalesce
   - blueprint

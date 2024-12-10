@@ -1,19 +1,19 @@
 ---
 id: hubspot-download-list-data
-title: Hubspot Template - Download List Data to Shipyard
+title: Hubspot Template - Download List Data to Platform
 hide_title: true
-sidebar_label: Download List Data to Shipyard
-description: Information about Shipyard's low-code Hubspot Download List Data to Shipyard blueprint. Exports specified Hubspot list data based on given object properties and saves it to a designated file 
+sidebar_label: Download List Data to Platform
+description: Information about Platform's low-code Hubspot Download List Data to Platform blueprint. Exports specified Hubspot list data based on given object properties and saves it to a designated file 
 keywords:
     - hubspot
     - blueprint
     - template
 ---
 
-# Hubspot - Download List Data to Shipyard
+# Hubspot - Download List Data to Platform
 
 ## Overview
-The "Hubspot - Download List Data to Shipyard" blueprint on Shipyard allows you to export selected data fields from a specific Hubspot list. Simply provide your Hubspot Access Token, specify the list ID and desired data fields, set a filename (which will auto-append .csv), and initiate the process. 
+The "Hubspot - Download List Data to Platform" blueprint on Platform allows you to export selected data fields from a specific Hubspot list. Simply provide your Hubspot Access Token, specify the list ID and desired data fields, set a filename (which will auto-append .csv), and initiate the process. 
 
 ## Variables
 

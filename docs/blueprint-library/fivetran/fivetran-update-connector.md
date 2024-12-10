@@ -3,7 +3,7 @@ id: fivetran-update-connector
 title: Fivetran Template - Update Connector
 hide_title: true
 sidebar_label: Update Connector
-description: Information about Shipyard's low-code Fivetran Update Connector blueprint. Update an existing connector's settings in Fivetran. Useful for pausing, setting manual schedules, or triggering historical syncs.
+description: Information about Platform's low-code Fivetran Update Connector blueprint. Update an existing connector's settings in Fivetran. Useful for pausing, setting manual schedules, or triggering historical syncs.
 keywords:
   - fivetran
   - blueprint

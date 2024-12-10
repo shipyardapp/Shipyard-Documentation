@@ -1,16 +1,16 @@
 ---
 id: amazon-redshift-upload-csv-to-table
-title: Amazon Redshift Template - Upload File to Table from Shipyard
+title: Amazon Redshift Template - Upload File to Table from Platform
 hide_title: true
-sidebar_label: Upload File to Table from Shipyard
-description: Information about Shipyard's low-code Amazon Redshift Upload File to Table from Shipyard blueprint. Upload a CSV file to any table in Amazon Redshift. 
+sidebar_label: Upload File to Table from Platform
+description: Information about Platform's low-code Amazon Redshift Upload File to Table from Platform blueprint. Upload a CSV file to any table in Amazon Redshift. 
 keywords:
   - amazon redshift
   - blueprint
   - template
 ---
 
-# Amazon Redshift - Upload File to Table from Shipyard
+# Amazon Redshift - Upload File to Table from Platform
 
 
 
@@ -22,7 +22,7 @@ Upload a CSV file to any table in Amazon Redshift. With the file data, you can c
 
 **Recommended Setup:**
 
-1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Shipyard or generates a file with code. 
+1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Platform or generates a file with code. 
 
 
 

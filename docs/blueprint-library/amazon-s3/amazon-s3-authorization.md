@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Amazon S3 Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Amazon S3 to work with Shipyard's low-code Amazon S3 templates.
+description: Instructions on how to authorize Amazon S3 to work with Platform's low-code Amazon S3 templates.
 keywords:
   - amazon s3
   - blueprint

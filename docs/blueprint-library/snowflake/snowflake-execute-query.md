@@ -3,7 +3,7 @@ id: snowflake-execute-query
 title: Snowflake Template - Execute Query
 hide_title: true
 sidebar_label: Execute Query
-description: Information about Shipyard's low-code Snowflake Execute Query blueprint. Execute any SQL query against a Snowflake database.
+description: Information about Platform's low-code Snowflake Execute Query blueprint. Execute any SQL query against a Snowflake database.
 keywords:
   - snowflake
   - blueprint

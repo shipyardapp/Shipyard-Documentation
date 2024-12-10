@@ -1,16 +1,16 @@
 ---
 id: airtable-upload-file-from-shipyard-to-airtable
-title: Airtable Template - Upload File from Shipyard to Airtable
+title: Airtable Template - Upload File from Platform to Airtable
 hide_title: true
-sidebar_label: Upload File from Shipyard to Airtable
-description: Information about Shipyard's low-code Airtable Upload File from Shipyard to Airtable blueprint. Quickly export your data to an Airtable Table or View. 
+sidebar_label: Upload File from Platform to Airtable
+description: Information about Platform's low-code Airtable Upload File from Platform to Airtable blueprint. Quickly export your data to an Airtable Table or View. 
 keywords:
   - airtable
   - blueprint
   - template
 ---
 
-# Airtable - Upload File from Shipyard to Airtable
+# Airtable - Upload File from Platform to Airtable
 
 ## Overview
 
@@ -29,7 +29,7 @@ Be cautious with the replace option, as it will remove all existing records in t
 | Table ID | AIRTABLE_TABLE_ID | Alphanumeric | :white_check_mark: | - | - | Can be the Name (case sensitive) or the ID of the table. The ID can be found in the URL and always starts with `tbl`. |
 | Key Fields | AIRTABLE_KEY_FIELDS | Alphanumeric | :heavy_minus_sign: | - | - | List of field names separated by commas that Airtable should use to match records in the input with existing records on the server. |
 | Typecast | AIRTABLE_TYPECAST | Boolean | :heavy_minus_sign: | `FALSE` | - | If enabled, the Airtable API will perform best-effort automatic data conversion from string values. |
-| Shipyard Folder Name | AIRTABLE_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Shipyard to upload the target file from. If left blank, will look in the home directory. |
+| Shipyard Folder Name | AIRTABLE_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Platform to upload the target file from. If left blank, will look in the home directory. |
 | Source Filename or Pattern | AIRTABLE_FILENAME_OR_PATTERN | Alphanumeric | :white_check_mark: | - | - | The name of the file to upload or search criteria |
 | Match Type | AIRTABLE_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact: `exact_match`<br></br><br></br>Regex: `regex_match`<br></br><br></br>Glob: `glob_match`<br></br><br></br> | Determines if the text in "Filename or Pattern" will look for one file with exact match, or multiple files using regex or glob. |
 | Insert Method | AIRTABLE_INSERT_METHOD | Select | :white_check_mark: | - | Upsert: `upsert`<br></br><br></br>Replace: `replace`<br></br><br></br>Append: `append`<br></br><br></br> |  Upsert: Inserts or updates records as needed. Replace: Replaces table content with CSV data, removing old data. Append: Adds new records, ignoring potential duplicates. |

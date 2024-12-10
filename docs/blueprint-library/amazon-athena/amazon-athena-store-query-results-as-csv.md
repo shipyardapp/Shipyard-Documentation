@@ -1,16 +1,16 @@
 ---
 id: amazon-athena-store-query-results-as-csv
-title: Amazon Athena Template - Download Query Results to Shipyard
+title: Amazon Athena Template - Download Query Results to Platform
 hide_title: true
-sidebar_label: Download Query Results to Shipyard
-description: Information about Shipyard's low-code Amazon Athena Download Query Results to Shipyard blueprint. Turn the results of your SQL SELECT statement into a CSV file.
+sidebar_label: Download Query Results to Platform
+description: Information about Platform's low-code Amazon Athena Download Query Results to Platform blueprint. Turn the results of your SQL SELECT statement into a CSV file.
 keywords:
   - amazon athena
   - blueprint
   - template
 ---
 
-# Amazon Athena - Download Query Results to Shipyard
+# Amazon Athena - Download Query Results to Platform
 
 
 

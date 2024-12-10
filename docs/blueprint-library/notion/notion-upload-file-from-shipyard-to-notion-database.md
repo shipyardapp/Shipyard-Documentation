@@ -1,16 +1,16 @@
 ---
 id: notion-upload-file-from-shipyard-to-notion-database
-title: Notion Template - Upload File from Shipyard to Notion Database
+title: Notion Template - Upload File from Platform to Notion Database
 hide_title: true
-sidebar_label: Upload File from Shipyard to Notion Database
-description: Information about Shipyard's low-code Notion Upload File from Shipyard to Notion Database blueprint. Quickly upload a file to a Notion Database 
+sidebar_label: Upload File from Platform to Notion Database
+description: Information about Platform's low-code Notion Upload File from Platform to Notion Database blueprint. Quickly upload a file to a Notion Database 
 keywords:
     - notion
     - blueprint
     - template
 ---
 
-# Notion - Upload File from Shipyard to Notion Database
+# Notion - Upload File from Platform to Notion Database
 
 ## Overview
 Quickly upload a file to a Notion Database. Unsupported Notion datatypes for upload are:
@@ -20,7 +20,7 @@ Quickly upload a file to a Notion Database. Unsupported Notion datatypes for upl
 - Relation
 - Formula
 
-When uploading a file to a database in Notion, you have two options from Shipyard: to replace an existing database or to append to an existing database. 
+When uploading a file to a database in Notion, you have two options from Platform: to replace an existing database or to append to an existing database. 
 
 #### Replace
 When the `Replace` insert method is selected, this will do one of two things: 1) create a new database or 2) overwrite an existing database. The inputs provided will determine the behaviour. For instance, if the `Database ID` is provided, the blueprint will attempt to overwrite that existing database. If the `Database ID` is not provided, the blueprint will attempt to create a new database, but in order to do so the `Page ID` of where the new database will live is required. Additionally, when creating a new database, you can optionally provide the `Database Name`, not providing the `Database Name` will result in the created database being named "Untitled."

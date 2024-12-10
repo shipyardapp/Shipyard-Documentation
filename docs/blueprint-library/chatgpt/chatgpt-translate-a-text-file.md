@@ -3,7 +3,7 @@ id: chatgpt-translate-a-text-file
 title: OpenAI ChatGPT Template - Translate a Text File
 hide_title: true
 sidebar_label: Translate a Text File
-description: Information about Shipyard's low-code OpenAI ChatGPT Translate a Text File blueprint. This Blueprint takes in a text file and translate it to the language that is chosen. 
+description: Information about Platform's low-code OpenAI ChatGPT Translate a Text File blueprint. This Blueprint takes in a text file and translate it to the language that is chosen. 
 keywords:
     - openai chatgpt
     - blueprint

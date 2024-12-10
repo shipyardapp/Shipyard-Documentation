@@ -3,7 +3,7 @@ id: clickup-add-comment
 title: Clickup Template - Add Comment
 hide_title: true
 sidebar_label: Add Comment
-description: Information about Shipyard's low-code Clickup Add Comment blueprint. Adds a comment to an existing Clickup task 
+description: Information about Platform's low-code Clickup Add Comment blueprint. Adds a comment to an existing Clickup task 
 keywords:
     - clickup
     - blueprint

@@ -3,7 +3,7 @@ id: chatgpt-create-dummy-data
 title: OpenAI ChatGPT Template - Create Dummy Data
 hide_title: true
 sidebar_label: Create Dummy Data
-description: Information about Shipyard's low-code OpenAI ChatGPT Create Dummy Data blueprint. Takes in a comma separated list of columns and creates a user-specified number of columns of data in a CSV. 
+description: Information about Platform's low-code OpenAI ChatGPT Create Dummy Data blueprint. Takes in a comma separated list of columns and creates a user-specified number of columns of data in a CSV. 
 keywords:
     - openai chatgpt
     - blueprint

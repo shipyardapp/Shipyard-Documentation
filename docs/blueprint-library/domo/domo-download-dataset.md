@@ -1,16 +1,16 @@
 ---
 id: domo-download-dataset
-title: Domo Template - Download Dataset to Shipyard
+title: Domo Template - Download Dataset to Platform
 hide_title: true
-sidebar_label: Download Dataset to Shipyard
-description: Information about Shipyard's low-code Domo Download Dataset to Shipyard blueprint. Downloads a Domo dataset as a CSV
+sidebar_label: Download Dataset to Platform
+description: Information about Platform's low-code Domo Download Dataset to Platform blueprint. Downloads a Domo dataset as a CSV
 keywords:
   - domo
   - blueprint
   - template
 ---
 
-# Domo - Download Dataset to Shipyard
+# Domo - Download Dataset to Platform
 
 ## Overview
 

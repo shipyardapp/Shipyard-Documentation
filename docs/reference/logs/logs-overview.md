@@ -2,7 +2,7 @@
 id: logs-overview
 title: Logs Overview
 hide_title: true
-description: Information about how logs are created and stored on Shipyard.
+description: Information about how logs are created and stored on Platform.
 keywords:
   - logs
   - logging
@@ -15,7 +15,7 @@ keywords:
 
 ## Definition
 
-Logs include historical records of how a Vessel or Fleet ran in Shipyard at a specific point in time and upcoming scheduled runs. They can be referenced by their UUIDv4 and contain metadata pertaining to one individual voyage or run.
+Logs include historical records of how a Vessel or Fleet ran in Platform at a specific point in time and upcoming scheduled runs. They can be referenced by their UUIDv4 and contain metadata pertaining to one individual voyage or run.
 
 A log is created under the following conditions:
 -  When the **Run Now** button is clicked, resulting in an [On-Demand Trigger](../triggers/on-demand-triggers.md)
@@ -44,5 +44,5 @@ You can export your logs with our [Get All Logs API endpoint](https://shipyard.r
 
 ## Additional Notes
 
-1. Logs cannot be manually removed from Shipyard by users. If you need a log deleted because sensitive information was accidentally printed, contact [support](mailto:support@shipyardapp.com).
+1. Logs cannot be manually removed from Platform by users. If you need a log deleted because sensitive information was accidentally printed, contact [support](mailto:support@shipyardapp.com).
 2. We currently only expose a portion of the available log data, but we have more metadata stored on the backend. If there's something you would like to see, please contact [support](mailto:support@shipyardapp.com).

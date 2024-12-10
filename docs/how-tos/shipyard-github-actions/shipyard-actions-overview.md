@@ -1,8 +1,8 @@
 ---
 id: shipyard-actions-overview
-title: Shipyard GitHub Actions Overview
+title: Platform GitHub Actions Overview
 hide_title: true
-description: Overview of Shipyard's GitHub Actions and how to use them.
+description: Overview of Platform's GitHub Actions and how to use them.
 keywords:
   - ci/cd
   - github actions
@@ -10,11 +10,11 @@ keywords:
   - github
 ---
 
-# Shipyard GitHub Actions Overview
+# Platform GitHub Actions Overview
 
 ## Overview
 
-Shipyard provides a set of GitHub Actions that you can use to automate your CI/CD workflows. These actions are designed to help you build, test, and deploy your applications with ease.
+Platform provides a set of GitHub Actions that you can use to automate your CI/CD workflows. These actions are designed to help you build, test, and deploy your applications with ease.
 
 ## Available Actions
 
@@ -23,25 +23,25 @@ Shipyard provides a set of GitHub Actions that you can use to automate your CI/C
 
 ## Prerequisites
 
-Before you can use Shipyard's GitHub Actions, ensure you have the following:
+Before you can use Platform's GitHub Actions, ensure you have the following:
 
 1. A GitHub account with the necessary permissions for the repository.
-2. A Shipyard API key. See [Creating a Shipyard API Key](../../blueprint-library/shipyard-api/shipyard-api-authorization.md) for instructions.
-3. Your Organization ID in Shipyard. See [Fetching Organization ID with API](../../tutorials/org-id-with-api.md) for instructions.
-4. Your Project ID in Shipyard. Instructions are below.
-5. Your Fleet ID in Shipyard (for Trigger Fleet Action). Instructions are below.
+2. A Platform API key. See [Creating a Platform API Key](../../blueprint-library/shipyard-api/shipyard-api-authorization.md) for instructions.
+3. Your Organization ID in Platform. See [Fetching Organization ID with API](../../tutorials/org-id-with-api.md) for instructions.
+4. Your Project ID in Platform. Instructions are below.
+5. Your Fleet ID in Platform (for Trigger Fleet Action). Instructions are below.
 
 ## Finding IDs
 
 ### Finding Your Project ID
 
-1. Log into your Shipyard account.
+1. Log into your Platform account.
 2. Navigate to the project you want to manage.
 3. The project ID is the portion of the URL after `/projects/`. Typically, the URL format is `https://app.shipyardapp.com/org-name/projects/project-id/fleets`.
 
 ### Finding Your Fleet ID
 
-1. Log into your Shipyard account.
+1. Log into your Platform account.
 2. Navigate to the fleet you want to manage.
 3. The fleet ID is the portion of the URL after `/fleets/`. Typically, the URL format is `https://app.shipyardapp.com/org-name/projects/project-id/fleets/fleet-id`.
 
@@ -120,8 +120,8 @@ on:
 ```
 
 **When specific files change:** Trigger a workflow when specific files change. This can be useful for scenarios only
-certain files or folders affect your Shipyard environment. For example, you may have a folder that contains
-configuration files that you want to deploy to Shipyard when they change.
+certain files or folders affect your Platform environment. For example, you may have a folder that contains
+configuration files that you want to deploy to Platform when they change.
 
 ```yaml
 name: When specific files change

@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Microsoft Excel Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Microsoft Excel to work with Shipyard's low-code Microsoft Excel templates.
+description: Instructions on how to authorize Microsoft Excel to work with Platform's low-code Microsoft Excel templates.
 keywords:
   - microsoft excel
   - blueprint

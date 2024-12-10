@@ -3,7 +3,7 @@ id: trello-edit-card
 title: Trello Template - Edit Card
 hide_title: true
 sidebar_label: Edit Card
-description: Information about Shipyard's low-code Trello Edit Card blueprint. Updates an existing card 
+description: Information about Platform's low-code Trello Edit Card blueprint. Updates an existing card 
 keywords:
     - trello
     - blueprint

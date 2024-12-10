@@ -3,7 +3,7 @@ id: tableau-trigger-workbook-refresh
 title: Tableau Template - Trigger Workbook Refresh
 hide_title: true
 sidebar_label: Trigger Workbook Refresh
-description: Information about Shipyard's low-code Tableau Trigger Workbook Refresh blueprint. Trigger a manual refresh of a specified workbook in Tableau.
+description: Information about Platform's low-code Tableau Trigger Workbook Refresh blueprint. Trigger a manual refresh of a specified workbook in Tableau.
 keywords:
   - tableau
   - blueprint

@@ -1,16 +1,16 @@
 ---
 id: thoughtspot-download-search-results-to-csv
-title: Thoughtspot Template - Download Search Results to Shipyard
+title: Thoughtspot Template - Download Search Results to Platform
 hide_title: true
-sidebar_label: Download Search Results to Shipyard
-description: Information about Shipyard's low-code Thoughtspot Download Search Results to Shipyard blueprint. Quickly download a natural language Thoughtspot query to a csv 
+sidebar_label: Download Search Results to Platform
+description: Information about Platform's low-code Thoughtspot Download Search Results to Platform blueprint. Quickly download a natural language Thoughtspot query to a csv 
 keywords:
     - thoughtspot
     - blueprint
     - template
 ---
 
-# Thoughtspot - Download Search Results to Shipyard
+# Thoughtspot - Download Search Results to Platform
 
 ## Overview
 Quickly download a natural language Thoughtspot query to a csv

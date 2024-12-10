@@ -3,7 +3,7 @@ id: sftp-move-or-rename-files
 title: SFTP Template - Move or Rename Files
 hide_title: true
 sidebar_label: Move or Rename Files
-description: Information about Shipyard's low-code SFTP Move or Rename Files blueprint. Quickly move or rename one or more files from an SFTP Server. 
+description: Information about Platform's low-code SFTP Move or Rename Files blueprint. Quickly move or rename one or more files from an SFTP Server. 
 keywords:
   - sftp
   - blueprint

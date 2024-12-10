@@ -3,7 +3,7 @@ id: ftp-move-or-rename-files
 title: FTP Template - Move or Rename Files
 hide_title: true
 sidebar_label: Move or Rename Files
-description: Information about Shipyard's low-code FTP Move or Rename Files blueprint. Quickly move or rename one or more files from an FTP Server.
+description: Information about Platform's low-code FTP Move or Rename Files blueprint. Quickly move or rename one or more files from an FTP Server.
 keywords:
   - ftp
   - blueprint

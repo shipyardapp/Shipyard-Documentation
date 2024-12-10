@@ -3,7 +3,7 @@ id: magnite-update-budget-fields
 title: Magnite Template - Update Budget Fields
 hide_title: true
 sidebar_label: Update Budget Fields
-description: Information about Shipyard's low-code Magnite Update Budget Fields blueprint. Quickly update the budget fields in Magnite
+description: Information about Platform's low-code Magnite Update Budget Fields blueprint. Quickly update the budget fields in Magnite
 keywords:
   - magnite
   - blueprint

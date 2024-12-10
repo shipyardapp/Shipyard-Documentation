@@ -3,7 +3,7 @@ id: google-cloud-storage-overview
 title: Google Cloud Storage Blueprints Overview
 hide_title: true
 sidebar_label: Overview
-description: Information about Shipyard's low-code Google Cloud Storage templates.
+description: Information about Platform's low-code Google Cloud Storage templates.
 keywords:
 - google cloud storage
 - blueprint
@@ -13,7 +13,7 @@ keywords:
 
 # Google Cloud Storage Blueprints Overview
 
-Shipyard's low-code Google Cloud Storage blueprints allow users to connect their data in Google Cloud Storage to the rest of their modern data stack.
+Platform's low-code Google Cloud Storage blueprints allow users to connect their data in Google Cloud Storage to the rest of their modern data stack.
 
 
 ## How to Use
@@ -21,12 +21,10 @@ For information on how to set up these Blueprints successfully, please read thro
 
 
 ## Available Blueprints
-Shipyard currently has the following Blueprints readily available:
+Platform currently has the following Blueprints readily available:
 
 - [Move or Rename Files](google-cloud-storage-move-or-rename-files.md)
 - [Delete Files](google-cloud-storage-remove-files.md)
-- [Upload Files from Shipyard](google-cloud-storage-upload-files.md)
-- [Download Files to Shipyard](google-cloud-storage-download-files.md)
+- [Upload Files from Platform](google-cloud-storage-upload-files.md)
+- [Download Files to Platform](google-cloud-storage-download-files.md)
 
-## Open Source Code
-The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/shipyard-blueprints/tree/main/shipyard_blueprints/googlecloud), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.

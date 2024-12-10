@@ -3,7 +3,7 @@ id: rudderstack-trigger-sync
 title: Rudderstack Template - Trigger Sync
 hide_title: true
 sidebar_label: Trigger Sync
-description: Information about Shipyard's low-code Rudderstack Trigger Sync blueprint. Immediately trigger a sync of a RudderStack source. 
+description: Information about Platform's low-code Rudderstack Trigger Sync blueprint. Immediately trigger a sync of a RudderStack source. 
 keywords:
     - rudderstack
     - blueprint

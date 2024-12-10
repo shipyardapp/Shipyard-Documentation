@@ -3,7 +3,7 @@ id: databricks-move-or-rename-files-on-dbfs
 title: Databricks Template - Move or Rename Files on DBFS
 hide_title: true
 sidebar_label: Move or Rename Files on DBFS
-description: Information about Shipyard's low-code Databricks Move or Rename Files on DBFS blueprint. Move or rename one or more files from in your Databricks File System (DBFS) to another. 
+description: Information about Platform's low-code Databricks Move or Rename Files on DBFS blueprint. Move or rename one or more files from in your Databricks File System (DBFS) to another. 
 keywords:
     - databricks
     - blueprint
@@ -13,7 +13,7 @@ keywords:
 # Databricks - Move or Rename Files on DBFS
 
 ## Overview
-Easily import one or more files from Shipyard to your Databricks File System (DBFS). The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
+Easily import one or more files from Platform to your Databricks File System (DBFS). The [match type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/) selected greatly affects how this Blueprint works.
 
 ## Variables
 

@@ -3,7 +3,7 @@ id: whisper-translate-audio-to-english-with-api
 title: OpenAI Whisper Template - Translate Audio to English with API
 hide_title: true
 sidebar_label: Translate Audio to English with API
-description: Information about Shipyard's low-code OpenAI Whisper Translate Audio to English with API blueprint. This Blueprint takes in an audio file and translate it to English. 
+description: Information about Platform's low-code OpenAI Whisper Translate Audio to English with API blueprint. This Blueprint takes in an audio file and translate it to English. 
 keywords:
     - openai whisper
     - blueprint

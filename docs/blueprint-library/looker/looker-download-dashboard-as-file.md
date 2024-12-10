@@ -1,16 +1,16 @@
 ---
 id: looker-download-dashboard-as-file
-title: Looker Template - Download Dashboard as File to Shipyard
+title: Looker Template - Download Dashboard as File to Platform
 hide_title: true
-sidebar_label: Download Dashboard as File to Shipyard
-description: Information about Shipyard's low-code Looker Download Dashboard as File to Shipyard blueprint. Quickly download a Looker Dashboard as a  PDF, PNG, or JPG. 
+sidebar_label: Download Dashboard as File to Platform
+description: Information about Platform's low-code Looker Download Dashboard as File to Platform blueprint. Quickly download a Looker Dashboard as a  PDF, PNG, or JPG. 
 keywords:
   - looker
   - blueprint
   - template
 ---
 
-# Looker - Download Dashboard as File to Shipyard
+# Looker - Download Dashboard as File to Platform
 
 ## Overview
 

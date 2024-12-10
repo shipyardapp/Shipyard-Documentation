@@ -1,16 +1,16 @@
 ---
 id: google-sheets-upload-csv-to-sheet
-title: Google Sheets Template - Upload File to Sheet from Shipyard
+title: Google Sheets Template - Upload File to Sheet from Platform
 hide_title: true
-sidebar_label: Upload File to Sheet from Shipyard
-description: Information about Shipyard's low-code Google Sheets Upload File to Sheet from Shipyard blueprint. Easily import your data into a Google Sheet so your teams can collaboratively edit it. Create or update worksheets at scale.
+sidebar_label: Upload File to Sheet from Platform
+description: Information about Platform's low-code Google Sheets Upload File to Sheet from Platform blueprint. Easily import your data into a Google Sheet so your teams can collaboratively edit it. Create or update worksheets at scale.
 keywords:
   - google sheets
   - blueprint
   - template
 ---
 
-# Google Sheets - Upload File to Sheet from Shipyard
+# Google Sheets - Upload File to Sheet from Platform
 
 
 
@@ -28,7 +28,7 @@ This Blueprint is still subject to [Google's limitations](https://support.google
 
 **Recommended Setup:**
 
-1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Shipyard or generates a file with code. 
+1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Platform or generates a file with code. 
 
 ## Variables
 
@@ -37,8 +37,8 @@ This Blueprint is still subject to [Google's limitations](https://support.google
 | Google Spreadsheet Name or ID | SHEETS_SPREADSHEET_ID | Alphanumeric | :white_check_mark: | - | - | Name or ID of the sheet to put data into. |
 | Tab Name | SHEETS_TAB_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the tab in the sheet to upload data to. This field is case sensitive. If left blank, data will be put into the first tab. |
 | Shared Drive Name | SHEETS_SHARED_DRIVE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the Shared Drive the sheet exists in. This field is case sensitive. Leave blank if the file does not exist in a Shared Drive. |
-| Shipyard File Name | SHEETS_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target CSV file on Shipyard to be uploaded to the sheet.  |
-| Shipyard Folder Name | SHEETS_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Shipyard to upload the target file from. If left blank, will look in the home directory. |
+| Shipyard File Name | SHEETS_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target CSV file on Platform to be uploaded to the sheet.  |
+| Shipyard Folder Name | SHEETS_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Platform to upload the target file from. If left blank, will look in the home directory. |
 | Starting Cell | SHEETS_STARTING_CELL | Alphanumeric | :heavy_minus_sign: | - | - | Cell to start at when uploading data. If left blank, will start at cell A1. |
 | Service Account | GOOGLE_APPLICATION_CREDENTIALS | Password | :white_check_mark: | - | - | JSON from a Google Cloud Service account key. |
 

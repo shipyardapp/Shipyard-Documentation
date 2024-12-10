@@ -3,7 +3,7 @@ id: hightouch-trigger-sync
 title: Hightouch Template - Trigger Sync
 hide_title: true
 sidebar_label: Trigger Sync
-description: Information about Shipyard's low-code Hightouch Trigger Sync blueprint. Immediately trigger a Hightouch sync. 
+description: Information about Platform's low-code Hightouch Trigger Sync blueprint. Immediately trigger a Hightouch sync. 
 keywords:
     - hightouch
     - blueprint

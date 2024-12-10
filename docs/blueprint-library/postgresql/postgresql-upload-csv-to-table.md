@@ -1,16 +1,16 @@
 ---
 id: postgresql-upload-csv-to-table
-title: PostgreSQL Template - Upload File to Table from Shipyard
+title: PostgreSQL Template - Upload File to Table from Platform
 hide_title: true
-sidebar_label: Upload File to Table from Shipyard
-description: Information about Shipyard's low-code PostgreSQL Upload File to Table from Shipyard blueprint. Upload a CSV file to any table in PostgreSQL.
+sidebar_label: Upload File to Table from Platform
+description: Information about Platform's low-code PostgreSQL Upload File to Table from Platform blueprint. Upload a CSV file to any table in PostgreSQL.
 keywords:
   - postgresql
   - blueprint
   - template
 ---
 
-# PostgreSQL - Upload File to Table from Shipyard
+# PostgreSQL - Upload File to Table from Platform
 
 
 
@@ -32,7 +32,7 @@ In all instances, if the table name does not already exist, a new table will be 
 
 **Recommended Setup:**
 
-1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Shipyard or generates a file with code. 
+1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Platform or generates a file with code. 
 
 ## Variables
 

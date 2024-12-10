@@ -1,22 +1,22 @@
 ---
 id: microsoft-onedrive-upload-files-from-shipyard-to-onedrive
-title: OneDrive Template - Upload Files from Shipyard to OneDrive
+title: OneDrive Template - Upload Files from Platform to OneDrive
 hide_title: true
-sidebar_label: Upload Files from Shipyard to OneDrive
-description: Information about Shipyard's low-code OneDrive Upload Files from Shipyard to OneDrive blueprint. Quickly upload one or multiple files to Microsoft OneDrive
+sidebar_label: Upload Files from Platform to OneDrive
+description: Information about Platform's low-code OneDrive Upload Files from Platform to OneDrive blueprint. Quickly upload one or multiple files to Microsoft OneDrive
 keywords:
   - onedrive
   - blueprint
   - template
 ---
 
-# Microsoft OneDrive - Upload Files from Shipyard to OneDrive
+# Microsoft OneDrive - Upload Files from Platform to OneDrive
 
 
 
 ## Overview
 
-This blueprint can be used to upload one or multiple files to OneDrive from Shipyard. 
+This blueprint can be used to upload one or multiple files to OneDrive from Platform. 
 
 **Note**: Any existing files with the same name will be overwritten. 
 

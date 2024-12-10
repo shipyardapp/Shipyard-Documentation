@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Microsoft 365 SharePoint Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Microsoft 365 SharePoint to work with Shipyard's low-code Microsoft 365 SharePoint templates.
+description: Instructions on how to authorize Microsoft 365 SharePoint to work with Platform's low-code Microsoft 365 SharePoint templates.
 keywords:
   - microsoft 365 sharepoint
   - blueprint

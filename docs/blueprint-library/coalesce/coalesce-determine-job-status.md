@@ -3,7 +3,7 @@ id: coalesce-determine-job-status
 title: Coalesce Template - Check Job Status (Deprecated)
 hide_title: true
 sidebar_label: Check Job Status (Deprecated)
-description: Information about Shipyard's low-code Coalesce Check Job Status (Deprecated) blueprint. Quickly determine the status of Coalesce job
+description: Information about Platform's low-code Coalesce Check Job Status (Deprecated) blueprint. Quickly determine the status of Coalesce job
 keywords:
   - coalesce
   - blueprint

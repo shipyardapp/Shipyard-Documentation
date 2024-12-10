@@ -3,7 +3,7 @@ id: census-check-sync-status
 title: Census Template - Check Sync Status (Deprecated)
 hide_title: true
 sidebar_label: Check Sync Status (Deprecated)
-description: Information about Shipyard's low-code Census Check Sync Status (Deprecated) blueprint. Check and verify the status of a recently triggered sync on Census. 
+description: Information about Platform's low-code Census Check Sync Status (Deprecated) blueprint. Check and verify the status of a recently triggered sync on Census. 
 keywords:
     - census
     - blueprint

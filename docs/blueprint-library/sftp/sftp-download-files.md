@@ -1,16 +1,16 @@
 ---
 id: sftp-download-files
-title: SFTP Template - Download Files to Shipyard
+title: SFTP Template - Download Files to Platform
 hide_title: true
-sidebar_label: Download Files to Shipyard
-description: Information about Shipyard's low-code SFTP Download Files to Shipyard blueprint. Quickly export one or more files from an SFTP Server.
+sidebar_label: Download Files to Platform
+description: Information about Platform's low-code SFTP Download Files to Platform blueprint. Quickly export one or more files from an SFTP Server.
 keywords:
   - sftp
   - blueprint
   - template
 ---
 
-# SFTP - Download Files to Shipyard
+# SFTP - Download Files to Platform
 
 ## Overview
 
@@ -26,7 +26,7 @@ This Blueprint requires _read_ permissions in order to download from the SFTP se
 | Port | SFTP_PORT | Integer | :white_check_mark: | `"22"` | - | Number for the port to connect to. `22` is used by default. |
 | Username | SFTP_USERNAME | Alphanumeric | :heavy_minus_sign: | - | - | Value of the configured username in the SFTP server. |
 | Password | SFTP_PASSWORD | Password | :heavy_minus_sign: | - | - | Value of the configured password associated to the username on the SFTP server. |
-| RSA Key File | SFTP_RSA_KEY_FILE | Alphanumeric | :heavy_minus_sign: | - | - | The file name of an RSA key you would like to use for authentication. Typically downloaded to Shipyard in a previous step. |
+| RSA Key File | SFTP_RSA_KEY_FILE | Alphanumeric | :heavy_minus_sign: | - | - | The file name of an RSA key you would like to use for authentication. Typically downloaded to Platform in a previous step. |
 | SFTP File Name Match Type | SFTP_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match`<br></br><br></br> | Determines if the text in "SFTP File Name" will look for one file with exact match, or multiple files using regex. |
 | SFTP Folder Name | SFTP_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the folder where the file is stored in the SFTP server.  Leaving blank will default to the root directory. |
 | SFTP File Name | SFTP_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file in the SFTP server. Can be regex if "Match Type" is set accordingly. |

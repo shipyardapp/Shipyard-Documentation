@@ -3,7 +3,7 @@ id: portable-trigger-flow
 title: Portable Template - Trigger Flow
 hide_title: true
 sidebar_label: Trigger Flow
-description: Information about Shipyard's low-code Portable Trigger Flow blueprint. Triggers a Portable flow to run
+description: Information about Platform's low-code Portable Trigger Flow blueprint. Triggers a Portable flow to run
 keywords:
   - portable
   - blueprint
@@ -26,7 +26,7 @@ Use this blueprint to trigger a Portable flow to run. It is recommended to leave
 |:-----|:----------|:-----|:---------|:--------|:--------|:------------------------|
 | API Token | PORTABLE_API_TOKEN | Password | :white_check_mark: | - | - | The API token generated in Portable |
 | Flow ID | PORTABLE_FLOW_ID | Alphanumeric | :white_check_mark: | - | - | The ID of the flow to run |
-| Wait for Completion | PORTABLE_WAIT | Boolean | :white_check_mark: | `TRUE` | - | Whether to wait for the flow to complete. If TRUE, Shipyard will wait for completion before exiting |
+| Wait for Completion | PORTABLE_WAIT | Boolean | :white_check_mark: | `TRUE` | - | Whether to wait for the flow to complete. If TRUE, Platform will wait for completion before exiting |
 
 
 

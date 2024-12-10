@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Salesforce Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Salesforce to work with Shipyard's low-code Salesforce templates.
+description: Instructions on how to authorize Salesforce to work with Platform's low-code Salesforce templates.
 keywords:
 - salesforce
 - blueprint
@@ -19,7 +19,7 @@ sidebar_position: 1
 title: Salesforce Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Salesforce to work with Shipyard's low-code Salesforce templates.
+description: Instructions on how to authorize Salesforce to work with Platform's low-code Salesforce templates.
 keywords:
 - salesforce
 - blueprint
@@ -47,8 +47,8 @@ To get started with the Salesforce Blueprints, you will need an access token or 
    - Click on "New Connected App".
 
 3. **Input App Details**
-   - **Connected App Name**: Shipyard
-   - **API Name**: Shipyard
+   - **Connected App Name**: Platform
+   - **API Name**: Platform
    - **Contact Email**: [Your email address]
    - **Enabled OAuth Settings**: Ensure this is checked.
    - **Callback URL**: If you lack a callback URL, enter `no:callbackurl`.

@@ -1,16 +1,16 @@
 ---
 id: airtable-download-table-or-view-to-csv
-title: Airtable Template - Download Table or View to Shipyard
+title: Airtable Template - Download Table or View to Platform
 hide_title: true
-sidebar_label: Download Table or View to Shipyard
-description: Information about Shipyard's low-code Airtable Download Table or View to Shipyard blueprint. Quickly export your data from an Airtable Table or View. 
+sidebar_label: Download Table or View to Platform
+description: Information about Platform's low-code Airtable Download Table or View to Platform blueprint. Quickly export your data from an Airtable Table or View. 
 keywords:
   - airtable
   - blueprint
   - template
 ---
 
-# Airtable - Download Table or View to Shipyard
+# Airtable - Download Table or View to Platform
 
 ## Overview
 

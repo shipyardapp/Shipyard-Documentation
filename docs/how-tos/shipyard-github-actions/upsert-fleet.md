@@ -2,7 +2,7 @@
 id: upsert-fleet
 title: Upsert Fleet
 hide_title: true
-description: Instructions on how to upsert a Fleet using Shipyard's GitHub Actions.
+description: Instructions on how to upsert a Fleet using Platform's GitHub Actions.
 keywords:
   - ci/cd
   - github actions
@@ -12,21 +12,21 @@ keywords:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Upsert Shipyard Fleet GitHub Action
+# Upsert Platform Fleet GitHub Action
 
-This action allows you to upsert (update or insert) a Shipyard fleet configuration based on GitHub events such as commits, pull request openings, or merges.
+This action allows you to upsert (update or insert) a Platform fleet configuration based on GitHub events such as commits, pull request openings, or merges.
 
-The way that the action decides to create or update a fleet is based on the id fields within the YAML. If the id exists in the Shipyard project, the fleet will be updated. If the id does not exist, a new fleet will be created. Same goes for the individual vessels within the fleet. For more information on Shipyard Fleet YAMLs, see the [Shipyard Fleet YAML Reference](../../tutorials/create-fleets-with-yaml.md).
+The way that the action decides to create or update a fleet is based on the id fields within the YAML. If the id exists in the Platform project, the fleet will be updated. If the id does not exist, a new fleet will be created. Same goes for the individual vessels within the fleet. For more information on Platform Fleet YAMLs, see the [Platform Fleet YAML Reference](../../tutorials/create-fleets-with-yaml.md).
 
 ## Overview
 
 ### Prerequisites
 
-Before proceeding, make sure you have completed the prerequisites outlined in the [Shipyard GitHub Actions Overview](shipyard-actions-overview.md).
+Before proceeding, make sure you have completed the prerequisites outlined in the [Platform GitHub Actions Overview](shipyard-actions-overview.md).
 
-### Base Shipyard Action Step
+### Base Platform Action Step
 
-With the Shipyard Action, you can use our pre-built action by referencing it in the `uses` field of your GitHub Actions workflow file along with providing the necessary inputs via the `with` field.
+With the Platform Action, you can use our pre-built action by referencing it in the `uses` field of your GitHub Actions workflow file along with providing the necessary inputs via the `with` field.
 
 ```yaml
 name: <workflow-name>
@@ -53,14 +53,14 @@ jobs:
 
 The `shipyardapp/shipyard-actions/upsert-fleet` action has the following inputs:
 
-* **org_id:** Your organization ID in Shipyard.
-* **project_id:** Your project ID in Shipyard.
+* **org_id:** Your organization ID in Platform.
+* **project_id:** Your project ID in Platform.
 * **yaml_path:** The path to the YAML file defining the fleet configuration.
-* **shipyard_api_key:** Your Shipyard API key, stored securely in GitHub secrets.
+* **shipyard_api_key:** Your Platform API key, stored securely in GitHub secrets.
 
 ### Quick Start
 
-Here are some examples of how you can configure the Shipyard GitHub Action to upsert a fleet based on different GitHub events. You can copy and paste these configurations into your workflow file and customize them as needed. You are not limited to these examples, and you can create your own configurations based on your requirements.
+Here are some examples of how you can configure the Platform GitHub Action to upsert a fleet based on different GitHub events. You can copy and paste these configurations into your workflow file and customize them as needed. You are not limited to these examples, and you can create your own configurations based on your requirements.
 
 <Tabs
 defaultValue="on-push"
@@ -70,13 +70,13 @@ values={[
 {label: 'On Schedule', value: 'on-schedule'},
 {label: 'On Specific Files Change', value: 'specific-files'},
 {label: 'Manually', value: 'manual'},
-{label: 'Upsert Multiple Shipyard Fleets on Matrix Builds', value: 'matrix-builds'},
+{label: 'Upsert Multiple Platform Fleets on Matrix Builds', value: 'matrix-builds'},
 ]}>
 
 <TabItem value="on-push">
 
 ```yaml
-name: Upsert Shipyard Fleet on Push
+name: Upsert Platform Fleet on Push
 on:
   push:
     branches:
@@ -88,7 +88,7 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
-      - name: Upsert Shipyard Fleet
+      - name: Upsert Platform Fleet
         uses: shipyardapp/shipyard-actions/upsert-fleet@v1
         with:
           org_id: 'your-organization-id'
@@ -102,7 +102,7 @@ jobs:
 <TabItem value="on-pullrequest">
 
 ```yaml
-name: Upsert Shipyard Fleet on Pull Request
+name: Upsert Platform Fleet on Pull Request
 on:
   pull_request:
     branches:
@@ -114,7 +114,7 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
-      - name: Upsert Shipyard Fleet
+      - name: Upsert Platform Fleet
         uses: shipyardapp/shipyard-actions/upsert-fleet@v1
         with:
           org_id: 'your-organization-id'
@@ -128,7 +128,7 @@ jobs:
 <TabItem value="on-schedule">
 
 ```yaml
-name: Upsert Shipyard Fleet on Schedule
+name: Upsert Platform Fleet on Schedule
 on:
   schedule:
     - cron: '0 0 * * *'
@@ -139,7 +139,7 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
-      - name: Upsert Shipyard Fleet
+      - name: Upsert Platform Fleet
         uses: shipyardapp/shipyard-actions/upsert-fleet@v1
         with:
           org_id: 'your-organization-id'
@@ -153,7 +153,7 @@ jobs:
 <TabItem value="manual">
 
 ```yaml
-name: Upsert Shipyard Fleet on Workflow Dispatch
+name: Upsert Platform Fleet on Workflow Dispatch
 on:
   workflow_dispatch:
 
@@ -163,7 +163,7 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
-      - name: Upsert Shipyard Fleet
+      - name: Upsert Platform Fleet
         uses: shipyardapp/shipyard-actions/upsert-fleet@v1
         with:
           org_id: 'your-organization-id'
@@ -177,7 +177,7 @@ jobs:
 <TabItem value="specific-files">
 
 ```yaml
-name: Upsert Shipyard Fleet on Specific Files Change
+name: Upsert Platform Fleet on Specific Files Change
 on:
   push:
     paths:
@@ -190,7 +190,7 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
-      - name: Upsert Shipyard Fleet
+      - name: Upsert Platform Fleet
         uses: shipyardapp/shipyard-actions/upsert-fleet@v1
         with:
           org_id: 'your-organization-id'
@@ -204,7 +204,7 @@ jobs:
 <TabItem value="matrix-builds">
 
 ```yaml
-name: Upsert Multiple Shipyard Fleets on Matrix Builds
+name: Upsert Multiple Platform Fleets on Matrix Builds
 on:
   push:
     paths:
@@ -219,7 +219,7 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
-      - name: Upsert Shipyard Fleet
+      - name: Upsert Platform Fleet
         uses: shipyardapp/shipyard-actions/upsert-fleet@v1
         with:
           org_id: 'your-organization-id'

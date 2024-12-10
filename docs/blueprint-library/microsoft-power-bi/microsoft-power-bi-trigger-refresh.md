@@ -3,7 +3,7 @@ id: microsoft-power-bi-trigger-refresh
 title: Microsoft Power BI Template - Trigger Refresh
 hide_title: true
 sidebar_label: Trigger Refresh
-description: Information about Shipyard's low-code Microsoft Power BI Trigger Refresh blueprint. Refresh a dataset or a dataflow on a Microsoft Power BI workspace 
+description: Information about Platform's low-code Microsoft Power BI Trigger Refresh blueprint. Refresh a dataset or a dataflow on a Microsoft Power BI workspace 
 keywords:
     - microsoft power bi
     - blueprint
@@ -17,7 +17,7 @@ This Blueprint is classified as "Free" and does not incur billable runtime. [Lea
 :::
 
 ## Overview
-Shipyard's low-code Microsoft Power BI Trigger Refresh blueprint allows users to refresh a dataset or a dataflow on a Microsoft Power BI workspace.
+Platform's low-code Microsoft Power BI Trigger Refresh blueprint allows users to refresh a dataset or a dataflow on a Microsoft Power BI workspace.
 The dataset or dataflow must be located in a workspace that the service principal account has access to and cannot be **"My Workspace"**.
 
 Microsoft limits the number of dataflow refreshes that can be triggered to 8 within 24 hours. If you are using this blueprint to refresh a dataflow, please ensure that you are not exceeding this limit.

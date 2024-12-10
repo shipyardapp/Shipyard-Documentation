@@ -3,7 +3,7 @@ id: fivetran-check-sync-status
 title: Fivetran Template - Check Sync Status (Deprecated)
 hide_title: true
 sidebar_label: Check Sync Status (Deprecated)
-description: Information about Shipyard's low-code Fivetran Check Sync Status (Deprecated) blueprint. Check the status of a specific Fivetran connector run and return with the final status.
+description: Information about Platform's low-code Fivetran Check Sync Status (Deprecated) blueprint. Check the status of a specific Fivetran connector run and return with the final status.
 keywords:
   - fivetran
   - blueprint
@@ -29,13 +29,13 @@ Status will be determined with the following logic:
 
 - If neither timestamp is after the execution time, the Vessel will return an exit code of 255, an error.
 - If the `last_failure` timestamp is after the execution time, the Vessel will return an exit code of 1, an error.
-- If the `last_success` timestamp is after the execution time, the Vessel will return an exit code of 0, interpreted by Shipyard as Successful.
+- If the `last_success` timestamp is after the execution time, the Vessel will return an exit code of 0, interpreted by Platform as Successful.
 
 ### Running Independently
 If a Vessel built with the Blueprint runs independently, or does not run immediately after an **Execute Sync** Vessel, we won't know when the sync was initially executed. Instead, status will be determined with the following logic:
 
 - If the `last_failure` timestamp is more recent than the `last_success` timestamp, the Vessel will return an exit code of 1, an error.
-- If the `last_success` timestamp is more recent than the `last_failure` timestamp, the Vessel will return an exit code of 0, interpreted by Shipyard as Successful. 
+- If the `last_success` timestamp is more recent than the `last_failure` timestamp, the Vessel will return an exit code of 0, interpreted by Platform as Successful. 
 
 The response for this request will always be stored at `shipyard-artifacts/fivetran-blueprints/responses/connector_{connector_id}_response.json`
 

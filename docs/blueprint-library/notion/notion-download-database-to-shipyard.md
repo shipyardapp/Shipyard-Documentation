@@ -1,19 +1,19 @@
 ---
 id: notion-download-database-to-shipyard
-title: Notion Template - Download Database to Shipyard
+title: Notion Template - Download Database to Platform
 hide_title: true
-sidebar_label: Download Database to Shipyard
-description: Information about Shipyard's low-code Notion Download Database to Shipyard blueprint. Quickly download a Notion database to a CSV or JSON file 
+sidebar_label: Download Database to Platform
+description: Information about Platform's low-code Notion Download Database to Platform blueprint. Quickly download a Notion database to a CSV or JSON file 
 keywords:
     - notion
     - blueprint
     - template
 ---
 
-# Notion - Download Database to Shipyard
+# Notion - Download Database to Platform
 
 ## Overview
-Allows for quick and seamless download of a Notion Database to Shipyard. Results can either be downloaded to a JSON or CSV file. 
+Allows for quick and seamless download of a Notion Database to Platform. Results can either be downloaded to a JSON or CSV file. 
 
 ## Variables
 

@@ -41,15 +41,15 @@ Below are the top-level fields that make up a FAC YAML file. Sub-objects are def
 
 `name` is the string name of the Fleet. It is a **required** field.
 
-If both a `name` and `_id` field are provided at the top-level of the file, Shipyard will attempt to update a Fleet with that `_id` value with the `name` field.
+If both a `name` and `_id` field are provided at the top-level of the file, Platform will attempt to update a Fleet with that `_id` value with the `name` field.
 
 ---
 
 ### _id
 
-`_id` is an optional top-level value representing the ID of an existing Fleet. If provivded, Shipyard will attempt to look it up and apply the FAC YAML as an update to the Fleet.
+`_id` is an optional top-level value representing the ID of an existing Fleet. If provivded, Platform will attempt to look it up and apply the FAC YAML as an update to the Fleet.
 
-If the ID value does _not_ exist, Shipyard will attempt to create a new Fleet with the information provided.
+If the ID value does _not_ exist, Platform will attempt to create a new Fleet with the information provided.
 
 ---
 
@@ -64,7 +64,7 @@ long_vessel_name:
   _id: example_uuid
 ```
 
-If `_id` is provided, Shipyard will attempt to find and update the Vessel with the provided values.
+If `_id` is provided, Platform will attempt to find and update the Vessel with the provided values.
 
 Below are examples of the three types with accompanying notes on the various fields that go under the `source` field.
 

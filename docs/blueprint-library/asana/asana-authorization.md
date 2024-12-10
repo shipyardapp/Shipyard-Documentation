@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Asana Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Asana to work with Shipyard's low-code Asana templates.
+description: Instructions on how to authorize Asana to work with Platform's low-code Asana templates.
 keywords:
 - asana
 - blueprint
@@ -13,7 +13,7 @@ keywords:
 ---
 
 # Asana Authorization
-In order to get started with the Asana blueprints, you need to provide Shipyard with an `Access Token`, a `Workspace ID`, and optionally a `Project ID`. 
+In order to get started with the Asana blueprints, you need to provide Platform with an `Access Token`, a `Workspace ID`, and optionally a `Project ID`. 
 
 ## Access Token
 

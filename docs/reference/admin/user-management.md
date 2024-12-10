@@ -2,7 +2,7 @@
 id: user-management
 title: User Management
 hide_title: true
-description: Information about the user management in Shipyard.
+description: Information about the user management in Platform.
 keywords:
   - users
   - manage

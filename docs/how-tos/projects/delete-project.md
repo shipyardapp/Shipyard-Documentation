@@ -13,7 +13,7 @@ keywords:
 
 ## Overview
 
-Sometimes old [Projects](../../reference/projects.md) no longer matter. You can easily delete all of your work within Shipyard. This how to guide will walk you through the steps to delete a Project.
+Sometimes old [Projects](../../reference/projects.md) no longer matter. You can easily delete all of your work within Platform. This how to guide will walk you through the steps to delete a Project.
 
 :::danger
 Deleting a project will permanently remove all Vessels in the project as well as all historical logs. The data cannot be recovered. Be sure that you actually want to take this action!

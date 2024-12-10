@@ -22,7 +22,7 @@ The output section of an individual Vessel Log will show you:
 
 - Any [environment variables](../environment-variables/environment-variables-overview.md) that were set via the Requirements tab or via [inputs](../inputs.md).
 - If using a [Git Connection](../code/git-connection.md), the commit hash of the code that was cloned.
-- Shipyard functionality, such as downloading your script and changing the current working directory.
+- Platform functionality, such as downloading your script and changing the current working directory.
 - Any data that your script printed to `stdout`.
 
 ### Live Update

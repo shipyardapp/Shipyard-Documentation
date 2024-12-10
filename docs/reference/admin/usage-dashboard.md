@@ -2,7 +2,7 @@
 id: usage-dashboard
 title: Usage Dashboard
 hide_title: true
-description: Information about the Usage Dashboard in Shipyard. View your organization's runtime, data upload, and user counts.
+description: Information about the Usage Dashboard in Platform. View your organization's runtime, data upload, and user counts.
 keywords:
   - usage
   - runtime
@@ -14,7 +14,7 @@ keywords:
 # Usage Dashboard
 
 ## Definition
-The Usage Dashboard provides essential insights into your organization's activity on Shipyard, detailing usage statistics and their impact on your billing. It's designed to help you monitor and manage your organization's operations efficiently. The dashboard is divided into several sections, each offering specific information.
+The Usage Dashboard provides essential insights into your organization's activity on Platform, detailing usage statistics and their impact on your billing. It's designed to help you monitor and manage your organization's operations efficiently. The dashboard is divided into several sections, each offering specific information.
 
 ### Basic Organization Information
 
@@ -49,7 +49,7 @@ A detailed table providing metrics for each Fleet under the applied filters, inc
 
 ## Screenshots
 
-![Picture of the Shipyard Usage Dashboard](../../.gitbook/assets/shipyard_usage_dashboard.png)
+![Picture of the Platform Usage Dashboard](../../.gitbook/assets/shipyard_usage_dashboard.png)
 
 ## Additional Notes
 

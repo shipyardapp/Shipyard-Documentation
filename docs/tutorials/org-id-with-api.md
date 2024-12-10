@@ -1,19 +1,19 @@
 ---
 id: org-id
-title: Fetching Your Org ID with the Shipyard API
+title: Fetching Your Org ID with the Platform API
 hide_title: true
-description: In-depth tutorial on fetching your org id using the Shipyard API
+description: In-depth tutorial on fetching your org id using the Platform API
 keywords:
   - API
 ---
 
-# Fetching Your Org ID with the Shipyard API
+# Fetching Your Org ID with the Platform API
 
 ## Overview
 
-**Shipyard's** [API](https://shipyard.readme.io) gives a user the opportunity to create and edit Fleets along with looking at historical runs. However, every API end point requires an org ID to call them. The only way to access your org ID is through the Shipyard API. 
+**Platform's** [API](https://shipyard.readme.io) gives a user the opportunity to create and edit Fleets along with looking at historical runs. However, every API end point requires an org ID to call them. The only way to access your org ID is through the Platform API. 
 
-In this tutorial, we will walk through the steps needed to call the Shipyard API to get your org ID.
+In this tutorial, we will walk through the steps needed to call the Platform API to get your org ID.
 
 :::note
 This tutorial will walk through the API call in Python, however you can call the API using the language of your choice.
@@ -21,7 +21,7 @@ This tutorial will walk through the API call in Python, however you can call the
 
 ## Setup
 
-All you need to get started with this tutorial is a Shipyard API key and a coding environment. To generate an API key, head over to the Shipyard API [authorization page](../blueprint-library/shipyard-api/shipyard-api-authorization.md). For a coding environment, you are free to use your tool of choice such as Visual Studio Code or Hex.
+All you need to get started with this tutorial is a Platform API key and a coding environment. To generate an API key, head over to the Platform API [authorization page](../blueprint-library/shipyard-api/shipyard-api-authorization.md). For a coding environment, you are free to use your tool of choice such as Visual Studio Code or Hex.
 
 ## Steps
 
@@ -50,5 +50,5 @@ print(org['data'])
 4. You are able to get your org ID from the value of the ID key in that dictionary. 
 
 :::tip success
-You've successfully fetched your API key with the Shipyard API.
+You've successfully fetched your API key with the Platform API.
 :::

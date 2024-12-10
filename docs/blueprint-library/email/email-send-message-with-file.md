@@ -3,7 +3,7 @@ id: email-send-message-with-file
 title: Email Template - Send Message with File
 hide_title: true
 sidebar_label: Send Message with File
-description: Information about Shipyard's low-code Email Send Message with File blueprint. Send a message to anyone in the world using email, attaching one or more files.
+description: Information about Platform's low-code Email Send Message with File blueprint. Send a message to anyone in the world using email, attaching one or more files.
 keywords:
   - email
   - blueprint
@@ -16,17 +16,17 @@ keywords:
 
 Send a message to anyone in the world using email, attaching one or more files.
 
-To have Shipyard dynamically parse and output the contents of a file, you can include the filename in this format: `{{text:file.txt}}`
+To have Platform dynamically parse and output the contents of a file, you can include the filename in this format: `{{text:file.txt}}`
 
 To upload multiple files, use [Regex Match Type](https://www.shipyardapp.com/docs/reference/blueprint-library/match-type/).
 
-Due to email file size constraints, when the the total file size >10MB, Shipyard will automatically zip the files under the name "Archive.zip".
+Due to email file size constraints, when the the total file size >10MB, Platform will automatically zip the files under the name "Archive.zip".
 
 **Note:** This Vessel cannot be used to access a local file from your computer.
 
 **Recommended Setup:**
 
-1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Shipyard or generates a file with code. 
+1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Platform or generates a file with code. 
 
 ## Variables
 
@@ -43,10 +43,10 @@ Due to email file size constraints, when the the total file size >10MB, Shipyard
 | CC | EMAIL_CC | Alphanumeric | :heavy_minus_sign: | - | - | The email(s) that you want your message to be carbon copied (CCed) to. Can be comma-separated to include multiple email addresses. |
 | BCC | EMAIL_BCC | Alphanumeric | :heavy_minus_sign: | - | - | The email(s) that you want to be blind carbon copied (BCCed) to. Can be comma-separated to include multiple email addresses. Emails in this field will receive the email, but will not have their email exposed to all other recipients. |
 | Subject | EMAIL_SUBJECT | Alphanumeric | :heavy_minus_sign: | - | - | The subject of the email that you want to send. |
-| Message | EMAIL_MESSAGE | Alphanumeric | :white_check_mark: | - | - | The body of the email, containing your main message. This field supports plain text as well as HTML. The body of the email, containing your main message. This field supports plain text as well as HTML. To have Shipyard dynamically parse and output the contents of a file, you can include the filename in this format: {{text:file.txt}} |
+| Message | EMAIL_MESSAGE | Alphanumeric | :white_check_mark: | - | - | The body of the email, containing your main message. This field supports plain text as well as HTML. The body of the email, containing your main message. This field supports plain text as well as HTML. To have Platform dynamically parse and output the contents of a file, you can include the filename in this format: {{text:file.txt}} |
 | File Name Match Type | EMAIL_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Regex: `regex_match`<br></br><br></br>Exact: `exact_match`<br></br><br></br> | Determines if the text in "File Name" will look for one file with exact match, or multiple files using regex. |
-| File Name | EMAIL_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file on Shipyard. Can be regex if "Match Type" is set accordingly |
-| Folder Name | EMAIL_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Shipyard to upload the target file from. If left blank, will look in the home directory. |
+| File Name | EMAIL_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file on Platform. Can be regex if "Match Type" is set accordingly |
+| Folder Name | EMAIL_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Platform to upload the target file from. If left blank, will look in the home directory. |
 | Include Shipyard Footer? | EMAIL_INCLUDE_SHIPYARD_FOOTER | Boolean | :white_check_mark: | `True` | - | Determines if a footer should be sent with the email that links back to the originating Vessel or Fleet. |
 
 

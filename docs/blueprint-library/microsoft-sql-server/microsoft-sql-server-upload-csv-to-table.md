@@ -1,16 +1,16 @@
 ---
 id: microsoft-sql-server-upload-csv-to-table
-title: Microsoft SQL Server Template - Upload File to Table from Shipyard
+title: Microsoft SQL Server Template - Upload File to Table from Platform
 hide_title: true
-sidebar_label: Upload File to Table from Shipyard
-description: Information about Shipyard's low-code Microsoft SQL Server Upload File to Table from Shipyard blueprint. Upload a CSV file to any table in Microsoft SQL Server.
+sidebar_label: Upload File to Table from Platform
+description: Information about Platform's low-code Microsoft SQL Server Upload File to Table from Platform blueprint. Upload a CSV file to any table in Microsoft SQL Server.
 keywords:
   - microsoft sql server
   - blueprint
   - template
 ---
 
-# Microsoft SQL Server - Upload File to Table from Shipyard
+# Microsoft SQL Server - Upload File to Table from Platform
 
 
 
@@ -32,7 +32,7 @@ In all instances, if the table name does not already exist, a new table will be 
 
 **Recommended Setup:**
 
-1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Shipyard or generates a file with code. 
+1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Platform or generates a file with code. 
 
 ## Variables
 

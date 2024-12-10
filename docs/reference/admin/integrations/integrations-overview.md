@@ -2,7 +2,7 @@
 id: integrations-overview
 title: Integrations Overview
 hide_title: true
-description: Information about the 3rd party integrations Shipyard has.
+description: Information about the 3rd party integrations Platform has.
 keywords:
   - integration
 ---
@@ -12,7 +12,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## Definition
 
-The integrations tab shows a list of all the external services you can integrate directly with Shipyard. These are typically reserved for OAuth connections and credential management.
+The integrations tab shows a list of all the external services you can integrate directly with Platform. These are typically reserved for OAuth connections and credential management.
 
 Current integrations include:
 

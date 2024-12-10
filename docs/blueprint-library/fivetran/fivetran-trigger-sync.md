@@ -3,7 +3,7 @@ id: fivetran-trigger-sync
 title: Fivetran Template - Trigger Sync
 hide_title: true
 sidebar_label: Trigger Sync
-description: Information about Shipyard's low-code Fivetran Trigger Sync blueprint. Execute a sync against an existing connector in the Fivetran interface.
+description: Information about Platform's low-code Fivetran Trigger Sync blueprint. Execute a sync against an existing connector in the Fivetran interface.
 keywords:
   - fivetran
   - blueprint

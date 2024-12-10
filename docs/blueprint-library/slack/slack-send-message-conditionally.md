@@ -3,7 +3,7 @@ id: slack-send-message-conditionally
 title: Slack Template - Send Message Conditionally
 hide_title: true
 sidebar_label: Send Message Conditionally
-description: Information about Shipyard's low-code Slack Send Message Conditionally blueprint. Send a message to Slack conditionally by determining if a file exists or not.
+description: Information about Platform's low-code Slack Send Message Conditionally blueprint. Send a message to Slack conditionally by determining if a file exists or not.
 keywords:
   - slack
   - blueprint
@@ -16,7 +16,7 @@ keywords:
 
 Send a message to Slack conditionally by determining if a file exists or not.
 
-To have Shipyard dynamically parse and output the contents of a file, you can include the filename in this format: `{{text:file.txt}}`
+To have Platform dynamically parse and output the contents of a file, you can include the filename in this format: `{{text:file.txt}}`
 
 Vessels built with this Blueprint should never fail, as the presence or lack or presence of the file only indicates whether or not the message should be sent.
 
@@ -26,7 +26,7 @@ Works primarily when used as part of a Fleet, where a File can be generated or d
 
 **Recommended Setup:**
 
-1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Shipyard or generates a file with code. 
+1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Platform or generates a file with code. 
 
 ## Variables
 

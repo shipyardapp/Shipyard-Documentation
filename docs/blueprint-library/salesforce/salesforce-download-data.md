@@ -1,16 +1,16 @@
 ---
 id: salesforce-download-data
-title: Salesforce Template - Download Data to Shipyard
+title: Salesforce Template - Download Data to Platform
 hide_title: true
-sidebar_label: Download Data to Shipyard
-description: Information about Shipyard's low-code Salesforce Download Data to Shipyard blueprint. Export specified Salesforce object data to a CSV file. 
+sidebar_label: Download Data to Platform
+description: Information about Platform's low-code Salesforce Download Data to Platform blueprint. Export specified Salesforce object data to a CSV file. 
 keywords:
     - salesforce
     - blueprint
     - template
 ---
 
-# Salesforce - Download Data to Shipyard
+# Salesforce - Download Data to Platform
 
 ## Overview
 Before using the blueprint, gather the following:

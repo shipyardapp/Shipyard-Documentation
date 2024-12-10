@@ -16,7 +16,7 @@ keywords:
 
 # dbt Core Part 4 - Run dbt Models and Exporting Documentation
 
-In part 4 of the dbt Core guide, we will run the dbt model that was created in part 2. After the model completes its run, we will use Shipyard to upload the documentation to an Amazon S3 bucket. If you missed the first two installments of this guide, please go back and check them out: 
+In part 4 of the dbt Core guide, we will run the dbt model that was created in part 2. After the model completes its run, we will use Platform to upload the documentation to an Amazon S3 bucket. If you missed the first two installments of this guide, please go back and check them out: 
 
   * [Part 1](dbt-core-set-up-data-warehouse.md)
   * [Part 2](dbt-core-set-up-dbt.md)

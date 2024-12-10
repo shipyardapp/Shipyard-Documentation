@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Google BigQuery Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Google BigQuery to work with Shipyard's low-code Google BigQuery templates.
+description: Instructions on how to authorize Google BigQuery to work with Platform's low-code Google BigQuery templates.
 keywords:
   - google bigquery
   - blueprint
@@ -16,7 +16,7 @@ keywords:
 
 In order to get started with the Google BigQuery Blueprints, a service account with the necessary GCP permissions is required. All BigQuery Blueprints are still subject to [BigQuery quotas and limits](https://cloud.google.com/bigquery/quotas#queries).
 
-You may also need to ensure that Shipyard [IP Addresses are whitelisted](https://www.shipyardapp.com/docs/faqs/security/ip-whitelist/)
+You may also need to ensure that Platform [IP Addresses are whitelisted](https://www.shipyardapp.com/docs/faqs/security/ip-whitelist/)
 
 ## Creating a BigQuery Service Account
 

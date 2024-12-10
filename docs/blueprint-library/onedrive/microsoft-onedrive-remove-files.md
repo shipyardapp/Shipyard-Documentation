@@ -3,7 +3,7 @@ id: microsoft-onedrive-remove-files
 title: OneDrive Template - Remove Files
 hide_title: true
 sidebar_label: Remove Files
-description: Information about Shipyard's low-code OneDrive Remove Files blueprint. Quickly remove multiple files within Microsoft OneDrive
+description: Information about Platform's low-code OneDrive Remove Files blueprint. Quickly remove multiple files within Microsoft OneDrive
 keywords:
   - onedrive
   - blueprint

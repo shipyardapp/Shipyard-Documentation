@@ -17,7 +17,7 @@ import TabItem from '@theme/TabItem';
 
 ## Overview
 
-In this tutorial, we will walk through the steps needed to make an API call in Shipyard. This guide will accomplish that using Shipyard's native [HTTP](../blueprint-library/http/http-requests.md) Blueprint. If you'd rather use your own Python script, the steps are provided to do that as well.
+In this tutorial, we will walk through the steps needed to make an API call in Platform. This guide will accomplish that using Platform's native [HTTP](../blueprint-library/http/http-requests.md) Blueprint. If you'd rather use your own Python script, the steps are provided to do that as well.
 
 We will be calling GitHub's API to create an issue in a repository. 
 
@@ -37,7 +37,7 @@ By the end of this tutorial, you'll be able to:
 
 ### Step 2: Calling GitHub's API
 
-1. In Shipyard, click **New Fleet** in the top left corner. This will take you to the Fleet Builder.
+1. In Platform, click **New Fleet** in the top left corner. This will take you to the Fleet Builder.
 
 <Tabs
 groupId="vessel-type"
@@ -142,7 +142,7 @@ values={[
 ![](../.gitbook/assets/shipyard_2022_12_12_15_19_00.png)
 
 :::tip success
-You've successfully used Shipyard to create an issue in GitHub using an API call.
+You've successfully used Platform to create an issue in GitHub using an API call.
 :::
 </TabItem>
 
@@ -163,7 +163,7 @@ You've successfully used Shipyard to create an issue in GitHub using an API call
 ![](../.gitbook/assets/shipyard_2022_12_12_15_19_00.png)
 
 :::tip success
-You've successfully used Shipyard to create an issue in GitHub using an API call.
+You've successfully used Platform to create an issue in GitHub using an API call.
 :::
 </TabItem>
 </Tabs>

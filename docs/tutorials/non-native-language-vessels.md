@@ -16,7 +16,7 @@ import TabItem from '@theme/TabItem';
 
 ## Overview
 
-**Shipyard** provides indirect support for languages outside of those natively supported (Bash, Python, and Node). This is done by using Bash Vessels to install the given language and any external packages before running the specified command to execute the script. With this approach, the user can effectively use whatever language they choose in Vessel construction.
+**Platform** provides indirect support for languages outside of those natively supported (Bash, Python, and Node). This is done by using Bash Vessels to install the given language and any external packages before running the specified command to execute the script. With this approach, the user can effectively use whatever language they choose in Vessel construction.
 
 Note that this approach will likely add in some additional execution time for the Vessel due to the installation and setup going into each Vessel run.
 
@@ -47,7 +47,7 @@ First, [download this zipped Ruby code](https://drive.google.com/file/d/1kPO76_I
 
 Feel free to review the code in both `run.sh` and `script.rb` to see what each is doing. Here's a brief overview:
 
-1. `run.sh`: this is the "entrypoint" for our Vessel code since Bash, not Ruby, is natively supported in Shipyard  
+1. `run.sh`: this is the "entrypoint" for our Vessel code since Bash, not Ruby, is natively supported in Platform  
 	a. Updates an environment variable (to suppress a warning in the logs)  
 	b. Installs the third-party package `yell`  
 	c. Runs the Ruby script  
@@ -64,7 +64,7 @@ First, [download this zipped Go code](https://drive.google.com/file/d/1mKQiWWLSW
 
 Feel free to review the code in both `run.sh` and `script.go` to see what each is doing. Here's a brief overview:
 
-1. `run.sh`: this is the "entrypoint" for our Vessel code since Bash, not Go, is natively supported in Shipyard  
+1. `run.sh`: this is the "entrypoint" for our Vessel code since Bash, not Go, is natively supported in Platform  
 	a. Initializes Go modules for third-party packages  
 	b. Installs the third-party package `logrus`  
 	c. Runs the Go script  
@@ -142,9 +142,9 @@ You should see the following page that shows you all of the details about the sp
 
 In the output, you'll see several things.
 
-1. Shipyard creates a working directory under `/home/shipyard/`
-2. Shipyard downloads the file you created under the Code section, decompresses it, and begins to run `run.sh`
-3. Shipyard prints out the text `Top story on Hacker News stats` followed by the `title`, `score`, and `link` values
+1. Platform creates a working directory under `/home/shipyard/`
+2. Platform downloads the file you created under the Code section, decompresses it, and begins to run `run.sh`
+3. Platform prints out the text `Top story on Hacker News stats` followed by the `title`, `score`, and `link` values
 
 <Tabs
 groupId="languages"

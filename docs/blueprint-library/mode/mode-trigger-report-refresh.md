@@ -3,7 +3,7 @@ id: mode-trigger-report-refresh
 title: Mode Template - Trigger Report Refresh
 hide_title: true
 sidebar_label: Trigger Report Refresh
-description: Information about Shipyard's low-code Mode Trigger Report Refresh blueprint. Trigger a Mode report to refresh immediately. 
+description: Information about Platform's low-code Mode Trigger Report Refresh blueprint. Trigger a Mode report to refresh immediately. 
 keywords:
     - mode
     - blueprint

@@ -17,7 +17,7 @@ import TabItem from '@theme/TabItem';
 
 ## Overview
 
-When a user provides input via [Blueprint Variables](../../reference/blueprints/org-blueprints/blueprint-variables.md), you pass values to your script using [environment variables](../../reference/environment-variables/environment-variables-overview.md), or when you want to access Shipyard's context-aware [platform environment variables](../../reference/environment-variables/shipyard-environment-variables.md), you'll sometimes want to make sure that you can access these values in the UI. This how to guide will walk you through the steps to access environment variables.
+When a user provides input via [Blueprint Variables](../../reference/blueprints/org-blueprints/blueprint-variables.md), you pass values to your script using [environment variables](../../reference/environment-variables/environment-variables-overview.md), or when you want to access Platform's context-aware [platform environment variables](../../reference/environment-variables/shipyard-environment-variables.md), you'll sometimes want to make sure that you can access these values in the UI. This how to guide will walk you through the steps to access environment variables.
 
 ## Steps
 

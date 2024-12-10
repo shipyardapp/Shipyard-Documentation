@@ -3,7 +3,7 @@ id: airbyte-check-sync-status
 title: Airbyte Template - Check Sync Status (Deprecated)
 hide_title: true
 sidebar_label: Check Sync Status (Deprecated)
-description: Information about Shipyard's low-code Airbyte Check Sync Status (Deprecated) blueprint. Check the status of a specific Airbyte sync run and return with the final status. 
+description: Information about Platform's low-code Airbyte Check Sync Status (Deprecated) blueprint. Check the status of a specific Airbyte sync run and return with the final status. 
 keywords:
     - airbyte
     - blueprint

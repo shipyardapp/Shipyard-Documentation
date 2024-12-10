@@ -4,7 +4,7 @@ sidebar_position: 1
 title: OpenAI ChatGPT Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize OpenAI ChatGPT to work with Shipyard's low-code OpenAI ChatGPT templates.
+description: Instructions on how to authorize OpenAI ChatGPT to work with Platform's low-code OpenAI ChatGPT templates.
 keywords:
 - openai chatgpt
 - blueprint
@@ -13,7 +13,7 @@ keywords:
 ---
 
 # OpenAI ChatGPT Authorization
-To get started with any ChatGPT Blueprints, you will need to create an API Key. This API Key is a secure way for Shipyard to access ChatGPT and will be required for **every** ChatGPT Blueprint.
+To get started with any ChatGPT Blueprints, you will need to create an API Key. This API Key is a secure way for Platform to access ChatGPT and will be required for **every** ChatGPT Blueprint.
 
 ## Creating a ChatGPT API Key
 

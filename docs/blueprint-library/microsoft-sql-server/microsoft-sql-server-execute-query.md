@@ -3,7 +3,7 @@ id: microsoft-sql-server-execute-query
 title: Microsoft SQL Server Template - Execute Query
 hide_title: true
 sidebar_label: Execute Query
-description: Information about Shipyard's low-code Microsoft SQL Server Execute Query blueprint. Execute any SQL query against a Microsoft SQL Server database.
+description: Information about Platform's low-code Microsoft SQL Server Execute Query blueprint. Execute any SQL query against a Microsoft SQL Server database.
 keywords:
   - microsoft sql server
   - blueprint

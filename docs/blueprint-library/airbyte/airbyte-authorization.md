@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Airbyte Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Airbyte to work with Shipyard's low-code Airbyte templates.
+description: Instructions on how to authorize Airbyte to work with Platform's low-code Airbyte templates.
 keywords:
 - airbyte
 - blueprint

@@ -3,7 +3,7 @@ id: chatgpt-add-comments-to-code
 title: OpenAI ChatGPT Template - Add Comments to Code
 hide_title: true
 sidebar_label: Add Comments to Code
-description: Information about Shipyard's low-code OpenAI ChatGPT Add Comments to Code blueprint. Adds comments to code scripts. 
+description: Information about Platform's low-code OpenAI ChatGPT Add Comments to Code blueprint. Adds comments to code scripts. 
 keywords:
     - openai chatgpt
     - blueprint

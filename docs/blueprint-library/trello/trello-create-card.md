@@ -3,7 +3,7 @@ id: trello-create-card
 title: Trello Template - Create Card
 hide_title: true
 sidebar_label: Create Card
-description: Information about Shipyard's low-code Trello Create Card blueprint. Creates a card on a Trello Board 
+description: Information about Platform's low-code Trello Create Card blueprint. Creates a card on a Trello Board 
 keywords:
     - trello
     - blueprint

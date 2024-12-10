@@ -3,7 +3,7 @@ id: chatgpt-generate-response
 title: OpenAI ChatGPT Template - Generate Response
 hide_title: true
 sidebar_label: Generate Response
-description: Information about Shipyard's low-code OpenAI ChatGPT Generate Response blueprint. Sends a prompt to ChatGPT and returns the message. The results will be printed in the console and saved in a text file. 
+description: Information about Platform's low-code OpenAI ChatGPT Generate Response blueprint. Sends a prompt to ChatGPT and returns the message. The results will be printed in the console and saved in a text file. 
 keywords:
     - openai chatgpt
     - blueprint

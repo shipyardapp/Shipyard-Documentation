@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Smartsheet Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Smartsheet to work with Shipyard's low-code Smartsheet templates.
+description: Instructions on how to authorize Smartsheet to work with Platform's low-code Smartsheet templates.
 keywords:
 - smartsheet
 - blueprint
@@ -13,7 +13,7 @@ keywords:
 ---
 
 # Smartsheet Authorization
-In order to allow Shipyard access to your Smartsheet instance, you will need a an API access token. 
+In order to allow Platform access to your Smartsheet instance, you will need a an API access token. 
 
 ## Creating an Access Token for existing account
 

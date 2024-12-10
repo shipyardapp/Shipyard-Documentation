@@ -3,7 +3,7 @@ id: hubspot-upload-data
 title: Hubspot Template - Upload Data
 hide_title: true
 sidebar_label: Upload Data
-description: Information about Shipyard's low-code Hubspot Upload Data blueprint. Hubspot integration for importing data. Supports various file formats and operations. 
+description: Information about Platform's low-code Hubspot Upload Data blueprint. Hubspot integration for importing data. Supports various file formats and operations. 
 keywords:
     - hubspot
     - blueprint

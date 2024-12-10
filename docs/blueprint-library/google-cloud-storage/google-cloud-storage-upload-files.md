@@ -1,16 +1,16 @@
 ---
 id: google-cloud-storage-upload-files
-title: Google Cloud Storage Template - Upload Files from Shipyard
+title: Google Cloud Storage Template - Upload Files from Platform
 hide_title: true
-sidebar_label: Upload Files from Shipyard
-description: Information about Shipyard's low-code Google Cloud Storage Upload Files from Shipyard blueprint. Easily import one or more files directly into a Google Cloud Storage (GCS) bucket, no matter how big they are.
+sidebar_label: Upload Files from Platform
+description: Information about Platform's low-code Google Cloud Storage Upload Files from Platform blueprint. Easily import one or more files directly into a Google Cloud Storage (GCS) bucket, no matter how big they are.
 keywords:
   - google cloud storage
   - blueprint
   - template
 ---
 
-# Google Cloud Storage - Upload Files from Shipyard
+# Google Cloud Storage - Upload Files from Platform
 
 
 
@@ -26,15 +26,15 @@ All files uploaded will inherit the default settings for the GCS bucket.
 
 **Recommended Setup:**
 
-1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Shipyard or generates a file with code. 
+1. A Vessel built with this Blueprint should typically run after a Vessel that either downloads a file to Platform or generates a file with code. 
 
 ## Variables
 
 | Name | Reference | Type | Required | Default | Options | Description             |
 |:-----|:----------|:-----|:---------|:--------|:--------|:------------------------|
-| Shipyard Folder Name | GCS_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Shipyard to upload the target file from. If left blank, will look in the home directory. |
+| Shipyard Folder Name | GCS_SOURCE_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Name of the local folder on Platform to upload the target file from. If left blank, will look in the home directory. |
 | Shipyard File Name Match Type | GCS_SOURCE_FILE_NAME_MATCH_TYPE | Select | :white_check_mark: | `exact_match` | Exact Match: `exact_match`<br></br><br></br>Regex Match: `regex_match`<br></br><br></br> | Determines if the text in "Shipyard File Name" will look for one file with exact match, or multiple files using regex. |
-| Shipyard File Name | GCS_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file on Shipyard. Can be regex if "Match Type" is set accordingly. |
+| Shipyard File Name | GCS_SOURCE_FILE_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the target file on Platform. Can be regex if "Match Type" is set accordingly. |
 | GCS Bucket Name | GCS_BUCKET_NAME | Alphanumeric | :white_check_mark: | - | - | Name of the GCS bucket to upload the file(s) to. |
 | GCS Folder Name | GCS_DESTINATION_FOLDER_NAME | Alphanumeric | :heavy_minus_sign: | - | - | Folder in the GCS bucket to upload the file(s) to. If left blank, will upload to the root directory. |
 | GCS File Name | GCS_DESTINATION_FILE_NAME | Alphanumeric | :heavy_minus_sign: | - | - | What to name the file(s) being downloaded. If left blank, defaults to the original file name(s). |

@@ -1,16 +1,16 @@
 ---
 id: tableau-download-view
-title: Tableau Template - Download View to Shipyard
+title: Tableau Template - Download View to Platform
 hide_title: true
-sidebar_label: Download View to Shipyard
-description: Information about Shipyard's low-code Tableau Download View to Shipyard blueprint. Download the contents of view as a pdf, csv, or png.
+sidebar_label: Download View to Platform
+description: Information about Platform's low-code Tableau Download View to Platform blueprint. Download the contents of view as a pdf, csv, or png.
 keywords:
   - tableau
   - blueprint
   - template
 ---
 
-# Tableau - Download View to Shipyard
+# Tableau - Download View to Platform
 
 
 

@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Hex Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Hex to work with Shipyard's low-code Hex templates.
+description: Instructions on how to authorize Hex to work with Platform's low-code Hex templates.
 keywords:
   - hex
   - blueprint

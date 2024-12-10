@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Microsoft Power BI Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Microsoft Power BI to work with Shipyard's low-code Microsoft Power BI templates.
+description: Instructions on how to authorize Microsoft Power BI to work with Platform's low-code Microsoft Power BI templates.
 keywords:
 - microsoft power bi
 - blueprint
@@ -30,7 +30,7 @@ You will need the following from the Service Principal Account
 ![](../../.gitbook/assets/shipyard_2023-12-21-09-32-08.png)
 
  **Step 3:** Fill in the Form
-* App Name: Shipyard Power BI (or whatever you want to call it)
+* App Name: Platform Power BI (or whatever you want to call it)
 * Supported Account Types: Accounts in this organizational directory only
 * Redirect URI: Leave blank
 
@@ -46,7 +46,7 @@ You will need the following from the Service Principal Account
 **Step 7:** Click on New Client Secret
 
 **Step 8:** Fill in the Form
-* Description: Shipyard Power BI (or whatever you want to call it)
+* Description: Platform Power BI (or whatever you want to call it)
 * Expires: 6 months(Recommended)
 ![](../../.gitbook/assets/shipyard_2023-12-21-09-37-03.png)
 

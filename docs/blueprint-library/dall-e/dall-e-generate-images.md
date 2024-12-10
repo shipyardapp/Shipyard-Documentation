@@ -3,7 +3,7 @@ id: dall-e-generate-images
 title: OpenAI DALL-E 2 Template - Generate Images
 hide_title: true
 sidebar_label: Generate Images
-description: Information about Shipyard's low-code OpenAI DALL-E 2 Generate Images blueprint. This Blueprint takes a prompt and creates an image from it. 
+description: Information about Platform's low-code OpenAI DALL-E 2 Generate Images blueprint. This Blueprint takes a prompt and creates an image from it. 
 keywords:
     - openai dall-e 2
     - blueprint

@@ -3,7 +3,7 @@ id: hubspot-csv-header-validator
 title: Hubspot Template - CSV Header Validator
 hide_title: true
 sidebar_label: CSV Header Validator
-description: Information about Shipyard's low-code Hubspot CSV Header Validator blueprint. Validates CSV headers against available Hubspot properties and logs property details. 
+description: Information about Platform's low-code Hubspot CSV Header Validator blueprint. Validates CSV headers against available Hubspot properties and logs property details. 
 keywords:
     - hubspot
     - blueprint

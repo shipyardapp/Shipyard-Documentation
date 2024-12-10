@@ -3,7 +3,7 @@ id: deepgram-transcribe-audio
 title: Deepgram Template - Transcribe Audio
 hide_title: true
 sidebar_label: Transcribe Audio
-description: Information about Shipyard's low-code Deepgram Transcribe Audio blueprint. Use Deepgram's API to transcribe an audio file 
+description: Information about Platform's low-code Deepgram Transcribe Audio blueprint. Use Deepgram's API to transcribe an audio file 
 keywords:
     - deepgram
     - blueprint
@@ -13,7 +13,7 @@ keywords:
 # Deepgram - Transcribe Audio
 
 ## Overview
-To use this Blueprint, you will need an audio file to transcribe. We recommend connecting this to a Vessel that downloads a file into Shipyard such as YouTube or Google Drive.
+To use this Blueprint, you will need an audio file to transcribe. We recommend connecting this to a Vessel that downloads a file into Platform such as YouTube or Google Drive.
 
 ## Variables
 

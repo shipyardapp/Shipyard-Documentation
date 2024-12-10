@@ -3,7 +3,7 @@ id: shortcut-create-story
 title: Shortcut Template - Create Story
 hide_title: true
 sidebar_label: Create Story
-description: Information about Shipyard's low-code Shortcut Create Story blueprint. Creates a new story in shortcut 
+description: Information about Platform's low-code Shortcut Create Story blueprint. Creates a new story in shortcut 
 keywords:
     - shortcut
     - blueprint

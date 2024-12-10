@@ -1,16 +1,16 @@
 ---
 id: postgresql-store-query-results-as-csv
-title: PostgreSQL Template - Download Query Results to Shipyard
+title: PostgreSQL Template - Download Query Results to Platform
 hide_title: true
-sidebar_label: Download Query Results to Shipyard
-description: Information about Shipyard's low-code PostgreSQL Download Query Results to Shipyard blueprint. Turn the results of your SQL SELECT statement into a CSV file.
+sidebar_label: Download Query Results to Platform
+description: Information about Platform's low-code PostgreSQL Download Query Results to Platform blueprint. Turn the results of your SQL SELECT statement into a CSV file.
 keywords:
   - postgresql
   - blueprint
   - template
 ---
 
-# PostgreSQL - Download Query Results to Shipyard
+# PostgreSQL - Download Query Results to Platform
 
 
 

@@ -3,7 +3,7 @@ id: chatgpt-generate-message
 title: OpenAI ChatGPT Template - Generate Message
 hide_title: true
 sidebar_label: Generate Message
-description: Information about Shipyard's low-code OpenAI ChatGPT Generate Message blueprint. Takes input from the user to create a message to send 
+description: Information about Platform's low-code OpenAI ChatGPT Generate Message blueprint. Takes input from the user to create a message to send 
 keywords:
     - openai chatgpt
     - blueprint

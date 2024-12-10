@@ -3,7 +3,7 @@ id: domo-refresh-dataset
 title: Domo Template - Trigger Dataset Refresh
 hide_title: true
 sidebar_label: Trigger Dataset Refresh
-description: Information about Shipyard's low-code Domo Trigger Dataset Refresh blueprint. Manually trigger a refresh of a dataset in Domo.
+description: Information about Platform's low-code Domo Trigger Dataset Refresh blueprint. Manually trigger a refresh of a dataset in Domo.
 keywords:
   - domo
   - blueprint

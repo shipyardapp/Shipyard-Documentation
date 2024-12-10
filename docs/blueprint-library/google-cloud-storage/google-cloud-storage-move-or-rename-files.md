@@ -3,7 +3,7 @@ id: google-cloud-storage-move-or-rename-files
 title: Google Cloud Storage Template - Move or Rename Files
 hide_title: true
 sidebar_label: Move or Rename Files
-description: Information about Shipyard's low-code Google Cloud Storage Move or Rename Files blueprint. Quickly move one or more files from a Google Cloud Storage (GCS) bucket or folder.
+description: Information about Platform's low-code Google Cloud Storage Move or Rename Files blueprint. Quickly move one or more files from a Google Cloud Storage (GCS) bucket or folder.
 keywords:
   - google cloud storage
   - blueprint

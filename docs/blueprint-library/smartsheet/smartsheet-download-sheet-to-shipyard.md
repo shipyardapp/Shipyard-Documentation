@@ -1,19 +1,19 @@
 ---
 id: smartsheet-download-sheet-to-shipyard
-title: Smartsheet Template - Download Sheet to Shipyard
+title: Smartsheet Template - Download Sheet to Platform
 hide_title: true
-sidebar_label: Download Sheet to Shipyard
-description: Information about Shipyard's low-code Smartsheet Download Sheet to Shipyard blueprint. Quickly download a Sheet from Smartsheet to an Excel or CSV file 
+sidebar_label: Download Sheet to Platform
+description: Information about Platform's low-code Smartsheet Download Sheet to Platform blueprint. Quickly download a Sheet from Smartsheet to an Excel or CSV file 
 keywords:
     - smartsheet
     - blueprint
     - template
 ---
 
-# Smartsheet - Download Sheet to Shipyard
+# Smartsheet - Download Sheet to Platform
 
 ## Overview
-Allows for quick and seamless download of a Smartsheet Sheet to Shipyard. Results can either be downloaded to an Excel or CSV file. 
+Allows for quick and seamless download of a Smartsheet Sheet to Platform. Results can either be downloaded to an Excel or CSV file. 
 
 ## Variables
 

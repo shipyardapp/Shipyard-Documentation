@@ -1,16 +1,16 @@
 ---
 id: google-cloud-storage-download-files
-title: Google Cloud Storage Template - Download Files to Shipyard
+title: Google Cloud Storage Template - Download Files to Platform
 hide_title: true
-sidebar_label: Download Files to Shipyard
-description: Information about Shipyard's low-code Google Cloud Storage Download Files to Shipyard blueprint. Quickly export one or more files a Google Cloud Storage (GCS) bucket.
+sidebar_label: Download Files to Platform
+description: Information about Platform's low-code Google Cloud Storage Download Files to Platform blueprint. Quickly export one or more files a Google Cloud Storage (GCS) bucket.
 keywords:
   - google cloud storage
   - blueprint
   - template
 ---
 
-# Google Cloud Storage - Download Files to Shipyard
+# Google Cloud Storage - Download Files to Platform
 
 
 

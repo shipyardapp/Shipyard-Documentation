@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Google Sheets Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Google Sheets to work with Shipyard's low-code Google Sheets templates.
+description: Instructions on how to authorize Google Sheets to work with Platform's low-code Google Sheets templates.
 keywords:
   - google sheets
   - blueprint

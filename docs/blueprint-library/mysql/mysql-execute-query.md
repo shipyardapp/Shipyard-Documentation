@@ -3,7 +3,7 @@ id: mysql-execute-query
 title: MySQL Template - Execute Queries
 hide_title: true
 sidebar_label: Execute Queries
-description: Information about Shipyard's low-code MySQL Execute Queries blueprint. Execute any SQL query against a MySQL database. 
+description: Information about Platform's low-code MySQL Execute Queries blueprint. Execute any SQL query against a MySQL database. 
 keywords:
     - mysql
     - blueprint

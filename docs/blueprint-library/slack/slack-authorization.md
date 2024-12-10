@@ -4,7 +4,7 @@ sidebar_position: 1
 title: Slack Blueprint Authorization
 hide_title: true
 sidebar_label: Authorization
-description: Instructions on how to authorize Slack to work with Shipyard's low-code Slack templates.
+description: Instructions on how to authorize Slack to work with Platform's low-code Slack templates.
 keywords:
   - slack
   - blueprint
@@ -65,7 +65,7 @@ At a high level, here's what these scopes mean for your application:
 
 ![](https://cdn.sanity.io/images/2xyydva6/production/3d24e9adb601f63046caa7bb58ed8a96936a6d93-633x607.png?w=450)
 
-3. The next screen will now show you a Bot User Oauth Token. Store this somewhere safe and **DO NOT SHARE IT** with anyone outside of your organization. This token is what you'll enter in the **Slack Token** field on Shipyard.
+3. The next screen will now show you a Bot User Oauth Token. Store this somewhere safe and **DO NOT SHARE IT** with anyone outside of your organization. This token is what you'll enter in the **Slack Token** field on Platform.
 
 ![](https://cdn.sanity.io/images/2xyydva6/production/24fc255ab0a98a5f95979fd7b34247666c0deac7-711x484.png?w=450)
 

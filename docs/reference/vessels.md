@@ -15,7 +15,7 @@ import TabItem from '@theme/TabItem';
 
 ## Definition
 
-A Vessel is the "unit of work" in Shipyard, or an individual script that has been designed and built to accomplish a very specific job. Just like the real world equivalent, Vessels can be built for any purpose and come in any size, shape, or speed.
+A Vessel is the "unit of work" in Platform, or an individual script that has been designed and built to accomplish a very specific job. Just like the real world equivalent, Vessels can be built for any purpose and come in any size, shape, or speed.
 
 Vessels are run in independent docker containers, so underlying code, environment variables, and packages of one cannot affect another.
 
@@ -25,7 +25,7 @@ Every Vessel is either built with code or with a Blueprint that contains the des
 
 ### With Code
 
-Building a Vessel with code allows you to write and run scripts from scratch with no changes to your existing code or additional configuration files. The code is executed on Shipyard's cloud infrastructure in isolation.
+Building a Vessel with code allows you to write and run scripts from scratch with no changes to your existing code or additional configuration files. The code is executed on Platform's cloud infrastructure in isolation.
 
 When building a Vessel with code, your script should return an exit code of 0 to indicate a successful run. Any other exit code indicates failure.
 

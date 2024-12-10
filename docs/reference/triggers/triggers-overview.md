@@ -2,7 +2,7 @@
 id: triggers-overview
 title: Triggers Overview
 hide_title: true
-description: Information about all of the different types of triggers that Shipyard supports.
+description: Information about all of the different types of triggers that Platform supports.
 keywords:
   - trigger
   - execution

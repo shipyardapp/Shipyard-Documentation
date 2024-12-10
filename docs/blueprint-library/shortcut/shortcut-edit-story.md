@@ -3,7 +3,7 @@ id: shortcut-edit-story
 title: Shortcut Template - Edit Story
 hide_title: true
 sidebar_label: Edit Story
-description: Information about Shipyard's low-code Shortcut Edit Story blueprint. Trigger the execution to edit some commonly used fields on an existing Shortcut story 
+description: Information about Platform's low-code Shortcut Edit Story blueprint. Trigger the execution to edit some commonly used fields on an existing Shortcut story 
 keywords:
     - shortcut
     - blueprint

@@ -2,7 +2,7 @@
 id: credentials
 title: Credentials
 hide_title: true
-description: Information about credentials in Shipyard.
+description: Information about credentials in Platform.
 keywords:
   - credentials
   - creds
@@ -19,7 +19,7 @@ Credentials are a way to securely store information at the organization level th
 
 Credentials are broken up into two components, **Credential Groups** and **Credential Items**.
 - **Credential Groups** are a group of one or more credential items. They can either be created from a pre-defined template related to a specific vendor or they can be Custom.
-  - **Predefined Template** Credential Groups can only be used with their respective Library Blueprints. For example, a Snowflake Credential Group can only be used with [Snowflake Blueprints](../blueprint-library/snowflake/snowflake-overview.md). These predefined templates can only be created by Shipyard staff and should correspond to all vendors that Library Blueprints that have been built for.
+  - **Predefined Template** Credential Groups can only be used with their respective Library Blueprints. For example, a Snowflake Credential Group can only be used with [Snowflake Blueprints](../blueprint-library/snowflake/snowflake-overview.md). These predefined templates can only be created by Platform staff and should correspond to all vendors that Library Blueprints that have been built for.
   - **Custom** Credential Groups can be used with any Vessel, regardless of if it's built with Code, a Library Blueprint, or a Custom Blueprint. You can add or remove credential items from custom credential groups at any time.
 - **Credential Items** are a unique pair of a key and value that live in a Credential Group. They behave exactly like [environment variables](environment-variables/environment-variables-overview.md). A Credential Group cannot have two credential items with the same key.
 

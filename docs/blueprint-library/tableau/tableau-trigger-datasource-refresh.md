@@ -3,7 +3,7 @@ id: tableau-trigger-datasource-refresh
 title: Tableau Template - Trigger Datasource Refresh
 hide_title: true
 sidebar_label: Trigger Datasource Refresh
-description: Information about Shipyard's low-code Tableau Trigger Datasource Refresh blueprint. Trigger a manual refresh of a specified datasource in Tableau.
+description: Information about Platform's low-code Tableau Trigger Datasource Refresh blueprint. Trigger a manual refresh of a specified datasource in Tableau.
 keywords:
   - tableau
   - blueprint

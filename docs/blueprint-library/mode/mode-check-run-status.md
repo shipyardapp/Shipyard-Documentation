@@ -3,7 +3,7 @@ id: mode-check-run-status
 title: Mode Template - Check Run Status (Deprecated)
 hide_title: true
 sidebar_label: Check Run Status (Deprecated)
-description: Information about Shipyard's low-code Mode Check Run Status (Deprecated) blueprint. Verify the status of a recently triggered Mode report. 
+description: Information about Platform's low-code Mode Check Run Status (Deprecated) blueprint. Verify the status of a recently triggered Mode report. 
 keywords:
     - mode
     - blueprint
@@ -21,7 +21,7 @@ Check for the status of a single report run on Mode. The Vessel's exit code and 
 - If the run has completed with an error, the Vessel will return an exit code of 211, an error.
 - If the run has completed, but was canceled, the Vessel will return an exit code of 213, an error.
 - If the run is not started, the Vessel will return an exit code of 214, an error.
-- If the run has completed successfully, the Vessel will return an exit code of 0, interpreted by Shipyard as Successful.
+- If the run has completed successfully, the Vessel will return an exit code of 0, interpreted by Platform as Successful.
 
 The response for this request will always be stored at `shipyard-artifacts/mode-blueprints/responses/verify_run_{report_run_id}_response.json`
 

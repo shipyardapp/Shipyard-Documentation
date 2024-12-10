@@ -3,7 +3,7 @@ id: google-bigquery-store-query-results-in-google-cloud-storage
 title: Google BigQuery Template - Download Query Results to Google Cloud Storage
 hide_title: true
 sidebar_label: Download Query Results to Google Cloud Storage
-description: Information about Shipyard's low-code Google BigQuery Download Query Results to Google Cloud Storage blueprint. Turn the results of your SQL SELECT statement into CSV files that get stored in Google Cloud Storage (GCS).
+description: Information about Platform's low-code Google BigQuery Download Query Results to Google Cloud Storage blueprint. Turn the results of your SQL SELECT statement into CSV files that get stored in Google Cloud Storage (GCS).
 keywords:
   - google bigquery
   - blueprint

@@ -3,7 +3,7 @@ id: microsoft-365-sharepoint-remove-files-from-sharepoint
 title: Microsoft 365 SharePoint Template - Remove files from SharePoint
 hide_title: true
 sidebar_label: Remove files from SharePoint
-description: Information about Shipyard's low-code Microsoft 365 SharePoint Remove files from SharePoint blueprint. Quickly remove one or multiple files from SharePoint
+description: Information about Platform's low-code Microsoft 365 SharePoint Remove files from SharePoint blueprint. Quickly remove one or multiple files from SharePoint
 keywords:
   - microsoft 365 sharepoint
   - blueprint

@@ -12,7 +12,7 @@ keywords:
 
 ## Definition
 
-Blueprints are the foundation for most Vessels. They contain the design specifications needed to start building solutions for your organization. As such, they live at the organization level and can be used in any Project. They can either be built by Shipyard staff (as part of the [Blueprint Library](blueprint-library/blueprint-library-overview.md)) or by users in your organization (as an Org Blueprint).
+Blueprints are the foundation for most Vessels. They contain the design specifications needed to start building solutions for your organization. As such, they live at the organization level and can be used in any Project. They can either be built by Platform staff (as part of the [Blueprint Library](blueprint-library/blueprint-library-overview.md)) or by users in your organization (as an Org Blueprint).
 
 Blueprints provide a way for technical users to create a reusable piece of code with organization-specific logic. When using a Blueprint, users are only required to provide key inputs needed for the Vessel to work correctly. All [code](../code/code-overview.md), [package dependencies](../packages/external-package-dependencies.md), and [environment variables](../environment-variables/environment-variables-overview.md) are abstracted away from the end user.
 

@@ -3,7 +3,7 @@ id: postgresql-execute-query
 title: PostgreSQL Template - Execute Query
 hide_title: true
 sidebar_label: Execute Query
-description: Information about Shipyard's low-code PostgreSQL Execute Query blueprint. Execute any SQL query against a PostgreSQL database.
+description: Information about Platform's low-code PostgreSQL Execute Query blueprint. Execute any SQL query against a PostgreSQL database.
 keywords:
   - postgresql
   - blueprint

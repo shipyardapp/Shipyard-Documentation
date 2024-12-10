@@ -2,7 +2,7 @@
 id: organizations
 title: Organizations
 hide_title: true
-description: Information about the structure of organizations in Shipyard.
+description: Information about the structure of organizations in Platform.
 keywords:
   - organization
   - company
@@ -13,7 +13,7 @@ keywords:
 
 ## Definition
 
-An organization is the highest level structure that exists within Shipyard. It has admin users, contains user management controls, and houses multiple projects. While called an organization, it can be used by an individual or smaller team units at a business.
+An organization is the highest level structure that exists within Platform. It has admin users, contains user management controls, and houses multiple projects. While called an organization, it can be used by an individual or smaller team units at a business.
 
 ## Screenshots
 

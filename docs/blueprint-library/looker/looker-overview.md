@@ -3,7 +3,7 @@ id: looker-overview
 title: Looker Blueprints Overview
 hide_title: true
 sidebar_label: Overview
-description: Information about Shipyard's low-code Looker templates.
+description: Information about Platform's low-code Looker templates.
 keywords:
 - looker
 - blueprint
@@ -13,7 +13,7 @@ keywords:
 
 # Looker Blueprints Overview
 
-Shipyard's low-code Looker blueprints allow users to connect their data in Looker to the rest of their modern data stack.
+Platform's low-code Looker blueprints allow users to connect their data in Looker to the rest of their modern data stack.
 
 
 ## How to Use
@@ -21,12 +21,10 @@ For information on how to set up these Blueprints successfully, please read thro
 
 
 ## Available Blueprints
-Shipyard currently has the following Blueprints readily available:
+Platform currently has the following Blueprints readily available:
 
-- [Download Look as File to Shipyard](looker-download-look-as-file.md)
-- [Download SQL Query as File to Shipyard](looker-download-sql-query-as-file.md)
+- [Download Look as File to Platform](looker-download-look-as-file.md)
+- [Download SQL Query as File to Platform](looker-download-sql-query-as-file.md)
 - [Create SQL Runner Query](looker-create-sql-runner-query.md)
-- [Download Dashboard as File to Shipyard](looker-download-dashboard-as-file.md)
+- [Download Dashboard as File to Platform](looker-download-dashboard-as-file.md)
 
-## Open Source Code
-The code that powers these Blueprints is [available on our Github](https://github.com/shipyardapp/shipyard-blueprints/tree/main/shipyard_blueprints/looker), open sourced under the Apache License 2.0. We'd love to have you contribute to others using Shipyard Blueprints by creating issues or submitting PRs.

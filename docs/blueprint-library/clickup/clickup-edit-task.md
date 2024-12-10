@@ -3,7 +3,7 @@ id: clickup-edit-task
 title: Clickup Template - Edit Task
 hide_title: true
 sidebar_label: Edit Task
-description: Information about Shipyard's low-code Clickup Edit Task blueprint. Updates an existing Clickup task 
+description: Information about Platform's low-code Clickup Edit Task blueprint. Updates an existing Clickup task 
 keywords:
     - clickup
     - blueprint

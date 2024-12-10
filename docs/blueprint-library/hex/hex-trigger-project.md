@@ -3,7 +3,7 @@ id: hex-trigger-project
 title: Hex Template - Trigger Project
 hide_title: true
 sidebar_label: Trigger Project
-description: Information about Shipyard's low-code Hex Trigger Project blueprint. Runs a Hex project through the Hex API
+description: Information about Platform's low-code Hex Trigger Project blueprint. Runs a Hex project through the Hex API
 keywords:
   - hex
   - blueprint

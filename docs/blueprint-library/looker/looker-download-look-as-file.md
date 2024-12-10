@@ -1,16 +1,16 @@
 ---
 id: looker-download-look-as-file
-title: Looker Template - Download Look as File to Shipyard
+title: Looker Template - Download Look as File to Platform
 hide_title: true
-sidebar_label: Download Look as File to Shipyard
-description: Information about Shipyard's low-code Looker Download Look as File to Shipyard blueprint. Quickly download a Look as a variety of file types. 
+sidebar_label: Download Look as File to Platform
+description: Information about Platform's low-code Looker Download Look as File to Platform blueprint. Quickly download a Look as a variety of file types. 
 keywords:
   - looker
   - blueprint
   - template
 ---
 
-# Looker - Download Look as File to Shipyard
+# Looker - Download Look as File to Platform
 
 ## Overview
 

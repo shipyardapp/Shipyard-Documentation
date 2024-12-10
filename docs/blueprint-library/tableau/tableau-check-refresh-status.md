@@ -3,7 +3,7 @@ id: tableau-check-refresh-status
 title: Tableau Template - Check Refresh Status (Deprecated)
 hide_title: true
 sidebar_label: Check Refresh Status (Deprecated)
-description: Information about Shipyard's low-code Tableau Check Refresh Status (Deprecated) blueprint. Check the job status of a recent workbook or datasource refresh.
+description: Information about Platform's low-code Tableau Check Refresh Status (Deprecated) blueprint. Check the job status of a recent workbook or datasource refresh.
 keywords:
   - tableau
   - blueprint

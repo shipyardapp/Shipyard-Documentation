@@ -21,9 +21,9 @@ By the end of the tutorial, you'll be able to:
 - Set up [guardrails](../reference/guardrails.md) to make the Vessel run efficiently.
 
 ### Background
-Shipyard's Check Status Blueprints are designed to quickly ping the desired vendor, asking "What's the status of job X?". If job X is incomplete, the Vessel will fail - by design. Vessels built with these Blueprints were designed to be used together with [guardrails](../reference/guardrails.md), which automatically retry a Vessel after seeing a failure.
+Platform's Check Status Blueprints are designed to quickly ping the desired vendor, asking "What's the status of job X?". If job X is incomplete, the Vessel will fail - by design. Vessels built with these Blueprints were designed to be used together with [guardrails](../reference/guardrails.md), which automatically retry a Vessel after seeing a failure.
 
-With guardrails in place, Shipyard will retry after a specified period of time and once again ask the vendor "What's the status of job X?". Once the vendor returns with any answer other than *incomplete*
+With guardrails in place, Platform will retry after a specified period of time and once again ask the vendor "What's the status of job X?". Once the vendor returns with any answer other than *incomplete*
 - If the answer is *success*, the Vessel will finish successfully.
 - If the answer is *errored*, *canceled*, or any other negative response, a unique exit code will be generated and the Vessel will error. If this exit code is found in the list of [exclusions](https://www.shipyardapp.com/docs/reference/guardrails/#exclude-exit-code-ranges) the Vessel will no longer be retried.
 
@@ -63,7 +63,7 @@ When connecting a check status Blueprint to an execute task Blueprint, you do no
 6. Under `Time Between Retries`, select **5m**.
 
 :::caution
-If there are values under the **Exclude Exit Code Ranges** option, leave these alone! These tell Shipyard to not retry if a final status of an error is found.
+If there are values under the **Exclude Exit Code Ranges** option, leave these alone! These tell Platform to not retry if a final status of an error is found.
 :::
 
 
